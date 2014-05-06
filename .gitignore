@@ -1,35 +1,7 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-
-# /tools/
-tools/ATLAS/
-tools/atlas3.8.3.tar.gz
-tools/irstlm/
-tools/openfst
-tools/openfst-1.3.2.tar.gz
-tools/openfst-1.3.2/
-tools/openfst-1.3.4.tar.gz
-tools/openfst-1.3.4/
-tools/pa_stable_v19_20111121.tgz
-tools/portaudio/
-tools/sctk-2.4.0-20091110-0958.tar.bz2
-tools/sctk-2.4.0/
-tools/sph2pipe_v2.5.tar.gz
-tools/sph2pipe_v2.5/
+*
 
 # /src/
-/src/kaldi.mk*
+/src/kaldi.mk
 
 # /src/base/
 /src/base/.depend.mk
@@ -96,24 +68,6 @@ tools/sph2pipe_v2.5/
 /src/bin/align-compiled-mapped
 /src/bin/latgen-faster-mapped
 /src/bin/analyze-counts
-/src/bin/am-info
-/src/bin/build-pfile-from-ali
-/src/bin/copy-post
-/src/bin/duplicate-matrix
-/src/bin/extract-ctx
-/src/bin/get-post-on-ali
-/src/bin/latgen-faster-mapped-parallel
-/src/bin/latgen-tracking-mapped
-/src/bin/logprob-to-post
-/src/bin/matrix-logprob
-/src/bin/matrix-sum
-/src/bin/pdf-to-counts
-/src/bin/post-to-pdf-post
-/src/bin/post-to-phone-post
-/src/bin/prob-to-post
-/src/bin/tree-info
-/src/bin/vector-scale
-/src/bin/vector-sum
 
 # /src/cudamatrix/
 /src/cudamatrix/.depend.mk
@@ -157,21 +111,6 @@ tools/sph2pipe_v2.5/
 /src/featbin/get-full-lda-mat
 /src/featbin/reverse-feats
 /src/featbin/compute-plp-feats
-/src/featbin/add-deltas-sdc
-/src/featbin/apply-cmvn-sliding
-/src/featbin/compare-feats
-/src/featbin/compute-cmvn-stats-two-channel
-/src/featbin/compute-kaldi-pitch-feats
-/src/featbin/copy-feats-to-htk
-/src/featbin/copy-feats-to-sphinx
-/src/featbin/extract-rows
-/src/featbin/interpolate-pitch
-/src/featbin/paste-feats
-/src/featbin/process-kaldi-pitch-feats
-/src/featbin/process-pitch-feats
-/src/featbin/select-feats
-/src/featbin/subsample-feats
-/src/featbin/wav-to-duration
 
 # /src/fgmmbin/
 /src/fgmmbin/.depend.mk
@@ -185,8 +124,6 @@ tools/sph2pipe_v2.5/
 /src/fgmmbin/fgmm-global-acc-stats-twofeats
 /src/fgmmbin/fgmm-global-copy
 /src/fgmmbin/fgmm-global-mixdown
-/src/fgmmbin/fgmm-global-gselect-to-post
-/src/fgmmbin/fgmm-global-info
 
 # /src/fstbin/
 /src/fstbin/.depend.mk
@@ -213,9 +150,6 @@ tools/sph2pipe_v2.5/
 /src/fstbin/fstdeterminizelog
 /src/fstbin/fstphicompose
 /src/fstbin/fstpropfinal
-/src/fstbin/fstpushspecial
-/src/fstbin/fstrhocompose
-/src/fstbin/fsts-to-transcripts
 
 # /src/fstext/
 /src/fstext/.depend.mk
@@ -321,46 +255,11 @@ tools/sph2pipe_v2.5/
 /src/gmmbin/gmm-global-acc-stats
 /src/gmmbin/gmm-global-est
 /src/gmmbin/gmm-global-acc-stats-twofeats
-/src/gmmbin/gmm-adapt-map
-/src/gmmbin/gmm-est-fmllr-raw
-/src/gmmbin/gmm-est-fmllr-raw-gpost
-/src/gmmbin/gmm-global-info
-/src/gmmbin/gmm-global-init-from-feats
-/src/gmmbin/gmm-latgen-faster-parallel
-/src/gmmbin/gmm-latgen-tracking
 
 # /src/hmm/
 /src/hmm/.depend.mk
 /src/hmm/hmm-topology-test
 /src/hmm/hmm-utils-test
-
-# /src/ivectorbin/
-/src/ivectorbin/.depend.mk
-/src/ivectorbin/compute-eer
-/src/ivectorbin/compute-vad
-/src/ivectorbin/ivector-compute-dot-products
-/src/ivectorbin/ivector-compute-lda
-/src/ivectorbin/ivector-compute-plda
-/src/ivectorbin/ivector-copy-plda
-/src/ivectorbin/ivector-extract
-/src/ivectorbin/ivector-extractor-acc-stats
-/src/ivectorbin/ivector-extractor-est
-/src/ivectorbin/ivector-extractor-init
-/src/ivectorbin/ivector-extractor-sum-accs
-/src/ivectorbin/ivector-mean
-/src/ivectorbin/ivector-normalize-length
-/src/ivectorbin/ivector-plda-scoring
-/src/ivectorbin/ivector-subtract-global-mean
-/src/ivectorbin/ivector-transform
-/src/ivectorbin/select-voiced-frames
-
-# /src/kwsbin/
-/src/kwsbin/.depend.mk
-/src/kwsbin/generate-proxy-keywords
-/src/kwsbin/kws-index-union
-/src/kwsbin/kws-search
-/src/kwsbin/lattice-to-kws-index
-/src/kwsbin/transcripts-to-fsts
 
 # /src/lat/
 /src/lat/.depend.mk
@@ -401,21 +300,6 @@ tools/sph2pipe_v2.5/
 /src/latbin/lattice-oracle
 /src/latbin/lattice-align-words
 /src/latbin/lattice-arcgraph
-/src/latbin/lattice-add-penalty
-/src/latbin/lattice-align-phones
-/src/latbin/lattice-align-words-lexicon
-/src/latbin/lattice-combine
-/src/latbin/lattice-depth
-/src/latbin/lattice-depth-per-frame
-/src/latbin/lattice-determinize-phone-pruned
-/src/latbin/lattice-determinize-phone-pruned-parallel
-/src/latbin/lattice-determinize-pruned-parallel
-/src/latbin/lattice-limit-depth
-/src/latbin/lattice-minimize
-/src/latbin/lattice-push
-/src/latbin/lattice-rescore-mapped
-/src/latbin/lattice-reverse
-/src/latbin/lattice-to-smbr-post
 
 # /src/lm/
 /src/lm/.depend.mk
@@ -431,6 +315,10 @@ tools/sph2pipe_v2.5/
 /src/nnet/.depend.mk
 /src/nnet/nnet-test
 
+# /src/nnet2/
+/src/nnet2/.depend.mk
+/src/nnet2/nnet-component-test
+
 # /src/nnetbin/
 /src/nnetbin/.depend.mk
 /src/nnetbin/nnet-train-xent-hardlab-perutt
@@ -442,91 +330,40 @@ tools/sph2pipe_v2.5/
 /src/nnetbin/rbm-convert-to-nnet
 /src/nnetbin/nnet-trim-n-last-transforms
 /src/nnetbin/nnet-train-mmi-sequential
-/src/nnetbin/cmvn-to-nnet
-/src/nnetbin/nnet-concat
-/src/nnetbin/nnet-info
-/src/nnetbin/nnet-initialize
-/src/nnetbin/nnet-kl-hmm-acc
-/src/nnetbin/nnet-kl-hmm-mat-to-component
-/src/nnetbin/nnet-train-frmshuff
-/src/nnetbin/nnet-train-mpe-sequential
-/src/nnetbin/nnet-train-perutt
-/src/nnetbin/transf-to-nnet
-
-# /src/nnet2/
-/src/nnet2/.depend.mk
-/src/nnet2/nnet-component-test
-
-# /src/nnet2bin/
-/src/nnet2bin/.depend.mk
-/src/nnet2bin/nnet-align-compiled
-/src/nnet2bin/nnet-am-average
-/src/nnet2bin/nnet-am-combine
-/src/nnet2bin/nnet-am-compute
-/src/nnet2bin/nnet-am-copy
-/src/nnet2bin/nnet-am-fix
-/src/nnet2bin/nnet-am-info
-/src/nnet2bin/nnet-am-init
-/src/nnet2bin/nnet-am-limit-rank
-/src/nnet2bin/nnet-am-limit-rank-final
-/src/nnet2bin/nnet-am-mixup
-/src/nnet2bin/nnet-am-rescale
-/src/nnet2bin/nnet-am-shrink
-/src/nnet2bin/nnet-am-stats
-/src/nnet2bin/nnet-am-widen
-/src/nnet2bin/nnet-combine
-/src/nnet2bin/nnet-combine-a
-/src/nnet2bin/nnet-combine-egs-discriminative
-/src/nnet2bin/nnet-combine-fast
-/src/nnet2bin/nnet-compare-hash-discriminative
-/src/nnet2bin/nnet-compute
-/src/nnet2bin/nnet-compute-from-egs
-/src/nnet2bin/nnet-compute-prob
-/src/nnet2bin/nnet-copy-egs
-/src/nnet2bin/nnet-copy-egs-discriminative
-/src/nnet2bin/nnet-get-egs
-/src/nnet2bin/nnet-get-egs-discriminative
-/src/nnet2bin/nnet-get-feature-transform
-/src/nnet2bin/nnet-get-feature-transform-multi
-/src/nnet2bin/nnet-get-preconditioner
-/src/nnet2bin/nnet-get-weighted-egs
-/src/nnet2bin/nnet-gradient
-/src/nnet2bin/nnet-init
-/src/nnet2bin/nnet-insert
-/src/nnet2bin/nnet-latgen-faster
-/src/nnet2bin/nnet-latgen-faster-parallel
-/src/nnet2bin/nnet-limit-degradation
-/src/nnet2bin/nnet-logprob
-/src/nnet2bin/nnet-logprob-parallel
-/src/nnet2bin/nnet-logprob2
-/src/nnet2bin/nnet-logprob2-parallel
-/src/nnet2bin/nnet-modify-learning-rates
-/src/nnet2bin/nnet-normalize-stddev
-/src/nnet2bin/nnet-perturb-egs
-/src/nnet2bin/nnet-perturb-egs-fmllr
-/src/nnet2bin/nnet-precondition
-/src/nnet2bin/nnet-randomize-frames
-/src/nnet2bin/nnet-select-egs
-/src/nnet2bin/nnet-show-progress
-/src/nnet2bin/nnet-shrink
-/src/nnet2bin/nnet-shuffle-egs
-/src/nnet2bin/nnet-shuffle-egs-discriminative
-/src/nnet2bin/nnet-subset-egs
-/src/nnet2bin/nnet-train-discriminative-parallel
-/src/nnet2bin/nnet-train-discriminative-simple
-/src/nnet2bin/nnet-train-ensemble
-/src/nnet2bin/nnet-train-lbfgs
-/src/nnet2bin/nnet-train-parallel
-/src/nnet2bin/nnet-train-simple
-/src/nnet2bin/nnet-train-transitions
-/src/nnet2bin/raw-nnet-concat
-/src/nnet2bin/raw-nnet-info
 
 # /src/sgmm/
 /src/sgmm/.depend.mk
 /src/sgmm/am-sgmm-test
 /src/sgmm/estimate-am-sgmm-test
 /src/sgmm/fmllr-sgmm-test
+
+# /src/sgmm2/
+/src/sgmm2/.depend.mk
+/src/sgmm2/am-sgmm-test
+/src/sgmm2/estimate-am-sgmm-test
+/src/sgmm2/fmllr-sgmm-test
+
+# /src/sgmm2bin/
+/src/sgmm2bin/.depend.mk
+/src/sgmm2bin/sgmm2-init
+/src/sgmm2bin/sgmm2-acc-stats
+/src/sgmm2bin/sgmm2-align-compiled
+/src/sgmm2bin/sgmm2-post-to-gpost
+/src/sgmm2bin/sgmm2-latgen-faster
+/src/sgmm2bin/sgmm2-rescore-lattice
+/src/sgmm2bin/sgmm2-copy
+/src/sgmm2bin/sgmm2-info
+/src/sgmm2bin/sgmm2-est-ebw
+/src/sgmm2bin/sgmm2-acc-stats2
+/src/sgmm2bin/sgmm2-comp-prexform
+/src/sgmm2bin/sgmm2-est-fmllr
+/src/sgmm2bin/sgmm2-project
+/src/sgmm2bin/sgmm2-gselect
+/src/sgmm2bin/sgmm2-est
+/src/sgmm2bin/sgmm2-sum-accs
+/src/sgmm2bin/sgmm2-est-spkvecs
+/src/sgmm2bin/sgmm2-acc-stats-gpost
+/src/sgmm2bin/sgmm2-est-spkvecs-gpost
 
 # /src/sgmmbin/
 /src/sgmmbin/.depend.mk
@@ -566,38 +403,6 @@ tools/sph2pipe_v2.5/
 /src/sgmmbin/sgmm-est
 /src/sgmmbin/sgmm-decode-faster
 
-# /src/sgmm2/
-/src/sgmm2/.depend.mk
-/src/sgmm2/am-sgmm-test
-/src/sgmm2/estimate-am-sgmm-test
-/src/sgmm2/fmllr-sgmm-test
-
-# /src/sgmm2bin/
-/src/sgmm2bin/.depend.mk
-/src/sgmm2bin/sgmm2-init
-/src/sgmm2bin/sgmm2-acc-stats
-/src/sgmm2bin/sgmm2-align-compiled
-/src/sgmm2bin/sgmm2-post-to-gpost
-/src/sgmm2bin/sgmm2-latgen-faster
-/src/sgmm2bin/sgmm2-rescore-lattice
-/src/sgmm2bin/sgmm2-copy
-/src/sgmm2bin/sgmm2-info
-/src/sgmm2bin/sgmm2-est-ebw
-/src/sgmm2bin/sgmm2-acc-stats2
-/src/sgmm2bin/sgmm2-comp-prexform
-/src/sgmm2bin/sgmm2-est-fmllr
-/src/sgmm2bin/sgmm2-project
-/src/sgmm2bin/sgmm2-gselect
-/src/sgmm2bin/sgmm2-est
-/src/sgmm2bin/sgmm2-sum-accs
-/src/sgmm2bin/sgmm2-est-spkvecs
-/src/sgmm2bin/sgmm2-acc-stats-gpost
-/src/sgmm2bin/sgmm2-est-spkvecs-gpost
-/src/sgmm2bin/sgmm2-latgen-faster-parallel
-
-# /src/thread/
-/src/thread/.depend.mk
-
 # /src/transform/
 /src/transform/.depend.mk
 /src/transform/regtree-mllr-diag-gmm-test
@@ -627,3 +432,787 @@ tools/sph2pipe_v2.5/
 /src/util/kaldi-io-test
 /src/util/text-utils-test
 /src/util/parse-options-test
+	src/base/io-funcs.o
+	src/base/kaldi-base.a
+	src/base/kaldi-error.o
+	src/base/kaldi-math.o
+	src/base/kaldi-utils.o
+	src/bin/acc-lda.o
+	src/bin/acc-tree-stats.o
+	src/bin/add-self-loops.o
+	src/bin/ali-to-pdf.o
+	src/bin/ali-to-phones.o
+	src/bin/ali-to-post.o
+	src/bin/align-compiled-mapped.o
+	src/bin/align-equal-compiled.o
+	src/bin/align-equal.o
+	src/bin/align-mapped.o
+	src/bin/am-info
+	src/bin/am-info.o
+	src/bin/analyze-counts.o
+	src/bin/arpa2fst.o
+	src/bin/build-pfile-from-ali
+	src/bin/build-pfile-from-ali.o
+	src/bin/build-tree-two-level.o
+	src/bin/build-tree.o
+	src/bin/cluster-phones.o
+	src/bin/compile-questions.o
+	src/bin/compile-train-graphs-fsts.o
+	src/bin/compile-train-graphs.o
+	src/bin/compute-mce-scale.o
+	src/bin/compute-wer.o
+	src/bin/convert-ali.o
+	src/bin/copy-gselect.o
+	src/bin/copy-int-vector-vector.o
+	src/bin/copy-int-vector.o
+	src/bin/copy-matrix.o
+	src/bin/copy-post
+	src/bin/copy-post.o
+	src/bin/copy-transition-model.o
+	src/bin/copy-tree.o
+	src/bin/copy-vector.o
+	src/bin/decode-faster-mapped.o
+	src/bin/decode-faster.o
+	src/bin/dot-weights.o
+	src/bin/draw-tree.o
+	src/bin/duplicate-matrix
+	src/bin/duplicate-matrix.o
+	src/bin/est-lda.o
+	src/bin/est-mllt.o
+	src/bin/extract-ctx
+	src/bin/extract-ctx.o
+	src/bin/get-post-on-ali
+	src/bin/get-post-on-ali.o
+	src/bin/get-silence-probs.o
+	src/bin/hmm-info.o
+	src/bin/latgen-faster-mapped-parallel
+	src/bin/latgen-faster-mapped-parallel.o
+	src/bin/latgen-faster-mapped.o
+	src/bin/latgen-tracking-mapped
+	src/bin/latgen-tracking-mapped.o
+	src/bin/logprob-to-post
+	src/bin/logprob-to-post.o
+	src/bin/make-h-transducer.o
+	src/bin/make-ilabel-transducer.o
+	src/bin/make-pdf-to-tid-transducer.o
+	src/bin/matrix-logprob
+	src/bin/matrix-logprob.o
+	src/bin/matrix-sum
+	src/bin/matrix-sum-rows
+	src/bin/matrix-sum-rows.o
+	src/bin/matrix-sum.o
+	src/bin/pdf-to-counts
+	src/bin/pdf-to-counts.o
+	src/bin/phones-to-prons.o
+	src/bin/post-to-pdf-post
+	src/bin/post-to-pdf-post.o
+	src/bin/post-to-phone-post
+	src/bin/post-to-phone-post.o
+	src/bin/post-to-tacc.o
+	src/bin/post-to-weights.o
+	src/bin/prob-to-post
+	src/bin/prob-to-post.o
+	src/bin/prons-to-wordali.o
+	src/bin/rand-prune-post.o
+	src/bin/reverse-weights.o
+	src/bin/scale-post.o
+	src/bin/show-alignments.o
+	src/bin/show-transitions.o
+	src/bin/sum-matrices.o
+	src/bin/sum-post.o
+	src/bin/sum-tree-stats.o
+	src/bin/thresh-post.o
+	src/bin/tree-info
+	src/bin/tree-info.o
+	src/bin/vector-scale
+	src/bin/vector-scale.o
+	src/bin/vector-sum
+	src/bin/vector-sum.o
+	src/bin/weight-post.o
+	src/bin/weight-silence-post.o
+	src/cudamatrix/cu-block-matrix.o
+	src/cudamatrix/cu-choleskykernels.o
+	src/cudamatrix/cu-common.o
+	src/cudamatrix/cu-device.o
+	src/cudamatrix/cu-kernels.o
+	src/cudamatrix/cu-math.o
+	src/cudamatrix/cu-matrix.o
+	src/cudamatrix/cu-packed-matrix.o
+	src/cudamatrix/cu-rand.o
+	src/cudamatrix/cu-randkernels.o
+	src/cudamatrix/cu-sp-matrix.o
+	src/cudamatrix/cu-tp-matrix.o
+	src/cudamatrix/cu-vector.o
+	src/cudamatrix/kaldi-cudamatrix.a
+	src/decoder/faster-decoder.o
+	src/decoder/kaldi-decoder.a
+	src/decoder/lattice-faster-decoder.o
+	src/decoder/lattice-simple-decoder.o
+	src/decoder/lattice-tracking-decoder.o
+	src/decoder/training-graph-compiler.o
+	src/feat/feature-fbank.o
+	src/feat/feature-functions.o
+	src/feat/feature-mfcc.o
+	src/feat/feature-plp.o
+	src/feat/feature-spectrogram.o
+	src/feat/kaldi-feat.a
+	src/feat/mel-computations.o
+	src/feat/pitch-functions.o
+	src/feat/wave-reader.o
+	src/featbin/add-deltas-sdc.o
+	src/featbin/add-deltas.o
+	src/featbin/append-feats.o
+	src/featbin/apply-cmvn-sliding.o
+	src/featbin/apply-cmvn.o
+	src/featbin/compare-feats.o
+	src/featbin/compose-transforms.o
+	src/featbin/compute-cmvn-stats-two-channel.o
+	src/featbin/compute-cmvn-stats.o
+	src/featbin/compute-fbank-feats.o
+	src/featbin/compute-irm-targets.o
+	src/featbin/compute-kaldi-pitch-feats.o
+	src/featbin/compute-mfcc-feats.o
+	src/featbin/compute-plp-feats.o
+	src/featbin/compute-spectrogram-feats.o
+	src/featbin/copy-feats-to-htk.o
+	src/featbin/copy-feats-to-sphinx.o
+	src/featbin/copy-feats.o
+	src/featbin/extend-transform-dim.o
+	src/featbin/extract-feature-segments.o
+	src/featbin/extract-rows.o
+	src/featbin/extract-segments.o
+	src/featbin/feat-to-dim.o
+	src/featbin/feat-to-len.o
+	src/featbin/fmpe-acc-stats.o
+	src/featbin/fmpe-apply-transform.o
+	src/featbin/fmpe-copy.o
+	src/featbin/fmpe-est.o
+	src/featbin/fmpe-init.o
+	src/featbin/fmpe-sum-accs.o
+	src/featbin/get-full-lda-mat.o
+	src/featbin/interpolate-pitch.o
+	src/featbin/paste-feats.o
+	src/featbin/process-kaldi-pitch-feats.o
+	src/featbin/process-pitch-feats.o
+	src/featbin/remove-mean.o
+	src/featbin/reverse-feats.o
+	src/featbin/select-feats.o
+	src/featbin/splice-feats.o
+	src/featbin/subsample-feats.o
+	src/featbin/subset-feats.o
+	src/featbin/transform-feats.o
+	src/featbin/wav-copy.o
+	src/featbin/wav-to-duration.o
+	src/fgmmbin/fgmm-global-acc-stats-twofeats.o
+	src/fgmmbin/fgmm-global-acc-stats.o
+	src/fgmmbin/fgmm-global-copy.o
+	src/fgmmbin/fgmm-global-est.o
+	src/fgmmbin/fgmm-global-get-frame-likes.o
+	src/fgmmbin/fgmm-global-gselect-to-post
+	src/fgmmbin/fgmm-global-gselect-to-post.o
+	src/fgmmbin/fgmm-global-info
+	src/fgmmbin/fgmm-global-info.o
+	src/fgmmbin/fgmm-global-merge.o
+	src/fgmmbin/fgmm-global-mixdown.o
+	src/fgmmbin/fgmm-global-sum-accs.o
+	src/fgmmbin/fgmm-global-to-gmm.o
+	src/fgmmbin/fgmm-gselect.o
+	src/fstbin/fstaddselfloops.o
+	src/fstbin/fstaddsubsequentialloop.o
+	src/fstbin/fstcomposecontext.o
+	src/fstbin/fstcopy.o
+	src/fstbin/fstdeterminizelog.o
+	src/fstbin/fstdeterminizestar.o
+	src/fstbin/fstfactor.o
+	src/fstbin/fstisstochastic.o
+	src/fstbin/fstmakecontextfst.o
+	src/fstbin/fstmakecontextsyms.o
+	src/fstbin/fstminimizeencoded.o
+	src/fstbin/fstphicompose.o
+	src/fstbin/fstpropfinal.o
+	src/fstbin/fstpushspecial
+	src/fstbin/fstpushspecial.o
+	src/fstbin/fstrand.o
+	src/fstbin/fstrhocompose
+	src/fstbin/fstrhocompose.o
+	src/fstbin/fstrmepslocal.o
+	src/fstbin/fstrmsymbols.o
+	src/fstbin/fsts-to-transcripts
+	src/fstbin/fsts-to-transcripts.o
+	src/fstbin/fsttablecompose.o
+	src/fstext/kaldi-fstext.a
+	src/fstext/push-special.o
+	src/gmm/am-diag-gmm.o
+	src/gmm/decodable-am-diag-gmm.o
+	src/gmm/diag-gmm-normal.o
+	src/gmm/diag-gmm.o
+	src/gmm/ebw-diag-gmm.o
+	src/gmm/full-gmm-normal.o
+	src/gmm/full-gmm.o
+	src/gmm/indirect-diff-diag-gmm.o
+	src/gmm/kaldi-gmm.a
+	src/gmm/mle-am-diag-gmm.o
+	src/gmm/mle-diag-gmm.o
+	src/gmm/mle-full-gmm.o
+	src/gmm/model-common.o
+	src/gmm/model-test-common.o
+	src/gmmbin/gmm-acc-hlda.o
+	src/gmmbin/gmm-acc-mllt-global
+	src/gmmbin/gmm-acc-mllt-global.o
+	src/gmmbin/gmm-acc-mllt.o
+	src/gmmbin/gmm-acc-stats-ali.o
+	src/gmmbin/gmm-acc-stats-twofeats.o
+	src/gmmbin/gmm-acc-stats.o
+	src/gmmbin/gmm-acc-stats2.o
+	src/gmmbin/gmm-adapt-map
+	src/gmmbin/gmm-adapt-map.o
+	src/gmmbin/gmm-align-compiled-plusphones.o
+	src/gmmbin/gmm-align-compiled.o
+	src/gmmbin/gmm-align.o
+	src/gmmbin/gmm-basis-fmllr-accs-gpost.o
+	src/gmmbin/gmm-basis-fmllr-accs.o
+	src/gmmbin/gmm-basis-fmllr-training.o
+	src/gmmbin/gmm-boost-silence.o
+	src/gmmbin/gmm-compute-likes.o
+	src/gmmbin/gmm-copy.o
+	src/gmmbin/gmm-decode-biglm-faster.o
+	src/gmmbin/gmm-decode-faster-regtree-fmllr.o
+	src/gmmbin/gmm-decode-faster-regtree-mllr.o
+	src/gmmbin/gmm-decode-faster.o
+	src/gmmbin/gmm-decode-nbest.o
+	src/gmmbin/gmm-decode-simple.o
+	src/gmmbin/gmm-diff-accs.o
+	src/gmmbin/gmm-est-basis-fmllr-gpost.o
+	src/gmmbin/gmm-est-basis-fmllr.o
+	src/gmmbin/gmm-est-fmllr-global
+	src/gmmbin/gmm-est-fmllr-global.o
+	src/gmmbin/gmm-est-fmllr-gpost.o
+	src/gmmbin/gmm-est-fmllr-raw
+	src/gmmbin/gmm-est-fmllr-raw-gpost
+	src/gmmbin/gmm-est-fmllr-raw-gpost.o
+	src/gmmbin/gmm-est-fmllr-raw.o
+	src/gmmbin/gmm-est-fmllr.o
+	src/gmmbin/gmm-est-gaussians-ebw.o
+	src/gmmbin/gmm-est-hlda.o
+	src/gmmbin/gmm-est-lvtln-trans.o
+	src/gmmbin/gmm-est-map.o
+	src/gmmbin/gmm-est-regtree-fmllr-ali.o
+	src/gmmbin/gmm-est-regtree-fmllr.o
+	src/gmmbin/gmm-est-regtree-mllr.o
+	src/gmmbin/gmm-est-rescale.o
+	src/gmmbin/gmm-est-weights-ebw.o
+	src/gmmbin/gmm-est.o
+	src/gmmbin/gmm-fmpe-acc-stats.o
+	src/gmmbin/gmm-get-feat-deriv.o
+	src/gmmbin/gmm-get-stats-deriv.o
+	src/gmmbin/gmm-global-acc-stats-twofeats.o
+	src/gmmbin/gmm-global-acc-stats.o
+	src/gmmbin/gmm-global-copy.o
+	src/gmmbin/gmm-global-est-fmllr.o
+	src/gmmbin/gmm-global-est.o
+	src/gmmbin/gmm-global-get-frame-likes.o
+	src/gmmbin/gmm-global-info
+	src/gmmbin/gmm-global-info.o
+	src/gmmbin/gmm-global-init-from-feats
+	src/gmmbin/gmm-global-init-from-feats.o
+	src/gmmbin/gmm-global-sum-accs.o
+	src/gmmbin/gmm-global-to-fgmm.o
+	src/gmmbin/gmm-gselect.o
+	src/gmmbin/gmm-info.o
+	src/gmmbin/gmm-init-lvtln.o
+	src/gmmbin/gmm-init-model-flat.o
+	src/gmmbin/gmm-init-model.o
+	src/gmmbin/gmm-init-mono.o
+	src/gmmbin/gmm-init-trans.o
+	src/gmmbin/gmm-ismooth-stats.o
+	src/gmmbin/gmm-latgen-biglm-faster.o
+	src/gmmbin/gmm-latgen-faster-parallel
+	src/gmmbin/gmm-latgen-faster-parallel.o
+	src/gmmbin/gmm-latgen-faster-regtree-fmllr
+	src/gmmbin/gmm-latgen-faster-regtree-fmllr.o
+	src/gmmbin/gmm-latgen-faster.o
+	src/gmmbin/gmm-latgen-map.o
+	src/gmmbin/gmm-latgen-simple.o
+	src/gmmbin/gmm-latgen-tracking
+	src/gmmbin/gmm-latgen-tracking.o
+	src/gmmbin/gmm-make-regtree.o
+	src/gmmbin/gmm-mixup.o
+	src/gmmbin/gmm-post-to-gpost.o
+	src/gmmbin/gmm-rescore-lattice.o
+	src/gmmbin/gmm-scale-accs.o
+	src/gmmbin/gmm-sum-accs.o
+	src/gmmbin/gmm-train-lvtln-special.o
+	src/gmmbin/gmm-transform-means-global
+	src/gmmbin/gmm-transform-means-global.o
+	src/gmmbin/gmm-transform-means.o
+	src/hmm/hmm-topology.o
+	src/hmm/hmm-utils.o
+	src/hmm/kaldi-hmm.a
+	src/hmm/posterior.o
+	src/hmm/transition-model.o
+	src/hmm/tree-accu.o
+	src/ivector/.depend.mk
+	src/ivector/ivector-extractor.o
+	src/ivector/kaldi-ivector.a
+	src/ivector/logistic-regression.o
+	src/ivector/plda.o
+	src/ivector/voice-activity-detection.o
+	src/ivectorbin/.depend.mk
+	src/ivectorbin/compute-eer
+	src/ivectorbin/compute-eer.o
+	src/ivectorbin/compute-vad
+	src/ivectorbin/compute-vad.o
+	src/ivectorbin/create-split-from-vad
+	src/ivectorbin/create-split-from-vad.o
+	src/ivectorbin/ivector-compute-dot-products
+	src/ivectorbin/ivector-compute-dot-products.o
+	src/ivectorbin/ivector-compute-lda
+	src/ivectorbin/ivector-compute-lda.o
+	src/ivectorbin/ivector-compute-plda
+	src/ivectorbin/ivector-compute-plda.o
+	src/ivectorbin/ivector-copy-plda
+	src/ivectorbin/ivector-copy-plda.o
+	src/ivectorbin/ivector-extract
+	src/ivectorbin/ivector-extract.o
+	src/ivectorbin/ivector-extractor-acc-stats
+	src/ivectorbin/ivector-extractor-acc-stats.o
+	src/ivectorbin/ivector-extractor-est
+	src/ivectorbin/ivector-extractor-est.o
+	src/ivectorbin/ivector-extractor-init
+	src/ivectorbin/ivector-extractor-init.o
+	src/ivectorbin/ivector-extractor-sum-accs
+	src/ivectorbin/ivector-extractor-sum-accs.o
+	src/ivectorbin/ivector-mean
+	src/ivectorbin/ivector-mean.o
+	src/ivectorbin/ivector-normalize-length
+	src/ivectorbin/ivector-normalize-length.o
+	src/ivectorbin/ivector-plda-scoring
+	src/ivectorbin/ivector-plda-scoring.o
+	src/ivectorbin/ivector-subtract-global-mean
+	src/ivectorbin/ivector-subtract-global-mean.o
+	src/ivectorbin/ivector-transform
+	src/ivectorbin/ivector-transform.o
+	src/ivectorbin/logistic-regression-copy
+	src/ivectorbin/logistic-regression-copy.o
+	src/ivectorbin/logistic-regression-eval
+	src/ivectorbin/logistic-regression-eval.o
+	src/ivectorbin/logistic-regression-train
+	src/ivectorbin/logistic-regression-train.o
+	src/ivectorbin/select-voiced-frames
+	src/ivectorbin/select-voiced-frames.o
+	src/kaldi.mk.bak
+	src/kwsbin/.depend.mk
+	src/kwsbin/generate-proxy-keywords
+	src/kwsbin/generate-proxy-keywords.o
+	src/kwsbin/kws-index-union
+	src/kwsbin/kws-index-union.o
+	src/kwsbin/kws-search
+	src/kwsbin/kws-search.o
+	src/kwsbin/lattice-to-kws-index
+	src/kwsbin/lattice-to-kws-index.o
+	src/kwsbin/transcripts-to-fsts
+	src/kwsbin/transcripts-to-fsts.o
+	src/lat/determinize-lattice-pruned.o
+	src/lat/kaldi-lat.a
+	src/lat/kaldi-lattice.o
+	src/lat/kws-functions.o
+	src/lat/lattice-functions.o
+	src/lat/minimize-lattice.o
+	src/lat/phone-align-lattice.o
+	src/lat/push-lattice.o
+	src/lat/sausages.o
+	src/lat/word-align-lattice-lexicon.o
+	src/lat/word-align-lattice.o
+	src/latbin/lattice-1best.o
+	src/latbin/lattice-add-penalty
+	src/latbin/lattice-add-penalty.o
+	src/latbin/lattice-add-trans-probs.o
+	src/latbin/lattice-align-phones
+	src/latbin/lattice-align-phones.o
+	src/latbin/lattice-align-words-lexicon
+	src/latbin/lattice-align-words-lexicon.o
+	src/latbin/lattice-align-words.o
+	src/latbin/lattice-arcgraph.o
+	src/latbin/lattice-best-path.o
+	src/latbin/lattice-boost-ali.o
+	src/latbin/lattice-combine
+	src/latbin/lattice-combine.o
+	src/latbin/lattice-compose.o
+	src/latbin/lattice-copy-backoff.o
+	src/latbin/lattice-copy.o
+	src/latbin/lattice-depth
+	src/latbin/lattice-depth-per-frame
+	src/latbin/lattice-depth-per-frame.o
+	src/latbin/lattice-depth.o
+	src/latbin/lattice-determinize-phone-pruned
+	src/latbin/lattice-determinize-phone-pruned-parallel
+	src/latbin/lattice-determinize-phone-pruned-parallel.o
+	src/latbin/lattice-determinize-phone-pruned.o
+	src/latbin/lattice-determinize-pruned-parallel
+	src/latbin/lattice-determinize-pruned-parallel.o
+	src/latbin/lattice-determinize-pruned.o
+	src/latbin/lattice-determinize.o
+	src/latbin/lattice-difference.o
+	src/latbin/lattice-equivalent.o
+	src/latbin/lattice-interp.o
+	src/latbin/lattice-limit-depth
+	src/latbin/lattice-limit-depth.o
+	src/latbin/lattice-lmrescore.o
+	src/latbin/lattice-mbr-decode.o
+	src/latbin/lattice-minimize
+	src/latbin/lattice-minimize.o
+	src/latbin/lattice-oracle.o
+	src/latbin/lattice-project.o
+	src/latbin/lattice-prune.o
+	src/latbin/lattice-push
+	src/latbin/lattice-push.o
+	src/latbin/lattice-rescore-mapped
+	src/latbin/lattice-rescore-mapped.o
+	src/latbin/lattice-reverse
+	src/latbin/lattice-reverse.o
+	src/latbin/lattice-rmali.o
+	src/latbin/lattice-scale.o
+	src/latbin/lattice-to-ctm-conf.o
+	src/latbin/lattice-to-fst.o
+	src/latbin/lattice-to-mpe-post.o
+	src/latbin/lattice-to-nbest.o
+	src/latbin/lattice-to-phone-lattice.o
+	src/latbin/lattice-to-post.o
+	src/latbin/lattice-to-smbr-post
+	src/latbin/lattice-to-smbr-post.o
+	src/latbin/lattice-union.o
+	src/latbin/lattice-word-align.o
+	src/latbin/linear-to-nbest.o
+	src/latbin/nbest-to-ctm.o
+	src/latbin/nbest-to-lattice.o
+	src/latbin/nbest-to-linear.o
+	src/lm/kaldi-lm.a
+	src/lm/kaldi-lm.o
+	src/lm/kaldi-lmtable.o
+	src/matrix/compressed-matrix.o
+	src/matrix/kaldi-gpsr.o
+	src/matrix/kaldi-matrix.a
+	src/matrix/kaldi-matrix.o
+	src/matrix/kaldi-tensor.o
+	src/matrix/kaldi-vector.o
+	src/matrix/matrix-functions.o
+	src/matrix/optimization.o
+	src/matrix/packed-matrix.o
+	src/matrix/qr.o
+	src/matrix/sp-matrix.o
+	src/matrix/srfft.o
+	src/matrix/tp-matrix.o
+	src/nnet/kaldi-nnet.a
+	src/nnet/nnet-component.o
+	src/nnet/nnet-loss.o
+	src/nnet/nnet-nnet.o
+	src/nnet/nnet-pdf-prior.o
+	src/nnet/nnet-randomizer.o
+	src/nnet2/am-nnet.o
+	src/nnet2/combine-nnet-a.o
+	src/nnet2/combine-nnet-fast.o
+	src/nnet2/combine-nnet.o
+	src/nnet2/get-feature-transform.o
+	src/nnet2/kaldi-nnet2.a
+	src/nnet2/mixup-nnet.o
+	src/nnet2/nnet-component.o
+	src/nnet2/nnet-compute-discriminative-parallel.o
+	src/nnet2/nnet-compute-discriminative.o
+	src/nnet2/nnet-compute.o
+	src/nnet2/nnet-example-functions.o
+	src/nnet2/nnet-example.o
+	src/nnet2/nnet-fix.o
+	src/nnet2/nnet-functions.o
+	src/nnet2/nnet-lbfgs.o
+	src/nnet2/nnet-limit-rank.o
+	src/nnet2/nnet-nnet.o
+	src/nnet2/nnet-precondition-online.o
+	src/nnet2/nnet-precondition.o
+	src/nnet2/nnet-randomize.o
+	src/nnet2/nnet-stats.o
+	src/nnet2/nnet-update-parallel.o
+	src/nnet2/nnet-update.o
+	src/nnet2/rescale-nnet.o
+	src/nnet2/shrink-nnet.o
+	src/nnet2/train-nnet-ensemble.o
+	src/nnet2/train-nnet.o
+	src/nnet2/widen-nnet.o
+	src/nnet2bin/.depend.mk
+	src/nnet2bin/cuda-compiled
+	src/nnet2bin/cuda-compiled.o
+	src/nnet2bin/nnet-am-limit-rank
+	src/nnet2bin/nnet-am-limit-rank-final
+	src/nnet2bin/nnet-am-limit-rank-final.o
+	src/nnet2bin/nnet-am-limit-rank.o
+	src/nnet2bin/nnet-am-rescale
+	src/nnet2bin/nnet-am-rescale.o
+	src/nnet2bin/nnet-am-shrink
+	src/nnet2bin/nnet-am-shrink.o
+	src/nnet2bin/nnet-am-stats
+	src/nnet2bin/nnet-am-stats.o
+	src/nnet2bin/nnet-combine-a
+	src/nnet2bin/nnet-combine-a.o
+	src/nnet2bin/nnet-compare-hash-discriminative
+	src/nnet2bin/nnet-compare-hash-discriminative.o
+	src/nnet2bin/nnet-compute-from-egs
+	src/nnet2bin/nnet-compute-from-egs.o
+	src/nnet2bin/nnet-copy-egs-discriminative
+	src/nnet2bin/nnet-copy-egs-discriminative.o
+	src/nnet2bin/nnet-get-preconditioner
+	src/nnet2bin/nnet-get-preconditioner.o
+	src/nnet2bin/nnet-get-weighted-egs
+	src/nnet2bin/nnet-get-weighted-egs.o
+	src/nnet2bin/nnet-gradient
+	src/nnet2bin/nnet-gradient.o
+	src/nnet2bin/nnet-limit-degradation
+	src/nnet2bin/nnet-limit-degradation.o
+	src/nnet2bin/nnet-logprob
+	src/nnet2bin/nnet-logprob-parallel
+	src/nnet2bin/nnet-logprob-parallel.o
+	src/nnet2bin/nnet-logprob.o
+	src/nnet2bin/nnet-logprob2
+	src/nnet2bin/nnet-logprob2-parallel
+	src/nnet2bin/nnet-logprob2-parallel.o
+	src/nnet2bin/nnet-logprob2.o
+	src/nnet2bin/nnet-perturb-egs
+	src/nnet2bin/nnet-perturb-egs-fmllr
+	src/nnet2bin/nnet-perturb-egs-fmllr.o
+	src/nnet2bin/nnet-perturb-egs.o
+	src/nnet2bin/nnet-precondition
+	src/nnet2bin/nnet-precondition.o
+	src/nnet2bin/nnet-randomize-frames
+	src/nnet2bin/nnet-randomize-frames.o
+	src/nnet2bin/nnet-select-egs
+	src/nnet2bin/nnet-select-egs.o
+	src/nnet2bin/nnet-shrink
+	src/nnet2bin/nnet-shrink.o
+	src/nnet2bin/nnet-shuffle-egs-discriminative
+	src/nnet2bin/nnet-shuffle-egs-discriminative.o
+	src/nnet2bin/nnet2-adjust-priors
+	src/nnet2bin/nnet2-adjust-priors.o
+	src/nnet2bin/nnet2-align-compiled
+	src/nnet2bin/nnet2-align-compiled.o
+	src/nnet2bin/nnet2-am-init
+	src/nnet2bin/nnet2-am-init.o
+	src/nnet2bin/nnet2-average
+	src/nnet2bin/nnet2-average.o
+	src/nnet2bin/nnet2-combine
+	src/nnet2bin/nnet2-combine-egs-discriminative
+	src/nnet2bin/nnet2-combine-egs-discriminative.o
+	src/nnet2bin/nnet2-combine-fast
+	src/nnet2bin/nnet2-combine-fast.o
+	src/nnet2bin/nnet2-combine.o
+	src/nnet2bin/nnet2-compute
+	src/nnet2bin/nnet2-compute-prob
+	src/nnet2bin/nnet2-compute-prob.o
+	src/nnet2bin/nnet2-compute.o
+	src/nnet2bin/nnet2-copy
+	src/nnet2bin/nnet2-copy-egs
+	src/nnet2bin/nnet2-copy-egs.o
+	src/nnet2bin/nnet2-copy.o
+	src/nnet2bin/nnet2-fix
+	src/nnet2bin/nnet2-fix.o
+	src/nnet2bin/nnet2-get-egs
+	src/nnet2bin/nnet2-get-egs-discriminative
+	src/nnet2bin/nnet2-get-egs-discriminative.o
+	src/nnet2bin/nnet2-get-egs.o
+	src/nnet2bin/nnet2-get-feature-transform
+	src/nnet2bin/nnet2-get-feature-transform-multi
+	src/nnet2bin/nnet2-get-feature-transform-multi.o
+	src/nnet2bin/nnet2-get-feature-transform.o
+	src/nnet2bin/nnet2-info
+	src/nnet2bin/nnet2-info.o
+	src/nnet2bin/nnet2-init
+	src/nnet2bin/nnet2-init.o
+	src/nnet2bin/nnet2-insert
+	src/nnet2bin/nnet2-insert.o
+	src/nnet2bin/nnet2-latgen-faster
+	src/nnet2bin/nnet2-latgen-faster-parallel
+	src/nnet2bin/nnet2-latgen-faster-parallel.o
+	src/nnet2bin/nnet2-latgen-faster.o
+	src/nnet2bin/nnet2-mixup
+	src/nnet2bin/nnet2-mixup.o
+	src/nnet2bin/nnet2-modify-learning-rates
+	src/nnet2bin/nnet2-modify-learning-rates.o
+	src/nnet2bin/nnet2-normalize-stddev
+	src/nnet2bin/nnet2-normalize-stddev.o
+	src/nnet2bin/nnet2-replace-last-layers
+	src/nnet2bin/nnet2-replace-last-layers.o
+	src/nnet2bin/nnet2-show-progress
+	src/nnet2bin/nnet2-show-progress.o
+	src/nnet2bin/nnet2-shuffle-egs
+	src/nnet2bin/nnet2-shuffle-egs.o
+	src/nnet2bin/nnet2-subset-egs
+	src/nnet2bin/nnet2-subset-egs.o
+	src/nnet2bin/nnet2-to-raw-nnet2
+	src/nnet2bin/nnet2-to-raw-nnet2.o
+	src/nnet2bin/nnet2-train-discriminative-parallel
+	src/nnet2bin/nnet2-train-discriminative-parallel.o
+	src/nnet2bin/nnet2-train-discriminative-simple
+	src/nnet2bin/nnet2-train-discriminative-simple.o
+	src/nnet2bin/nnet2-train-ensemble
+	src/nnet2bin/nnet2-train-ensemble.o
+	src/nnet2bin/nnet2-train-lbfgs
+	src/nnet2bin/nnet2-train-lbfgs.o
+	src/nnet2bin/nnet2-train-parallel
+	src/nnet2bin/nnet2-train-parallel.o
+	src/nnet2bin/nnet2-train-simple
+	src/nnet2bin/nnet2-train-simple.o
+	src/nnet2bin/nnet2-train-transitions
+	src/nnet2bin/nnet2-train-transitions.o
+	src/nnet2bin/nnet2-widen
+	src/nnet2bin/nnet2-widen.o
+	src/nnet2bin/raw-nnet-concat
+	src/nnet2bin/raw-nnet-concat.o
+	src/nnet2vbin/.depend.mk
+	src/nnet2vbin/nnet2v-get-egs
+	src/nnet2vbin/nnet2v-get-egs.o
+	src/nnetbin/cmvn-to-nnet
+	src/nnetbin/cmvn-to-nnet.o
+	src/nnetbin/nnet-concat
+	src/nnetbin/nnet-concat.o
+	src/nnetbin/nnet-copy.o
+	src/nnetbin/nnet-forward.o
+	src/nnetbin/nnet-info
+	src/nnetbin/nnet-info.o
+	src/nnetbin/nnet-initialize
+	src/nnetbin/nnet-initialize.o
+	src/nnetbin/nnet-kl-hmm-acc
+	src/nnetbin/nnet-kl-hmm-acc.o
+	src/nnetbin/nnet-kl-hmm-mat-to-component
+	src/nnetbin/nnet-kl-hmm-mat-to-component.o
+	src/nnetbin/nnet-train-frmshuff
+	src/nnetbin/nnet-train-frmshuff.o
+	src/nnetbin/nnet-train-mmi-sequential.o
+	src/nnetbin/nnet-train-mpe-sequential
+	src/nnetbin/nnet-train-mpe-sequential.o
+	src/nnetbin/nnet-train-perutt
+	src/nnetbin/nnet-train-perutt.o
+	src/nnetbin/rbm-convert-to-nnet.o
+	src/nnetbin/rbm-train-cd1-frmshuff.o
+	src/nnetbin/transf-to-nnet
+	src/nnetbin/transf-to-nnet.o
+	src/sgmm/am-sgmm.o
+	src/sgmm/decodable-am-sgmm.o
+	src/sgmm/estimate-am-sgmm-ebw.o
+	src/sgmm/estimate-am-sgmm-multi.o
+	src/sgmm/estimate-am-sgmm.o
+	src/sgmm/fmllr-sgmm.o
+	src/sgmm/kaldi-sgmm.a
+	src/sgmm/sgmm-clusterable.o
+	src/sgmm2/am-sgmm2-project.o
+	src/sgmm2/am-sgmm2.o
+	src/sgmm2/decodable-am-sgmm2.o
+	src/sgmm2/estimate-am-sgmm2-ebw.o
+	src/sgmm2/estimate-am-sgmm2.o
+	src/sgmm2/fmllr-sgmm2.o
+	src/sgmm2/kaldi-sgmm2.a
+	src/sgmm2bin/sgmm2-acc-stats-gpost.o
+	src/sgmm2bin/sgmm2-acc-stats.o
+	src/sgmm2bin/sgmm2-acc-stats2.o
+	src/sgmm2bin/sgmm2-align-compiled.o
+	src/sgmm2bin/sgmm2-comp-prexform.o
+	src/sgmm2bin/sgmm2-copy.o
+	src/sgmm2bin/sgmm2-est-ebw.o
+	src/sgmm2bin/sgmm2-est-fmllr.o
+	src/sgmm2bin/sgmm2-est-spkvecs-gpost.o
+	src/sgmm2bin/sgmm2-est-spkvecs.o
+	src/sgmm2bin/sgmm2-est.o
+	src/sgmm2bin/sgmm2-gselect.o
+	src/sgmm2bin/sgmm2-info.o
+	src/sgmm2bin/sgmm2-init.o
+	src/sgmm2bin/sgmm2-latgen-faster-parallel
+	src/sgmm2bin/sgmm2-latgen-faster-parallel.o
+	src/sgmm2bin/sgmm2-latgen-faster.o
+	src/sgmm2bin/sgmm2-post-to-gpost.o
+	src/sgmm2bin/sgmm2-project.o
+	src/sgmm2bin/sgmm2-rescore-lattice.o
+	src/sgmm2bin/sgmm2-sum-accs.o
+	src/sgmmbin/init-ubm.o
+	src/sgmmbin/sgmm-acc-fmllrbasis-ali.o
+	src/sgmmbin/sgmm-acc-stats-ali.o
+	src/sgmmbin/sgmm-acc-stats-gpost.o
+	src/sgmmbin/sgmm-acc-stats.o
+	src/sgmmbin/sgmm-acc-stats2.o
+	src/sgmmbin/sgmm-acc-tree-stats.o
+	src/sgmmbin/sgmm-align-compiled.o
+	src/sgmmbin/sgmm-build-tree.o
+	src/sgmmbin/sgmm-calc-distances.o
+	src/sgmmbin/sgmm-cluster-phones.o
+	src/sgmmbin/sgmm-comp-prexform.o
+	src/sgmmbin/sgmm-copy.o
+	src/sgmmbin/sgmm-decode-faster.o
+	src/sgmmbin/sgmm-est-ebw.o
+	src/sgmmbin/sgmm-est-fmllr-gpost.o
+	src/sgmmbin/sgmm-est-fmllr.o
+	src/sgmmbin/sgmm-est-fmllrbasis.o
+	src/sgmmbin/sgmm-est-multi.o
+	src/sgmmbin/sgmm-est-spkvecs-gpost.o
+	src/sgmmbin/sgmm-est-spkvecs.o
+	src/sgmmbin/sgmm-est.o
+	src/sgmmbin/sgmm-gselect.o
+	src/sgmmbin/sgmm-info.o
+	src/sgmmbin/sgmm-init-from-tree-stats.o
+	src/sgmmbin/sgmm-init.o
+	src/sgmmbin/sgmm-latgen-faster.o
+	src/sgmmbin/sgmm-latgen-simple.o
+	src/sgmmbin/sgmm-mixup.o
+	src/sgmmbin/sgmm-normalize.o
+	src/sgmmbin/sgmm-post-to-gpost.o
+	src/sgmmbin/sgmm-rescore-lattice.o
+	src/sgmmbin/sgmm-sum-accs.o
+	src/sgmmbin/sgmm-sum-tree-stats.o
+	src/sgmmbin/sgmm-write-ubm.o
+	src/thread/.depend.mk
+	src/thread/kaldi-barrier.o
+	src/thread/kaldi-mutex.o
+	src/thread/kaldi-semaphore.o
+	src/thread/kaldi-thread.a
+	src/thread/kaldi-thread.o
+	src/transform/basis-fmllr-diag-gmm.o
+	src/transform/cmvn.o
+	src/transform/compressed-transform-stats.o
+	src/transform/decodable-am-diag-gmm-regtree.o
+	src/transform/fmllr-diag-gmm.o
+	src/transform/fmllr-raw.o
+	src/transform/fmpe.o
+	src/transform/hlda.o
+	src/transform/kaldi-transform.a
+	src/transform/lda-estimate.o
+	src/transform/lvtln.o
+	src/transform/mllt.o
+	src/transform/regression-tree.o
+	src/transform/regtree-fmllr-diag-gmm.o
+	src/transform/regtree-mllr-diag-gmm.o
+	src/transform/transform-common.o
+	src/tree/build-tree-questions.o
+	src/tree/build-tree-utils.o
+	src/tree/build-tree.o
+	src/tree/cluster-utils.o
+	src/tree/clusterable-classes.o
+	src/tree/context-dep.o
+	src/tree/event-map.o
+	src/tree/kaldi-tree.a
+	src/tree/tree-renderer.o
+	src/util/kaldi-io.o
+	src/util/kaldi-table.o
+	src/util/kaldi-util.a
+	src/util/parse-options.o
+	src/util/simple-io-funcs.o
+	src/util/simple-options.o
+	src/util/text-utils.o
+	tools/ATLAS/
+	tools/atlas3.8.3.tar.gz
+	tools/irstlm/
+	tools/openfst
+	tools/openfst-1.3.4.tar.gz
+	tools/openfst-1.3.4/
+	tools/sctk-2.4.0-20091110-0958.tar.bz2
+	tools/sctk-2.4.0/
+	tools/sph2pipe_v2.5.tar.gz
+	tools/sph2pipe_v2.5/
+
+!*.cc
+!*.cu
+!*.h
+!tags
