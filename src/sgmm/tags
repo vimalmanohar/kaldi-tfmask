@@ -1,0 +1,875 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Accumulate	estimate-am-sgmm.cc	/^BaseFloat MleAmSgmmAccs::Accumulate(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmAccs
+Accumulate	estimate-am-sgmm.cc	/^MleSgmmSpeakerAccs::Accumulate(const AmSgmm &model,$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+Accumulate	fmllr-sgmm.cc	/^BaseFloat FmllrSgmmAccs::Accumulate(const AmSgmm &model,$/;"	f	class:kaldi::FmllrSgmmAccs
+Accumulate	sgmm-clusterable.cc	/^void SgmmClusterable::Accumulate($/;"	f	class:kaldi::SgmmClusterable
+AccumulateForFmllrSubspace	fmllr-sgmm.cc	/^void FmllrSgmmAccs::AccumulateForFmllrSubspace(const AmSgmm &sgmm,$/;"	f	class:kaldi::FmllrSgmmAccs
+AccumulateFromPosteriors	estimate-am-sgmm.cc	/^BaseFloat MleAmSgmmAccs::AccumulateFromPosteriors($/;"	f	class:kaldi::MleAmSgmmAccs
+AccumulateFromPosteriors	estimate-am-sgmm.cc	/^MleSgmmSpeakerAccs::AccumulateFromPosteriors(const AmSgmm &model,$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+AccumulateFromPosteriors	fmllr-sgmm.cc	/^FmllrSgmmAccs::AccumulateFromPosteriors(const AmSgmm &model,$/;"	f	class:kaldi::FmllrSgmmAccs
+AccumulateSgmmTreeStats	sgmm-clusterable.cc	/^bool AccumulateSgmmTreeStats(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+Add	sgmm-clusterable.cc	/^void SgmmClusterable::Add(const Clusterable &other_in) {$/;"	f	class:kaldi::SgmmClusterable
+AddAccumulators	estimate-am-sgmm-multi.cc	/^void MleAmSgmmGlobalAccs::AddAccumulators(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+AmSgmm	am-sgmm.h	/^  AmSgmm() {}$/;"	f	class:kaldi::AmSgmm
+AmSgmm	am-sgmm.h	/^class AmSgmm {$/;"	c	namespace:kaldi
+AmSgmmFunctions	am-sgmm.h	/^class AmSgmmFunctions {$/;"	c	namespace:kaldi
+ApplyFmllrXform	fmllr-sgmm-test.cc	/^void ApplyFmllrXform(const kaldi::VectorBase<BaseFloat> &in,$/;"	f
+ApplyHessianXformToGradient	fmllr-sgmm.cc	/^static void ApplyHessianXformToGradient(const SgmmFmllrGlobalParams &globals,$/;"	f	namespace:kaldi
+ApplyInvHessianXformToChange	fmllr-sgmm.cc	/^static void ApplyInvHessianXformToChange(const SgmmFmllrGlobalParams &globals,$/;"	f	namespace:kaldi
+ApplyInvPreXformToChange	fmllr-sgmm.cc	/^static void ApplyInvPreXformToChange(const SgmmFmllrGlobalParams &globals,$/;"	f	namespace:kaldi
+ApplyPreXformToGradient	fmllr-sgmm.cc	/^static void ApplyPreXformToGradient(const SgmmFmllrGlobalParams &globals,$/;"	f	namespace:kaldi
+CalcFmllrStepSize	fmllr-sgmm.cc	/^static BaseFloat CalcFmllrStepSize(const AffineXformStats &stats,$/;"	f	namespace:kaldi
+Check	am-sgmm.cc	/^void AmSgmm::Check(bool show_properties) {$/;"	f	class:kaldi::AmSgmm
+Check	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::Check(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmAccs
+Clear	am-sgmm.h	/^  void Clear() {$/;"	f	struct:kaldi::SgmmPerSpkDerivedVars
+Clear	estimate-am-sgmm.cc	/^void MleSgmmSpeakerAccs::Clear() {$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+CommitStatsForSpk	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::CommitStatsForSpk(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmAccs
+ComponentPosteriors	am-sgmm.cc	/^AmSgmm::ComponentPosteriors(const SgmmPerFrameDerivedVars &per_frame_vars,$/;"	f	class:kaldi::AmSgmm
+ComputeDerivedVars	am-sgmm.cc	/^void AmSgmm::ComputeDerivedVars() {$/;"	f	class:kaldi::AmSgmm
+ComputeDistances	am-sgmm.cc	/^void AmSgmmFunctions::ComputeDistances(const AmSgmm &model,$/;"	f	class:kaldi::AmSgmmFunctions
+ComputeFeatureNormalizer	am-sgmm.cc	/^void ComputeFeatureNormalizer(const FullGmm &gmm, Matrix<BaseFloat> *xform) {$/;"	f	namespace:kaldi
+ComputeFmllrPreXform	am-sgmm.cc	/^void AmSgmm::ComputeFmllrPreXform(const Vector<BaseFloat> &state_occs,$/;"	f	class:kaldi::AmSgmm
+ComputeH	am-sgmm.cc	/^void AmSgmm::ComputeH(std::vector< SpMatrix<Real> > *H_i) const {$/;"	f	class:kaldi::AmSgmm
+ComputeH	sgmm-clusterable.cc	/^void SgmmClusterable::ComputeH() {$/;"	f	class:kaldi::SgmmClusterable
+ComputeMPrior	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::ComputeMPrior(AmSgmm *model) {$/;"	f	class:kaldi::MleAmSgmmUpdater
+ComputeNormalizers	am-sgmm.cc	/^void AmSgmm::ComputeNormalizers() {$/;"	f	class:kaldi::AmSgmm
+ComputeNormalizersClass	am-sgmm.cc	/^  ComputeNormalizersClass() { } \/\/ Disallow empty constructor.$/;"	f	class:kaldi::ComputeNormalizersClass	file:
+ComputeNormalizersClass	am-sgmm.cc	/^  ComputeNormalizersClass(AmSgmm *am_sgmm,$/;"	f	class:kaldi::ComputeNormalizersClass
+ComputeNormalizersClass	am-sgmm.cc	/^class ComputeNormalizersClass: public MultiThreadable { \/\/ For multi-threaded.$/;"	c	namespace:kaldi	file:
+ComputeNormalizersInternal	am-sgmm.cc	/^void AmSgmm::ComputeNormalizersInternal(int32 num_threads, int32 thread,$/;"	f	class:kaldi::AmSgmm
+ComputeNormalizersNormalized	am-sgmm.cc	/^void AmSgmm::ComputeNormalizersNormalized($/;"	f	class:kaldi::AmSgmm
+ComputePerFrameVars	am-sgmm.cc	/^void AmSgmm::ComputePerFrameVars(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::AmSgmm
+ComputePerSpkDerivedVars	am-sgmm.cc	/^void AmSgmm::ComputePerSpkDerivedVars(SgmmPerSpkDerivedVars *vars) const {$/;"	f	class:kaldi::AmSgmm
+ComputePhoneVecStats	estimate-am-sgmm-ebw.cc	/^void EbwAmSgmmUpdater::ComputePhoneVecStats($/;"	f	class:kaldi::EbwAmSgmmUpdater
+ComputeQ	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::ComputeQ(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+ComputeSMeans	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::ComputeSMeans(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+ComputeSmoothingTerms	estimate-am-sgmm-multi.cc	/^void MleAmSgmmUpdaterMulti::ComputeSmoothingTerms($/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+ComputeSmoothingTerms	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::ComputeSmoothingTerms(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+ComputeSmoothingTermsFromModel	am-sgmm.cc	/^void AmSgmm::ComputeSmoothingTermsFromModel($/;"	f	class:kaldi::AmSgmm
+Copy	sgmm-clusterable.cc	/^Clusterable *SgmmClusterable::Copy() const {$/;"	f	class:kaldi::SgmmClusterable
+CopyFromSgmm	am-sgmm.cc	/^void AmSgmm::CopyFromSgmm(const AmSgmm &other,$/;"	f	class:kaldi::AmSgmm
+CopyGlobalsInitVecs	am-sgmm.cc	/^void AmSgmm::CopyGlobalsInitVecs(const AmSgmm &other,$/;"	f	class:kaldi::AmSgmm
+DecodableAmSgmm	decodable-am-sgmm.h	/^  DecodableAmSgmm(const SgmmGselectConfig &opts,$/;"	f	class:kaldi::DecodableAmSgmm
+DecodableAmSgmm	decodable-am-sgmm.h	/^class DecodableAmSgmm : public DecodableInterface {$/;"	c	namespace:kaldi
+DecodableAmSgmmScaled	decodable-am-sgmm.h	/^  DecodableAmSgmmScaled(const SgmmGselectConfig &opts,$/;"	f	class:kaldi::DecodableAmSgmmScaled
+DecodableAmSgmmScaled	decodable-am-sgmm.h	/^class DecodableAmSgmmScaled : public DecodableAmSgmm {$/;"	c	namespace:kaldi
+Dim	fmllr-sgmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::FmllrSgmmAccs
+EbwAmSgmmOptions	estimate-am-sgmm-ebw.h	/^  EbwAmSgmmOptions() {$/;"	f	struct:kaldi::EbwAmSgmmOptions
+EbwAmSgmmOptions	estimate-am-sgmm-ebw.h	/^struct EbwAmSgmmOptions {$/;"	s	namespace:kaldi
+EbwAmSgmmUpdater	estimate-am-sgmm-ebw.h	/^  EbwAmSgmmUpdater() {}  \/\/ Prevent unconfigured updater.$/;"	f	class:kaldi::EbwAmSgmmUpdater
+EbwAmSgmmUpdater	estimate-am-sgmm-ebw.h	/^  explicit EbwAmSgmmUpdater(const EbwAmSgmmOptions &options):$/;"	f	class:kaldi::EbwAmSgmmUpdater
+EbwAmSgmmUpdater	estimate-am-sgmm-ebw.h	/^class EbwAmSgmmUpdater {$/;"	c	namespace:kaldi
+EbwUpdatePhoneVectorsClass	estimate-am-sgmm-ebw.cc	/^  EbwUpdatePhoneVectorsClass(const EbwAmSgmmUpdater *updater,$/;"	f	class:kaldi::EbwUpdatePhoneVectorsClass
+EbwUpdatePhoneVectorsClass	estimate-am-sgmm-ebw.cc	/^class EbwUpdatePhoneVectorsClass: public MultiThreadable { \/\/ For multi-threaded.$/;"	c	namespace:kaldi	file:
+EstimateSgmmFmllrSubspace	fmllr-sgmm.cc	/^void EstimateSgmmFmllrSubspace(const SpMatrix<double> &fmllr_grad_scatter,$/;"	f	namespace:kaldi
+F_i_	estimate-am-sgmm.h	/^  Matrix<double> F_i_;$/;"	m	class:kaldi::UpdateWParallelClass
+F_i_ptr_	estimate-am-sgmm.h	/^  Matrix<double> *F_i_ptr_;$/;"	m	class:kaldi::UpdateWParallelClass
+FeatureDim	am-sgmm.h	/^  int32 FeatureDim() const { return M_[0].NumRows(); }$/;"	f	class:kaldi::AmSgmm
+FeatureDim	estimate-am-sgmm-multi.h	/^  int32 FeatureDim() const { return feature_dim_; }$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+FeatureDim	estimate-am-sgmm-multi.h	/^  int32 FeatureDim() const { return global_M_[0].NumRows(); }$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+FeatureDim	estimate-am-sgmm.h	/^  int32 FeatureDim() const { return feature_dim_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+FmllrObjGradient	fmllr-sgmm.cc	/^BaseFloat FmllrSgmmAccs::FmllrObjGradient(const AmSgmm &sgmm,$/;"	f	class:kaldi::FmllrSgmmAccs
+FmllrSgmmAccs	fmllr-sgmm.h	/^  FmllrSgmmAccs() : dim_(-1) {}$/;"	f	class:kaldi::FmllrSgmmAccs
+FmllrSgmmAccs	fmllr-sgmm.h	/^class FmllrSgmmAccs {$/;"	c	namespace:kaldi
+GaussianSelection	am-sgmm.cc	/^BaseFloat AmSgmm::GaussianSelection(const SgmmGselectConfig &config,$/;"	f	class:kaldi::AmSgmm
+GaussianSelectionPreselect	am-sgmm.cc	/^BaseFloat AmSgmm::GaussianSelectionPreselect(const SgmmGselectConfig &config,$/;"	f	class:kaldi::AmSgmm
+GetInvCovars	am-sgmm.h	/^  const SpMatrix<BaseFloat>& GetInvCovars(int32 gauss_index) const {$/;"	f	class:kaldi::AmSgmm
+GetInvCovars	am-sgmm.h	/^inline void AmSgmm::GetInvCovars(int32 gauss_index,$/;"	f	class:kaldi::AmSgmm
+GetNtransSigmaInv	am-sgmm.cc	/^void AmSgmm::GetNtransSigmaInv(vector< Matrix<Real> > *out) const {$/;"	f	class:kaldi::AmSgmm
+GetOccs	estimate-am-sgmm.h	/^  const std::vector< Matrix<double> >& GetOccs() const {$/;"	f	class:kaldi::MleAmSgmmAccs
+GetPhoneProjection	am-sgmm.h	/^  const Matrix<BaseFloat>& GetPhoneProjection(int32 gauss_index) const {$/;"	f	class:kaldi::AmSgmm
+GetStateOccupancies	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::GetStateOccupancies(Vector<BaseFloat> *occs) const {$/;"	f	class:kaldi::MleAmSgmmAccs
+GetSubstateMean	am-sgmm.h	/^inline void AmSgmm::GetSubstateMean(int32 j, int32 m, int32 i,$/;"	f	class:kaldi::AmSgmm
+GetSubstateSpeakerMean	am-sgmm.h	/^inline void AmSgmm::GetSubstateSpeakerMean(int32 j, int32 m, int32 i,$/;"	f	class:kaldi::AmSgmm
+GetVarScaledSubstateSpeakerMean	am-sgmm.h	/^void AmSgmm::GetVarScaledSubstateSpeakerMean(int32 j, int32 m, int32 i,$/;"	f	class:kaldi::AmSgmm
+H_	estimate-am-sgmm-ebw.cc	/^  const std::vector<SpMatrix<double> > &H_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+H_	estimate-am-sgmm.cc	/^  const std::vector<SpMatrix<double> > &H_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+H_	estimate-am-sgmm.cc	/^  const std::vector<SpMatrix<double> > &H_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+H_	sgmm-clusterable.h	/^  const std::vector< SpMatrix<double> > &H_; \/\/ Reference to a vector of SpMatrix which$/;"	m	class:kaldi::SgmmClusterable
+H_sm_	estimate-am-sgmm.cc	/^  const SpMatrix<double> &H_sm_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+H_spk_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > H_spk_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+HasBasis	fmllr-sgmm.h	/^  bool HasBasis() const { return fmllr_bases_.size() != 0; }$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+IncreasePhoneSpaceDim	am-sgmm.cc	/^void AmSgmm::IncreasePhoneSpaceDim(int32 target_dim,$/;"	f	class:kaldi::AmSgmm
+IncreaseSpkSpaceDim	am-sgmm.cc	/^void AmSgmm::IncreaseSpkSpaceDim(int32 target_dim,$/;"	f	class:kaldi::AmSgmm
+Init	fmllr-sgmm.cc	/^void FmllrSgmmAccs::Init(int32 dim, int32 num_gaussians) {$/;"	f	class:kaldi::FmllrSgmmAccs
+Init	fmllr-sgmm.h	/^inline void SgmmFmllrGlobalParams::Init(const AmSgmm &sgmm,$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+InitializeCovars	am-sgmm.cc	/^void AmSgmm::InitializeCovars() {$/;"	f	class:kaldi::AmSgmm
+InitializeFromFullGmm	am-sgmm.cc	/^void AmSgmm::InitializeFromFullGmm(const FullGmm &full_gmm,$/;"	f	class:kaldi::AmSgmm
+InitializeMw	am-sgmm.cc	/^void AmSgmm::InitializeMw(int32 phn_subspace_dim,$/;"	f	class:kaldi::AmSgmm
+InitializeN	am-sgmm.cc	/^void AmSgmm::InitializeN(int32 spk_subspace_dim,$/;"	f	class:kaldi::AmSgmm
+InitializeVecs	am-sgmm.cc	/^void AmSgmm::InitializeVecs(int32 num_states) {$/;"	f	class:kaldi::AmSgmm
+IsEmpty	am-sgmm.h	/^  bool IsEmpty() const {$/;"	f	struct:kaldi::SgmmPerFrameDerivedVars
+IsEmpty	fmllr-sgmm.h	/^  bool IsEmpty() const {$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+IsLastFrame	decodable-am-sgmm.h	/^  virtual bool IsLastFrame(int32 frame) {$/;"	f	class:kaldi::DecodableAmSgmm
+KALDI_SGMM_AM_SGMM_H_	am-sgmm.h	25;"	d
+KALDI_SGMM_DECODABLE_AM_SGMM_H_	decodable-am-sgmm.h	22;"	d
+KALDI_SGMM_ESTIMATE_AM_SGMM_EBW_H_	estimate-am-sgmm-ebw.h	21;"	d
+KALDI_SGMM_ESTIMATE_AM_SGMM_H_	estimate-am-sgmm.h	25;"	d
+KALDI_SGMM_ESTIMATE_AM_SGMM_MULTI_H_	estimate-am-sgmm-multi.h	21;"	d
+KALDI_SGMM_FMLLR_SGMM_H_	fmllr-sgmm.h	23;"	d
+KALDI_SGMM_SGMM_CLUSTERABLE_H_	sgmm-clusterable.h	21;"	d
+LikelihoodCacheRecord	decodable-am-sgmm.h	/^  struct LikelihoodCacheRecord {$/;"	s	class:kaldi::DecodableAmSgmm
+LogLikelihood	am-sgmm.cc	/^BaseFloat AmSgmm::LogLikelihood(const SgmmPerFrameDerivedVars &per_frame_vars,$/;"	f	class:kaldi::AmSgmm
+LogLikelihood	decodable-am-sgmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmSgmm
+LogLikelihood	decodable-am-sgmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmSgmmScaled
+LogLikelihoodZeroBased	decodable-am-sgmm.cc	/^BaseFloat DecodableAmSgmm::LogLikelihoodZeroBased(int32 frame, int32 pdf_id) {$/;"	f	class:kaldi::DecodableAmSgmm
+M_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > M_;$/;"	m	class:kaldi::AmSgmm
+M_prior_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > M_prior_;  \/\/ Matrix-variate Gaussian mean$/;"	m	class:kaldi::AmSgmm
+MapUpdateM	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::MapUpdateM(const MleAmSgmmAccs &accs, AmSgmm *model) {$/;"	f	class:kaldi::MleAmSgmmUpdater
+MleAmSgmmAccs	estimate-am-sgmm.h	/^  MleAmSgmmAccs(const AmSgmm &model, SgmmUpdateFlagsType flags,$/;"	f	class:kaldi::MleAmSgmmAccs
+MleAmSgmmAccs	estimate-am-sgmm.h	/^  explicit MleAmSgmmAccs(BaseFloat rand_prune = 1.0e-05)$/;"	f	class:kaldi::MleAmSgmmAccs
+MleAmSgmmAccs	estimate-am-sgmm.h	/^class MleAmSgmmAccs {$/;"	c	namespace:kaldi
+MleAmSgmmGlobalAccs	estimate-am-sgmm-multi.h	/^  explicit MleAmSgmmGlobalAccs()$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+MleAmSgmmGlobalAccs	estimate-am-sgmm-multi.h	/^class MleAmSgmmGlobalAccs {$/;"	c	namespace:kaldi
+MleAmSgmmOptions	estimate-am-sgmm.h	/^  MleAmSgmmOptions() {$/;"	f	struct:kaldi::MleAmSgmmOptions
+MleAmSgmmOptions	estimate-am-sgmm.h	/^struct MleAmSgmmOptions {$/;"	s	namespace:kaldi
+MleAmSgmmUpdater	estimate-am-sgmm.h	/^  MleAmSgmmUpdater() {}  \/\/ Prevent unconfigured updater.$/;"	f	class:kaldi::MleAmSgmmUpdater
+MleAmSgmmUpdater	estimate-am-sgmm.h	/^  explicit MleAmSgmmUpdater(const MleAmSgmmOptions &options)$/;"	f	class:kaldi::MleAmSgmmUpdater
+MleAmSgmmUpdater	estimate-am-sgmm.h	/^class MleAmSgmmUpdater {$/;"	c	namespace:kaldi
+MleAmSgmmUpdaterMulti	estimate-am-sgmm-multi.h	/^  MleAmSgmmUpdaterMulti() {}  \/\/ Prevent unconfigured updater.$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+MleAmSgmmUpdaterMulti	estimate-am-sgmm-multi.h	/^  explicit MleAmSgmmUpdaterMulti(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+MleAmSgmmUpdaterMulti	estimate-am-sgmm-multi.h	/^class MleAmSgmmUpdaterMulti {$/;"	c	namespace:kaldi
+MleSgmmSpeakerAccs	estimate-am-sgmm.cc	/^MleSgmmSpeakerAccs::MleSgmmSpeakerAccs(const AmSgmm &model, BaseFloat prune)$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+MleSgmmSpeakerAccs	estimate-am-sgmm.h	/^class MleSgmmSpeakerAccs {$/;"	c	namespace:kaldi
+N_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > N_;$/;"	m	class:kaldi::AmSgmm
+NeedsResizing	am-sgmm.h	/^  bool NeedsResizing(int32 ngauss, int32 feat_dim, int32 phn_dim) const {$/;"	f	struct:kaldi::SgmmPerFrameDerivedVars
+Normalizer	sgmm-clusterable.cc	/^BaseFloat SgmmClusterable::Normalizer() const {$/;"	f	class:kaldi::SgmmClusterable
+NtransSigmaInv_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > NtransSigmaInv_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+NumFrames	decodable-am-sgmm.h	/^  int32 NumFrames() { return feature_matrix_.NumRows(); }$/;"	f	class:kaldi::DecodableAmSgmm
+NumGauss	am-sgmm.h	/^  int32 NumGauss() const { return M_.size(); }$/;"	f	class:kaldi::AmSgmm
+NumGauss	estimate-am-sgmm-multi.h	/^  int32 NumGauss() const { return global_M_.size(); }$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+NumGauss	estimate-am-sgmm-multi.h	/^  int32 NumGauss() const { return num_gaussians_; }$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+NumGauss	estimate-am-sgmm.h	/^  int32 NumGauss() const { return num_gaussians_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+NumIndices	decodable-am-sgmm.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmSgmm
+NumPdfs	am-sgmm.h	/^  int32 NumPdfs() const { return c_.size(); }$/;"	f	class:kaldi::AmSgmm
+NumStates	estimate-am-sgmm.h	/^  int32 NumStates() const { return num_states_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+NumSubstates	am-sgmm.h	/^  int32 NumSubstates(int32 j) const { return c_[j].Dim(); }$/;"	f	class:kaldi::AmSgmm
+Objf	sgmm-clusterable.cc	/^BaseFloat SgmmClusterable::Objf() const {$/;"	f	class:kaldi::SgmmClusterable
+PhoneSpaceDim	am-sgmm.h	/^  int32 PhoneSpaceDim() const { return w_.NumCols(); }$/;"	f	class:kaldi::AmSgmm
+PhoneSpaceDim	estimate-am-sgmm-multi.h	/^  int32 PhoneSpaceDim() const { return global_w_.NumCols(); }$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+PhoneSpaceDim	estimate-am-sgmm-multi.h	/^  int32 PhoneSpaceDim() const { return phn_space_dim_; }$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+PhoneSpaceDim	estimate-am-sgmm.h	/^  int32 PhoneSpaceDim() const { return phn_space_dim_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+Q_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<double> > Q_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+Q_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > Q_;$/;"	m	class:kaldi::MleAmSgmmUpdater
+R_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<double> > R_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+R_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > R_;$/;"	m	class:kaldi::MleAmSgmmAccs
+RandomAccessSgmmGauPostReader	am-sgmm.h	/^typedef RandomAccessTableReader<SgmmGauPostHolder> RandomAccessSgmmGauPostReader;$/;"	t	namespace:kaldi
+Read	am-sgmm.cc	/^void AmSgmm::Read(std::istream &in_stream, bool binary) {$/;"	f	class:kaldi::AmSgmm
+Read	am-sgmm.cc	/^void SgmmGauPost::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::SgmmGauPost
+Read	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::Read(std::istream &in_stream, bool binary,$/;"	f	class:kaldi::MleAmSgmmAccs
+Read	fmllr-sgmm.cc	/^void FmllrSgmmAccs::Read(std::istream &in, bool binary, bool add) {$/;"	f	class:kaldi::FmllrSgmmAccs
+Read	fmllr-sgmm.cc	/^void SgmmFmllrGlobalParams::Read(std::istream &in, bool binary) {$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+ReadNew	sgmm-clusterable.cc	/^Clusterable *SgmmClusterable::ReadNew(std::istream &is, bool binary) const {$/;"	f	class:kaldi::SgmmClusterable
+Reconfigure	estimate-am-sgmm.h	/^  void Reconfigure(const MleAmSgmmOptions &options) {$/;"	f	class:kaldi::MleAmSgmmUpdater
+Register	am-sgmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::SgmmGselectConfig
+Register	estimate-am-sgmm-ebw.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::EbwAmSgmmOptions
+Register	estimate-am-sgmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MleAmSgmmOptions
+Register	fmllr-sgmm.h	/^inline void SgmmFmllrConfig::Register(OptionsItf *po) {$/;"	f	class:kaldi::SgmmFmllrConfig
+RemoveSpeakerSpace	am-sgmm.h	/^  void RemoveSpeakerSpace() { N_.clear(); }$/;"	f	class:kaldi::AmSgmm
+RenormalizeN	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::RenormalizeN($/;"	f	class:kaldi::MleAmSgmmUpdater
+RenormalizeV	estimate-am-sgmm-multi.cc	/^void MleAmSgmmUpdaterMulti::RenormalizeV(const SpMatrix<double> &H_sm,$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+RenormalizeV	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::RenormalizeV(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+ResetLogLikeCache	decodable-am-sgmm.cc	/^void DecodableAmSgmm::ResetLogLikeCache() {$/;"	f	class:kaldi::DecodableAmSgmm
+Resize	am-sgmm.h	/^  void Resize(int32 ngauss, int32 feat_dim, int32 phn_dim) {$/;"	f	struct:kaldi::SgmmPerFrameDerivedVars
+ResizeAccumulators	estimate-am-sgmm-multi.cc	/^void MleAmSgmmGlobalAccs::ResizeAccumulators(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+ResizeAccumulators	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::ResizeAccumulators(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmAccs
+S_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<double> > S_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+S_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > S_;$/;"	m	class:kaldi::MleAmSgmmAccs
+S_means_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<double> > S_means_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+S_means_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > S_means_;$/;"	m	class:kaldi::MleAmSgmmUpdater
+Scale	sgmm-clusterable.cc	/^void SgmmClusterable::Scale(BaseFloat f) {$/;"	f	class:kaldi::SgmmClusterable
+SequentialSgmmGauPostReader	am-sgmm.h	/^typedef SequentialTableReader<SgmmGauPostHolder> SequentialSgmmGauPostReader;$/;"	t	namespace:kaldi
+SetZero	fmllr-sgmm.h	/^  void SetZero() { stats_.SetZero(); }$/;"	f	class:kaldi::FmllrSgmmAccs
+SetZero	sgmm-clusterable.cc	/^void SgmmClusterable::SetZero() {$/;"	f	class:kaldi::SgmmClusterable
+SgmmClusterable	sgmm-clusterable.h	/^  SgmmClusterable(const AmSgmm &sgmm,$/;"	f	class:kaldi::SgmmClusterable
+SgmmClusterable	sgmm-clusterable.h	/^class SgmmClusterable: public Clusterable {$/;"	c	namespace:kaldi
+SgmmFmllrConfig	fmllr-sgmm.h	/^  SgmmFmllrConfig() {$/;"	f	struct:kaldi::SgmmFmllrConfig
+SgmmFmllrConfig	fmllr-sgmm.h	/^struct SgmmFmllrConfig {$/;"	s	namespace:kaldi
+SgmmFmllrGlobalParams	fmllr-sgmm.h	/^class SgmmFmllrGlobalParams {$/;"	c	namespace:kaldi
+SgmmGauPost	am-sgmm.h	/^  SgmmGauPost() {}$/;"	f	class:kaldi::SgmmGauPost
+SgmmGauPost	am-sgmm.h	/^  explicit SgmmGauPost(size_t i) : std::vector<SgmmGauPostElement>(i) {}$/;"	f	class:kaldi::SgmmGauPost
+SgmmGauPost	am-sgmm.h	/^class SgmmGauPost: public std::vector<SgmmGauPostElement> {$/;"	c	namespace:kaldi
+SgmmGauPostElement	am-sgmm.h	/^struct SgmmGauPostElement {$/;"	s	namespace:kaldi
+SgmmGauPostHolder	am-sgmm.h	/^typedef KaldiObjectHolder<SgmmGauPost> SgmmGauPostHolder;$/;"	t	namespace:kaldi
+SgmmGauPostWriter	am-sgmm.h	/^typedef TableWriter<SgmmGauPostHolder> SgmmGauPostWriter;$/;"	t	namespace:kaldi
+SgmmGselectConfig	am-sgmm.h	/^  SgmmGselectConfig() {$/;"	f	struct:kaldi::SgmmGselectConfig
+SgmmGselectConfig	am-sgmm.h	/^struct SgmmGselectConfig {$/;"	s	namespace:kaldi
+SgmmPerFrameDerivedVars	am-sgmm.h	/^  SgmmPerFrameDerivedVars() : xt(0), xti(0, 0), zti(0, 0), nti(0) {}$/;"	f	struct:kaldi::SgmmPerFrameDerivedVars
+SgmmPerFrameDerivedVars	am-sgmm.h	/^struct SgmmPerFrameDerivedVars {$/;"	s	namespace:kaldi
+SgmmPerSpkDerivedVars	am-sgmm.h	/^struct SgmmPerSpkDerivedVars {$/;"	s	namespace:kaldi
+SigmaInv_	am-sgmm.h	/^  std::vector< SpMatrix<BaseFloat> > SigmaInv_;$/;"	m	class:kaldi::AmSgmm
+SpkSpaceDim	am-sgmm.h	/^  int32 SpkSpaceDim() const { return (N_.size() > 0) ? N_[0].NumCols() : 0; }$/;"	f	class:kaldi::AmSgmm
+SpkSpaceDim	estimate-am-sgmm-multi.h	/^  int32 SpkSpaceDim() const {$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+SplitSubstates	am-sgmm.cc	/^void AmSgmm::SplitSubstates(const Vector<BaseFloat> &state_occupancies,$/;"	f	class:kaldi::AmSgmm
+StateVectors	am-sgmm.h	/^  const Matrix<BaseFloat>& StateVectors(int32 state_index) const {$/;"	f	class:kaldi::AmSgmm
+Sub	sgmm-clusterable.cc	/^void SgmmClusterable::Sub(const Clusterable &other_in) {$/;"	f	class:kaldi::SgmmClusterable
+SubstateCounter	am-sgmm.cc	/^  SubstateCounter(int32 j, int32 num_substates, BaseFloat occ)$/;"	f	struct:kaldi::SubstateCounter
+SubstateCounter	am-sgmm.cc	/^struct SubstateCounter {$/;"	s	namespace:kaldi	file:
+TestMultiSgmmEst	estimate-am-sgmm-multi-test.cc	/^void TestMultiSgmmEst(const std::vector<AmSgmm*> &models,$/;"	f
+TestSgmmFmllr	fmllr-sgmm-test.cc	/^void TestSgmmFmllr() {$/;"	f
+TestSgmmFmllrAccsIO	fmllr-sgmm-test.cc	/^void TestSgmmFmllrAccsIO(const AmSgmm &sgmm,$/;"	f
+TestSgmmFmllrSubspace	fmllr-sgmm-test.cc	/^void TestSgmmFmllrSubspace(const AmSgmm &sgmm,$/;"	f
+TestSgmmIO	am-sgmm-test.cc	/^void TestSgmmIO(const AmSgmm &sgmm) {$/;"	f
+TestSgmmIncreaseDim	am-sgmm-test.cc	/^void TestSgmmIncreaseDim(const AmSgmm &sgmm) {$/;"	f
+TestSgmmInit	am-sgmm-test.cc	/^void TestSgmmInit(const AmSgmm &sgmm) {$/;"	f
+TestSgmmPreXform	am-sgmm-test.cc	/^void TestSgmmPreXform(const AmSgmm &sgmm) {$/;"	f
+TestSgmmSubstates	am-sgmm-test.cc	/^void TestSgmmSubstates(const AmSgmm &sgmm) {$/;"	f
+TestUpdateAndAccsIO	estimate-am-sgmm-test.cc	/^void TestUpdateAndAccsIO(const AmSgmm &sgmm,$/;"	f
+TotalFrames	estimate-am-sgmm.h	/^  double TotalFrames() const { return total_frames_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+TotalLike	estimate-am-sgmm.h	/^  double TotalLike() const { return total_like_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+Type	sgmm-clusterable.h	/^  virtual std::string Type() const { return "sgmm"; }$/;"	f	class:kaldi::SgmmClusterable
+UnitTestEstimateSgmm	estimate-am-sgmm-multi-test.cc	/^void UnitTestEstimateSgmm() {$/;"	f
+UnitTestEstimateSgmm	estimate-am-sgmm-test.cc	/^void UnitTestEstimateSgmm() {$/;"	f
+UnitTestSgmm	am-sgmm-test.cc	/^void UnitTestSgmm() {$/;"	f
+Update	estimate-am-sgmm-ebw.cc	/^void EbwAmSgmmUpdater::Update(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+Update	estimate-am-sgmm-multi.cc	/^void MleAmSgmmUpdaterMulti::Update(const std::vector<MleAmSgmmAccs*> &accs,$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+Update	estimate-am-sgmm.cc	/^BaseFloat MleAmSgmmUpdater::Update(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+Update	estimate-am-sgmm.cc	/^void MleSgmmSpeakerAccs::Update(BaseFloat min_count,$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+Update	fmllr-sgmm.cc	/^bool FmllrSgmmAccs::Update(const AmSgmm &sgmm,$/;"	f	class:kaldi::FmllrSgmmAccs
+UpdateGlobals	estimate-am-sgmm-multi.cc	/^BaseFloat MleAmSgmmUpdaterMulti::UpdateGlobals(const MleAmSgmmGlobalAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+UpdateM	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateM(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+UpdateM	estimate-am-sgmm-multi.cc	/^double MleAmSgmmUpdaterMulti::UpdateM(const MleAmSgmmGlobalAccs &accs) {$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+UpdateM	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateM(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdateN	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateN(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+UpdateN	estimate-am-sgmm-multi.cc	/^double MleAmSgmmUpdaterMulti::UpdateN(const MleAmSgmmGlobalAccs &accs) {$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+UpdateN	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateN(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdatePhoneVectors	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdatePhoneVectors(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+UpdatePhoneVectors	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdatePhoneVectors(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdatePhoneVectorsChecked	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdatePhoneVectorsChecked(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdatePhoneVectorsCheckedFromClusterable	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdatePhoneVectorsCheckedFromClusterable($/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdatePhoneVectorsCheckedFromClusterableClass	estimate-am-sgmm.cc	/^  UpdatePhoneVectorsCheckedFromClusterableClass($/;"	f	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass
+UpdatePhoneVectorsCheckedFromClusterableClass	estimate-am-sgmm.cc	/^class UpdatePhoneVectorsCheckedFromClusterableClass: public MultiThreadable { \/\/ For multi-threaded.$/;"	c	namespace:kaldi	file:
+UpdatePhoneVectorsCheckedFromClusterableInternal	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::UpdatePhoneVectorsCheckedFromClusterableInternal($/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdatePhoneVectorsClass	estimate-am-sgmm.cc	/^  UpdatePhoneVectorsClass(const MleAmSgmmUpdater &updater,$/;"	f	class:kaldi::UpdatePhoneVectorsClass
+UpdatePhoneVectorsClass	estimate-am-sgmm.cc	/^class UpdatePhoneVectorsClass: public MultiThreadable { \/\/ For multi-threaded.$/;"	c	namespace:kaldi	file:
+UpdatePhoneVectorsInternal	estimate-am-sgmm-ebw.cc	/^void EbwAmSgmmUpdater::UpdatePhoneVectorsInternal($/;"	f	class:kaldi::EbwAmSgmmUpdater
+UpdatePhoneVectorsInternal	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::UpdatePhoneVectorsInternal($/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdateSubstateWeights	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateSubstateWeights($/;"	f	class:kaldi::EbwAmSgmmUpdater
+UpdateSubstateWeights	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateSubstateWeights($/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdateVars	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateVars(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+UpdateVars	estimate-am-sgmm-multi.cc	/^double MleAmSgmmUpdaterMulti::UpdateVars(const MleAmSgmmGlobalAccs &accs) {$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+UpdateVars	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateVars(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdateWParallel	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateWParallel(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+UpdateWParallel	estimate-am-sgmm-multi.cc	/^double MleAmSgmmUpdaterMulti::UpdateWParallel($/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+UpdateWParallel	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateWParallel(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdateWParallelClass	estimate-am-sgmm.h	/^  UpdateWParallelClass(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::UpdateWParallelClass
+UpdateWParallelClass	estimate-am-sgmm.h	/^class UpdateWParallelClass: public MultiThreadable {$/;"	c	namespace:kaldi
+UpdateWParallelGetStats	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::UpdateWParallelGetStats(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+UpdateWSequential	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateWSequential($/;"	f	class:kaldi::MleAmSgmmUpdater
+Write	am-sgmm.cc	/^void AmSgmm::Write(std::ostream &out_stream, bool binary,$/;"	f	class:kaldi::AmSgmm
+Write	am-sgmm.cc	/^void SgmmGauPost::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::SgmmGauPost
+Write	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::MleAmSgmmAccs
+Write	fmllr-sgmm.cc	/^void FmllrSgmmAccs::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::FmllrSgmmAccs
+Write	fmllr-sgmm.cc	/^void SgmmFmllrGlobalParams::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+Write	sgmm-clusterable.cc	/^void SgmmClusterable::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::SgmmClusterable
+Y_	estimate-am-sgmm-multi.h	/^  std::vector< Matrix<double> > Y_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+Y_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > Y_;$/;"	m	class:kaldi::MleAmSgmmAccs
+Z_	estimate-am-sgmm-multi.h	/^  std::vector< Matrix<double> > Z_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+Z_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > Z_;$/;"	m	class:kaldi::MleAmSgmmAccs
+ZeroAccumulators	estimate-am-sgmm-multi.cc	/^void MleAmSgmmGlobalAccs::ZeroAccumulators(SgmmUpdateFlagsType flags) {$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+accs_	estimate-am-sgmm.cc	/^  const MleAmSgmmAccs &accs_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+accs_	estimate-am-sgmm.h	/^  const MleAmSgmmAccs &accs_;$/;"	m	class:kaldi::UpdateWParallelClass
+acoustic_model_	decodable-am-sgmm.h	/^  const AmSgmm &acoustic_model_;$/;"	m	class:kaldi::DecodableAmSgmm
+am_sgmm_	am-sgmm.cc	/^  AmSgmm *am_sgmm_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+auxf_impr_	estimate-am-sgmm-ebw.cc	/^  double auxf_impr_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+auxf_impr_	estimate-am-sgmm.cc	/^  double auxf_impr_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+auxf_impr_ptr_	estimate-am-sgmm-ebw.cc	/^  double *auxf_impr_ptr_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+auxf_impr_ptr_	estimate-am-sgmm.cc	/^  double *auxf_impr_ptr_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+bases_occ_scale	fmllr-sgmm.h	/^  BaseFloat bases_occ_scale;$/;"	m	struct:kaldi::SgmmFmllrConfig
+c_	am-sgmm.h	/^  std::vector< Vector<BaseFloat> > c_;$/;"	m	class:kaldi::AmSgmm
+check_v	estimate-am-sgmm.h	/^  bool check_v;$/;"	m	struct:kaldi::MleAmSgmmOptions
+col_cov_inv_	am-sgmm.h	/^  SpMatrix<BaseFloat> col_cov_inv_;$/;"	m	class:kaldi::AmSgmm
+count_	estimate-am-sgmm.cc	/^  double count_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+count_ptr_	estimate-am-sgmm.cc	/^  double *count_ptr_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+cov_diag_ratio	estimate-am-sgmm.h	/^  BaseFloat cov_diag_ratio;$/;"	m	struct:kaldi::MleAmSgmmOptions
+cov_floor	estimate-am-sgmm.h	/^  BaseFloat cov_floor;$/;"	m	struct:kaldi::MleAmSgmmOptions
+cov_min_value	estimate-am-sgmm-ebw.h	/^  BaseFloat cov_min_value; \/\/\/< E.g. 0.5-- the maximum any eigenvalue of a covariance$/;"	m	struct:kaldi::EbwAmSgmmOptions
+den_accs_	estimate-am-sgmm-ebw.cc	/^  const MleAmSgmmAccs &den_accs_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+diag_gmm_nbest	am-sgmm.h	/^  int32 diag_gmm_nbest;$/;"	m	struct:kaldi::SgmmGselectConfig
+diag_ubm	am-sgmm.h	/^  const DiagGmm & diag_ubm() const { return diag_ubm_; }$/;"	f	class:kaldi::AmSgmm
+diag_ubm_	am-sgmm.h	/^  DiagGmm diag_ubm_;$/;"	m	class:kaldi::AmSgmm
+dim_	fmllr-sgmm.h	/^  int32 dim_;  \/\/\/< Dimension of feature vectors$/;"	m	class:kaldi::FmllrSgmmAccs
+entropy_count_	am-sgmm.cc	/^  int32 entropy_count_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+entropy_count_ptr_	am-sgmm.cc	/^  int32 *entropy_count_ptr_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+entropy_sum_	am-sgmm.cc	/^  double entropy_sum_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+entropy_sum_ptr_	am-sgmm.cc	/^  double *entropy_sum_ptr_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+epsilon	estimate-am-sgmm-ebw.h	/^  BaseFloat epsilon;  \/\/\/< very small value used in SolveQuadraticProblem; workaround$/;"	m	struct:kaldi::EbwAmSgmmOptions
+epsilon	estimate-am-sgmm.h	/^  BaseFloat epsilon;  \/\/\/< very small value used to prevent SVD crashing.$/;"	m	struct:kaldi::MleAmSgmmOptions
+feature_dim_	estimate-am-sgmm-multi.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+feature_dim_	estimate-am-sgmm.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmAccs
+feature_matrix_	decodable-am-sgmm.h	/^  const Matrix<BaseFloat> &feature_matrix_;$/;"	m	class:kaldi::DecodableAmSgmm
+fixup_H_sm	estimate-am-sgmm.h	/^  bool fixup_H_sm;$/;"	m	struct:kaldi::MleAmSgmmOptions
+fmllr_bases_	fmllr-sgmm.h	/^  std::vector< Matrix<BaseFloat> > fmllr_bases_;$/;"	m	class:kaldi::SgmmFmllrGlobalParams
+fmllr_iters	fmllr-sgmm.h	/^  int32 fmllr_iters;  \/\/\/< Number of iterations in FMLLR estimation.$/;"	m	struct:kaldi::SgmmFmllrConfig
+fmllr_min_count	fmllr-sgmm.h	/^  BaseFloat fmllr_min_count;$/;"	m	struct:kaldi::SgmmFmllrConfig
+fmllr_min_count_basis	fmllr-sgmm.h	/^  BaseFloat fmllr_min_count_basis;$/;"	m	struct:kaldi::SgmmFmllrConfig
+fmllr_min_count_full	fmllr-sgmm.h	/^  BaseFloat fmllr_min_count_full;$/;"	m	struct:kaldi::SgmmFmllrConfig
+full_col_cov	estimate-am-sgmm.h	/^  bool full_col_cov;  \/\/\/< Estimate col covariance instead of using I$/;"	m	struct:kaldi::MleAmSgmmOptions
+full_gmm_nbest	am-sgmm.h	/^  int32 full_gmm_nbest;$/;"	m	struct:kaldi::SgmmGselectConfig
+full_row_cov	estimate-am-sgmm.h	/^  bool full_row_cov;  \/\/\/< Estimate row covariance instead of using I$/;"	m	struct:kaldi::MleAmSgmmOptions
+full_ubm	am-sgmm.h	/^  const FullGmm & full_ubm() const { return full_ubm_; }$/;"	f	class:kaldi::AmSgmm
+full_ubm_	am-sgmm.h	/^  FullGmm full_ubm_;$/;"	m	class:kaldi::AmSgmm
+g_i_	estimate-am-sgmm.h	/^  Matrix<double> g_i_;$/;"	m	class:kaldi::UpdateWParallelClass
+g_i_ptr_	estimate-am-sgmm.h	/^  Matrix<double> *g_i_ptr_;$/;"	m	class:kaldi::UpdateWParallelClass
+gamma	sgmm-clusterable.h	/^  const Vector<double> &gamma () const { return gamma_; }$/;"	f	class:kaldi::SgmmClusterable
+gamma_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > gamma_;$/;"	m	class:kaldi::MleAmSgmmAccs
+gamma_	sgmm-clusterable.h	/^  Vector<double> gamma_; \/\/ Occupation counts for each Gaussian index.  Comparable$/;"	m	class:kaldi::SgmmClusterable
+gamma_i_	estimate-am-sgmm-multi.h	/^  Vector<double> gamma_i_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+gamma_j_	estimate-am-sgmm-ebw.h	/^  Vector<double> gamma_j_;  \/\/\/< State occupancies$/;"	m	class:kaldi::EbwAmSgmmUpdater
+gamma_j_	estimate-am-sgmm.h	/^  Vector<double> gamma_j_;  \/\/\/< State occupancies$/;"	m	class:kaldi::MleAmSgmmUpdater
+gamma_s_	estimate-am-sgmm.h	/^  Vector<double> gamma_s_;$/;"	m	class:kaldi::MleAmSgmmAccs
+gamma_s_	estimate-am-sgmm.h	/^  Vector<double> gamma_s_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+global_M_	estimate-am-sgmm-multi.h	/^  std::vector< Matrix<BaseFloat> > global_M_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+global_N_	estimate-am-sgmm-multi.h	/^  std::vector< Matrix<BaseFloat> > global_N_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+global_SigmaInv_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<BaseFloat> > global_SigmaInv_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+global_w_	estimate-am-sgmm-multi.h	/^  Matrix<BaseFloat> global_w_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+gselect	am-sgmm.h	/^  std::vector<int32> gselect;$/;"	m	struct:kaldi::SgmmGauPostElement
+gselect	am-sgmm.h	/^  std::vector<int32> gselect;$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+gselect_	decodable-am-sgmm.h	/^  std::vector<int32> gselect_;$/;"	m	class:kaldi::DecodableAmSgmm
+gselect_all_	decodable-am-sgmm.h	/^  const std::vector<std::vector<int32> > gselect_all_;  \/\/\/< if nonempty,$/;"	m	class:kaldi::DecodableAmSgmm
+hit_time	decodable-am-sgmm.h	/^    int32 hit_time;     \/\/\/< Frame for which this value is relevant$/;"	m	struct:kaldi::DecodableAmSgmm::LikelihoodCacheRecord
+inv_xform_	fmllr-sgmm.h	/^  Matrix<BaseFloat> inv_xform_;$/;"	m	class:kaldi::SgmmFmllrGlobalParams
+kaldi	am-sgmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	am-sgmm.h	/^namespace kaldi {$/;"	n
+kaldi	decodable-am-sgmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	decodable-am-sgmm.h	/^namespace kaldi {$/;"	n
+kaldi	estimate-am-sgmm-ebw.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	estimate-am-sgmm-ebw.h	/^namespace kaldi {$/;"	n
+kaldi	estimate-am-sgmm-multi.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	estimate-am-sgmm-multi.h	/^namespace kaldi {$/;"	n
+kaldi	estimate-am-sgmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	estimate-am-sgmm.h	/^namespace kaldi {$/;"	n
+kaldi	fmllr-sgmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	fmllr-sgmm.h	/^namespace kaldi {$/;"	n
+kaldi	sgmm-clusterable.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm-clusterable.h	/^namespace kaldi {$/;"	n
+kaldi::AccumulateSgmmTreeStats	sgmm-clusterable.cc	/^bool AccumulateSgmmTreeStats(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::AmSgmm	am-sgmm.h	/^class AmSgmm {$/;"	c	namespace:kaldi
+kaldi::AmSgmm::AmSgmm	am-sgmm.h	/^  AmSgmm() {}$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::Check	am-sgmm.cc	/^void AmSgmm::Check(bool show_properties) {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComponentPosteriors	am-sgmm.cc	/^AmSgmm::ComponentPosteriors(const SgmmPerFrameDerivedVars &per_frame_vars,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComputeDerivedVars	am-sgmm.cc	/^void AmSgmm::ComputeDerivedVars() {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComputeFmllrPreXform	am-sgmm.cc	/^void AmSgmm::ComputeFmllrPreXform(const Vector<BaseFloat> &state_occs,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComputeH	am-sgmm.cc	/^void AmSgmm::ComputeH(std::vector< SpMatrix<Real> > *H_i) const {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComputeNormalizers	am-sgmm.cc	/^void AmSgmm::ComputeNormalizers() {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComputeNormalizersInternal	am-sgmm.cc	/^void AmSgmm::ComputeNormalizersInternal(int32 num_threads, int32 thread,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComputeNormalizersNormalized	am-sgmm.cc	/^void AmSgmm::ComputeNormalizersNormalized($/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComputePerFrameVars	am-sgmm.cc	/^void AmSgmm::ComputePerFrameVars(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComputePerSpkDerivedVars	am-sgmm.cc	/^void AmSgmm::ComputePerSpkDerivedVars(SgmmPerSpkDerivedVars *vars) const {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::ComputeSmoothingTermsFromModel	am-sgmm.cc	/^void AmSgmm::ComputeSmoothingTermsFromModel($/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::CopyFromSgmm	am-sgmm.cc	/^void AmSgmm::CopyFromSgmm(const AmSgmm &other,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::CopyGlobalsInitVecs	am-sgmm.cc	/^void AmSgmm::CopyGlobalsInitVecs(const AmSgmm &other,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::FeatureDim	am-sgmm.h	/^  int32 FeatureDim() const { return M_[0].NumRows(); }$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::GaussianSelection	am-sgmm.cc	/^BaseFloat AmSgmm::GaussianSelection(const SgmmGselectConfig &config,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::GaussianSelectionPreselect	am-sgmm.cc	/^BaseFloat AmSgmm::GaussianSelectionPreselect(const SgmmGselectConfig &config,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::GetInvCovars	am-sgmm.h	/^  const SpMatrix<BaseFloat>& GetInvCovars(int32 gauss_index) const {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::GetInvCovars	am-sgmm.h	/^inline void AmSgmm::GetInvCovars(int32 gauss_index,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::GetNtransSigmaInv	am-sgmm.cc	/^void AmSgmm::GetNtransSigmaInv(vector< Matrix<Real> > *out) const {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::GetPhoneProjection	am-sgmm.h	/^  const Matrix<BaseFloat>& GetPhoneProjection(int32 gauss_index) const {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::GetSubstateMean	am-sgmm.h	/^inline void AmSgmm::GetSubstateMean(int32 j, int32 m, int32 i,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::GetSubstateSpeakerMean	am-sgmm.h	/^inline void AmSgmm::GetSubstateSpeakerMean(int32 j, int32 m, int32 i,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::GetVarScaledSubstateSpeakerMean	am-sgmm.h	/^void AmSgmm::GetVarScaledSubstateSpeakerMean(int32 j, int32 m, int32 i,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::IncreasePhoneSpaceDim	am-sgmm.cc	/^void AmSgmm::IncreasePhoneSpaceDim(int32 target_dim,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::IncreaseSpkSpaceDim	am-sgmm.cc	/^void AmSgmm::IncreaseSpkSpaceDim(int32 target_dim,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::InitializeCovars	am-sgmm.cc	/^void AmSgmm::InitializeCovars() {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::InitializeFromFullGmm	am-sgmm.cc	/^void AmSgmm::InitializeFromFullGmm(const FullGmm &full_gmm,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::InitializeMw	am-sgmm.cc	/^void AmSgmm::InitializeMw(int32 phn_subspace_dim,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::InitializeN	am-sgmm.cc	/^void AmSgmm::InitializeN(int32 spk_subspace_dim,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::InitializeVecs	am-sgmm.cc	/^void AmSgmm::InitializeVecs(int32 num_states) {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::LogLikelihood	am-sgmm.cc	/^BaseFloat AmSgmm::LogLikelihood(const SgmmPerFrameDerivedVars &per_frame_vars,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::M_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > M_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::M_prior_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > M_prior_;  \/\/ Matrix-variate Gaussian mean$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::N_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > N_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::NumGauss	am-sgmm.h	/^  int32 NumGauss() const { return M_.size(); }$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::NumPdfs	am-sgmm.h	/^  int32 NumPdfs() const { return c_.size(); }$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::NumSubstates	am-sgmm.h	/^  int32 NumSubstates(int32 j) const { return c_[j].Dim(); }$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::PhoneSpaceDim	am-sgmm.h	/^  int32 PhoneSpaceDim() const { return w_.NumCols(); }$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::Read	am-sgmm.cc	/^void AmSgmm::Read(std::istream &in_stream, bool binary) {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::RemoveSpeakerSpace	am-sgmm.h	/^  void RemoveSpeakerSpace() { N_.clear(); }$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::SigmaInv_	am-sgmm.h	/^  std::vector< SpMatrix<BaseFloat> > SigmaInv_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::SpkSpaceDim	am-sgmm.h	/^  int32 SpkSpaceDim() const { return (N_.size() > 0) ? N_[0].NumCols() : 0; }$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::SplitSubstates	am-sgmm.cc	/^void AmSgmm::SplitSubstates(const Vector<BaseFloat> &state_occupancies,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::StateVectors	am-sgmm.h	/^  const Matrix<BaseFloat>& StateVectors(int32 state_index) const {$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::Write	am-sgmm.cc	/^void AmSgmm::Write(std::ostream &out_stream, bool binary,$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::c_	am-sgmm.h	/^  std::vector< Vector<BaseFloat> > c_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::col_cov_inv_	am-sgmm.h	/^  SpMatrix<BaseFloat> col_cov_inv_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::diag_ubm	am-sgmm.h	/^  const DiagGmm & diag_ubm() const { return diag_ubm_; }$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::diag_ubm_	am-sgmm.h	/^  DiagGmm diag_ubm_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::full_ubm	am-sgmm.h	/^  const FullGmm & full_ubm() const { return full_ubm_; }$/;"	f	class:kaldi::AmSgmm
+kaldi::AmSgmm::full_ubm_	am-sgmm.h	/^  FullGmm full_ubm_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::n_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > n_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::row_cov_inv_	am-sgmm.h	/^  SpMatrix<BaseFloat> row_cov_inv_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::v_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > v_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmm::w_	am-sgmm.h	/^  Matrix<BaseFloat> w_;$/;"	m	class:kaldi::AmSgmm
+kaldi::AmSgmmFunctions	am-sgmm.h	/^class AmSgmmFunctions {$/;"	c	namespace:kaldi
+kaldi::AmSgmmFunctions::ComputeDistances	am-sgmm.cc	/^void AmSgmmFunctions::ComputeDistances(const AmSgmm &model,$/;"	f	class:kaldi::AmSgmmFunctions
+kaldi::ApplyHessianXformToGradient	fmllr-sgmm.cc	/^static void ApplyHessianXformToGradient(const SgmmFmllrGlobalParams &globals,$/;"	f	namespace:kaldi
+kaldi::ApplyInvHessianXformToChange	fmllr-sgmm.cc	/^static void ApplyInvHessianXformToChange(const SgmmFmllrGlobalParams &globals,$/;"	f	namespace:kaldi
+kaldi::ApplyInvPreXformToChange	fmllr-sgmm.cc	/^static void ApplyInvPreXformToChange(const SgmmFmllrGlobalParams &globals,$/;"	f	namespace:kaldi
+kaldi::ApplyPreXformToGradient	fmllr-sgmm.cc	/^static void ApplyPreXformToGradient(const SgmmFmllrGlobalParams &globals,$/;"	f	namespace:kaldi
+kaldi::CalcFmllrStepSize	fmllr-sgmm.cc	/^static BaseFloat CalcFmllrStepSize(const AffineXformStats &stats,$/;"	f	namespace:kaldi
+kaldi::ComputeFeatureNormalizer	am-sgmm.cc	/^void ComputeFeatureNormalizer(const FullGmm &gmm, Matrix<BaseFloat> *xform) {$/;"	f	namespace:kaldi
+kaldi::ComputeNormalizersClass	am-sgmm.cc	/^class ComputeNormalizersClass: public MultiThreadable { \/\/ For multi-threaded.$/;"	c	namespace:kaldi	file:
+kaldi::ComputeNormalizersClass::ComputeNormalizersClass	am-sgmm.cc	/^  ComputeNormalizersClass() { } \/\/ Disallow empty constructor.$/;"	f	class:kaldi::ComputeNormalizersClass	file:
+kaldi::ComputeNormalizersClass::ComputeNormalizersClass	am-sgmm.cc	/^  ComputeNormalizersClass(AmSgmm *am_sgmm,$/;"	f	class:kaldi::ComputeNormalizersClass
+kaldi::ComputeNormalizersClass::am_sgmm_	am-sgmm.cc	/^  AmSgmm *am_sgmm_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+kaldi::ComputeNormalizersClass::entropy_count_	am-sgmm.cc	/^  int32 entropy_count_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+kaldi::ComputeNormalizersClass::entropy_count_ptr_	am-sgmm.cc	/^  int32 *entropy_count_ptr_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+kaldi::ComputeNormalizersClass::entropy_sum_	am-sgmm.cc	/^  double entropy_sum_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+kaldi::ComputeNormalizersClass::entropy_sum_ptr_	am-sgmm.cc	/^  double *entropy_sum_ptr_;$/;"	m	class:kaldi::ComputeNormalizersClass	file:
+kaldi::ComputeNormalizersClass::operator ()	am-sgmm.cc	/^  inline void operator() () {$/;"	f	class:kaldi::ComputeNormalizersClass
+kaldi::ComputeNormalizersClass::~ComputeNormalizersClass	am-sgmm.cc	/^  ~ComputeNormalizersClass() {$/;"	f	class:kaldi::ComputeNormalizersClass
+kaldi::DecodableAmSgmm	decodable-am-sgmm.h	/^class DecodableAmSgmm : public DecodableInterface {$/;"	c	namespace:kaldi
+kaldi::DecodableAmSgmm::DecodableAmSgmm	decodable-am-sgmm.h	/^  DecodableAmSgmm(const SgmmGselectConfig &opts,$/;"	f	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::IsLastFrame	decodable-am-sgmm.h	/^  virtual bool IsLastFrame(int32 frame) {$/;"	f	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::LikelihoodCacheRecord	decodable-am-sgmm.h	/^  struct LikelihoodCacheRecord {$/;"	s	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::LikelihoodCacheRecord::hit_time	decodable-am-sgmm.h	/^    int32 hit_time;     \/\/\/< Frame for which this value is relevant$/;"	m	struct:kaldi::DecodableAmSgmm::LikelihoodCacheRecord
+kaldi::DecodableAmSgmm::LikelihoodCacheRecord::log_like	decodable-am-sgmm.h	/^    BaseFloat log_like;  \/\/\/< Cache value$/;"	m	struct:kaldi::DecodableAmSgmm::LikelihoodCacheRecord
+kaldi::DecodableAmSgmm::LogLikelihood	decodable-am-sgmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::LogLikelihoodZeroBased	decodable-am-sgmm.cc	/^BaseFloat DecodableAmSgmm::LogLikelihoodZeroBased(int32 frame, int32 pdf_id) {$/;"	f	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::NumFrames	decodable-am-sgmm.h	/^  int32 NumFrames() { return feature_matrix_.NumRows(); }$/;"	f	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::NumIndices	decodable-am-sgmm.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::ResetLogLikeCache	decodable-am-sgmm.cc	/^void DecodableAmSgmm::ResetLogLikeCache() {$/;"	f	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::acoustic_model_	decodable-am-sgmm.h	/^  const AmSgmm &acoustic_model_;$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::feature_matrix_	decodable-am-sgmm.h	/^  const Matrix<BaseFloat> &feature_matrix_;$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::gselect_	decodable-am-sgmm.h	/^  std::vector<int32> gselect_;$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::gselect_all_	decodable-am-sgmm.h	/^  const std::vector<std::vector<int32> > gselect_all_;  \/\/\/< if nonempty,$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::log_like_cache_	decodable-am-sgmm.h	/^  std::vector<LikelihoodCacheRecord> log_like_cache_;$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::log_prune_	decodable-am-sgmm.h	/^  BaseFloat log_prune_;$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::per_frame_vars_	decodable-am-sgmm.h	/^  SgmmPerFrameDerivedVars per_frame_vars_;$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::previous_frame_	decodable-am-sgmm.h	/^  int32 previous_frame_;$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::sgmm_config_	decodable-am-sgmm.h	/^  const SgmmGselectConfig &sgmm_config_;$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::spk_	decodable-am-sgmm.h	/^  const SgmmPerSpkDerivedVars &spk_;$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmm::trans_model_	decodable-am-sgmm.h	/^  const TransitionModel &trans_model_;  \/\/\/< for tid to pdf mapping$/;"	m	class:kaldi::DecodableAmSgmm
+kaldi::DecodableAmSgmmScaled	decodable-am-sgmm.h	/^class DecodableAmSgmmScaled : public DecodableAmSgmm {$/;"	c	namespace:kaldi
+kaldi::DecodableAmSgmmScaled::DecodableAmSgmmScaled	decodable-am-sgmm.h	/^  DecodableAmSgmmScaled(const SgmmGselectConfig &opts,$/;"	f	class:kaldi::DecodableAmSgmmScaled
+kaldi::DecodableAmSgmmScaled::LogLikelihood	decodable-am-sgmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmSgmmScaled
+kaldi::DecodableAmSgmmScaled::scale_	decodable-am-sgmm.h	/^  BaseFloat scale_;$/;"	m	class:kaldi::DecodableAmSgmmScaled
+kaldi::EbwAmSgmmOptions	estimate-am-sgmm-ebw.h	/^struct EbwAmSgmmOptions {$/;"	s	namespace:kaldi
+kaldi::EbwAmSgmmOptions::EbwAmSgmmOptions	estimate-am-sgmm-ebw.h	/^  EbwAmSgmmOptions() {$/;"	f	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::Register	estimate-am-sgmm-ebw.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::cov_min_value	estimate-am-sgmm-ebw.h	/^  BaseFloat cov_min_value; \/\/\/< E.g. 0.5-- the maximum any eigenvalue of a covariance$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::epsilon	estimate-am-sgmm-ebw.h	/^  BaseFloat epsilon;  \/\/\/< very small value used in SolveQuadraticProblem; workaround$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::lrate_M	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_M; \/\/\/< Learning rate used in updating M-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::lrate_N	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_N; \/\/\/< Learning rate used in updating N-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::lrate_Sigma	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_Sigma; \/\/\/< Learning rate used in updating Sigma-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::lrate_v	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_v; \/\/\/< Learning rate used in updating v-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::lrate_w	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_w; \/\/\/< Learning rate used in updating w-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::max_cond	estimate-am-sgmm-ebw.h	/^  BaseFloat max_cond; \/\/\/< large value used in SolveQuadraticProblem.$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::min_substate_weight	estimate-am-sgmm-ebw.h	/^  BaseFloat min_substate_weight; \/\/\/< Minimum allowed weight in a sub-state.$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::tau_M	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_M; \/\/\/<  Smoothing constant for the M quantities (phone-subspace projections)$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::tau_N	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_N; \/\/\/<  Smoothing constant for the N quantities (speaker-subspace projections)$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::tau_Sigma	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_Sigma; \/\/\/< Tau value for smoothing covariance-matrices Sigma.$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::tau_c	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_c;  \/\/\/< Tau value for smoothing substate weights (c)$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::tau_v	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_v; \/\/\/<  Smoothing constant for updates of sub-state vectors v_{jm}$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmOptions::tau_w	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_w;  \/\/\/< Tau value for smoothing update of weight projectsions (w)$/;"	m	struct:kaldi::EbwAmSgmmOptions
+kaldi::EbwAmSgmmUpdater	estimate-am-sgmm-ebw.h	/^class EbwAmSgmmUpdater {$/;"	c	namespace:kaldi
+kaldi::EbwAmSgmmUpdater::ComputePhoneVecStats	estimate-am-sgmm-ebw.cc	/^void EbwAmSgmmUpdater::ComputePhoneVecStats($/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::EbwAmSgmmUpdater	estimate-am-sgmm-ebw.h	/^  EbwAmSgmmUpdater() {}  \/\/ Prevent unconfigured updater.$/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::EbwAmSgmmUpdater	estimate-am-sgmm-ebw.h	/^  explicit EbwAmSgmmUpdater(const EbwAmSgmmOptions &options):$/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::Update	estimate-am-sgmm-ebw.cc	/^void EbwAmSgmmUpdater::Update(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::UpdateM	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateM(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::UpdateN	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateN(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::UpdatePhoneVectors	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdatePhoneVectors(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::UpdatePhoneVectorsInternal	estimate-am-sgmm-ebw.cc	/^void EbwAmSgmmUpdater::UpdatePhoneVectorsInternal($/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::UpdateSubstateWeights	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateSubstateWeights($/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::UpdateVars	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateVars(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::UpdateWParallel	estimate-am-sgmm-ebw.cc	/^double EbwAmSgmmUpdater::UpdateWParallel(const MleAmSgmmAccs &num_accs,$/;"	f	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::gamma_j_	estimate-am-sgmm-ebw.h	/^  Vector<double> gamma_j_;  \/\/\/< State occupancies$/;"	m	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwAmSgmmUpdater::options_	estimate-am-sgmm-ebw.h	/^  EbwAmSgmmOptions options_;$/;"	m	class:kaldi::EbwAmSgmmUpdater
+kaldi::EbwUpdatePhoneVectorsClass	estimate-am-sgmm-ebw.cc	/^class EbwUpdatePhoneVectorsClass: public MultiThreadable { \/\/ For multi-threaded.$/;"	c	namespace:kaldi	file:
+kaldi::EbwUpdatePhoneVectorsClass::EbwUpdatePhoneVectorsClass	estimate-am-sgmm-ebw.cc	/^  EbwUpdatePhoneVectorsClass(const EbwAmSgmmUpdater *updater,$/;"	f	class:kaldi::EbwUpdatePhoneVectorsClass
+kaldi::EbwUpdatePhoneVectorsClass::H_	estimate-am-sgmm-ebw.cc	/^  const std::vector<SpMatrix<double> > &H_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+kaldi::EbwUpdatePhoneVectorsClass::auxf_impr_	estimate-am-sgmm-ebw.cc	/^  double auxf_impr_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+kaldi::EbwUpdatePhoneVectorsClass::auxf_impr_ptr_	estimate-am-sgmm-ebw.cc	/^  double *auxf_impr_ptr_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+kaldi::EbwUpdatePhoneVectorsClass::den_accs_	estimate-am-sgmm-ebw.cc	/^  const MleAmSgmmAccs &den_accs_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+kaldi::EbwUpdatePhoneVectorsClass::model_	estimate-am-sgmm-ebw.cc	/^  AmSgmm *model_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+kaldi::EbwUpdatePhoneVectorsClass::num_accs_	estimate-am-sgmm-ebw.cc	/^  const MleAmSgmmAccs &num_accs_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+kaldi::EbwUpdatePhoneVectorsClass::operator ()	estimate-am-sgmm-ebw.cc	/^  inline void operator() () {$/;"	f	class:kaldi::EbwUpdatePhoneVectorsClass
+kaldi::EbwUpdatePhoneVectorsClass::updater_	estimate-am-sgmm-ebw.cc	/^  const EbwAmSgmmUpdater *updater_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+kaldi::EbwUpdatePhoneVectorsClass::~EbwUpdatePhoneVectorsClass	estimate-am-sgmm-ebw.cc	/^  ~EbwUpdatePhoneVectorsClass() {$/;"	f	class:kaldi::EbwUpdatePhoneVectorsClass
+kaldi::EstimateSgmmFmllrSubspace	fmllr-sgmm.cc	/^void EstimateSgmmFmllrSubspace(const SpMatrix<double> &fmllr_grad_scatter,$/;"	f	namespace:kaldi
+kaldi::FmllrSgmmAccs	fmllr-sgmm.h	/^class FmllrSgmmAccs {$/;"	c	namespace:kaldi
+kaldi::FmllrSgmmAccs::Accumulate	fmllr-sgmm.cc	/^BaseFloat FmllrSgmmAccs::Accumulate(const AmSgmm &model,$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::AccumulateForFmllrSubspace	fmllr-sgmm.cc	/^void FmllrSgmmAccs::AccumulateForFmllrSubspace(const AmSgmm &sgmm,$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::AccumulateFromPosteriors	fmllr-sgmm.cc	/^FmllrSgmmAccs::AccumulateFromPosteriors(const AmSgmm &model,$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::Dim	fmllr-sgmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::FmllrObjGradient	fmllr-sgmm.cc	/^BaseFloat FmllrSgmmAccs::FmllrObjGradient(const AmSgmm &sgmm,$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::FmllrSgmmAccs	fmllr-sgmm.h	/^  FmllrSgmmAccs() : dim_(-1) {}$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::Init	fmllr-sgmm.cc	/^void FmllrSgmmAccs::Init(int32 dim, int32 num_gaussians) {$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::Read	fmllr-sgmm.cc	/^void FmllrSgmmAccs::Read(std::istream &in, bool binary, bool add) {$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::SetZero	fmllr-sgmm.h	/^  void SetZero() { stats_.SetZero(); }$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::Update	fmllr-sgmm.cc	/^bool FmllrSgmmAccs::Update(const AmSgmm &sgmm,$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::Write	fmllr-sgmm.cc	/^void FmllrSgmmAccs::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::dim_	fmllr-sgmm.h	/^  int32 dim_;  \/\/\/< Dimension of feature vectors$/;"	m	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::stats	fmllr-sgmm.h	/^  const AffineXformStats &stats() const { return stats_; }$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::stats_	fmllr-sgmm.h	/^  AffineXformStats stats_;  \/\/\/< Accumulated stats$/;"	m	class:kaldi::FmllrSgmmAccs
+kaldi::FmllrSgmmAccs::~FmllrSgmmAccs	fmllr-sgmm.h	/^  ~FmllrSgmmAccs() {}$/;"	f	class:kaldi::FmllrSgmmAccs
+kaldi::MleAmSgmmAccs	estimate-am-sgmm.h	/^class MleAmSgmmAccs {$/;"	c	namespace:kaldi
+kaldi::MleAmSgmmAccs::Accumulate	estimate-am-sgmm.cc	/^BaseFloat MleAmSgmmAccs::Accumulate(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::AccumulateFromPosteriors	estimate-am-sgmm.cc	/^BaseFloat MleAmSgmmAccs::AccumulateFromPosteriors($/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::Check	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::Check(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::CommitStatsForSpk	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::CommitStatsForSpk(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::FeatureDim	estimate-am-sgmm.h	/^  int32 FeatureDim() const { return feature_dim_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::GetOccs	estimate-am-sgmm.h	/^  const std::vector< Matrix<double> >& GetOccs() const {$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::GetStateOccupancies	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::GetStateOccupancies(Vector<BaseFloat> *occs) const {$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::MleAmSgmmAccs	estimate-am-sgmm.h	/^  MleAmSgmmAccs(const AmSgmm &model, SgmmUpdateFlagsType flags,$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::MleAmSgmmAccs	estimate-am-sgmm.h	/^  explicit MleAmSgmmAccs(BaseFloat rand_prune = 1.0e-05)$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::NumGauss	estimate-am-sgmm.h	/^  int32 NumGauss() const { return num_gaussians_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::NumStates	estimate-am-sgmm.h	/^  int32 NumStates() const { return num_states_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::PhoneSpaceDim	estimate-am-sgmm.h	/^  int32 PhoneSpaceDim() const { return phn_space_dim_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::R_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > R_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::Read	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::Read(std::istream &in_stream, bool binary,$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::ResizeAccumulators	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::ResizeAccumulators(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::S_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > S_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::TotalFrames	estimate-am-sgmm.h	/^  double TotalFrames() const { return total_frames_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::TotalLike	estimate-am-sgmm.h	/^  double TotalLike() const { return total_like_; }$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::Write	estimate-am-sgmm.cc	/^void MleAmSgmmAccs::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::Y_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > Y_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::Z_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > Z_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::feature_dim_	estimate-am-sgmm.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::gamma_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > gamma_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::gamma_s_	estimate-am-sgmm.h	/^  Vector<double> gamma_s_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::num_gaussians_	estimate-am-sgmm.h	/^  int32 num_gaussians_, num_states_;  \/\/\/< Other model specifications$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::num_states_	estimate-am-sgmm.h	/^  int32 num_gaussians_, num_states_;  \/\/\/< Other model specifications$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::phn_space_dim_	estimate-am-sgmm.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::rand_prune_	estimate-am-sgmm.h	/^  BaseFloat rand_prune_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::spk_space_dim_	estimate-am-sgmm.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::total_frames_	estimate-am-sgmm.h	/^  double total_frames_, total_like_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::total_like_	estimate-am-sgmm.h	/^  double total_frames_, total_like_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::y_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > y_;$/;"	m	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmAccs::~MleAmSgmmAccs	estimate-am-sgmm.cc	/^MleAmSgmmAccs::~MleAmSgmmAccs() {$/;"	f	class:kaldi::MleAmSgmmAccs
+kaldi::MleAmSgmmGlobalAccs	estimate-am-sgmm-multi.h	/^class MleAmSgmmGlobalAccs {$/;"	c	namespace:kaldi
+kaldi::MleAmSgmmGlobalAccs::AddAccumulators	estimate-am-sgmm-multi.cc	/^void MleAmSgmmGlobalAccs::AddAccumulators(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::FeatureDim	estimate-am-sgmm-multi.h	/^  int32 FeatureDim() const { return feature_dim_; }$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::MleAmSgmmGlobalAccs	estimate-am-sgmm-multi.h	/^  explicit MleAmSgmmGlobalAccs()$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::NumGauss	estimate-am-sgmm-multi.h	/^  int32 NumGauss() const { return num_gaussians_; }$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::PhoneSpaceDim	estimate-am-sgmm-multi.h	/^  int32 PhoneSpaceDim() const { return phn_space_dim_; }$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::Q_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<double> > Q_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::R_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<double> > R_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::ResizeAccumulators	estimate-am-sgmm-multi.cc	/^void MleAmSgmmGlobalAccs::ResizeAccumulators(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::S_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<double> > S_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::S_means_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<double> > S_means_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::Y_	estimate-am-sgmm-multi.h	/^  std::vector< Matrix<double> > Y_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::Z_	estimate-am-sgmm-multi.h	/^  std::vector< Matrix<double> > Z_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::ZeroAccumulators	estimate-am-sgmm-multi.cc	/^void MleAmSgmmGlobalAccs::ZeroAccumulators(SgmmUpdateFlagsType flags) {$/;"	f	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::feature_dim_	estimate-am-sgmm-multi.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::gamma_i_	estimate-am-sgmm-multi.h	/^  Vector<double> gamma_i_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::num_gaussians_	estimate-am-sgmm-multi.h	/^  int32 num_gaussians_;  \/\/\/< Other model specifications$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::phn_space_dim_	estimate-am-sgmm-multi.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::spk_space_dim_	estimate-am-sgmm-multi.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::total_frames_	estimate-am-sgmm-multi.h	/^  double total_frames_, total_like_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmGlobalAccs::total_like_	estimate-am-sgmm-multi.h	/^  double total_frames_, total_like_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+kaldi::MleAmSgmmOptions	estimate-am-sgmm.h	/^struct MleAmSgmmOptions {$/;"	s	namespace:kaldi
+kaldi::MleAmSgmmOptions::MleAmSgmmOptions	estimate-am-sgmm.h	/^  MleAmSgmmOptions() {$/;"	f	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::Register	estimate-am-sgmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::check_v	estimate-am-sgmm.h	/^  bool check_v;$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::cov_diag_ratio	estimate-am-sgmm.h	/^  BaseFloat cov_diag_ratio;$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::cov_floor	estimate-am-sgmm.h	/^  BaseFloat cov_floor;$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::epsilon	estimate-am-sgmm.h	/^  BaseFloat epsilon;  \/\/\/< very small value used to prevent SVD crashing.$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::fixup_H_sm	estimate-am-sgmm.h	/^  bool fixup_H_sm;$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::full_col_cov	estimate-am-sgmm.h	/^  bool full_col_cov;  \/\/\/< Estimate col covariance instead of using I$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::full_row_cov	estimate-am-sgmm.h	/^  bool full_row_cov;  \/\/\/< Estimate row covariance instead of using I$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::map_M_prior_iters	estimate-am-sgmm.h	/^  int map_M_prior_iters;  \/\/\/< num of iterations to update the prior of M$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::max_cond	estimate-am-sgmm.h	/^  BaseFloat max_cond;$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::max_cond_H_sm	estimate-am-sgmm.h	/^  BaseFloat max_cond_H_sm;$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::renormalize_N	estimate-am-sgmm.h	/^  bool renormalize_N;  \/\/ Renormalize the speaker space.$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::renormalize_V	estimate-am-sgmm.h	/^  bool renormalize_V;  \/\/ Renormalize the phonetic space.$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::tau_c	estimate-am-sgmm.h	/^  BaseFloat tau_c;    \/\/\/< Tau value for smoothing substate weights (c)$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::tau_map_M	estimate-am-sgmm.h	/^  BaseFloat tau_map_M;  \/\/\/< For MAP update of the phonetic subspace M$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::tau_vec	estimate-am-sgmm.h	/^  BaseFloat tau_vec;  \/\/\/< Amount of smoothing for v_{jm} update$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::use_sequential_weight_update	estimate-am-sgmm.h	/^  bool use_sequential_weight_update;$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmOptions::weight_projections_iters	estimate-am-sgmm.h	/^  int weight_projections_iters;$/;"	m	struct:kaldi::MleAmSgmmOptions
+kaldi::MleAmSgmmUpdater	estimate-am-sgmm.h	/^class MleAmSgmmUpdater {$/;"	c	namespace:kaldi
+kaldi::MleAmSgmmUpdater::ComputeMPrior	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::ComputeMPrior(AmSgmm *model) {$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::ComputeQ	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::ComputeQ(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::ComputeSMeans	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::ComputeSMeans(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::ComputeSmoothingTerms	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::ComputeSmoothingTerms(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::MapUpdateM	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::MapUpdateM(const MleAmSgmmAccs &accs, AmSgmm *model) {$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::MleAmSgmmUpdater	estimate-am-sgmm.h	/^  MleAmSgmmUpdater() {}  \/\/ Prevent unconfigured updater.$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::MleAmSgmmUpdater	estimate-am-sgmm.h	/^  explicit MleAmSgmmUpdater(const MleAmSgmmOptions &options)$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::Q_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > Q_;$/;"	m	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::Reconfigure	estimate-am-sgmm.h	/^  void Reconfigure(const MleAmSgmmOptions &options) {$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::RenormalizeN	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::RenormalizeN($/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::RenormalizeV	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::RenormalizeV(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::S_means_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > S_means_;$/;"	m	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::Update	estimate-am-sgmm.cc	/^BaseFloat MleAmSgmmUpdater::Update(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdateM	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateM(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdateN	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateN(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdatePhoneVectors	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdatePhoneVectors(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdatePhoneVectorsChecked	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdatePhoneVectorsChecked(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdatePhoneVectorsCheckedFromClusterable	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdatePhoneVectorsCheckedFromClusterable($/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdatePhoneVectorsCheckedFromClusterableInternal	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::UpdatePhoneVectorsCheckedFromClusterableInternal($/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdatePhoneVectorsInternal	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::UpdatePhoneVectorsInternal($/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdateSubstateWeights	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateSubstateWeights($/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdateVars	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateVars(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdateWParallel	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateWParallel(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdateWParallelGetStats	estimate-am-sgmm.cc	/^void MleAmSgmmUpdater::UpdateWParallelGetStats(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::UpdateWSequential	estimate-am-sgmm.cc	/^double MleAmSgmmUpdater::UpdateWSequential($/;"	f	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::gamma_j_	estimate-am-sgmm.h	/^  Vector<double> gamma_j_;  \/\/\/< State occupancies$/;"	m	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdater::update_options_	estimate-am-sgmm.h	/^  MleAmSgmmOptions update_options_;$/;"	m	class:kaldi::MleAmSgmmUpdater
+kaldi::MleAmSgmmUpdaterMulti	estimate-am-sgmm-multi.h	/^class MleAmSgmmUpdaterMulti {$/;"	c	namespace:kaldi
+kaldi::MleAmSgmmUpdaterMulti::ComputeSmoothingTerms	estimate-am-sgmm-multi.cc	/^void MleAmSgmmUpdaterMulti::ComputeSmoothingTerms($/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::FeatureDim	estimate-am-sgmm-multi.h	/^  int32 FeatureDim() const { return global_M_[0].NumRows(); }$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::MleAmSgmmUpdaterMulti	estimate-am-sgmm-multi.h	/^  MleAmSgmmUpdaterMulti() {}  \/\/ Prevent unconfigured updater.$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::MleAmSgmmUpdaterMulti	estimate-am-sgmm-multi.h	/^  explicit MleAmSgmmUpdaterMulti(const AmSgmm &model,$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::NumGauss	estimate-am-sgmm-multi.h	/^  int32 NumGauss() const { return global_M_.size(); }$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::PhoneSpaceDim	estimate-am-sgmm-multi.h	/^  int32 PhoneSpaceDim() const { return global_w_.NumCols(); }$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::RenormalizeV	estimate-am-sgmm-multi.cc	/^void MleAmSgmmUpdaterMulti::RenormalizeV(const SpMatrix<double> &H_sm,$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::SpkSpaceDim	estimate-am-sgmm-multi.h	/^  int32 SpkSpaceDim() const {$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::Update	estimate-am-sgmm-multi.cc	/^void MleAmSgmmUpdaterMulti::Update(const std::vector<MleAmSgmmAccs*> &accs,$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::UpdateGlobals	estimate-am-sgmm-multi.cc	/^BaseFloat MleAmSgmmUpdaterMulti::UpdateGlobals(const MleAmSgmmGlobalAccs &accs,$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::UpdateM	estimate-am-sgmm-multi.cc	/^double MleAmSgmmUpdaterMulti::UpdateM(const MleAmSgmmGlobalAccs &accs) {$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::UpdateN	estimate-am-sgmm-multi.cc	/^double MleAmSgmmUpdaterMulti::UpdateN(const MleAmSgmmGlobalAccs &accs) {$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::UpdateVars	estimate-am-sgmm-multi.cc	/^double MleAmSgmmUpdaterMulti::UpdateVars(const MleAmSgmmGlobalAccs &accs) {$/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::UpdateWParallel	estimate-am-sgmm-multi.cc	/^double MleAmSgmmUpdaterMulti::UpdateWParallel($/;"	f	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::global_M_	estimate-am-sgmm-multi.h	/^  std::vector< Matrix<BaseFloat> > global_M_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::global_N_	estimate-am-sgmm-multi.h	/^  std::vector< Matrix<BaseFloat> > global_N_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::global_SigmaInv_	estimate-am-sgmm-multi.h	/^  std::vector< SpMatrix<BaseFloat> > global_SigmaInv_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::global_w_	estimate-am-sgmm-multi.h	/^  Matrix<BaseFloat> global_w_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleAmSgmmUpdaterMulti::update_options_	estimate-am-sgmm-multi.h	/^  MleAmSgmmOptions update_options_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+kaldi::MleSgmmSpeakerAccs	estimate-am-sgmm.h	/^class MleSgmmSpeakerAccs {$/;"	c	namespace:kaldi
+kaldi::MleSgmmSpeakerAccs::Accumulate	estimate-am-sgmm.cc	/^MleSgmmSpeakerAccs::Accumulate(const AmSgmm &model,$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+kaldi::MleSgmmSpeakerAccs::AccumulateFromPosteriors	estimate-am-sgmm.cc	/^MleSgmmSpeakerAccs::AccumulateFromPosteriors(const AmSgmm &model,$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+kaldi::MleSgmmSpeakerAccs::Clear	estimate-am-sgmm.cc	/^void MleSgmmSpeakerAccs::Clear() {$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+kaldi::MleSgmmSpeakerAccs::H_spk_	estimate-am-sgmm.h	/^  std::vector< SpMatrix<double> > H_spk_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+kaldi::MleSgmmSpeakerAccs::MleSgmmSpeakerAccs	estimate-am-sgmm.cc	/^MleSgmmSpeakerAccs::MleSgmmSpeakerAccs(const AmSgmm &model, BaseFloat prune)$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+kaldi::MleSgmmSpeakerAccs::NtransSigmaInv_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > NtransSigmaInv_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+kaldi::MleSgmmSpeakerAccs::Update	estimate-am-sgmm.cc	/^void MleSgmmSpeakerAccs::Update(BaseFloat min_count,$/;"	f	class:kaldi::MleSgmmSpeakerAccs
+kaldi::MleSgmmSpeakerAccs::gamma_s_	estimate-am-sgmm.h	/^  Vector<double> gamma_s_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+kaldi::MleSgmmSpeakerAccs::rand_prune_	estimate-am-sgmm.h	/^  BaseFloat rand_prune_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+kaldi::MleSgmmSpeakerAccs::y_s_	estimate-am-sgmm.h	/^  Vector<double> y_s_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+kaldi::RandomAccessSgmmGauPostReader	am-sgmm.h	/^typedef RandomAccessTableReader<SgmmGauPostHolder> RandomAccessSgmmGauPostReader;$/;"	t	namespace:kaldi
+kaldi::SequentialSgmmGauPostReader	am-sgmm.h	/^typedef SequentialTableReader<SgmmGauPostHolder> SequentialSgmmGauPostReader;$/;"	t	namespace:kaldi
+kaldi::SgmmClusterable	sgmm-clusterable.h	/^class SgmmClusterable: public Clusterable {$/;"	c	namespace:kaldi
+kaldi::SgmmClusterable::Accumulate	sgmm-clusterable.cc	/^void SgmmClusterable::Accumulate($/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::Add	sgmm-clusterable.cc	/^void SgmmClusterable::Add(const Clusterable &other_in) {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::ComputeH	sgmm-clusterable.cc	/^void SgmmClusterable::ComputeH() {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::Copy	sgmm-clusterable.cc	/^Clusterable *SgmmClusterable::Copy() const {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::H_	sgmm-clusterable.h	/^  const std::vector< SpMatrix<double> > &H_; \/\/ Reference to a vector of SpMatrix which$/;"	m	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::Normalizer	sgmm-clusterable.cc	/^BaseFloat SgmmClusterable::Normalizer() const {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::Objf	sgmm-clusterable.cc	/^BaseFloat SgmmClusterable::Objf() const {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::ReadNew	sgmm-clusterable.cc	/^Clusterable *SgmmClusterable::ReadNew(std::istream &is, bool binary) const {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::Scale	sgmm-clusterable.cc	/^void SgmmClusterable::Scale(BaseFloat f) {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::SetZero	sgmm-clusterable.cc	/^void SgmmClusterable::SetZero() {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::SgmmClusterable	sgmm-clusterable.h	/^  SgmmClusterable(const AmSgmm &sgmm,$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::Sub	sgmm-clusterable.cc	/^void SgmmClusterable::Sub(const Clusterable &other_in) {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::Type	sgmm-clusterable.h	/^  virtual std::string Type() const { return "sgmm"; }$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::Write	sgmm-clusterable.cc	/^void SgmmClusterable::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::gamma	sgmm-clusterable.h	/^  const Vector<double> &gamma () const { return gamma_; }$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::gamma_	sgmm-clusterable.h	/^  Vector<double> gamma_; \/\/ Occupation counts for each Gaussian index.  Comparable$/;"	m	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::my_H_	sgmm-clusterable.h	/^  SpMatrix<double> my_H_; \/\/ This quantity is a weighted sum over the H quantities,$/;"	m	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::sgmm_	sgmm-clusterable.h	/^  const AmSgmm &sgmm_;  \/\/ Reference to the SGMM object, needed to compute$/;"	m	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::y	sgmm-clusterable.h	/^  const Vector<double> &y() const { return y_; }$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::y_	sgmm-clusterable.h	/^  Vector<double> y_; \/\/ Statistics comparable to the y_{jm} statistics in the SGMM$/;"	m	class:kaldi::SgmmClusterable
+kaldi::SgmmClusterable::~SgmmClusterable	sgmm-clusterable.h	/^  virtual ~SgmmClusterable() {}$/;"	f	class:kaldi::SgmmClusterable
+kaldi::SgmmFmllrConfig	fmllr-sgmm.h	/^struct SgmmFmllrConfig {$/;"	s	namespace:kaldi
+kaldi::SgmmFmllrConfig::Register	fmllr-sgmm.h	/^inline void SgmmFmllrConfig::Register(OptionsItf *po) {$/;"	f	class:kaldi::SgmmFmllrConfig
+kaldi::SgmmFmllrConfig::SgmmFmllrConfig	fmllr-sgmm.h	/^  SgmmFmllrConfig() {$/;"	f	struct:kaldi::SgmmFmllrConfig
+kaldi::SgmmFmllrConfig::bases_occ_scale	fmllr-sgmm.h	/^  BaseFloat bases_occ_scale;$/;"	m	struct:kaldi::SgmmFmllrConfig
+kaldi::SgmmFmllrConfig::fmllr_iters	fmllr-sgmm.h	/^  int32 fmllr_iters;  \/\/\/< Number of iterations in FMLLR estimation.$/;"	m	struct:kaldi::SgmmFmllrConfig
+kaldi::SgmmFmllrConfig::fmllr_min_count	fmllr-sgmm.h	/^  BaseFloat fmllr_min_count;$/;"	m	struct:kaldi::SgmmFmllrConfig
+kaldi::SgmmFmllrConfig::fmllr_min_count_basis	fmllr-sgmm.h	/^  BaseFloat fmllr_min_count_basis;$/;"	m	struct:kaldi::SgmmFmllrConfig
+kaldi::SgmmFmllrConfig::fmllr_min_count_full	fmllr-sgmm.h	/^  BaseFloat fmllr_min_count_full;$/;"	m	struct:kaldi::SgmmFmllrConfig
+kaldi::SgmmFmllrConfig::num_fmllr_bases	fmllr-sgmm.h	/^  int32 num_fmllr_bases;$/;"	m	struct:kaldi::SgmmFmllrConfig
+kaldi::SgmmFmllrConfig::step_iters	fmllr-sgmm.h	/^  int32 step_iters;  \/\/\/< Iterations to find optimal FMLLR step size.$/;"	m	struct:kaldi::SgmmFmllrConfig
+kaldi::SgmmFmllrGlobalParams	fmllr-sgmm.h	/^class SgmmFmllrGlobalParams {$/;"	c	namespace:kaldi
+kaldi::SgmmFmllrGlobalParams::HasBasis	fmllr-sgmm.h	/^  bool HasBasis() const { return fmllr_bases_.size() != 0; }$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+kaldi::SgmmFmllrGlobalParams::Init	fmllr-sgmm.h	/^inline void SgmmFmllrGlobalParams::Init(const AmSgmm &sgmm,$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+kaldi::SgmmFmllrGlobalParams::IsEmpty	fmllr-sgmm.h	/^  bool IsEmpty() const {$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+kaldi::SgmmFmllrGlobalParams::Read	fmllr-sgmm.cc	/^void SgmmFmllrGlobalParams::Read(std::istream &in, bool binary) {$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+kaldi::SgmmFmllrGlobalParams::Write	fmllr-sgmm.cc	/^void SgmmFmllrGlobalParams::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::SgmmFmllrGlobalParams
+kaldi::SgmmFmllrGlobalParams::fmllr_bases_	fmllr-sgmm.h	/^  std::vector< Matrix<BaseFloat> > fmllr_bases_;$/;"	m	class:kaldi::SgmmFmllrGlobalParams
+kaldi::SgmmFmllrGlobalParams::inv_xform_	fmllr-sgmm.h	/^  Matrix<BaseFloat> inv_xform_;$/;"	m	class:kaldi::SgmmFmllrGlobalParams
+kaldi::SgmmFmllrGlobalParams::mean_scatter_	fmllr-sgmm.h	/^  Vector<BaseFloat> mean_scatter_;$/;"	m	class:kaldi::SgmmFmllrGlobalParams
+kaldi::SgmmFmllrGlobalParams::pre_xform_	fmllr-sgmm.h	/^  Matrix<BaseFloat> pre_xform_;$/;"	m	class:kaldi::SgmmFmllrGlobalParams
+kaldi::SgmmGauPost	am-sgmm.h	/^class SgmmGauPost: public std::vector<SgmmGauPostElement> {$/;"	c	namespace:kaldi
+kaldi::SgmmGauPost::Read	am-sgmm.cc	/^void SgmmGauPost::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::SgmmGauPost
+kaldi::SgmmGauPost::SgmmGauPost	am-sgmm.h	/^  SgmmGauPost() {}$/;"	f	class:kaldi::SgmmGauPost
+kaldi::SgmmGauPost::SgmmGauPost	am-sgmm.h	/^  explicit SgmmGauPost(size_t i) : std::vector<SgmmGauPostElement>(i) {}$/;"	f	class:kaldi::SgmmGauPost
+kaldi::SgmmGauPost::Write	am-sgmm.cc	/^void SgmmGauPost::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::SgmmGauPost
+kaldi::SgmmGauPostElement	am-sgmm.h	/^struct SgmmGauPostElement {$/;"	s	namespace:kaldi
+kaldi::SgmmGauPostElement::gselect	am-sgmm.h	/^  std::vector<int32> gselect;$/;"	m	struct:kaldi::SgmmGauPostElement
+kaldi::SgmmGauPostElement::posteriors	am-sgmm.h	/^  std::vector<Matrix<BaseFloat> > posteriors;$/;"	m	struct:kaldi::SgmmGauPostElement
+kaldi::SgmmGauPostElement::tids	am-sgmm.h	/^  std::vector<int32> tids;  \/\/ transition-ids for each entry in "posteriors"$/;"	m	struct:kaldi::SgmmGauPostElement
+kaldi::SgmmGauPostHolder	am-sgmm.h	/^typedef KaldiObjectHolder<SgmmGauPost> SgmmGauPostHolder;$/;"	t	namespace:kaldi
+kaldi::SgmmGauPostWriter	am-sgmm.h	/^typedef TableWriter<SgmmGauPostHolder> SgmmGauPostWriter;$/;"	t	namespace:kaldi
+kaldi::SgmmGselectConfig	am-sgmm.h	/^struct SgmmGselectConfig {$/;"	s	namespace:kaldi
+kaldi::SgmmGselectConfig::Register	am-sgmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::SgmmGselectConfig
+kaldi::SgmmGselectConfig::SgmmGselectConfig	am-sgmm.h	/^  SgmmGselectConfig() {$/;"	f	struct:kaldi::SgmmGselectConfig
+kaldi::SgmmGselectConfig::diag_gmm_nbest	am-sgmm.h	/^  int32 diag_gmm_nbest;$/;"	m	struct:kaldi::SgmmGselectConfig
+kaldi::SgmmGselectConfig::full_gmm_nbest	am-sgmm.h	/^  int32 full_gmm_nbest;$/;"	m	struct:kaldi::SgmmGselectConfig
+kaldi::SgmmPerFrameDerivedVars	am-sgmm.h	/^struct SgmmPerFrameDerivedVars {$/;"	s	namespace:kaldi
+kaldi::SgmmPerFrameDerivedVars::IsEmpty	am-sgmm.h	/^  bool IsEmpty() const {$/;"	f	struct:kaldi::SgmmPerFrameDerivedVars
+kaldi::SgmmPerFrameDerivedVars::NeedsResizing	am-sgmm.h	/^  bool NeedsResizing(int32 ngauss, int32 feat_dim, int32 phn_dim) const {$/;"	f	struct:kaldi::SgmmPerFrameDerivedVars
+kaldi::SgmmPerFrameDerivedVars::Resize	am-sgmm.h	/^  void Resize(int32 ngauss, int32 feat_dim, int32 phn_dim) {$/;"	f	struct:kaldi::SgmmPerFrameDerivedVars
+kaldi::SgmmPerFrameDerivedVars::SgmmPerFrameDerivedVars	am-sgmm.h	/^  SgmmPerFrameDerivedVars() : xt(0), xti(0, 0), zti(0, 0), nti(0) {}$/;"	f	struct:kaldi::SgmmPerFrameDerivedVars
+kaldi::SgmmPerFrameDerivedVars::gselect	am-sgmm.h	/^  std::vector<int32> gselect;$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+kaldi::SgmmPerFrameDerivedVars::nti	am-sgmm.h	/^  Vector<BaseFloat> nti;  \/\/\/< n_{i}(t), dim = [I], eq.(36)$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+kaldi::SgmmPerFrameDerivedVars::xt	am-sgmm.h	/^  Vector<BaseFloat> xt;   \/\/\/< x'(t), FMLLR-adapted, dim = [D], eq.(33)$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+kaldi::SgmmPerFrameDerivedVars::xti	am-sgmm.h	/^  Matrix<BaseFloat> xti;  \/\/\/< x_{i}(t) = x'(t) - o_i(s): dim = [I][D], eq.(34)$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+kaldi::SgmmPerFrameDerivedVars::zti	am-sgmm.h	/^  Matrix<BaseFloat> zti;  \/\/\/< z_{i}(t), dim = [I][S], eq.(35)$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+kaldi::SgmmPerSpkDerivedVars	am-sgmm.h	/^struct SgmmPerSpkDerivedVars {$/;"	s	namespace:kaldi
+kaldi::SgmmPerSpkDerivedVars::Clear	am-sgmm.h	/^  void Clear() {$/;"	f	struct:kaldi::SgmmPerSpkDerivedVars
+kaldi::SgmmPerSpkDerivedVars::o_s	am-sgmm.h	/^  Matrix<BaseFloat> o_s;  \/\/\/< Per-speaker offsets o_{i}. Dimension is [I][D]$/;"	m	struct:kaldi::SgmmPerSpkDerivedVars
+kaldi::SgmmPerSpkDerivedVars::v_s	am-sgmm.h	/^  Vector<BaseFloat> v_s;  \/\/\/< Speaker adaptation vector v_^{(s)}. Dim is [T]$/;"	m	struct:kaldi::SgmmPerSpkDerivedVars
+kaldi::SubstateCounter	am-sgmm.cc	/^struct SubstateCounter {$/;"	s	namespace:kaldi	file:
+kaldi::SubstateCounter::SubstateCounter	am-sgmm.cc	/^  SubstateCounter(int32 j, int32 num_substates, BaseFloat occ)$/;"	f	struct:kaldi::SubstateCounter
+kaldi::SubstateCounter::num_substates	am-sgmm.cc	/^  int32 num_substates;$/;"	m	struct:kaldi::SubstateCounter	file:
+kaldi::SubstateCounter::occupancy	am-sgmm.cc	/^  BaseFloat occupancy;$/;"	m	struct:kaldi::SubstateCounter	file:
+kaldi::SubstateCounter::operator <	am-sgmm.cc	/^  bool operator < (const SubstateCounter &r) const {$/;"	f	struct:kaldi::SubstateCounter
+kaldi::SubstateCounter::state_index	am-sgmm.cc	/^  int32 state_index;$/;"	m	struct:kaldi::SubstateCounter	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	estimate-am-sgmm.cc	/^class UpdatePhoneVectorsCheckedFromClusterableClass: public MultiThreadable { \/\/ For multi-threaded.$/;"	c	namespace:kaldi	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::H_	estimate-am-sgmm.cc	/^  const std::vector<SpMatrix<double> > &H_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::UpdatePhoneVectorsCheckedFromClusterableClass	estimate-am-sgmm.cc	/^  UpdatePhoneVectorsCheckedFromClusterableClass($/;"	f	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::count_	estimate-am-sgmm.cc	/^  double count_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::count_ptr_	estimate-am-sgmm.cc	/^  double *count_ptr_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::like_impr_	estimate-am-sgmm.cc	/^  double like_impr_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::like_impr_ptr_	estimate-am-sgmm.cc	/^  double *like_impr_ptr_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::model_	estimate-am-sgmm.cc	/^  AmSgmm *model_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::operator ()	estimate-am-sgmm.cc	/^  inline void operator() () {$/;"	f	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::stats_	estimate-am-sgmm.cc	/^  const std::vector<SgmmClusterable*> &stats_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::updater_	estimate-am-sgmm.cc	/^  MleAmSgmmUpdater *updater_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+kaldi::UpdatePhoneVectorsCheckedFromClusterableClass::~UpdatePhoneVectorsCheckedFromClusterableClass	estimate-am-sgmm.cc	/^  ~UpdatePhoneVectorsCheckedFromClusterableClass() {$/;"	f	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass
+kaldi::UpdatePhoneVectorsClass	estimate-am-sgmm.cc	/^class UpdatePhoneVectorsClass: public MultiThreadable { \/\/ For multi-threaded.$/;"	c	namespace:kaldi	file:
+kaldi::UpdatePhoneVectorsClass::H_	estimate-am-sgmm.cc	/^  const std::vector<SpMatrix<double> > &H_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::H_sm_	estimate-am-sgmm.cc	/^  const SpMatrix<double> &H_sm_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::UpdatePhoneVectorsClass	estimate-am-sgmm.cc	/^  UpdatePhoneVectorsClass(const MleAmSgmmUpdater &updater,$/;"	f	class:kaldi::UpdatePhoneVectorsClass
+kaldi::UpdatePhoneVectorsClass::accs_	estimate-am-sgmm.cc	/^  const MleAmSgmmAccs &accs_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::auxf_impr_	estimate-am-sgmm.cc	/^  double auxf_impr_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::auxf_impr_ptr_	estimate-am-sgmm.cc	/^  double *auxf_impr_ptr_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::like_impr_	estimate-am-sgmm.cc	/^  double like_impr_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::like_impr_ptr_	estimate-am-sgmm.cc	/^  double *like_impr_ptr_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::model_	estimate-am-sgmm.cc	/^  AmSgmm *model_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::operator ()	estimate-am-sgmm.cc	/^  inline void operator() () {$/;"	f	class:kaldi::UpdatePhoneVectorsClass
+kaldi::UpdatePhoneVectorsClass::updater_	estimate-am-sgmm.cc	/^  const MleAmSgmmUpdater &updater_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::y_sm_	estimate-am-sgmm.cc	/^  const Vector<double> &y_sm_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+kaldi::UpdatePhoneVectorsClass::~UpdatePhoneVectorsClass	estimate-am-sgmm.cc	/^  ~UpdatePhoneVectorsClass() {$/;"	f	class:kaldi::UpdatePhoneVectorsClass
+kaldi::UpdateWParallelClass	estimate-am-sgmm.h	/^class UpdateWParallelClass: public MultiThreadable {$/;"	c	namespace:kaldi
+kaldi::UpdateWParallelClass::F_i_	estimate-am-sgmm.h	/^  Matrix<double> F_i_;$/;"	m	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::F_i_ptr_	estimate-am-sgmm.h	/^  Matrix<double> *F_i_ptr_;$/;"	m	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::UpdateWParallelClass	estimate-am-sgmm.h	/^  UpdateWParallelClass(const MleAmSgmmAccs &accs,$/;"	f	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::accs_	estimate-am-sgmm.h	/^  const MleAmSgmmAccs &accs_;$/;"	m	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::g_i_	estimate-am-sgmm.h	/^  Matrix<double> g_i_;$/;"	m	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::g_i_ptr_	estimate-am-sgmm.h	/^  Matrix<double> *g_i_ptr_;$/;"	m	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::model_	estimate-am-sgmm.h	/^  const AmSgmm &model_;$/;"	m	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::operator ()	estimate-am-sgmm.h	/^  inline void operator() () {$/;"	f	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::tot_like_	estimate-am-sgmm.h	/^  double tot_like_;$/;"	m	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::tot_like_ptr_	estimate-am-sgmm.h	/^  double *tot_like_ptr_;$/;"	m	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::w_	estimate-am-sgmm.h	/^  const Matrix<double> &w_;$/;"	m	class:kaldi::UpdateWParallelClass
+kaldi::UpdateWParallelClass::~UpdateWParallelClass	estimate-am-sgmm.h	/^  ~UpdateWParallelClass() {$/;"	f	class:kaldi::UpdateWParallelClass
+like_impr_	estimate-am-sgmm.cc	/^  double like_impr_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+like_impr_	estimate-am-sgmm.cc	/^  double like_impr_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+like_impr_ptr_	estimate-am-sgmm.cc	/^  double *like_impr_ptr_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+like_impr_ptr_	estimate-am-sgmm.cc	/^  double *like_impr_ptr_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+log_like	decodable-am-sgmm.h	/^    BaseFloat log_like;  \/\/\/< Cache value$/;"	m	struct:kaldi::DecodableAmSgmm::LikelihoodCacheRecord
+log_like_cache_	decodable-am-sgmm.h	/^  std::vector<LikelihoodCacheRecord> log_like_cache_;$/;"	m	class:kaldi::DecodableAmSgmm
+log_prune_	decodable-am-sgmm.h	/^  BaseFloat log_prune_;$/;"	m	class:kaldi::DecodableAmSgmm
+lrate_M	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_M; \/\/\/< Learning rate used in updating M-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+lrate_N	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_N; \/\/\/< Learning rate used in updating N-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+lrate_Sigma	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_Sigma; \/\/\/< Learning rate used in updating Sigma-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+lrate_v	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_v; \/\/\/< Learning rate used in updating v-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+lrate_w	estimate-am-sgmm-ebw.h	/^  BaseFloat lrate_w; \/\/\/< Learning rate used in updating w-- default 0.5$/;"	m	struct:kaldi::EbwAmSgmmOptions
+main	am-sgmm-test.cc	/^int main() {$/;"	f
+main	estimate-am-sgmm-multi-test.cc	/^int main() {$/;"	f
+main	estimate-am-sgmm-test.cc	/^int main() {$/;"	f
+main	fmllr-sgmm-test.cc	/^int main() {$/;"	f
+map_M_prior_iters	estimate-am-sgmm.h	/^  int map_M_prior_iters;  \/\/\/< num of iterations to update the prior of M$/;"	m	struct:kaldi::MleAmSgmmOptions
+max_cond	estimate-am-sgmm-ebw.h	/^  BaseFloat max_cond; \/\/\/< large value used in SolveQuadraticProblem.$/;"	m	struct:kaldi::EbwAmSgmmOptions
+max_cond	estimate-am-sgmm.h	/^  BaseFloat max_cond;$/;"	m	struct:kaldi::MleAmSgmmOptions
+max_cond_H_sm	estimate-am-sgmm.h	/^  BaseFloat max_cond_H_sm;$/;"	m	struct:kaldi::MleAmSgmmOptions
+mean_scatter_	fmllr-sgmm.h	/^  Vector<BaseFloat> mean_scatter_;$/;"	m	class:kaldi::SgmmFmllrGlobalParams
+min_substate_weight	estimate-am-sgmm-ebw.h	/^  BaseFloat min_substate_weight; \/\/\/< Minimum allowed weight in a sub-state.$/;"	m	struct:kaldi::EbwAmSgmmOptions
+model_	estimate-am-sgmm-ebw.cc	/^  AmSgmm *model_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+model_	estimate-am-sgmm.cc	/^  AmSgmm *model_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+model_	estimate-am-sgmm.cc	/^  AmSgmm *model_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+model_	estimate-am-sgmm.h	/^  const AmSgmm &model_;$/;"	m	class:kaldi::UpdateWParallelClass
+my_H_	sgmm-clusterable.h	/^  SpMatrix<double> my_H_; \/\/ This quantity is a weighted sum over the H quantities,$/;"	m	class:kaldi::SgmmClusterable
+n_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > n_;$/;"	m	class:kaldi::AmSgmm
+nti	am-sgmm.h	/^  Vector<BaseFloat> nti;  \/\/\/< n_{i}(t), dim = [I], eq.(36)$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+num_accs_	estimate-am-sgmm-ebw.cc	/^  const MleAmSgmmAccs &num_accs_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+num_fmllr_bases	fmllr-sgmm.h	/^  int32 num_fmllr_bases;$/;"	m	struct:kaldi::SgmmFmllrConfig
+num_gaussians_	estimate-am-sgmm-multi.h	/^  int32 num_gaussians_;  \/\/\/< Other model specifications$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+num_gaussians_	estimate-am-sgmm.h	/^  int32 num_gaussians_, num_states_;  \/\/\/< Other model specifications$/;"	m	class:kaldi::MleAmSgmmAccs
+num_states_	estimate-am-sgmm.h	/^  int32 num_gaussians_, num_states_;  \/\/\/< Other model specifications$/;"	m	class:kaldi::MleAmSgmmAccs
+num_substates	am-sgmm.cc	/^  int32 num_substates;$/;"	m	struct:kaldi::SubstateCounter	file:
+o_s	am-sgmm.h	/^  Matrix<BaseFloat> o_s;  \/\/\/< Per-speaker offsets o_{i}. Dimension is [I][D]$/;"	m	struct:kaldi::SgmmPerSpkDerivedVars
+occupancy	am-sgmm.cc	/^  BaseFloat occupancy;$/;"	m	struct:kaldi::SubstateCounter	file:
+operator ()	am-sgmm.cc	/^  inline void operator() () {$/;"	f	class:kaldi::ComputeNormalizersClass
+operator ()	estimate-am-sgmm-ebw.cc	/^  inline void operator() () {$/;"	f	class:kaldi::EbwUpdatePhoneVectorsClass
+operator ()	estimate-am-sgmm.cc	/^  inline void operator() () {$/;"	f	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass
+operator ()	estimate-am-sgmm.cc	/^  inline void operator() () {$/;"	f	class:kaldi::UpdatePhoneVectorsClass
+operator ()	estimate-am-sgmm.h	/^  inline void operator() () {$/;"	f	class:kaldi::UpdateWParallelClass
+operator <	am-sgmm.cc	/^  bool operator < (const SubstateCounter &r) const {$/;"	f	struct:kaldi::SubstateCounter
+options_	estimate-am-sgmm-ebw.h	/^  EbwAmSgmmOptions options_;$/;"	m	class:kaldi::EbwAmSgmmUpdater
+per_frame_vars_	decodable-am-sgmm.h	/^  SgmmPerFrameDerivedVars per_frame_vars_;$/;"	m	class:kaldi::DecodableAmSgmm
+phn_space_dim_	estimate-am-sgmm-multi.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+phn_space_dim_	estimate-am-sgmm.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmAccs
+posteriors	am-sgmm.h	/^  std::vector<Matrix<BaseFloat> > posteriors;$/;"	m	struct:kaldi::SgmmGauPostElement
+pre_xform_	fmllr-sgmm.h	/^  Matrix<BaseFloat> pre_xform_;$/;"	m	class:kaldi::SgmmFmllrGlobalParams
+previous_frame_	decodable-am-sgmm.h	/^  int32 previous_frame_;$/;"	m	class:kaldi::DecodableAmSgmm
+rand_prune_	estimate-am-sgmm.h	/^  BaseFloat rand_prune_;$/;"	m	class:kaldi::MleAmSgmmAccs
+rand_prune_	estimate-am-sgmm.h	/^  BaseFloat rand_prune_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+renormalize_N	estimate-am-sgmm.h	/^  bool renormalize_N;  \/\/ Renormalize the speaker space.$/;"	m	struct:kaldi::MleAmSgmmOptions
+renormalize_V	estimate-am-sgmm.h	/^  bool renormalize_V;  \/\/ Renormalize the phonetic space.$/;"	m	struct:kaldi::MleAmSgmmOptions
+row_cov_inv_	am-sgmm.h	/^  SpMatrix<BaseFloat> row_cov_inv_;$/;"	m	class:kaldi::AmSgmm
+scale_	decodable-am-sgmm.h	/^  BaseFloat scale_;$/;"	m	class:kaldi::DecodableAmSgmmScaled
+sgmm_	sgmm-clusterable.h	/^  const AmSgmm &sgmm_;  \/\/ Reference to the SGMM object, needed to compute$/;"	m	class:kaldi::SgmmClusterable
+sgmm_config_	decodable-am-sgmm.h	/^  const SgmmGselectConfig &sgmm_config_;$/;"	m	class:kaldi::DecodableAmSgmm
+spk_	decodable-am-sgmm.h	/^  const SgmmPerSpkDerivedVars &spk_;$/;"	m	class:kaldi::DecodableAmSgmm
+spk_space_dim_	estimate-am-sgmm-multi.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+spk_space_dim_	estimate-am-sgmm.h	/^  int32 feature_dim_, phn_space_dim_, spk_space_dim_;$/;"	m	class:kaldi::MleAmSgmmAccs
+state_index	am-sgmm.cc	/^  int32 state_index;$/;"	m	struct:kaldi::SubstateCounter	file:
+stats	fmllr-sgmm.h	/^  const AffineXformStats &stats() const { return stats_; }$/;"	f	class:kaldi::FmllrSgmmAccs
+stats_	estimate-am-sgmm.cc	/^  const std::vector<SgmmClusterable*> &stats_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+stats_	fmllr-sgmm.h	/^  AffineXformStats stats_;  \/\/\/< Accumulated stats$/;"	m	class:kaldi::FmllrSgmmAccs
+step_iters	fmllr-sgmm.h	/^  int32 step_iters;  \/\/\/< Iterations to find optimal FMLLR step size.$/;"	m	struct:kaldi::SgmmFmllrConfig
+tau_M	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_M; \/\/\/<  Smoothing constant for the M quantities (phone-subspace projections)$/;"	m	struct:kaldi::EbwAmSgmmOptions
+tau_N	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_N; \/\/\/<  Smoothing constant for the N quantities (speaker-subspace projections)$/;"	m	struct:kaldi::EbwAmSgmmOptions
+tau_Sigma	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_Sigma; \/\/\/< Tau value for smoothing covariance-matrices Sigma.$/;"	m	struct:kaldi::EbwAmSgmmOptions
+tau_c	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_c;  \/\/\/< Tau value for smoothing substate weights (c)$/;"	m	struct:kaldi::EbwAmSgmmOptions
+tau_c	estimate-am-sgmm.h	/^  BaseFloat tau_c;    \/\/\/< Tau value for smoothing substate weights (c)$/;"	m	struct:kaldi::MleAmSgmmOptions
+tau_map_M	estimate-am-sgmm.h	/^  BaseFloat tau_map_M;  \/\/\/< For MAP update of the phonetic subspace M$/;"	m	struct:kaldi::MleAmSgmmOptions
+tau_v	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_v; \/\/\/<  Smoothing constant for updates of sub-state vectors v_{jm}$/;"	m	struct:kaldi::EbwAmSgmmOptions
+tau_vec	estimate-am-sgmm.h	/^  BaseFloat tau_vec;  \/\/\/< Amount of smoothing for v_{jm} update$/;"	m	struct:kaldi::MleAmSgmmOptions
+tau_w	estimate-am-sgmm-ebw.h	/^  BaseFloat tau_w;  \/\/\/< Tau value for smoothing update of weight projectsions (w)$/;"	m	struct:kaldi::EbwAmSgmmOptions
+tids	am-sgmm.h	/^  std::vector<int32> tids;  \/\/ transition-ids for each entry in "posteriors"$/;"	m	struct:kaldi::SgmmGauPostElement
+tot_like_	estimate-am-sgmm.h	/^  double tot_like_;$/;"	m	class:kaldi::UpdateWParallelClass
+tot_like_ptr_	estimate-am-sgmm.h	/^  double *tot_like_ptr_;$/;"	m	class:kaldi::UpdateWParallelClass
+total_frames_	estimate-am-sgmm-multi.h	/^  double total_frames_, total_like_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+total_frames_	estimate-am-sgmm.h	/^  double total_frames_, total_like_;$/;"	m	class:kaldi::MleAmSgmmAccs
+total_like_	estimate-am-sgmm-multi.h	/^  double total_frames_, total_like_;$/;"	m	class:kaldi::MleAmSgmmGlobalAccs
+total_like_	estimate-am-sgmm.h	/^  double total_frames_, total_like_;$/;"	m	class:kaldi::MleAmSgmmAccs
+trans_model_	decodable-am-sgmm.h	/^  const TransitionModel &trans_model_;  \/\/\/< for tid to pdf mapping$/;"	m	class:kaldi::DecodableAmSgmm
+update_options_	estimate-am-sgmm-multi.h	/^  MleAmSgmmOptions update_options_;$/;"	m	class:kaldi::MleAmSgmmUpdaterMulti
+update_options_	estimate-am-sgmm.h	/^  MleAmSgmmOptions update_options_;$/;"	m	class:kaldi::MleAmSgmmUpdater
+updater_	estimate-am-sgmm-ebw.cc	/^  const EbwAmSgmmUpdater *updater_;$/;"	m	class:kaldi::EbwUpdatePhoneVectorsClass	file:
+updater_	estimate-am-sgmm.cc	/^  MleAmSgmmUpdater *updater_;$/;"	m	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass	file:
+updater_	estimate-am-sgmm.cc	/^  const MleAmSgmmUpdater &updater_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+use_sequential_weight_update	estimate-am-sgmm.h	/^  bool use_sequential_weight_update;$/;"	m	struct:kaldi::MleAmSgmmOptions
+v_	am-sgmm.h	/^  std::vector< Matrix<BaseFloat> > v_;$/;"	m	class:kaldi::AmSgmm
+v_s	am-sgmm.h	/^  Vector<BaseFloat> v_s;  \/\/\/< Speaker adaptation vector v_^{(s)}. Dim is [T]$/;"	m	struct:kaldi::SgmmPerSpkDerivedVars
+w_	am-sgmm.h	/^  Matrix<BaseFloat> w_;$/;"	m	class:kaldi::AmSgmm
+w_	estimate-am-sgmm.h	/^  const Matrix<double> &w_;$/;"	m	class:kaldi::UpdateWParallelClass
+weight_projections_iters	estimate-am-sgmm.h	/^  int weight_projections_iters;$/;"	m	struct:kaldi::MleAmSgmmOptions
+xt	am-sgmm.h	/^  Vector<BaseFloat> xt;   \/\/\/< x'(t), FMLLR-adapted, dim = [D], eq.(33)$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+xti	am-sgmm.h	/^  Matrix<BaseFloat> xti;  \/\/\/< x_{i}(t) = x'(t) - o_i(s): dim = [I][D], eq.(34)$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+y	sgmm-clusterable.h	/^  const Vector<double> &y() const { return y_; }$/;"	f	class:kaldi::SgmmClusterable
+y_	estimate-am-sgmm.h	/^  std::vector< Matrix<double> > y_;$/;"	m	class:kaldi::MleAmSgmmAccs
+y_	sgmm-clusterable.h	/^  Vector<double> y_; \/\/ Statistics comparable to the y_{jm} statistics in the SGMM$/;"	m	class:kaldi::SgmmClusterable
+y_s_	estimate-am-sgmm.h	/^  Vector<double> y_s_;$/;"	m	class:kaldi::MleSgmmSpeakerAccs
+y_sm_	estimate-am-sgmm.cc	/^  const Vector<double> &y_sm_;$/;"	m	class:kaldi::UpdatePhoneVectorsClass	file:
+zti	am-sgmm.h	/^  Matrix<BaseFloat> zti;  \/\/\/< z_{i}(t), dim = [I][S], eq.(35)$/;"	m	struct:kaldi::SgmmPerFrameDerivedVars
+~ComputeNormalizersClass	am-sgmm.cc	/^  ~ComputeNormalizersClass() {$/;"	f	class:kaldi::ComputeNormalizersClass
+~EbwUpdatePhoneVectorsClass	estimate-am-sgmm-ebw.cc	/^  ~EbwUpdatePhoneVectorsClass() {$/;"	f	class:kaldi::EbwUpdatePhoneVectorsClass
+~FmllrSgmmAccs	fmllr-sgmm.h	/^  ~FmllrSgmmAccs() {}$/;"	f	class:kaldi::FmllrSgmmAccs
+~MleAmSgmmAccs	estimate-am-sgmm.cc	/^MleAmSgmmAccs::~MleAmSgmmAccs() {$/;"	f	class:kaldi::MleAmSgmmAccs
+~SgmmClusterable	sgmm-clusterable.h	/^  virtual ~SgmmClusterable() {}$/;"	f	class:kaldi::SgmmClusterable
+~UpdatePhoneVectorsCheckedFromClusterableClass	estimate-am-sgmm.cc	/^  ~UpdatePhoneVectorsCheckedFromClusterableClass() {$/;"	f	class:kaldi::UpdatePhoneVectorsCheckedFromClusterableClass
+~UpdatePhoneVectorsClass	estimate-am-sgmm.cc	/^  ~UpdatePhoneVectorsClass() {$/;"	f	class:kaldi::UpdatePhoneVectorsClass
+~UpdateWParallelClass	estimate-am-sgmm.h	/^  ~UpdateWParallelClass() {$/;"	f	class:kaldi::UpdateWParallelClass

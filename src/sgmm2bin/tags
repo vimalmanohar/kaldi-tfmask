@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AccumulateForUtterance	sgmm2-est-fmllr.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	sgmm2-est-spkvecs-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	sgmm2-est-spkvecs.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+ProcessUtterance	sgmm2-latgen-faster-parallel.cc	/^void ProcessUtterance(const AmSgmm2 &am_sgmm,$/;"	f	namespace:kaldi
+ProcessUtterance	sgmm2-latgen-faster.cc	/^bool ProcessUtterance(LatticeFasterDecoder &decoder,$/;"	f	namespace:kaldi
+kaldi	sgmm2-est-fmllr.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm2-est-spkvecs-gpost.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm2-est-spkvecs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm2-latgen-faster-parallel.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm2-latgen-faster.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::AccumulateForUtterance	sgmm2-est-fmllr.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	sgmm2-est-spkvecs-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	sgmm2-est-spkvecs.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::ProcessUtterance	sgmm2-latgen-faster-parallel.cc	/^void ProcessUtterance(const AmSgmm2 &am_sgmm,$/;"	f	namespace:kaldi
+kaldi::ProcessUtterance	sgmm2-latgen-faster.cc	/^bool ProcessUtterance(LatticeFasterDecoder &decoder,$/;"	f	namespace:kaldi
+main	sgmm2-acc-stats-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-acc-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-acc-stats2.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-align-compiled.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-comp-prexform.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-est-ebw.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-est-fmllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-est-spkvecs-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-est-spkvecs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-est.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-gselect.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-init.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-latgen-faster-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-latgen-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-post-to-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-project.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-rescore-lattice.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm2-sum-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f

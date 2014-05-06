@@ -1,0 +1,188 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Barrier	kaldi-barrier.cc	/^Barrier::Barrier(int32 threshold)$/;"	f	class:kaldi::Barrier
+Barrier	kaldi-barrier.h	/^class Barrier {$/;"	c	namespace:kaldi
+ExampleClass	kaldi-thread.h	/^class ExampleClass: public MultiThreadable {$/;"	c	namespace:kaldi
+GetValue	kaldi-semaphore.h	/^  int32 GetValue() {$/;"	f	class:kaldi::Semaphore
+KALDI_THREAD_KALDI_BARRIER_H_	kaldi-barrier.h	22;"	d
+KALDI_THREAD_KALDI_MUTEX_H_	kaldi-mutex.h	22;"	d
+KALDI_THREAD_KALDI_SEMAPHORE_H_	kaldi-semaphore.h	22;"	d
+KALDI_THREAD_KALDI_TASK_SEQUENCE_H_	kaldi-task-sequence.h	21;"	d
+KALDI_THREAD_KALDI_THREAD_H_	kaldi-thread.h	22;"	d
+Lock	kaldi-mutex.cc	/^void Mutex::Lock() {$/;"	f	class:kaldi::Mutex
+MultiThreadable	kaldi-thread.h	/^class MultiThreadable {$/;"	c	namespace:kaldi
+MultiThreader	kaldi-thread.h	/^  MultiThreader(int32 num_threads,$/;"	f	class:kaldi::MultiThreader
+MultiThreader	kaldi-thread.h	/^class MultiThreader {$/;"	c	namespace:kaldi
+Mutex	kaldi-mutex.cc	/^Mutex::Mutex() {$/;"	f	class:kaldi::Mutex
+Mutex	kaldi-mutex.h	/^class Mutex {$/;"	c	namespace:kaldi
+MyTaskClass	kaldi-task-sequence-test.cc	/^  MyTaskClass(int32 i, std::vector<int32> *vec):$/;"	f	class:kaldi::MyTaskClass
+MyTaskClass	kaldi-task-sequence-test.cc	/^class MyTaskClass { \/\/ spins for a while, then outputs a pre-given integer.$/;"	c	namespace:kaldi	file:
+MyThreadClass	kaldi-thread-test.cc	/^  MyThreadClass() { }  \/\/ Disallow empty constructor.$/;"	f	class:kaldi::MyThreadClass	file:
+MyThreadClass	kaldi-thread-test.cc	/^  MyThreadClass(int32 max_to_count, int32 *i): max_to_count_(max_to_count),$/;"	f	class:kaldi::MyThreadClass
+MyThreadClass	kaldi-thread-test.cc	/^class MyThreadClass {  \/\/ Sums up integers from 0 to max_to_count-1.$/;"	c	namespace:kaldi	file:
+Register	kaldi-task-sequence.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::TaskSequencerConfig
+Run	kaldi-task-sequence.h	/^  void Run(C *c) {$/;"	f	class:kaldi::TaskSequencer
+RunMultiThreaded	kaldi-thread.h	/^template<class C> void RunMultiThreaded(const C &c_in) {$/;"	f	namespace:kaldi
+RunTask	kaldi-task-sequence.h	/^  static void* RunTask(void *input) {$/;"	f	class:kaldi::TaskSequencer
+RunTaskArgsList	kaldi-task-sequence.h	/^    RunTaskArgsList(TaskSequencer *me, C *c, RunTaskArgsList *tail):$/;"	f	struct:kaldi::TaskSequencer::RunTaskArgsList
+RunTaskArgsList	kaldi-task-sequence.h	/^  struct RunTaskArgsList {$/;"	s	class:kaldi::TaskSequencer
+Semaphore	kaldi-semaphore.cc	/^Semaphore::Semaphore(int32 initValue) {$/;"	f	class:kaldi::Semaphore
+Semaphore	kaldi-semaphore.h	/^class Semaphore {$/;"	c	namespace:kaldi
+SetThreshold	kaldi-barrier.cc	/^void Barrier::SetThreshold(int32 thr) {$/;"	f	class:kaldi::Barrier
+Signal	kaldi-semaphore.cc	/^void Semaphore::Signal() {$/;"	f	class:kaldi::Semaphore
+TaskSequencer	kaldi-task-sequence.h	/^  TaskSequencer(const TaskSequencerConfig &config):$/;"	f	class:kaldi::TaskSequencer
+TaskSequencer	kaldi-task-sequence.h	/^class TaskSequencer {$/;"	c	namespace:kaldi
+TaskSequencerConfig	kaldi-task-sequence.h	/^  TaskSequencerConfig(): num_threads(1), num_threads_total(0)  { }$/;"	f	struct:kaldi::TaskSequencerConfig
+TaskSequencerConfig	kaldi-task-sequence.h	/^struct TaskSequencerConfig {$/;"	s	namespace:kaldi
+TestTaskSequencer	kaldi-task-sequence-test.cc	/^void TestTaskSequencer() {$/;"	f	namespace:kaldi
+TestThreads	kaldi-thread-test.cc	/^void TestThreads() {$/;"	f	namespace:kaldi
+TryLock	kaldi-mutex.cc	/^bool Mutex::TryLock() {$/;"	f	class:kaldi::Mutex
+TryWait	kaldi-semaphore.cc	/^bool Semaphore::TryWait() {$/;"	f	class:kaldi::Semaphore
+Unlock	kaldi-mutex.cc	/^void Mutex::Unlock() {$/;"	f	class:kaldi::Mutex
+Wait	kaldi-barrier.cc	/^int32 Barrier::Wait() {$/;"	f	class:kaldi::Barrier
+Wait	kaldi-semaphore.cc	/^void Semaphore::Wait() {$/;"	f	class:kaldi::Semaphore
+Wait	kaldi-task-sequence.h	/^  void Wait() { \/\/ You call this at the end if it's more convenient$/;"	f	class:kaldi::TaskSequencer
+c	kaldi-task-sequence.h	/^    C *c; \/\/ Clist element of the task we're expected$/;"	m	struct:kaldi::TaskSequencer::RunTaskArgsList
+cond_	kaldi-semaphore.h	/^  pthread_cond_t cond_;$/;"	m	class:kaldi::Semaphore
+counter_	kaldi-barrier.h	/^  int32                 counter_;   \/\/\/< number of threads we wait for$/;"	m	class:kaldi::Barrier
+counter_	kaldi-semaphore.h	/^  int32 counter_; \/\/\/< the semaphore counter, 0 means block on Wait() $/;"	m	class:kaldi::Semaphore
+cv_	kaldi-barrier.h	/^  pthread_cond_t      cv_;        \/\/\/< Conditional variable to make barrier wait$/;"	m	class:kaldi::Barrier
+cvec_	kaldi-thread.h	/^  std::vector<C> cvec_;$/;"	m	class:kaldi::MultiThreader
+cycle_	kaldi-barrier.h	/^  int32                 cycle_;     \/\/\/< cycle flag to keep synchronized$/;"	m	class:kaldi::Barrier
+done_	kaldi-task-sequence-test.cc	/^  bool done_;$/;"	m	class:kaldi::MyTaskClass	file:
+g_num_threads	kaldi-thread.cc	/^int32 g_num_threads = 8;  \/\/ Initialize this global variable.$/;"	m	namespace:kaldi	file:
+i_	kaldi-task-sequence-test.cc	/^  int32 i_;$/;"	m	class:kaldi::MyTaskClass	file:
+iptr_	kaldi-thread-test.cc	/^  int32 *iptr_;$/;"	m	class:kaldi::MyThreadClass	file:
+kaldi	kaldi-barrier.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-barrier.h	/^namespace kaldi {$/;"	n
+kaldi	kaldi-mutex.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-mutex.h	/^namespace kaldi {$/;"	n
+kaldi	kaldi-semaphore.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-semaphore.h	/^namespace kaldi {$/;"	n
+kaldi	kaldi-task-sequence-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-task-sequence.h	/^namespace kaldi {$/;"	n
+kaldi	kaldi-thread-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-thread.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-thread.h	/^namespace kaldi {$/;"	n
+kaldi::Barrier	kaldi-barrier.h	/^class Barrier {$/;"	c	namespace:kaldi
+kaldi::Barrier::Barrier	kaldi-barrier.cc	/^Barrier::Barrier(int32 threshold)$/;"	f	class:kaldi::Barrier
+kaldi::Barrier::SetThreshold	kaldi-barrier.cc	/^void Barrier::SetThreshold(int32 thr) {$/;"	f	class:kaldi::Barrier
+kaldi::Barrier::Wait	kaldi-barrier.cc	/^int32 Barrier::Wait() {$/;"	f	class:kaldi::Barrier
+kaldi::Barrier::counter_	kaldi-barrier.h	/^  int32                 counter_;   \/\/\/< number of threads we wait for$/;"	m	class:kaldi::Barrier
+kaldi::Barrier::cv_	kaldi-barrier.h	/^  pthread_cond_t      cv_;        \/\/\/< Conditional variable to make barrier wait$/;"	m	class:kaldi::Barrier
+kaldi::Barrier::cycle_	kaldi-barrier.h	/^  int32                 cycle_;     \/\/\/< cycle flag to keep synchronized$/;"	m	class:kaldi::Barrier
+kaldi::Barrier::mutex_	kaldi-barrier.h	/^  pthread_mutex_t     mutex_;     \/\/\/< Mutex which control access to barrier $/;"	m	class:kaldi::Barrier
+kaldi::Barrier::threshold_	kaldi-barrier.h	/^  int32                 threshold_; \/\/\/< size of thread-group$/;"	m	class:kaldi::Barrier
+kaldi::Barrier::~Barrier	kaldi-barrier.cc	/^Barrier::~Barrier() {$/;"	f	class:kaldi::Barrier
+kaldi::ExampleClass	kaldi-thread.h	/^class ExampleClass: public MultiThreadable {$/;"	c	namespace:kaldi
+kaldi::ExampleClass::operator ()	kaldi-thread.h	/^  void operator() () {$/;"	f	class:kaldi::ExampleClass
+kaldi::ExampleClass::~ExampleClass	kaldi-thread.h	/^  ~ExampleClass() {$/;"	f	class:kaldi::ExampleClass
+kaldi::MultiThreadable	kaldi-thread.h	/^class MultiThreadable {$/;"	c	namespace:kaldi
+kaldi::MultiThreadable::num_threads_	kaldi-thread.h	/^  int32 num_threads_;$/;"	m	class:kaldi::MultiThreadable
+kaldi::MultiThreadable::run	kaldi-thread.h	/^  static void *run(void *m_in) {$/;"	f	class:kaldi::MultiThreadable
+kaldi::MultiThreadable::thread_id_	kaldi-thread.h	/^  int32 thread_id_;  \/\/ 0 <= thread_id_ < num_threads_$/;"	m	class:kaldi::MultiThreadable
+kaldi::MultiThreadable::~MultiThreadable	kaldi-thread.cc	/^MultiThreadable::~MultiThreadable() {$/;"	f	class:kaldi::MultiThreadable
+kaldi::MultiThreader	kaldi-thread.h	/^class MultiThreader {$/;"	c	namespace:kaldi
+kaldi::MultiThreader::MultiThreader	kaldi-thread.h	/^  MultiThreader(int32 num_threads,$/;"	f	class:kaldi::MultiThreader
+kaldi::MultiThreader::cvec_	kaldi-thread.h	/^  std::vector<C> cvec_;$/;"	m	class:kaldi::MultiThreader
+kaldi::MultiThreader::threads_	kaldi-thread.h	/^  pthread_t *threads_;$/;"	m	class:kaldi::MultiThreader
+kaldi::MultiThreader::~MultiThreader	kaldi-thread.h	/^  ~MultiThreader() {$/;"	f	class:kaldi::MultiThreader
+kaldi::Mutex	kaldi-mutex.h	/^class Mutex {$/;"	c	namespace:kaldi
+kaldi::Mutex::Lock	kaldi-mutex.cc	/^void Mutex::Lock() {$/;"	f	class:kaldi::Mutex
+kaldi::Mutex::Mutex	kaldi-mutex.cc	/^Mutex::Mutex() {$/;"	f	class:kaldi::Mutex
+kaldi::Mutex::TryLock	kaldi-mutex.cc	/^bool Mutex::TryLock() {$/;"	f	class:kaldi::Mutex
+kaldi::Mutex::Unlock	kaldi-mutex.cc	/^void Mutex::Unlock() {$/;"	f	class:kaldi::Mutex
+kaldi::Mutex::mutex_	kaldi-mutex.h	/^  pthread_mutex_t mutex_;$/;"	m	class:kaldi::Mutex
+kaldi::Mutex::~Mutex	kaldi-mutex.cc	/^Mutex::~Mutex() {$/;"	f	class:kaldi::Mutex
+kaldi::MyTaskClass	kaldi-task-sequence-test.cc	/^class MyTaskClass { \/\/ spins for a while, then outputs a pre-given integer.$/;"	c	namespace:kaldi	file:
+kaldi::MyTaskClass::MyTaskClass	kaldi-task-sequence-test.cc	/^  MyTaskClass(int32 i, std::vector<int32> *vec):$/;"	f	class:kaldi::MyTaskClass
+kaldi::MyTaskClass::done_	kaldi-task-sequence-test.cc	/^  bool done_;$/;"	m	class:kaldi::MyTaskClass	file:
+kaldi::MyTaskClass::i_	kaldi-task-sequence-test.cc	/^  int32 i_;$/;"	m	class:kaldi::MyTaskClass	file:
+kaldi::MyTaskClass::operator ()	kaldi-task-sequence-test.cc	/^  void operator() () {$/;"	f	class:kaldi::MyTaskClass
+kaldi::MyTaskClass::vec_	kaldi-task-sequence-test.cc	/^  std::vector<int32> *vec_;$/;"	m	class:kaldi::MyTaskClass	file:
+kaldi::MyTaskClass::~MyTaskClass	kaldi-task-sequence-test.cc	/^  ~MyTaskClass() {$/;"	f	class:kaldi::MyTaskClass
+kaldi::MyThreadClass	kaldi-thread-test.cc	/^class MyThreadClass {  \/\/ Sums up integers from 0 to max_to_count-1.$/;"	c	namespace:kaldi	file:
+kaldi::MyThreadClass::MyThreadClass	kaldi-thread-test.cc	/^  MyThreadClass() { }  \/\/ Disallow empty constructor.$/;"	f	class:kaldi::MyThreadClass	file:
+kaldi::MyThreadClass::MyThreadClass	kaldi-thread-test.cc	/^  MyThreadClass(int32 max_to_count, int32 *i): max_to_count_(max_to_count),$/;"	f	class:kaldi::MyThreadClass
+kaldi::MyThreadClass::iptr_	kaldi-thread-test.cc	/^  int32 *iptr_;$/;"	m	class:kaldi::MyThreadClass	file:
+kaldi::MyThreadClass::max_to_count_	kaldi-thread-test.cc	/^  int32 max_to_count_;$/;"	m	class:kaldi::MyThreadClass	file:
+kaldi::MyThreadClass::num_threads_	kaldi-thread-test.cc	/^  int32 num_threads_;$/;"	m	class:kaldi::MyThreadClass	file:
+kaldi::MyThreadClass::operator ()	kaldi-thread-test.cc	/^  void operator() () {$/;"	f	class:kaldi::MyThreadClass
+kaldi::MyThreadClass::private_counter_	kaldi-thread-test.cc	/^  int32 private_counter_;$/;"	m	class:kaldi::MyThreadClass	file:
+kaldi::MyThreadClass::run	kaldi-thread-test.cc	/^  static void *run(void *c_in) {$/;"	f	class:kaldi::MyThreadClass
+kaldi::MyThreadClass::thread_id_	kaldi-thread-test.cc	/^  int32 thread_id_;  \/\/ 0 <= thread_number < num_threads$/;"	m	class:kaldi::MyThreadClass	file:
+kaldi::MyThreadClass::~MyThreadClass	kaldi-thread-test.cc	/^  ~MyThreadClass() {$/;"	f	class:kaldi::MyThreadClass
+kaldi::RunMultiThreaded	kaldi-thread.h	/^template<class C> void RunMultiThreaded(const C &c_in) {$/;"	f	namespace:kaldi
+kaldi::Semaphore	kaldi-semaphore.h	/^class Semaphore {$/;"	c	namespace:kaldi
+kaldi::Semaphore::GetValue	kaldi-semaphore.h	/^  int32 GetValue() {$/;"	f	class:kaldi::Semaphore
+kaldi::Semaphore::Semaphore	kaldi-semaphore.cc	/^Semaphore::Semaphore(int32 initValue) {$/;"	f	class:kaldi::Semaphore
+kaldi::Semaphore::Signal	kaldi-semaphore.cc	/^void Semaphore::Signal() {$/;"	f	class:kaldi::Semaphore
+kaldi::Semaphore::TryWait	kaldi-semaphore.cc	/^bool Semaphore::TryWait() {$/;"	f	class:kaldi::Semaphore
+kaldi::Semaphore::Wait	kaldi-semaphore.cc	/^void Semaphore::Wait() {$/;"	f	class:kaldi::Semaphore
+kaldi::Semaphore::cond_	kaldi-semaphore.h	/^  pthread_cond_t cond_;$/;"	m	class:kaldi::Semaphore
+kaldi::Semaphore::counter_	kaldi-semaphore.h	/^  int32 counter_; \/\/\/< the semaphore counter, 0 means block on Wait() $/;"	m	class:kaldi::Semaphore
+kaldi::Semaphore::mutex_	kaldi-semaphore.h	/^  pthread_mutex_t mutex_;$/;"	m	class:kaldi::Semaphore
+kaldi::Semaphore::~Semaphore	kaldi-semaphore.cc	/^Semaphore::~Semaphore() {$/;"	f	class:kaldi::Semaphore
+kaldi::TaskSequencer	kaldi-task-sequence.h	/^class TaskSequencer {$/;"	c	namespace:kaldi
+kaldi::TaskSequencer::Run	kaldi-task-sequence.h	/^  void Run(C *c) {$/;"	f	class:kaldi::TaskSequencer
+kaldi::TaskSequencer::RunTask	kaldi-task-sequence.h	/^  static void* RunTask(void *input) {$/;"	f	class:kaldi::TaskSequencer
+kaldi::TaskSequencer::RunTaskArgsList	kaldi-task-sequence.h	/^  struct RunTaskArgsList {$/;"	s	class:kaldi::TaskSequencer
+kaldi::TaskSequencer::RunTaskArgsList::RunTaskArgsList	kaldi-task-sequence.h	/^    RunTaskArgsList(TaskSequencer *me, C *c, RunTaskArgsList *tail):$/;"	f	struct:kaldi::TaskSequencer::RunTaskArgsList
+kaldi::TaskSequencer::RunTaskArgsList::c	kaldi-task-sequence.h	/^    C *c; \/\/ Clist element of the task we're expected$/;"	m	struct:kaldi::TaskSequencer::RunTaskArgsList
+kaldi::TaskSequencer::RunTaskArgsList::me	kaldi-task-sequence.h	/^    TaskSequencer *me; \/\/ Think of this as a "this" pointer.$/;"	m	struct:kaldi::TaskSequencer::RunTaskArgsList
+kaldi::TaskSequencer::RunTaskArgsList::tail	kaldi-task-sequence.h	/^    RunTaskArgsList *tail;$/;"	m	struct:kaldi::TaskSequencer::RunTaskArgsList
+kaldi::TaskSequencer::RunTaskArgsList::thread	kaldi-task-sequence.h	/^    pthread_t thread;$/;"	m	struct:kaldi::TaskSequencer::RunTaskArgsList
+kaldi::TaskSequencer::TaskSequencer	kaldi-task-sequence.h	/^  TaskSequencer(const TaskSequencerConfig &config):$/;"	f	class:kaldi::TaskSequencer
+kaldi::TaskSequencer::Wait	kaldi-task-sequence.h	/^  void Wait() { \/\/ You call this at the end if it's more convenient$/;"	f	class:kaldi::TaskSequencer
+kaldi::TaskSequencer::thread_list_	kaldi-task-sequence.h	/^  RunTaskArgsList *thread_list_; $/;"	m	class:kaldi::TaskSequencer
+kaldi::TaskSequencer::threads_avail_	kaldi-task-sequence.h	/^  Semaphore threads_avail_; \/\/ Initialized to the number of threads we are$/;"	m	class:kaldi::TaskSequencer
+kaldi::TaskSequencer::tot_threads_avail_	kaldi-task-sequence.h	/^  Semaphore tot_threads_avail_; \/\/ We use this semaphore to ensure we don't$/;"	m	class:kaldi::TaskSequencer
+kaldi::TaskSequencer::~TaskSequencer	kaldi-task-sequence.h	/^  ~TaskSequencer() {$/;"	f	class:kaldi::TaskSequencer
+kaldi::TaskSequencerConfig	kaldi-task-sequence.h	/^struct TaskSequencerConfig {$/;"	s	namespace:kaldi
+kaldi::TaskSequencerConfig::Register	kaldi-task-sequence.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::TaskSequencerConfig
+kaldi::TaskSequencerConfig::TaskSequencerConfig	kaldi-task-sequence.h	/^  TaskSequencerConfig(): num_threads(1), num_threads_total(0)  { }$/;"	f	struct:kaldi::TaskSequencerConfig
+kaldi::TaskSequencerConfig::num_threads	kaldi-task-sequence.h	/^  int32 num_threads;$/;"	m	struct:kaldi::TaskSequencerConfig
+kaldi::TaskSequencerConfig::num_threads_total	kaldi-task-sequence.h	/^  int32 num_threads_total;$/;"	m	struct:kaldi::TaskSequencerConfig
+kaldi::TestTaskSequencer	kaldi-task-sequence-test.cc	/^void TestTaskSequencer() {$/;"	f	namespace:kaldi
+kaldi::TestThreads	kaldi-thread-test.cc	/^void TestThreads() {$/;"	f	namespace:kaldi
+kaldi::g_num_threads	kaldi-thread.cc	/^int32 g_num_threads = 8;  \/\/ Initialize this global variable.$/;"	m	namespace:kaldi	file:
+main	kaldi-task-sequence-test.cc	/^int main() {$/;"	f
+main	kaldi-thread-test.cc	/^int main() {$/;"	f
+max_to_count_	kaldi-thread-test.cc	/^  int32 max_to_count_;$/;"	m	class:kaldi::MyThreadClass	file:
+me	kaldi-task-sequence.h	/^    TaskSequencer *me; \/\/ Think of this as a "this" pointer.$/;"	m	struct:kaldi::TaskSequencer::RunTaskArgsList
+mutex_	kaldi-barrier.h	/^  pthread_mutex_t     mutex_;     \/\/\/< Mutex which control access to barrier $/;"	m	class:kaldi::Barrier
+mutex_	kaldi-mutex.h	/^  pthread_mutex_t mutex_;$/;"	m	class:kaldi::Mutex
+mutex_	kaldi-semaphore.h	/^  pthread_mutex_t mutex_;$/;"	m	class:kaldi::Semaphore
+num_threads	kaldi-task-sequence.h	/^  int32 num_threads;$/;"	m	struct:kaldi::TaskSequencerConfig
+num_threads_	kaldi-thread-test.cc	/^  int32 num_threads_;$/;"	m	class:kaldi::MyThreadClass	file:
+num_threads_	kaldi-thread.h	/^  int32 num_threads_;$/;"	m	class:kaldi::MultiThreadable
+num_threads_total	kaldi-task-sequence.h	/^  int32 num_threads_total;$/;"	m	struct:kaldi::TaskSequencerConfig
+operator ()	kaldi-task-sequence-test.cc	/^  void operator() () {$/;"	f	class:kaldi::MyTaskClass
+operator ()	kaldi-thread-test.cc	/^  void operator() () {$/;"	f	class:kaldi::MyThreadClass
+operator ()	kaldi-thread.h	/^  void operator() () {$/;"	f	class:kaldi::ExampleClass
+private_counter_	kaldi-thread-test.cc	/^  int32 private_counter_;$/;"	m	class:kaldi::MyThreadClass	file:
+run	kaldi-thread-test.cc	/^  static void *run(void *c_in) {$/;"	f	class:kaldi::MyThreadClass
+run	kaldi-thread.h	/^  static void *run(void *m_in) {$/;"	f	class:kaldi::MultiThreadable
+tail	kaldi-task-sequence.h	/^    RunTaskArgsList *tail;$/;"	m	struct:kaldi::TaskSequencer::RunTaskArgsList
+thread	kaldi-task-sequence.h	/^    pthread_t thread;$/;"	m	struct:kaldi::TaskSequencer::RunTaskArgsList
+thread_id_	kaldi-thread-test.cc	/^  int32 thread_id_;  \/\/ 0 <= thread_number < num_threads$/;"	m	class:kaldi::MyThreadClass	file:
+thread_id_	kaldi-thread.h	/^  int32 thread_id_;  \/\/ 0 <= thread_id_ < num_threads_$/;"	m	class:kaldi::MultiThreadable
+thread_list_	kaldi-task-sequence.h	/^  RunTaskArgsList *thread_list_; $/;"	m	class:kaldi::TaskSequencer
+threads_	kaldi-thread.h	/^  pthread_t *threads_;$/;"	m	class:kaldi::MultiThreader
+threads_avail_	kaldi-task-sequence.h	/^  Semaphore threads_avail_; \/\/ Initialized to the number of threads we are$/;"	m	class:kaldi::TaskSequencer
+threshold_	kaldi-barrier.h	/^  int32                 threshold_; \/\/\/< size of thread-group$/;"	m	class:kaldi::Barrier
+tot_threads_avail_	kaldi-task-sequence.h	/^  Semaphore tot_threads_avail_; \/\/ We use this semaphore to ensure we don't$/;"	m	class:kaldi::TaskSequencer
+vec_	kaldi-task-sequence-test.cc	/^  std::vector<int32> *vec_;$/;"	m	class:kaldi::MyTaskClass	file:
+~Barrier	kaldi-barrier.cc	/^Barrier::~Barrier() {$/;"	f	class:kaldi::Barrier
+~ExampleClass	kaldi-thread.h	/^  ~ExampleClass() {$/;"	f	class:kaldi::ExampleClass
+~MultiThreadable	kaldi-thread.cc	/^MultiThreadable::~MultiThreadable() {$/;"	f	class:kaldi::MultiThreadable
+~MultiThreader	kaldi-thread.h	/^  ~MultiThreader() {$/;"	f	class:kaldi::MultiThreader
+~Mutex	kaldi-mutex.cc	/^Mutex::~Mutex() {$/;"	f	class:kaldi::Mutex
+~MyTaskClass	kaldi-task-sequence-test.cc	/^  ~MyTaskClass() {$/;"	f	class:kaldi::MyTaskClass
+~MyThreadClass	kaldi-thread-test.cc	/^  ~MyThreadClass() {$/;"	f	class:kaldi::MyThreadClass
+~Semaphore	kaldi-semaphore.cc	/^Semaphore::~Semaphore() {$/;"	f	class:kaldi::Semaphore
+~TaskSequencer	kaldi-task-sequence.h	/^  ~TaskSequencer() {$/;"	f	class:kaldi::TaskSequencer

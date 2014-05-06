@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Accept	online-audio-server-decode-faster.cc	/^int32 TcpServer::Accept() {$/;"	f	class:kaldi::TcpServer
+Listen	online-audio-server-decode-faster.cc	/^bool TcpServer::Listen(int32 port) {$/;"	f	class:kaldi::TcpServer
+ReadLine	online-audio-client.cc	/^bool ReadLine(int32 desc, std::string* str) {$/;"	f	namespace:kaldi
+RecognizedWord	online-audio-client.cc	/^struct RecognizedWord {$/;"	s	namespace:kaldi	file:
+SendPartialResult	online-server-gmm-decode-faster.cc	/^void SendPartialResult(const std::vector<int32>& words,$/;"	f	namespace:kaldi
+TcpServer	online-audio-server-decode-faster.cc	/^TcpServer::TcpServer() {$/;"	f	class:kaldi::TcpServer
+TcpServer	online-audio-server-decode-faster.cc	/^class TcpServer {$/;"	c	namespace:kaldi	file:
+TimeToTimecode	online-audio-client.cc	/^std::string TimeToTimecode(float time) {$/;"	f	namespace:kaldi
+WriteFull	online-audio-client.cc	/^bool WriteFull(int32 desc, char* data, int32 size) {$/;"	f	namespace:kaldi
+WriteLine	online-audio-server-decode-faster.cc	/^bool WriteLine(int32 socket, std::string line) {$/;"	f	namespace:kaldi
+buffer_fill	online-audio-client.cc	/^int32 buffer_fill = 0;$/;"	m	namespace:kaldi	file:
+buffer_offset	online-audio-client.cc	/^int32 buffer_offset = 0;$/;"	m	namespace:kaldi	file:
+conf	online-audio-client.cc	/^    float start, end, conf;$/;"	m	struct:kaldi::RecognizedWord	file:
+end	online-audio-client.cc	/^    float start, end, conf;$/;"	m	struct:kaldi::RecognizedWord	file:
+h_addr_	online-audio-server-decode-faster.cc	/^    struct sockaddr_in h_addr_;$/;"	m	class:kaldi::TcpServer	typeref:struct:kaldi::TcpServer::sockaddr_in	file:
+kFramesPerSecond	online-audio-server-decode-faster.cc	/^const float kFramesPerSecond = 100.0f;$/;"	m	namespace:kaldi	file:
+kaldi	online-audio-client.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	online-audio-server-decode-faster.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	online-server-gmm-decode-faster.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::ReadLine	online-audio-client.cc	/^bool ReadLine(int32 desc, std::string* str) {$/;"	f	namespace:kaldi
+kaldi::RecognizedWord	online-audio-client.cc	/^struct RecognizedWord {$/;"	s	namespace:kaldi	file:
+kaldi::RecognizedWord::conf	online-audio-client.cc	/^    float start, end, conf;$/;"	m	struct:kaldi::RecognizedWord	file:
+kaldi::RecognizedWord::end	online-audio-client.cc	/^    float start, end, conf;$/;"	m	struct:kaldi::RecognizedWord	file:
+kaldi::RecognizedWord::start	online-audio-client.cc	/^    float start, end, conf;$/;"	m	struct:kaldi::RecognizedWord	file:
+kaldi::RecognizedWord::word	online-audio-client.cc	/^    std::string word;$/;"	m	struct:kaldi::RecognizedWord	file:
+kaldi::SendPartialResult	online-server-gmm-decode-faster.cc	/^void SendPartialResult(const std::vector<int32>& words,$/;"	f	namespace:kaldi
+kaldi::TcpServer	online-audio-server-decode-faster.cc	/^class TcpServer {$/;"	c	namespace:kaldi	file:
+kaldi::TcpServer::Accept	online-audio-server-decode-faster.cc	/^int32 TcpServer::Accept() {$/;"	f	class:kaldi::TcpServer
+kaldi::TcpServer::Listen	online-audio-server-decode-faster.cc	/^bool TcpServer::Listen(int32 port) {$/;"	f	class:kaldi::TcpServer
+kaldi::TcpServer::TcpServer	online-audio-server-decode-faster.cc	/^TcpServer::TcpServer() {$/;"	f	class:kaldi::TcpServer
+kaldi::TcpServer::h_addr_	online-audio-server-decode-faster.cc	/^    struct sockaddr_in h_addr_;$/;"	m	class:kaldi::TcpServer	typeref:struct:kaldi::TcpServer::sockaddr_in	file:
+kaldi::TcpServer::server_desc_	online-audio-server-decode-faster.cc	/^    int32 server_desc_;$/;"	m	class:kaldi::TcpServer	file:
+kaldi::TcpServer::~TcpServer	online-audio-server-decode-faster.cc	/^TcpServer::~TcpServer() {$/;"	f	class:kaldi::TcpServer
+kaldi::TimeToTimecode	online-audio-client.cc	/^std::string TimeToTimecode(float time) {$/;"	f	namespace:kaldi
+kaldi::WriteFull	online-audio-client.cc	/^bool WriteFull(int32 desc, char* data, int32 size) {$/;"	f	namespace:kaldi
+kaldi::WriteLine	online-audio-server-decode-faster.cc	/^bool WriteLine(int32 socket, std::string line) {$/;"	f	namespace:kaldi
+kaldi::buffer_fill	online-audio-client.cc	/^int32 buffer_fill = 0;$/;"	m	namespace:kaldi	file:
+kaldi::buffer_offset	online-audio-client.cc	/^int32 buffer_offset = 0;$/;"	m	namespace:kaldi	file:
+kaldi::kFramesPerSecond	online-audio-server-decode-faster.cc	/^const float kFramesPerSecond = 100.0f;$/;"	m	namespace:kaldi	file:
+kaldi::read_buffer	online-audio-client.cc	/^char read_buffer[1025];$/;"	m	namespace:kaldi	file:
+main	online-audio-client.cc	/^int main(int argc, char** argv) {$/;"	f
+main	online-audio-server-decode-faster.cc	/^int32 main(int argc, char *argv[]) {$/;"	f
+main	online-gmm-decode-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	online-net-client.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	online-server-gmm-decode-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	online-wav-gmm-decode-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+read_buffer	online-audio-client.cc	/^char read_buffer[1025];$/;"	m	namespace:kaldi	file:
+server_desc_	online-audio-server-decode-faster.cc	/^    int32 server_desc_;$/;"	m	class:kaldi::TcpServer	file:
+start	online-audio-client.cc	/^    float start, end, conf;$/;"	m	struct:kaldi::RecognizedWord	file:
+word	online-audio-client.cc	/^    std::string word;$/;"	m	struct:kaldi::RecognizedWord	file:
+~TcpServer	online-audio-server-decode-faster.cc	/^TcpServer::~TcpServer() {$/;"	f	class:kaldi::TcpServer

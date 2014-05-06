@@ -1,0 +1,872 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AccumAmDiagGmm	mle-am-diag-gmm.h	/^  AccumAmDiagGmm() : total_frames_(0.0), total_log_like_(0.0) {}$/;"	f	class:kaldi::AccumAmDiagGmm
+AccumAmDiagGmm	mle-am-diag-gmm.h	/^class AccumAmDiagGmm {$/;"	c	namespace:kaldi
+AccumDiagGmm	mle-diag-gmm.cc	/^AccumDiagGmm::AccumDiagGmm(const AccumDiagGmm &other)$/;"	f	class:kaldi::AccumDiagGmm
+AccumDiagGmm	mle-diag-gmm.h	/^  AccumDiagGmm(): dim_(0), num_comp_(0), flags_(0) { }$/;"	f	class:kaldi::AccumDiagGmm
+AccumDiagGmm	mle-diag-gmm.h	/^  explicit AccumDiagGmm(const DiagGmm &gmm, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+AccumDiagGmm	mle-diag-gmm.h	/^class AccumDiagGmm {$/;"	c	namespace:kaldi
+AccumFullGmm	mle-full-gmm.cc	/^AccumFullGmm::AccumFullGmm(const AccumFullGmm &other)$/;"	f	class:kaldi::AccumFullGmm
+AccumFullGmm	mle-full-gmm.h	/^  AccumFullGmm(): dim_(0), num_comp_(0), flags_(0) { }$/;"	f	class:kaldi::AccumFullGmm
+AccumFullGmm	mle-full-gmm.h	/^  AccumFullGmm(int32 num_comp, int32 dim, GmmFlagsType flags):$/;"	f	class:kaldi::AccumFullGmm
+AccumFullGmm	mle-full-gmm.h	/^  explicit AccumFullGmm(const FullGmm &gmm, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+AccumFullGmm	mle-full-gmm.h	/^class AccumFullGmm {$/;"	c	namespace:kaldi
+AccumulateForComponent	mle-diag-gmm.cc	/^void AccumDiagGmm::AccumulateForComponent(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::AccumDiagGmm
+AccumulateForComponent	mle-full-gmm.cc	/^void AccumFullGmm::AccumulateForComponent($/;"	f	class:kaldi::AccumFullGmm
+AccumulateForGaussian	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::AccumulateForGaussian($/;"	f	class:kaldi::AccumAmDiagGmm
+AccumulateForGmm	mle-am-diag-gmm.cc	/^BaseFloat AccumAmDiagGmm::AccumulateForGmm($/;"	f	class:kaldi::AccumAmDiagGmm
+AccumulateForGmmTwofeats	mle-am-diag-gmm.cc	/^BaseFloat AccumAmDiagGmm::AccumulateForGmmTwofeats($/;"	f	class:kaldi::AccumAmDiagGmm
+AccumulateFromDiag	mle-diag-gmm.cc	/^BaseFloat AccumDiagGmm::AccumulateFromDiag(const DiagGmm &gmm,$/;"	f	class:kaldi::AccumDiagGmm
+AccumulateFromDiag	mle-full-gmm.cc	/^BaseFloat AccumFullGmm::AccumulateFromDiag(const DiagGmm &gmm,$/;"	f	class:kaldi::AccumFullGmm
+AccumulateFromDiagMultiThreaded	mle-diag-gmm.cc	/^BaseFloat AccumDiagGmm::AccumulateFromDiagMultiThreaded($/;"	f	class:kaldi::AccumDiagGmm
+AccumulateFromFull	mle-full-gmm.cc	/^BaseFloat AccumFullGmm::AccumulateFromFull(const FullGmm &gmm,$/;"	f	class:kaldi::AccumFullGmm
+AccumulateFromPosteriors	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::AccumulateFromPosteriors($/;"	f	class:kaldi::AccumAmDiagGmm
+AccumulateFromPosteriors	mle-diag-gmm.cc	/^void AccumDiagGmm::AccumulateFromPosteriors($/;"	f	class:kaldi::AccumDiagGmm
+AccumulateFromPosteriors	mle-full-gmm.cc	/^void AccumFullGmm::AccumulateFromPosteriors($/;"	f	class:kaldi::AccumFullGmm
+AccumulateMultiThreadedClass	mle-diag-gmm.cc	/^  AccumulateMultiThreadedClass(const AccumulateMultiThreadedClass &other):$/;"	f	class:kaldi::AccumulateMultiThreadedClass
+AccumulateMultiThreadedClass	mle-diag-gmm.cc	/^  AccumulateMultiThreadedClass(const DiagGmm &diag_gmm,$/;"	f	class:kaldi::AccumulateMultiThreadedClass
+AccumulateMultiThreadedClass	mle-diag-gmm.cc	/^class AccumulateMultiThreadedClass: public MultiThreadable {$/;"	c	namespace:kaldi	file:
+Add	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Add(BaseFloat scale, const AccumAmDiagGmm &other) {$/;"	f	class:kaldi::AccumAmDiagGmm
+Add	mle-diag-gmm.cc	/^void AccumDiagGmm::Add(double scale, const AccumDiagGmm &acc) {$/;"	f	class:kaldi::AccumDiagGmm
+AddPdf	am-diag-gmm.cc	/^void AmDiagGmm::AddPdf(const DiagGmm &gmm) {$/;"	f	class:kaldi::AmDiagGmm
+AddStatsForComponent	mle-diag-gmm.cc	/^void AccumDiagGmm::AddStatsForComponent(int32 g,$/;"	f	class:kaldi::AccumDiagGmm
+AmDiagGmm	am-diag-gmm.h	/^  AmDiagGmm() {}$/;"	f	class:kaldi::AmDiagGmm
+AmDiagGmm	am-diag-gmm.h	/^class AmDiagGmm {$/;"	c	namespace:kaldi
+AssertEqual	mle-diag-gmm.cc	/^void AccumDiagGmm::AssertEqual(const AccumDiagGmm &other) {$/;"	f	class:kaldi::AccumDiagGmm
+AugmentGmmFlags	model-common.cc	/^GmmFlagsType AugmentGmmFlags(GmmFlagsType flags) {$/;"	f	namespace:kaldi
+Check	am-diag-gmm.cc	/^void UbmClusteringOptions::Check() {$/;"	f	class:kaldi::UbmClusteringOptions
+ClusterGaussiansToUbm	am-diag-gmm.cc	/^void ClusterGaussiansToUbm(const AmDiagGmm &am,$/;"	f	namespace:kaldi
+ComponentLogLikelihood	diag-gmm.cc	/^BaseFloat DiagGmm::ComponentLogLikelihood(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+ComponentLogLikelihood	full-gmm.cc	/^BaseFloat FullGmm::ComponentLogLikelihood(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+ComponentPosteriors	diag-gmm.cc	/^BaseFloat DiagGmm::ComponentPosteriors(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+ComponentPosteriors	full-gmm.cc	/^BaseFloat FullGmm::ComponentPosteriors(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+ComputeGconsts	am-diag-gmm.cc	/^int32 AmDiagGmm::ComputeGconsts() {$/;"	f	class:kaldi::AmDiagGmm
+ComputeGconsts	diag-gmm.cc	/^int32 DiagGmm::ComputeGconsts() {$/;"	f	class:kaldi::DiagGmm
+ComputeGconsts	full-gmm.cc	/^int32 FullGmm::ComputeGconsts() {$/;"	f	class:kaldi::FullGmm
+CopyFromAmDiagGmm	am-diag-gmm.cc	/^void AmDiagGmm::CopyFromAmDiagGmm(const AmDiagGmm &other) {$/;"	f	class:kaldi::AmDiagGmm
+CopyFromDiagGmm	diag-gmm-normal.cc	/^void DiagGmmNormal::CopyFromDiagGmm(const DiagGmm &diaggmm) {$/;"	f	class:kaldi::DiagGmmNormal
+CopyFromDiagGmm	diag-gmm.cc	/^void DiagGmm::CopyFromDiagGmm(const DiagGmm &diaggmm) {$/;"	f	class:kaldi::DiagGmm
+CopyFromDiagGmm	full-gmm.cc	/^void FullGmm::CopyFromDiagGmm(const DiagGmm &diaggmm) {$/;"	f	class:kaldi::FullGmm
+CopyFromFullGmm	diag-gmm.cc	/^void DiagGmm::CopyFromFullGmm(const FullGmm &fullgmm) {$/;"	f	class:kaldi::DiagGmm
+CopyFromFullGmm	full-gmm-normal.cc	/^void FullGmmNormal::CopyFromFullGmm(const FullGmm &fullgmm) {$/;"	f	class:kaldi::FullGmmNormal
+CopyFromFullGmm	full-gmm.cc	/^void FullGmm::CopyFromFullGmm(const FullGmm &fullgmm) {$/;"	f	class:kaldi::FullGmm
+CopyFromNormal	diag-gmm.cc	/^void DiagGmm::CopyFromNormal(const DiagGmmNormal &diag_gmm_normal) {$/;"	f	class:kaldi::DiagGmm
+CopyToDiagGmm	diag-gmm-normal.cc	/^void DiagGmmNormal::CopyToDiagGmm(DiagGmm *diaggmm, GmmFlagsType flags) const {$/;"	f	class:kaldi::DiagGmmNormal
+CopyToFullGmm	full-gmm-normal.cc	/^void FullGmmNormal::CopyToFullGmm(FullGmm *fullgmm, GmmFlagsType flags) {$/;"	f	class:kaldi::FullGmmNormal
+CountStats	model-common.cc	/^  CountStats(int32 p, int32 n, BaseFloat occ)$/;"	f	struct:kaldi::CountStats
+CountStats	model-common.cc	/^struct CountStats {$/;"	s	namespace:kaldi	file:
+DecodableAmDiagGmm	decodable-am-diag-gmm.h	/^  DecodableAmDiagGmm(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmm
+DecodableAmDiagGmm	decodable-am-diag-gmm.h	/^class DecodableAmDiagGmm: public DecodableAmDiagGmmUnmapped {$/;"	c	namespace:kaldi
+DecodableAmDiagGmmScaled	decodable-am-diag-gmm.h	/^  DecodableAmDiagGmmScaled(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmmScaled
+DecodableAmDiagGmmScaled	decodable-am-diag-gmm.h	/^class DecodableAmDiagGmmScaled: public DecodableAmDiagGmmUnmapped {$/;"	c	namespace:kaldi
+DecodableAmDiagGmmUnmapped	decodable-am-diag-gmm.h	/^  DecodableAmDiagGmmUnmapped(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+DecodableAmDiagGmmUnmapped	decodable-am-diag-gmm.h	/^class DecodableAmDiagGmmUnmapped : public DecodableInterface {$/;"	c	namespace:kaldi
+DiagGmm	diag-gmm.cc	/^DiagGmm::DiagGmm(const std::vector<std::pair<BaseFloat, const DiagGmm*> > &gmms)$/;"	f	class:kaldi::DiagGmm
+DiagGmm	diag-gmm.h	/^  DiagGmm() : valid_gconsts_(false) { }$/;"	f	class:kaldi::DiagGmm
+DiagGmm	diag-gmm.h	/^  DiagGmm(int32 nMix, int32 dim): valid_gconsts_(false) { Resize(nMix, dim); }$/;"	f	class:kaldi::DiagGmm
+DiagGmm	diag-gmm.h	/^  explicit DiagGmm(const DiagGmm &gmm): valid_gconsts_(false) {$/;"	f	class:kaldi::DiagGmm
+DiagGmm	diag-gmm.h	/^class DiagGmm {$/;"	c	namespace:kaldi
+DiagGmmNormal	diag-gmm-normal.h	/^  DiagGmmNormal() { }$/;"	f	class:kaldi::DiagGmmNormal
+DiagGmmNormal	diag-gmm-normal.h	/^  explicit DiagGmmNormal(const DiagGmm &gmm) {$/;"	f	class:kaldi::DiagGmmNormal
+DiagGmmNormal	diag-gmm-normal.h	/^class DiagGmmNormal {$/;"	c	namespace:kaldi
+DiagGmmToStats	ebw-diag-gmm.cc	/^void DiagGmmToStats(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+Dim	am-diag-gmm.h	/^  int32 Dim() const {$/;"	f	class:kaldi::AmDiagGmm
+Dim	diag-gmm-normal.h	/^  int32 Dim() { return means_.NumCols(); }$/;"	f	class:kaldi::DiagGmmNormal
+Dim	diag-gmm.h	/^  int32 Dim() const { return means_invvars_.NumCols(); }$/;"	f	class:kaldi::DiagGmm
+Dim	full-gmm.h	/^  int32 Dim() const { return means_invcovars_.NumCols(); }$/;"	f	class:kaldi::FullGmm
+Dim	mle-am-diag-gmm.h	/^  int32 Dim() const {$/;"	f	class:kaldi::AccumAmDiagGmm
+Dim	mle-diag-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::AccumDiagGmm
+Dim	mle-full-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::AccumFullGmm
+DoRescalingUpdate	indirect-diff-diag-gmm.cc	/^void DoRescalingUpdate(const AccumAmDiagGmm &old_ml_accs,$/;"	f	namespace:kaldi
+DoRescalingUpdate	indirect-diff-diag-gmm.cc	/^void DoRescalingUpdate(const AccumDiagGmm &old_ml_acc,$/;"	f	namespace:kaldi
+E	ebw-diag-gmm.h	/^  BaseFloat E;$/;"	m	struct:kaldi::EbwOptions
+EBWUpdateGaussian	ebw-diag-gmm.cc	/^static bool EBWUpdateGaussian($/;"	f	namespace:kaldi
+EbwOptions	ebw-diag-gmm.h	/^  EbwOptions(): E(2.0), tau(0.0) { }$/;"	f	struct:kaldi::EbwOptions
+EbwOptions	ebw-diag-gmm.h	/^struct EbwOptions {$/;"	s	namespace:kaldi
+EbwWeightOptions	ebw-diag-gmm.h	/^  EbwWeightOptions(): min_num_count_weight_update(10.0),$/;"	f	struct:kaldi::EbwWeightOptions
+EbwWeightOptions	ebw-diag-gmm.h	/^struct EbwWeightOptions {$/;"	s	namespace:kaldi
+Flags	mle-diag-gmm.h	/^  const GmmFlagsType Flags() const { return flags_; }$/;"	f	class:kaldi::AccumDiagGmm
+Flags	mle-full-gmm.h	/^  const GmmFlagsType Flags() const { return flags_; }$/;"	f	class:kaldi::AccumFullGmm
+FullGmm	full-gmm.h	/^  FullGmm() : valid_gconsts_(false) {}$/;"	f	class:kaldi::FullGmm
+FullGmm	full-gmm.h	/^  FullGmm(int32 nMix, int32 dim): valid_gconsts_(false) { Resize(nMix, dim); }$/;"	f	class:kaldi::FullGmm
+FullGmm	full-gmm.h	/^  explicit FullGmm(const FullGmm &gmm): valid_gconsts_(false) {$/;"	f	class:kaldi::FullGmm
+FullGmm	full-gmm.h	/^class FullGmm {$/;"	c	namespace:kaldi
+FullGmmNormal	full-gmm-normal.h	/^  FullGmmNormal() { }$/;"	f	class:kaldi::FullGmmNormal
+FullGmmNormal	full-gmm-normal.h	/^  explicit FullGmmNormal(const FullGmm &gmm) {$/;"	f	class:kaldi::FullGmmNormal
+FullGmmNormal	full-gmm-normal.h	/^class FullGmmNormal {$/;"	c	namespace:kaldi
+GaussianSelection	diag-gmm.cc	/^BaseFloat DiagGmm::GaussianSelection(const MatrixBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+GaussianSelection	diag-gmm.cc	/^BaseFloat DiagGmm::GaussianSelection(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+GaussianSelection	full-gmm.cc	/^BaseFloat FullGmm::GaussianSelection(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+GaussianSelectionPreselect	diag-gmm.cc	/^BaseFloat DiagGmm::GaussianSelectionPreselect($/;"	f	class:kaldi::DiagGmm
+GaussianSelectionPreselect	full-gmm.cc	/^BaseFloat FullGmm::GaussianSelectionPreselect($/;"	f	class:kaldi::FullGmm
+Generate	diag-gmm.cc	/^void DiagGmm::Generate(VectorBase<BaseFloat> *output) {$/;"	f	class:kaldi::DiagGmm
+GetAcc	mle-am-diag-gmm.cc	/^AccumDiagGmm& AccumAmDiagGmm::GetAcc(int32 index) {$/;"	f	class:kaldi::AccumAmDiagGmm
+GetAcc	mle-am-diag-gmm.cc	/^const AccumDiagGmm& AccumAmDiagGmm::GetAcc(int32 index) const {$/;"	f	class:kaldi::AccumAmDiagGmm
+GetComponentMean	diag-gmm-inl.h	/^void DiagGmm::GetComponentMean(int32 gauss, VectorBase<Real> *out) const {$/;"	f	class:kaldi::DiagGmm
+GetComponentMean	full-gmm-inl.h	/^void FullGmm::GetComponentMean(int32 gauss,$/;"	f	class:kaldi::FullGmm
+GetComponentVariance	diag-gmm-inl.h	/^void DiagGmm::GetComponentVariance(int32 gauss, VectorBase<Real> *out) const {$/;"	f	class:kaldi::DiagGmm
+GetCovars	full-gmm-inl.h	/^void FullGmm::GetCovars(std::vector<SpMatrix<Real> > *v) const {$/;"	f	class:kaldi::FullGmm
+GetCovarsAndMeans	full-gmm-inl.h	/^void FullGmm::GetCovarsAndMeans(std::vector< SpMatrix<Real> > *covars,$/;"	f	class:kaldi::FullGmm
+GetGaussianMean	am-diag-gmm.h	/^inline void AmDiagGmm::GetGaussianMean(int32 pdf_index, int32 gauss,$/;"	f	class:kaldi::AmDiagGmm
+GetGaussianVariance	am-diag-gmm.h	/^inline void AmDiagGmm::GetGaussianVariance(int32 pdf_index, int32 gauss,$/;"	f	class:kaldi::AmDiagGmm
+GetLogLikeTest	mle-full-gmm-test.cc	/^BaseFloat GetLogLikeTest(const FullGmm &gmm,$/;"	f
+GetMeans	diag-gmm-inl.h	/^void DiagGmm::GetMeans(Matrix<Real> *m) const {$/;"	f	class:kaldi::DiagGmm
+GetMeans	full-gmm-inl.h	/^void FullGmm::GetMeans(Matrix<Real> *M) const {$/;"	f	class:kaldi::FullGmm
+GetPdf	am-diag-gmm.h	/^inline DiagGmm& AmDiagGmm::GetPdf(int32 pdf_index) {$/;"	f	class:kaldi::AmDiagGmm
+GetPdf	am-diag-gmm.h	/^inline const DiagGmm& AmDiagGmm::GetPdf(int32 pdf_index) const {$/;"	f	class:kaldi::AmDiagGmm
+GetSingleStatsDerivative	indirect-diff-diag-gmm.cc	/^void GetSingleStatsDerivative($/;"	f	namespace:kaldi
+GetSplitTargets	model-common.cc	/^void GetSplitTargets(const Vector<BaseFloat> &state_occs,$/;"	f	namespace:kaldi
+GetStatsDerivative	indirect-diff-diag-gmm.cc	/^void GetStatsDerivative(const AmDiagGmm &gmm,$/;"	f	namespace:kaldi
+GetStatsDerivative	indirect-diff-diag-gmm.cc	/^void GetStatsDerivative(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+GetVars	diag-gmm-inl.h	/^void DiagGmm::GetVars(Matrix<Real> *v) const {$/;"	f	class:kaldi::DiagGmm
+GmmFlagsToString	model-common.cc	/^std::string GmmFlagsToString(GmmFlagsType flags) {$/;"	f	namespace:kaldi
+GmmFlagsType	model-common.h	/^typedef uint16 GmmFlagsType;  \/\/\/< Bitwise OR of the above flags.$/;"	t	namespace:kaldi
+GmmUpdateFlags	model-common.h	/^enum GmmUpdateFlags {$/;"	g	namespace:kaldi
+Init	am-diag-gmm.cc	/^void AmDiagGmm::Init(const DiagGmm &proto, int32 num_pdfs) {$/;"	f	class:kaldi::AmDiagGmm
+Init	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Init(const AmDiagGmm &model,$/;"	f	class:kaldi::AccumAmDiagGmm
+InitRandDiagGmm	model-test-common.cc	/^void InitRandDiagGmm(int32 dim, int32 num_comp, DiagGmm *gmm) {$/;"	f	namespace:kaldi::unittest
+InitRandFullGmm	model-test-common.cc	/^void InitRandFullGmm(int32 dim, int32 num_comp, FullGmm *gmm) {$/;"	f	namespace:kaldi::unittest
+InitRandomGmm	diag-gmm-test.cc	/^void InitRandomGmm(DiagGmm *gmm_in) {$/;"	f	namespace:kaldi
+Interpolate	diag-gmm.cc	/^void DiagGmm::Interpolate(BaseFloat rho, const DiagGmm &source,$/;"	f	class:kaldi::DiagGmm
+Interpolate	diag-gmm.cc	/^void DiagGmm::Interpolate(BaseFloat rho, const FullGmm &source,$/;"	f	class:kaldi::DiagGmm
+Interpolate	full-gmm.cc	/^void FullGmm::Interpolate(BaseFloat rho, const FullGmm &source,$/;"	f	class:kaldi::FullGmm
+IsLastFrame	decodable-am-diag-gmm.h	/^  virtual bool IsLastFrame(int32 frame) {$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+IsmoothStatsAmDiagGmm	ebw-diag-gmm.cc	/^void IsmoothStatsAmDiagGmm(const AccumAmDiagGmm &src_stats,$/;"	f	namespace:kaldi
+IsmoothStatsAmDiagGmmFromModel	ebw-diag-gmm.cc	/^void IsmoothStatsAmDiagGmmFromModel(const AmDiagGmm &src_model,$/;"	f	namespace:kaldi
+IsmoothStatsDiagGmm	ebw-diag-gmm.cc	/^void IsmoothStatsDiagGmm(const AccumDiagGmm &src_stats,$/;"	f	namespace:kaldi
+KALDI_GMM_AM_DIAG_GMM_H_	am-diag-gmm.h	23;"	d
+KALDI_GMM_DECODABLE_AM_DIAG_GMM_H_	decodable-am-diag-gmm.h	23;"	d
+KALDI_GMM_DIAG_GMM_H_	diag-gmm.h	25;"	d
+KALDI_GMM_DIAG_GMM_INL_H_	diag-gmm-inl.h	21;"	d
+KALDI_GMM_DIAG_GMM_NORMAL_H_	diag-gmm-normal.h	22;"	d
+KALDI_GMM_EBW_DIAG_GMM_H_	ebw-diag-gmm.h	22;"	d
+KALDI_GMM_FULL_GMM_H_	full-gmm.h	25;"	d
+KALDI_GMM_FULL_GMM_INL_H_	full-gmm-inl.h	22;"	d
+KALDI_GMM_FULL_GMM_NORMAL_H_	full-gmm-normal.h	23;"	d
+KALDI_GMM_INDIRECT_DIFF_DIAG_GMM_H_	indirect-diff-diag-gmm.h	22;"	d
+KALDI_GMM_MLE_AM_DIAG_GMM_H_	mle-am-diag-gmm.h	24;"	d
+KALDI_GMM_MLE_DIAG_GMM_H_	mle-diag-gmm.h	25;"	d
+KALDI_GMM_MLE_FULL_GMM_H_	mle-full-gmm.h	23;"	d
+KALDI_GMM_MODEL_COMMON_H_	model-common.h	23;"	d
+KALDI_GMM_MODEL_TEST_COMMON_H_	model-test-common.h	23;"	d
+LikelihoodCacheRecord	decodable-am-diag-gmm.h	/^  struct LikelihoodCacheRecord {$/;"	s	class:kaldi::DecodableAmDiagGmmUnmapped
+LogLikelihood	am-diag-gmm.h	/^inline BaseFloat AmDiagGmm::LogLikelihood($/;"	f	class:kaldi::AmDiagGmm
+LogLikelihood	decodable-am-diag-gmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 state_index) {$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+LogLikelihood	decodable-am-diag-gmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmDiagGmm
+LogLikelihood	decodable-am-diag-gmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmDiagGmmScaled
+LogLikelihood	diag-gmm.cc	/^BaseFloat DiagGmm::LogLikelihood(const VectorBase<BaseFloat> &data) const {$/;"	f	class:kaldi::DiagGmm
+LogLikelihood	full-gmm.cc	/^BaseFloat FullGmm::LogLikelihood(const VectorBase<BaseFloat> &data) const {$/;"	f	class:kaldi::FullGmm
+LogLikelihoodZeroBased	decodable-am-diag-gmm.cc	/^BaseFloat DecodableAmDiagGmmUnmapped::LogLikelihoodZeroBased($/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+LogLikelihoods	diag-gmm.cc	/^void DiagGmm::LogLikelihoods(const MatrixBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+LogLikelihoods	diag-gmm.cc	/^void DiagGmm::LogLikelihoods(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+LogLikelihoods	full-gmm.cc	/^void FullGmm::LogLikelihoods(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+LogLikelihoodsPreselect	diag-gmm.cc	/^void DiagGmm::LogLikelihoodsPreselect(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+LogLikelihoodsPreselect	full-gmm.cc	/^void FullGmm::LogLikelihoodsPreselect(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+MapAmDiagGmmSeqReader	mle-am-diag-gmm.h	/^typedef SequentialTableReader< KaldiObjectHolder<AmDiagGmm> > MapAmDiagGmmSeqReader;$/;"	t	namespace:kaldi
+MapAmDiagGmmUpdate	mle-am-diag-gmm.cc	/^void MapAmDiagGmmUpdate (const MapDiagGmmOptions &config,$/;"	f	namespace:kaldi
+MapAmDiagGmmWriter	mle-am-diag-gmm.h	/^typedef TableWriter< KaldiObjectHolder<AmDiagGmm> >  MapAmDiagGmmWriter;$/;"	t	namespace:kaldi
+MapDiagGmmOptions	mle-diag-gmm.h	/^  MapDiagGmmOptions(): mean_tau(10.0),$/;"	f	struct:kaldi::MapDiagGmmOptions
+MapDiagGmmOptions	mle-diag-gmm.h	/^struct MapDiagGmmOptions {$/;"	s	namespace:kaldi
+MapDiagGmmUpdate	mle-diag-gmm.cc	/^void MapDiagGmmUpdate(const MapDiagGmmOptions &config,$/;"	f	namespace:kaldi
+Merge	diag-gmm.cc	/^void DiagGmm::Merge(int32 target_components, std::vector<int32> *history) {$/;"	f	class:kaldi::DiagGmm
+Merge	full-gmm.cc	/^void FullGmm::Merge(int32 target_components, vector<int32> *history) {$/;"	f	class:kaldi::FullGmm
+MergeByCount	am-diag-gmm.cc	/^void AmDiagGmm::MergeByCount(const Vector<BaseFloat> &state_occs,$/;"	f	class:kaldi::AmDiagGmm
+MergeKmeans	diag-gmm.cc	/^void DiagGmm::MergeKmeans(int32 target_components,$/;"	f	class:kaldi::DiagGmm
+MergePreselect	full-gmm.cc	/^BaseFloat FullGmm::MergePreselect(int32 target_components,$/;"	f	class:kaldi::FullGmm
+MergedComponentsLogdet	full-gmm.cc	/^BaseFloat FullGmm::MergedComponentsLogdet(BaseFloat w1, BaseFloat w2,$/;"	f	class:kaldi::FullGmm
+MlObjective	mle-diag-gmm.cc	/^BaseFloat MlObjective(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+MlObjective	mle-full-gmm.cc	/^BaseFloat MlObjective(const FullGmm &gmm, const AccumFullGmm &fullgmm_acc) {$/;"	f	namespace:kaldi
+MleAmDiagGmmUpdate	mle-am-diag-gmm.cc	/^void MleAmDiagGmmUpdate (const MleDiagGmmOptions &config,$/;"	f	namespace:kaldi
+MleDiagGmmOptions	mle-diag-gmm.h	/^  MleDiagGmmOptions() {$/;"	f	struct:kaldi::MleDiagGmmOptions
+MleDiagGmmOptions	mle-diag-gmm.h	/^struct MleDiagGmmOptions {$/;"	s	namespace:kaldi
+MleDiagGmmUpdate	mle-diag-gmm.cc	/^void MleDiagGmmUpdate(const MleDiagGmmOptions &config,$/;"	f	namespace:kaldi
+MleFullGmmOptions	mle-full-gmm.h	/^  MleFullGmmOptions() {$/;"	f	struct:kaldi::MleFullGmmOptions
+MleFullGmmOptions	mle-full-gmm.h	/^struct MleFullGmmOptions {$/;"	s	namespace:kaldi
+MleFullGmmUpdate	mle-full-gmm.cc	/^void MleFullGmmUpdate(const MleFullGmmOptions &config,$/;"	f	namespace:kaldi
+NumAccs	mle-am-diag-gmm.h	/^  int32 NumAccs() const { return gmm_accumulators_.size(); }$/;"	f	class:kaldi::AccumAmDiagGmm
+NumAccs	mle-am-diag-gmm.h	/^  int32 NumAccs() { return gmm_accumulators_.size(); }$/;"	f	class:kaldi::AccumAmDiagGmm
+NumFrames	decodable-am-diag-gmm.h	/^  int32 NumFrames() { return feature_matrix_.NumRows(); }$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+NumGauss	am-diag-gmm.cc	/^int32 AmDiagGmm::NumGauss() const {$/;"	f	class:kaldi::AmDiagGmm
+NumGauss	diag-gmm-normal.h	/^  int32 NumGauss() { return weights_.Dim(); }$/;"	f	class:kaldi::DiagGmmNormal
+NumGauss	diag-gmm.h	/^  int32 NumGauss() const { return weights_.Dim(); }$/;"	f	class:kaldi::DiagGmm
+NumGauss	full-gmm.h	/^  int32 NumGauss() const { return weights_.Dim(); }$/;"	f	class:kaldi::FullGmm
+NumGauss	mle-diag-gmm.h	/^  int32 NumGauss() const { return num_comp_; }$/;"	f	class:kaldi::AccumDiagGmm
+NumGauss	mle-full-gmm.h	/^  int32 NumGauss() const { return num_comp_; }$/;"	f	class:kaldi::AccumFullGmm
+NumGaussInPdf	am-diag-gmm.h	/^inline int32 AmDiagGmm::NumGaussInPdf(int32 pdf_index) const {$/;"	f	class:kaldi::AmDiagGmm
+NumIndices	decodable-am-diag-gmm.h	/^  virtual int32 NumIndices() { return acoustic_model_.NumPdfs(); }$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+NumIndices	decodable-am-diag-gmm.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmDiagGmm
+NumIndices	decodable-am-diag-gmm.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmDiagGmmScaled
+NumPdfs	am-diag-gmm.h	/^  int32 NumPdfs() const { return densities_.size(); }$/;"	f	class:kaldi::AmDiagGmm
+Perturb	diag-gmm.cc	/^void DiagGmm::Perturb(float perturb_factor) {$/;"	f	class:kaldi::DiagGmm
+Perturb	full-gmm.cc	/^void FullGmm::Perturb(float perturb_factor) {$/;"	f	class:kaldi::FullGmm
+Rand	full-gmm-normal.cc	/^void FullGmmNormal::Rand(MatrixBase<BaseFloat> *feats) {$/;"	f	class:kaldi::FullGmmNormal
+RandDiagGaussFeatures	model-test-common.cc	/^void RandDiagGaussFeatures(int32 num_samples,$/;"	f	namespace:kaldi::unittest
+RandFullGaussFeatures	model-test-common.cc	/^void RandFullGaussFeatures(int32 num_samples,$/;"	f	namespace:kaldi::unittest
+RandPosdefSpMatrix	full-gmm-test.cc	/^void RandPosdefSpMatrix(size_t dim, SpMatrix<BaseFloat> *matrix,$/;"	f
+RandPosdefSpMatrix	model-test-common.cc	/^void RandPosdefSpMatrix(int32 dim, SpMatrix<BaseFloat> *matrix,$/;"	f	namespace:kaldi::unittest
+RandomAccessMapAmDiagGmmReader	mle-am-diag-gmm.h	/^typedef RandomAccessTableReader< KaldiObjectHolder<AmDiagGmm> > RandomAccessMapAmDiagGmmReader;$/;"	t	namespace:kaldi
+RandomAccessMapAmDiagGmmReaderMapped	mle-am-diag-gmm.h	/^typedef RandomAccessTableReaderMapped< KaldiObjectHolder<AmDiagGmm> > RandomAccessMapAmDiagGmmReaderMapped;$/;"	t	namespace:kaldi
+Read	am-diag-gmm.cc	/^void AmDiagGmm::Read(std::istream &in_stream, bool binary) {$/;"	f	class:kaldi::AmDiagGmm
+Read	diag-gmm.cc	/^void DiagGmm::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::DiagGmm
+Read	full-gmm.cc	/^void FullGmm::Read(std::istream &in_stream, bool binary) {$/;"	f	class:kaldi::FullGmm
+Read	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Read(std::istream &in_stream, bool binary,$/;"	f	class:kaldi::AccumAmDiagGmm
+Read	mle-diag-gmm.cc	/^void AccumDiagGmm::Read(std::istream &in_stream, bool binary, bool add) {$/;"	f	class:kaldi::AccumDiagGmm
+Read	mle-full-gmm.cc	/^void AccumFullGmm::Read(std::istream &in_stream, bool binary, bool add) {$/;"	f	class:kaldi::AccumFullGmm
+Register	am-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::UbmClusteringOptions
+Register	ebw-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::EbwOptions
+Register	ebw-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::EbwWeightOptions
+Register	mle-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MapDiagGmmOptions
+Register	mle-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MleDiagGmmOptions
+Register	mle-full-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MleFullGmmOptions
+RemoveComponent	diag-gmm.cc	/^void DiagGmm::RemoveComponent(int32 gauss, bool renorm_weights) {$/;"	f	class:kaldi::DiagGmm
+RemoveComponent	full-gmm.cc	/^void FullGmm::RemoveComponent(int32 gauss, bool renorm_weights) {$/;"	f	class:kaldi::FullGmm
+RemoveComponents	diag-gmm.cc	/^void DiagGmm::RemoveComponents(const std::vector<int32> &gauss_in,$/;"	f	class:kaldi::DiagGmm
+RemoveComponents	full-gmm.cc	/^void FullGmm::RemoveComponents(const vector<int32> &gauss_in, bool renorm_weights) {$/;"	f	class:kaldi::FullGmm
+RemovePdf	am-diag-gmm.cc	/^void AmDiagGmm::RemovePdf(int32 pdf_index) {$/;"	f	class:kaldi::AmDiagGmm
+ResetLogLikeCache	decodable-am-diag-gmm.cc	/^void DecodableAmDiagGmmUnmapped::ResetLogLikeCache() {$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+Resize	diag-gmm-normal.cc	/^void DiagGmmNormal::Resize(int32 nmix, int32 dim) {$/;"	f	class:kaldi::DiagGmmNormal
+Resize	diag-gmm.cc	/^void DiagGmm::Resize(int32 nmix, int32 dim) {$/;"	f	class:kaldi::DiagGmm
+Resize	full-gmm-normal.cc	/^void FullGmmNormal::Resize(int32 nmix, int32 dim) {$/;"	f	class:kaldi::FullGmmNormal
+Resize	full-gmm.cc	/^void FullGmm::Resize(int32 nmix, int32 dim) {$/;"	f	class:kaldi::FullGmm
+Resize	mle-diag-gmm.cc	/^void AccumDiagGmm::Resize(int32 num_comp, int32 dim, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+Resize	mle-diag-gmm.h	/^inline void AccumDiagGmm::Resize(const DiagGmm &gmm, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+Resize	mle-full-gmm.cc	/^void AccumFullGmm::Resize(int32 num_comp, int32 dim, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+Resize	mle-full-gmm.h	/^inline void AccumFullGmm::Resize(const FullGmm &gmm, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+ResizeInvCovars	full-gmm.cc	/^void FullGmm::ResizeInvCovars(int32 nmix, int32 dim) {$/;"	f	class:kaldi::FullGmm
+ResizeModel	mle-am-diag-gmm.cc	/^void ResizeModel (int32 dim, AmDiagGmm *am_gmm) {$/;"	f	namespace:kaldi
+ResizeVarAccumulator	mle-full-gmm.cc	/^void AccumFullGmm::ResizeVarAccumulator(int32 num_comp, int32 dim) {$/;"	f	class:kaldi::AccumFullGmm
+Scale	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Scale(BaseFloat scale) {$/;"	f	class:kaldi::AccumAmDiagGmm
+Scale	mle-diag-gmm.cc	/^void AccumDiagGmm::Scale(BaseFloat f, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+Scale	mle-full-gmm.cc	/^void AccumFullGmm::Scale(BaseFloat f, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+SetComponentInvVar	diag-gmm-inl.h	/^void DiagGmm::SetComponentInvVar(int32 g, const VectorBase<Real> &v) {$/;"	f	class:kaldi::DiagGmm
+SetComponentMean	diag-gmm-inl.h	/^void DiagGmm::SetComponentMean(int32 g, const VectorBase<Real> &in) {$/;"	f	class:kaldi::DiagGmm
+SetComponentWeight	diag-gmm-inl.h	/^inline void DiagGmm::SetComponentWeight(int32 g, BaseFloat w) {$/;"	f	class:kaldi::DiagGmm
+SetGaussianMean	am-diag-gmm.h	/^inline void AmDiagGmm::SetGaussianMean(int32 pdf_index, int32 gauss_index,$/;"	f	class:kaldi::AmDiagGmm
+SetInvCovars	full-gmm-inl.h	/^void FullGmm::SetInvCovars(const std::vector<SpMatrix<Real> > &v) {$/;"	f	class:kaldi::FullGmm
+SetInvCovarsAndMeans	full-gmm-inl.h	/^void FullGmm::SetInvCovarsAndMeans($/;"	f	class:kaldi::FullGmm
+SetInvCovarsAndMeansInvCovars	full-gmm-inl.h	/^void FullGmm::SetInvCovarsAndMeansInvCovars($/;"	f	class:kaldi::FullGmm
+SetInvVars	diag-gmm-inl.h	/^void DiagGmm::SetInvVars(const MatrixBase<Real> &v) {$/;"	f	class:kaldi::DiagGmm
+SetInvVarsAndMeans	diag-gmm-inl.h	/^void DiagGmm::SetInvVarsAndMeans(const MatrixBase<Real> &invvars,$/;"	f	class:kaldi::DiagGmm
+SetMeans	diag-gmm-inl.h	/^void DiagGmm::SetMeans(const MatrixBase<Real> &m) {$/;"	f	class:kaldi::DiagGmm
+SetMeans	full-gmm-inl.h	/^void FullGmm::SetMeans(const Matrix<Real> &m) {$/;"	f	class:kaldi::FullGmm
+SetWeights	diag-gmm-inl.h	/^void DiagGmm::SetWeights(const VectorBase<Real> &w) {$/;"	f	class:kaldi::DiagGmm
+SetWeights	full-gmm-inl.h	/^void FullGmm::SetWeights(const Vector<Real> &w) {$/;"	f	class:kaldi::FullGmm
+SetZero	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::SetZero(GmmFlagsType flags) {$/;"	f	class:kaldi::AccumAmDiagGmm
+SetZero	mle-diag-gmm.cc	/^void AccumDiagGmm::SetZero(GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+SetZero	mle-full-gmm.cc	/^void AccumFullGmm::SetZero(GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+SgmmUpdateFlags	model-common.h	/^enum SgmmUpdateFlags {  \/\/\/ The letters correspond to the variable names.$/;"	g	namespace:kaldi
+SgmmUpdateFlagsType	model-common.h	/^typedef uint16 SgmmUpdateFlagsType;  \/\/\/< Bitwise OR of the above flags.$/;"	t	namespace:kaldi
+SgmmWriteFlags	model-common.h	/^enum SgmmWriteFlags {$/;"	g	namespace:kaldi
+SgmmWriteFlagsType	model-common.h	/^typedef uint16 SgmmWriteFlagsType;  \/\/\/< Bitwise OR of the above flags.$/;"	t	namespace:kaldi
+SmoothStats	mle-diag-gmm.cc	/^void AccumDiagGmm::SmoothStats(BaseFloat tau) {$/;"	f	class:kaldi::AccumDiagGmm
+SmoothWithAccum	mle-diag-gmm.cc	/^void AccumDiagGmm::SmoothWithAccum(BaseFloat tau, const AccumDiagGmm &src_acc) {$/;"	f	class:kaldi::AccumDiagGmm
+SmoothWithModel	mle-diag-gmm.cc	/^void AccumDiagGmm::SmoothWithModel(BaseFloat tau, const DiagGmm &gmm) {$/;"	f	class:kaldi::AccumDiagGmm
+Split	diag-gmm.cc	/^void DiagGmm::Split(int32 target_components, float perturb_factor,$/;"	f	class:kaldi::DiagGmm
+Split	full-gmm.cc	/^void FullGmm::Split(int32 target_components, float perturb_factor,$/;"	f	class:kaldi::FullGmm
+SplitByCount	am-diag-gmm.cc	/^void AmDiagGmm::SplitByCount(const Vector<BaseFloat> &state_occs,$/;"	f	class:kaldi::AmDiagGmm
+SplitPdf	am-diag-gmm.h	/^inline void AmDiagGmm::SplitPdf(int32 pdf_index,$/;"	f	class:kaldi::AmDiagGmm
+StringToGmmFlags	model-common.cc	/^GmmFlagsType StringToGmmFlags(std::string str) {$/;"	f	namespace:kaldi
+StringToSgmmUpdateFlags	model-common.cc	/^SgmmUpdateFlagsType StringToSgmmUpdateFlags(std::string str) {$/;"	f	namespace:kaldi
+StringToSgmmWriteFlags	model-common.cc	/^SgmmUpdateFlagsType StringToSgmmWriteFlags(std::string str) {$/;"	f	namespace:kaldi
+TestAmDiagGmmAccsIO	mle-am-diag-gmm-test.cc	/^void TestAmDiagGmmAccsIO(const AmDiagGmm &am_gmm,$/;"	f
+TestAmDiagGmmIO	am-diag-gmm-test.cc	/^void TestAmDiagGmmIO(const AmDiagGmm &am_gmm) {$/;"	f
+TestClustering	am-diag-gmm-test.cc	/^void TestClustering(const AmDiagGmm &am_gmm) {$/;"	f
+TestComponentAcc	mle-diag-gmm-test.cc	/^void TestComponentAcc(const DiagGmm &gmm, const Matrix<BaseFloat> &feats) {$/;"	f
+TestComponentAcc	mle-full-gmm-test.cc	/^void TestComponentAcc(const FullGmm &gmm, const Matrix<BaseFloat> &feats) {$/;"	f
+TestSplitStates	am-diag-gmm-test.cc	/^void TestSplitStates(const AmDiagGmm &am_gmm) {$/;"	f
+TotCount	mle-am-diag-gmm.h	/^  BaseFloat TotCount() const { return total_frames_; }$/;"	f	class:kaldi::AccumAmDiagGmm
+TotLogLike	mle-am-diag-gmm.h	/^  BaseFloat TotLogLike() const { return total_log_like_; }$/;"	f	class:kaldi::AccumAmDiagGmm
+TotStatsCount	mle-am-diag-gmm.cc	/^BaseFloat AccumAmDiagGmm::TotStatsCount() const {$/;"	f	class:kaldi::AccumAmDiagGmm
+TransModel	decodable-am-diag-gmm.h	/^  const TransitionModel *TransModel() { return &trans_model_; }$/;"	f	class:kaldi::DecodableAmDiagGmm
+TransModel	decodable-am-diag-gmm.h	/^  const TransitionModel *TransModel() { return &trans_model_; }$/;"	f	class:kaldi::DecodableAmDiagGmmScaled
+UbmClusteringOptions	am-diag-gmm.h	/^  UbmClusteringOptions()$/;"	f	struct:kaldi::UbmClusteringOptions
+UbmClusteringOptions	am-diag-gmm.h	/^  UbmClusteringOptions(int32 ncomp, BaseFloat red, int32 interm_gauss,$/;"	f	struct:kaldi::UbmClusteringOptions
+UbmClusteringOptions	am-diag-gmm.h	/^struct UbmClusteringOptions {$/;"	s	namespace:kaldi
+UnitTestAmDiagGmm	am-diag-gmm-test.cc	/^void UnitTestAmDiagGmm() {$/;"	f
+UnitTestDiagGmm	diag-gmm-test.cc	/^void UnitTestDiagGmm() {$/;"	f	namespace:kaldi
+UnitTestDiagGmmGenerate	diag-gmm-test.cc	/^void UnitTestDiagGmmGenerate() {$/;"	f	namespace:kaldi
+UnitTestEstimateDiagGmm	mle-diag-gmm-test.cc	/^UnitTestEstimateDiagGmm() {$/;"	f
+UnitTestEstimateFullGmm	mle-full-gmm-test.cc	/^UnitTestEstimateFullGmm() {$/;"	f
+UnitTestEstimateMmieDiagGmm	ebw-diag-gmm-test.cc	/^void UnitTestEstimateMmieDiagGmm() {$/;"	f	namespace:kaldi
+UnitTestFullGmm	full-gmm-test.cc	/^UnitTestFullGmm() {$/;"	f
+UnitTestFullGmmEst	full-gmm-test.cc	/^void UnitTestFullGmmEst() {$/;"	f
+UnitTestMleAmDiagGmm	mle-am-diag-gmm-test.cc	/^void UnitTestMleAmDiagGmm() {$/;"	f
+UpdateEbwAmDiagGmm	ebw-diag-gmm.cc	/^void UpdateEbwAmDiagGmm(const AccumAmDiagGmm &num_stats, \/\/ with I-smoothing, if used.$/;"	f	namespace:kaldi
+UpdateEbwDiagGmm	ebw-diag-gmm.cc	/^void UpdateEbwDiagGmm(const AccumDiagGmm &num_stats, \/\/ with I-smoothing, if used.$/;"	f	namespace:kaldi
+UpdateEbwWeightsAmDiagGmm	ebw-diag-gmm.cc	/^void UpdateEbwWeightsAmDiagGmm(const AccumAmDiagGmm &num_stats, \/\/ with I-smoothing, if used.$/;"	f	namespace:kaldi
+UpdateEbwWeightsDiagGmm	ebw-diag-gmm.cc	/^void UpdateEbwWeightsDiagGmm(const AccumDiagGmm &num_stats, \/\/ should have no I-smoothing$/;"	f	namespace:kaldi
+Write	am-diag-gmm.cc	/^void AmDiagGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::AmDiagGmm
+Write	diag-gmm.cc	/^void DiagGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::DiagGmm
+Write	full-gmm.cc	/^void FullGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::FullGmm
+Write	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::AccumAmDiagGmm
+Write	mle-diag-gmm.cc	/^void AccumDiagGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::AccumDiagGmm
+Write	mle-full-gmm.cc	/^void AccumFullGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::AccumFullGmm
+accum_	mle-diag-gmm.cc	/^  AccumDiagGmm accum_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+acoustic_model_	decodable-am-diag-gmm.h	/^  const AmDiagGmm &acoustic_model_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+cluster_varfloor	am-diag-gmm.h	/^  BaseFloat cluster_varfloor;$/;"	m	struct:kaldi::UbmClusteringOptions
+covariance_accumulator	mle-full-gmm.h	/^  const std::vector<SpMatrix<double> > &covariance_accumulator() const { return covariance_accumulator_; }$/;"	f	class:kaldi::AccumFullGmm
+covariance_accumulator_	mle-full-gmm.h	/^  std::vector<SpMatrix<double> > covariance_accumulator_;$/;"	m	class:kaldi::AccumFullGmm
+data_	mle-diag-gmm.cc	/^  const MatrixBase<BaseFloat> &data_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+data_squared_	decodable-am-diag-gmm.h	/^  Vector<BaseFloat> data_squared_;  \/\/\/< Cache for fast likelihood calculation$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+delete_feats_	decodable-am-diag-gmm.h	/^  Matrix<BaseFloat> *delete_feats_;$/;"	m	class:kaldi::DecodableAmDiagGmmScaled
+densities_	am-diag-gmm.h	/^  std::vector<DiagGmm*> densities_;$/;"	m	class:kaldi::AmDiagGmm
+dest_accum_	mle-diag-gmm.cc	/^  AccumDiagGmm *dest_accum_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+diag_gmm_	mle-diag-gmm.cc	/^  const DiagGmm &diag_gmm_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+dim_	mle-diag-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::AccumDiagGmm
+dim_	mle-full-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::AccumFullGmm
+feature_matrix_	decodable-am-diag-gmm.h	/^  const Matrix<BaseFloat> &feature_matrix_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+flags_	mle-diag-gmm.h	/^  GmmFlagsType flags_;$/;"	m	class:kaldi::AccumDiagGmm
+flags_	mle-full-gmm.h	/^  GmmFlagsType flags_;$/;"	m	class:kaldi::AccumFullGmm
+frame_weights_	mle-diag-gmm.cc	/^  const VectorBase<BaseFloat> &frame_weights_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+gconsts	diag-gmm.h	/^  const Vector<BaseFloat> &gconsts() const {$/;"	f	class:kaldi::DiagGmm
+gconsts	full-gmm.h	/^  const Vector<BaseFloat> &gconsts() const { return gconsts_; }$/;"	f	class:kaldi::FullGmm
+gconsts_	diag-gmm.h	/^  Vector<BaseFloat> gconsts_;$/;"	m	class:kaldi::DiagGmm
+gconsts_	full-gmm.h	/^  Vector<BaseFloat> gconsts_;$/;"	m	class:kaldi::FullGmm
+gmm_accumulators_	mle-am-diag-gmm.h	/^  std::vector<AccumDiagGmm*> gmm_accumulators_;$/;"	m	class:kaldi::AccumAmDiagGmm
+hit_time	decodable-am-diag-gmm.h	/^    int32 hit_time;     \/\/\/< Frame for which this value is relevant$/;"	m	struct:kaldi::DecodableAmDiagGmmUnmapped::LikelihoodCacheRecord
+init_rand_diag_gmm	full-gmm-test.cc	/^void init_rand_diag_gmm(DiagGmm *gmm) {$/;"	f
+intermediate_num_gauss	am-diag-gmm.h	/^  int32 intermediate_num_gauss;$/;"	m	struct:kaldi::UbmClusteringOptions
+inv_covars	full-gmm.h	/^  const std::vector<SpMatrix<BaseFloat> > &inv_covars() const {$/;"	f	class:kaldi::FullGmm
+inv_covars	full-gmm.h	/^  std::vector<SpMatrix<BaseFloat> > &inv_covars() { return inv_covars_; }$/;"	f	class:kaldi::FullGmm
+inv_covars_	full-gmm.h	/^  std::vector<SpMatrix<BaseFloat> > inv_covars_;  \/\/\/< Inverse covariances$/;"	m	class:kaldi::FullGmm
+inv_vars	diag-gmm.h	/^  const Matrix<BaseFloat> &inv_vars() const { return inv_vars_; }$/;"	f	class:kaldi::DiagGmm
+inv_vars_	diag-gmm.h	/^  Matrix<BaseFloat> inv_vars_;       \/\/\/< Inverted (diagonal) variances$/;"	m	class:kaldi::DiagGmm
+kGmmAll	model-common.h	/^  kGmmAll       = 0x00F  \/\/ a$/;"	e	enum:kaldi::GmmUpdateFlags
+kGmmMeans	model-common.h	/^  kGmmMeans       = 0x001,  \/\/ m$/;"	e	enum:kaldi::GmmUpdateFlags
+kGmmTransitions	model-common.h	/^  kGmmTransitions = 0x008,  \/\/ t ... not really part of GMM.$/;"	e	enum:kaldi::GmmUpdateFlags
+kGmmVariances	model-common.h	/^  kGmmVariances   = 0x002,  \/\/ v$/;"	e	enum:kaldi::GmmUpdateFlags
+kGmmWeights	model-common.h	/^  kGmmWeights     = 0x004,  \/\/ w$/;"	e	enum:kaldi::GmmUpdateFlags
+kSgmmAll	model-common.h	/^  kSgmmAll                         = 0x0FF   \/\/\/ a (won't normally use this).  $/;"	e	enum:kaldi::SgmmUpdateFlags
+kSgmmBackgroundGmms	model-common.h	/^  kSgmmBackgroundGmms  = 0x008,  \/\/\/ u$/;"	e	enum:kaldi::SgmmWriteFlags
+kSgmmCovarianceMatrix	model-common.h	/^  kSgmmCovarianceMatrix            = 0x008,  \/\/\/ S$/;"	e	enum:kaldi::SgmmUpdateFlags
+kSgmmGlobalParams	model-common.h	/^  kSgmmGlobalParams    = 0x001,  \/\/\/ g$/;"	e	enum:kaldi::SgmmWriteFlags
+kSgmmNormalizers	model-common.h	/^  kSgmmNormalizers     = 0x004,  \/\/\/ n$/;"	e	enum:kaldi::SgmmWriteFlags
+kSgmmPhoneProjections	model-common.h	/^  kSgmmPhoneProjections            = 0x002,  \/\/\/ M$/;"	e	enum:kaldi::SgmmUpdateFlags
+kSgmmPhoneVectors	model-common.h	/^  kSgmmPhoneVectors                = 0x001,  \/\/\/ v$/;"	e	enum:kaldi::SgmmUpdateFlags
+kSgmmPhoneWeightProjections	model-common.h	/^  kSgmmPhoneWeightProjections      = 0x004,  \/\/\/ w$/;"	e	enum:kaldi::SgmmUpdateFlags
+kSgmmSpeakerProjections	model-common.h	/^  kSgmmSpeakerProjections          = 0x020,  \/\/\/ N$/;"	e	enum:kaldi::SgmmUpdateFlags
+kSgmmSpeakerWeightProjections	model-common.h	/^  kSgmmSpeakerWeightProjections    = 0x080,  \/\/\/ u [ for SSGMM ]$/;"	e	enum:kaldi::SgmmUpdateFlags
+kSgmmStateParams	model-common.h	/^  kSgmmStateParams     = 0x002,  \/\/\/ s$/;"	e	enum:kaldi::SgmmWriteFlags
+kSgmmSubstateWeights	model-common.h	/^  kSgmmSubstateWeights             = 0x010,  \/\/\/ c$/;"	e	enum:kaldi::SgmmUpdateFlags
+kSgmmTransitions	model-common.h	/^  kSgmmTransitions                 = 0x040,  \/\/\/ t .. not really part of SGMM.$/;"	e	enum:kaldi::SgmmUpdateFlags
+kSgmmWriteAll	model-common.h	/^  kSgmmWriteAll        = 0x00F  \/\/\/ a$/;"	e	enum:kaldi::SgmmWriteFlags
+kaldi	am-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	am-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	decodable-am-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	decodable-am-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	diag-gmm-inl.h	/^namespace kaldi {$/;"	n
+kaldi	diag-gmm-normal.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	diag-gmm-normal.h	/^namespace kaldi {$/;"	n
+kaldi	diag-gmm-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	ebw-diag-gmm-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	ebw-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	ebw-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	full-gmm-inl.h	/^namespace kaldi {$/;"	n
+kaldi	full-gmm-normal.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	full-gmm-normal.h	/^namespace kaldi {$/;"	n
+kaldi	full-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	full-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	indirect-diff-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	indirect-diff-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	mle-am-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	mle-am-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	mle-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	mle-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	mle-full-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	mle-full-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	model-common.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	model-common.h	/^namespace kaldi {$/;"	n
+kaldi	model-test-common.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	model-test-common.h	/^namespace kaldi {$/;"	n
+kaldi::AccumAmDiagGmm	mle-am-diag-gmm.h	/^class AccumAmDiagGmm {$/;"	c	namespace:kaldi
+kaldi::AccumAmDiagGmm::AccumAmDiagGmm	mle-am-diag-gmm.h	/^  AccumAmDiagGmm() : total_frames_(0.0), total_log_like_(0.0) {}$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::AccumulateForGaussian	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::AccumulateForGaussian($/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::AccumulateForGmm	mle-am-diag-gmm.cc	/^BaseFloat AccumAmDiagGmm::AccumulateForGmm($/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::AccumulateForGmmTwofeats	mle-am-diag-gmm.cc	/^BaseFloat AccumAmDiagGmm::AccumulateForGmmTwofeats($/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::AccumulateFromPosteriors	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::AccumulateFromPosteriors($/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::Add	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Add(BaseFloat scale, const AccumAmDiagGmm &other) {$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::Dim	mle-am-diag-gmm.h	/^  int32 Dim() const {$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::GetAcc	mle-am-diag-gmm.cc	/^AccumDiagGmm& AccumAmDiagGmm::GetAcc(int32 index) {$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::GetAcc	mle-am-diag-gmm.cc	/^const AccumDiagGmm& AccumAmDiagGmm::GetAcc(int32 index) const {$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::Init	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Init(const AmDiagGmm &model,$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::NumAccs	mle-am-diag-gmm.h	/^  int32 NumAccs() const { return gmm_accumulators_.size(); }$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::NumAccs	mle-am-diag-gmm.h	/^  int32 NumAccs() { return gmm_accumulators_.size(); }$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::Read	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Read(std::istream &in_stream, bool binary,$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::Scale	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Scale(BaseFloat scale) {$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::SetZero	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::SetZero(GmmFlagsType flags) {$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::TotCount	mle-am-diag-gmm.h	/^  BaseFloat TotCount() const { return total_frames_; }$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::TotLogLike	mle-am-diag-gmm.h	/^  BaseFloat TotLogLike() const { return total_log_like_; }$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::TotStatsCount	mle-am-diag-gmm.cc	/^BaseFloat AccumAmDiagGmm::TotStatsCount() const {$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::Write	mle-am-diag-gmm.cc	/^void AccumAmDiagGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::gmm_accumulators_	mle-am-diag-gmm.h	/^  std::vector<AccumDiagGmm*> gmm_accumulators_;$/;"	m	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::total_frames_	mle-am-diag-gmm.h	/^  double total_frames_, total_log_like_;$/;"	m	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::total_log_like_	mle-am-diag-gmm.h	/^  double total_frames_, total_log_like_;$/;"	m	class:kaldi::AccumAmDiagGmm
+kaldi::AccumAmDiagGmm::~AccumAmDiagGmm	mle-am-diag-gmm.cc	/^AccumAmDiagGmm::~AccumAmDiagGmm() {$/;"	f	class:kaldi::AccumAmDiagGmm
+kaldi::AccumDiagGmm	mle-diag-gmm.h	/^class AccumDiagGmm {$/;"	c	namespace:kaldi
+kaldi::AccumDiagGmm::AccumDiagGmm	mle-diag-gmm.cc	/^AccumDiagGmm::AccumDiagGmm(const AccumDiagGmm &other)$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::AccumDiagGmm	mle-diag-gmm.h	/^  AccumDiagGmm(): dim_(0), num_comp_(0), flags_(0) { }$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::AccumDiagGmm	mle-diag-gmm.h	/^  explicit AccumDiagGmm(const DiagGmm &gmm, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::AccumulateForComponent	mle-diag-gmm.cc	/^void AccumDiagGmm::AccumulateForComponent(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::AccumulateFromDiag	mle-diag-gmm.cc	/^BaseFloat AccumDiagGmm::AccumulateFromDiag(const DiagGmm &gmm,$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::AccumulateFromDiagMultiThreaded	mle-diag-gmm.cc	/^BaseFloat AccumDiagGmm::AccumulateFromDiagMultiThreaded($/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::AccumulateFromPosteriors	mle-diag-gmm.cc	/^void AccumDiagGmm::AccumulateFromPosteriors($/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::Add	mle-diag-gmm.cc	/^void AccumDiagGmm::Add(double scale, const AccumDiagGmm &acc) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::AddStatsForComponent	mle-diag-gmm.cc	/^void AccumDiagGmm::AddStatsForComponent(int32 g,$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::AssertEqual	mle-diag-gmm.cc	/^void AccumDiagGmm::AssertEqual(const AccumDiagGmm &other) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::Dim	mle-diag-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::Flags	mle-diag-gmm.h	/^  const GmmFlagsType Flags() const { return flags_; }$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::NumGauss	mle-diag-gmm.h	/^  int32 NumGauss() const { return num_comp_; }$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::Read	mle-diag-gmm.cc	/^void AccumDiagGmm::Read(std::istream &in_stream, bool binary, bool add) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::Resize	mle-diag-gmm.cc	/^void AccumDiagGmm::Resize(int32 num_comp, int32 dim, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::Resize	mle-diag-gmm.h	/^inline void AccumDiagGmm::Resize(const DiagGmm &gmm, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::Scale	mle-diag-gmm.cc	/^void AccumDiagGmm::Scale(BaseFloat f, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::SetZero	mle-diag-gmm.cc	/^void AccumDiagGmm::SetZero(GmmFlagsType flags) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::SmoothStats	mle-diag-gmm.cc	/^void AccumDiagGmm::SmoothStats(BaseFloat tau) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::SmoothWithAccum	mle-diag-gmm.cc	/^void AccumDiagGmm::SmoothWithAccum(BaseFloat tau, const AccumDiagGmm &src_acc) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::SmoothWithModel	mle-diag-gmm.cc	/^void AccumDiagGmm::SmoothWithModel(BaseFloat tau, const DiagGmm &gmm) {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::Write	mle-diag-gmm.cc	/^void AccumDiagGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::dim_	mle-diag-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::flags_	mle-diag-gmm.h	/^  GmmFlagsType flags_;$/;"	m	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::mean_accumulator	mle-diag-gmm.h	/^  const MatrixBase<double> &mean_accumulator() const { return mean_accumulator_; }$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::mean_accumulator_	mle-diag-gmm.h	/^  Matrix<double> mean_accumulator_;$/;"	m	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::num_comp_	mle-diag-gmm.h	/^  int32 num_comp_;$/;"	m	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::occupancy	mle-diag-gmm.h	/^  const VectorBase<double> &occupancy() const { return occupancy_; }$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::occupancy_	mle-diag-gmm.h	/^  Vector<double> occupancy_;$/;"	m	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::variance_accumulator	mle-diag-gmm.h	/^  const MatrixBase<double> &variance_accumulator() const { return variance_accumulator_; }$/;"	f	class:kaldi::AccumDiagGmm
+kaldi::AccumDiagGmm::variance_accumulator_	mle-diag-gmm.h	/^  Matrix<double> variance_accumulator_;$/;"	m	class:kaldi::AccumDiagGmm
+kaldi::AccumFullGmm	mle-full-gmm.h	/^class AccumFullGmm {$/;"	c	namespace:kaldi
+kaldi::AccumFullGmm::AccumFullGmm	mle-full-gmm.cc	/^AccumFullGmm::AccumFullGmm(const AccumFullGmm &other)$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::AccumFullGmm	mle-full-gmm.h	/^  AccumFullGmm(): dim_(0), num_comp_(0), flags_(0) { }$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::AccumFullGmm	mle-full-gmm.h	/^  AccumFullGmm(int32 num_comp, int32 dim, GmmFlagsType flags):$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::AccumFullGmm	mle-full-gmm.h	/^  explicit AccumFullGmm(const FullGmm &gmm, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::AccumulateForComponent	mle-full-gmm.cc	/^void AccumFullGmm::AccumulateForComponent($/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::AccumulateFromDiag	mle-full-gmm.cc	/^BaseFloat AccumFullGmm::AccumulateFromDiag(const DiagGmm &gmm,$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::AccumulateFromFull	mle-full-gmm.cc	/^BaseFloat AccumFullGmm::AccumulateFromFull(const FullGmm &gmm,$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::AccumulateFromPosteriors	mle-full-gmm.cc	/^void AccumFullGmm::AccumulateFromPosteriors($/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::Dim	mle-full-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::Flags	mle-full-gmm.h	/^  const GmmFlagsType Flags() const { return flags_; }$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::NumGauss	mle-full-gmm.h	/^  int32 NumGauss() const { return num_comp_; }$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::Read	mle-full-gmm.cc	/^void AccumFullGmm::Read(std::istream &in_stream, bool binary, bool add) {$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::Resize	mle-full-gmm.cc	/^void AccumFullGmm::Resize(int32 num_comp, int32 dim, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::Resize	mle-full-gmm.h	/^inline void AccumFullGmm::Resize(const FullGmm &gmm, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::ResizeVarAccumulator	mle-full-gmm.cc	/^void AccumFullGmm::ResizeVarAccumulator(int32 num_comp, int32 dim) {$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::Scale	mle-full-gmm.cc	/^void AccumFullGmm::Scale(BaseFloat f, GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::SetZero	mle-full-gmm.cc	/^void AccumFullGmm::SetZero(GmmFlagsType flags) {$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::Write	mle-full-gmm.cc	/^void AccumFullGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::covariance_accumulator	mle-full-gmm.h	/^  const std::vector<SpMatrix<double> > &covariance_accumulator() const { return covariance_accumulator_; }$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::covariance_accumulator_	mle-full-gmm.h	/^  std::vector<SpMatrix<double> > covariance_accumulator_;$/;"	m	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::dim_	mle-full-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::flags_	mle-full-gmm.h	/^  GmmFlagsType flags_;$/;"	m	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::mean_accumulator	mle-full-gmm.h	/^  const Matrix<double> &mean_accumulator() const { return mean_accumulator_; }$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::mean_accumulator_	mle-full-gmm.h	/^  Matrix<double> mean_accumulator_;$/;"	m	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::num_comp_	mle-full-gmm.h	/^  int32 num_comp_;$/;"	m	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::occupancy	mle-full-gmm.h	/^  const Vector<double> &occupancy() const { return occupancy_; }$/;"	f	class:kaldi::AccumFullGmm
+kaldi::AccumFullGmm::occupancy_	mle-full-gmm.h	/^  Vector<double> occupancy_;$/;"	m	class:kaldi::AccumFullGmm
+kaldi::AccumulateMultiThreadedClass	mle-diag-gmm.cc	/^class AccumulateMultiThreadedClass: public MultiThreadable {$/;"	c	namespace:kaldi	file:
+kaldi::AccumulateMultiThreadedClass::AccumulateMultiThreadedClass	mle-diag-gmm.cc	/^  AccumulateMultiThreadedClass(const AccumulateMultiThreadedClass &other):$/;"	f	class:kaldi::AccumulateMultiThreadedClass
+kaldi::AccumulateMultiThreadedClass::AccumulateMultiThreadedClass	mle-diag-gmm.cc	/^  AccumulateMultiThreadedClass(const DiagGmm &diag_gmm,$/;"	f	class:kaldi::AccumulateMultiThreadedClass
+kaldi::AccumulateMultiThreadedClass::accum_	mle-diag-gmm.cc	/^  AccumDiagGmm accum_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+kaldi::AccumulateMultiThreadedClass::data_	mle-diag-gmm.cc	/^  const MatrixBase<BaseFloat> &data_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+kaldi::AccumulateMultiThreadedClass::dest_accum_	mle-diag-gmm.cc	/^  AccumDiagGmm *dest_accum_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+kaldi::AccumulateMultiThreadedClass::diag_gmm_	mle-diag-gmm.cc	/^  const DiagGmm &diag_gmm_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+kaldi::AccumulateMultiThreadedClass::frame_weights_	mle-diag-gmm.cc	/^  const VectorBase<BaseFloat> &frame_weights_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+kaldi::AccumulateMultiThreadedClass::operator ()	mle-diag-gmm.cc	/^  void operator () () {$/;"	f	class:kaldi::AccumulateMultiThreadedClass
+kaldi::AccumulateMultiThreadedClass::tot_like_	mle-diag-gmm.cc	/^  double tot_like_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+kaldi::AccumulateMultiThreadedClass::tot_like_ptr_	mle-diag-gmm.cc	/^  double *tot_like_ptr_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+kaldi::AccumulateMultiThreadedClass::~AccumulateMultiThreadedClass	mle-diag-gmm.cc	/^  ~AccumulateMultiThreadedClass() {$/;"	f	class:kaldi::AccumulateMultiThreadedClass
+kaldi::AmDiagGmm	am-diag-gmm.h	/^class AmDiagGmm {$/;"	c	namespace:kaldi
+kaldi::AmDiagGmm::AddPdf	am-diag-gmm.cc	/^void AmDiagGmm::AddPdf(const DiagGmm &gmm) {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::AmDiagGmm	am-diag-gmm.h	/^  AmDiagGmm() {}$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::ComputeGconsts	am-diag-gmm.cc	/^int32 AmDiagGmm::ComputeGconsts() {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::CopyFromAmDiagGmm	am-diag-gmm.cc	/^void AmDiagGmm::CopyFromAmDiagGmm(const AmDiagGmm &other) {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::Dim	am-diag-gmm.h	/^  int32 Dim() const {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::GetGaussianMean	am-diag-gmm.h	/^inline void AmDiagGmm::GetGaussianMean(int32 pdf_index, int32 gauss,$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::GetGaussianVariance	am-diag-gmm.h	/^inline void AmDiagGmm::GetGaussianVariance(int32 pdf_index, int32 gauss,$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::GetPdf	am-diag-gmm.h	/^inline DiagGmm& AmDiagGmm::GetPdf(int32 pdf_index) {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::GetPdf	am-diag-gmm.h	/^inline const DiagGmm& AmDiagGmm::GetPdf(int32 pdf_index) const {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::Init	am-diag-gmm.cc	/^void AmDiagGmm::Init(const DiagGmm &proto, int32 num_pdfs) {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::LogLikelihood	am-diag-gmm.h	/^inline BaseFloat AmDiagGmm::LogLikelihood($/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::MergeByCount	am-diag-gmm.cc	/^void AmDiagGmm::MergeByCount(const Vector<BaseFloat> &state_occs,$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::NumGauss	am-diag-gmm.cc	/^int32 AmDiagGmm::NumGauss() const {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::NumGaussInPdf	am-diag-gmm.h	/^inline int32 AmDiagGmm::NumGaussInPdf(int32 pdf_index) const {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::NumPdfs	am-diag-gmm.h	/^  int32 NumPdfs() const { return densities_.size(); }$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::Read	am-diag-gmm.cc	/^void AmDiagGmm::Read(std::istream &in_stream, bool binary) {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::RemovePdf	am-diag-gmm.cc	/^void AmDiagGmm::RemovePdf(int32 pdf_index) {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::SetGaussianMean	am-diag-gmm.h	/^inline void AmDiagGmm::SetGaussianMean(int32 pdf_index, int32 gauss_index,$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::SplitByCount	am-diag-gmm.cc	/^void AmDiagGmm::SplitByCount(const Vector<BaseFloat> &state_occs,$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::SplitPdf	am-diag-gmm.h	/^inline void AmDiagGmm::SplitPdf(int32 pdf_index,$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::Write	am-diag-gmm.cc	/^void AmDiagGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::densities_	am-diag-gmm.h	/^  std::vector<DiagGmm*> densities_;$/;"	m	class:kaldi::AmDiagGmm
+kaldi::AmDiagGmm::~AmDiagGmm	am-diag-gmm.cc	/^AmDiagGmm::~AmDiagGmm() {$/;"	f	class:kaldi::AmDiagGmm
+kaldi::AugmentGmmFlags	model-common.cc	/^GmmFlagsType AugmentGmmFlags(GmmFlagsType flags) {$/;"	f	namespace:kaldi
+kaldi::ClusterGaussiansToUbm	am-diag-gmm.cc	/^void ClusterGaussiansToUbm(const AmDiagGmm &am,$/;"	f	namespace:kaldi
+kaldi::CountStats	model-common.cc	/^struct CountStats {$/;"	s	namespace:kaldi	file:
+kaldi::CountStats::CountStats	model-common.cc	/^  CountStats(int32 p, int32 n, BaseFloat occ)$/;"	f	struct:kaldi::CountStats
+kaldi::CountStats::num_components	model-common.cc	/^  int32 num_components;$/;"	m	struct:kaldi::CountStats	file:
+kaldi::CountStats::occupancy	model-common.cc	/^  BaseFloat occupancy;$/;"	m	struct:kaldi::CountStats	file:
+kaldi::CountStats::operator <	model-common.cc	/^  bool operator < (const CountStats &other) const {$/;"	f	struct:kaldi::CountStats
+kaldi::CountStats::pdf_index	model-common.cc	/^  int32 pdf_index;$/;"	m	struct:kaldi::CountStats	file:
+kaldi::DecodableAmDiagGmm	decodable-am-diag-gmm.h	/^class DecodableAmDiagGmm: public DecodableAmDiagGmmUnmapped {$/;"	c	namespace:kaldi
+kaldi::DecodableAmDiagGmm::DecodableAmDiagGmm	decodable-am-diag-gmm.h	/^  DecodableAmDiagGmm(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmm
+kaldi::DecodableAmDiagGmm::LogLikelihood	decodable-am-diag-gmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmDiagGmm
+kaldi::DecodableAmDiagGmm::NumIndices	decodable-am-diag-gmm.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmDiagGmm
+kaldi::DecodableAmDiagGmm::TransModel	decodable-am-diag-gmm.h	/^  const TransitionModel *TransModel() { return &trans_model_; }$/;"	f	class:kaldi::DecodableAmDiagGmm
+kaldi::DecodableAmDiagGmm::trans_model_	decodable-am-diag-gmm.h	/^  const TransitionModel &trans_model_;  \/\/ for tid to pdf mapping$/;"	m	class:kaldi::DecodableAmDiagGmm
+kaldi::DecodableAmDiagGmmScaled	decodable-am-diag-gmm.h	/^class DecodableAmDiagGmmScaled: public DecodableAmDiagGmmUnmapped {$/;"	c	namespace:kaldi
+kaldi::DecodableAmDiagGmmScaled::DecodableAmDiagGmmScaled	decodable-am-diag-gmm.h	/^  DecodableAmDiagGmmScaled(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmmScaled
+kaldi::DecodableAmDiagGmmScaled::LogLikelihood	decodable-am-diag-gmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmDiagGmmScaled
+kaldi::DecodableAmDiagGmmScaled::NumIndices	decodable-am-diag-gmm.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmDiagGmmScaled
+kaldi::DecodableAmDiagGmmScaled::TransModel	decodable-am-diag-gmm.h	/^  const TransitionModel *TransModel() { return &trans_model_; }$/;"	f	class:kaldi::DecodableAmDiagGmmScaled
+kaldi::DecodableAmDiagGmmScaled::delete_feats_	decodable-am-diag-gmm.h	/^  Matrix<BaseFloat> *delete_feats_;$/;"	m	class:kaldi::DecodableAmDiagGmmScaled
+kaldi::DecodableAmDiagGmmScaled::scale_	decodable-am-diag-gmm.h	/^  BaseFloat scale_;$/;"	m	class:kaldi::DecodableAmDiagGmmScaled
+kaldi::DecodableAmDiagGmmScaled::trans_model_	decodable-am-diag-gmm.h	/^  const TransitionModel &trans_model_;  \/\/ for transition-id to pdf mapping$/;"	m	class:kaldi::DecodableAmDiagGmmScaled
+kaldi::DecodableAmDiagGmmScaled::~DecodableAmDiagGmmScaled	decodable-am-diag-gmm.h	/^  virtual ~DecodableAmDiagGmmScaled() {$/;"	f	class:kaldi::DecodableAmDiagGmmScaled
+kaldi::DecodableAmDiagGmmUnmapped	decodable-am-diag-gmm.h	/^class DecodableAmDiagGmmUnmapped : public DecodableInterface {$/;"	c	namespace:kaldi
+kaldi::DecodableAmDiagGmmUnmapped::DecodableAmDiagGmmUnmapped	decodable-am-diag-gmm.h	/^  DecodableAmDiagGmmUnmapped(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::IsLastFrame	decodable-am-diag-gmm.h	/^  virtual bool IsLastFrame(int32 frame) {$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::LikelihoodCacheRecord	decodable-am-diag-gmm.h	/^  struct LikelihoodCacheRecord {$/;"	s	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::LikelihoodCacheRecord::hit_time	decodable-am-diag-gmm.h	/^    int32 hit_time;     \/\/\/< Frame for which this value is relevant$/;"	m	struct:kaldi::DecodableAmDiagGmmUnmapped::LikelihoodCacheRecord
+kaldi::DecodableAmDiagGmmUnmapped::LikelihoodCacheRecord::log_like	decodable-am-diag-gmm.h	/^    BaseFloat log_like;  \/\/\/< Cache value$/;"	m	struct:kaldi::DecodableAmDiagGmmUnmapped::LikelihoodCacheRecord
+kaldi::DecodableAmDiagGmmUnmapped::LogLikelihood	decodable-am-diag-gmm.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 state_index) {$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::LogLikelihoodZeroBased	decodable-am-diag-gmm.cc	/^BaseFloat DecodableAmDiagGmmUnmapped::LogLikelihoodZeroBased($/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::NumFrames	decodable-am-diag-gmm.h	/^  int32 NumFrames() { return feature_matrix_.NumRows(); }$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::NumIndices	decodable-am-diag-gmm.h	/^  virtual int32 NumIndices() { return acoustic_model_.NumPdfs(); }$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::ResetLogLikeCache	decodable-am-diag-gmm.cc	/^void DecodableAmDiagGmmUnmapped::ResetLogLikeCache() {$/;"	f	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::acoustic_model_	decodable-am-diag-gmm.h	/^  const AmDiagGmm &acoustic_model_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::data_squared_	decodable-am-diag-gmm.h	/^  Vector<BaseFloat> data_squared_;  \/\/\/< Cache for fast likelihood calculation$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::feature_matrix_	decodable-am-diag-gmm.h	/^  const Matrix<BaseFloat> &feature_matrix_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::log_like_cache_	decodable-am-diag-gmm.h	/^  std::vector<LikelihoodCacheRecord> log_like_cache_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::log_sum_exp_prune_	decodable-am-diag-gmm.h	/^  BaseFloat log_sum_exp_prune_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DecodableAmDiagGmmUnmapped::previous_frame_	decodable-am-diag-gmm.h	/^  int32 previous_frame_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+kaldi::DiagGmm	diag-gmm.h	/^class DiagGmm {$/;"	c	namespace:kaldi
+kaldi::DiagGmm::ComponentLogLikelihood	diag-gmm.cc	/^BaseFloat DiagGmm::ComponentLogLikelihood(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::ComponentPosteriors	diag-gmm.cc	/^BaseFloat DiagGmm::ComponentPosteriors(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::ComputeGconsts	diag-gmm.cc	/^int32 DiagGmm::ComputeGconsts() {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::CopyFromDiagGmm	diag-gmm.cc	/^void DiagGmm::CopyFromDiagGmm(const DiagGmm &diaggmm) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::CopyFromFullGmm	diag-gmm.cc	/^void DiagGmm::CopyFromFullGmm(const FullGmm &fullgmm) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::CopyFromNormal	diag-gmm.cc	/^void DiagGmm::CopyFromNormal(const DiagGmmNormal &diag_gmm_normal) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::DiagGmm	diag-gmm.cc	/^DiagGmm::DiagGmm(const std::vector<std::pair<BaseFloat, const DiagGmm*> > &gmms)$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::DiagGmm	diag-gmm.h	/^  DiagGmm() : valid_gconsts_(false) { }$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::DiagGmm	diag-gmm.h	/^  DiagGmm(int32 nMix, int32 dim): valid_gconsts_(false) { Resize(nMix, dim); }$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::DiagGmm	diag-gmm.h	/^  explicit DiagGmm(const DiagGmm &gmm): valid_gconsts_(false) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Dim	diag-gmm.h	/^  int32 Dim() const { return means_invvars_.NumCols(); }$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::GaussianSelection	diag-gmm.cc	/^BaseFloat DiagGmm::GaussianSelection(const MatrixBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::GaussianSelection	diag-gmm.cc	/^BaseFloat DiagGmm::GaussianSelection(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::GaussianSelectionPreselect	diag-gmm.cc	/^BaseFloat DiagGmm::GaussianSelectionPreselect($/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Generate	diag-gmm.cc	/^void DiagGmm::Generate(VectorBase<BaseFloat> *output) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::GetComponentMean	diag-gmm-inl.h	/^void DiagGmm::GetComponentMean(int32 gauss, VectorBase<Real> *out) const {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::GetComponentVariance	diag-gmm-inl.h	/^void DiagGmm::GetComponentVariance(int32 gauss, VectorBase<Real> *out) const {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::GetMeans	diag-gmm-inl.h	/^void DiagGmm::GetMeans(Matrix<Real> *m) const {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::GetVars	diag-gmm-inl.h	/^void DiagGmm::GetVars(Matrix<Real> *v) const {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Interpolate	diag-gmm.cc	/^void DiagGmm::Interpolate(BaseFloat rho, const DiagGmm &source,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Interpolate	diag-gmm.cc	/^void DiagGmm::Interpolate(BaseFloat rho, const FullGmm &source,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::LogLikelihood	diag-gmm.cc	/^BaseFloat DiagGmm::LogLikelihood(const VectorBase<BaseFloat> &data) const {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::LogLikelihoods	diag-gmm.cc	/^void DiagGmm::LogLikelihoods(const MatrixBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::LogLikelihoods	diag-gmm.cc	/^void DiagGmm::LogLikelihoods(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::LogLikelihoodsPreselect	diag-gmm.cc	/^void DiagGmm::LogLikelihoodsPreselect(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Merge	diag-gmm.cc	/^void DiagGmm::Merge(int32 target_components, std::vector<int32> *history) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::MergeKmeans	diag-gmm.cc	/^void DiagGmm::MergeKmeans(int32 target_components,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::NumGauss	diag-gmm.h	/^  int32 NumGauss() const { return weights_.Dim(); }$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Perturb	diag-gmm.cc	/^void DiagGmm::Perturb(float perturb_factor) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Read	diag-gmm.cc	/^void DiagGmm::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::RemoveComponent	diag-gmm.cc	/^void DiagGmm::RemoveComponent(int32 gauss, bool renorm_weights) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::RemoveComponents	diag-gmm.cc	/^void DiagGmm::RemoveComponents(const std::vector<int32> &gauss_in,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Resize	diag-gmm.cc	/^void DiagGmm::Resize(int32 nmix, int32 dim) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::SetComponentInvVar	diag-gmm-inl.h	/^void DiagGmm::SetComponentInvVar(int32 g, const VectorBase<Real> &v) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::SetComponentMean	diag-gmm-inl.h	/^void DiagGmm::SetComponentMean(int32 g, const VectorBase<Real> &in) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::SetComponentWeight	diag-gmm-inl.h	/^inline void DiagGmm::SetComponentWeight(int32 g, BaseFloat w) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::SetInvVars	diag-gmm-inl.h	/^void DiagGmm::SetInvVars(const MatrixBase<Real> &v) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::SetInvVarsAndMeans	diag-gmm-inl.h	/^void DiagGmm::SetInvVarsAndMeans(const MatrixBase<Real> &invvars,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::SetMeans	diag-gmm-inl.h	/^void DiagGmm::SetMeans(const MatrixBase<Real> &m) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::SetWeights	diag-gmm-inl.h	/^void DiagGmm::SetWeights(const VectorBase<Real> &w) {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Split	diag-gmm.cc	/^void DiagGmm::Split(int32 target_components, float perturb_factor,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::Write	diag-gmm.cc	/^void DiagGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::gconsts	diag-gmm.h	/^  const Vector<BaseFloat> &gconsts() const {$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::gconsts_	diag-gmm.h	/^  Vector<BaseFloat> gconsts_;$/;"	m	class:kaldi::DiagGmm
+kaldi::DiagGmm::inv_vars	diag-gmm.h	/^  const Matrix<BaseFloat> &inv_vars() const { return inv_vars_; }$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::inv_vars_	diag-gmm.h	/^  Matrix<BaseFloat> inv_vars_;       \/\/\/< Inverted (diagonal) variances$/;"	m	class:kaldi::DiagGmm
+kaldi::DiagGmm::means_invvars	diag-gmm.h	/^  const Matrix<BaseFloat> &means_invvars() const { return means_invvars_; }$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::means_invvars_	diag-gmm.h	/^  Matrix<BaseFloat> means_invvars_;  \/\/\/< Means times inverted variance$/;"	m	class:kaldi::DiagGmm
+kaldi::DiagGmm::merged_components_logdet	diag-gmm.cc	/^BaseFloat DiagGmm::merged_components_logdet(BaseFloat w1, BaseFloat w2,$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::valid_gconsts	diag-gmm.h	/^  bool valid_gconsts() const { return valid_gconsts_; }$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::valid_gconsts_	diag-gmm.h	/^  bool valid_gconsts_;   \/\/\/< Recompute gconsts_ if false$/;"	m	class:kaldi::DiagGmm
+kaldi::DiagGmm::weights	diag-gmm.h	/^  const Vector<BaseFloat> &weights() const { return weights_; }$/;"	f	class:kaldi::DiagGmm
+kaldi::DiagGmm::weights_	diag-gmm.h	/^  Vector<BaseFloat> weights_;        \/\/\/< weights (not log).$/;"	m	class:kaldi::DiagGmm
+kaldi::DiagGmmNormal	diag-gmm-normal.h	/^class DiagGmmNormal {$/;"	c	namespace:kaldi
+kaldi::DiagGmmNormal::CopyFromDiagGmm	diag-gmm-normal.cc	/^void DiagGmmNormal::CopyFromDiagGmm(const DiagGmm &diaggmm) {$/;"	f	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmNormal::CopyToDiagGmm	diag-gmm-normal.cc	/^void DiagGmmNormal::CopyToDiagGmm(DiagGmm *diaggmm, GmmFlagsType flags) const {$/;"	f	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmNormal::DiagGmmNormal	diag-gmm-normal.h	/^  DiagGmmNormal() { }$/;"	f	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmNormal::DiagGmmNormal	diag-gmm-normal.h	/^  explicit DiagGmmNormal(const DiagGmm &gmm) {$/;"	f	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmNormal::Dim	diag-gmm-normal.h	/^  int32 Dim() { return means_.NumCols(); }$/;"	f	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmNormal::NumGauss	diag-gmm-normal.h	/^  int32 NumGauss() { return weights_.Dim(); }$/;"	f	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmNormal::Resize	diag-gmm-normal.cc	/^void DiagGmmNormal::Resize(int32 nmix, int32 dim) {$/;"	f	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmNormal::means_	diag-gmm-normal.h	/^  Matrix<double> means_;    \/\/\/< Means$/;"	m	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmNormal::vars_	diag-gmm-normal.h	/^  Matrix<double> vars_;     \/\/\/< diagonal variance$/;"	m	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmNormal::weights_	diag-gmm-normal.h	/^  Vector<double> weights_;  \/\/\/< weights (not log).$/;"	m	class:kaldi::DiagGmmNormal
+kaldi::DiagGmmToStats	ebw-diag-gmm.cc	/^void DiagGmmToStats(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+kaldi::DoRescalingUpdate	indirect-diff-diag-gmm.cc	/^void DoRescalingUpdate(const AccumAmDiagGmm &old_ml_accs,$/;"	f	namespace:kaldi
+kaldi::DoRescalingUpdate	indirect-diff-diag-gmm.cc	/^void DoRescalingUpdate(const AccumDiagGmm &old_ml_acc,$/;"	f	namespace:kaldi
+kaldi::EBWUpdateGaussian	ebw-diag-gmm.cc	/^static bool EBWUpdateGaussian($/;"	f	namespace:kaldi
+kaldi::EbwOptions	ebw-diag-gmm.h	/^struct EbwOptions {$/;"	s	namespace:kaldi
+kaldi::EbwOptions::E	ebw-diag-gmm.h	/^  BaseFloat E;$/;"	m	struct:kaldi::EbwOptions
+kaldi::EbwOptions::EbwOptions	ebw-diag-gmm.h	/^  EbwOptions(): E(2.0), tau(0.0) { }$/;"	f	struct:kaldi::EbwOptions
+kaldi::EbwOptions::Register	ebw-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::EbwOptions
+kaldi::EbwOptions::tau	ebw-diag-gmm.h	/^  BaseFloat tau; \/\/ This is only useful for smoothing "to the model":$/;"	m	struct:kaldi::EbwOptions
+kaldi::EbwWeightOptions	ebw-diag-gmm.h	/^struct EbwWeightOptions {$/;"	s	namespace:kaldi
+kaldi::EbwWeightOptions::EbwWeightOptions	ebw-diag-gmm.h	/^  EbwWeightOptions(): min_num_count_weight_update(10.0),$/;"	f	struct:kaldi::EbwWeightOptions
+kaldi::EbwWeightOptions::Register	ebw-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::EbwWeightOptions
+kaldi::EbwWeightOptions::min_gaussian_weight	ebw-diag-gmm.h	/^  BaseFloat min_gaussian_weight;$/;"	m	struct:kaldi::EbwWeightOptions
+kaldi::EbwWeightOptions::min_num_count_weight_update	ebw-diag-gmm.h	/^  BaseFloat min_num_count_weight_update; \/\/ minimum numerator count at state level, before we update.$/;"	m	struct:kaldi::EbwWeightOptions
+kaldi::EbwWeightOptions::tau	ebw-diag-gmm.h	/^  BaseFloat tau; \/\/ tau value for smoothing stats in weight update.  Should probably$/;"	m	struct:kaldi::EbwWeightOptions
+kaldi::FullGmm	full-gmm.h	/^class FullGmm {$/;"	c	namespace:kaldi
+kaldi::FullGmm::ComponentLogLikelihood	full-gmm.cc	/^BaseFloat FullGmm::ComponentLogLikelihood(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::ComponentPosteriors	full-gmm.cc	/^BaseFloat FullGmm::ComponentPosteriors(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::ComputeGconsts	full-gmm.cc	/^int32 FullGmm::ComputeGconsts() {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::CopyFromDiagGmm	full-gmm.cc	/^void FullGmm::CopyFromDiagGmm(const DiagGmm &diaggmm) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::CopyFromFullGmm	full-gmm.cc	/^void FullGmm::CopyFromFullGmm(const FullGmm &fullgmm) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::Dim	full-gmm.h	/^  int32 Dim() const { return means_invcovars_.NumCols(); }$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::FullGmm	full-gmm.h	/^  FullGmm() : valid_gconsts_(false) {}$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::FullGmm	full-gmm.h	/^  FullGmm(int32 nMix, int32 dim): valid_gconsts_(false) { Resize(nMix, dim); }$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::FullGmm	full-gmm.h	/^  explicit FullGmm(const FullGmm &gmm): valid_gconsts_(false) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::GaussianSelection	full-gmm.cc	/^BaseFloat FullGmm::GaussianSelection(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::GaussianSelectionPreselect	full-gmm.cc	/^BaseFloat FullGmm::GaussianSelectionPreselect($/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::GetComponentMean	full-gmm-inl.h	/^void FullGmm::GetComponentMean(int32 gauss,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::GetCovars	full-gmm-inl.h	/^void FullGmm::GetCovars(std::vector<SpMatrix<Real> > *v) const {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::GetCovarsAndMeans	full-gmm-inl.h	/^void FullGmm::GetCovarsAndMeans(std::vector< SpMatrix<Real> > *covars,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::GetMeans	full-gmm-inl.h	/^void FullGmm::GetMeans(Matrix<Real> *M) const {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::Interpolate	full-gmm.cc	/^void FullGmm::Interpolate(BaseFloat rho, const FullGmm &source,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::LogLikelihood	full-gmm.cc	/^BaseFloat FullGmm::LogLikelihood(const VectorBase<BaseFloat> &data) const {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::LogLikelihoods	full-gmm.cc	/^void FullGmm::LogLikelihoods(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::LogLikelihoodsPreselect	full-gmm.cc	/^void FullGmm::LogLikelihoodsPreselect(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::Merge	full-gmm.cc	/^void FullGmm::Merge(int32 target_components, vector<int32> *history) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::MergePreselect	full-gmm.cc	/^BaseFloat FullGmm::MergePreselect(int32 target_components,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::MergedComponentsLogdet	full-gmm.cc	/^BaseFloat FullGmm::MergedComponentsLogdet(BaseFloat w1, BaseFloat w2,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::NumGauss	full-gmm.h	/^  int32 NumGauss() const { return weights_.Dim(); }$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::Perturb	full-gmm.cc	/^void FullGmm::Perturb(float perturb_factor) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::Read	full-gmm.cc	/^void FullGmm::Read(std::istream &in_stream, bool binary) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::RemoveComponent	full-gmm.cc	/^void FullGmm::RemoveComponent(int32 gauss, bool renorm_weights) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::RemoveComponents	full-gmm.cc	/^void FullGmm::RemoveComponents(const vector<int32> &gauss_in, bool renorm_weights) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::Resize	full-gmm.cc	/^void FullGmm::Resize(int32 nmix, int32 dim) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::ResizeInvCovars	full-gmm.cc	/^void FullGmm::ResizeInvCovars(int32 nmix, int32 dim) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::SetInvCovars	full-gmm-inl.h	/^void FullGmm::SetInvCovars(const std::vector<SpMatrix<Real> > &v) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::SetInvCovarsAndMeans	full-gmm-inl.h	/^void FullGmm::SetInvCovarsAndMeans($/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::SetInvCovarsAndMeansInvCovars	full-gmm-inl.h	/^void FullGmm::SetInvCovarsAndMeansInvCovars($/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::SetMeans	full-gmm-inl.h	/^void FullGmm::SetMeans(const Matrix<Real> &m) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::SetWeights	full-gmm-inl.h	/^void FullGmm::SetWeights(const Vector<Real> &w) {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::Split	full-gmm.cc	/^void FullGmm::Split(int32 target_components, float perturb_factor,$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::Write	full-gmm.cc	/^void FullGmm::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::gconsts	full-gmm.h	/^  const Vector<BaseFloat> &gconsts() const { return gconsts_; }$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::gconsts_	full-gmm.h	/^  Vector<BaseFloat> gconsts_;$/;"	m	class:kaldi::FullGmm
+kaldi::FullGmm::inv_covars	full-gmm.h	/^  const std::vector<SpMatrix<BaseFloat> > &inv_covars() const {$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::inv_covars	full-gmm.h	/^  std::vector<SpMatrix<BaseFloat> > &inv_covars() { return inv_covars_; }$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::inv_covars_	full-gmm.h	/^  std::vector<SpMatrix<BaseFloat> > inv_covars_;  \/\/\/< Inverse covariances$/;"	m	class:kaldi::FullGmm
+kaldi::FullGmm::means_invcovars	full-gmm.h	/^  Matrix<BaseFloat> &means_invcovars() { return means_invcovars_; }$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::means_invcovars	full-gmm.h	/^  const Matrix<BaseFloat> &means_invcovars() const { return means_invcovars_; }$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::means_invcovars_	full-gmm.h	/^  Matrix<BaseFloat> means_invcovars_;  \/\/\/< Means times inverse covariances$/;"	m	class:kaldi::FullGmm
+kaldi::FullGmm::valid_gconsts_	full-gmm.h	/^  bool valid_gconsts_;  \/\/\/< Recompute gconsts_ if false$/;"	m	class:kaldi::FullGmm
+kaldi::FullGmm::weights	full-gmm.h	/^  const Vector<BaseFloat> &weights() const { return weights_; }$/;"	f	class:kaldi::FullGmm
+kaldi::FullGmm::weights_	full-gmm.h	/^  Vector<BaseFloat> weights_;  \/\/\/< weights (not log).$/;"	m	class:kaldi::FullGmm
+kaldi::FullGmmNormal	full-gmm-normal.h	/^class FullGmmNormal {$/;"	c	namespace:kaldi
+kaldi::FullGmmNormal::CopyFromFullGmm	full-gmm-normal.cc	/^void FullGmmNormal::CopyFromFullGmm(const FullGmm &fullgmm) {$/;"	f	class:kaldi::FullGmmNormal
+kaldi::FullGmmNormal::CopyToFullGmm	full-gmm-normal.cc	/^void FullGmmNormal::CopyToFullGmm(FullGmm *fullgmm, GmmFlagsType flags) {$/;"	f	class:kaldi::FullGmmNormal
+kaldi::FullGmmNormal::FullGmmNormal	full-gmm-normal.h	/^  FullGmmNormal() { }$/;"	f	class:kaldi::FullGmmNormal
+kaldi::FullGmmNormal::FullGmmNormal	full-gmm-normal.h	/^  explicit FullGmmNormal(const FullGmm &gmm) {$/;"	f	class:kaldi::FullGmmNormal
+kaldi::FullGmmNormal::Rand	full-gmm-normal.cc	/^void FullGmmNormal::Rand(MatrixBase<BaseFloat> *feats) {$/;"	f	class:kaldi::FullGmmNormal
+kaldi::FullGmmNormal::Resize	full-gmm-normal.cc	/^void FullGmmNormal::Resize(int32 nmix, int32 dim) {$/;"	f	class:kaldi::FullGmmNormal
+kaldi::FullGmmNormal::means_	full-gmm-normal.h	/^  Matrix<double> means_;                \/\/\/< Means$/;"	m	class:kaldi::FullGmmNormal
+kaldi::FullGmmNormal::vars_	full-gmm-normal.h	/^  std::vector<SpMatrix<double> > vars_;  \/\/\/< covariances$/;"	m	class:kaldi::FullGmmNormal
+kaldi::FullGmmNormal::weights_	full-gmm-normal.h	/^  Vector<double> weights_;              \/\/\/< weights (not log).$/;"	m	class:kaldi::FullGmmNormal
+kaldi::GetSingleStatsDerivative	indirect-diff-diag-gmm.cc	/^void GetSingleStatsDerivative($/;"	f	namespace:kaldi
+kaldi::GetSplitTargets	model-common.cc	/^void GetSplitTargets(const Vector<BaseFloat> &state_occs,$/;"	f	namespace:kaldi
+kaldi::GetStatsDerivative	indirect-diff-diag-gmm.cc	/^void GetStatsDerivative(const AmDiagGmm &gmm,$/;"	f	namespace:kaldi
+kaldi::GetStatsDerivative	indirect-diff-diag-gmm.cc	/^void GetStatsDerivative(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+kaldi::GmmFlagsToString	model-common.cc	/^std::string GmmFlagsToString(GmmFlagsType flags) {$/;"	f	namespace:kaldi
+kaldi::GmmFlagsType	model-common.h	/^typedef uint16 GmmFlagsType;  \/\/\/< Bitwise OR of the above flags.$/;"	t	namespace:kaldi
+kaldi::GmmUpdateFlags	model-common.h	/^enum GmmUpdateFlags {$/;"	g	namespace:kaldi
+kaldi::InitRandomGmm	diag-gmm-test.cc	/^void InitRandomGmm(DiagGmm *gmm_in) {$/;"	f	namespace:kaldi
+kaldi::IsmoothStatsAmDiagGmm	ebw-diag-gmm.cc	/^void IsmoothStatsAmDiagGmm(const AccumAmDiagGmm &src_stats,$/;"	f	namespace:kaldi
+kaldi::IsmoothStatsAmDiagGmmFromModel	ebw-diag-gmm.cc	/^void IsmoothStatsAmDiagGmmFromModel(const AmDiagGmm &src_model,$/;"	f	namespace:kaldi
+kaldi::IsmoothStatsDiagGmm	ebw-diag-gmm.cc	/^void IsmoothStatsDiagGmm(const AccumDiagGmm &src_stats,$/;"	f	namespace:kaldi
+kaldi::MapAmDiagGmmSeqReader	mle-am-diag-gmm.h	/^typedef SequentialTableReader< KaldiObjectHolder<AmDiagGmm> > MapAmDiagGmmSeqReader;$/;"	t	namespace:kaldi
+kaldi::MapAmDiagGmmUpdate	mle-am-diag-gmm.cc	/^void MapAmDiagGmmUpdate (const MapDiagGmmOptions &config,$/;"	f	namespace:kaldi
+kaldi::MapAmDiagGmmWriter	mle-am-diag-gmm.h	/^typedef TableWriter< KaldiObjectHolder<AmDiagGmm> >  MapAmDiagGmmWriter;$/;"	t	namespace:kaldi
+kaldi::MapDiagGmmOptions	mle-diag-gmm.h	/^struct MapDiagGmmOptions {$/;"	s	namespace:kaldi
+kaldi::MapDiagGmmOptions::MapDiagGmmOptions	mle-diag-gmm.h	/^  MapDiagGmmOptions(): mean_tau(10.0),$/;"	f	struct:kaldi::MapDiagGmmOptions
+kaldi::MapDiagGmmOptions::Register	mle-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MapDiagGmmOptions
+kaldi::MapDiagGmmOptions::mean_tau	mle-diag-gmm.h	/^  BaseFloat mean_tau;$/;"	m	struct:kaldi::MapDiagGmmOptions
+kaldi::MapDiagGmmOptions::variance_tau	mle-diag-gmm.h	/^  BaseFloat variance_tau;$/;"	m	struct:kaldi::MapDiagGmmOptions
+kaldi::MapDiagGmmOptions::weight_tau	mle-diag-gmm.h	/^  BaseFloat weight_tau;$/;"	m	struct:kaldi::MapDiagGmmOptions
+kaldi::MapDiagGmmUpdate	mle-diag-gmm.cc	/^void MapDiagGmmUpdate(const MapDiagGmmOptions &config,$/;"	f	namespace:kaldi
+kaldi::MlObjective	mle-diag-gmm.cc	/^BaseFloat MlObjective(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+kaldi::MlObjective	mle-full-gmm.cc	/^BaseFloat MlObjective(const FullGmm &gmm, const AccumFullGmm &fullgmm_acc) {$/;"	f	namespace:kaldi
+kaldi::MleAmDiagGmmUpdate	mle-am-diag-gmm.cc	/^void MleAmDiagGmmUpdate (const MleDiagGmmOptions &config,$/;"	f	namespace:kaldi
+kaldi::MleDiagGmmOptions	mle-diag-gmm.h	/^struct MleDiagGmmOptions {$/;"	s	namespace:kaldi
+kaldi::MleDiagGmmOptions::MleDiagGmmOptions	mle-diag-gmm.h	/^  MleDiagGmmOptions() {$/;"	f	struct:kaldi::MleDiagGmmOptions
+kaldi::MleDiagGmmOptions::Register	mle-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MleDiagGmmOptions
+kaldi::MleDiagGmmOptions::min_gaussian_occupancy	mle-diag-gmm.h	/^  BaseFloat min_gaussian_occupancy;$/;"	m	struct:kaldi::MleDiagGmmOptions
+kaldi::MleDiagGmmOptions::min_gaussian_weight	mle-diag-gmm.h	/^  BaseFloat min_gaussian_weight;$/;"	m	struct:kaldi::MleDiagGmmOptions
+kaldi::MleDiagGmmOptions::min_variance	mle-diag-gmm.h	/^  double min_variance;$/;"	m	struct:kaldi::MleDiagGmmOptions
+kaldi::MleDiagGmmOptions::remove_low_count_gaussians	mle-diag-gmm.h	/^  bool remove_low_count_gaussians;$/;"	m	struct:kaldi::MleDiagGmmOptions
+kaldi::MleDiagGmmOptions::variance_floor_vector	mle-diag-gmm.h	/^  Vector<double> variance_floor_vector;$/;"	m	struct:kaldi::MleDiagGmmOptions
+kaldi::MleDiagGmmUpdate	mle-diag-gmm.cc	/^void MleDiagGmmUpdate(const MleDiagGmmOptions &config,$/;"	f	namespace:kaldi
+kaldi::MleFullGmmOptions	mle-full-gmm.h	/^struct MleFullGmmOptions {$/;"	s	namespace:kaldi
+kaldi::MleFullGmmOptions::MleFullGmmOptions	mle-full-gmm.h	/^  MleFullGmmOptions() {$/;"	f	struct:kaldi::MleFullGmmOptions
+kaldi::MleFullGmmOptions::Register	mle-full-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MleFullGmmOptions
+kaldi::MleFullGmmOptions::max_condition	mle-full-gmm.h	/^  BaseFloat max_condition;$/;"	m	struct:kaldi::MleFullGmmOptions
+kaldi::MleFullGmmOptions::min_gaussian_occupancy	mle-full-gmm.h	/^  BaseFloat min_gaussian_occupancy;$/;"	m	struct:kaldi::MleFullGmmOptions
+kaldi::MleFullGmmOptions::min_gaussian_weight	mle-full-gmm.h	/^  BaseFloat min_gaussian_weight;$/;"	m	struct:kaldi::MleFullGmmOptions
+kaldi::MleFullGmmOptions::remove_low_count_gaussians	mle-full-gmm.h	/^  bool remove_low_count_gaussians;$/;"	m	struct:kaldi::MleFullGmmOptions
+kaldi::MleFullGmmOptions::variance_floor	mle-full-gmm.h	/^  BaseFloat variance_floor;$/;"	m	struct:kaldi::MleFullGmmOptions
+kaldi::MleFullGmmUpdate	mle-full-gmm.cc	/^void MleFullGmmUpdate(const MleFullGmmOptions &config,$/;"	f	namespace:kaldi
+kaldi::RandomAccessMapAmDiagGmmReader	mle-am-diag-gmm.h	/^typedef RandomAccessTableReader< KaldiObjectHolder<AmDiagGmm> > RandomAccessMapAmDiagGmmReader;$/;"	t	namespace:kaldi
+kaldi::RandomAccessMapAmDiagGmmReaderMapped	mle-am-diag-gmm.h	/^typedef RandomAccessTableReaderMapped< KaldiObjectHolder<AmDiagGmm> > RandomAccessMapAmDiagGmmReaderMapped;$/;"	t	namespace:kaldi
+kaldi::ResizeModel	mle-am-diag-gmm.cc	/^void ResizeModel (int32 dim, AmDiagGmm *am_gmm) {$/;"	f	namespace:kaldi
+kaldi::SgmmUpdateFlags	model-common.h	/^enum SgmmUpdateFlags {  \/\/\/ The letters correspond to the variable names.$/;"	g	namespace:kaldi
+kaldi::SgmmUpdateFlagsType	model-common.h	/^typedef uint16 SgmmUpdateFlagsType;  \/\/\/< Bitwise OR of the above flags.$/;"	t	namespace:kaldi
+kaldi::SgmmWriteFlags	model-common.h	/^enum SgmmWriteFlags {$/;"	g	namespace:kaldi
+kaldi::SgmmWriteFlagsType	model-common.h	/^typedef uint16 SgmmWriteFlagsType;  \/\/\/< Bitwise OR of the above flags.$/;"	t	namespace:kaldi
+kaldi::StringToGmmFlags	model-common.cc	/^GmmFlagsType StringToGmmFlags(std::string str) {$/;"	f	namespace:kaldi
+kaldi::StringToSgmmUpdateFlags	model-common.cc	/^SgmmUpdateFlagsType StringToSgmmUpdateFlags(std::string str) {$/;"	f	namespace:kaldi
+kaldi::StringToSgmmWriteFlags	model-common.cc	/^SgmmUpdateFlagsType StringToSgmmWriteFlags(std::string str) {$/;"	f	namespace:kaldi
+kaldi::UbmClusteringOptions	am-diag-gmm.h	/^struct UbmClusteringOptions {$/;"	s	namespace:kaldi
+kaldi::UbmClusteringOptions::Check	am-diag-gmm.cc	/^void UbmClusteringOptions::Check() {$/;"	f	class:kaldi::UbmClusteringOptions
+kaldi::UbmClusteringOptions::Register	am-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::UbmClusteringOptions
+kaldi::UbmClusteringOptions::UbmClusteringOptions	am-diag-gmm.h	/^  UbmClusteringOptions()$/;"	f	struct:kaldi::UbmClusteringOptions
+kaldi::UbmClusteringOptions::UbmClusteringOptions	am-diag-gmm.h	/^  UbmClusteringOptions(int32 ncomp, BaseFloat red, int32 interm_gauss,$/;"	f	struct:kaldi::UbmClusteringOptions
+kaldi::UbmClusteringOptions::cluster_varfloor	am-diag-gmm.h	/^  BaseFloat cluster_varfloor;$/;"	m	struct:kaldi::UbmClusteringOptions
+kaldi::UbmClusteringOptions::intermediate_num_gauss	am-diag-gmm.h	/^  int32 intermediate_num_gauss;$/;"	m	struct:kaldi::UbmClusteringOptions
+kaldi::UbmClusteringOptions::max_am_gauss	am-diag-gmm.h	/^  int32 max_am_gauss;$/;"	m	struct:kaldi::UbmClusteringOptions
+kaldi::UbmClusteringOptions::reduce_state_factor	am-diag-gmm.h	/^  BaseFloat reduce_state_factor;$/;"	m	struct:kaldi::UbmClusteringOptions
+kaldi::UbmClusteringOptions::ubm_num_gauss	am-diag-gmm.h	/^  int32 ubm_num_gauss;$/;"	m	struct:kaldi::UbmClusteringOptions
+kaldi::UnitTestDiagGmm	diag-gmm-test.cc	/^void UnitTestDiagGmm() {$/;"	f	namespace:kaldi
+kaldi::UnitTestDiagGmmGenerate	diag-gmm-test.cc	/^void UnitTestDiagGmmGenerate() {$/;"	f	namespace:kaldi
+kaldi::UnitTestEstimateMmieDiagGmm	ebw-diag-gmm-test.cc	/^void UnitTestEstimateMmieDiagGmm() {$/;"	f	namespace:kaldi
+kaldi::UpdateEbwAmDiagGmm	ebw-diag-gmm.cc	/^void UpdateEbwAmDiagGmm(const AccumAmDiagGmm &num_stats, \/\/ with I-smoothing, if used.$/;"	f	namespace:kaldi
+kaldi::UpdateEbwDiagGmm	ebw-diag-gmm.cc	/^void UpdateEbwDiagGmm(const AccumDiagGmm &num_stats, \/\/ with I-smoothing, if used.$/;"	f	namespace:kaldi
+kaldi::UpdateEbwWeightsAmDiagGmm	ebw-diag-gmm.cc	/^void UpdateEbwWeightsAmDiagGmm(const AccumAmDiagGmm &num_stats, \/\/ with I-smoothing, if used.$/;"	f	namespace:kaldi
+kaldi::UpdateEbwWeightsDiagGmm	ebw-diag-gmm.cc	/^void UpdateEbwWeightsDiagGmm(const AccumDiagGmm &num_stats, \/\/ should have no I-smoothing$/;"	f	namespace:kaldi
+kaldi::kGmmAll	model-common.h	/^  kGmmAll       = 0x00F  \/\/ a$/;"	e	enum:kaldi::GmmUpdateFlags
+kaldi::kGmmMeans	model-common.h	/^  kGmmMeans       = 0x001,  \/\/ m$/;"	e	enum:kaldi::GmmUpdateFlags
+kaldi::kGmmTransitions	model-common.h	/^  kGmmTransitions = 0x008,  \/\/ t ... not really part of GMM.$/;"	e	enum:kaldi::GmmUpdateFlags
+kaldi::kGmmVariances	model-common.h	/^  kGmmVariances   = 0x002,  \/\/ v$/;"	e	enum:kaldi::GmmUpdateFlags
+kaldi::kGmmWeights	model-common.h	/^  kGmmWeights     = 0x004,  \/\/ w$/;"	e	enum:kaldi::GmmUpdateFlags
+kaldi::kSgmmAll	model-common.h	/^  kSgmmAll                         = 0x0FF   \/\/\/ a (won't normally use this).  $/;"	e	enum:kaldi::SgmmUpdateFlags
+kaldi::kSgmmBackgroundGmms	model-common.h	/^  kSgmmBackgroundGmms  = 0x008,  \/\/\/ u$/;"	e	enum:kaldi::SgmmWriteFlags
+kaldi::kSgmmCovarianceMatrix	model-common.h	/^  kSgmmCovarianceMatrix            = 0x008,  \/\/\/ S$/;"	e	enum:kaldi::SgmmUpdateFlags
+kaldi::kSgmmGlobalParams	model-common.h	/^  kSgmmGlobalParams    = 0x001,  \/\/\/ g$/;"	e	enum:kaldi::SgmmWriteFlags
+kaldi::kSgmmNormalizers	model-common.h	/^  kSgmmNormalizers     = 0x004,  \/\/\/ n$/;"	e	enum:kaldi::SgmmWriteFlags
+kaldi::kSgmmPhoneProjections	model-common.h	/^  kSgmmPhoneProjections            = 0x002,  \/\/\/ M$/;"	e	enum:kaldi::SgmmUpdateFlags
+kaldi::kSgmmPhoneVectors	model-common.h	/^  kSgmmPhoneVectors                = 0x001,  \/\/\/ v$/;"	e	enum:kaldi::SgmmUpdateFlags
+kaldi::kSgmmPhoneWeightProjections	model-common.h	/^  kSgmmPhoneWeightProjections      = 0x004,  \/\/\/ w$/;"	e	enum:kaldi::SgmmUpdateFlags
+kaldi::kSgmmSpeakerProjections	model-common.h	/^  kSgmmSpeakerProjections          = 0x020,  \/\/\/ N$/;"	e	enum:kaldi::SgmmUpdateFlags
+kaldi::kSgmmSpeakerWeightProjections	model-common.h	/^  kSgmmSpeakerWeightProjections    = 0x080,  \/\/\/ u [ for SSGMM ]$/;"	e	enum:kaldi::SgmmUpdateFlags
+kaldi::kSgmmStateParams	model-common.h	/^  kSgmmStateParams     = 0x002,  \/\/\/ s$/;"	e	enum:kaldi::SgmmWriteFlags
+kaldi::kSgmmSubstateWeights	model-common.h	/^  kSgmmSubstateWeights             = 0x010,  \/\/\/ c$/;"	e	enum:kaldi::SgmmUpdateFlags
+kaldi::kSgmmTransitions	model-common.h	/^  kSgmmTransitions                 = 0x040,  \/\/\/ t .. not really part of SGMM.$/;"	e	enum:kaldi::SgmmUpdateFlags
+kaldi::kSgmmWriteAll	model-common.h	/^  kSgmmWriteAll        = 0x00F  \/\/\/ a$/;"	e	enum:kaldi::SgmmWriteFlags
+kaldi::operator <<	diag-gmm.cc	/^std::ostream & operator <<(std::ostream & os,$/;"	f	namespace:kaldi
+kaldi::operator <<	full-gmm.cc	/^std::ostream & operator <<(std::ostream & out_stream,$/;"	f	namespace:kaldi
+kaldi::operator >>	diag-gmm.cc	/^std::istream & operator >>(std::istream &is, kaldi::DiagGmm &gmm) {$/;"	f	namespace:kaldi
+kaldi::operator >>	full-gmm.cc	/^std::istream & operator >>(std::istream & in_stream, kaldi::FullGmm &gmm) {$/;"	f	namespace:kaldi
+kaldi::unittest	model-test-common.cc	/^namespace unittest {$/;"	n	namespace:kaldi	file:
+kaldi::unittest	model-test-common.h	/^namespace unittest {$/;"	n	namespace:kaldi
+kaldi::unittest::InitRandDiagGmm	model-test-common.cc	/^void InitRandDiagGmm(int32 dim, int32 num_comp, DiagGmm *gmm) {$/;"	f	namespace:kaldi::unittest
+kaldi::unittest::InitRandFullGmm	model-test-common.cc	/^void InitRandFullGmm(int32 dim, int32 num_comp, FullGmm *gmm) {$/;"	f	namespace:kaldi::unittest
+kaldi::unittest::RandDiagGaussFeatures	model-test-common.cc	/^void RandDiagGaussFeatures(int32 num_samples,$/;"	f	namespace:kaldi::unittest
+kaldi::unittest::RandFullGaussFeatures	model-test-common.cc	/^void RandFullGaussFeatures(int32 num_samples,$/;"	f	namespace:kaldi::unittest
+kaldi::unittest::RandPosdefSpMatrix	model-test-common.cc	/^void RandPosdefSpMatrix(int32 dim, SpMatrix<BaseFloat> *matrix,$/;"	f	namespace:kaldi::unittest
+log_like	decodable-am-diag-gmm.h	/^    BaseFloat log_like;  \/\/\/< Cache value$/;"	m	struct:kaldi::DecodableAmDiagGmmUnmapped::LikelihoodCacheRecord
+log_like_cache_	decodable-am-diag-gmm.h	/^  std::vector<LikelihoodCacheRecord> log_like_cache_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+log_sum_exp_prune_	decodable-am-diag-gmm.h	/^  BaseFloat log_sum_exp_prune_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+main	am-diag-gmm-test.cc	/^int main() {$/;"	f
+main	diag-gmm-test.cc	/^int main() {$/;"	f
+main	ebw-diag-gmm-test.cc	/^int main() {$/;"	f
+main	full-gmm-test.cc	/^main() {$/;"	f
+main	mle-am-diag-gmm-test.cc	/^int main() {$/;"	f
+main	mle-diag-gmm-test.cc	/^int main() {$/;"	f
+main	mle-full-gmm-test.cc	/^main() {$/;"	f
+max_am_gauss	am-diag-gmm.h	/^  int32 max_am_gauss;$/;"	m	struct:kaldi::UbmClusteringOptions
+max_condition	mle-full-gmm.h	/^  BaseFloat max_condition;$/;"	m	struct:kaldi::MleFullGmmOptions
+mean_accumulator	mle-diag-gmm.h	/^  const MatrixBase<double> &mean_accumulator() const { return mean_accumulator_; }$/;"	f	class:kaldi::AccumDiagGmm
+mean_accumulator	mle-full-gmm.h	/^  const Matrix<double> &mean_accumulator() const { return mean_accumulator_; }$/;"	f	class:kaldi::AccumFullGmm
+mean_accumulator_	mle-diag-gmm.h	/^  Matrix<double> mean_accumulator_;$/;"	m	class:kaldi::AccumDiagGmm
+mean_accumulator_	mle-full-gmm.h	/^  Matrix<double> mean_accumulator_;$/;"	m	class:kaldi::AccumFullGmm
+mean_tau	mle-diag-gmm.h	/^  BaseFloat mean_tau;$/;"	m	struct:kaldi::MapDiagGmmOptions
+means_	diag-gmm-normal.h	/^  Matrix<double> means_;    \/\/\/< Means$/;"	m	class:kaldi::DiagGmmNormal
+means_	full-gmm-normal.h	/^  Matrix<double> means_;                \/\/\/< Means$/;"	m	class:kaldi::FullGmmNormal
+means_invcovars	full-gmm.h	/^  Matrix<BaseFloat> &means_invcovars() { return means_invcovars_; }$/;"	f	class:kaldi::FullGmm
+means_invcovars	full-gmm.h	/^  const Matrix<BaseFloat> &means_invcovars() const { return means_invcovars_; }$/;"	f	class:kaldi::FullGmm
+means_invcovars_	full-gmm.h	/^  Matrix<BaseFloat> means_invcovars_;  \/\/\/< Means times inverse covariances$/;"	m	class:kaldi::FullGmm
+means_invvars	diag-gmm.h	/^  const Matrix<BaseFloat> &means_invvars() const { return means_invvars_; }$/;"	f	class:kaldi::DiagGmm
+means_invvars_	diag-gmm.h	/^  Matrix<BaseFloat> means_invvars_;  \/\/\/< Means times inverted variance$/;"	m	class:kaldi::DiagGmm
+merged_components_logdet	diag-gmm.cc	/^BaseFloat DiagGmm::merged_components_logdet(BaseFloat w1, BaseFloat w2,$/;"	f	class:kaldi::DiagGmm
+min_gaussian_occupancy	mle-diag-gmm.h	/^  BaseFloat min_gaussian_occupancy;$/;"	m	struct:kaldi::MleDiagGmmOptions
+min_gaussian_occupancy	mle-full-gmm.h	/^  BaseFloat min_gaussian_occupancy;$/;"	m	struct:kaldi::MleFullGmmOptions
+min_gaussian_weight	ebw-diag-gmm.h	/^  BaseFloat min_gaussian_weight;$/;"	m	struct:kaldi::EbwWeightOptions
+min_gaussian_weight	mle-diag-gmm.h	/^  BaseFloat min_gaussian_weight;$/;"	m	struct:kaldi::MleDiagGmmOptions
+min_gaussian_weight	mle-full-gmm.h	/^  BaseFloat min_gaussian_weight;$/;"	m	struct:kaldi::MleFullGmmOptions
+min_num_count_weight_update	ebw-diag-gmm.h	/^  BaseFloat min_num_count_weight_update; \/\/ minimum numerator count at state level, before we update.$/;"	m	struct:kaldi::EbwWeightOptions
+min_variance	mle-diag-gmm.h	/^  double min_variance;$/;"	m	struct:kaldi::MleDiagGmmOptions
+num_comp_	mle-diag-gmm.h	/^  int32 num_comp_;$/;"	m	class:kaldi::AccumDiagGmm
+num_comp_	mle-full-gmm.h	/^  int32 num_comp_;$/;"	m	class:kaldi::AccumFullGmm
+num_components	model-common.cc	/^  int32 num_components;$/;"	m	struct:kaldi::CountStats	file:
+occupancy	mle-diag-gmm.h	/^  const VectorBase<double> &occupancy() const { return occupancy_; }$/;"	f	class:kaldi::AccumDiagGmm
+occupancy	mle-full-gmm.h	/^  const Vector<double> &occupancy() const { return occupancy_; }$/;"	f	class:kaldi::AccumFullGmm
+occupancy	model-common.cc	/^  BaseFloat occupancy;$/;"	m	struct:kaldi::CountStats	file:
+occupancy_	mle-diag-gmm.h	/^  Vector<double> occupancy_;$/;"	m	class:kaldi::AccumDiagGmm
+occupancy_	mle-full-gmm.h	/^  Vector<double> occupancy_;$/;"	m	class:kaldi::AccumFullGmm
+operator ()	mle-diag-gmm.cc	/^  void operator () () {$/;"	f	class:kaldi::AccumulateMultiThreadedClass
+operator <	model-common.cc	/^  bool operator < (const CountStats &other) const {$/;"	f	struct:kaldi::CountStats
+operator <<	diag-gmm.cc	/^std::ostream & operator <<(std::ostream & os,$/;"	f	namespace:kaldi
+operator <<	full-gmm.cc	/^std::ostream & operator <<(std::ostream & out_stream,$/;"	f	namespace:kaldi
+operator >>	diag-gmm.cc	/^std::istream & operator >>(std::istream &is, kaldi::DiagGmm &gmm) {$/;"	f	namespace:kaldi
+operator >>	full-gmm.cc	/^std::istream & operator >>(std::istream & in_stream, kaldi::FullGmm &gmm) {$/;"	f	namespace:kaldi
+pdf_index	model-common.cc	/^  int32 pdf_index;$/;"	m	struct:kaldi::CountStats	file:
+previous_frame_	decodable-am-diag-gmm.h	/^  int32 previous_frame_;$/;"	m	class:kaldi::DecodableAmDiagGmmUnmapped
+rand_posdef_spmatrix	mle-full-gmm-test.cc	/^void rand_posdef_spmatrix(size_t dim, SpMatrix<BaseFloat> *matrix,$/;"	f
+reduce_state_factor	am-diag-gmm.h	/^  BaseFloat reduce_state_factor;$/;"	m	struct:kaldi::UbmClusteringOptions
+remove_low_count_gaussians	mle-diag-gmm.h	/^  bool remove_low_count_gaussians;$/;"	m	struct:kaldi::MleDiagGmmOptions
+remove_low_count_gaussians	mle-full-gmm.h	/^  bool remove_low_count_gaussians;$/;"	m	struct:kaldi::MleFullGmmOptions
+scale_	decodable-am-diag-gmm.h	/^  BaseFloat scale_;$/;"	m	class:kaldi::DecodableAmDiagGmmScaled
+tau	ebw-diag-gmm.h	/^  BaseFloat tau; \/\/ This is only useful for smoothing "to the model":$/;"	m	struct:kaldi::EbwOptions
+tau	ebw-diag-gmm.h	/^  BaseFloat tau; \/\/ tau value for smoothing stats in weight update.  Should probably$/;"	m	struct:kaldi::EbwWeightOptions
+test_flags_driven_update	mle-diag-gmm-test.cc	/^void test_flags_driven_update(const DiagGmm &gmm,$/;"	f
+test_flags_driven_update	mle-full-gmm-test.cc	/^void test_flags_driven_update(const FullGmm &gmm,$/;"	f
+test_io	mle-diag-gmm-test.cc	/^test_io(const DiagGmm &gmm, const AccumDiagGmm &est_gmm, bool binary,$/;"	f
+test_io	mle-full-gmm-test.cc	/^test_io(const FullGmm &gmm, const AccumFullGmm &est_gmm, bool binary,$/;"	f
+tot_like_	mle-diag-gmm.cc	/^  double tot_like_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+tot_like_ptr_	mle-diag-gmm.cc	/^  double *tot_like_ptr_;$/;"	m	class:kaldi::AccumulateMultiThreadedClass	file:
+total_frames_	mle-am-diag-gmm.h	/^  double total_frames_, total_log_like_;$/;"	m	class:kaldi::AccumAmDiagGmm
+total_log_like_	mle-am-diag-gmm.h	/^  double total_frames_, total_log_like_;$/;"	m	class:kaldi::AccumAmDiagGmm
+trans_model_	decodable-am-diag-gmm.h	/^  const TransitionModel &trans_model_;  \/\/ for tid to pdf mapping$/;"	m	class:kaldi::DecodableAmDiagGmm
+trans_model_	decodable-am-diag-gmm.h	/^  const TransitionModel &trans_model_;  \/\/ for transition-id to pdf mapping$/;"	m	class:kaldi::DecodableAmDiagGmmScaled
+ubm_num_gauss	am-diag-gmm.h	/^  int32 ubm_num_gauss;$/;"	m	struct:kaldi::UbmClusteringOptions
+unittest	model-test-common.cc	/^namespace unittest {$/;"	n	namespace:kaldi	file:
+unittest	model-test-common.h	/^namespace unittest {$/;"	n	namespace:kaldi
+valid_gconsts	diag-gmm.h	/^  bool valid_gconsts() const { return valid_gconsts_; }$/;"	f	class:kaldi::DiagGmm
+valid_gconsts_	diag-gmm.h	/^  bool valid_gconsts_;   \/\/\/< Recompute gconsts_ if false$/;"	m	class:kaldi::DiagGmm
+valid_gconsts_	full-gmm.h	/^  bool valid_gconsts_;  \/\/\/< Recompute gconsts_ if false$/;"	m	class:kaldi::FullGmm
+variance_accumulator	mle-diag-gmm.h	/^  const MatrixBase<double> &variance_accumulator() const { return variance_accumulator_; }$/;"	f	class:kaldi::AccumDiagGmm
+variance_accumulator_	mle-diag-gmm.h	/^  Matrix<double> variance_accumulator_;$/;"	m	class:kaldi::AccumDiagGmm
+variance_floor	mle-full-gmm.h	/^  BaseFloat variance_floor;$/;"	m	struct:kaldi::MleFullGmmOptions
+variance_floor_vector	mle-diag-gmm.h	/^  Vector<double> variance_floor_vector;$/;"	m	struct:kaldi::MleDiagGmmOptions
+variance_tau	mle-diag-gmm.h	/^  BaseFloat variance_tau;$/;"	m	struct:kaldi::MapDiagGmmOptions
+vars_	diag-gmm-normal.h	/^  Matrix<double> vars_;     \/\/\/< diagonal variance$/;"	m	class:kaldi::DiagGmmNormal
+vars_	full-gmm-normal.h	/^  std::vector<SpMatrix<double> > vars_;  \/\/\/< covariances$/;"	m	class:kaldi::FullGmmNormal
+weight_tau	mle-diag-gmm.h	/^  BaseFloat weight_tau;$/;"	m	struct:kaldi::MapDiagGmmOptions
+weights	diag-gmm.h	/^  const Vector<BaseFloat> &weights() const { return weights_; }$/;"	f	class:kaldi::DiagGmm
+weights	full-gmm.h	/^  const Vector<BaseFloat> &weights() const { return weights_; }$/;"	f	class:kaldi::FullGmm
+weights_	diag-gmm-normal.h	/^  Vector<double> weights_;  \/\/\/< weights (not log).$/;"	m	class:kaldi::DiagGmmNormal
+weights_	diag-gmm.h	/^  Vector<BaseFloat> weights_;        \/\/\/< weights (not log).$/;"	m	class:kaldi::DiagGmm
+weights_	full-gmm-normal.h	/^  Vector<double> weights_;              \/\/\/< weights (not log).$/;"	m	class:kaldi::FullGmmNormal
+weights_	full-gmm.h	/^  Vector<BaseFloat> weights_;  \/\/\/< weights (not log).$/;"	m	class:kaldi::FullGmm
+~AccumAmDiagGmm	mle-am-diag-gmm.cc	/^AccumAmDiagGmm::~AccumAmDiagGmm() {$/;"	f	class:kaldi::AccumAmDiagGmm
+~AccumulateMultiThreadedClass	mle-diag-gmm.cc	/^  ~AccumulateMultiThreadedClass() {$/;"	f	class:kaldi::AccumulateMultiThreadedClass
+~AmDiagGmm	am-diag-gmm.cc	/^AmDiagGmm::~AmDiagGmm() {$/;"	f	class:kaldi::AmDiagGmm
+~DecodableAmDiagGmmScaled	decodable-am-diag-gmm.h	/^  virtual ~DecodableAmDiagGmmScaled() {$/;"	f	class:kaldi::DecodableAmDiagGmmScaled

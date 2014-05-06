@@ -1,0 +1,109 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AccStats	ivector-compute-lda.cc	/^  void AccStats(const Matrix<double> &utts_of_this_spk) {$/;"	f	class:kaldi::CovarianceStats
+AddStats	ivector-compute-lda.cc	/^  void AddStats(const CovarianceStats &other) {$/;"	f	class:kaldi::CovarianceStats
+ComputeAndSubtractMean	ivector-compute-lda.cc	/^void ComputeAndSubtractMean($/;"	f	namespace:kaldi
+ComputeEer	compute-eer.cc	/^BaseFloat ComputeEer(std::vector<BaseFloat> *target_scores,$/;"	f	namespace:kaldi
+ComputeLdaTransform	ivector-compute-lda.cc	/^void ComputeLdaTransform($/;"	f	namespace:kaldi
+ComputeLogPosteriors	logistic-regression-eval.cc	/^int ComputeLogPosteriors(ParseOptions &po, const LogisticRegressionConfig &config) {$/;"	f
+ComputeNormalizingTransform	ivector-compute-lda.cc	/^void ComputeNormalizingTransform(const SpMatrix<Real> &covar,$/;"	f	namespace:kaldi
+ComputeScores	logistic-regression-eval.cc	/^int32 ComputeScores(ParseOptions &po, const LogisticRegressionConfig &config) {$/;"	f
+CovarianceStats	ivector-compute-lda.cc	/^  CovarianceStats(int32 dim): tot_covar_(dim),$/;"	f	class:kaldi::CovarianceStats
+CovarianceStats	ivector-compute-lda.cc	/^class CovarianceStats {$/;"	c	namespace:kaldi	file:
+Dim	ivector-compute-lda.cc	/^  int32 Dim() { return tot_covar_.NumRows(); }$/;"	f	class:kaldi::CovarianceStats
+Empty	ivector-compute-lda.cc	/^  bool Empty() { return (num_utt_ - num_spk_ == 0); }$/;"	f	class:kaldi::CovarianceStats
+GetTotalCovar	ivector-compute-lda.cc	/^  void GetTotalCovar(SpMatrix<double> *tot_covar) const {$/;"	f	class:kaldi::CovarianceStats
+GetWithinCovar	ivector-compute-lda.cc	/^  void GetWithinCovar(SpMatrix<double> *within_covar) {$/;"	f	class:kaldi::CovarianceStats
+Info	ivector-compute-lda.cc	/^  std::string Info() {$/;"	f	class:kaldi::CovarianceStats
+IvectorExtractTask	ivector-extract.cc	/^  IvectorExtractTask(const IvectorExtractor &extractor,$/;"	f	class:kaldi::IvectorExtractTask
+IvectorExtractTask	ivector-extract.cc	/^class IvectorExtractTask {$/;"	c	namespace:kaldi	file:
+IvectorTask	ivector-extractor-acc-stats.cc	/^  IvectorTask(const IvectorExtractor &extractor,$/;"	f	class:kaldi::IvectorTask
+IvectorTask	ivector-extractor-acc-stats.cc	/^class IvectorTask {$/;"	c	namespace:kaldi	file:
+SingularTotCovar	ivector-compute-lda.cc	/^  bool SingularTotCovar() { return (num_utt_ < Dim()); }$/;"	f	class:kaldi::CovarianceStats
+auxf_change_	ivector-extract.cc	/^  double auxf_change_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+between_covar_	ivector-compute-lda.cc	/^  SpMatrix<double> between_covar_;$/;"	m	class:kaldi::CovarianceStats	file:
+extractor_	ivector-extract.cc	/^  const IvectorExtractor &extractor_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+extractor_	ivector-extractor-acc-stats.cc	/^  const IvectorExtractor &extractor_;$/;"	m	class:kaldi::IvectorTask	file:
+feats_	ivector-extract.cc	/^  Matrix<BaseFloat> feats_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+features_	ivector-extractor-acc-stats.cc	/^  Matrix<BaseFloat> features_; \/\/ not a reference, since features come from a$/;"	m	class:kaldi::IvectorTask	file:
+ivector_	ivector-extract.cc	/^  Vector<double> ivector_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+kaldi	compute-eer.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	ivector-compute-lda.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	ivector-extract.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	ivector-extractor-acc-stats.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::ComputeAndSubtractMean	ivector-compute-lda.cc	/^void ComputeAndSubtractMean($/;"	f	namespace:kaldi
+kaldi::ComputeEer	compute-eer.cc	/^BaseFloat ComputeEer(std::vector<BaseFloat> *target_scores,$/;"	f	namespace:kaldi
+kaldi::ComputeLdaTransform	ivector-compute-lda.cc	/^void ComputeLdaTransform($/;"	f	namespace:kaldi
+kaldi::ComputeNormalizingTransform	ivector-compute-lda.cc	/^void ComputeNormalizingTransform(const SpMatrix<Real> &covar,$/;"	f	namespace:kaldi
+kaldi::CovarianceStats	ivector-compute-lda.cc	/^class CovarianceStats {$/;"	c	namespace:kaldi	file:
+kaldi::CovarianceStats::AccStats	ivector-compute-lda.cc	/^  void AccStats(const Matrix<double> &utts_of_this_spk) {$/;"	f	class:kaldi::CovarianceStats
+kaldi::CovarianceStats::AddStats	ivector-compute-lda.cc	/^  void AddStats(const CovarianceStats &other) {$/;"	f	class:kaldi::CovarianceStats
+kaldi::CovarianceStats::CovarianceStats	ivector-compute-lda.cc	/^  CovarianceStats(int32 dim): tot_covar_(dim),$/;"	f	class:kaldi::CovarianceStats
+kaldi::CovarianceStats::Dim	ivector-compute-lda.cc	/^  int32 Dim() { return tot_covar_.NumRows(); }$/;"	f	class:kaldi::CovarianceStats
+kaldi::CovarianceStats::Empty	ivector-compute-lda.cc	/^  bool Empty() { return (num_utt_ - num_spk_ == 0); }$/;"	f	class:kaldi::CovarianceStats
+kaldi::CovarianceStats::GetTotalCovar	ivector-compute-lda.cc	/^  void GetTotalCovar(SpMatrix<double> *tot_covar) const {$/;"	f	class:kaldi::CovarianceStats
+kaldi::CovarianceStats::GetWithinCovar	ivector-compute-lda.cc	/^  void GetWithinCovar(SpMatrix<double> *within_covar) {$/;"	f	class:kaldi::CovarianceStats
+kaldi::CovarianceStats::Info	ivector-compute-lda.cc	/^  std::string Info() {$/;"	f	class:kaldi::CovarianceStats
+kaldi::CovarianceStats::SingularTotCovar	ivector-compute-lda.cc	/^  bool SingularTotCovar() { return (num_utt_ < Dim()); }$/;"	f	class:kaldi::CovarianceStats
+kaldi::CovarianceStats::between_covar_	ivector-compute-lda.cc	/^  SpMatrix<double> between_covar_;$/;"	m	class:kaldi::CovarianceStats	file:
+kaldi::CovarianceStats::num_spk_	ivector-compute-lda.cc	/^  int32 num_spk_;$/;"	m	class:kaldi::CovarianceStats	file:
+kaldi::CovarianceStats::num_utt_	ivector-compute-lda.cc	/^  int32 num_utt_;$/;"	m	class:kaldi::CovarianceStats	file:
+kaldi::CovarianceStats::tot_covar_	ivector-compute-lda.cc	/^  SpMatrix<double> tot_covar_;$/;"	m	class:kaldi::CovarianceStats	file:
+kaldi::IvectorExtractTask	ivector-extract.cc	/^class IvectorExtractTask {$/;"	c	namespace:kaldi	file:
+kaldi::IvectorExtractTask::IvectorExtractTask	ivector-extract.cc	/^  IvectorExtractTask(const IvectorExtractor &extractor,$/;"	f	class:kaldi::IvectorExtractTask
+kaldi::IvectorExtractTask::auxf_change_	ivector-extract.cc	/^  double auxf_change_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+kaldi::IvectorExtractTask::extractor_	ivector-extract.cc	/^  const IvectorExtractor &extractor_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+kaldi::IvectorExtractTask::feats_	ivector-extract.cc	/^  Matrix<BaseFloat> feats_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+kaldi::IvectorExtractTask::ivector_	ivector-extract.cc	/^  Vector<double> ivector_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+kaldi::IvectorExtractTask::operator ()	ivector-extract.cc	/^  void operator () () {$/;"	f	class:kaldi::IvectorExtractTask
+kaldi::IvectorExtractTask::posterior_	ivector-extract.cc	/^  Posterior posterior_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+kaldi::IvectorExtractTask::tot_auxf_change_	ivector-extract.cc	/^  double *tot_auxf_change_; \/\/ if non-NULL we need the auxf change.$/;"	m	class:kaldi::IvectorExtractTask	file:
+kaldi::IvectorExtractTask::utt_	ivector-extract.cc	/^  std::string utt_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+kaldi::IvectorExtractTask::writer_	ivector-extract.cc	/^  BaseFloatVectorWriter *writer_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+kaldi::IvectorExtractTask::~IvectorExtractTask	ivector-extract.cc	/^  ~IvectorExtractTask() {$/;"	f	class:kaldi::IvectorExtractTask
+kaldi::IvectorTask	ivector-extractor-acc-stats.cc	/^class IvectorTask {$/;"	c	namespace:kaldi	file:
+kaldi::IvectorTask::IvectorTask	ivector-extractor-acc-stats.cc	/^  IvectorTask(const IvectorExtractor &extractor,$/;"	f	class:kaldi::IvectorTask
+kaldi::IvectorTask::extractor_	ivector-extractor-acc-stats.cc	/^  const IvectorExtractor &extractor_;$/;"	m	class:kaldi::IvectorTask	file:
+kaldi::IvectorTask::features_	ivector-extractor-acc-stats.cc	/^  Matrix<BaseFloat> features_; \/\/ not a reference, since features come from a$/;"	m	class:kaldi::IvectorTask	file:
+kaldi::IvectorTask::operator ()	ivector-extractor-acc-stats.cc	/^  void operator () () {$/;"	f	class:kaldi::IvectorTask
+kaldi::IvectorTask::posterior_	ivector-extractor-acc-stats.cc	/^  Posterior posterior_;  \/\/ as above.$/;"	m	class:kaldi::IvectorTask	file:
+kaldi::IvectorTask::stats_	ivector-extractor-acc-stats.cc	/^  IvectorStats *stats_;$/;"	m	class:kaldi::IvectorTask	file:
+kaldi::IvectorTask::~IvectorTask	ivector-extractor-acc-stats.cc	/^  ~IvectorTask() { }  \/\/ the destructor doesn't have to do anything.$/;"	f	class:kaldi::IvectorTask
+main	compute-eer.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-vad.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	create-split-from-vad.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-compute-dot-products.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-compute-lda.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-compute-plda.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-copy-plda.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-extract.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-extractor-acc-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-extractor-est.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-extractor-init.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-extractor-sum-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-mean.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-normalize-length.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-plda-scoring.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-subtract-global-mean.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ivector-transform.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	logistic-regression-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	logistic-regression-eval.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	logistic-regression-train.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	select-voiced-frames.cc	/^int main(int argc, char *argv[]) {$/;"	f
+num_spk_	ivector-compute-lda.cc	/^  int32 num_spk_;$/;"	m	class:kaldi::CovarianceStats	file:
+num_utt_	ivector-compute-lda.cc	/^  int32 num_utt_;$/;"	m	class:kaldi::CovarianceStats	file:
+operator ()	ivector-extract.cc	/^  void operator () () {$/;"	f	class:kaldi::IvectorExtractTask
+operator ()	ivector-extractor-acc-stats.cc	/^  void operator () () {$/;"	f	class:kaldi::IvectorTask
+posterior_	ivector-extract.cc	/^  Posterior posterior_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+posterior_	ivector-extractor-acc-stats.cc	/^  Posterior posterior_;  \/\/ as above.$/;"	m	class:kaldi::IvectorTask	file:
+stats_	ivector-extractor-acc-stats.cc	/^  IvectorStats *stats_;$/;"	m	class:kaldi::IvectorTask	file:
+tot_auxf_change_	ivector-extract.cc	/^  double *tot_auxf_change_; \/\/ if non-NULL we need the auxf change.$/;"	m	class:kaldi::IvectorExtractTask	file:
+tot_covar_	ivector-compute-lda.cc	/^  SpMatrix<double> tot_covar_;$/;"	m	class:kaldi::CovarianceStats	file:
+utt_	ivector-extract.cc	/^  std::string utt_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+writer_	ivector-extract.cc	/^  BaseFloatVectorWriter *writer_;$/;"	m	class:kaldi::IvectorExtractTask	file:
+~IvectorExtractTask	ivector-extract.cc	/^  ~IvectorExtractTask() {$/;"	f	class:kaldi::IvectorExtractTask
+~IvectorTask	ivector-extractor-acc-stats.cc	/^  ~IvectorTask() { }  \/\/ the destructor doesn't have to do anything.$/;"	f	class:kaldi::IvectorTask

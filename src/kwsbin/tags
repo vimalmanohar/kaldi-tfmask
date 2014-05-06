@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Arc	kws-search.cc	/^typedef KwsLexicographicArc Arc;$/;"	t	namespace:kaldi	file:
+DecodeLabelUid	kws-search.cc	/^StateId DecodeLabelUid(uint64 osymbol) {$/;"	f	namespace:kaldi
+EncodeLabel	kws-search.cc	/^uint64 EncodeLabel(StateId ilabel,$/;"	f	namespace:kaldi
+FinalAction	kws-search.cc	/^  fst::MapFinalAction FinalAction() const { return fst::MAP_NO_SUPERFINAL; }$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+FromArc	kws-search.cc	/^  typedef fst::StdArc FromArc;$/;"	t	class:kaldi::VectorFstToKwsLexicographicFstMapper	file:
+FromWeight	kws-search.cc	/^  typedef FromArc::Weight FromWeight;$/;"	t	class:kaldi::VectorFstToKwsLexicographicFstMapper	file:
+InputSymbolsAction	kws-search.cc	/^  fst::MapSymbolsAction InputSymbolsAction() const { return fst::MAP_COPY_SYMBOLS; }$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+OutputSymbolsAction	kws-search.cc	/^  fst::MapSymbolsAction OutputSymbolsAction() const { return fst::MAP_COPY_SYMBOLS;}$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+PrintProxyFstPath	generate-proxy-keywords.cc	/^bool PrintProxyFstPath(const VectorFst<StdArc> &proxy,$/;"	f	namespace:fst
+Properties	kws-search.cc	/^  uint64 Properties(uint64 props) const { return props; }$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+StateId	kws-search.cc	/^typedef Arc::StateId StateId;$/;"	t	namespace:kaldi	file:
+ToArc	kws-search.cc	/^  typedef KwsLexicographicArc ToArc;$/;"	t	class:kaldi::VectorFstToKwsLexicographicFstMapper	file:
+ToWeight	kws-search.cc	/^  typedef KwsLexicographicWeight ToWeight;$/;"	t	class:kaldi::VectorFstToKwsLexicographicFstMapper	file:
+VectorFstToKwsLexicographicFstMapper	kws-search.cc	/^  VectorFstToKwsLexicographicFstMapper() {}$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+VectorFstToKwsLexicographicFstMapper	kws-search.cc	/^class VectorFstToKwsLexicographicFstMapper {$/;"	c	namespace:kaldi	file:
+Weight	kws-search.cc	/^typedef Arc::Weight Weight;$/;"	t	namespace:kaldi	file:
+fst	generate-proxy-keywords.cc	/^namespace fst {$/;"	n	file:
+fst::PrintProxyFstPath	generate-proxy-keywords.cc	/^bool PrintProxyFstPath(const VectorFst<StdArc> &proxy,$/;"	f	namespace:fst
+kaldi	kws-search.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::Arc	kws-search.cc	/^typedef KwsLexicographicArc Arc;$/;"	t	namespace:kaldi	file:
+kaldi::DecodeLabelUid	kws-search.cc	/^StateId DecodeLabelUid(uint64 osymbol) {$/;"	f	namespace:kaldi
+kaldi::EncodeLabel	kws-search.cc	/^uint64 EncodeLabel(StateId ilabel,$/;"	f	namespace:kaldi
+kaldi::StateId	kws-search.cc	/^typedef Arc::StateId StateId;$/;"	t	namespace:kaldi	file:
+kaldi::VectorFstToKwsLexicographicFstMapper	kws-search.cc	/^class VectorFstToKwsLexicographicFstMapper {$/;"	c	namespace:kaldi	file:
+kaldi::VectorFstToKwsLexicographicFstMapper::FinalAction	kws-search.cc	/^  fst::MapFinalAction FinalAction() const { return fst::MAP_NO_SUPERFINAL; }$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+kaldi::VectorFstToKwsLexicographicFstMapper::FromArc	kws-search.cc	/^  typedef fst::StdArc FromArc;$/;"	t	class:kaldi::VectorFstToKwsLexicographicFstMapper	file:
+kaldi::VectorFstToKwsLexicographicFstMapper::FromWeight	kws-search.cc	/^  typedef FromArc::Weight FromWeight;$/;"	t	class:kaldi::VectorFstToKwsLexicographicFstMapper	file:
+kaldi::VectorFstToKwsLexicographicFstMapper::InputSymbolsAction	kws-search.cc	/^  fst::MapSymbolsAction InputSymbolsAction() const { return fst::MAP_COPY_SYMBOLS; }$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+kaldi::VectorFstToKwsLexicographicFstMapper::OutputSymbolsAction	kws-search.cc	/^  fst::MapSymbolsAction OutputSymbolsAction() const { return fst::MAP_COPY_SYMBOLS;}$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+kaldi::VectorFstToKwsLexicographicFstMapper::Properties	kws-search.cc	/^  uint64 Properties(uint64 props) const { return props; }$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+kaldi::VectorFstToKwsLexicographicFstMapper::ToArc	kws-search.cc	/^  typedef KwsLexicographicArc ToArc;$/;"	t	class:kaldi::VectorFstToKwsLexicographicFstMapper	file:
+kaldi::VectorFstToKwsLexicographicFstMapper::ToWeight	kws-search.cc	/^  typedef KwsLexicographicWeight ToWeight;$/;"	t	class:kaldi::VectorFstToKwsLexicographicFstMapper	file:
+kaldi::VectorFstToKwsLexicographicFstMapper::VectorFstToKwsLexicographicFstMapper	kws-search.cc	/^  VectorFstToKwsLexicographicFstMapper() {}$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+kaldi::VectorFstToKwsLexicographicFstMapper::operator ()	kws-search.cc	/^  ToArc operator()(const FromArc &arc) const {$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper
+kaldi::Weight	kws-search.cc	/^typedef Arc::Weight Weight;$/;"	t	namespace:kaldi	file:
+main	generate-proxy-keywords.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	kws-index-union.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	kws-search.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-to-kws-index.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	transcripts-to-fsts.cc	/^int main(int argc, char *argv[]) {$/;"	f
+operator ()	kws-search.cc	/^  ToArc operator()(const FromArc &arc) const {$/;"	f	class:kaldi::VectorFstToKwsLexicographicFstMapper

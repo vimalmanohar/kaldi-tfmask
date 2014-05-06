@@ -1,0 +1,890 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Add	clusterable-classes.cc	/^void GaussClusterable::Add(const Clusterable &other_in) {$/;"	f	class:kaldi::GaussClusterable
+Add	clusterable-classes.cc	/^void ScalarClusterable::Add(const Clusterable &other_in) {$/;"	f	class:kaldi::ScalarClusterable
+AddStats	clusterable-classes.cc	/^void GaussClusterable::AddStats(const VectorBase<BaseFloat> &vec,$/;"	f	class:kaldi::GaussClusterable
+AddToClusters	cluster-utils.cc	/^void AddToClusters(const std::vector<Clusterable*> &stats,$/;"	f	namespace:kaldi
+AddToClustersOptimized	cluster-utils.cc	/^void AddToClustersOptimized(const std::vector<Clusterable*> &stats,$/;"	f	namespace:kaldi
+AllKeysType	build-tree-questions.h	/^typedef enum { kAllKeysInsistIdentical, kAllKeysIntersection, kAllKeysUnion } AllKeysType;$/;"	t	namespace:kaldi	typeref:enum:kaldi::__anon1
+AutomaticallyObtainQuestions	build-tree.cc	/^void AutomaticallyObtainQuestions(BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+BestSplit	build-tree-utils.cc	/^  BaseFloat BestSplit() { return best_split_impr_; } \/\/ returns objf improvement (>=0) of best possible split.$/;"	f	class:kaldi::DecisionTreeSplitter
+BottomUpClusterer	cluster-utils.cc	/^  BottomUpClusterer(const std::vector<Clusterable*> &points,$/;"	f	class:kaldi::BottomUpClusterer
+BottomUpClusterer	cluster-utils.cc	/^class BottomUpClusterer {$/;"	c	namespace:kaldi	file:
+BuildTree	build-tree.cc	/^EventMap *BuildTree(Questions &qopts,$/;"	f	namespace:kaldi
+BuildTreeStatsType	build-tree-questions.h	/^typedef std::vector<std::pair<EventType, Clusterable*> > BuildTreeStatsType;$/;"	t	namespace:kaldi
+BuildTreeTwoLevel	build-tree.cc	/^EventMap *BuildTreeTwoLevel(Questions &qopts,$/;"	f	namespace:kaldi
+CanMerge	cluster-utils.cc	/^bool BottomUpClusterer::CanMerge(int32 i, int32 j, BaseFloat dist) {$/;"	f	class:kaldi::BottomUpClusterer
+CanMerge	cluster-utils.cc	/^bool CompartmentalizedBottomUpClusterer::CanMerge(int32 comp, int32 i, int32 j,$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+CentralPosition	context-dep.h	/^  virtual int32 CentralPosition() const { return P_; }$/;"	f	class:kaldi::ContextDependency
+Check	build-tree-questions.h	/^  void Check() const {$/;"	f	struct:kaldi::QuestionsForKey
+Check	event-map.cc	/^void EventMap::Check(const std::vector<std::pair<EventKeyType, EventValueType> > &event) {$/;"	f	class:kaldi::EventMap
+ClustIndexInt	cluster-utils.cc	/^  typedef uint_smaller ClustIndexInt;$/;"	t	class:kaldi::RefineClusterer	file:
+Cluster	cluster-utils.cc	/^  BaseFloat Cluster(std::vector<Clusterable*> *clusters_out,$/;"	f	class:kaldi::TreeClusterer
+Cluster	cluster-utils.cc	/^BaseFloat BottomUpClusterer::Cluster() {$/;"	f	class:kaldi::BottomUpClusterer
+Cluster	cluster-utils.cc	/^BaseFloat CompartmentalizedBottomUpClusterer::Cluster($/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+ClusterBottomUp	cluster-utils.cc	/^BaseFloat ClusterBottomUp(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+ClusterBottomUpCompartmentalized	cluster-utils.cc	/^BaseFloat ClusterBottomUpCompartmentalized($/;"	f	namespace:kaldi
+ClusterEventMap	build-tree-utils.cc	/^EventMap *ClusterEventMap(const EventMap &e_in, const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+ClusterEventMapGetMapping	build-tree-utils.cc	/^int ClusterEventMapGetMapping(const EventMap &e_in, const BuildTreeStatsType &stats, BaseFloat thresh, std::vector<EventMap*> *mapping) {$/;"	f	namespace:kaldi
+ClusterEventMapRestrictedByKeys	build-tree-utils.cc	/^EventMap *ClusterEventMapRestrictedByKeys(const EventMap &e_in,$/;"	f	namespace:kaldi
+ClusterEventMapRestrictedByMap	build-tree-utils.cc	/^EventMap *ClusterEventMapRestrictedByMap(const EventMap &e_in,$/;"	f	namespace:kaldi
+ClusterEventMapRestrictedHelper	build-tree-utils.cc	/^static int32 ClusterEventMapRestrictedHelper(const EventMap &e_in,$/;"	f	namespace:kaldi
+ClusterKMeans	cluster-utils.cc	/^BaseFloat ClusterKMeans(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+ClusterKMeansOnce	cluster-utils.cc	/^BaseFloat ClusterKMeansOnce(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+ClusterKMeansOptions	cluster-utils.h	/^  ClusterKMeansOptions()$/;"	f	struct:kaldi::ClusterKMeansOptions
+ClusterKMeansOptions	cluster-utils.h	/^struct ClusterKMeansOptions {$/;"	s	namespace:kaldi
+ClusterTopDown	cluster-utils.cc	/^BaseFloat ClusterTopDown(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+CompBotClustElem	cluster-utils.cc	/^  CompBotClustElem(BaseFloat d, int32 comp, int32 i, int32 j)$/;"	f	struct:kaldi::CompBotClustElem
+CompBotClustElem	cluster-utils.cc	/^struct CompBotClustElem {$/;"	s	namespace:kaldi	file:
+CompartmentalizedBottomUpClusterer	cluster-utils.cc	/^  CompartmentalizedBottomUpClusterer($/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+CompartmentalizedBottomUpClusterer	cluster-utils.cc	/^class CompartmentalizedBottomUpClusterer {$/;"	c	namespace:kaldi	file:
+Compute	context-dep.cc	/^bool ContextDependency::Compute(const std::vector<int32> &phoneseq,$/;"	f	class:kaldi::ContextDependency
+ComputeInitialSplit	build-tree-utils.cc	/^BaseFloat ComputeInitialSplit(const std::vector<Clusterable*> &summed_stats,$/;"	f	namespace:kaldi
+ComputeTreeMapping	build-tree.cc	/^static void ComputeTreeMapping(const EventMap &small_tree,$/;"	f	namespace:kaldi
+ConstantEventMap	event-map.h	/^  explicit ConstantEventMap(EventAnswerType answer): answer_(answer) { }$/;"	f	class:kaldi::ConstantEventMap
+ConstantEventMap	event-map.h	/^class ConstantEventMap: public EventMap {$/;"	c	namespace:kaldi
+ContextDependency	context-dep.h	/^  ContextDependency(): N_(0), P_(0), to_pdf_(NULL) { }$/;"	f	class:kaldi::ContextDependency
+ContextDependency	context-dep.h	/^  ContextDependency(int32 N, int32 P,$/;"	f	class:kaldi::ContextDependency
+ContextDependency	context-dep.h	/^class ContextDependency: public ContextDependencyInterface {$/;"	c	namespace:kaldi
+ContextWidth	context-dep.h	/^  virtual int32 ContextWidth() const { return N_; }$/;"	f	class:kaldi::ContextDependency
+ConvertStats	build-tree-utils.cc	/^bool ConvertStats(int32 oldN, int32 oldP, int32 newN, int32 newP,$/;"	f	namespace:kaldi
+Copy	clusterable-classes.cc	/^Clusterable* GaussClusterable::Copy() const {$/;"	f	class:kaldi::GaussClusterable
+Copy	clusterable-classes.cc	/^Clusterable* ScalarClusterable::Copy() const {$/;"	f	class:kaldi::ScalarClusterable
+Copy	context-dep.h	/^  virtual ContextDependencyInterface *Copy() const {$/;"	f	class:kaldi::ContextDependency
+Copy	event-map.h	/^  EventMap *Copy() const { std::vector<EventMap*> new_leaves; return Copy(new_leaves); }$/;"	f	class:kaldi::EventMap
+Copy	event-map.h	/^  virtual EventMap *Copy(const std::vector<EventMap*> &new_leaves) const {$/;"	f	class:kaldi::ConstantEventMap
+Copy	event-map.h	/^  virtual EventMap *Copy(const std::vector<EventMap*> &new_leaves) const {$/;"	f	class:kaldi::SplitEventMap
+Copy	event-map.h	/^  virtual EventMap *Copy(const std::vector<EventMap*> &new_leaves) const {$/;"	f	class:kaldi::TableEventMap
+CreateAssignmentsOutput	cluster-utils.cc	/^  void CreateAssignmentsOutput(std::vector<int32> *assignments_out) {$/;"	f	class:kaldi::TreeClusterer	file:
+CreateClustAssignmentsOutput	cluster-utils.cc	/^  void CreateClustAssignmentsOutput(std::vector<int32> *clust_assignments_out) {$/;"	f	class:kaldi::TreeClusterer	file:
+CreateClustersOutput	cluster-utils.cc	/^  void CreateClustersOutput(std::vector<Clusterable*> *clusters_out) {$/;"	f	class:kaldi::TreeClusterer	file:
+CreateOutput	cluster-utils.cc	/^  void CreateOutput(std::vector<Clusterable*> *clusters_out,$/;"	f	class:kaldi::TreeClusterer	file:
+DecisionTreeSplitter	build-tree-utils.cc	/^  DecisionTreeSplitter(EventAnswerType leaf, const BuildTreeStatsType &stats,$/;"	f	class:kaldi::DecisionTreeSplitter
+DecisionTreeSplitter	build-tree-utils.cc	/^class DecisionTreeSplitter {$/;"	c	namespace:kaldi	file:
+DeleteBuildTreeStats	build-tree-utils.cc	/^void DeleteBuildTreeStats(BuildTreeStatsType *stats) {$/;"	f	namespace:kaldi
+Destroy	event-map.h	/^  void Destroy() {$/;"	f	class:kaldi::SplitEventMap
+Distance	cluster-utils.cc	/^  BaseFloat& Distance(int32 i, int32 j) {$/;"	f	class:kaldi::BottomUpClusterer	file:
+Distance	clusterable-classes.cc	/^BaseFloat Clusterable::Distance(const Clusterable &other) const {$/;"	f	class:kaldi::Clusterable
+DoSplit	build-tree-utils.cc	/^  void DoSplit(int32 *next_leaf) {$/;"	f	class:kaldi::DecisionTreeSplitter
+DoSplit	cluster-utils.cc	/^  void DoSplit(Node *node) {$/;"	f	class:kaldi::TreeClusterer	file:
+DoSplitInternal	build-tree-utils.cc	/^  void DoSplitInternal(int32 *next_leaf) {$/;"	f	class:kaldi::DecisionTreeSplitter	file:
+DoTableSplit	build-tree-utils.cc	/^EventMap *DoTableSplit(const EventMap &orig, EventKeyType key,  const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+DoTableSplitMultiple	build-tree-utils.cc	/^EventMap *DoTableSplitMultiple(const EventMap &orig, const std::vector<EventKeyType> &keys,  const BuildTreeStatsType &stats, int32 *num_leaves) {$/;"	f	namespace:kaldi
+EnsureClusterableVectorNotNull	cluster-utils.cc	/^void EnsureClusterableVectorNotNull(std::vector<Clusterable*> *stats) {$/;"	f	namespace:kaldi
+EventAnswerType	event-map.h	/^typedef int32 EventAnswerType;$/;"	t	namespace:kaldi
+EventKeyType	event-map.h	/^typedef int32 EventKeyType;$/;"	t	namespace:kaldi
+EventMap	event-map.h	/^class EventMap {$/;"	c	namespace:kaldi
+EventMapVectorEqual	event-map.h	/^struct EventMapVectorEqual {  \/\/ Equality object for EventType pointers-- test equality of underlying vector.$/;"	s	namespace:kaldi
+EventMapVectorHash	event-map.h	/^struct EventMapVectorHash {  \/\/ Hashing object for EventMapVector.  Works for both pointers and references.$/;"	s	namespace:kaldi
+EventType	event-map.h	/^typedef std::vector<std::pair<EventKeyType, EventValueType> > EventType;$/;"	t	namespace:kaldi
+EventTypeToString	event-map.cc	/^std::string EventTypeToString(const EventType &evec) {$/;"	f	namespace:kaldi
+EventValueType	event-map.h	/^typedef int32 EventValueType;$/;"	t	namespace:kaldi
+FilterStatsByKey	build-tree-utils.cc	/^void FilterStatsByKey(const BuildTreeStatsType &stats_in,$/;"	f	namespace:kaldi
+FindAllKeys	build-tree-utils.cc	/^void FindAllKeys(const BuildTreeStatsType &stats, AllKeysType keys_type, std::vector<EventKeyType> *keys_out) {$/;"	f	namespace:kaldi
+FindBestSplit	build-tree-utils.cc	/^  void FindBestSplit() {$/;"	f	class:kaldi::DecisionTreeSplitter	file:
+FindBestSplit	cluster-utils.cc	/^  void FindBestSplit(Node *node) {$/;"	f	class:kaldi::TreeClusterer	file:
+FindBestSplitForKey	build-tree-utils.cc	/^BaseFloat FindBestSplitForKey(const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+GaussClusterable	clusterable-classes.h	/^  GaussClusterable() : count_(0.0), var_floor_(0.0) {}$/;"	f	class:kaldi::GaussClusterable
+GaussClusterable	clusterable-classes.h	/^  GaussClusterable(int32 dim, BaseFloat var_floor)$/;"	f	class:kaldi::GaussClusterable
+GaussClusterable	clusterable-classes.h	/^class GaussClusterable: public Clusterable {$/;"	c	namespace:kaldi
+GaussClusterable	clusterable-classes.h	/^inline GaussClusterable::GaussClusterable(const Vector<BaseFloat> &x_stats,$/;"	f	class:kaldi::GaussClusterable
+GenRandContextDependency	context-dep.cc	/^ContextDependency *GenRandContextDependency(const std::vector<int32> &phone_ids,$/;"	f	namespace:kaldi
+GenRandContextDependencyLarge	context-dep.cc	/^ContextDependency *GenRandContextDependencyLarge(const std::vector<int32> &phone_ids,$/;"	f	namespace:kaldi
+GenRandStats	build-tree.cc	/^void GenRandStats(int32 dim, int32 num_stats, int32 N, int32 P,$/;"	f	namespace:kaldi
+GetChildren	event-map.h	/^  virtual void GetChildren(std::vector<EventMap*> *out) const { out->clear(); }$/;"	f	class:kaldi::ConstantEventMap
+GetChildren	event-map.h	/^  virtual void GetChildren(std::vector<EventMap*> *out) const {$/;"	f	class:kaldi::SplitEventMap
+GetChildren	event-map.h	/^  virtual void GetChildren(std::vector<EventMap*> *out) const {$/;"	f	class:kaldi::TableEventMap
+GetEventKeys	build-tree-utils.cc	/^static void GetEventKeys(const EventType &vec, std::vector<EventKeyType> *keys) {$/;"	f	namespace:kaldi
+GetInfo	cluster-utils.cc	/^  point_info &GetInfo(int32 point, int32 idx) {$/;"	f	class:kaldi::RefineClusterer	file:
+GetKeysWithQuestions	build-tree-questions.h	/^  void GetKeysWithQuestions(std::vector<EventKeyType> *keys_out) const {$/;"	f	class:kaldi::Questions
+GetMap	build-tree-utils.cc	/^  EventMap *GetMap() {$/;"	f	class:kaldi::DecisionTreeSplitter
+GetPdfInfo	context-dep.cc	/^void ContextDependency::GetPdfInfo(const std::vector<int32> &phones,$/;"	f	class:kaldi::ContextDependency
+GetQuestionsOf	build-tree-questions.h	/^  const QuestionsForKey &GetQuestionsOf(EventKeyType key) const {$/;"	f	class:kaldi::Questions
+GetStubMap	build-tree-utils.cc	/^EventMap *GetStubMap(int32 P,$/;"	f	namespace:kaldi
+GetToLengthMap	build-tree-utils.cc	/^EventMap *GetToLengthMap(const BuildTreeStatsType &stats, int32 P,$/;"	f	namespace:kaldi
+GetTreeStructure	event-map.cc	/^bool GetTreeStructure(const EventMap &map,$/;"	f	namespace:kaldi
+GetTreeStructureInternal	event-map.cc	/^static bool GetTreeStructureInternal($/;"	f	namespace:kaldi
+HasQuestionsForKey	build-tree-questions.h	/^  const bool HasQuestionsForKey(EventKeyType key) const { return (key_idx_.count(key) != 0); }$/;"	f	class:kaldi::Questions
+Info	clusterable-classes.cc	/^std::string ScalarClusterable::Info() {$/;"	f	class:kaldi::ScalarClusterable
+Init	cluster-utils.cc	/^  void Init() {  \/\/ Initializes top node.$/;"	f	class:kaldi::TreeClusterer	file:
+InitPoint	cluster-utils.cc	/^  void InitPoint(int32 point) {$/;"	f	class:kaldi::RefineClusterer	file:
+InitPoints	cluster-utils.cc	/^  void InitPoints() {$/;"	f	class:kaldi::RefineClusterer	file:
+InitRand	build-tree-questions.cc	/^void Questions::InitRand(const BuildTreeStatsType &stats, int32 num_quest, int32 num_iters_refine,$/;"	f	class:kaldi::Questions
+InitializeAssignments	cluster-utils.cc	/^void BottomUpClusterer::InitializeAssignments() {$/;"	f	class:kaldi::BottomUpClusterer
+InitializeAssignments	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::InitializeAssignments() {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+IsLeafNode	event-map.cc	/^static bool IsLeafNode(const EventMap *e) {$/;"	f	namespace:kaldi
+Iterate	cluster-utils.cc	/^  void Iterate() {$/;"	f	class:kaldi::RefineClusterer	file:
+KALDI_TREE_BUILD_TREE_H_	build-tree.h	21;"	d
+KALDI_TREE_BUILD_TREE_QUESTIONS_H_	build-tree-questions.h	21;"	d
+KALDI_TREE_BUILD_TREE_UTILS_H_	build-tree-utils.h	21;"	d
+KALDI_TREE_CLUSTERABLE_CLASSES_H_	clusterable-classes.h	21;"	d
+KALDI_TREE_CLUSTER_UTILS_H_	cluster-utils.h	22;"	d
+KALDI_TREE_CONTEXT_DEP_H_	context-dep.h	21;"	d
+KALDI_TREE_EVENT_MAP_H_	event-map.h	21;"	d
+KALDI_TREE_TREE_RENDERER_H_	tree-renderer.h	21;"	d
+KMeansClusterPhones	build-tree.cc	/^void KMeansClusterPhones(BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+LocalInt	cluster-utils.cc	/^  typedef int32 LocalInt;$/;"	t	class:kaldi::RefineClusterer	file:
+Lookup	event-map.cc	/^bool EventMap::Lookup(const EventType &event,$/;"	f	class:kaldi::EventMap
+MakeEdgeLabel	tree-renderer.cc	/^TreeRenderer::MakeEdgeLabel(const EventKeyType &key,$/;"	f	class:kaldi::TreeRenderer
+MakeEventPair	event-map.h	/^inline std::pair<EventKeyType, EventValueType> MakeEventPair (EventKeyType k, EventValueType v) {  $/;"	f	namespace:kaldi
+Map	event-map.h	/^  virtual bool Map(const EventType &event, EventAnswerType *ans) const {$/;"	f	class:kaldi::ConstantEventMap
+Map	event-map.h	/^  virtual bool Map(const EventType &event, EventAnswerType *ans) const {$/;"	f	class:kaldi::SplitEventMap
+Map	event-map.h	/^  virtual bool Map(const EventType &event, EventAnswerType *ans) const {$/;"	f	class:kaldi::TableEventMap
+MapEventMapLeaves	build-tree-utils.cc	/^EventMap *MapEventMapLeaves(const EventMap &e_in,$/;"	f	namespace:kaldi
+MapValues	event-map.cc	/^EventMap* SplitEventMap::MapValues($/;"	f	class:kaldi::SplitEventMap
+MapValues	event-map.cc	/^EventMap* TableEventMap::MapValues($/;"	f	class:kaldi::TableEventMap
+MapValues	event-map.h	/^  virtual EventMap *MapValues($/;"	f	class:kaldi::ConstantEventMap
+MaxResult	event-map.h	/^  virtual EventAnswerType MaxResult() const {  \/\/ child classes may override this for efficiency; here is basic version.$/;"	f	class:kaldi::EventMap
+Mean	clusterable-classes.h	/^  BaseFloat Mean() { return (count_ != 0 ? x_\/count_ : 0.0); }$/;"	f	class:kaldi::ScalarClusterable
+MergeClusters	cluster-utils.cc	/^BaseFloat CompartmentalizedBottomUpClusterer::MergeClusters(int32 comp, int32 i,$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+MergeClusters	cluster-utils.cc	/^void BottomUpClusterer::MergeClusters(int32 i, int32 j) {$/;"	f	class:kaldi::BottomUpClusterer
+MonophoneContextDependency	context-dep.cc	/^MonophoneContextDependency(const std::vector<int32> phones,$/;"	f	namespace:kaldi
+MonophoneContextDependencyShared	context-dep.cc	/^MonophoneContextDependencyShared(const std::vector<std::vector<int32> > phone_sets,$/;"	f	namespace:kaldi
+MovePoint	cluster-utils.cc	/^  void MovePoint(int32 point, int32 new_index) {$/;"	f	class:kaldi::RefineClusterer	file:
+MultiMap	event-map.h	/^  virtual void MultiMap(const EventType &,$/;"	f	class:kaldi::ConstantEventMap
+MultiMap	event-map.h	/^  virtual void MultiMap(const EventType &event, std::vector<EventAnswerType> *ans) const {$/;"	f	class:kaldi::SplitEventMap
+MultiMap	event-map.h	/^  virtual void MultiMap(const EventType &event, std::vector<EventAnswerType> *ans) const {$/;"	f	class:kaldi::TableEventMap
+N_	context-dep.h	/^  int32 N_;  \/\/$/;"	m	class:kaldi::ContextDependency
+N_	tree-renderer.h	/^  int32 N_, P_; \/\/ context-width and central position$/;"	m	class:kaldi::TreeRenderer
+Node	cluster-utils.cc	/^  struct Node {$/;"	s	class:kaldi::TreeClusterer	file:
+NonleafOutputIndex	cluster-utils.cc	/^  int32 NonleafOutputIndex(int32 index) {$/;"	f	class:kaldi::TreeClusterer	file:
+Normalizer	clusterable-classes.h	/^  virtual BaseFloat Normalizer() const { return count_; }$/;"	f	class:kaldi::GaussClusterable
+Normalizer	clusterable-classes.h	/^  virtual BaseFloat Normalizer() const {$/;"	f	class:kaldi::ScalarClusterable
+NumPdfs	context-dep.h	/^  virtual int32 NumPdfs() const {$/;"	f	class:kaldi::ContextDependency
+Objf	clusterable-classes.cc	/^BaseFloat GaussClusterable::Objf() const {$/;"	f	class:kaldi::GaussClusterable
+Objf	clusterable-classes.cc	/^BaseFloat ScalarClusterable::Objf() const {$/;"	f	class:kaldi::ScalarClusterable
+ObjfGivenMap	build-tree-utils.cc	/^BaseFloat ObjfGivenMap(const BuildTreeStatsType &stats_in, const EventMap &e) {$/;"	f	namespace:kaldi
+ObjfMinus	clusterable-classes.cc	/^BaseFloat Clusterable::ObjfMinus(const Clusterable &other) const {$/;"	f	class:kaldi::Clusterable
+ObjfPlus	clusterable-classes.cc	/^BaseFloat Clusterable::ObjfPlus(const Clusterable &other) const {$/;"	f	class:kaldi::Clusterable
+ObtainSetsOfPhones	build-tree.cc	/^static void ObtainSetsOfPhones(const std::vector<std::vector<int32> > &phone_sets,  \/\/ the original phone sets, may$/;"	f	namespace:kaldi
+P_	context-dep.h	/^  int32 P_;$/;"	m	class:kaldi::ContextDependency
+P_	tree-renderer.h	/^  int32 N_, P_; \/\/ context-width and central position$/;"	m	class:kaldi::TreeRenderer
+PossibleValues	build-tree-utils.cc	/^bool PossibleValues(EventKeyType key,$/;"	f	namespace:kaldi
+ProcessPoint	cluster-utils.cc	/^  void ProcessPoint(int32 point) {$/;"	f	class:kaldi::RefineClusterer	file:
+Prune	event-map.cc	/^EventMap* SplitEventMap::Prune() const {$/;"	f	class:kaldi::SplitEventMap
+Prune	event-map.cc	/^EventMap* TableEventMap::Prune() const {$/;"	f	class:kaldi::TableEventMap
+Prune	event-map.h	/^  virtual EventMap *Prune() const {$/;"	f	class:kaldi::ConstantEventMap
+Questions	build-tree-questions.h	/^  Questions() { }$/;"	f	class:kaldi::Questions
+Questions	build-tree-questions.h	/^class Questions {  \/\/ careful, this is a class.$/;"	c	namespace:kaldi
+QuestionsForKey	build-tree-questions.h	/^  QuestionsForKey(int32 num_iters = 5): refine_opts(num_iters, 2) {$/;"	f	struct:kaldi::QuestionsForKey
+QuestionsForKey	build-tree-questions.h	/^struct QuestionsForKey {  \/\/ Configuration class associated with a particular key$/;"	s	namespace:kaldi
+QueueElement	cluster-utils.cc	/^  typedef std::pair<BaseFloat, std::pair<uint_smaller, uint_smaller> > QueueElement;$/;"	t	class:kaldi::BottomUpClusterer	file:
+QueueType	cluster-utils.cc	/^      std::greater<CompBotClustElem> > QueueType;$/;"	t	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+QueueType	cluster-utils.cc	/^      std::greater<QueueElement>  > QueueType;$/;"	t	class:kaldi::BottomUpClusterer	file:
+RandomEventMap	event-map-test.cc	/^EventMap *RandomEventMap(const std::vector<EventKeyType> &keys) {$/;"	f	namespace:kaldi
+Read	build-tree-questions.cc	/^void Questions::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::Questions
+Read	build-tree-questions.cc	/^void QuestionsForKey::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::QuestionsForKey
+Read	cluster-utils.cc	/^void RefineClustersOptions::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::RefineClustersOptions
+Read	clusterable-classes.cc	/^void GaussClusterable::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::GaussClusterable
+Read	clusterable-classes.cc	/^void ScalarClusterable::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::ScalarClusterable
+Read	context-dep.cc	/^void ContextDependency::Read (std::istream &is, bool binary) {$/;"	f	class:kaldi::ContextDependency
+Read	event-map.cc	/^ConstantEventMap* ConstantEventMap::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::ConstantEventMap
+Read	event-map.cc	/^EventMap *EventMap::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::EventMap
+Read	event-map.cc	/^SplitEventMap* SplitEventMap::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::SplitEventMap
+Read	event-map.cc	/^TableEventMap* TableEventMap::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::TableEventMap
+ReadBuildTreeStats	build-tree-utils.cc	/^void ReadBuildTreeStats(std::istream &is, bool binary, const Clusterable &example, BuildTreeStatsType *stats) {$/;"	f	namespace:kaldi
+ReadEventType	event-map.cc	/^void ReadEventType(std::istream &is, bool binary, EventType *evec) {$/;"	f	namespace:kaldi
+ReadNew	clusterable-classes.cc	/^Clusterable* GaussClusterable::ReadNew(std::istream &is, bool binary) const {$/;"	f	class:kaldi::GaussClusterable
+ReadNew	clusterable-classes.cc	/^Clusterable* ScalarClusterable::ReadNew(std::istream &is, bool binary) const {$/;"	f	class:kaldi::ScalarClusterable
+ReadRootsFile	build-tree.cc	/^void ReadRootsFile(std::istream &is,$/;"	f	namespace:kaldi
+ReadSymbolTableAsIntegers	build-tree.cc	/^void ReadSymbolTableAsIntegers(std::string filename,$/;"	f	namespace:kaldi
+ReconstructQueue	cluster-utils.cc	/^void BottomUpClusterer::ReconstructQueue() {$/;"	f	class:kaldi::BottomUpClusterer
+ReconstructQueue	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::ReconstructQueue() {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+Refine	cluster-utils.cc	/^  BaseFloat Refine() {$/;"	f	class:kaldi::RefineClusterer
+RefineClusterer	cluster-utils.cc	/^  RefineClusterer(const std::vector<Clusterable*> &points,$/;"	f	class:kaldi::RefineClusterer
+RefineClusterer	cluster-utils.cc	/^class RefineClusterer {$/;"	c	namespace:kaldi	file:
+RefineClusters	cluster-utils.cc	/^BaseFloat RefineClusters(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+RefineClustersOptions	cluster-utils.h	/^  RefineClustersOptions() : num_iters(100), top_n(5) {}$/;"	f	struct:kaldi::RefineClustersOptions
+RefineClustersOptions	cluster-utils.h	/^  RefineClustersOptions(int32 num_iters_in, int32 top_n_in)$/;"	f	struct:kaldi::RefineClustersOptions
+RefineClustersOptions	cluster-utils.h	/^struct RefineClustersOptions {$/;"	s	namespace:kaldi
+Render	tree-renderer.cc	/^void TreeRenderer::Render(const EventType *query = 0) {$/;"	f	class:kaldi::TreeRenderer
+RenderConstant	tree-renderer.cc	/^void TreeRenderer::RenderConstant(const EventType *query, int32 id) {$/;"	f	class:kaldi::TreeRenderer
+RenderNonLeaf	tree-renderer.cc	/^TreeRenderer::RenderNonLeaf(int32 id, const EventKeyType &key, bool in_query) {$/;"	f	class:kaldi::TreeRenderer
+RenderSplit	tree-renderer.cc	/^void TreeRenderer::RenderSplit(const EventType *query, int32 id) {$/;"	f	class:kaldi::TreeRenderer
+RenderSubTree	tree-renderer.cc	/^void TreeRenderer::RenderSubTree(const EventType *query, int32 id) {$/;"	f	class:kaldi::TreeRenderer
+RenderTable	tree-renderer.cc	/^void TreeRenderer::RenderTable(const EventType *query, int32 id) {$/;"	f	class:kaldi::TreeRenderer
+Renumber	cluster-utils.cc	/^void BottomUpClusterer::Renumber() {$/;"	f	class:kaldi::BottomUpClusterer
+Renumber	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::Renumber(int32 comp) {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+RenumberEventMap	build-tree-utils.cc	/^EventMap *RenumberEventMap(const EventMap &e_in, int32 *num_leaves) {$/;"	f	namespace:kaldi
+ScalarClusterable	clusterable-classes.h	/^  ScalarClusterable() : x_(0), x2_(0), count_(0) {}$/;"	f	class:kaldi::ScalarClusterable
+ScalarClusterable	clusterable-classes.h	/^  explicit ScalarClusterable(BaseFloat x) : x_(x), x2_(x*x), count_(1) {}$/;"	f	class:kaldi::ScalarClusterable
+ScalarClusterable	clusterable-classes.h	/^class ScalarClusterable: public Clusterable {$/;"	c	namespace:kaldi
+Scale	clusterable-classes.cc	/^void GaussClusterable::Scale(BaseFloat f) {$/;"	f	class:kaldi::GaussClusterable
+SetDistance	cluster-utils.cc	/^void BottomUpClusterer::SetDistance(int32 i, int32 j) {$/;"	f	class:kaldi::BottomUpClusterer
+SetDistance	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::SetDistance(int32 comp,$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+SetInitialDistances	cluster-utils.cc	/^void BottomUpClusterer::SetInitialDistances() {$/;"	f	class:kaldi::BottomUpClusterer
+SetInitialDistances	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::SetInitialDistances() {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+SetQuestionsOf	build-tree-questions.h	/^  void SetQuestionsOf(EventKeyType key, const QuestionsForKey &options_of_key) {$/;"	f	class:kaldi::Questions
+SetZero	clusterable-classes.h	/^  virtual void SetZero() { count_ = x_ = x2_ = 0.0; }$/;"	f	class:kaldi::ScalarClusterable
+SetZero	clusterable-classes.h	/^inline void GaussClusterable::SetZero() {$/;"	f	class:kaldi::GaussClusterable
+ShareEventMapLeaves	build-tree-utils.cc	/^EventMap *ShareEventMapLeaves(const EventMap &e_in, EventKeyType key,$/;"	f	namespace:kaldi
+SplitDecisionTree	build-tree-utils.cc	/^EventMap *SplitDecisionTree(const EventMap &input_map,$/;"	f	namespace:kaldi
+SplitEventMap	event-map.h	/^  SplitEventMap(EventKeyType key, const ConstIntegerSet<EventValueType> &yes_set,$/;"	f	class:kaldi::SplitEventMap
+SplitEventMap	event-map.h	/^  SplitEventMap(EventKeyType key, const std::vector<EventValueType> &yes_set,$/;"	f	class:kaldi::SplitEventMap
+SplitEventMap	event-map.h	/^class SplitEventMap: public EventMap {  \/\/ A decision tree [non-leaf] node.$/;"	c	namespace:kaldi
+SplitStatsByKey	build-tree-utils.cc	/^void SplitStatsByKey(const BuildTreeStatsType &stats_in, EventKeyType key, std::vector<BuildTreeStatsType> *stats_out) {$/;"	f	namespace:kaldi
+SplitStatsByMap	build-tree-utils.cc	/^void SplitStatsByMap(const BuildTreeStatsType &stats, const EventMap &e, std::vector<BuildTreeStatsType> *stats_out) {$/;"	f	namespace:kaldi
+Sub	clusterable-classes.cc	/^void GaussClusterable::Sub(const Clusterable &other_in) {$/;"	f	class:kaldi::GaussClusterable
+Sub	clusterable-classes.cc	/^void ScalarClusterable::Sub(const Clusterable &other_in) {$/;"	f	class:kaldi::ScalarClusterable
+SumClusterable	cluster-utils.cc	/^Clusterable* SumClusterable(const std::vector<Clusterable*> &vec) {$/;"	f	namespace:kaldi
+SumClusterableNormalizer	cluster-utils.cc	/^BaseFloat SumClusterableNormalizer(const std::vector<Clusterable*> &vec) {$/;"	f	namespace:kaldi
+SumClusterableObjf	cluster-utils.cc	/^BaseFloat SumClusterableObjf(const std::vector<Clusterable*> &vec) {$/;"	f	namespace:kaldi
+SumNormalizer	build-tree-utils.cc	/^BaseFloat SumNormalizer(const BuildTreeStatsType &stats_in) {$/;"	f	namespace:kaldi
+SumObjf	build-tree-utils.cc	/^BaseFloat SumObjf(const BuildTreeStatsType &stats_in) {$/;"	f	namespace:kaldi
+SumStats	build-tree-utils.cc	/^Clusterable *SumStats(const BuildTreeStatsType &stats_in) {$/;"	f	namespace:kaldi
+SumStatsVec	build-tree-utils.cc	/^void SumStatsVec(const std::vector<BuildTreeStatsType> &stats_in, std::vector<Clusterable*> *stats_out) {$/;"	f	namespace:kaldi
+TableEventMap	event-map.cc	/^TableEventMap::TableEventMap(EventKeyType key, const std::map<EventValueType, EventAnswerType> &map_in): key_(key) {$/;"	f	class:kaldi::TableEventMap
+TableEventMap	event-map.cc	/^TableEventMap::TableEventMap(EventKeyType key, const std::map<EventValueType, EventMap*> &map_in): key_(key) {$/;"	f	class:kaldi::TableEventMap
+TableEventMap	event-map.h	/^  explicit TableEventMap(EventKeyType key, const std::vector<EventMap*> &table): key_(key), table_(table) {}$/;"	f	class:kaldi::TableEventMap
+TableEventMap	event-map.h	/^class TableEventMap: public EventMap {$/;"	c	namespace:kaldi
+TestAddToClusters	cluster-utils-test.cc	/^static void TestAddToClusters() {$/;"	f	namespace:kaldi
+TestAddToClustersOptimized	cluster-utils-test.cc	/^static void TestAddToClustersOptimized() {$/;"	f	namespace:kaldi
+TestBuildTree	build-tree-test.cc	/^void TestBuildTree() {$/;"	f	namespace:kaldi
+TestBuildTreeStatsIo	build-tree-utils-test.cc	/^void TestBuildTreeStatsIo(bool binary) {$/;"	f	namespace:kaldi
+TestClusterBottomUp	cluster-utils-test.cc	/^static void TestClusterBottomUp() {$/;"	f	namespace:kaldi
+TestClusterEventMap	build-tree-utils-test.cc	/^void TestClusterEventMap() {$/;"	f	namespace:kaldi
+TestClusterEventMapGetMappingAndRenumberEventMap	build-tree-utils-test.cc	/^void TestClusterEventMapGetMappingAndRenumberEventMap() {$/;"	f	namespace:kaldi
+TestClusterEventMapGetMappingAndRenumberEventMap2	build-tree-utils-test.cc	/^void TestClusterEventMapGetMappingAndRenumberEventMap2() {$/;"	f	namespace:kaldi
+TestClusterEventMapRestricted	build-tree-utils-test.cc	/^void TestClusterEventMapRestricted() {$/;"	f	namespace:kaldi
+TestClusterKMeans	cluster-utils-test.cc	/^static void TestClusterKMeans() {$/;"	f	namespace:kaldi
+TestClusterTopDown	cluster-utils-test.cc	/^static void TestClusterTopDown() {$/;"	f	namespace:kaldi
+TestClusterUtils	cluster-utils-test.cc	/^static void TestClusterUtils() {  \/\/ just some very basic tests of the GaussClusterable class.$/;"	f	namespace:kaldi
+TestContextDep	context-dep-test.cc	/^void TestContextDep() {$/;"	f	namespace:kaldi
+TestConvertStats	build-tree-utils-test.cc	/^void TestConvertStats() {$/;"	f	namespace:kaldi
+TestDistance	cluster-utils-test.cc	/^static void TestDistance() {$/;"	f	namespace:kaldi
+TestDoTableSplit	build-tree-utils-test.cc	/^void TestDoTableSplit() {$/;"	f	namespace:kaldi
+TestEnsureClusterableVectorNotNull	cluster-utils-test.cc	/^static void TestEnsureClusterableVectorNotNull() {$/;"	f	namespace:kaldi
+TestEventMap	event-map-test.cc	/^void TestEventMap() {$/;"	f	namespace:kaldi
+TestEventMapIo	event-map-test.cc	/^void TestEventMapIo(bool binary) {$/;"	f	namespace:kaldi
+TestEventMapMapValues	event-map-test.cc	/^void TestEventMapMapValues() {$/;"	f	namespace:kaldi
+TestEventMapPrune	event-map-test.cc	/^void TestEventMapPrune() {$/;"	f	namespace:kaldi
+TestEventTypeIo	event-map-test.cc	/^void TestEventTypeIo(bool binary) {$/;"	f	namespace:kaldi
+TestFindAllKeys	build-tree-utils-test.cc	/^void TestFindAllKeys() {$/;"	f	namespace:kaldi
+TestGenRandContextDependency	context-dep-test.cc	/^void TestGenRandContextDependency() {$/;"	f	namespace:kaldi
+TestGenRandStats	build-tree-test.cc	/^void TestGenRandStats() {$/;"	f	namespace:kaldi
+TestMonophoneContextDependency	context-dep-test.cc	/^void TestMonophoneContextDependency() {$/;"	f	namespace:kaldi
+TestObjfMinus	cluster-utils-test.cc	/^static void TestObjfMinus() {$/;"	f	namespace:kaldi
+TestObjfPlus	cluster-utils-test.cc	/^static void TestObjfPlus() {$/;"	f	namespace:kaldi
+TestPossibleValues	build-tree-utils-test.cc	/^void TestPossibleValues() {$/;"	f	namespace:kaldi
+TestQuestionsInitRand	build-tree-utils-test.cc	/^void TestQuestionsInitRand() {$/;"	f	namespace:kaldi
+TestRefineClusters	cluster-utils-test.cc	/^static void TestRefineClusters() {$/;"	f	namespace:kaldi
+TestShareEventMapLeaves	build-tree-utils-test.cc	/^void TestShareEventMapLeaves() {$/;"	f	namespace:kaldi
+TestSplitDecisionTree	build-tree-utils-test.cc	/^void TestSplitDecisionTree() {$/;"	f	namespace:kaldi
+TestSplitStatsByKey	build-tree-utils-test.cc	/^void TestSplitStatsByKey() {$/;"	f	namespace:kaldi
+TestSum	cluster-utils-test.cc	/^static void TestSum() {$/;"	f	namespace:kaldi
+TestSumObjfAndSumNormalizer	cluster-utils-test.cc	/^static void TestSumObjfAndSumNormalizer() {$/;"	f	namespace:kaldi
+TestTreeCluster	cluster-utils-test.cc	/^static void TestTreeCluster() {$/;"	f	namespace:kaldi
+TestTrivialTree	build-tree-utils-test.cc	/^void TestTrivialTree() {$/;"	f	namespace:kaldi
+ToPdfMap	context-dep.h	/^  const EventMap &ToPdfMap() const { return *to_pdf_; }$/;"	f	class:kaldi::ContextDependency
+TreeCluster	cluster-utils.cc	/^BaseFloat TreeCluster(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+TreeClusterOptions	cluster-utils.h	/^  TreeClusterOptions()$/;"	f	struct:kaldi::TreeClusterOptions
+TreeClusterOptions	cluster-utils.h	/^struct TreeClusterOptions  {$/;"	s	namespace:kaldi
+TreeClusterer	cluster-utils.cc	/^  TreeClusterer(const std::vector<Clusterable*> &points,$/;"	f	class:kaldi::TreeClusterer
+TreeClusterer	cluster-utils.cc	/^class TreeClusterer {$/;"	c	namespace:kaldi	file:
+TreeRenderer	tree-renderer.h	/^  TreeRenderer(std::istream &is, bool binary, std::ostream &os,$/;"	f	class:kaldi::TreeRenderer
+TreeRenderer	tree-renderer.h	/^class TreeRenderer {$/;"	c	namespace:kaldi
+TrivialTree	build-tree-utils.h	/^inline EventMap *TrivialTree(int32 *num_leaves) {$/;"	f	namespace:kaldi
+Type	clusterable-classes.h	/^  virtual std::string Type() const {  return "gauss"; }$/;"	f	class:kaldi::GaussClusterable
+Type	clusterable-classes.h	/^  virtual std::string Type() const { return "scalar"; }$/;"	f	class:kaldi::ScalarClusterable
+UpdateClust	cluster-utils.cc	/^  void UpdateClust(int32 clust) {$/;"	f	class:kaldi::RefineClusterer	file:
+UpdateInfo	cluster-utils.cc	/^  void UpdateInfo(int32 point, int32 idx) {$/;"	f	class:kaldi::RefineClusterer	file:
+Write	build-tree-questions.cc	/^void Questions::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::Questions
+Write	build-tree-questions.cc	/^void QuestionsForKey::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::QuestionsForKey
+Write	cluster-utils.cc	/^void RefineClustersOptions::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::RefineClustersOptions
+Write	clusterable-classes.cc	/^void GaussClusterable::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::GaussClusterable
+Write	clusterable-classes.cc	/^void ScalarClusterable::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::ScalarClusterable
+Write	context-dep.cc	/^void ContextDependency::Write (std::ostream &os, bool binary) const {$/;"	f	class:kaldi::ContextDependency
+Write	event-map.cc	/^void ConstantEventMap::Write(std::ostream &os, bool binary) {$/;"	f	class:kaldi::ConstantEventMap
+Write	event-map.cc	/^void EventMap::Write(std::ostream &os, bool binary, EventMap *emap) {$/;"	f	class:kaldi::EventMap
+Write	event-map.cc	/^void SplitEventMap::Write(std::ostream &os, bool binary) {$/;"	f	class:kaldi::SplitEventMap
+Write	event-map.cc	/^void TableEventMap::Write(std::ostream &os, bool binary) {$/;"	f	class:kaldi::TableEventMap
+WriteBuildTreeStats	build-tree-utils.cc	/^void WriteBuildTreeStats(std::ostream &os, bool binary, const BuildTreeStatsType &stats) {$/;"	f	namespace:kaldi
+WriteEventType	event-map.cc	/^void WriteEventType(std::ostream &os, bool binary, const EventType &evec) {$/;"	f	namespace:kaldi
+ans_	cluster-utils.cc	/^  BaseFloat ans_;  \/\/ objf improvement.$/;"	m	class:kaldi::RefineClusterer	file:
+ans_	cluster-utils.cc	/^  BaseFloat ans_;  \/\/ objf improvement.$/;"	m	class:kaldi::TreeClusterer	file:
+ans_	cluster-utils.cc	/^  BaseFloat ans_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+answer_	event-map.h	/^  EventAnswerType answer_;$/;"	m	class:kaldi::ConstantEventMap
+assignments	cluster-utils.cc	/^      std::vector<int32> assignments;  \/\/ assignments of points to clusters.$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+assignments_	cluster-utils.cc	/^  std::vector<int32> *assignments_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+assignments_	cluster-utils.cc	/^  std::vector<int32> *assignments_;$/;"	m	class:kaldi::RefineClusterer	file:
+assignments_	cluster-utils.cc	/^  vector< vector<int32> > assignments_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+best_split	cluster-utils.cc	/^      BaseFloat best_split;$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+best_split_impr_	build-tree-utils.cc	/^  BaseFloat best_split_impr_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+binary_	tree-renderer.h	/^  bool binary_; \/\/ is the input stream binary?$/;"	m	class:kaldi::TreeRenderer
+branch_factor	cluster-utils.h	/^  int32 branch_factor;$/;"	m	struct:kaldi::TreeClusterOptions
+cfg_	cluster-utils.cc	/^  RefineClustersOptions cfg_;  \/\/ note, we change top_n in config; don't make this member a reference member.$/;"	m	class:kaldi::RefineClusterer	file:
+cfg_	cluster-utils.cc	/^  TreeClusterOptions cfg_;$/;"	m	class:kaldi::TreeClusterer	file:
+children	cluster-utils.cc	/^    std::vector<Node*> children;  \/\/ vector of size branch_factor.   if non-leaf.$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+clust	cluster-utils.cc	/^    LocalInt clust;$/;"	m	struct:kaldi::RefineClusterer::__anon2	file:
+clust_objf_	cluster-utils.cc	/^  std::vector<BaseFloat> clust_objf_;  \/\/ [clust], objf for cluster.$/;"	m	class:kaldi::RefineClusterer	file:
+clust_time_	cluster-utils.cc	/^  std::vector<LocalInt> clust_time_;  \/\/ Modification time of cluster.$/;"	m	class:kaldi::RefineClusterer	file:
+clusters	cluster-utils.cc	/^      std::vector<Clusterable*> clusters;  \/\/ [branch_factor]... if we do split.$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+clusters_	cluster-utils.cc	/^  std::vector<Clusterable*> *clusters_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+clusters_	cluster-utils.cc	/^  std::vector<Clusterable*> *clusters_;$/;"	m	class:kaldi::RefineClusterer	file:
+clusters_	cluster-utils.cc	/^  vector< vector<Clusterable*> > clusters_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+compartment	cluster-utils.cc	/^  int32 compartment, point1, point2;$/;"	m	struct:kaldi::CompBotClustElem	file:
+count	clusterable-classes.h	/^  BaseFloat count() const { return count_; }$/;"	f	class:kaldi::GaussClusterable
+count_	clusterable-classes.h	/^  BaseFloat count_;$/;"	m	class:kaldi::ScalarClusterable
+count_	clusterable-classes.h	/^  double count_;$/;"	m	class:kaldi::GaussClusterable
+dist	cluster-utils.cc	/^  BaseFloat dist;$/;"	m	struct:kaldi::CompBotClustElem	file:
+dist_vec_	cluster-utils.cc	/^  std::vector<BaseFloat> dist_vec_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+dist_vec_	cluster-utils.cc	/^  vector< vector<BaseFloat> > dist_vec_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+index	cluster-utils.cc	/^    int32 index;  \/\/ index into leaf_nodes or nonleaf_nodes as applicable.$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+info_	cluster-utils.cc	/^  std::vector<point_info> info_;  \/\/ size is [num_points_ * cfg_.top_n].$/;"	m	class:kaldi::RefineClusterer	file:
+initial_questions	build-tree-questions.h	/^  std::vector<std::vector<EventValueType> > initial_questions;$/;"	m	struct:kaldi::QuestionsForKey
+int_smaller	cluster-utils.cc	/^typedef int16 int_smaller;$/;"	t	namespace:kaldi	file:
+is_	tree-renderer.h	/^  std::istream &is_; \/\/ the stream from which the tree is read$/;"	m	class:kaldi::TreeRenderer
+is_leaf	cluster-utils.cc	/^    bool is_leaf;$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+kAllKeysInsistIdentical	build-tree-questions.h	/^typedef enum { kAllKeysInsistIdentical, kAllKeysIntersection, kAllKeysUnion } AllKeysType;$/;"	e	enum:kaldi::__anon1
+kAllKeysIntersection	build-tree-questions.h	/^typedef enum { kAllKeysInsistIdentical, kAllKeysIntersection, kAllKeysUnion } AllKeysType;$/;"	e	enum:kaldi::__anon1
+kAllKeysUnion	build-tree-questions.h	/^typedef enum { kAllKeysInsistIdentical, kAllKeysIntersection, kAllKeysUnion } AllKeysType;$/;"	e	enum:kaldi::__anon1
+kEdgeColor	tree-renderer.cc	/^const std::string TreeRenderer::kEdgeColor = "black";$/;"	m	class:kaldi::TreeRenderer	file:
+kEdgeColor	tree-renderer.h	/^  const static std::string kEdgeColor; \/\/ normal color for states and edges$/;"	m	class:kaldi::TreeRenderer
+kEdgeColorQuery	tree-renderer.cc	/^const std::string TreeRenderer::kEdgeColorQuery = "red";$/;"	m	class:kaldi::TreeRenderer	file:
+kEdgeColorQuery	tree-renderer.h	/^  const static std::string kEdgeColorQuery; \/\/ edge and state color when in query$/;"	m	class:kaldi::TreeRenderer
+kEdgeWidth	tree-renderer.cc	/^const int32 TreeRenderer::kEdgeWidth = 1;$/;"	m	class:kaldi::TreeRenderer	file:
+kEdgeWidth	tree-renderer.h	/^  const static int32 kEdgeWidth; \/\/ normal width of the edges and state contours$/;"	m	class:kaldi::TreeRenderer
+kEdgeWidthQuery	tree-renderer.cc	/^const int32 TreeRenderer::kEdgeWidthQuery = 3;$/;"	m	class:kaldi::TreeRenderer	file:
+kEdgeWidthQuery	tree-renderer.h	/^  const static int32 kEdgeWidthQuery; \/\/ edge and state width when in query$/;"	m	class:kaldi::TreeRenderer
+kMaxVal	event-map-test.cc	/^const int32 kMaxVal = 20;$/;"	m	namespace:kaldi	file:
+kPdfClass	context-dep.h	/^static const EventKeyType kPdfClass = -1;  \/\/ The "name" to which we assign the$/;"	m	namespace:kaldi
+kaldi	build-tree-questions.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	build-tree-questions.h	/^namespace kaldi {$/;"	n
+kaldi	build-tree-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	build-tree-utils-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	build-tree-utils.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	build-tree-utils.h	/^namespace kaldi {$/;"	n
+kaldi	build-tree.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	build-tree.h	/^namespace kaldi {$/;"	n
+kaldi	cluster-utils-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	cluster-utils.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	cluster-utils.h	/^namespace kaldi {$/;"	n
+kaldi	clusterable-classes.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	clusterable-classes.h	/^namespace kaldi {$/;"	n
+kaldi	context-dep-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	context-dep.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	context-dep.h	/^namespace kaldi {$/;"	n
+kaldi	event-map-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	event-map.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	event-map.h	/^namespace kaldi {$/;"	n
+kaldi	tree-renderer.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	tree-renderer.h	/^namespace kaldi {$/;"	n
+kaldi::AddToClusters	cluster-utils.cc	/^void AddToClusters(const std::vector<Clusterable*> &stats,$/;"	f	namespace:kaldi
+kaldi::AddToClustersOptimized	cluster-utils.cc	/^void AddToClustersOptimized(const std::vector<Clusterable*> &stats,$/;"	f	namespace:kaldi
+kaldi::AllKeysType	build-tree-questions.h	/^typedef enum { kAllKeysInsistIdentical, kAllKeysIntersection, kAllKeysUnion } AllKeysType;$/;"	t	namespace:kaldi	typeref:enum:kaldi::__anon1
+kaldi::AutomaticallyObtainQuestions	build-tree.cc	/^void AutomaticallyObtainQuestions(BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+kaldi::BottomUpClusterer	cluster-utils.cc	/^class BottomUpClusterer {$/;"	c	namespace:kaldi	file:
+kaldi::BottomUpClusterer::BottomUpClusterer	cluster-utils.cc	/^  BottomUpClusterer(const std::vector<Clusterable*> &points,$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BottomUpClusterer::CanMerge	cluster-utils.cc	/^bool BottomUpClusterer::CanMerge(int32 i, int32 j, BaseFloat dist) {$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BottomUpClusterer::Cluster	cluster-utils.cc	/^BaseFloat BottomUpClusterer::Cluster() {$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BottomUpClusterer::Distance	cluster-utils.cc	/^  BaseFloat& Distance(int32 i, int32 j) {$/;"	f	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::InitializeAssignments	cluster-utils.cc	/^void BottomUpClusterer::InitializeAssignments() {$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BottomUpClusterer::MergeClusters	cluster-utils.cc	/^void BottomUpClusterer::MergeClusters(int32 i, int32 j) {$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BottomUpClusterer::QueueElement	cluster-utils.cc	/^  typedef std::pair<BaseFloat, std::pair<uint_smaller, uint_smaller> > QueueElement;$/;"	t	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::QueueType	cluster-utils.cc	/^      std::greater<QueueElement>  > QueueType;$/;"	t	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::ReconstructQueue	cluster-utils.cc	/^void BottomUpClusterer::ReconstructQueue() {$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BottomUpClusterer::Renumber	cluster-utils.cc	/^void BottomUpClusterer::Renumber() {$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BottomUpClusterer::SetDistance	cluster-utils.cc	/^void BottomUpClusterer::SetDistance(int32 i, int32 j) {$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BottomUpClusterer::SetInitialDistances	cluster-utils.cc	/^void BottomUpClusterer::SetInitialDistances() {$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BottomUpClusterer::ans_	cluster-utils.cc	/^  BaseFloat ans_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::assignments_	cluster-utils.cc	/^  std::vector<int32> *assignments_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::clusters_	cluster-utils.cc	/^  std::vector<Clusterable*> *clusters_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::dist_vec_	cluster-utils.cc	/^  std::vector<BaseFloat> dist_vec_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::max_merge_thresh_	cluster-utils.cc	/^  BaseFloat max_merge_thresh_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::min_clust_	cluster-utils.cc	/^  int32 min_clust_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::nclusters_	cluster-utils.cc	/^  int32 nclusters_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::npoints_	cluster-utils.cc	/^  int32 npoints_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::points_	cluster-utils.cc	/^  const std::vector<Clusterable*> &points_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::queue_	cluster-utils.cc	/^  QueueType queue_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::tmp_assignments_	cluster-utils.cc	/^  std::vector<int32> tmp_assignments_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::tmp_clusters_	cluster-utils.cc	/^  std::vector<Clusterable*> tmp_clusters_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+kaldi::BottomUpClusterer::~BottomUpClusterer	cluster-utils.cc	/^  ~BottomUpClusterer() { DeletePointers(&tmp_clusters_); }$/;"	f	class:kaldi::BottomUpClusterer
+kaldi::BuildTree	build-tree.cc	/^EventMap *BuildTree(Questions &qopts,$/;"	f	namespace:kaldi
+kaldi::BuildTreeStatsType	build-tree-questions.h	/^typedef std::vector<std::pair<EventType, Clusterable*> > BuildTreeStatsType;$/;"	t	namespace:kaldi
+kaldi::BuildTreeTwoLevel	build-tree.cc	/^EventMap *BuildTreeTwoLevel(Questions &qopts,$/;"	f	namespace:kaldi
+kaldi::ClusterBottomUp	cluster-utils.cc	/^BaseFloat ClusterBottomUp(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+kaldi::ClusterBottomUpCompartmentalized	cluster-utils.cc	/^BaseFloat ClusterBottomUpCompartmentalized($/;"	f	namespace:kaldi
+kaldi::ClusterEventMap	build-tree-utils.cc	/^EventMap *ClusterEventMap(const EventMap &e_in, const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+kaldi::ClusterEventMapGetMapping	build-tree-utils.cc	/^int ClusterEventMapGetMapping(const EventMap &e_in, const BuildTreeStatsType &stats, BaseFloat thresh, std::vector<EventMap*> *mapping) {$/;"	f	namespace:kaldi
+kaldi::ClusterEventMapRestrictedByKeys	build-tree-utils.cc	/^EventMap *ClusterEventMapRestrictedByKeys(const EventMap &e_in,$/;"	f	namespace:kaldi
+kaldi::ClusterEventMapRestrictedByMap	build-tree-utils.cc	/^EventMap *ClusterEventMapRestrictedByMap(const EventMap &e_in,$/;"	f	namespace:kaldi
+kaldi::ClusterEventMapRestrictedHelper	build-tree-utils.cc	/^static int32 ClusterEventMapRestrictedHelper(const EventMap &e_in,$/;"	f	namespace:kaldi
+kaldi::ClusterKMeans	cluster-utils.cc	/^BaseFloat ClusterKMeans(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+kaldi::ClusterKMeansOnce	cluster-utils.cc	/^BaseFloat ClusterKMeansOnce(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+kaldi::ClusterKMeansOptions	cluster-utils.h	/^struct ClusterKMeansOptions {$/;"	s	namespace:kaldi
+kaldi::ClusterKMeansOptions::ClusterKMeansOptions	cluster-utils.h	/^  ClusterKMeansOptions()$/;"	f	struct:kaldi::ClusterKMeansOptions
+kaldi::ClusterKMeansOptions::num_iters	cluster-utils.h	/^  int32 num_iters;$/;"	m	struct:kaldi::ClusterKMeansOptions
+kaldi::ClusterKMeansOptions::num_tries	cluster-utils.h	/^  int32 num_tries;  \/\/ if >1, try whole procedure >once and pick best.$/;"	m	struct:kaldi::ClusterKMeansOptions
+kaldi::ClusterKMeansOptions::refine_cfg	cluster-utils.h	/^  RefineClustersOptions refine_cfg;$/;"	m	struct:kaldi::ClusterKMeansOptions
+kaldi::ClusterKMeansOptions::verbose	cluster-utils.h	/^  bool verbose;$/;"	m	struct:kaldi::ClusterKMeansOptions
+kaldi::ClusterTopDown	cluster-utils.cc	/^BaseFloat ClusterTopDown(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+kaldi::Clusterable::Distance	clusterable-classes.cc	/^BaseFloat Clusterable::Distance(const Clusterable &other) const {$/;"	f	class:kaldi::Clusterable
+kaldi::Clusterable::ObjfMinus	clusterable-classes.cc	/^BaseFloat Clusterable::ObjfMinus(const Clusterable &other) const {$/;"	f	class:kaldi::Clusterable
+kaldi::Clusterable::ObjfPlus	clusterable-classes.cc	/^BaseFloat Clusterable::ObjfPlus(const Clusterable &other) const {$/;"	f	class:kaldi::Clusterable
+kaldi::CompBotClustElem	cluster-utils.cc	/^struct CompBotClustElem {$/;"	s	namespace:kaldi	file:
+kaldi::CompBotClustElem::CompBotClustElem	cluster-utils.cc	/^  CompBotClustElem(BaseFloat d, int32 comp, int32 i, int32 j)$/;"	f	struct:kaldi::CompBotClustElem
+kaldi::CompBotClustElem::compartment	cluster-utils.cc	/^  int32 compartment, point1, point2;$/;"	m	struct:kaldi::CompBotClustElem	file:
+kaldi::CompBotClustElem::dist	cluster-utils.cc	/^  BaseFloat dist;$/;"	m	struct:kaldi::CompBotClustElem	file:
+kaldi::CompBotClustElem::point1	cluster-utils.cc	/^  int32 compartment, point1, point2;$/;"	m	struct:kaldi::CompBotClustElem	file:
+kaldi::CompBotClustElem::point2	cluster-utils.cc	/^  int32 compartment, point1, point2;$/;"	m	struct:kaldi::CompBotClustElem	file:
+kaldi::CompartmentalizedBottomUpClusterer	cluster-utils.cc	/^class CompartmentalizedBottomUpClusterer {$/;"	c	namespace:kaldi	file:
+kaldi::CompartmentalizedBottomUpClusterer::CanMerge	cluster-utils.cc	/^bool CompartmentalizedBottomUpClusterer::CanMerge(int32 comp, int32 i, int32 j,$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::CompartmentalizedBottomUpClusterer::Cluster	cluster-utils.cc	/^BaseFloat CompartmentalizedBottomUpClusterer::Cluster($/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::CompartmentalizedBottomUpClusterer::CompartmentalizedBottomUpClusterer	cluster-utils.cc	/^  CompartmentalizedBottomUpClusterer($/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::CompartmentalizedBottomUpClusterer::InitializeAssignments	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::InitializeAssignments() {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::CompartmentalizedBottomUpClusterer::MergeClusters	cluster-utils.cc	/^BaseFloat CompartmentalizedBottomUpClusterer::MergeClusters(int32 comp, int32 i,$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::CompartmentalizedBottomUpClusterer::QueueType	cluster-utils.cc	/^      std::greater<CompBotClustElem> > QueueType;$/;"	t	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::ReconstructQueue	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::ReconstructQueue() {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::CompartmentalizedBottomUpClusterer::Renumber	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::Renumber(int32 comp) {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::CompartmentalizedBottomUpClusterer::SetDistance	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::SetDistance(int32 comp,$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::CompartmentalizedBottomUpClusterer::SetInitialDistances	cluster-utils.cc	/^void CompartmentalizedBottomUpClusterer::SetInitialDistances() {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::CompartmentalizedBottomUpClusterer::assignments_	cluster-utils.cc	/^  vector< vector<int32> > assignments_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::clusters_	cluster-utils.cc	/^  vector< vector<Clusterable*> > clusters_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::dist_vec_	cluster-utils.cc	/^  vector< vector<BaseFloat> > dist_vec_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::max_merge_thresh_	cluster-utils.cc	/^  BaseFloat max_merge_thresh_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::min_clust_	cluster-utils.cc	/^  int32 min_clust_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::nclusters_	cluster-utils.cc	/^  int32 ncompartments_, nclusters_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::ncompartments_	cluster-utils.cc	/^  int32 ncompartments_, nclusters_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::npoints_	cluster-utils.cc	/^  vector<int32> npoints_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::points_	cluster-utils.cc	/^  const vector< vector<Clusterable*> > &points_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::queue_	cluster-utils.cc	/^  QueueType queue_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+kaldi::CompartmentalizedBottomUpClusterer::~CompartmentalizedBottomUpClusterer	cluster-utils.cc	/^  ~CompartmentalizedBottomUpClusterer() {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+kaldi::ComputeInitialSplit	build-tree-utils.cc	/^BaseFloat ComputeInitialSplit(const std::vector<Clusterable*> &summed_stats,$/;"	f	namespace:kaldi
+kaldi::ComputeTreeMapping	build-tree.cc	/^static void ComputeTreeMapping(const EventMap &small_tree,$/;"	f	namespace:kaldi
+kaldi::ConstantEventMap	event-map.h	/^class ConstantEventMap: public EventMap {$/;"	c	namespace:kaldi
+kaldi::ConstantEventMap::ConstantEventMap	event-map.h	/^  explicit ConstantEventMap(EventAnswerType answer): answer_(answer) { }$/;"	f	class:kaldi::ConstantEventMap
+kaldi::ConstantEventMap::Copy	event-map.h	/^  virtual EventMap *Copy(const std::vector<EventMap*> &new_leaves) const {$/;"	f	class:kaldi::ConstantEventMap
+kaldi::ConstantEventMap::GetChildren	event-map.h	/^  virtual void GetChildren(std::vector<EventMap*> *out) const { out->clear(); }$/;"	f	class:kaldi::ConstantEventMap
+kaldi::ConstantEventMap::Map	event-map.h	/^  virtual bool Map(const EventType &event, EventAnswerType *ans) const {$/;"	f	class:kaldi::ConstantEventMap
+kaldi::ConstantEventMap::MapValues	event-map.h	/^  virtual EventMap *MapValues($/;"	f	class:kaldi::ConstantEventMap
+kaldi::ConstantEventMap::MultiMap	event-map.h	/^  virtual void MultiMap(const EventType &,$/;"	f	class:kaldi::ConstantEventMap
+kaldi::ConstantEventMap::Prune	event-map.h	/^  virtual EventMap *Prune() const {$/;"	f	class:kaldi::ConstantEventMap
+kaldi::ConstantEventMap::Read	event-map.cc	/^ConstantEventMap* ConstantEventMap::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::ConstantEventMap
+kaldi::ConstantEventMap::Write	event-map.cc	/^void ConstantEventMap::Write(std::ostream &os, bool binary) {$/;"	f	class:kaldi::ConstantEventMap
+kaldi::ConstantEventMap::answer_	event-map.h	/^  EventAnswerType answer_;$/;"	m	class:kaldi::ConstantEventMap
+kaldi::ContextDependency	context-dep.h	/^class ContextDependency: public ContextDependencyInterface {$/;"	c	namespace:kaldi
+kaldi::ContextDependency::CentralPosition	context-dep.h	/^  virtual int32 CentralPosition() const { return P_; }$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::Compute	context-dep.cc	/^bool ContextDependency::Compute(const std::vector<int32> &phoneseq,$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::ContextDependency	context-dep.h	/^  ContextDependency(): N_(0), P_(0), to_pdf_(NULL) { }$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::ContextDependency	context-dep.h	/^  ContextDependency(int32 N, int32 P,$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::ContextWidth	context-dep.h	/^  virtual int32 ContextWidth() const { return N_; }$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::Copy	context-dep.h	/^  virtual ContextDependencyInterface *Copy() const {$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::GetPdfInfo	context-dep.cc	/^void ContextDependency::GetPdfInfo(const std::vector<int32> &phones,$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::N_	context-dep.h	/^  int32 N_;  \/\/$/;"	m	class:kaldi::ContextDependency
+kaldi::ContextDependency::NumPdfs	context-dep.h	/^  virtual int32 NumPdfs() const {$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::P_	context-dep.h	/^  int32 P_;$/;"	m	class:kaldi::ContextDependency
+kaldi::ContextDependency::Read	context-dep.cc	/^void ContextDependency::Read (std::istream &is, bool binary) {$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::ToPdfMap	context-dep.h	/^  const EventMap &ToPdfMap() const { return *to_pdf_; }$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::Write	context-dep.cc	/^void ContextDependency::Write (std::ostream &os, bool binary) const {$/;"	f	class:kaldi::ContextDependency
+kaldi::ContextDependency::to_pdf_	context-dep.h	/^  EventMap *to_pdf_;  \/\/ owned here.$/;"	m	class:kaldi::ContextDependency
+kaldi::ContextDependency::~ContextDependency	context-dep.h	/^  ~ContextDependency() { if (to_pdf_ != NULL) delete to_pdf_; }$/;"	f	class:kaldi::ContextDependency
+kaldi::ConvertStats	build-tree-utils.cc	/^bool ConvertStats(int32 oldN, int32 oldP, int32 newN, int32 newP,$/;"	f	namespace:kaldi
+kaldi::DecisionTreeSplitter	build-tree-utils.cc	/^class DecisionTreeSplitter {$/;"	c	namespace:kaldi	file:
+kaldi::DecisionTreeSplitter::BestSplit	build-tree-utils.cc	/^  BaseFloat BestSplit() { return best_split_impr_; } \/\/ returns objf improvement (>=0) of best possible split.$/;"	f	class:kaldi::DecisionTreeSplitter
+kaldi::DecisionTreeSplitter::DecisionTreeSplitter	build-tree-utils.cc	/^  DecisionTreeSplitter(EventAnswerType leaf, const BuildTreeStatsType &stats,$/;"	f	class:kaldi::DecisionTreeSplitter
+kaldi::DecisionTreeSplitter::DoSplit	build-tree-utils.cc	/^  void DoSplit(int32 *next_leaf) {$/;"	f	class:kaldi::DecisionTreeSplitter
+kaldi::DecisionTreeSplitter::DoSplitInternal	build-tree-utils.cc	/^  void DoSplitInternal(int32 *next_leaf) {$/;"	f	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::FindBestSplit	build-tree-utils.cc	/^  void FindBestSplit() {$/;"	f	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::GetMap	build-tree-utils.cc	/^  EventMap *GetMap() {$/;"	f	class:kaldi::DecisionTreeSplitter
+kaldi::DecisionTreeSplitter::best_split_impr_	build-tree-utils.cc	/^  BaseFloat best_split_impr_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::key_	build-tree-utils.cc	/^  EventKeyType key_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::leaf_	build-tree-utils.cc	/^  EventAnswerType leaf_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::no_	build-tree-utils.cc	/^  DecisionTreeSplitter *no_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::q_opts_	build-tree-utils.cc	/^  const Questions &q_opts_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::stats_	build-tree-utils.cc	/^  BuildTreeStatsType stats_;  \/\/ vector of stats.  pointers inside there not owned here.$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::yes_	build-tree-utils.cc	/^  DecisionTreeSplitter *yes_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::yes_set_	build-tree-utils.cc	/^  std::vector<EventValueType> yes_set_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+kaldi::DecisionTreeSplitter::~DecisionTreeSplitter	build-tree-utils.cc	/^  ~DecisionTreeSplitter() {$/;"	f	class:kaldi::DecisionTreeSplitter
+kaldi::DeleteBuildTreeStats	build-tree-utils.cc	/^void DeleteBuildTreeStats(BuildTreeStatsType *stats) {$/;"	f	namespace:kaldi
+kaldi::DoTableSplit	build-tree-utils.cc	/^EventMap *DoTableSplit(const EventMap &orig, EventKeyType key,  const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+kaldi::DoTableSplitMultiple	build-tree-utils.cc	/^EventMap *DoTableSplitMultiple(const EventMap &orig, const std::vector<EventKeyType> &keys,  const BuildTreeStatsType &stats, int32 *num_leaves) {$/;"	f	namespace:kaldi
+kaldi::EnsureClusterableVectorNotNull	cluster-utils.cc	/^void EnsureClusterableVectorNotNull(std::vector<Clusterable*> *stats) {$/;"	f	namespace:kaldi
+kaldi::EventAnswerType	event-map.h	/^typedef int32 EventAnswerType;$/;"	t	namespace:kaldi
+kaldi::EventKeyType	event-map.h	/^typedef int32 EventKeyType;$/;"	t	namespace:kaldi
+kaldi::EventMap	event-map.h	/^class EventMap {$/;"	c	namespace:kaldi
+kaldi::EventMap::Check	event-map.cc	/^void EventMap::Check(const std::vector<std::pair<EventKeyType, EventValueType> > &event) {$/;"	f	class:kaldi::EventMap
+kaldi::EventMap::Copy	event-map.h	/^  EventMap *Copy() const { std::vector<EventMap*> new_leaves; return Copy(new_leaves); }$/;"	f	class:kaldi::EventMap
+kaldi::EventMap::Lookup	event-map.cc	/^bool EventMap::Lookup(const EventType &event,$/;"	f	class:kaldi::EventMap
+kaldi::EventMap::MaxResult	event-map.h	/^  virtual EventAnswerType MaxResult() const {  \/\/ child classes may override this for efficiency; here is basic version.$/;"	f	class:kaldi::EventMap
+kaldi::EventMap::Read	event-map.cc	/^EventMap *EventMap::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::EventMap
+kaldi::EventMap::Write	event-map.cc	/^void EventMap::Write(std::ostream &os, bool binary, EventMap *emap) {$/;"	f	class:kaldi::EventMap
+kaldi::EventMap::~EventMap	event-map.h	/^  virtual ~EventMap() {}$/;"	f	class:kaldi::EventMap
+kaldi::EventMapVectorEqual	event-map.h	/^struct EventMapVectorEqual {  \/\/ Equality object for EventType pointers-- test equality of underlying vector.$/;"	s	namespace:kaldi
+kaldi::EventMapVectorEqual::operator ()	event-map.h	/^  size_t operator () (const EventType *p1, const EventType *p2) { return (*p1 == *p2); }$/;"	f	struct:kaldi::EventMapVectorEqual
+kaldi::EventMapVectorHash	event-map.h	/^struct EventMapVectorHash {  \/\/ Hashing object for EventMapVector.  Works for both pointers and references.$/;"	s	namespace:kaldi
+kaldi::EventMapVectorHash::operator ()	event-map.cc	/^size_t EventMapVectorHash::operator ()(const EventType &vec) {$/;"	f	class:kaldi::EventMapVectorHash
+kaldi::EventMapVectorHash::operator ()	event-map.h	/^  size_t operator () (const EventType *ptr) { return (*this)(*ptr); }$/;"	f	struct:kaldi::EventMapVectorHash
+kaldi::EventType	event-map.h	/^typedef std::vector<std::pair<EventKeyType, EventValueType> > EventType;$/;"	t	namespace:kaldi
+kaldi::EventTypeToString	event-map.cc	/^std::string EventTypeToString(const EventType &evec) {$/;"	f	namespace:kaldi
+kaldi::EventValueType	event-map.h	/^typedef int32 EventValueType;$/;"	t	namespace:kaldi
+kaldi::FilterStatsByKey	build-tree-utils.cc	/^void FilterStatsByKey(const BuildTreeStatsType &stats_in,$/;"	f	namespace:kaldi
+kaldi::FindAllKeys	build-tree-utils.cc	/^void FindAllKeys(const BuildTreeStatsType &stats, AllKeysType keys_type, std::vector<EventKeyType> *keys_out) {$/;"	f	namespace:kaldi
+kaldi::FindBestSplitForKey	build-tree-utils.cc	/^BaseFloat FindBestSplitForKey(const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+kaldi::GaussClusterable	clusterable-classes.h	/^class GaussClusterable: public Clusterable {$/;"	c	namespace:kaldi
+kaldi::GaussClusterable::Add	clusterable-classes.cc	/^void GaussClusterable::Add(const Clusterable &other_in) {$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::AddStats	clusterable-classes.cc	/^void GaussClusterable::AddStats(const VectorBase<BaseFloat> &vec,$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::Copy	clusterable-classes.cc	/^Clusterable* GaussClusterable::Copy() const {$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::GaussClusterable	clusterable-classes.h	/^  GaussClusterable() : count_(0.0), var_floor_(0.0) {}$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::GaussClusterable	clusterable-classes.h	/^  GaussClusterable(int32 dim, BaseFloat var_floor)$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::GaussClusterable	clusterable-classes.h	/^inline GaussClusterable::GaussClusterable(const Vector<BaseFloat> &x_stats,$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::Normalizer	clusterable-classes.h	/^  virtual BaseFloat Normalizer() const { return count_; }$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::Objf	clusterable-classes.cc	/^BaseFloat GaussClusterable::Objf() const {$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::Read	clusterable-classes.cc	/^void GaussClusterable::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::ReadNew	clusterable-classes.cc	/^Clusterable* GaussClusterable::ReadNew(std::istream &is, bool binary) const {$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::Scale	clusterable-classes.cc	/^void GaussClusterable::Scale(BaseFloat f) {$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::SetZero	clusterable-classes.h	/^inline void GaussClusterable::SetZero() {$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::Sub	clusterable-classes.cc	/^void GaussClusterable::Sub(const Clusterable &other_in) {$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::Type	clusterable-classes.h	/^  virtual std::string Type() const {  return "gauss"; }$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::Write	clusterable-classes.cc	/^void GaussClusterable::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::count	clusterable-classes.h	/^  BaseFloat count() const { return count_; }$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::count_	clusterable-classes.h	/^  double count_;$/;"	m	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::stats_	clusterable-classes.h	/^  Matrix<double> stats_; \/\/ two rows: sum, then sum-squared.$/;"	m	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::var_floor_	clusterable-classes.h	/^  double var_floor_;  \/\/ should be common for all objects created.$/;"	m	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::x2_stats	clusterable-classes.h	/^  SubVector<double> x2_stats() const { return stats_.Row(1); }$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::x_stats	clusterable-classes.h	/^  SubVector<double> x_stats() const { return stats_.Row(0); }$/;"	f	class:kaldi::GaussClusterable
+kaldi::GaussClusterable::~GaussClusterable	clusterable-classes.h	/^  virtual ~GaussClusterable() {}$/;"	f	class:kaldi::GaussClusterable
+kaldi::GenRandContextDependency	context-dep.cc	/^ContextDependency *GenRandContextDependency(const std::vector<int32> &phone_ids,$/;"	f	namespace:kaldi
+kaldi::GenRandContextDependencyLarge	context-dep.cc	/^ContextDependency *GenRandContextDependencyLarge(const std::vector<int32> &phone_ids,$/;"	f	namespace:kaldi
+kaldi::GenRandStats	build-tree.cc	/^void GenRandStats(int32 dim, int32 num_stats, int32 N, int32 P,$/;"	f	namespace:kaldi
+kaldi::GetEventKeys	build-tree-utils.cc	/^static void GetEventKeys(const EventType &vec, std::vector<EventKeyType> *keys) {$/;"	f	namespace:kaldi
+kaldi::GetStubMap	build-tree-utils.cc	/^EventMap *GetStubMap(int32 P,$/;"	f	namespace:kaldi
+kaldi::GetToLengthMap	build-tree-utils.cc	/^EventMap *GetToLengthMap(const BuildTreeStatsType &stats, int32 P,$/;"	f	namespace:kaldi
+kaldi::GetTreeStructure	event-map.cc	/^bool GetTreeStructure(const EventMap &map,$/;"	f	namespace:kaldi
+kaldi::GetTreeStructureInternal	event-map.cc	/^static bool GetTreeStructureInternal($/;"	f	namespace:kaldi
+kaldi::IsLeafNode	event-map.cc	/^static bool IsLeafNode(const EventMap *e) {$/;"	f	namespace:kaldi
+kaldi::KMeansClusterPhones	build-tree.cc	/^void KMeansClusterPhones(BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+kaldi::MakeEventPair	event-map.h	/^inline std::pair<EventKeyType, EventValueType> MakeEventPair (EventKeyType k, EventValueType v) {  $/;"	f	namespace:kaldi
+kaldi::MapEventMapLeaves	build-tree-utils.cc	/^EventMap *MapEventMapLeaves(const EventMap &e_in,$/;"	f	namespace:kaldi
+kaldi::MonophoneContextDependency	context-dep.cc	/^MonophoneContextDependency(const std::vector<int32> phones,$/;"	f	namespace:kaldi
+kaldi::MonophoneContextDependencyShared	context-dep.cc	/^MonophoneContextDependencyShared(const std::vector<std::vector<int32> > phone_sets,$/;"	f	namespace:kaldi
+kaldi::ObjfGivenMap	build-tree-utils.cc	/^BaseFloat ObjfGivenMap(const BuildTreeStatsType &stats_in, const EventMap &e) {$/;"	f	namespace:kaldi
+kaldi::ObtainSetsOfPhones	build-tree.cc	/^static void ObtainSetsOfPhones(const std::vector<std::vector<int32> > &phone_sets,  \/\/ the original phone sets, may$/;"	f	namespace:kaldi
+kaldi::PossibleValues	build-tree-utils.cc	/^bool PossibleValues(EventKeyType key,$/;"	f	namespace:kaldi
+kaldi::Questions	build-tree-questions.h	/^class Questions {  \/\/ careful, this is a class.$/;"	c	namespace:kaldi
+kaldi::Questions::GetKeysWithQuestions	build-tree-questions.h	/^  void GetKeysWithQuestions(std::vector<EventKeyType> *keys_out) const {$/;"	f	class:kaldi::Questions
+kaldi::Questions::GetQuestionsOf	build-tree-questions.h	/^  const QuestionsForKey &GetQuestionsOf(EventKeyType key) const {$/;"	f	class:kaldi::Questions
+kaldi::Questions::HasQuestionsForKey	build-tree-questions.h	/^  const bool HasQuestionsForKey(EventKeyType key) const { return (key_idx_.count(key) != 0); }$/;"	f	class:kaldi::Questions
+kaldi::Questions::InitRand	build-tree-questions.cc	/^void Questions::InitRand(const BuildTreeStatsType &stats, int32 num_quest, int32 num_iters_refine,$/;"	f	class:kaldi::Questions
+kaldi::Questions::Questions	build-tree-questions.h	/^  Questions() { }$/;"	f	class:kaldi::Questions
+kaldi::Questions::Read	build-tree-questions.cc	/^void Questions::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::Questions
+kaldi::Questions::SetQuestionsOf	build-tree-questions.h	/^  void SetQuestionsOf(EventKeyType key, const QuestionsForKey &options_of_key) {$/;"	f	class:kaldi::Questions
+kaldi::Questions::Write	build-tree-questions.cc	/^void Questions::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::Questions
+kaldi::Questions::key_idx_	build-tree-questions.h	/^  std::map<EventKeyType, size_t> key_idx_;$/;"	m	class:kaldi::Questions
+kaldi::Questions::key_options_	build-tree-questions.h	/^  std::vector<QuestionsForKey*> key_options_;$/;"	m	class:kaldi::Questions
+kaldi::Questions::~Questions	build-tree-questions.h	/^  ~Questions() { kaldi::DeletePointers(&key_options_); }$/;"	f	class:kaldi::Questions
+kaldi::QuestionsForKey	build-tree-questions.h	/^struct QuestionsForKey {  \/\/ Configuration class associated with a particular key$/;"	s	namespace:kaldi
+kaldi::QuestionsForKey::Check	build-tree-questions.h	/^  void Check() const {$/;"	f	struct:kaldi::QuestionsForKey
+kaldi::QuestionsForKey::QuestionsForKey	build-tree-questions.h	/^  QuestionsForKey(int32 num_iters = 5): refine_opts(num_iters, 2) {$/;"	f	struct:kaldi::QuestionsForKey
+kaldi::QuestionsForKey::Read	build-tree-questions.cc	/^void QuestionsForKey::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::QuestionsForKey
+kaldi::QuestionsForKey::Write	build-tree-questions.cc	/^void QuestionsForKey::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::QuestionsForKey
+kaldi::QuestionsForKey::initial_questions	build-tree-questions.h	/^  std::vector<std::vector<EventValueType> > initial_questions;$/;"	m	struct:kaldi::QuestionsForKey
+kaldi::QuestionsForKey::refine_opts	build-tree-questions.h	/^  RefineClustersOptions refine_opts;  \/\/ if refine_opts.max_iter == 0,$/;"	m	struct:kaldi::QuestionsForKey
+kaldi::RandomEventMap	event-map-test.cc	/^EventMap *RandomEventMap(const std::vector<EventKeyType> &keys) {$/;"	f	namespace:kaldi
+kaldi::ReadBuildTreeStats	build-tree-utils.cc	/^void ReadBuildTreeStats(std::istream &is, bool binary, const Clusterable &example, BuildTreeStatsType *stats) {$/;"	f	namespace:kaldi
+kaldi::ReadEventType	event-map.cc	/^void ReadEventType(std::istream &is, bool binary, EventType *evec) {$/;"	f	namespace:kaldi
+kaldi::ReadRootsFile	build-tree.cc	/^void ReadRootsFile(std::istream &is,$/;"	f	namespace:kaldi
+kaldi::ReadSymbolTableAsIntegers	build-tree.cc	/^void ReadSymbolTableAsIntegers(std::string filename,$/;"	f	namespace:kaldi
+kaldi::RefineClusterer	cluster-utils.cc	/^class RefineClusterer {$/;"	c	namespace:kaldi	file:
+kaldi::RefineClusterer::ClustIndexInt	cluster-utils.cc	/^  typedef uint_smaller ClustIndexInt;$/;"	t	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::GetInfo	cluster-utils.cc	/^  point_info &GetInfo(int32 point, int32 idx) {$/;"	f	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::InitPoint	cluster-utils.cc	/^  void InitPoint(int32 point) {$/;"	f	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::InitPoints	cluster-utils.cc	/^  void InitPoints() {$/;"	f	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::Iterate	cluster-utils.cc	/^  void Iterate() {$/;"	f	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::LocalInt	cluster-utils.cc	/^  typedef int32 LocalInt;$/;"	t	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::MovePoint	cluster-utils.cc	/^  void MovePoint(int32 point, int32 new_index) {$/;"	f	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::ProcessPoint	cluster-utils.cc	/^  void ProcessPoint(int32 point) {$/;"	f	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::Refine	cluster-utils.cc	/^  BaseFloat Refine() {$/;"	f	class:kaldi::RefineClusterer
+kaldi::RefineClusterer::RefineClusterer	cluster-utils.cc	/^  RefineClusterer(const std::vector<Clusterable*> &points,$/;"	f	class:kaldi::RefineClusterer
+kaldi::RefineClusterer::UpdateClust	cluster-utils.cc	/^  void UpdateClust(int32 clust) {$/;"	f	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::UpdateInfo	cluster-utils.cc	/^  void UpdateInfo(int32 point, int32 idx) {$/;"	f	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::__anon2::clust	cluster-utils.cc	/^    LocalInt clust;$/;"	m	struct:kaldi::RefineClusterer::__anon2	file:
+kaldi::RefineClusterer::__anon2::objf	cluster-utils.cc	/^    BaseFloat objf;  \/\/ Objf of this cluster plus this point (or minus, if own cluster).$/;"	m	struct:kaldi::RefineClusterer::__anon2	file:
+kaldi::RefineClusterer::__anon2::time	cluster-utils.cc	/^    LocalInt time;$/;"	m	struct:kaldi::RefineClusterer::__anon2	file:
+kaldi::RefineClusterer::ans_	cluster-utils.cc	/^  BaseFloat ans_;  \/\/ objf improvement.$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::assignments_	cluster-utils.cc	/^  std::vector<int32> *assignments_;$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::cfg_	cluster-utils.cc	/^  RefineClustersOptions cfg_;  \/\/ note, we change top_n in config; don't make this member a reference member.$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::clust_objf_	cluster-utils.cc	/^  std::vector<BaseFloat> clust_objf_;  \/\/ [clust], objf for cluster.$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::clust_time_	cluster-utils.cc	/^  std::vector<LocalInt> clust_time_;  \/\/ Modification time of cluster.$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::clusters_	cluster-utils.cc	/^  std::vector<Clusterable*> *clusters_;$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::info_	cluster-utils.cc	/^  std::vector<point_info> info_;  \/\/ size is [num_points_ * cfg_.top_n].$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::my_clust_index_	cluster-utils.cc	/^  std::vector<ClustIndexInt> my_clust_index_;  \/\/ says for each point, which index 0...cfg_.top_n-1 currently$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::num_clust_	cluster-utils.cc	/^  int32 num_clust_;$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::num_points_	cluster-utils.cc	/^  int32 num_points_;$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::point_info	cluster-utils.cc	/^  } point_info;$/;"	t	class:kaldi::RefineClusterer	typeref:struct:kaldi::RefineClusterer::__anon2	file:
+kaldi::RefineClusterer::points_	cluster-utils.cc	/^  const std::vector<Clusterable*> &points_;$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusterer::t_	cluster-utils.cc	/^  int32 t_;$/;"	m	class:kaldi::RefineClusterer	file:
+kaldi::RefineClusters	cluster-utils.cc	/^BaseFloat RefineClusters(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+kaldi::RefineClustersOptions	cluster-utils.h	/^struct RefineClustersOptions {$/;"	s	namespace:kaldi
+kaldi::RefineClustersOptions::Read	cluster-utils.cc	/^void RefineClustersOptions::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::RefineClustersOptions
+kaldi::RefineClustersOptions::RefineClustersOptions	cluster-utils.h	/^  RefineClustersOptions() : num_iters(100), top_n(5) {}$/;"	f	struct:kaldi::RefineClustersOptions
+kaldi::RefineClustersOptions::RefineClustersOptions	cluster-utils.h	/^  RefineClustersOptions(int32 num_iters_in, int32 top_n_in)$/;"	f	struct:kaldi::RefineClustersOptions
+kaldi::RefineClustersOptions::Write	cluster-utils.cc	/^void RefineClustersOptions::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::RefineClustersOptions
+kaldi::RefineClustersOptions::num_iters	cluster-utils.h	/^  int32 num_iters;  \/\/ must be >= 0.  If zero, does nothing.$/;"	m	struct:kaldi::RefineClustersOptions
+kaldi::RefineClustersOptions::top_n	cluster-utils.h	/^  int32 top_n;  \/\/ must be >= 2.$/;"	m	struct:kaldi::RefineClustersOptions
+kaldi::RenumberEventMap	build-tree-utils.cc	/^EventMap *RenumberEventMap(const EventMap &e_in, int32 *num_leaves) {$/;"	f	namespace:kaldi
+kaldi::ScalarClusterable	clusterable-classes.h	/^class ScalarClusterable: public Clusterable {$/;"	c	namespace:kaldi
+kaldi::ScalarClusterable::Add	clusterable-classes.cc	/^void ScalarClusterable::Add(const Clusterable &other_in) {$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::Copy	clusterable-classes.cc	/^Clusterable* ScalarClusterable::Copy() const {$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::Info	clusterable-classes.cc	/^std::string ScalarClusterable::Info() {$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::Mean	clusterable-classes.h	/^  BaseFloat Mean() { return (count_ != 0 ? x_\/count_ : 0.0); }$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::Normalizer	clusterable-classes.h	/^  virtual BaseFloat Normalizer() const {$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::Objf	clusterable-classes.cc	/^BaseFloat ScalarClusterable::Objf() const {$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::Read	clusterable-classes.cc	/^void ScalarClusterable::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::ReadNew	clusterable-classes.cc	/^Clusterable* ScalarClusterable::ReadNew(std::istream &is, bool binary) const {$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::ScalarClusterable	clusterable-classes.h	/^  ScalarClusterable() : x_(0), x2_(0), count_(0) {}$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::ScalarClusterable	clusterable-classes.h	/^  explicit ScalarClusterable(BaseFloat x) : x_(x), x2_(x*x), count_(1) {}$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::SetZero	clusterable-classes.h	/^  virtual void SetZero() { count_ = x_ = x2_ = 0.0; }$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::Sub	clusterable-classes.cc	/^void ScalarClusterable::Sub(const Clusterable &other_in) {$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::Type	clusterable-classes.h	/^  virtual std::string Type() const { return "scalar"; }$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::Write	clusterable-classes.cc	/^void ScalarClusterable::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::count_	clusterable-classes.h	/^  BaseFloat count_;$/;"	m	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::x2_	clusterable-classes.h	/^  BaseFloat x2_;$/;"	m	class:kaldi::ScalarClusterable
+kaldi::ScalarClusterable::x_	clusterable-classes.h	/^  BaseFloat x_;$/;"	m	class:kaldi::ScalarClusterable
+kaldi::ShareEventMapLeaves	build-tree-utils.cc	/^EventMap *ShareEventMapLeaves(const EventMap &e_in, EventKeyType key,$/;"	f	namespace:kaldi
+kaldi::SplitDecisionTree	build-tree-utils.cc	/^EventMap *SplitDecisionTree(const EventMap &input_map,$/;"	f	namespace:kaldi
+kaldi::SplitEventMap	event-map.h	/^class SplitEventMap: public EventMap {  \/\/ A decision tree [non-leaf] node.$/;"	c	namespace:kaldi
+kaldi::SplitEventMap::Copy	event-map.h	/^  virtual EventMap *Copy(const std::vector<EventMap*> &new_leaves) const {$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::Destroy	event-map.h	/^  void Destroy() {$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::GetChildren	event-map.h	/^  virtual void GetChildren(std::vector<EventMap*> *out) const {$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::Map	event-map.h	/^  virtual bool Map(const EventType &event, EventAnswerType *ans) const {$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::MapValues	event-map.cc	/^EventMap* SplitEventMap::MapValues($/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::MultiMap	event-map.h	/^  virtual void MultiMap(const EventType &event, std::vector<EventAnswerType> *ans) const {$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::Prune	event-map.cc	/^EventMap* SplitEventMap::Prune() const {$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::Read	event-map.cc	/^SplitEventMap* SplitEventMap::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::SplitEventMap	event-map.h	/^  SplitEventMap(EventKeyType key, const ConstIntegerSet<EventValueType> &yes_set,$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::SplitEventMap	event-map.h	/^  SplitEventMap(EventKeyType key, const std::vector<EventValueType> &yes_set,$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::Write	event-map.cc	/^void SplitEventMap::Write(std::ostream &os, bool binary) {$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::key_	event-map.h	/^  EventKeyType key_;$/;"	m	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::no_	event-map.h	/^  EventMap *no_;  \/\/ owned here.$/;"	m	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::yes_	event-map.h	/^  EventMap *yes_;  \/\/ owned here.$/;"	m	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::yes_set_	event-map.h	/^  ConstIntegerSet<EventValueType> yes_set_;  \/\/ more efficient Map function.$/;"	m	class:kaldi::SplitEventMap
+kaldi::SplitEventMap::~SplitEventMap	event-map.h	/^  virtual ~SplitEventMap() { Destroy(); }$/;"	f	class:kaldi::SplitEventMap
+kaldi::SplitStatsByKey	build-tree-utils.cc	/^void SplitStatsByKey(const BuildTreeStatsType &stats_in, EventKeyType key, std::vector<BuildTreeStatsType> *stats_out) {$/;"	f	namespace:kaldi
+kaldi::SplitStatsByMap	build-tree-utils.cc	/^void SplitStatsByMap(const BuildTreeStatsType &stats, const EventMap &e, std::vector<BuildTreeStatsType> *stats_out) {$/;"	f	namespace:kaldi
+kaldi::SumClusterable	cluster-utils.cc	/^Clusterable* SumClusterable(const std::vector<Clusterable*> &vec) {$/;"	f	namespace:kaldi
+kaldi::SumClusterableNormalizer	cluster-utils.cc	/^BaseFloat SumClusterableNormalizer(const std::vector<Clusterable*> &vec) {$/;"	f	namespace:kaldi
+kaldi::SumClusterableObjf	cluster-utils.cc	/^BaseFloat SumClusterableObjf(const std::vector<Clusterable*> &vec) {$/;"	f	namespace:kaldi
+kaldi::SumNormalizer	build-tree-utils.cc	/^BaseFloat SumNormalizer(const BuildTreeStatsType &stats_in) {$/;"	f	namespace:kaldi
+kaldi::SumObjf	build-tree-utils.cc	/^BaseFloat SumObjf(const BuildTreeStatsType &stats_in) {$/;"	f	namespace:kaldi
+kaldi::SumStats	build-tree-utils.cc	/^Clusterable *SumStats(const BuildTreeStatsType &stats_in) {$/;"	f	namespace:kaldi
+kaldi::SumStatsVec	build-tree-utils.cc	/^void SumStatsVec(const std::vector<BuildTreeStatsType> &stats_in, std::vector<Clusterable*> *stats_out) {$/;"	f	namespace:kaldi
+kaldi::TableEventMap	event-map.h	/^class TableEventMap: public EventMap {$/;"	c	namespace:kaldi
+kaldi::TableEventMap::Copy	event-map.h	/^  virtual EventMap *Copy(const std::vector<EventMap*> &new_leaves) const {$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::GetChildren	event-map.h	/^  virtual void GetChildren(std::vector<EventMap*> *out) const {$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::Map	event-map.h	/^  virtual bool Map(const EventType &event, EventAnswerType *ans) const {$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::MapValues	event-map.cc	/^EventMap* TableEventMap::MapValues($/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::MultiMap	event-map.h	/^  virtual void MultiMap(const EventType &event, std::vector<EventAnswerType> *ans) const {$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::Prune	event-map.cc	/^EventMap* TableEventMap::Prune() const {$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::Read	event-map.cc	/^TableEventMap* TableEventMap::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::TableEventMap	event-map.cc	/^TableEventMap::TableEventMap(EventKeyType key, const std::map<EventValueType, EventAnswerType> &map_in): key_(key) {$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::TableEventMap	event-map.cc	/^TableEventMap::TableEventMap(EventKeyType key, const std::map<EventValueType, EventMap*> &map_in): key_(key) {$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::TableEventMap	event-map.h	/^  explicit TableEventMap(EventKeyType key, const std::vector<EventMap*> &table): key_(key), table_(table) {}$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::Write	event-map.cc	/^void TableEventMap::Write(std::ostream &os, bool binary) {$/;"	f	class:kaldi::TableEventMap
+kaldi::TableEventMap::key_	event-map.h	/^  EventKeyType key_;$/;"	m	class:kaldi::TableEventMap
+kaldi::TableEventMap::table_	event-map.h	/^  std::vector<EventMap*> table_;$/;"	m	class:kaldi::TableEventMap
+kaldi::TableEventMap::~TableEventMap	event-map.h	/^  virtual ~TableEventMap() {$/;"	f	class:kaldi::TableEventMap
+kaldi::TestAddToClusters	cluster-utils-test.cc	/^static void TestAddToClusters() {$/;"	f	namespace:kaldi
+kaldi::TestAddToClustersOptimized	cluster-utils-test.cc	/^static void TestAddToClustersOptimized() {$/;"	f	namespace:kaldi
+kaldi::TestBuildTree	build-tree-test.cc	/^void TestBuildTree() {$/;"	f	namespace:kaldi
+kaldi::TestBuildTreeStatsIo	build-tree-utils-test.cc	/^void TestBuildTreeStatsIo(bool binary) {$/;"	f	namespace:kaldi
+kaldi::TestClusterBottomUp	cluster-utils-test.cc	/^static void TestClusterBottomUp() {$/;"	f	namespace:kaldi
+kaldi::TestClusterEventMap	build-tree-utils-test.cc	/^void TestClusterEventMap() {$/;"	f	namespace:kaldi
+kaldi::TestClusterEventMapGetMappingAndRenumberEventMap	build-tree-utils-test.cc	/^void TestClusterEventMapGetMappingAndRenumberEventMap() {$/;"	f	namespace:kaldi
+kaldi::TestClusterEventMapGetMappingAndRenumberEventMap2	build-tree-utils-test.cc	/^void TestClusterEventMapGetMappingAndRenumberEventMap2() {$/;"	f	namespace:kaldi
+kaldi::TestClusterEventMapRestricted	build-tree-utils-test.cc	/^void TestClusterEventMapRestricted() {$/;"	f	namespace:kaldi
+kaldi::TestClusterKMeans	cluster-utils-test.cc	/^static void TestClusterKMeans() {$/;"	f	namespace:kaldi
+kaldi::TestClusterTopDown	cluster-utils-test.cc	/^static void TestClusterTopDown() {$/;"	f	namespace:kaldi
+kaldi::TestClusterUtils	cluster-utils-test.cc	/^static void TestClusterUtils() {  \/\/ just some very basic tests of the GaussClusterable class.$/;"	f	namespace:kaldi
+kaldi::TestContextDep	context-dep-test.cc	/^void TestContextDep() {$/;"	f	namespace:kaldi
+kaldi::TestConvertStats	build-tree-utils-test.cc	/^void TestConvertStats() {$/;"	f	namespace:kaldi
+kaldi::TestDistance	cluster-utils-test.cc	/^static void TestDistance() {$/;"	f	namespace:kaldi
+kaldi::TestDoTableSplit	build-tree-utils-test.cc	/^void TestDoTableSplit() {$/;"	f	namespace:kaldi
+kaldi::TestEnsureClusterableVectorNotNull	cluster-utils-test.cc	/^static void TestEnsureClusterableVectorNotNull() {$/;"	f	namespace:kaldi
+kaldi::TestEventMap	event-map-test.cc	/^void TestEventMap() {$/;"	f	namespace:kaldi
+kaldi::TestEventMapIo	event-map-test.cc	/^void TestEventMapIo(bool binary) {$/;"	f	namespace:kaldi
+kaldi::TestEventMapMapValues	event-map-test.cc	/^void TestEventMapMapValues() {$/;"	f	namespace:kaldi
+kaldi::TestEventMapPrune	event-map-test.cc	/^void TestEventMapPrune() {$/;"	f	namespace:kaldi
+kaldi::TestEventTypeIo	event-map-test.cc	/^void TestEventTypeIo(bool binary) {$/;"	f	namespace:kaldi
+kaldi::TestFindAllKeys	build-tree-utils-test.cc	/^void TestFindAllKeys() {$/;"	f	namespace:kaldi
+kaldi::TestGenRandContextDependency	context-dep-test.cc	/^void TestGenRandContextDependency() {$/;"	f	namespace:kaldi
+kaldi::TestGenRandStats	build-tree-test.cc	/^void TestGenRandStats() {$/;"	f	namespace:kaldi
+kaldi::TestMonophoneContextDependency	context-dep-test.cc	/^void TestMonophoneContextDependency() {$/;"	f	namespace:kaldi
+kaldi::TestObjfMinus	cluster-utils-test.cc	/^static void TestObjfMinus() {$/;"	f	namespace:kaldi
+kaldi::TestObjfPlus	cluster-utils-test.cc	/^static void TestObjfPlus() {$/;"	f	namespace:kaldi
+kaldi::TestPossibleValues	build-tree-utils-test.cc	/^void TestPossibleValues() {$/;"	f	namespace:kaldi
+kaldi::TestQuestionsInitRand	build-tree-utils-test.cc	/^void TestQuestionsInitRand() {$/;"	f	namespace:kaldi
+kaldi::TestRefineClusters	cluster-utils-test.cc	/^static void TestRefineClusters() {$/;"	f	namespace:kaldi
+kaldi::TestShareEventMapLeaves	build-tree-utils-test.cc	/^void TestShareEventMapLeaves() {$/;"	f	namespace:kaldi
+kaldi::TestSplitDecisionTree	build-tree-utils-test.cc	/^void TestSplitDecisionTree() {$/;"	f	namespace:kaldi
+kaldi::TestSplitStatsByKey	build-tree-utils-test.cc	/^void TestSplitStatsByKey() {$/;"	f	namespace:kaldi
+kaldi::TestSum	cluster-utils-test.cc	/^static void TestSum() {$/;"	f	namespace:kaldi
+kaldi::TestSumObjfAndSumNormalizer	cluster-utils-test.cc	/^static void TestSumObjfAndSumNormalizer() {$/;"	f	namespace:kaldi
+kaldi::TestTreeCluster	cluster-utils-test.cc	/^static void TestTreeCluster() {$/;"	f	namespace:kaldi
+kaldi::TestTrivialTree	build-tree-utils-test.cc	/^void TestTrivialTree() {$/;"	f	namespace:kaldi
+kaldi::TreeCluster	cluster-utils.cc	/^BaseFloat TreeCluster(const std::vector<Clusterable*> &points,$/;"	f	namespace:kaldi
+kaldi::TreeClusterOptions	cluster-utils.h	/^struct TreeClusterOptions  {$/;"	s	namespace:kaldi
+kaldi::TreeClusterOptions::TreeClusterOptions	cluster-utils.h	/^  TreeClusterOptions()$/;"	f	struct:kaldi::TreeClusterOptions
+kaldi::TreeClusterOptions::branch_factor	cluster-utils.h	/^  int32 branch_factor;$/;"	m	struct:kaldi::TreeClusterOptions
+kaldi::TreeClusterOptions::kmeans_cfg	cluster-utils.h	/^  ClusterKMeansOptions kmeans_cfg;$/;"	m	struct:kaldi::TreeClusterOptions
+kaldi::TreeClusterOptions::thresh	cluster-utils.h	/^  BaseFloat thresh;  \/\/ Objf change: if >0, may be used to control number of leaves.$/;"	m	struct:kaldi::TreeClusterOptions
+kaldi::TreeClusterer	cluster-utils.cc	/^class TreeClusterer {$/;"	c	namespace:kaldi	file:
+kaldi::TreeClusterer::Cluster	cluster-utils.cc	/^  BaseFloat Cluster(std::vector<Clusterable*> *clusters_out,$/;"	f	class:kaldi::TreeClusterer
+kaldi::TreeClusterer::CreateAssignmentsOutput	cluster-utils.cc	/^  void CreateAssignmentsOutput(std::vector<int32> *assignments_out) {$/;"	f	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::CreateClustAssignmentsOutput	cluster-utils.cc	/^  void CreateClustAssignmentsOutput(std::vector<int32> *clust_assignments_out) {$/;"	f	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::CreateClustersOutput	cluster-utils.cc	/^  void CreateClustersOutput(std::vector<Clusterable*> *clusters_out) {$/;"	f	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::CreateOutput	cluster-utils.cc	/^  void CreateOutput(std::vector<Clusterable*> *clusters_out,$/;"	f	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::DoSplit	cluster-utils.cc	/^  void DoSplit(Node *node) {$/;"	f	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::FindBestSplit	cluster-utils.cc	/^  void FindBestSplit(Node *node) {$/;"	f	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::Init	cluster-utils.cc	/^  void Init() {  \/\/ Initializes top node.$/;"	f	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::Node	cluster-utils.cc	/^  struct Node {$/;"	s	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::Node::__anon3::assignments	cluster-utils.cc	/^      std::vector<int32> assignments;  \/\/ assignments of points to clusters.$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+kaldi::TreeClusterer::Node::__anon3::best_split	cluster-utils.cc	/^      BaseFloat best_split;$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+kaldi::TreeClusterer::Node::__anon3::clusters	cluster-utils.cc	/^      std::vector<Clusterable*> clusters;  \/\/ [branch_factor]... if we do split.$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+kaldi::TreeClusterer::Node::__anon3::point_indices	cluster-utils.cc	/^      std::vector<int32> point_indices;$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+kaldi::TreeClusterer::Node::__anon3::points	cluster-utils.cc	/^      std::vector<Clusterable*> points;$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+kaldi::TreeClusterer::Node::children	cluster-utils.cc	/^    std::vector<Node*> children;  \/\/ vector of size branch_factor.   if non-leaf.$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+kaldi::TreeClusterer::Node::index	cluster-utils.cc	/^    int32 index;  \/\/ index into leaf_nodes or nonleaf_nodes as applicable.$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+kaldi::TreeClusterer::Node::is_leaf	cluster-utils.cc	/^    bool is_leaf;$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+kaldi::TreeClusterer::Node::leaf	cluster-utils.cc	/^    } leaf;$/;"	m	struct:kaldi::TreeClusterer::Node	typeref:struct:kaldi::TreeClusterer::Node::__anon3	file:
+kaldi::TreeClusterer::Node::node_total	cluster-utils.cc	/^    Clusterable *node_total;  \/\/ sum of all data with this node.$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+kaldi::TreeClusterer::Node::parent	cluster-utils.cc	/^    Node *parent;$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+kaldi::TreeClusterer::NonleafOutputIndex	cluster-utils.cc	/^  int32 NonleafOutputIndex(int32 index) {$/;"	f	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::TreeClusterer	cluster-utils.cc	/^  TreeClusterer(const std::vector<Clusterable*> &points,$/;"	f	class:kaldi::TreeClusterer
+kaldi::TreeClusterer::ans_	cluster-utils.cc	/^  BaseFloat ans_;  \/\/ objf improvement.$/;"	m	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::cfg_	cluster-utils.cc	/^  TreeClusterOptions cfg_;$/;"	m	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::leaf_nodes_	cluster-utils.cc	/^  std::vector<Node*> leaf_nodes_;$/;"	m	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::max_clust_	cluster-utils.cc	/^  int32 max_clust_;$/;"	m	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::nonleaf_nodes_	cluster-utils.cc	/^  std::vector<Node*> nonleaf_nodes_;$/;"	m	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::points_	cluster-utils.cc	/^  const std::vector<Clusterable*> &points_;$/;"	m	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::queue_	cluster-utils.cc	/^  std::priority_queue<std::pair<BaseFloat, Node*> > queue_;  \/\/ contains leaves.$/;"	m	class:kaldi::TreeClusterer	file:
+kaldi::TreeClusterer::~TreeClusterer	cluster-utils.cc	/^  ~TreeClusterer() {$/;"	f	class:kaldi::TreeClusterer
+kaldi::TreeRenderer	tree-renderer.h	/^class TreeRenderer {$/;"	c	namespace:kaldi
+kaldi::TreeRenderer::MakeEdgeLabel	tree-renderer.cc	/^TreeRenderer::MakeEdgeLabel(const EventKeyType &key,$/;"	f	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::N_	tree-renderer.h	/^  int32 N_, P_; \/\/ context-width and central position$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::P_	tree-renderer.h	/^  int32 N_, P_; \/\/ context-width and central position$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::Render	tree-renderer.cc	/^void TreeRenderer::Render(const EventType *query = 0) {$/;"	f	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::RenderConstant	tree-renderer.cc	/^void TreeRenderer::RenderConstant(const EventType *query, int32 id) {$/;"	f	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::RenderNonLeaf	tree-renderer.cc	/^TreeRenderer::RenderNonLeaf(int32 id, const EventKeyType &key, bool in_query) {$/;"	f	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::RenderSplit	tree-renderer.cc	/^void TreeRenderer::RenderSplit(const EventType *query, int32 id) {$/;"	f	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::RenderSubTree	tree-renderer.cc	/^void TreeRenderer::RenderSubTree(const EventType *query, int32 id) {$/;"	f	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::RenderTable	tree-renderer.cc	/^void TreeRenderer::RenderTable(const EventType *query, int32 id) {$/;"	f	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::TreeRenderer	tree-renderer.h	/^  TreeRenderer(std::istream &is, bool binary, std::ostream &os,$/;"	f	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::binary_	tree-renderer.h	/^  bool binary_; \/\/ is the input stream binary?$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::is_	tree-renderer.h	/^  std::istream &is_; \/\/ the stream from which the tree is read$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::kEdgeColor	tree-renderer.cc	/^const std::string TreeRenderer::kEdgeColor = "black";$/;"	m	class:kaldi::TreeRenderer	file:
+kaldi::TreeRenderer::kEdgeColor	tree-renderer.h	/^  const static std::string kEdgeColor; \/\/ normal color for states and edges$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::kEdgeColorQuery	tree-renderer.cc	/^const std::string TreeRenderer::kEdgeColorQuery = "red";$/;"	m	class:kaldi::TreeRenderer	file:
+kaldi::TreeRenderer::kEdgeColorQuery	tree-renderer.h	/^  const static std::string kEdgeColorQuery; \/\/ edge and state color when in query$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::kEdgeWidth	tree-renderer.cc	/^const int32 TreeRenderer::kEdgeWidth = 1;$/;"	m	class:kaldi::TreeRenderer	file:
+kaldi::TreeRenderer::kEdgeWidth	tree-renderer.h	/^  const static int32 kEdgeWidth; \/\/ normal width of the edges and state contours$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::kEdgeWidthQuery	tree-renderer.cc	/^const int32 TreeRenderer::kEdgeWidthQuery = 3;$/;"	m	class:kaldi::TreeRenderer	file:
+kaldi::TreeRenderer::kEdgeWidthQuery	tree-renderer.h	/^  const static int32 kEdgeWidthQuery; \/\/ edge and state width when in query$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::next_id_	tree-renderer.h	/^  int32 next_id_; \/\/ the first unused GraphViz node ID$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::out_	tree-renderer.h	/^  std::ostream &out_; \/\/ the GraphViz representation is written to this stream$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::phone_syms_	tree-renderer.h	/^  fst::SymbolTable &phone_syms_; \/\/ phone symbols to be used as edge labels$/;"	m	class:kaldi::TreeRenderer
+kaldi::TreeRenderer::use_tooltips_	tree-renderer.h	/^  bool use_tooltips_;  \/\/ use tooltips(useful in e.g. SVG) instead of labels$/;"	m	class:kaldi::TreeRenderer
+kaldi::TrivialTree	build-tree-utils.h	/^inline EventMap *TrivialTree(int32 *num_leaves) {$/;"	f	namespace:kaldi
+kaldi::WriteBuildTreeStats	build-tree-utils.cc	/^void WriteBuildTreeStats(std::ostream &os, bool binary, const BuildTreeStatsType &stats) {$/;"	f	namespace:kaldi
+kaldi::WriteEventType	event-map.cc	/^void WriteEventType(std::ostream &os, bool binary, const EventType &evec) {$/;"	f	namespace:kaldi
+kaldi::int_smaller	cluster-utils.cc	/^typedef int16 int_smaller;$/;"	t	namespace:kaldi	file:
+kaldi::kAllKeysInsistIdentical	build-tree-questions.h	/^typedef enum { kAllKeysInsistIdentical, kAllKeysIntersection, kAllKeysUnion } AllKeysType;$/;"	e	enum:kaldi::__anon1
+kaldi::kAllKeysIntersection	build-tree-questions.h	/^typedef enum { kAllKeysInsistIdentical, kAllKeysIntersection, kAllKeysUnion } AllKeysType;$/;"	e	enum:kaldi::__anon1
+kaldi::kAllKeysUnion	build-tree-questions.h	/^typedef enum { kAllKeysInsistIdentical, kAllKeysIntersection, kAllKeysUnion } AllKeysType;$/;"	e	enum:kaldi::__anon1
+kaldi::kMaxVal	event-map-test.cc	/^const int32 kMaxVal = 20;$/;"	m	namespace:kaldi	file:
+kaldi::kPdfClass	context-dep.h	/^static const EventKeyType kPdfClass = -1;  \/\/ The "name" to which we assign the$/;"	m	namespace:kaldi
+kaldi::operator >	cluster-utils.cc	/^bool operator > (const CompBotClustElem &a, const CompBotClustElem &b) {$/;"	f	namespace:kaldi
+kaldi::uint_smaller	cluster-utils.cc	/^typedef uint16 uint_smaller;$/;"	t	namespace:kaldi	file:
+key_	build-tree-utils.cc	/^  EventKeyType key_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+key_	event-map.h	/^  EventKeyType key_;$/;"	m	class:kaldi::SplitEventMap
+key_	event-map.h	/^  EventKeyType key_;$/;"	m	class:kaldi::TableEventMap
+key_idx_	build-tree-questions.h	/^  std::map<EventKeyType, size_t> key_idx_;$/;"	m	class:kaldi::Questions
+key_options_	build-tree-questions.h	/^  std::vector<QuestionsForKey*> key_options_;$/;"	m	class:kaldi::Questions
+kmeans_cfg	cluster-utils.h	/^  ClusterKMeansOptions kmeans_cfg;$/;"	m	struct:kaldi::TreeClusterOptions
+leaf	cluster-utils.cc	/^    } leaf;$/;"	m	struct:kaldi::TreeClusterer::Node	typeref:struct:kaldi::TreeClusterer::Node::__anon3	file:
+leaf_	build-tree-utils.cc	/^  EventAnswerType leaf_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+leaf_nodes_	cluster-utils.cc	/^  std::vector<Node*> leaf_nodes_;$/;"	m	class:kaldi::TreeClusterer	file:
+main	build-tree-test.cc	/^int main() {$/;"	f
+main	build-tree-utils-test.cc	/^int main() {$/;"	f
+main	cluster-utils-test.cc	/^int main() {$/;"	f
+main	context-dep-test.cc	/^int main() {$/;"	f
+main	event-map-test.cc	/^int main() {$/;"	f
+max_clust_	cluster-utils.cc	/^  int32 max_clust_;$/;"	m	class:kaldi::TreeClusterer	file:
+max_merge_thresh_	cluster-utils.cc	/^  BaseFloat max_merge_thresh_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+max_merge_thresh_	cluster-utils.cc	/^  BaseFloat max_merge_thresh_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+min_clust_	cluster-utils.cc	/^  int32 min_clust_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+min_clust_	cluster-utils.cc	/^  int32 min_clust_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+my_clust_index_	cluster-utils.cc	/^  std::vector<ClustIndexInt> my_clust_index_;  \/\/ says for each point, which index 0...cfg_.top_n-1 currently$/;"	m	class:kaldi::RefineClusterer	file:
+nclusters_	cluster-utils.cc	/^  int32 nclusters_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+nclusters_	cluster-utils.cc	/^  int32 ncompartments_, nclusters_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+ncompartments_	cluster-utils.cc	/^  int32 ncompartments_, nclusters_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+next_id_	tree-renderer.h	/^  int32 next_id_; \/\/ the first unused GraphViz node ID$/;"	m	class:kaldi::TreeRenderer
+no_	build-tree-utils.cc	/^  DecisionTreeSplitter *no_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+no_	event-map.h	/^  EventMap *no_;  \/\/ owned here.$/;"	m	class:kaldi::SplitEventMap
+node_total	cluster-utils.cc	/^    Clusterable *node_total;  \/\/ sum of all data with this node.$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+nonleaf_nodes_	cluster-utils.cc	/^  std::vector<Node*> nonleaf_nodes_;$/;"	m	class:kaldi::TreeClusterer	file:
+npoints_	cluster-utils.cc	/^  int32 npoints_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+npoints_	cluster-utils.cc	/^  vector<int32> npoints_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+num_clust_	cluster-utils.cc	/^  int32 num_clust_;$/;"	m	class:kaldi::RefineClusterer	file:
+num_iters	cluster-utils.h	/^  int32 num_iters;  \/\/ must be >= 0.  If zero, does nothing.$/;"	m	struct:kaldi::RefineClustersOptions
+num_iters	cluster-utils.h	/^  int32 num_iters;$/;"	m	struct:kaldi::ClusterKMeansOptions
+num_points_	cluster-utils.cc	/^  int32 num_points_;$/;"	m	class:kaldi::RefineClusterer	file:
+num_tries	cluster-utils.h	/^  int32 num_tries;  \/\/ if >1, try whole procedure >once and pick best.$/;"	m	struct:kaldi::ClusterKMeansOptions
+objf	cluster-utils.cc	/^    BaseFloat objf;  \/\/ Objf of this cluster plus this point (or minus, if own cluster).$/;"	m	struct:kaldi::RefineClusterer::__anon2	file:
+operator ()	event-map.cc	/^size_t EventMapVectorHash::operator ()(const EventType &vec) {$/;"	f	class:kaldi::EventMapVectorHash
+operator ()	event-map.h	/^  size_t operator () (const EventType *p1, const EventType *p2) { return (*p1 == *p2); }$/;"	f	struct:kaldi::EventMapVectorEqual
+operator ()	event-map.h	/^  size_t operator () (const EventType *ptr) { return (*this)(*ptr); }$/;"	f	struct:kaldi::EventMapVectorHash
+operator >	cluster-utils.cc	/^bool operator > (const CompBotClustElem &a, const CompBotClustElem &b) {$/;"	f	namespace:kaldi
+out_	tree-renderer.h	/^  std::ostream &out_; \/\/ the GraphViz representation is written to this stream$/;"	m	class:kaldi::TreeRenderer
+parent	cluster-utils.cc	/^    Node *parent;$/;"	m	struct:kaldi::TreeClusterer::Node	file:
+phone_syms_	tree-renderer.h	/^  fst::SymbolTable &phone_syms_; \/\/ phone symbols to be used as edge labels$/;"	m	class:kaldi::TreeRenderer
+point1	cluster-utils.cc	/^  int32 compartment, point1, point2;$/;"	m	struct:kaldi::CompBotClustElem	file:
+point2	cluster-utils.cc	/^  int32 compartment, point1, point2;$/;"	m	struct:kaldi::CompBotClustElem	file:
+point_indices	cluster-utils.cc	/^      std::vector<int32> point_indices;$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+point_info	cluster-utils.cc	/^  } point_info;$/;"	t	class:kaldi::RefineClusterer	typeref:struct:kaldi::RefineClusterer::__anon2	file:
+points	cluster-utils.cc	/^      std::vector<Clusterable*> points;$/;"	m	struct:kaldi::TreeClusterer::Node::__anon3	file:
+points_	cluster-utils.cc	/^  const std::vector<Clusterable*> &points_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+points_	cluster-utils.cc	/^  const std::vector<Clusterable*> &points_;$/;"	m	class:kaldi::RefineClusterer	file:
+points_	cluster-utils.cc	/^  const std::vector<Clusterable*> &points_;$/;"	m	class:kaldi::TreeClusterer	file:
+points_	cluster-utils.cc	/^  const vector< vector<Clusterable*> > &points_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+q_opts_	build-tree-utils.cc	/^  const Questions &q_opts_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+queue_	cluster-utils.cc	/^  QueueType queue_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+queue_	cluster-utils.cc	/^  QueueType queue_;$/;"	m	class:kaldi::CompartmentalizedBottomUpClusterer	file:
+queue_	cluster-utils.cc	/^  std::priority_queue<std::pair<BaseFloat, Node*> > queue_;  \/\/ contains leaves.$/;"	m	class:kaldi::TreeClusterer	file:
+refine_cfg	cluster-utils.h	/^  RefineClustersOptions refine_cfg;$/;"	m	struct:kaldi::ClusterKMeansOptions
+refine_opts	build-tree-questions.h	/^  RefineClustersOptions refine_opts;  \/\/ if refine_opts.max_iter == 0,$/;"	m	struct:kaldi::QuestionsForKey
+stats_	build-tree-utils.cc	/^  BuildTreeStatsType stats_;  \/\/ vector of stats.  pointers inside there not owned here.$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+stats_	clusterable-classes.h	/^  Matrix<double> stats_; \/\/ two rows: sum, then sum-squared.$/;"	m	class:kaldi::GaussClusterable
+t_	cluster-utils.cc	/^  int32 t_;$/;"	m	class:kaldi::RefineClusterer	file:
+table_	event-map.h	/^  std::vector<EventMap*> table_;$/;"	m	class:kaldi::TableEventMap
+thresh	cluster-utils.h	/^  BaseFloat thresh;  \/\/ Objf change: if >0, may be used to control number of leaves.$/;"	m	struct:kaldi::TreeClusterOptions
+time	cluster-utils.cc	/^    LocalInt time;$/;"	m	struct:kaldi::RefineClusterer::__anon2	file:
+tmp_assignments_	cluster-utils.cc	/^  std::vector<int32> tmp_assignments_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+tmp_clusters_	cluster-utils.cc	/^  std::vector<Clusterable*> tmp_clusters_;$/;"	m	class:kaldi::BottomUpClusterer	file:
+to_pdf_	context-dep.h	/^  EventMap *to_pdf_;  \/\/ owned here.$/;"	m	class:kaldi::ContextDependency
+top_n	cluster-utils.h	/^  int32 top_n;  \/\/ must be >= 2.$/;"	m	struct:kaldi::RefineClustersOptions
+uint_smaller	cluster-utils.cc	/^typedef uint16 uint_smaller;$/;"	t	namespace:kaldi	file:
+use_tooltips_	tree-renderer.h	/^  bool use_tooltips_;  \/\/ use tooltips(useful in e.g. SVG) instead of labels$/;"	m	class:kaldi::TreeRenderer
+var_floor_	clusterable-classes.h	/^  double var_floor_;  \/\/ should be common for all objects created.$/;"	m	class:kaldi::GaussClusterable
+verbose	cluster-utils.h	/^  bool verbose;$/;"	m	struct:kaldi::ClusterKMeansOptions
+x2_	clusterable-classes.h	/^  BaseFloat x2_;$/;"	m	class:kaldi::ScalarClusterable
+x2_stats	clusterable-classes.h	/^  SubVector<double> x2_stats() const { return stats_.Row(1); }$/;"	f	class:kaldi::GaussClusterable
+x_	clusterable-classes.h	/^  BaseFloat x_;$/;"	m	class:kaldi::ScalarClusterable
+x_stats	clusterable-classes.h	/^  SubVector<double> x_stats() const { return stats_.Row(0); }$/;"	f	class:kaldi::GaussClusterable
+yes_	build-tree-utils.cc	/^  DecisionTreeSplitter *yes_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+yes_	event-map.h	/^  EventMap *yes_;  \/\/ owned here.$/;"	m	class:kaldi::SplitEventMap
+yes_set_	build-tree-utils.cc	/^  std::vector<EventValueType> yes_set_;$/;"	m	class:kaldi::DecisionTreeSplitter	file:
+yes_set_	event-map.h	/^  ConstIntegerSet<EventValueType> yes_set_;  \/\/ more efficient Map function.$/;"	m	class:kaldi::SplitEventMap
+~BottomUpClusterer	cluster-utils.cc	/^  ~BottomUpClusterer() { DeletePointers(&tmp_clusters_); }$/;"	f	class:kaldi::BottomUpClusterer
+~CompartmentalizedBottomUpClusterer	cluster-utils.cc	/^  ~CompartmentalizedBottomUpClusterer() {$/;"	f	class:kaldi::CompartmentalizedBottomUpClusterer
+~ContextDependency	context-dep.h	/^  ~ContextDependency() { if (to_pdf_ != NULL) delete to_pdf_; }$/;"	f	class:kaldi::ContextDependency
+~DecisionTreeSplitter	build-tree-utils.cc	/^  ~DecisionTreeSplitter() {$/;"	f	class:kaldi::DecisionTreeSplitter
+~EventMap	event-map.h	/^  virtual ~EventMap() {}$/;"	f	class:kaldi::EventMap
+~GaussClusterable	clusterable-classes.h	/^  virtual ~GaussClusterable() {}$/;"	f	class:kaldi::GaussClusterable
+~Questions	build-tree-questions.h	/^  ~Questions() { kaldi::DeletePointers(&key_options_); }$/;"	f	class:kaldi::Questions
+~SplitEventMap	event-map.h	/^  virtual ~SplitEventMap() { Destroy(); }$/;"	f	class:kaldi::SplitEventMap
+~TableEventMap	event-map.h	/^  virtual ~TableEventMap() {$/;"	f	class:kaldi::TableEventMap
+~TreeClusterer	cluster-utils.cc	/^  ~TreeClusterer() {$/;"	f	class:kaldi::TreeClusterer

@@ -1,0 +1,143 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AccCmvnStatsForPair	compute-cmvn-stats-two-channel.cc	/^void AccCmvnStatsForPair(const std::string &utt1, const std::string &utt2,$/;"	f	namespace:kaldi
+AccCmvnStatsWrapper	compute-cmvn-stats.cc	/^bool AccCmvnStatsWrapper(std::string utt,$/;"	f	namespace:kaldi
+AppendFeats	paste-feats.cc	/^bool AppendFeats(const std::vector<Matrix<BaseFloat> > &in,$/;"	f	namespace:kaldi
+Backtrace	interpolate-pitch.cc	/^  void Backtrace(Matrix<BaseFloat> *mat, PitchInterpolatorStats *stats) {$/;"	f	class:kaldi::PitchInterpolator	file:
+Check	interpolate-pitch.cc	/^  void Check() const {$/;"	f	struct:kaldi::PitchInterpolatorOptions
+ComputeTransitionProb	interpolate-pitch.cc	/^  void ComputeTransitionProb(int32 t) {$/;"	f	class:kaldi::PitchInterpolator	file:
+Forward	interpolate-pitch.cc	/^  void Forward() {$/;"	f	class:kaldi::PitchInterpolator	file:
+GetUtterancePairs	compute-cmvn-stats-two-channel.cc	/^void GetUtterancePairs(const std::string &reco2file_and_channel_rxfilename,$/;"	f	namespace:kaldi
+IncreaseTransformDimension	extend-transform-dim.cc	/^void IncreaseTransformDimension(int32 new_dimension,$/;"	f	namespace:kaldi
+IncreaseTransformDimension	get-full-lda-mat.cc	/^void IncreaseTransformDimension(int32 new_dimension,$/;"	f	namespace:kaldi
+InitValues	interpolate-pitch.cc	/^  void InitValues(const Matrix<BaseFloat> &mat) {$/;"	f	class:kaldi::PitchInterpolator	file:
+LinearlyInterpolatePitch	interpolate-pitch.cc	/^void LinearlyInterpolatePitch(Matrix<BaseFloat> *mat) {$/;"	f	namespace:kaldi
+MultiplyObsProb	interpolate-pitch.cc	/^  void MultiplyObsProb(int32 t) {$/;"	f	class:kaldi::PitchInterpolator	file:
+PitchInterpolator	interpolate-pitch.cc	/^  PitchInterpolator(const PitchInterpolatorOptions &opts,$/;"	f	class:kaldi::PitchInterpolator
+PitchInterpolator	interpolate-pitch.cc	/^class PitchInterpolator {$/;"	c	namespace:kaldi	file:
+PitchInterpolatorOptions	interpolate-pitch.cc	/^  PitchInterpolatorOptions(): pitch_interval(4.0),$/;"	f	struct:kaldi::PitchInterpolatorOptions
+PitchInterpolatorOptions	interpolate-pitch.cc	/^struct PitchInterpolatorOptions {$/;"	s	namespace:kaldi	file:
+PitchInterpolatorStats	interpolate-pitch.cc	/^  PitchInterpolatorStats(): num_frames_tot(0), num_frames_zero(0),$/;"	f	struct:kaldi::PitchInterpolatorStats
+PitchInterpolatorStats	interpolate-pitch.cc	/^struct PitchInterpolatorStats {$/;"	s	namespace:kaldi	file:
+Print	interpolate-pitch.cc	/^  void Print() {$/;"	f	struct:kaldi::PitchInterpolatorStats
+ProcessPovFeatures	process-pitch-feats.cc	/^void ProcessPovFeatures(Matrix<BaseFloat> *mat) {$/;"	f	namespace:kaldi
+Register	interpolate-pitch.cc	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PitchInterpolatorOptions
+SetToMovingAverage	process-pitch-feats.cc	/^void SetToMovingAverage(int32 average_window_size,$/;"	f	namespace:kaldi
+SubtractMovingAverage	process-pitch-feats.cc	/^void SubtractMovingAverage(int32 normalization_window_size,$/;"	f	namespace:kaldi
+TakeLogOfPitch	process-pitch-feats.cc	/^void TakeLogOfPitch(Matrix<BaseFloat> *mat) {$/;"	f	namespace:kaldi
+back_pointers_	interpolate-pitch.cc	/^  std::vector<std::vector<int32> > back_pointers_; \/\/ at each t, points to best pitch$/;"	m	class:kaldi::PitchInterpolator	file:
+interpolator_factor	interpolate-pitch.cc	/^  BaseFloat interpolator_factor; \/\/ This affects the tendency of the algorithm to$/;"	m	struct:kaldi::PitchInterpolatorOptions	file:
+kaldi	compute-cmvn-stats-two-channel.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	compute-cmvn-stats.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	compute-irm-targets.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	extend-transform-dim.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	get-full-lda-mat.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	interpolate-pitch.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	paste-feats.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	process-pitch-feats.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::AccCmvnStatsForPair	compute-cmvn-stats-two-channel.cc	/^void AccCmvnStatsForPair(const std::string &utt1, const std::string &utt2,$/;"	f	namespace:kaldi
+kaldi::AccCmvnStatsWrapper	compute-cmvn-stats.cc	/^bool AccCmvnStatsWrapper(std::string utt,$/;"	f	namespace:kaldi
+kaldi::AppendFeats	paste-feats.cc	/^bool AppendFeats(const std::vector<Matrix<BaseFloat> > &in,$/;"	f	namespace:kaldi
+kaldi::GetUtterancePairs	compute-cmvn-stats-two-channel.cc	/^void GetUtterancePairs(const std::string &reco2file_and_channel_rxfilename,$/;"	f	namespace:kaldi
+kaldi::IncreaseTransformDimension	extend-transform-dim.cc	/^void IncreaseTransformDimension(int32 new_dimension,$/;"	f	namespace:kaldi
+kaldi::IncreaseTransformDimension	get-full-lda-mat.cc	/^void IncreaseTransformDimension(int32 new_dimension,$/;"	f	namespace:kaldi
+kaldi::LinearlyInterpolatePitch	interpolate-pitch.cc	/^void LinearlyInterpolatePitch(Matrix<BaseFloat> *mat) {$/;"	f	namespace:kaldi
+kaldi::PitchInterpolator	interpolate-pitch.cc	/^class PitchInterpolator {$/;"	c	namespace:kaldi	file:
+kaldi::PitchInterpolator::Backtrace	interpolate-pitch.cc	/^  void Backtrace(Matrix<BaseFloat> *mat, PitchInterpolatorStats *stats) {$/;"	f	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::ComputeTransitionProb	interpolate-pitch.cc	/^  void ComputeTransitionProb(int32 t) {$/;"	f	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::Forward	interpolate-pitch.cc	/^  void Forward() {$/;"	f	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::InitValues	interpolate-pitch.cc	/^  void InitValues(const Matrix<BaseFloat> &mat) {$/;"	f	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::MultiplyObsProb	interpolate-pitch.cc	/^  void MultiplyObsProb(int32 t) {$/;"	f	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::PitchInterpolator	interpolate-pitch.cc	/^  PitchInterpolator(const PitchInterpolatorOptions &opts,$/;"	f	class:kaldi::PitchInterpolator
+kaldi::PitchInterpolator::back_pointers_	interpolate-pitch.cc	/^  std::vector<std::vector<int32> > back_pointers_; \/\/ at each t, points to best pitch$/;"	m	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::log_alpha_	interpolate-pitch.cc	/^  Vector<BaseFloat> log_alpha_;$/;"	m	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::min_pitch_	interpolate-pitch.cc	/^  std::vector<BaseFloat> min_pitch_; \/\/ Bottom of discretization range...$/;"	m	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::num_frames_	interpolate-pitch.cc	/^  int32 num_frames_; \/\/ number of frames;$/;"	m	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::num_pitches_	interpolate-pitch.cc	/^  int32 num_pitches_; \/\/ Number of discrete pitch intervals.$/;"	m	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::opts_	interpolate-pitch.cc	/^  const PitchInterpolatorOptions &opts_;$/;"	m	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::p_voicing_	interpolate-pitch.cc	/^  std::vector<BaseFloat> p_voicing_; \/\/ p(voicing) times max_voicing_prob_; or zero if$/;"	m	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::pitch_	interpolate-pitch.cc	/^  std::vector<int32> pitch_; \/\/ observed pitch, discretized; [it's don't-care if algorithm had no$/;"	m	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolator::prev_log_alpha_	interpolate-pitch.cc	/^  Vector<BaseFloat> prev_log_alpha_;$/;"	m	class:kaldi::PitchInterpolator	file:
+kaldi::PitchInterpolatorOptions	interpolate-pitch.cc	/^struct PitchInterpolatorOptions {$/;"	s	namespace:kaldi	file:
+kaldi::PitchInterpolatorOptions::Check	interpolate-pitch.cc	/^  void Check() const {$/;"	f	struct:kaldi::PitchInterpolatorOptions
+kaldi::PitchInterpolatorOptions::PitchInterpolatorOptions	interpolate-pitch.cc	/^  PitchInterpolatorOptions(): pitch_interval(4.0),$/;"	f	struct:kaldi::PitchInterpolatorOptions
+kaldi::PitchInterpolatorOptions::Register	interpolate-pitch.cc	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PitchInterpolatorOptions
+kaldi::PitchInterpolatorOptions::interpolator_factor	interpolate-pitch.cc	/^  BaseFloat interpolator_factor; \/\/ This affects the tendency of the algorithm to$/;"	m	struct:kaldi::PitchInterpolatorOptions	file:
+kaldi::PitchInterpolatorOptions::max_pitch_change_per_frame	interpolate-pitch.cc	/^  BaseFloat max_pitch_change_per_frame;$/;"	m	struct:kaldi::PitchInterpolatorOptions	file:
+kaldi::PitchInterpolatorOptions::max_voicing_prob	interpolate-pitch.cc	/^  BaseFloat max_voicing_prob; \/\/ p(voicing) we use at the end of the range when it was observed$/;"	m	struct:kaldi::PitchInterpolatorOptions	file:
+kaldi::PitchInterpolatorOptions::pitch_interval	interpolate-pitch.cc	/^  BaseFloat pitch_interval; \/\/ Discretization interval [affects efficiency]$/;"	m	struct:kaldi::PitchInterpolatorOptions	file:
+kaldi::PitchInterpolatorStats	interpolate-pitch.cc	/^struct PitchInterpolatorStats {$/;"	s	namespace:kaldi	file:
+kaldi::PitchInterpolatorStats::PitchInterpolatorStats	interpolate-pitch.cc	/^  PitchInterpolatorStats(): num_frames_tot(0), num_frames_zero(0),$/;"	f	struct:kaldi::PitchInterpolatorStats
+kaldi::PitchInterpolatorStats::Print	interpolate-pitch.cc	/^  void Print() {$/;"	f	struct:kaldi::PitchInterpolatorStats
+kaldi::PitchInterpolatorStats::num_frames_changed	interpolate-pitch.cc	/^  int64 num_frames_changed; \/\/ #frames that were not zero originally, but$/;"	m	struct:kaldi::PitchInterpolatorStats	file:
+kaldi::PitchInterpolatorStats::num_frames_tot	interpolate-pitch.cc	/^  int64 num_frames_tot;$/;"	m	struct:kaldi::PitchInterpolatorStats	file:
+kaldi::PitchInterpolatorStats::num_frames_zero	interpolate-pitch.cc	/^  int64 num_frames_zero; \/\/ #frames that were zero in original pitch.$/;"	m	struct:kaldi::PitchInterpolatorStats	file:
+kaldi::ProcessPovFeatures	process-pitch-feats.cc	/^void ProcessPovFeatures(Matrix<BaseFloat> *mat) {$/;"	f	namespace:kaldi
+kaldi::SetToMovingAverage	process-pitch-feats.cc	/^void SetToMovingAverage(int32 average_window_size,$/;"	f	namespace:kaldi
+kaldi::SubtractMovingAverage	process-pitch-feats.cc	/^void SubtractMovingAverage(int32 normalization_window_size,$/;"	f	namespace:kaldi
+kaldi::TakeLogOfPitch	process-pitch-feats.cc	/^void TakeLogOfPitch(Matrix<BaseFloat> *mat) {$/;"	f	namespace:kaldi
+kaldi::sigmoid	compute-irm-targets.cc	/^  BaseFloat sigmoid(BaseFloat x) {$/;"	f	namespace:kaldi
+log_alpha_	interpolate-pitch.cc	/^  Vector<BaseFloat> log_alpha_;$/;"	m	class:kaldi::PitchInterpolator	file:
+main	add-deltas-sdc.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	add-deltas.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	append-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	apply-cmvn-sliding.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	apply-cmvn.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compare-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compose-transforms.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-cmvn-stats-two-channel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-cmvn-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-fbank-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-irm-targets.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-kaldi-pitch-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-mfcc-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-plp-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-spectrogram-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-feats-to-htk.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-feats-to-sphinx.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	extend-transform-dim.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	extract-feature-segments.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	extract-rows.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	extract-segments.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	feat-to-dim.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	feat-to-len.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fmpe-acc-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fmpe-apply-transform.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fmpe-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fmpe-est.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fmpe-init.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fmpe-sum-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	get-full-lda-mat.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	interpolate-pitch.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	paste-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	process-kaldi-pitch-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	process-pitch-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	remove-mean.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	reverse-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	select-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	splice-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	subsample-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	subset-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	transform-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	wav-add-noise.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	wav-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	wav-to-duration.cc	/^int main(int argc, char *argv[]) {$/;"	f
+max_pitch_change_per_frame	interpolate-pitch.cc	/^  BaseFloat max_pitch_change_per_frame;$/;"	m	struct:kaldi::PitchInterpolatorOptions	file:
+max_voicing_prob	interpolate-pitch.cc	/^  BaseFloat max_voicing_prob; \/\/ p(voicing) we use at the end of the range when it was observed$/;"	m	struct:kaldi::PitchInterpolatorOptions	file:
+min_pitch_	interpolate-pitch.cc	/^  std::vector<BaseFloat> min_pitch_; \/\/ Bottom of discretization range...$/;"	m	class:kaldi::PitchInterpolator	file:
+num_frames_	interpolate-pitch.cc	/^  int32 num_frames_; \/\/ number of frames;$/;"	m	class:kaldi::PitchInterpolator	file:
+num_frames_changed	interpolate-pitch.cc	/^  int64 num_frames_changed; \/\/ #frames that were not zero originally, but$/;"	m	struct:kaldi::PitchInterpolatorStats	file:
+num_frames_tot	interpolate-pitch.cc	/^  int64 num_frames_tot;$/;"	m	struct:kaldi::PitchInterpolatorStats	file:
+num_frames_zero	interpolate-pitch.cc	/^  int64 num_frames_zero; \/\/ #frames that were zero in original pitch.$/;"	m	struct:kaldi::PitchInterpolatorStats	file:
+num_pitches_	interpolate-pitch.cc	/^  int32 num_pitches_; \/\/ Number of discrete pitch intervals.$/;"	m	class:kaldi::PitchInterpolator	file:
+opts_	interpolate-pitch.cc	/^  const PitchInterpolatorOptions &opts_;$/;"	m	class:kaldi::PitchInterpolator	file:
+p_voicing_	interpolate-pitch.cc	/^  std::vector<BaseFloat> p_voicing_; \/\/ p(voicing) times max_voicing_prob_; or zero if$/;"	m	class:kaldi::PitchInterpolator	file:
+pitch_	interpolate-pitch.cc	/^  std::vector<int32> pitch_; \/\/ observed pitch, discretized; [it's don't-care if algorithm had no$/;"	m	class:kaldi::PitchInterpolator	file:
+pitch_interval	interpolate-pitch.cc	/^  BaseFloat pitch_interval; \/\/ Discretization interval [affects efficiency]$/;"	m	struct:kaldi::PitchInterpolatorOptions	file:
+prev_log_alpha_	interpolate-pitch.cc	/^  Vector<BaseFloat> prev_log_alpha_;$/;"	m	class:kaldi::PitchInterpolator	file:
+sigmoid	compute-irm-targets.cc	/^  BaseFloat sigmoid(BaseFloat x) {$/;"	f	namespace:kaldi

@@ -1,0 +1,973 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A_	exponential-transform.h	/^  Matrix<BaseFloat> A_;  \/\/ d+1 by d+1 matrix; last row 0 0 0 .. 0 0.$/;"	m	class:kaldi::ExponentialTransform
+A_	lvtln.h	/^  std::vector<Matrix<BaseFloat> > A_;  \/\/ Square parts of the FMLLR matrices.$/;"	m	class:kaldi::LinearVtln
+AccCmvnStats	cmvn.cc	/^void AccCmvnStats(const MatrixBase<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccCmvnStats	cmvn.cc	/^void AccCmvnStats(const VectorBase<BaseFloat> &feats, BaseFloat weight, MatrixBase<double> *stats) {$/;"	f	namespace:kaldi
+AccStats	fmpe.cc	/^void Fmpe::AccStats(const MatrixBase<BaseFloat> &feat_in,$/;"	f	class:kaldi::Fmpe
+AccuGradientScatter	basis-fmllr-diag-gmm.cc	/^void BasisFmllrAccus::AccuGradientScatter($/;"	f	class:kaldi::BasisFmllrAccus
+Accumulate	lda-estimate.cc	/^void LdaEstimate::Accumulate(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::LdaEstimate
+AccumulateChecks	fmpe.cc	/^void FmpeStats::AccumulateChecks(const MatrixBase<BaseFloat> &feats,$/;"	f	class:kaldi::FmpeStats
+AccumulateForGaussian	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::AccumulateForGaussian($/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+AccumulateForGaussian	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::AccumulateForGaussian($/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+AccumulateForGmm	fmllr-diag-gmm.cc	/^BaseFloat FmllrDiagGmmAccs::AccumulateForGmm(const DiagGmm &pdf,$/;"	f	class:kaldi::FmllrDiagGmmAccs
+AccumulateForGmm	fmllr-raw.cc	/^BaseFloat FmllrRawAccs::AccumulateForGmm(const DiagGmm &gmm,$/;"	f	class:kaldi::FmllrRawAccs
+AccumulateForGmm	regtree-fmllr-diag-gmm.cc	/^BaseFloat RegtreeFmllrDiagGmmAccs::AccumulateForGmm($/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+AccumulateForGmm	regtree-mllr-diag-gmm.cc	/^BaseFloat RegtreeMllrDiagGmmAccs::AccumulateForGmm($/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+AccumulateForGmmPreselect	fmllr-diag-gmm.cc	/^BaseFloat FmllrDiagGmmAccs::AccumulateForGmmPreselect($/;"	f	class:kaldi::FmllrDiagGmmAccs
+AccumulateFromGmm	mllt.cc	/^BaseFloat MlltAccs::AccumulateFromGmm(const DiagGmm &gmm,$/;"	f	class:kaldi::MlltAccs
+AccumulateFromGmmPreselect	mllt.cc	/^BaseFloat MlltAccs::AccumulateFromGmmPreselect($/;"	f	class:kaldi::MlltAccs
+AccumulateFromPosteriors	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs:: AccumulateFromPosteriors($/;"	f	class:kaldi::FmllrDiagGmmAccs
+AccumulateFromPosteriors	fmllr-raw.cc	/^void FmllrRawAccs::AccumulateFromPosteriors($/;"	f	class:kaldi::FmllrRawAccs
+AccumulateFromPosteriors	hlda.cc	/^AccumulateFromPosteriors(int32 pdf_id,$/;"	f	class:kaldi::HldaAccsDiagGmm
+AccumulateFromPosteriors	mllt.cc	/^void MlltAccs::AccumulateFromPosteriors(const DiagGmm &gmm,$/;"	f	class:kaldi::MlltAccs
+AccumulateFromPosteriorsPreselect	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs:: AccumulateFromPosteriorsPreselect($/;"	f	class:kaldi::FmllrDiagGmmAccs
+Add	transform-common.cc	/^void AffineXformStats::Add(const AffineXformStats &other) {$/;"	f	class:kaldi::AffineXformStats
+AddMeanOffset	lda-estimate.cc	/^void LdaEstimate::AddMeanOffset(const VectorBase<double> &mean_dbl,$/;"	f	class:kaldi::LdaEstimate
+AffineXformStats	transform-common.h	/^  AffineXformStats() {}$/;"	f	class:kaldi::AffineXformStats
+AffineXformStats	transform-common.h	/^  AffineXformStats(const AffineXformStats &other): beta_(other.beta_),$/;"	f	class:kaldi::AffineXformStats
+AffineXformStats	transform-common.h	/^class AffineXformStats {$/;"	c	namespace:kaldi
+Ahat_	exponential-transform.h	/^  Matrix<double> Ahat_;  \/\/ local gradient w.r.t. the first d rows of A.$/;"	m	class:kaldi::ExponentialTransformAccsA
+ApplyAffineTransform	transform-common.cc	/^void ApplyAffineTransform(const MatrixBase<BaseFloat> &xform,$/;"	f	namespace:kaldi
+ApplyC	fmpe.cc	/^void Fmpe::ApplyC(MatrixBase<BaseFloat> *feat_out, bool reverse) const {$/;"	f	class:kaldi::Fmpe
+ApplyCReverse	fmpe.h	/^  void ApplyCReverse(MatrixBase<BaseFloat> *deriv) const { ApplyC(deriv, true); }$/;"	f	class:kaldi::Fmpe
+ApplyCmvn	cmvn.cc	/^void ApplyCmvn(const MatrixBase<double> &stats,$/;"	f	namespace:kaldi
+ApplyContext	fmpe.cc	/^void Fmpe::ApplyContext(const MatrixBase<BaseFloat> &intermed_feat,$/;"	f	class:kaldi::Fmpe
+ApplyContextReverse	fmpe.cc	/^void Fmpe::ApplyContextReverse(const MatrixBase<BaseFloat> &feat_deriv,$/;"	f	class:kaldi::Fmpe
+ApplyFeatureTransformToStats	fmllr-diag-gmm.cc	/^void ApplyFeatureTransformToStats(const MatrixBase<BaseFloat> &xform,$/;"	f	namespace:kaldi
+ApplyModelTransformToStats	fmllr-diag-gmm.cc	/^void ApplyModelTransformToStats(const MatrixBase<BaseFloat> &xform,$/;"	f	namespace:kaldi
+ApplyProjection	fmpe.cc	/^void Fmpe::ApplyProjection(const MatrixBase<BaseFloat> &feat_in,$/;"	f	class:kaldi::Fmpe
+ApplyProjectionReverse	fmpe.cc	/^void Fmpe::ApplyProjectionReverse(const MatrixBase<BaseFloat> &feat_in,$/;"	f	class:kaldi::Fmpe
+B_	exponential-transform.h	/^  Matrix<BaseFloat> B_;  \/\/ d+1 by d+1 matrix; last row 0 0 0 .. 0 1.$/;"	m	class:kaldi::ExponentialTransform
+Base2RegClass	regtree-fmllr-diag-gmm.h	/^  int32 Base2RegClass(int32 bclass) const { return bclass2xforms_[bclass]; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+BasisFmllrAccus	basis-fmllr-diag-gmm.h	/^  BasisFmllrAccus() { }$/;"	f	class:kaldi::BasisFmllrAccus
+BasisFmllrAccus	basis-fmllr-diag-gmm.h	/^  explicit BasisFmllrAccus(int32 dim) {$/;"	f	class:kaldi::BasisFmllrAccus
+BasisFmllrAccus	basis-fmllr-diag-gmm.h	/^class BasisFmllrAccus {$/;"	c	namespace:kaldi
+BasisFmllrEstimate	basis-fmllr-diag-gmm.h	/^  BasisFmllrEstimate() { }$/;"	f	class:kaldi::BasisFmllrEstimate
+BasisFmllrEstimate	basis-fmllr-diag-gmm.h	/^  explicit BasisFmllrEstimate(int32 dim) {$/;"	f	class:kaldi::BasisFmllrEstimate
+BasisFmllrEstimate	basis-fmllr-diag-gmm.h	/^class BasisFmllrEstimate {$/;"	c	namespace:kaldi
+BasisFmllrOptions	basis-fmllr-diag-gmm.h	/^  BasisFmllrOptions(): num_iters(10), size_scale(0.2), min_count(50.0), step_size_iters(3) { }$/;"	f	struct:kaldi::BasisFmllrOptions
+BasisFmllrOptions	basis-fmllr-diag-gmm.h	/^struct BasisFmllrOptions {$/;"	s	namespace:kaldi
+BuildTree	regression-tree.cc	/^void RegressionTree::BuildTree(const Vector<BaseFloat> &state_occs,$/;"	f	class:kaldi::RegressionTree
+C_	fmpe.h	/^  TpMatrix<BaseFloat> C_; \/\/ Cholesky factor of the variance Sigma of$/;"	m	class:kaldi::Fmpe
+CalBasisFmllrStepSize	basis-fmllr-diag-gmm.cc	/^double CalBasisFmllrStepSize(const AffineXformStats &spk_stats,$/;"	f	namespace:kaldi
+CommitSingleFrameStats	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs::CommitSingleFrameStats() {$/;"	f	class:kaldi::FmllrDiagGmmAccs
+CommitSingleFrameStats	fmllr-raw.cc	/^void FmllrRawAccs::CommitSingleFrameStats() {$/;"	f	class:kaldi::FmllrRawAccs
+ComposeTransforms	transform-common.cc	/^bool ComposeTransforms(const Matrix<BaseFloat> &a, const Matrix<BaseFloat> &b,$/;"	f	namespace:kaldi
+CompressedAffineXformStats	compressed-transform-stats.h	/^  CompressedAffineXformStats(): beta_(0.0) { }$/;"	f	class:kaldi::CompressedAffineXformStats
+CompressedAffineXformStats	compressed-transform-stats.h	/^  CompressedAffineXformStats(const AffineXformStats &input) {$/;"	f	class:kaldi::CompressedAffineXformStats
+CompressedAffineXformStats	compressed-transform-stats.h	/^class CompressedAffineXformStats {$/;"	c	namespace:kaldi
+ComputeAmDiagPrecond	basis-fmllr-diag-gmm.cc	/^void BasisFmllrEstimate::ComputeAmDiagPrecond(const AmDiagGmm &am_gmm,$/;"	f	class:kaldi::BasisFmllrEstimate
+ComputeAmGmmFeatureDeriv	fmpe.cc	/^BaseFloat ComputeAmGmmFeatureDeriv(const AmDiagGmm &am_gmm,$/;"	f	namespace:kaldi
+ComputeC	fmpe.cc	/^void Fmpe::ComputeC() {$/;"	f	class:kaldi::Fmpe
+ComputeFeatures	fmpe.cc	/^void Fmpe::ComputeFeatures(const MatrixBase<BaseFloat> &feat_in,$/;"	f	class:kaldi::Fmpe
+ComputeFmllrLogDet	fmllr-diag-gmm.h	/^inline BaseFloat ComputeFmllrLogDet(const Matrix<BaseFloat> &fmllr_mat) {$/;"	f	namespace:kaldi
+ComputeFmllrMatrixDiagGmm	fmllr-diag-gmm.cc	/^BaseFloat ComputeFmllrMatrixDiagGmm(const MatrixBase<BaseFloat> &in_xform,$/;"	f	namespace:kaldi
+ComputeFmllrMatrixDiagGmmDiagonal	fmllr-diag-gmm.cc	/^BaseFloat ComputeFmllrMatrixDiagGmmDiagonal(const MatrixBase<BaseFloat> &in_xform,$/;"	f	namespace:kaldi
+ComputeFmllrMatrixDiagGmmFull	fmllr-diag-gmm.cc	/^BaseFloat ComputeFmllrMatrixDiagGmmFull(const MatrixBase<BaseFloat> &in_xform,$/;"	f	namespace:kaldi
+ComputeFmllrMatrixDiagGmmOffset	fmllr-diag-gmm.cc	/^BaseFloat ComputeFmllrMatrixDiagGmmOffset(const MatrixBase<BaseFloat> &in_xform,$/;"	f	namespace:kaldi
+ComputeGconsts	decodable-am-diag-gmm-regtree.cc	/^static void ComputeGconsts(const VectorBase<BaseFloat> &weights,$/;"	f	namespace:kaldi
+ComputeLogDets	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::ComputeLogDets() {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+ComputeM	fmllr-raw.cc	/^void FmllrRawAccs::ComputeM(std::vector<Matrix<double> > *M) const {$/;"	f	class:kaldi::FmllrRawAccs
+ComputeMllrMatrix	regtree-mllr-diag-gmm.cc	/^static void ComputeMllrMatrix(const Matrix<double> &K,$/;"	f	namespace:kaldi
+ComputeStddevs	fmpe.cc	/^void Fmpe::ComputeStddevs() {$/;"	f	class:kaldi::Fmpe
+ComputeTransform	basis-fmllr-diag-gmm.cc	/^double BasisFmllrEstimate::ComputeTransform($/;"	f	class:kaldi::BasisFmllrEstimate
+ComputeTransform	lvtln.cc	/^void LinearVtln::ComputeTransform(const FmllrDiagGmmAccs &accs,$/;"	f	class:kaldi::LinearVtln
+ConvertToPerRowStats	fmllr-raw.cc	/^void FmllrRawAccs::ConvertToPerRowStats($/;"	f	class:kaldi::FmllrRawAccs
+ConvertToSimpleStats	fmllr-raw.cc	/^void FmllrRawAccs::ConvertToSimpleStats($/;"	f	class:kaldi::FmllrRawAccs
+CopyFromAffineXformStats	compressed-transform-stats.cc	/^void CompressedAffineXformStats::CopyFromAffineXformStats($/;"	f	class:kaldi::CompressedAffineXformStats
+CopyStats	transform-common.cc	/^void AffineXformStats::CopyStats(const AffineXformStats &other) {$/;"	f	class:kaldi::AffineXformStats
+CopyToAffineXformStats	compressed-transform-stats.cc	/^void CompressedAffineXformStats::CopyToAffineXformStats($/;"	f	class:kaldi::CompressedAffineXformStats
+DataHasChanged	fmllr-diag-gmm.cc	/^bool FmllrDiagGmmAccs::DataHasChanged(const VectorBase<BaseFloat> &data) const {$/;"	f	class:kaldi::FmllrDiagGmmAccs
+DataHasChanged	fmllr-raw.cc	/^bool FmllrRawAccs::DataHasChanged(const VectorBase<BaseFloat> &data) const {$/;"	f	class:kaldi::FmllrRawAccs
+DecodableAmDiagGmmRegtreeFmllr	decodable-am-diag-gmm-regtree.h	/^  DecodableAmDiagGmmRegtreeFmllr(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+DecodableAmDiagGmmRegtreeFmllr	decodable-am-diag-gmm-regtree.h	/^class DecodableAmDiagGmmRegtreeFmllr: public DecodableAmDiagGmmUnmapped {$/;"	c	namespace:kaldi
+DecodableAmDiagGmmRegtreeMllr	decodable-am-diag-gmm-regtree.h	/^  DecodableAmDiagGmmRegtreeMllr(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+DecodableAmDiagGmmRegtreeMllr	decodable-am-diag-gmm-regtree.h	/^class DecodableAmDiagGmmRegtreeMllr: public DecodableAmDiagGmmUnmapped {$/;"	c	namespace:kaldi
+DerivMinus	fmpe.cc	/^SubMatrix<BaseFloat> FmpeStats::DerivMinus() const { \/\/ const-ness not preserved.$/;"	f	class:kaldi::FmpeStats
+DerivPlus	fmpe.cc	/^SubMatrix<BaseFloat> FmpeStats::DerivPlus() const { \/\/ const-ness not preserved.$/;"	f	class:kaldi::FmpeStats
+Dim	exponential-transform.h	/^  int32 Dim() const { return A_.NumRows() - 1; }  \/\/ returns feature dim.$/;"	f	class:kaldi::ExponentialTransform
+Dim	lda-estimate.h	/^  int32 Dim() const { return first_acc_.NumCols(); }$/;"	f	class:kaldi::LdaEstimate
+Dim	lvtln.h	/^  int32 Dim() const { KALDI_ASSERT(!A_.empty()); return A_[0].NumRows(); }$/;"	f	class:kaldi::LinearVtln
+Dim	mllt.h	/^  int32 Dim() { return G_.size(); };  \/\/ returns model dimension.$/;"	f	class:kaldi::MlltAccs
+Dim	regtree-fmllr-diag-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+Dim	regtree-fmllr-diag-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+Dim	regtree-mllr-diag-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+Dim	transform-common.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::AffineXformStats
+DoChecks	fmpe.cc	/^void FmpeStats::DoChecks() {$/;"	f	class:kaldi::FmpeStats
+Estimate	lda-estimate.cc	/^void LdaEstimate::Estimate(const LdaEstimateOptions &opts,$/;"	f	class:kaldi::LdaEstimate
+EstimateFmllrBasis	basis-fmllr-diag-gmm.cc	/^void BasisFmllrEstimate::EstimateFmllrBasis($/;"	f	class:kaldi::BasisFmllrEstimate
+EtNormalizeType	exponential-transform.h	/^enum EtNormalizeType {$/;"	g	namespace:kaldi
+ExponentialTransform	exponential-transform.h	/^  ExponentialTransform() { } \/\/ typically use this constructor only prior to$/;"	f	class:kaldi::ExponentialTransform
+ExponentialTransform	exponential-transform.h	/^  ExponentialTransform(int32 dim, EtNormalizeType norm_type, int32 seed = 0) {$/;"	f	class:kaldi::ExponentialTransform
+ExponentialTransform	exponential-transform.h	/^class ExponentialTransform {$/;"	c	namespace:kaldi
+ExponentialTransformAccsA	exponential-transform.h	/^  ExponentialTransformAccsA() { } \/\/ typically use this constructor prior to Read().$/;"	f	class:kaldi::ExponentialTransformAccsA
+ExponentialTransformAccsA	exponential-transform.h	/^  ExponentialTransformAccsA(int32 dim) { Init(dim); }$/;"	f	class:kaldi::ExponentialTransformAccsA
+ExponentialTransformAccsA	exponential-transform.h	/^class ExponentialTransformAccsA {$/;"	c	namespace:kaldi
+ExponentialTransformUpdateAOptions	exponential-transform.h	/^  ExponentialTransformUpdateAOptions(): learning_rate(1.0), renormalize(true) { }$/;"	f	struct:kaldi::ExponentialTransformUpdateAOptions
+ExponentialTransformUpdateAOptions	exponential-transform.h	/^struct ExponentialTransformUpdateAOptions {$/;"	s	namespace:kaldi
+ExtractOneG	compressed-transform-stats.cc	/^void CompressedAffineXformStats::ExtractOneG(const SubVector<double> &linearized,$/;"	f	class:kaldi::CompressedAffineXformStats
+FeatDim	fmpe.h	/^  int32 FeatDim() const { return gmm_.Dim(); }$/;"	f	class:kaldi::Fmpe
+FeatureDim	hlda.h	/^  int32 FeatureDim() { return (S_.empty() ? 0 : S_[0].NumRows()); }$/;"	f	class:kaldi::HldaAccsDiagGmm
+FmllrAuxFuncDiagGmm	fmllr-diag-gmm.cc	/^double FmllrAuxFuncDiagGmm(const MatrixBase<double> &xform,$/;"	f	namespace:kaldi
+FmllrAuxFuncDiagGmm	fmllr-diag-gmm.cc	/^float FmllrAuxFuncDiagGmm(const MatrixBase<float> &xform,$/;"	f	namespace:kaldi
+FmllrAuxfGradient	fmllr-diag-gmm.cc	/^BaseFloat FmllrAuxfGradient(const MatrixBase<BaseFloat> &xform,$/;"	f	namespace:kaldi
+FmllrDiagGmmAccs	fmllr-diag-gmm.cc	/^FmllrDiagGmmAccs::FmllrDiagGmmAccs(const DiagGmm &gmm,$/;"	f	class:kaldi::FmllrDiagGmmAccs
+FmllrDiagGmmAccs	fmllr-diag-gmm.h	/^  FmllrDiagGmmAccs(const FmllrOptions &opts = FmllrOptions()):$/;"	f	class:kaldi::FmllrDiagGmmAccs
+FmllrDiagGmmAccs	fmllr-diag-gmm.h	/^  explicit FmllrDiagGmmAccs(const FmllrDiagGmmAccs &other):$/;"	f	class:kaldi::FmllrDiagGmmAccs
+FmllrDiagGmmAccs	fmllr-diag-gmm.h	/^  explicit FmllrDiagGmmAccs(int32 dim, const FmllrOptions &opts = FmllrOptions()):$/;"	f	class:kaldi::FmllrDiagGmmAccs
+FmllrDiagGmmAccs	fmllr-diag-gmm.h	/^class FmllrDiagGmmAccs: public AffineXformStats {$/;"	c	namespace:kaldi
+FmllrInnerUpdate	fmllr-diag-gmm.cc	/^void FmllrInnerUpdate(SpMatrix<double> &inv_G,$/;"	f	namespace:kaldi
+FmllrOptions	fmllr-diag-gmm.h	/^  FmllrOptions(): update_type("full"), min_count(500.0), num_iters(40) { }$/;"	f	struct:kaldi::FmllrOptions
+FmllrOptions	fmllr-diag-gmm.h	/^struct FmllrOptions {$/;"	s	namespace:kaldi
+FmllrRawAccs	fmllr-raw.cc	/^FmllrRawAccs::FmllrRawAccs(int32 raw_dim,$/;"	f	class:kaldi::FmllrRawAccs
+FmllrRawAccs	fmllr-raw.h	/^  FmllrRawAccs() { }$/;"	f	class:kaldi::FmllrRawAccs
+FmllrRawAccs	fmllr-raw.h	/^class FmllrRawAccs {$/;"	c	namespace:kaldi
+FmllrRawOptions	fmllr-raw.h	/^  FmllrRawOptions(): min_count(100.0), num_iters(20) { }$/;"	f	struct:kaldi::FmllrRawOptions
+FmllrRawOptions	fmllr-raw.h	/^struct FmllrRawOptions {$/;"	s	namespace:kaldi
+Fmpe	fmpe.cc	/^Fmpe::Fmpe(const DiagGmm &gmm, const FmpeOptions &config): gmm_(gmm),$/;"	f	class:kaldi::Fmpe
+Fmpe	fmpe.h	/^  Fmpe() {}$/;"	f	class:kaldi::Fmpe
+Fmpe	fmpe.h	/^class Fmpe {$/;"	c	namespace:kaldi
+FmpeOptions	fmpe.h	/^  FmpeOptions(): context_expansion("0,1.0:-1,1.0:1,1.0:-2,0.5;-3,0.5:2,0.5;3,0.5:-4,0.5;-5,0.5:4,0.5;5,0.5:-6,0.333;-7,0.333;-8,0.333:6,0.333;7,0.333;8,0.333"),$/;"	f	struct:kaldi::FmpeOptions
+FmpeOptions	fmpe.h	/^struct FmpeOptions {$/;"	s	namespace:kaldi
+FmpeStats	fmpe.h	/^  FmpeStats() { };$/;"	f	struct:kaldi::FmpeStats
+FmpeStats	fmpe.h	/^  FmpeStats(const Fmpe &fmpe) { Init(fmpe); }$/;"	f	struct:kaldi::FmpeStats
+FmpeStats	fmpe.h	/^struct FmpeStats {$/;"	s	namespace:kaldi
+FmpeUpdateOptions	fmpe.h	/^  FmpeUpdateOptions(): learning_rate(0.1), l2_weight(100.0) { }$/;"	f	struct:kaldi::FmpeUpdateOptions
+FmpeUpdateOptions	fmpe.h	/^struct FmpeUpdateOptions {$/;"	s	namespace:kaldi
+FullDim	fmllr-raw.h	/^  int32 FullDim() const { return full_transform_.NumRows(); }$/;"	f	class:kaldi::FmllrRawAccs
+G_	compressed-transform-stats.h	/^  CompressedMatrix G_; \/\/ This dim x [ 1 + (0.5*(dim+1)*(dim+2))] matrix$/;"	m	class:kaldi::CompressedAffineXformStats
+G_	exponential-transform.h	/^  std::vector<SpMatrix<double> > G_;  \/\/ Like the G stats of$/;"	m	class:kaldi::ExponentialTransformAccsA
+G_	mllt.h	/^  std::vector<SpMatrix<double> > G_;  \/\/ the G matrices (d matrices of size d x d)$/;"	m	class:kaldi::MlltAccs
+G_	transform-common.h	/^  std::vector< SpMatrix<double> > G_;$/;"	m	class:kaldi::AffineXformStats
+GatherStats	regression-tree.cc	/^bool RegressionTree::GatherStats(const vector<AffineXformStats*> &stats_in,$/;"	f	class:kaldi::RegressionTree
+Gauss2BaseclassId	regression-tree.h	/^  int32 Gauss2BaseclassId(size_t pdf_id, size_t gauss_id) const {$/;"	f	class:kaldi::RegressionTree
+GetATransform	exponential-transform.h	/^  void GetATransform(Matrix<BaseFloat> *transform) const {$/;"	f	class:kaldi::ExponentialTransform
+GetActiveParents	regression-tree.cc	/^static bool GetActiveParents(int32 node, const vector<int32> &parents,$/;"	f	namespace:kaldi
+GetAuxf	fmllr-raw.cc	/^double FmllrRawAccs::GetAuxf(const Vector<double> &simple_linear_stats,$/;"	f	class:kaldi::FmllrRawAccs
+GetBaseclass	regression-tree.h	/^  const std::vector< std::pair<int32, int32> >& GetBaseclass(int32 bclass)$/;"	f	class:kaldi::RegressionTree
+GetFeatDeriv	fmpe-test.cc	/^void GetFeatDeriv(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+GetGmmLike	fmpe-test.cc	/^BaseFloat GetGmmLike(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+GetLogDets	regtree-fmllr-diag-gmm.h	/^inline void RegtreeFmllrDiagGmm::GetLogDets(VectorBase<BaseFloat> *out) const {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+GetStats	lda-estimate.cc	/^void LdaEstimate::GetStats(SpMatrix<double> *total_covar,$/;"	f	class:kaldi::LdaEstimate
+GetTransform	lvtln.cc	/^void LinearVtln::GetTransform(int32 i, MatrixBase<BaseFloat> *transform) const {$/;"	f	class:kaldi::LinearVtln
+GetTransformedMeans	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::GetTransformedMeans(const RegressionTree &regtree,$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+GetWarp	lvtln.cc	/^BaseFloat LinearVtln::GetWarp(int32 i) const {$/;"	f	class:kaldi::LinearVtln
+GetXformMatrix	regtree-fmllr-diag-gmm.h	/^inline void RegtreeFmllrDiagGmm::GetXformMatrix(int32 xform_index,$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+GetXformedGconsts	decodable-am-diag-gmm-regtree.cc	/^const Vector<BaseFloat>& DecodableAmDiagGmmRegtreeMllr::GetXformedGconsts($/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+GetXformedMeanInvVars	decodable-am-diag-gmm-regtree.cc	/^const Matrix<BaseFloat>& DecodableAmDiagGmmRegtreeMllr::GetXformedMeanInvVars($/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+HldaAccsDiagGmm	hlda.h	/^  HldaAccsDiagGmm() { }$/;"	f	class:kaldi::HldaAccsDiagGmm
+HldaAccsDiagGmm	hlda.h	/^  HldaAccsDiagGmm(const AmDiagGmm &model,$/;"	f	class:kaldi::HldaAccsDiagGmm
+HldaAccsDiagGmm	hlda.h	/^class HldaAccsDiagGmm {$/;"	c	namespace:kaldi
+Init	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs::SingleFrameStats::Init(int32 dim) {$/;"	f	class:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+Init	fmllr-diag-gmm.h	/^  void Init(size_t dim) {$/;"	f	class:kaldi::FmllrDiagGmmAccs
+Init	fmpe.cc	/^void FmpeStats::Init(const Fmpe &fmpe) {$/;"	f	class:kaldi::FmpeStats
+Init	hlda.cc	/^void HldaAccsDiagGmm::Init(const AmDiagGmm &am,$/;"	f	class:kaldi::HldaAccsDiagGmm
+Init	lda-estimate.cc	/^void LdaEstimate::Init(int32 num_classes, int32 dimension) {$/;"	f	class:kaldi::LdaEstimate
+Init	mllt.cc	/^void MlltAccs::Init(int32 dim, BaseFloat rand_prune) {  \/\/ initializes (destroys anything that was there before).$/;"	f	class:kaldi::MlltAccs
+Init	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::Init(size_t num_xforms, size_t dim) {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+Init	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::Init(size_t num_bclass, size_t dim) {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+Init	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::Init(int32 num_xforms, int32 dim) {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+Init	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::Init(int32 num_bclass, int32 dim) {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+Init	transform-common.cc	/^void AffineXformStats::Init(int32 dim, int32 num_gs) {$/;"	f	class:kaldi::AffineXformStats
+InitCache	decodable-am-diag-gmm-regtree.cc	/^void DecodableAmDiagGmmRegtreeMllr::InitCache() {$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+InitCmvnStats	cmvn.cc	/^void InitCmvnStats(int32 dim, Matrix<double> *stats) {$/;"	f	namespace:kaldi
+InitFmllr	fmllr-diag-gmm.h	/^inline void InitFmllr(int32 dim,$/;"	f	namespace:kaldi
+InitRandomGmm	fmllr-diag-gmm-test.cc	/^void InitRandomGmm (DiagGmm *gmm_in) {$/;"	f	namespace:kaldi
+InitRandomGmm	fmllr-raw-test.cc	/^void InitRandomGmm (DiagGmm *gmm_in) {$/;"	f	namespace:kaldi
+InitSingleFrameStats	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs::InitSingleFrameStats(const VectorBase<BaseFloat> &data) {$/;"	f	class:kaldi::FmllrDiagGmmAccs
+InitSingleFrameStats	fmllr-raw.cc	/^void FmllrRawAccs::InitSingleFrameStats(const VectorBase<BaseFloat> &data) {$/;"	f	class:kaldi::FmllrRawAccs
+KALDI_TRANSFORM_BASIS_FMLLR_DIAG_GMM_H_	basis-fmllr-diag-gmm.h	22;"	d
+KALDI_TRANSFORM_CMVN_H_	cmvn.h	23;"	d
+KALDI_TRANSFORM_COMPRESSED_TRANSFORM_STATS_H_	compressed-transform-stats.h	22;"	d
+KALDI_TRANSFORM_DECODABLE_AM_DIAG_GMM_REGTREE_H_	decodable-am-diag-gmm-regtree.h	23;"	d
+KALDI_TRANSFORM_EXPONENTIAL_TRANSFORM_H_	exponential-transform.h	21;"	d
+KALDI_TRANSFORM_FMLLR_DIAG_GMM_H_	fmllr-diag-gmm.h	23;"	d
+KALDI_TRANSFORM_FMLLR_RAW_H_	fmllr-raw.h	22;"	d
+KALDI_TRANSFORM_FMPE_H_	fmpe.h	22;"	d
+KALDI_TRANSFORM_HLDA_H_	hlda.h	21;"	d
+KALDI_TRANSFORM_LDA_ESTIMATE_H_	lda-estimate.h	21;"	d
+KALDI_TRANSFORM_LVTLN_H_	lvtln.h	22;"	d
+KALDI_TRANSFORM_MLLT_H_	mllt.h	22;"	d
+KALDI_TRANSFORM_REGRESSION_TREE_H_	regression-tree.h	23;"	d
+KALDI_TRANSFORM_REGTREE_FMLLR_DIAG_GMM_H_	regtree-fmllr-diag-gmm.h	23;"	d
+KALDI_TRANSFORM_REGTREE_MLLR_DIAG_GMM_H_	regtree-mllr-diag-gmm.h	21;"	d
+KALDI_TRANSFORM_TRANSFORM_COMMON_H_	transform-common.h	21;"	d
+K_	compressed-transform-stats.h	/^  Matrix<float> K_;$/;"	m	class:kaldi::CompressedAffineXformStats
+K_	transform-common.h	/^  Matrix<double> K_;   $/;"	m	class:kaldi::AffineXformStats
+LdaEstimate	lda-estimate.h	/^  LdaEstimate() {}$/;"	f	class:kaldi::LdaEstimate
+LdaEstimate	lda-estimate.h	/^class LdaEstimate {$/;"	c	namespace:kaldi
+LdaEstimateOptions	lda-estimate.h	/^  LdaEstimateOptions(): remove_offset(false), dim(40), allow_large_dim(false),$/;"	f	struct:kaldi::LdaEstimateOptions
+LdaEstimateOptions	lda-estimate.h	/^struct LdaEstimateOptions {$/;"	s	namespace:kaldi
+LinearVtln	lvtln.cc	/^LinearVtln::LinearVtln(int32 dim, int32 num_classes, int32 default_class) {$/;"	f	class:kaldi::LinearVtln
+LinearVtln	lvtln.h	/^  LinearVtln() { } \/\/ This initializer will probably be used prior to calling$/;"	f	class:kaldi::LinearVtln
+LinearVtln	lvtln.h	/^class LinearVtln {$/;"	c	namespace:kaldi
+LogLikelihood	decodable-am-diag-gmm-regtree.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+LogLikelihood	decodable-am-diag-gmm-regtree.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+LogLikelihoodZeroBased	decodable-am-diag-gmm-regtree.cc	/^BaseFloat DecodableAmDiagGmmRegtreeFmllr::LogLikelihoodZeroBased(int32 frame,$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+LogLikelihoodZeroBased	decodable-am-diag-gmm-regtree.cc	/^BaseFloat DecodableAmDiagGmmRegtreeMllr::LogLikelihoodZeroBased(int32 frame,$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+MakeBUnit	exponential-transform.h	/^  void MakeBUnit() { B_.SetUnit(); }$/;"	f	class:kaldi::ExponentialTransform
+MakeGauss2Bclass	regression-tree.cc	/^void RegressionTree::MakeGauss2Bclass(const AmDiagGmm &am) {$/;"	f	class:kaldi::RegressionTree
+MllrAuxFunction	regtree-mllr-diag-gmm.cc	/^static BaseFloat MllrAuxFunction(const Matrix<BaseFloat> &xform,$/;"	f	namespace:kaldi
+MlltAccs	mllt.h	/^  MlltAccs(): rand_prune_(0.0), beta_(0.0) { }$/;"	f	class:kaldi::MlltAccs
+MlltAccs	mllt.h	/^  MlltAccs(int32 dim, BaseFloat rand_prune = 0.25) { Init(dim, rand_prune); }$/;"	f	class:kaldi::MlltAccs
+MlltAccs	mllt.h	/^class MlltAccs {$/;"	c	namespace:kaldi
+ModelDim	fmllr-raw.h	/^  int32 ModelDim() const { return model_dim_; }$/;"	f	class:kaldi::FmllrRawAccs
+ModelDim	hlda.h	/^  int32 ModelDim() { return (S_.empty() ? 0 : S_.size()-1); }$/;"	f	class:kaldi::HldaAccsDiagGmm
+NumBaseClasses	regtree-fmllr-diag-gmm.h	/^  int32 NumBaseClasses() const { return bclass2xforms_.size(); }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+NumBaseClasses	regtree-fmllr-diag-gmm.h	/^  int32 NumBaseClasses() const { return num_baseclasses_; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+NumBaseClasses	regtree-mllr-diag-gmm.h	/^  int32 NumBaseClasses() const { return num_baseclasses_; }$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+NumBaseclasses	regression-tree.h	/^  int32 NumBaseclasses() const { return num_baseclasses_; }$/;"	f	class:kaldi::RegressionTree
+NumClasses	lda-estimate.h	/^  int32 NumClasses() const { return first_acc_.NumRows(); }$/;"	f	class:kaldi::LdaEstimate
+NumClasses	lvtln.h	/^  int32 NumClasses() const { return A_.size(); }$/;"	f	class:kaldi::LinearVtln
+NumContexts	fmpe.h	/^  int32 NumContexts() const { return static_cast<int32>(contexts_.size()); }$/;"	f	class:kaldi::Fmpe
+NumFrames	decodable-am-diag-gmm-regtree.h	/^  virtual int32 NumFrames() { return feature_matrix_.NumRows(); }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+NumFrames	decodable-am-diag-gmm-regtree.h	/^  virtual int32 NumFrames() { return feature_matrix_.NumRows(); }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+NumGauss	fmpe.h	/^  int32 NumGauss() const { return gmm_.NumGauss(); }$/;"	f	class:kaldi::Fmpe
+NumIndices	decodable-am-diag-gmm-regtree.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+NumIndices	decodable-am-diag-gmm-regtree.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+NumRegClasses	regtree-fmllr-diag-gmm.h	/^  int32 NumRegClasses() const { return num_xforms_; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+PrepareOneG	compressed-transform-stats.cc	/^void CompressedAffineXformStats::PrepareOneG(const SpMatrix<double> &Gi,$/;"	f	class:kaldi::CompressedAffineXformStats
+ProjectionTNumCols	fmpe.h	/^  int32 ProjectionTNumCols() const { return FeatDim() * NumContexts(); }$/;"	f	class:kaldi::Fmpe
+ProjectionTNumRows	fmpe.h	/^  int32 ProjectionTNumRows() const { return (FeatDim()+1) * NumGauss(); }$/;"	f	class:kaldi::Fmpe
+Q_	fmllr-raw.h	/^  Matrix<double> Q_; \/\/ linear stats, indexed [model_dim + 1][full_dim + 1]$/;"	m	class:kaldi::FmllrRawAccs
+RandFullCova	regtree-fmllr-diag-gmm-test.cc	/^RandFullCova(Matrix<BaseFloat> *matrix) {$/;"	f	namespace:kaldi
+RandomAccessRegtreeFmllrDiagGmmReader	regtree-fmllr-diag-gmm.h	/^            RandomAccessRegtreeFmllrDiagGmmReader;$/;"	t	namespace:kaldi
+RandomAccessRegtreeFmllrDiagGmmReaderMapped	regtree-fmllr-diag-gmm.h	/^            RandomAccessRegtreeFmllrDiagGmmReaderMapped;$/;"	t	namespace:kaldi
+RandomAccessRegtreeMllrDiagGmmReader	regtree-mllr-diag-gmm.h	/^            RandomAccessRegtreeMllrDiagGmmReader;$/;"	t	namespace:kaldi
+RandomAccessRegtreeMllrDiagGmmReaderMapped	regtree-mllr-diag-gmm.h	/^            RandomAccessRegtreeMllrDiagGmmReaderMapped;$/;"	t	namespace:kaldi
+RawDim	fmllr-raw.h	/^  int32 RawDim() const { return raw_dim_; }$/;"	f	class:kaldi::FmllrRawAccs
+Read	basis-fmllr-diag-gmm.cc	/^void BasisFmllrAccus::Read(std::istream &in_stream, bool binary,$/;"	f	class:kaldi::BasisFmllrAccus
+Read	compressed-transform-stats.cc	/^void CompressedAffineXformStats::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::CompressedAffineXformStats
+Read	fmpe.cc	/^void Fmpe::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::Fmpe
+Read	fmpe.cc	/^void FmpeOptions::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::FmpeOptions
+Read	fmpe.cc	/^void FmpeStats::Read(std::istream &is, bool binary, bool add) {$/;"	f	class:kaldi::FmpeStats
+Read	hlda.cc	/^void HldaAccsDiagGmm::Read(std::istream &is, bool binary, bool add) {$/;"	f	class:kaldi::HldaAccsDiagGmm
+Read	lda-estimate.cc	/^void LdaEstimate::Read(std::istream &in_stream, bool binary, bool add) {$/;"	f	class:kaldi::LdaEstimate
+Read	lvtln.cc	/^void LinearVtln::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::LinearVtln
+Read	mllt.cc	/^void MlltAccs::Read(std::istream &is, bool binary, bool add) {$/;"	f	class:kaldi::MlltAccs
+Read	regression-tree.cc	/^void RegressionTree::Read(std::istream &in, bool binary,$/;"	f	class:kaldi::RegressionTree
+Read	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::Read(std::istream &in, bool binary) {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+Read	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::Read(std::istream &in, bool binary, bool add) {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+Read	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::Read(std::istream &in, bool binary) {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+Read	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::Read(std::istream &in, bool binary, bool add) {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+Read	transform-common.cc	/^void AffineXformStats::Read(std::istream &in, bool binary, bool add) {$/;"	f	class:kaldi::AffineXformStats
+ReadBasis	basis-fmllr-diag-gmm.cc	/^void BasisFmllrEstimate::ReadBasis(std::istream &in_stream, bool binary,$/;"	f	class:kaldi::BasisFmllrEstimate
+Register	basis-fmllr-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::BasisFmllrOptions
+Register	exponential-transform.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::ExponentialTransformUpdateAOptions
+Register	fmllr-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FmllrOptions
+Register	fmllr-raw.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FmllrRawOptions
+Register	fmpe.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FmpeOptions
+Register	fmpe.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FmpeUpdateOptions
+Register	lda-estimate.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::LdaEstimateOptions
+Register	regtree-fmllr-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::RegtreeFmllrOptions
+Register	regtree-mllr-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::RegtreeMllrOptions
+RegressionTree	regression-tree.h	/^  RegressionTree() {}$/;"	f	class:kaldi::RegressionTree
+RegressionTree	regression-tree.h	/^class RegressionTree {$/;"	c	namespace:kaldi
+RegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm.h	/^  RegtreeFmllrDiagGmm() : dim_(-1), num_xforms_(-1), valid_logdet_(false) {}$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+RegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm.h	/^  explicit RegtreeFmllrDiagGmm(const RegtreeFmllrDiagGmm &other)$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+RegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm.h	/^class RegtreeFmllrDiagGmm {$/;"	c	namespace:kaldi
+RegtreeFmllrDiagGmmAccs	regtree-fmllr-diag-gmm.h	/^  RegtreeFmllrDiagGmmAccs() : num_baseclasses_(-1), dim_(-1) {}$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+RegtreeFmllrDiagGmmAccs	regtree-fmllr-diag-gmm.h	/^class RegtreeFmllrDiagGmmAccs {$/;"	c	namespace:kaldi
+RegtreeFmllrDiagGmmSeqReader	regtree-fmllr-diag-gmm.h	/^typedef SequentialTableReader< KaldiObjectHolder<RegtreeFmllrDiagGmm> >  RegtreeFmllrDiagGmmSeqReader;  $/;"	t	namespace:kaldi
+RegtreeFmllrDiagGmmWriter	regtree-fmllr-diag-gmm.h	/^typedef TableWriter< KaldiObjectHolder<RegtreeFmllrDiagGmm> >  RegtreeFmllrDiagGmmWriter;$/;"	t	namespace:kaldi
+RegtreeFmllrOptions	regtree-fmllr-diag-gmm.h	/^  RegtreeFmllrOptions(): update_type("full"), min_count(1000.0),$/;"	f	struct:kaldi::RegtreeFmllrOptions
+RegtreeFmllrOptions	regtree-fmllr-diag-gmm.h	/^struct RegtreeFmllrOptions {$/;"	s	namespace:kaldi
+RegtreeMllrDiagGmm	regtree-mllr-diag-gmm.h	/^  RegtreeMllrDiagGmm() {}$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+RegtreeMllrDiagGmm	regtree-mllr-diag-gmm.h	/^class RegtreeMllrDiagGmm {$/;"	c	namespace:kaldi
+RegtreeMllrDiagGmmAccs	regtree-mllr-diag-gmm.h	/^  RegtreeMllrDiagGmmAccs() {}$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+RegtreeMllrDiagGmmAccs	regtree-mllr-diag-gmm.h	/^class RegtreeMllrDiagGmmAccs {$/;"	c	namespace:kaldi
+RegtreeMllrDiagGmmSeqReader	regtree-mllr-diag-gmm.h	/^            RegtreeMllrDiagGmmSeqReader;$/;"	t	namespace:kaldi
+RegtreeMllrDiagGmmWriter	regtree-mllr-diag-gmm.h	/^            RegtreeMllrDiagGmmWriter;$/;"	t	namespace:kaldi
+RegtreeMllrOptions	regtree-mllr-diag-gmm.h	/^  RegtreeMllrOptions(): min_count(1000.0), use_regtree(true) { }$/;"	f	struct:kaldi::RegtreeMllrOptions
+RegtreeMllrOptions	regtree-mllr-diag-gmm.h	/^struct RegtreeMllrOptions {$/;"	s	namespace:kaldi
+ResizeAccus	basis-fmllr-diag-gmm.cc	/^void BasisFmllrAccus::ResizeAccus(int32 dim) {$/;"	f	class:kaldi::BasisFmllrAccus
+S_	fmllr-raw.h	/^  Matrix<double> S_; \/\/ quadratic stats, indexed$/;"	m	class:kaldi::FmllrRawAccs
+S_	hlda.h	/^  std::vector<SpMatrix<double> > S_;  \/\/ the S matrices: [model-dim+1] matrices of size (feat-dim) x (feat-dim)$/;"	m	class:kaldi::HldaAccsDiagGmm
+Scale	lda-estimate.cc	/^void LdaEstimate::Scale(BaseFloat f) {$/;"	f	class:kaldi::LdaEstimate
+SetContexts	fmpe.cc	/^void Fmpe::SetContexts(std::string context_str) {$/;"	f	class:kaldi::Fmpe
+SetParameters	regtree-fmllr-diag-gmm.h	/^inline void RegtreeFmllrDiagGmm::SetParameters(const MatrixBase<BaseFloat> &mat,$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+SetParameters	regtree-mllr-diag-gmm.h	/^inline void RegtreeMllrDiagGmm::SetParameters(const MatrixBase<BaseFloat> &mat,$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+SetTransform	lvtln.cc	/^void LinearVtln::SetTransform(int32 i, const MatrixBase<BaseFloat> &transform) {$/;"	f	class:kaldi::LinearVtln
+SetUnit	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::SetUnit() {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+SetUnit	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::SetUnit() {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+SetWarp	lvtln.cc	/^void LinearVtln::SetWarp(int32 i, BaseFloat warp) {$/;"	f	class:kaldi::LinearVtln
+SetZero	fmllr-raw.cc	/^void FmllrRawAccs::SetZero() {$/;"	f	class:kaldi::FmllrRawAccs
+SetZero	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::SetZero() {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+SetZero	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::SetZero() {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+SetZero	transform-common.cc	/^void AffineXformStats::SetZero() {$/;"	f	class:kaldi::AffineXformStats
+SingleFrameStats	fmllr-diag-gmm.h	/^    SingleFrameStats(const SingleFrameStats &s): x(s.x), a(s.a), b(s.b),$/;"	f	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+SingleFrameStats	fmllr-diag-gmm.h	/^    SingleFrameStats(int32 dim = 0) { Init(dim); }$/;"	f	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+SingleFrameStats	fmllr-diag-gmm.h	/^  struct SingleFrameStats {$/;"	s	class:kaldi::FmllrDiagGmmAccs
+SingleFrameStats	fmllr-raw.h	/^  struct SingleFrameStats {$/;"	s	class:kaldi::FmllrRawAccs
+SpliceWidth	fmllr-raw.h	/^  int32 SpliceWidth() const { return FullDim() \/ RawDim(); }$/;"	f	class:kaldi::FmllrRawAccs
+TestFmpe	fmpe-test.cc	/^void TestFmpe() {$/;"	f	namespace:kaldi
+TestMllrAccsIO	regtree-mllr-diag-gmm-test.cc	/^void TestMllrAccsIO(const kaldi::AmDiagGmm &am_gmm,$/;"	f
+TestXformMean	regtree-mllr-diag-gmm-test.cc	/^void TestXformMean(const kaldi::AmDiagGmm &am_gmm,$/;"	f
+TransModel	decodable-am-diag-gmm-regtree.h	/^  const TransitionModel *TransModel() { return &trans_model_; }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+TransModel	decodable-am-diag-gmm-regtree.h	/^  const TransitionModel *TransModel() { return &trans_model_; }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+TransformFeature	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::TransformFeature(const VectorBase<BaseFloat> &in,$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+TransformModel	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::TransformModel(const RegressionTree &regtree,$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+UnitTestEstimateLda	lda-estimate-test.cc	/^UnitTestEstimateLda() {$/;"	f
+UnitTestFmllrDiagGmm	fmllr-diag-gmm-test.cc	/^void UnitTestFmllrDiagGmm() {$/;"	f	namespace:kaldi
+UnitTestFmllrDiagGmmDiagonal	fmllr-diag-gmm-test.cc	/^void UnitTestFmllrDiagGmmDiagonal() {$/;"	f	namespace:kaldi
+UnitTestFmllrDiagGmmOffset	fmllr-diag-gmm-test.cc	/^void UnitTestFmllrDiagGmmOffset() {$/;"	f	namespace:kaldi
+UnitTestFmllrRaw	fmllr-raw-test.cc	/^void UnitTestFmllrRaw(bool use_offset) {$/;"	f	namespace:kaldi
+UnitTestRegressionTree	regression-tree-test.cc	/^UnitTestRegressionTree() {$/;"	f
+UnitTestRegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm-test.cc	/^void UnitTestRegtreeFmllrDiagGmm(cova_type feature_type, size_t max_bclass) {$/;"	f	namespace:kaldi
+UnitTestRegtreeMllrDiagGmm	regtree-mllr-diag-gmm-test.cc	/^void UnitTestRegtreeMllrDiagGmm() {$/;"	f
+Update	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs::Update(const FmllrOptions &opts,$/;"	f	class:kaldi::FmllrDiagGmmAccs
+Update	fmllr-raw.cc	/^void FmllrRawAccs::Update(const FmllrRawOptions &opts,$/;"	f	class:kaldi::FmllrRawAccs
+Update	fmpe.cc	/^BaseFloat Fmpe::Update(const FmpeUpdateOptions &config,$/;"	f	class:kaldi::Fmpe
+Update	hlda.cc	/^void HldaAccsDiagGmm::Update(AmDiagGmm *am,$/;"	f	class:kaldi::HldaAccsDiagGmm
+Update	mllt.cc	/^void MlltAccs::Update(double beta,$/;"	f	class:kaldi::MlltAccs
+Update	mllt.h	/^  void Update(MatrixBase<BaseFloat> *M,$/;"	f	class:kaldi::MlltAccs
+Update	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::Update(const RegressionTree &regtree,$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+Update	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::Update(const RegressionTree &regtree,$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+Validate	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::Validate() {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+Write	basis-fmllr-diag-gmm.cc	/^void BasisFmllrAccus::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::BasisFmllrAccus
+Write	compressed-transform-stats.cc	/^void CompressedAffineXformStats::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::CompressedAffineXformStats
+Write	fmpe.cc	/^void Fmpe::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::Fmpe
+Write	fmpe.cc	/^void FmpeOptions::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::FmpeOptions
+Write	fmpe.cc	/^void FmpeStats::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::FmpeStats
+Write	hlda.cc	/^void HldaAccsDiagGmm::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::HldaAccsDiagGmm
+Write	lda-estimate.cc	/^void LdaEstimate::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::LdaEstimate
+Write	lvtln.cc	/^void LinearVtln::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::LinearVtln
+Write	mllt.cc	/^void MlltAccs::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::MlltAccs
+Write	regression-tree.cc	/^void RegressionTree::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegressionTree
+Write	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+Write	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+Write	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+Write	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+Write	transform-common.cc	/^void AffineXformStats::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::AffineXformStats
+WriteBasis	basis-fmllr-diag-gmm.cc	/^void BasisFmllrEstimate::WriteBasis(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::BasisFmllrEstimate
+ZeroAccumulators	lda-estimate.cc	/^void LdaEstimate::ZeroAccumulators() {$/;"	f	class:kaldi::LdaEstimate
+a	fmllr-diag-gmm.h	/^    Vector<BaseFloat> a; \/\/ linear term in per-frame auxf; dim is model-dim.$/;"	m	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+a	fmllr-raw.h	/^    Vector<double> a; \/\/ linear term in per-frame auxf; dim is model-dim.$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+allow_large_dim	lda-estimate.h	/^  bool allow_large_dim;$/;"	m	struct:kaldi::LdaEstimateOptions
+b	fmllr-diag-gmm.h	/^    Vector<BaseFloat> b; \/\/ quadratic term in per-frame auxf; dim is model-dim.$/;"	m	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+b	fmllr-raw.h	/^    Vector<double> b; \/\/ quadratic term in per-frame auxf; dim is model-dim.$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+baseclass_stats	regtree-fmllr-diag-gmm.h	/^  const std::vector<AffineXformStats*> &baseclass_stats() const {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+baseclass_stats	regtree-mllr-diag-gmm.h	/^  const std::vector<AffineXformStats*> &baseclass_stats() const {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+baseclass_stats_	regtree-fmllr-diag-gmm.h	/^  std::vector<AffineXformStats*> baseclass_stats_;$/;"	m	class:kaldi::RegtreeFmllrDiagGmmAccs
+baseclass_stats_	regtree-mllr-diag-gmm.h	/^  std::vector<AffineXformStats*> baseclass_stats_;$/;"	m	class:kaldi::RegtreeMllrDiagGmmAccs
+baseclasses_	regression-tree.h	/^  std::vector< std::vector< std::pair<int32, int32> > > baseclasses_;$/;"	m	class:kaldi::RegressionTree
+basis_size_	basis-fmllr-diag-gmm.h	/^  int32 basis_size_;$/;"	m	class:kaldi::BasisFmllrEstimate
+bclass2xforms_	regtree-fmllr-diag-gmm.h	/^  std::vector<int32> bclass2xforms_;$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+bclass2xforms_	regtree-mllr-diag-gmm.h	/^  std::vector<int32> bclass2xforms_;$/;"	m	class:kaldi::RegtreeMllrDiagGmm
+beta_	basis-fmllr-diag-gmm.h	/^  double beta_;$/;"	m	class:kaldi::BasisFmllrAccus
+beta_	compressed-transform-stats.h	/^  float beta_;$/;"	m	class:kaldi::CompressedAffineXformStats
+beta_	exponential-transform.h	/^  double beta_;  \/\/ sum of speaker betas.  for diagnostics.$/;"	m	class:kaldi::ExponentialTransformAccsA
+beta_	mllt.h	/^  double beta_;  \/\/ count.$/;"	m	class:kaldi::MlltAccs
+beta_	transform-common.h	/^  double beta_;        $/;"	m	class:kaldi::AffineXformStats
+beta_t_	exponential-transform.h	/^  double beta_t_;  \/\/ sum of speaker betas times T.  for log-det term.$/;"	m	class:kaldi::ExponentialTransformAccsA
+checks	fmpe.h	/^  Matrix<double> checks; \/\/ contains quantities we use to check the$/;"	m	struct:kaldi::FmpeStats
+config_	fmpe.h	/^  FmpeOptions config_;$/;"	m	class:kaldi::Fmpe
+context_expansion	fmpe.h	/^  std::string context_expansion; \/\/ This string describes the various contexts...$/;"	m	struct:kaldi::FmpeOptions
+contexts_	fmpe.h	/^  std::vector<std::vector<std::pair<int32, BaseFloat> > > contexts_;$/;"	m	class:kaldi::Fmpe
+count	fmllr-diag-gmm.h	/^    double count;$/;"	m	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+count	fmllr-raw.h	/^    double count;$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+count_	fmllr-raw.h	/^  double count_; \/\/ The data-count.  Note: in accounting for the determinant, we will$/;"	m	class:kaldi::FmllrRawAccs
+cova_type	regtree-fmllr-diag-gmm-test.cc	/^enum cova_type {$/;"	g	namespace:kaldi	file:
+data_squared_	decodable-am-diag-gmm-regtree.h	/^  Vector<BaseFloat> data_squared_;  \/\/\/< Cached for fast likelihood calculation$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+default_class_	lvtln.h	/^  int32 default_class_;  \/\/ transform we return if we have no data.$/;"	m	class:kaldi::LinearVtln
+deriv	fmpe.h	/^  Matrix<BaseFloat> deriv; \/\/ contains positive and negative parts of derivatives$/;"	m	struct:kaldi::FmpeStats
+diag	regtree-fmllr-diag-gmm-test.cc	/^  diag$/;"	e	enum:kaldi::cova_type	file:
+dim	lda-estimate.h	/^  int32 dim;$/;"	m	struct:kaldi::LdaEstimateOptions
+dim_	basis-fmllr-diag-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::BasisFmllrAccus
+dim_	basis-fmllr-diag-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::BasisFmllrEstimate
+dim_	regtree-fmllr-diag-gmm.h	/^  int32 dim_;             \/\/\/< Dimension of feature vectors$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+dim_	regtree-fmllr-diag-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::RegtreeFmllrDiagGmmAccs
+dim_	regtree-mllr-diag-gmm.h	/^  int32 dim_;    \/\/\/< Dimension of feature vectors$/;"	m	class:kaldi::RegtreeMllrDiagGmmAccs
+dim_	regtree-mllr-diag-gmm.h	/^  int32 dim_;  \/\/\/< Dimension of feature vectors$/;"	m	class:kaldi::RegtreeMllrDiagGmm
+dim_	transform-common.h	/^  int32 dim_;      $/;"	m	class:kaldi::AffineXformStats
+first_acc_	lda-estimate.h	/^  Matrix<double> first_acc_;$/;"	m	class:kaldi::LdaEstimate
+fmllr_basis_	basis-fmllr-diag-gmm.h	/^  vector< Matrix<BaseFloat> > fmllr_basis_;$/;"	m	class:kaldi::BasisFmllrEstimate
+fmllr_xform_	decodable-am-diag-gmm-regtree.h	/^  const RegtreeFmllrDiagGmm &fmllr_xform_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+full	regtree-fmllr-diag-gmm-test.cc	/^  full,$/;"	e	enum:kaldi::cova_type	file:
+full_transform_	fmllr-raw.h	/^  Matrix<BaseFloat> full_transform_; \/\/ Does not include any offset term$/;"	m	class:kaldi::FmllrRawAccs
+gauss2bclass_	regression-tree.h	/^  std::vector< std::vector<int32> > gauss2bclass_;$/;"	m	class:kaldi::RegressionTree
+generate_features	regtree-fmllr-diag-gmm-test.cc	/^generate_features(cova_type covariance_type,$/;"	f	namespace:kaldi
+gmm_	fmpe.h	/^  DiagGmm gmm_; \/\/ The GMM used to get posteriors.$/;"	m	class:kaldi::Fmpe
+grad_scatter_	basis-fmllr-diag-gmm.h	/^  SpMatrix<BaseFloat> grad_scatter_;$/;"	m	class:kaldi::BasisFmllrAccus
+is_cached_	decodable-am-diag-gmm-regtree.h	/^  std::vector<bool> is_cached_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kEtNormalizeDiag	exponential-transform.h	/^  kEtNormalizeDiag,$/;"	e	enum:kaldi::EtNormalizeType
+kEtNormalizeNone	exponential-transform.h	/^  kEtNormalizeNone$/;"	e	enum:kaldi::EtNormalizeType
+kEtNormalizeOffset	exponential-transform.h	/^  kEtNormalizeOffset,$/;"	e	enum:kaldi::EtNormalizeType
+kaldi	basis-fmllr-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	basis-fmllr-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	cmvn.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	cmvn.h	/^namespace kaldi {$/;"	n
+kaldi	compressed-transform-stats.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	compressed-transform-stats.h	/^namespace kaldi {$/;"	n
+kaldi	decodable-am-diag-gmm-regtree.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	decodable-am-diag-gmm-regtree.h	/^namespace kaldi {$/;"	n
+kaldi	exponential-transform.h	/^namespace kaldi {$/;"	n
+kaldi	fmllr-diag-gmm-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	fmllr-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	fmllr-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	fmllr-raw-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	fmllr-raw.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	fmllr-raw.h	/^namespace kaldi {$/;"	n
+kaldi	fmpe-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	fmpe.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	fmpe.h	/^namespace kaldi {$/;"	n
+kaldi	hlda.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	hlda.h	/^namespace kaldi {$/;"	n
+kaldi	lda-estimate.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	lda-estimate.h	/^namespace kaldi {$/;"	n
+kaldi	lvtln.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	lvtln.h	/^namespace kaldi {$/;"	n
+kaldi	mllt.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	mllt.h	/^namespace kaldi {$/;"	n
+kaldi	regression-tree.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	regression-tree.h	/^namespace kaldi {$/;"	n
+kaldi	regtree-fmllr-diag-gmm-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	regtree-fmllr-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	regtree-fmllr-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	regtree-mllr-diag-gmm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	regtree-mllr-diag-gmm.h	/^namespace kaldi {$/;"	n
+kaldi	transform-common.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	transform-common.h	/^namespace kaldi {$/;"	n
+kaldi::AccCmvnStats	cmvn.cc	/^void AccCmvnStats(const MatrixBase<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccCmvnStats	cmvn.cc	/^void AccCmvnStats(const VectorBase<BaseFloat> &feats, BaseFloat weight, MatrixBase<double> *stats) {$/;"	f	namespace:kaldi
+kaldi::AffineXformStats	transform-common.h	/^class AffineXformStats {$/;"	c	namespace:kaldi
+kaldi::AffineXformStats::Add	transform-common.cc	/^void AffineXformStats::Add(const AffineXformStats &other) {$/;"	f	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::AffineXformStats	transform-common.h	/^  AffineXformStats() {}$/;"	f	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::AffineXformStats	transform-common.h	/^  AffineXformStats(const AffineXformStats &other): beta_(other.beta_),$/;"	f	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::CopyStats	transform-common.cc	/^void AffineXformStats::CopyStats(const AffineXformStats &other) {$/;"	f	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::Dim	transform-common.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::G_	transform-common.h	/^  std::vector< SpMatrix<double> > G_;$/;"	m	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::Init	transform-common.cc	/^void AffineXformStats::Init(int32 dim, int32 num_gs) {$/;"	f	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::K_	transform-common.h	/^  Matrix<double> K_;   $/;"	m	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::Read	transform-common.cc	/^void AffineXformStats::Read(std::istream &in, bool binary, bool add) {$/;"	f	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::SetZero	transform-common.cc	/^void AffineXformStats::SetZero() {$/;"	f	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::Write	transform-common.cc	/^void AffineXformStats::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::beta_	transform-common.h	/^  double beta_;        $/;"	m	class:kaldi::AffineXformStats
+kaldi::AffineXformStats::dim_	transform-common.h	/^  int32 dim_;      $/;"	m	class:kaldi::AffineXformStats
+kaldi::ApplyAffineTransform	transform-common.cc	/^void ApplyAffineTransform(const MatrixBase<BaseFloat> &xform,$/;"	f	namespace:kaldi
+kaldi::ApplyCmvn	cmvn.cc	/^void ApplyCmvn(const MatrixBase<double> &stats,$/;"	f	namespace:kaldi
+kaldi::ApplyFeatureTransformToStats	fmllr-diag-gmm.cc	/^void ApplyFeatureTransformToStats(const MatrixBase<BaseFloat> &xform,$/;"	f	namespace:kaldi
+kaldi::ApplyModelTransformToStats	fmllr-diag-gmm.cc	/^void ApplyModelTransformToStats(const MatrixBase<BaseFloat> &xform,$/;"	f	namespace:kaldi
+kaldi::BasisFmllrAccus	basis-fmllr-diag-gmm.h	/^class BasisFmllrAccus {$/;"	c	namespace:kaldi
+kaldi::BasisFmllrAccus::AccuGradientScatter	basis-fmllr-diag-gmm.cc	/^void BasisFmllrAccus::AccuGradientScatter($/;"	f	class:kaldi::BasisFmllrAccus
+kaldi::BasisFmllrAccus::BasisFmllrAccus	basis-fmllr-diag-gmm.h	/^  BasisFmllrAccus() { }$/;"	f	class:kaldi::BasisFmllrAccus
+kaldi::BasisFmllrAccus::BasisFmllrAccus	basis-fmllr-diag-gmm.h	/^  explicit BasisFmllrAccus(int32 dim) {$/;"	f	class:kaldi::BasisFmllrAccus
+kaldi::BasisFmllrAccus::Read	basis-fmllr-diag-gmm.cc	/^void BasisFmllrAccus::Read(std::istream &in_stream, bool binary,$/;"	f	class:kaldi::BasisFmllrAccus
+kaldi::BasisFmllrAccus::ResizeAccus	basis-fmllr-diag-gmm.cc	/^void BasisFmllrAccus::ResizeAccus(int32 dim) {$/;"	f	class:kaldi::BasisFmllrAccus
+kaldi::BasisFmllrAccus::Write	basis-fmllr-diag-gmm.cc	/^void BasisFmllrAccus::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::BasisFmllrAccus
+kaldi::BasisFmllrAccus::beta_	basis-fmllr-diag-gmm.h	/^  double beta_;$/;"	m	class:kaldi::BasisFmllrAccus
+kaldi::BasisFmllrAccus::dim_	basis-fmllr-diag-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::BasisFmllrAccus
+kaldi::BasisFmllrAccus::grad_scatter_	basis-fmllr-diag-gmm.h	/^  SpMatrix<BaseFloat> grad_scatter_;$/;"	m	class:kaldi::BasisFmllrAccus
+kaldi::BasisFmllrEstimate	basis-fmllr-diag-gmm.h	/^class BasisFmllrEstimate {$/;"	c	namespace:kaldi
+kaldi::BasisFmllrEstimate::BasisFmllrEstimate	basis-fmllr-diag-gmm.h	/^  BasisFmllrEstimate() { }$/;"	f	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrEstimate::BasisFmllrEstimate	basis-fmllr-diag-gmm.h	/^  explicit BasisFmllrEstimate(int32 dim) {$/;"	f	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrEstimate::ComputeAmDiagPrecond	basis-fmllr-diag-gmm.cc	/^void BasisFmllrEstimate::ComputeAmDiagPrecond(const AmDiagGmm &am_gmm,$/;"	f	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrEstimate::ComputeTransform	basis-fmllr-diag-gmm.cc	/^double BasisFmllrEstimate::ComputeTransform($/;"	f	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrEstimate::EstimateFmllrBasis	basis-fmllr-diag-gmm.cc	/^void BasisFmllrEstimate::EstimateFmllrBasis($/;"	f	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrEstimate::ReadBasis	basis-fmllr-diag-gmm.cc	/^void BasisFmllrEstimate::ReadBasis(std::istream &in_stream, bool binary,$/;"	f	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrEstimate::WriteBasis	basis-fmllr-diag-gmm.cc	/^void BasisFmllrEstimate::WriteBasis(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrEstimate::basis_size_	basis-fmllr-diag-gmm.h	/^  int32 basis_size_;$/;"	m	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrEstimate::dim_	basis-fmllr-diag-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrEstimate::fmllr_basis_	basis-fmllr-diag-gmm.h	/^  vector< Matrix<BaseFloat> > fmllr_basis_;$/;"	m	class:kaldi::BasisFmllrEstimate
+kaldi::BasisFmllrOptions	basis-fmllr-diag-gmm.h	/^struct BasisFmllrOptions {$/;"	s	namespace:kaldi
+kaldi::BasisFmllrOptions::BasisFmllrOptions	basis-fmllr-diag-gmm.h	/^  BasisFmllrOptions(): num_iters(10), size_scale(0.2), min_count(50.0), step_size_iters(3) { }$/;"	f	struct:kaldi::BasisFmllrOptions
+kaldi::BasisFmllrOptions::Register	basis-fmllr-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::BasisFmllrOptions
+kaldi::BasisFmllrOptions::min_count	basis-fmllr-diag-gmm.h	/^  BaseFloat min_count;$/;"	m	struct:kaldi::BasisFmllrOptions
+kaldi::BasisFmllrOptions::num_iters	basis-fmllr-diag-gmm.h	/^  int32 num_iters;$/;"	m	struct:kaldi::BasisFmllrOptions
+kaldi::BasisFmllrOptions::size_scale	basis-fmllr-diag-gmm.h	/^  BaseFloat size_scale; \/\/ how many basis elements we add for each new frame.$/;"	m	struct:kaldi::BasisFmllrOptions
+kaldi::BasisFmllrOptions::step_size_iters	basis-fmllr-diag-gmm.h	/^  int32 step_size_iters;$/;"	m	struct:kaldi::BasisFmllrOptions
+kaldi::CalBasisFmllrStepSize	basis-fmllr-diag-gmm.cc	/^double CalBasisFmllrStepSize(const AffineXformStats &spk_stats,$/;"	f	namespace:kaldi
+kaldi::ComposeTransforms	transform-common.cc	/^bool ComposeTransforms(const Matrix<BaseFloat> &a, const Matrix<BaseFloat> &b,$/;"	f	namespace:kaldi
+kaldi::CompressedAffineXformStats	compressed-transform-stats.h	/^class CompressedAffineXformStats {$/;"	c	namespace:kaldi
+kaldi::CompressedAffineXformStats::CompressedAffineXformStats	compressed-transform-stats.h	/^  CompressedAffineXformStats(): beta_(0.0) { }$/;"	f	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::CompressedAffineXformStats	compressed-transform-stats.h	/^  CompressedAffineXformStats(const AffineXformStats &input) {$/;"	f	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::CopyFromAffineXformStats	compressed-transform-stats.cc	/^void CompressedAffineXformStats::CopyFromAffineXformStats($/;"	f	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::CopyToAffineXformStats	compressed-transform-stats.cc	/^void CompressedAffineXformStats::CopyToAffineXformStats($/;"	f	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::ExtractOneG	compressed-transform-stats.cc	/^void CompressedAffineXformStats::ExtractOneG(const SubVector<double> &linearized,$/;"	f	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::G_	compressed-transform-stats.h	/^  CompressedMatrix G_; \/\/ This dim x [ 1 + (0.5*(dim+1)*(dim+2))] matrix$/;"	m	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::K_	compressed-transform-stats.h	/^  Matrix<float> K_;$/;"	m	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::PrepareOneG	compressed-transform-stats.cc	/^void CompressedAffineXformStats::PrepareOneG(const SpMatrix<double> &Gi,$/;"	f	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::Read	compressed-transform-stats.cc	/^void CompressedAffineXformStats::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::Write	compressed-transform-stats.cc	/^void CompressedAffineXformStats::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::CompressedAffineXformStats
+kaldi::CompressedAffineXformStats::beta_	compressed-transform-stats.h	/^  float beta_;$/;"	m	class:kaldi::CompressedAffineXformStats
+kaldi::ComputeAmGmmFeatureDeriv	fmpe.cc	/^BaseFloat ComputeAmGmmFeatureDeriv(const AmDiagGmm &am_gmm,$/;"	f	namespace:kaldi
+kaldi::ComputeFmllrLogDet	fmllr-diag-gmm.h	/^inline BaseFloat ComputeFmllrLogDet(const Matrix<BaseFloat> &fmllr_mat) {$/;"	f	namespace:kaldi
+kaldi::ComputeFmllrMatrixDiagGmm	fmllr-diag-gmm.cc	/^BaseFloat ComputeFmllrMatrixDiagGmm(const MatrixBase<BaseFloat> &in_xform,$/;"	f	namespace:kaldi
+kaldi::ComputeFmllrMatrixDiagGmmDiagonal	fmllr-diag-gmm.cc	/^BaseFloat ComputeFmllrMatrixDiagGmmDiagonal(const MatrixBase<BaseFloat> &in_xform,$/;"	f	namespace:kaldi
+kaldi::ComputeFmllrMatrixDiagGmmFull	fmllr-diag-gmm.cc	/^BaseFloat ComputeFmllrMatrixDiagGmmFull(const MatrixBase<BaseFloat> &in_xform,$/;"	f	namespace:kaldi
+kaldi::ComputeFmllrMatrixDiagGmmOffset	fmllr-diag-gmm.cc	/^BaseFloat ComputeFmllrMatrixDiagGmmOffset(const MatrixBase<BaseFloat> &in_xform,$/;"	f	namespace:kaldi
+kaldi::ComputeGconsts	decodable-am-diag-gmm-regtree.cc	/^static void ComputeGconsts(const VectorBase<BaseFloat> &weights,$/;"	f	namespace:kaldi
+kaldi::ComputeMllrMatrix	regtree-mllr-diag-gmm.cc	/^static void ComputeMllrMatrix(const Matrix<double> &K,$/;"	f	namespace:kaldi
+kaldi::DecodableAmDiagGmmRegtreeFmllr	decodable-am-diag-gmm-regtree.h	/^class DecodableAmDiagGmmRegtreeFmllr: public DecodableAmDiagGmmUnmapped {$/;"	c	namespace:kaldi
+kaldi::DecodableAmDiagGmmRegtreeFmllr::DecodableAmDiagGmmRegtreeFmllr	decodable-am-diag-gmm-regtree.h	/^  DecodableAmDiagGmmRegtreeFmllr(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::LogLikelihood	decodable-am-diag-gmm-regtree.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::LogLikelihoodZeroBased	decodable-am-diag-gmm-regtree.cc	/^BaseFloat DecodableAmDiagGmmRegtreeFmllr::LogLikelihoodZeroBased(int32 frame,$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::NumFrames	decodable-am-diag-gmm-regtree.h	/^  virtual int32 NumFrames() { return feature_matrix_.NumRows(); }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::NumIndices	decodable-am-diag-gmm-regtree.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::TransModel	decodable-am-diag-gmm-regtree.h	/^  const TransitionModel *TransModel() { return &trans_model_; }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::fmllr_xform_	decodable-am-diag-gmm-regtree.h	/^  const RegtreeFmllrDiagGmm &fmllr_xform_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::logdets_	decodable-am-diag-gmm-regtree.h	/^  Vector<BaseFloat> logdets_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::regtree_	decodable-am-diag-gmm-regtree.h	/^  const RegressionTree &regtree_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::scale_	decodable-am-diag-gmm-regtree.h	/^  BaseFloat scale_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::trans_model_	decodable-am-diag-gmm-regtree.h	/^  const TransitionModel &trans_model_;  \/\/ for transition-id to pdf mapping$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::valid_logdets_	decodable-am-diag-gmm-regtree.h	/^  bool valid_logdets_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::xformed_data_	decodable-am-diag-gmm-regtree.h	/^  std::vector< Vector<BaseFloat> > xformed_data_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeFmllr::xformed_data_squared_	decodable-am-diag-gmm-regtree.h	/^  std::vector< Vector<BaseFloat> > xformed_data_squared_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+kaldi::DecodableAmDiagGmmRegtreeMllr	decodable-am-diag-gmm-regtree.h	/^class DecodableAmDiagGmmRegtreeMllr: public DecodableAmDiagGmmUnmapped {$/;"	c	namespace:kaldi
+kaldi::DecodableAmDiagGmmRegtreeMllr::DecodableAmDiagGmmRegtreeMllr	decodable-am-diag-gmm-regtree.h	/^  DecodableAmDiagGmmRegtreeMllr(const AmDiagGmm &am,$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::GetXformedGconsts	decodable-am-diag-gmm-regtree.cc	/^const Vector<BaseFloat>& DecodableAmDiagGmmRegtreeMllr::GetXformedGconsts($/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::GetXformedMeanInvVars	decodable-am-diag-gmm-regtree.cc	/^const Matrix<BaseFloat>& DecodableAmDiagGmmRegtreeMllr::GetXformedMeanInvVars($/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::InitCache	decodable-am-diag-gmm-regtree.cc	/^void DecodableAmDiagGmmRegtreeMllr::InitCache() {$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::LogLikelihood	decodable-am-diag-gmm-regtree.h	/^  virtual BaseFloat LogLikelihood(int32 frame, int32 tid) {$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::LogLikelihoodZeroBased	decodable-am-diag-gmm-regtree.cc	/^BaseFloat DecodableAmDiagGmmRegtreeMllr::LogLikelihoodZeroBased(int32 frame,$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::NumFrames	decodable-am-diag-gmm-regtree.h	/^  virtual int32 NumFrames() { return feature_matrix_.NumRows(); }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::NumIndices	decodable-am-diag-gmm-regtree.h	/^  virtual int32 NumIndices() { return trans_model_.NumTransitionIds(); }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::TransModel	decodable-am-diag-gmm-regtree.h	/^  const TransitionModel *TransModel() { return &trans_model_; }$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::data_squared_	decodable-am-diag-gmm-regtree.h	/^  Vector<BaseFloat> data_squared_;  \/\/\/< Cached for fast likelihood calculation$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::is_cached_	decodable-am-diag-gmm-regtree.h	/^  std::vector<bool> is_cached_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::mllr_xform_	decodable-am-diag-gmm-regtree.h	/^  const RegtreeMllrDiagGmm &mllr_xform_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::regtree_	decodable-am-diag-gmm-regtree.h	/^  const RegressionTree &regtree_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::scale_	decodable-am-diag-gmm-regtree.h	/^  BaseFloat scale_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::trans_model_	decodable-am-diag-gmm-regtree.h	/^  const TransitionModel &trans_model_;  \/\/ for transition-id to pdf mapping$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::xformed_gconsts_	decodable-am-diag-gmm-regtree.h	/^  std::vector< Vector<BaseFloat>* > xformed_gconsts_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::xformed_mean_invvars_	decodable-am-diag-gmm-regtree.h	/^  std::vector< Matrix<BaseFloat>* > xformed_mean_invvars_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::DecodableAmDiagGmmRegtreeMllr::~DecodableAmDiagGmmRegtreeMllr	decodable-am-diag-gmm-regtree.cc	/^DecodableAmDiagGmmRegtreeMllr::~DecodableAmDiagGmmRegtreeMllr() {$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+kaldi::EtNormalizeType	exponential-transform.h	/^enum EtNormalizeType {$/;"	g	namespace:kaldi
+kaldi::ExponentialTransform	exponential-transform.h	/^class ExponentialTransform {$/;"	c	namespace:kaldi
+kaldi::ExponentialTransform::A_	exponential-transform.h	/^  Matrix<BaseFloat> A_;  \/\/ d+1 by d+1 matrix; last row 0 0 0 .. 0 0.$/;"	m	class:kaldi::ExponentialTransform
+kaldi::ExponentialTransform::B_	exponential-transform.h	/^  Matrix<BaseFloat> B_;  \/\/ d+1 by d+1 matrix; last row 0 0 0 .. 0 1.$/;"	m	class:kaldi::ExponentialTransform
+kaldi::ExponentialTransform::Dim	exponential-transform.h	/^  int32 Dim() const { return A_.NumRows() - 1; }  \/\/ returns feature dim.$/;"	f	class:kaldi::ExponentialTransform
+kaldi::ExponentialTransform::ExponentialTransform	exponential-transform.h	/^  ExponentialTransform() { } \/\/ typically use this constructor only prior to$/;"	f	class:kaldi::ExponentialTransform
+kaldi::ExponentialTransform::ExponentialTransform	exponential-transform.h	/^  ExponentialTransform(int32 dim, EtNormalizeType norm_type, int32 seed = 0) {$/;"	f	class:kaldi::ExponentialTransform
+kaldi::ExponentialTransform::GetATransform	exponential-transform.h	/^  void GetATransform(Matrix<BaseFloat> *transform) const {$/;"	f	class:kaldi::ExponentialTransform
+kaldi::ExponentialTransform::MakeBUnit	exponential-transform.h	/^  void MakeBUnit() { B_.SetUnit(); }$/;"	f	class:kaldi::ExponentialTransform
+kaldi::ExponentialTransform::norm_type_	exponential-transform.h	/^  EtNormalizeType norm_type_;  \/\/ tells us how to train D_s.$/;"	m	class:kaldi::ExponentialTransform
+kaldi::ExponentialTransformAccsA	exponential-transform.h	/^class ExponentialTransformAccsA {$/;"	c	namespace:kaldi
+kaldi::ExponentialTransformAccsA::Ahat_	exponential-transform.h	/^  Matrix<double> Ahat_;  \/\/ local gradient w.r.t. the first d rows of A.$/;"	m	class:kaldi::ExponentialTransformAccsA
+kaldi::ExponentialTransformAccsA::ExponentialTransformAccsA	exponential-transform.h	/^  ExponentialTransformAccsA() { } \/\/ typically use this constructor prior to Read().$/;"	f	class:kaldi::ExponentialTransformAccsA
+kaldi::ExponentialTransformAccsA::ExponentialTransformAccsA	exponential-transform.h	/^  ExponentialTransformAccsA(int32 dim) { Init(dim); }$/;"	f	class:kaldi::ExponentialTransformAccsA
+kaldi::ExponentialTransformAccsA::G_	exponential-transform.h	/^  std::vector<SpMatrix<double> > G_;  \/\/ Like the G stats of$/;"	m	class:kaldi::ExponentialTransformAccsA
+kaldi::ExponentialTransformAccsA::beta_	exponential-transform.h	/^  double beta_;  \/\/ sum of speaker betas.  for diagnostics.$/;"	m	class:kaldi::ExponentialTransformAccsA
+kaldi::ExponentialTransformAccsA::beta_t_	exponential-transform.h	/^  double beta_t_;  \/\/ sum of speaker betas times T.  for log-det term.$/;"	m	class:kaldi::ExponentialTransformAccsA
+kaldi::ExponentialTransformUpdateAOptions	exponential-transform.h	/^struct ExponentialTransformUpdateAOptions {$/;"	s	namespace:kaldi
+kaldi::ExponentialTransformUpdateAOptions::ExponentialTransformUpdateAOptions	exponential-transform.h	/^  ExponentialTransformUpdateAOptions(): learning_rate(1.0), renormalize(true) { }$/;"	f	struct:kaldi::ExponentialTransformUpdateAOptions
+kaldi::ExponentialTransformUpdateAOptions::Register	exponential-transform.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::ExponentialTransformUpdateAOptions
+kaldi::ExponentialTransformUpdateAOptions::learning_rate	exponential-transform.h	/^  BaseFloat learning_rate;$/;"	m	struct:kaldi::ExponentialTransformUpdateAOptions
+kaldi::ExponentialTransformUpdateAOptions::renormalize	exponential-transform.h	/^  bool renormalize;  \/\/ renormalize A and recenter the warp factors on each iteration...$/;"	m	struct:kaldi::ExponentialTransformUpdateAOptions
+kaldi::FmllrAuxFuncDiagGmm	fmllr-diag-gmm.cc	/^double FmllrAuxFuncDiagGmm(const MatrixBase<double> &xform,$/;"	f	namespace:kaldi
+kaldi::FmllrAuxFuncDiagGmm	fmllr-diag-gmm.cc	/^float FmllrAuxFuncDiagGmm(const MatrixBase<float> &xform,$/;"	f	namespace:kaldi
+kaldi::FmllrAuxfGradient	fmllr-diag-gmm.cc	/^BaseFloat FmllrAuxfGradient(const MatrixBase<BaseFloat> &xform,$/;"	f	namespace:kaldi
+kaldi::FmllrDiagGmmAccs	fmllr-diag-gmm.h	/^class FmllrDiagGmmAccs: public AffineXformStats {$/;"	c	namespace:kaldi
+kaldi::FmllrDiagGmmAccs::AccumulateForGmm	fmllr-diag-gmm.cc	/^BaseFloat FmllrDiagGmmAccs::AccumulateForGmm(const DiagGmm &pdf,$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::AccumulateForGmmPreselect	fmllr-diag-gmm.cc	/^BaseFloat FmllrDiagGmmAccs::AccumulateForGmmPreselect($/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::AccumulateFromPosteriors	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs:: AccumulateFromPosteriors($/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::AccumulateFromPosteriorsPreselect	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs:: AccumulateFromPosteriorsPreselect($/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::CommitSingleFrameStats	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs::CommitSingleFrameStats() {$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::DataHasChanged	fmllr-diag-gmm.cc	/^bool FmllrDiagGmmAccs::DataHasChanged(const VectorBase<BaseFloat> &data) const {$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::FmllrDiagGmmAccs	fmllr-diag-gmm.cc	/^FmllrDiagGmmAccs::FmllrDiagGmmAccs(const DiagGmm &gmm,$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::FmllrDiagGmmAccs	fmllr-diag-gmm.h	/^  FmllrDiagGmmAccs(const FmllrOptions &opts = FmllrOptions()):$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::FmllrDiagGmmAccs	fmllr-diag-gmm.h	/^  explicit FmllrDiagGmmAccs(const FmllrDiagGmmAccs &other):$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::FmllrDiagGmmAccs	fmllr-diag-gmm.h	/^  explicit FmllrDiagGmmAccs(int32 dim, const FmllrOptions &opts = FmllrOptions()):$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::Init	fmllr-diag-gmm.h	/^  void Init(size_t dim) {$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::InitSingleFrameStats	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs::InitSingleFrameStats(const VectorBase<BaseFloat> &data) {$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::SingleFrameStats	fmllr-diag-gmm.h	/^  struct SingleFrameStats {$/;"	s	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::SingleFrameStats::Init	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs::SingleFrameStats::Init(int32 dim) {$/;"	f	class:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+kaldi::FmllrDiagGmmAccs::SingleFrameStats::SingleFrameStats	fmllr-diag-gmm.h	/^    SingleFrameStats(const SingleFrameStats &s): x(s.x), a(s.a), b(s.b),$/;"	f	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+kaldi::FmllrDiagGmmAccs::SingleFrameStats::SingleFrameStats	fmllr-diag-gmm.h	/^    SingleFrameStats(int32 dim = 0) { Init(dim); }$/;"	f	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+kaldi::FmllrDiagGmmAccs::SingleFrameStats::a	fmllr-diag-gmm.h	/^    Vector<BaseFloat> a; \/\/ linear term in per-frame auxf; dim is model-dim.$/;"	m	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+kaldi::FmllrDiagGmmAccs::SingleFrameStats::b	fmllr-diag-gmm.h	/^    Vector<BaseFloat> b; \/\/ quadratic term in per-frame auxf; dim is model-dim.$/;"	m	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+kaldi::FmllrDiagGmmAccs::SingleFrameStats::count	fmllr-diag-gmm.h	/^    double count;$/;"	m	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+kaldi::FmllrDiagGmmAccs::SingleFrameStats::x	fmllr-diag-gmm.h	/^    Vector<BaseFloat> x; \/\/ dim-dimensional features.$/;"	m	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+kaldi::FmllrDiagGmmAccs::Update	fmllr-diag-gmm.cc	/^void FmllrDiagGmmAccs::Update(const FmllrOptions &opts,$/;"	f	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::opts_	fmllr-diag-gmm.h	/^  FmllrOptions opts_;$/;"	m	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrDiagGmmAccs::single_frame_stats_	fmllr-diag-gmm.h	/^  SingleFrameStats single_frame_stats_;$/;"	m	class:kaldi::FmllrDiagGmmAccs
+kaldi::FmllrInnerUpdate	fmllr-diag-gmm.cc	/^void FmllrInnerUpdate(SpMatrix<double> &inv_G,$/;"	f	namespace:kaldi
+kaldi::FmllrOptions	fmllr-diag-gmm.h	/^struct FmllrOptions {$/;"	s	namespace:kaldi
+kaldi::FmllrOptions::FmllrOptions	fmllr-diag-gmm.h	/^  FmllrOptions(): update_type("full"), min_count(500.0), num_iters(40) { }$/;"	f	struct:kaldi::FmllrOptions
+kaldi::FmllrOptions::Register	fmllr-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FmllrOptions
+kaldi::FmllrOptions::min_count	fmllr-diag-gmm.h	/^  BaseFloat min_count;$/;"	m	struct:kaldi::FmllrOptions
+kaldi::FmllrOptions::num_iters	fmllr-diag-gmm.h	/^  int32 num_iters;$/;"	m	struct:kaldi::FmllrOptions
+kaldi::FmllrOptions::update_type	fmllr-diag-gmm.h	/^  std::string update_type;  \/\/\/< "full", "diag", "offset", "none"$/;"	m	struct:kaldi::FmllrOptions
+kaldi::FmllrRawAccs	fmllr-raw.h	/^class FmllrRawAccs {$/;"	c	namespace:kaldi
+kaldi::FmllrRawAccs::AccumulateForGmm	fmllr-raw.cc	/^BaseFloat FmllrRawAccs::AccumulateForGmm(const DiagGmm &gmm,$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::AccumulateFromPosteriors	fmllr-raw.cc	/^void FmllrRawAccs::AccumulateFromPosteriors($/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::CommitSingleFrameStats	fmllr-raw.cc	/^void FmllrRawAccs::CommitSingleFrameStats() {$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::ComputeM	fmllr-raw.cc	/^void FmllrRawAccs::ComputeM(std::vector<Matrix<double> > *M) const {$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::ConvertToPerRowStats	fmllr-raw.cc	/^void FmllrRawAccs::ConvertToPerRowStats($/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::ConvertToSimpleStats	fmllr-raw.cc	/^void FmllrRawAccs::ConvertToSimpleStats($/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::DataHasChanged	fmllr-raw.cc	/^bool FmllrRawAccs::DataHasChanged(const VectorBase<BaseFloat> &data) const {$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::FmllrRawAccs	fmllr-raw.cc	/^FmllrRawAccs::FmllrRawAccs(int32 raw_dim,$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::FmllrRawAccs	fmllr-raw.h	/^  FmllrRawAccs() { }$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::FullDim	fmllr-raw.h	/^  int32 FullDim() const { return full_transform_.NumRows(); }$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::GetAuxf	fmllr-raw.cc	/^double FmllrRawAccs::GetAuxf(const Vector<double> &simple_linear_stats,$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::InitSingleFrameStats	fmllr-raw.cc	/^void FmllrRawAccs::InitSingleFrameStats(const VectorBase<BaseFloat> &data) {$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::ModelDim	fmllr-raw.h	/^  int32 ModelDim() const { return model_dim_; }$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::Q_	fmllr-raw.h	/^  Matrix<double> Q_; \/\/ linear stats, indexed [model_dim + 1][full_dim + 1]$/;"	m	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::RawDim	fmllr-raw.h	/^  int32 RawDim() const { return raw_dim_; }$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::S_	fmllr-raw.h	/^  Matrix<double> S_; \/\/ quadratic stats, indexed$/;"	m	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::SetZero	fmllr-raw.cc	/^void FmllrRawAccs::SetZero() {$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::SingleFrameStats	fmllr-raw.h	/^  struct SingleFrameStats {$/;"	s	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::SingleFrameStats::a	fmllr-raw.h	/^    Vector<double> a; \/\/ linear term in per-frame auxf; dim is model-dim.$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+kaldi::FmllrRawAccs::SingleFrameStats::b	fmllr-raw.h	/^    Vector<double> b; \/\/ quadratic term in per-frame auxf; dim is model-dim.$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+kaldi::FmllrRawAccs::SingleFrameStats::count	fmllr-raw.h	/^    double count;$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+kaldi::FmllrRawAccs::SingleFrameStats::s	fmllr-raw.h	/^    Vector<BaseFloat> s; \/\/ [FullDim() + 1]-dimensional spliced data, plus 1.0$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+kaldi::FmllrRawAccs::SingleFrameStats::transformed_data	fmllr-raw.h	/^    Vector<BaseFloat> transformed_data; \/\/ [FullDim()] Data times full transform, with offset.$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+kaldi::FmllrRawAccs::SpliceWidth	fmllr-raw.h	/^  int32 SpliceWidth() const { return FullDim() \/ RawDim(); }$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::Update	fmllr-raw.cc	/^void FmllrRawAccs::Update(const FmllrRawOptions &opts,$/;"	f	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::count_	fmllr-raw.h	/^  double count_; \/\/ The data-count.  Note: in accounting for the determinant, we will$/;"	m	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::full_transform_	fmllr-raw.h	/^  Matrix<BaseFloat> full_transform_; \/\/ Does not include any offset term$/;"	m	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::model_dim_	fmllr-raw.h	/^  int32 model_dim_; \/\/ Model dimension$/;"	m	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::raw_dim_	fmllr-raw.h	/^  int32 raw_dim_; \/\/ Raw MFCC dimension.$/;"	m	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::single_frame_stats_	fmllr-raw.h	/^  SingleFrameStats single_frame_stats_;$/;"	m	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::temp_	fmllr-raw.h	/^  SpMatrix<double> temp_; \/\/ [full_dim + 1][full_dim + 1], outer product of s.$/;"	m	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawAccs::transform_offset_	fmllr-raw.h	/^  Vector<BaseFloat> transform_offset_; \/\/ The offset term (or zero).$/;"	m	class:kaldi::FmllrRawAccs
+kaldi::FmllrRawOptions	fmllr-raw.h	/^struct FmllrRawOptions {$/;"	s	namespace:kaldi
+kaldi::FmllrRawOptions::FmllrRawOptions	fmllr-raw.h	/^  FmllrRawOptions(): min_count(100.0), num_iters(20) { }$/;"	f	struct:kaldi::FmllrRawOptions
+kaldi::FmllrRawOptions::Register	fmllr-raw.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FmllrRawOptions
+kaldi::FmllrRawOptions::min_count	fmllr-raw.h	/^  BaseFloat min_count;$/;"	m	struct:kaldi::FmllrRawOptions
+kaldi::FmllrRawOptions::num_iters	fmllr-raw.h	/^  int32 num_iters;$/;"	m	struct:kaldi::FmllrRawOptions
+kaldi::Fmpe	fmpe.h	/^class Fmpe {$/;"	c	namespace:kaldi
+kaldi::Fmpe::AccStats	fmpe.cc	/^void Fmpe::AccStats(const MatrixBase<BaseFloat> &feat_in,$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ApplyC	fmpe.cc	/^void Fmpe::ApplyC(MatrixBase<BaseFloat> *feat_out, bool reverse) const {$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ApplyCReverse	fmpe.h	/^  void ApplyCReverse(MatrixBase<BaseFloat> *deriv) const { ApplyC(deriv, true); }$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ApplyContext	fmpe.cc	/^void Fmpe::ApplyContext(const MatrixBase<BaseFloat> &intermed_feat,$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ApplyContextReverse	fmpe.cc	/^void Fmpe::ApplyContextReverse(const MatrixBase<BaseFloat> &feat_deriv,$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ApplyProjection	fmpe.cc	/^void Fmpe::ApplyProjection(const MatrixBase<BaseFloat> &feat_in,$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ApplyProjectionReverse	fmpe.cc	/^void Fmpe::ApplyProjectionReverse(const MatrixBase<BaseFloat> &feat_in,$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::C_	fmpe.h	/^  TpMatrix<BaseFloat> C_; \/\/ Cholesky factor of the variance Sigma of$/;"	m	class:kaldi::Fmpe
+kaldi::Fmpe::ComputeC	fmpe.cc	/^void Fmpe::ComputeC() {$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ComputeFeatures	fmpe.cc	/^void Fmpe::ComputeFeatures(const MatrixBase<BaseFloat> &feat_in,$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ComputeStddevs	fmpe.cc	/^void Fmpe::ComputeStddevs() {$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::FeatDim	fmpe.h	/^  int32 FeatDim() const { return gmm_.Dim(); }$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::Fmpe	fmpe.cc	/^Fmpe::Fmpe(const DiagGmm &gmm, const FmpeOptions &config): gmm_(gmm),$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::Fmpe	fmpe.h	/^  Fmpe() {}$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::NumContexts	fmpe.h	/^  int32 NumContexts() const { return static_cast<int32>(contexts_.size()); }$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::NumGauss	fmpe.h	/^  int32 NumGauss() const { return gmm_.NumGauss(); }$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ProjectionTNumCols	fmpe.h	/^  int32 ProjectionTNumCols() const { return FeatDim() * NumContexts(); }$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::ProjectionTNumRows	fmpe.h	/^  int32 ProjectionTNumRows() const { return (FeatDim()+1) * NumGauss(); }$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::Read	fmpe.cc	/^void Fmpe::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::SetContexts	fmpe.cc	/^void Fmpe::SetContexts(std::string context_str) {$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::Update	fmpe.cc	/^BaseFloat Fmpe::Update(const FmpeUpdateOptions &config,$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::Write	fmpe.cc	/^void Fmpe::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::Fmpe
+kaldi::Fmpe::config_	fmpe.h	/^  FmpeOptions config_;$/;"	m	class:kaldi::Fmpe
+kaldi::Fmpe::contexts_	fmpe.h	/^  std::vector<std::vector<std::pair<int32, BaseFloat> > > contexts_;$/;"	m	class:kaldi::Fmpe
+kaldi::Fmpe::gmm_	fmpe.h	/^  DiagGmm gmm_; \/\/ The GMM used to get posteriors.$/;"	m	class:kaldi::Fmpe
+kaldi::Fmpe::projT_	fmpe.h	/^  Matrix<BaseFloat> projT_; \/\/ The transpose of the projection matrix;$/;"	m	class:kaldi::Fmpe
+kaldi::Fmpe::stddevs_	fmpe.h	/^  Matrix<BaseFloat> stddevs_; \/\/ The standard deviations of the$/;"	m	class:kaldi::Fmpe
+kaldi::FmpeOptions	fmpe.h	/^struct FmpeOptions {$/;"	s	namespace:kaldi
+kaldi::FmpeOptions::FmpeOptions	fmpe.h	/^  FmpeOptions(): context_expansion("0,1.0:-1,1.0:1,1.0:-2,0.5;-3,0.5:2,0.5;3,0.5:-4,0.5;-5,0.5:4,0.5;5,0.5:-6,0.333;-7,0.333;-8,0.333:6,0.333;7,0.333;8,0.333"),$/;"	f	struct:kaldi::FmpeOptions
+kaldi::FmpeOptions::Read	fmpe.cc	/^void FmpeOptions::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::FmpeOptions
+kaldi::FmpeOptions::Register	fmpe.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FmpeOptions
+kaldi::FmpeOptions::Write	fmpe.cc	/^void FmpeOptions::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::FmpeOptions
+kaldi::FmpeOptions::context_expansion	fmpe.h	/^  std::string context_expansion; \/\/ This string describes the various contexts...$/;"	m	struct:kaldi::FmpeOptions
+kaldi::FmpeOptions::post_scale	fmpe.h	/^  BaseFloat post_scale; \/\/ Scale on the posterior component of the high-dim$/;"	m	struct:kaldi::FmpeOptions
+kaldi::FmpeStats	fmpe.h	/^struct FmpeStats {$/;"	s	namespace:kaldi
+kaldi::FmpeStats::AccumulateChecks	fmpe.cc	/^void FmpeStats::AccumulateChecks(const MatrixBase<BaseFloat> &feats,$/;"	f	class:kaldi::FmpeStats
+kaldi::FmpeStats::DerivMinus	fmpe.cc	/^SubMatrix<BaseFloat> FmpeStats::DerivMinus() const { \/\/ const-ness not preserved.$/;"	f	class:kaldi::FmpeStats
+kaldi::FmpeStats::DerivPlus	fmpe.cc	/^SubMatrix<BaseFloat> FmpeStats::DerivPlus() const { \/\/ const-ness not preserved.$/;"	f	class:kaldi::FmpeStats
+kaldi::FmpeStats::DoChecks	fmpe.cc	/^void FmpeStats::DoChecks() {$/;"	f	class:kaldi::FmpeStats
+kaldi::FmpeStats::FmpeStats	fmpe.h	/^  FmpeStats() { };$/;"	f	struct:kaldi::FmpeStats
+kaldi::FmpeStats::FmpeStats	fmpe.h	/^  FmpeStats(const Fmpe &fmpe) { Init(fmpe); }$/;"	f	struct:kaldi::FmpeStats
+kaldi::FmpeStats::Init	fmpe.cc	/^void FmpeStats::Init(const Fmpe &fmpe) {$/;"	f	class:kaldi::FmpeStats
+kaldi::FmpeStats::Read	fmpe.cc	/^void FmpeStats::Read(std::istream &is, bool binary, bool add) {$/;"	f	class:kaldi::FmpeStats
+kaldi::FmpeStats::Write	fmpe.cc	/^void FmpeStats::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::FmpeStats
+kaldi::FmpeStats::checks	fmpe.h	/^  Matrix<double> checks; \/\/ contains quantities we use to check the$/;"	m	struct:kaldi::FmpeStats
+kaldi::FmpeStats::deriv	fmpe.h	/^  Matrix<BaseFloat> deriv; \/\/ contains positive and negative parts of derivatives$/;"	m	struct:kaldi::FmpeStats
+kaldi::FmpeUpdateOptions	fmpe.h	/^struct FmpeUpdateOptions {$/;"	s	namespace:kaldi
+kaldi::FmpeUpdateOptions::FmpeUpdateOptions	fmpe.h	/^  FmpeUpdateOptions(): learning_rate(0.1), l2_weight(100.0) { }$/;"	f	struct:kaldi::FmpeUpdateOptions
+kaldi::FmpeUpdateOptions::Register	fmpe.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FmpeUpdateOptions
+kaldi::FmpeUpdateOptions::l2_weight	fmpe.h	/^  BaseFloat l2_weight; \/\/ Weight on l2 regularization term$/;"	m	struct:kaldi::FmpeUpdateOptions
+kaldi::FmpeUpdateOptions::learning_rate	fmpe.h	/^  BaseFloat learning_rate; \/\/ Learning rate constant.  Like inverse of E$/;"	m	struct:kaldi::FmpeUpdateOptions
+kaldi::GetActiveParents	regression-tree.cc	/^static bool GetActiveParents(int32 node, const vector<int32> &parents,$/;"	f	namespace:kaldi
+kaldi::GetFeatDeriv	fmpe-test.cc	/^void GetFeatDeriv(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+kaldi::GetGmmLike	fmpe-test.cc	/^BaseFloat GetGmmLike(const DiagGmm &gmm,$/;"	f	namespace:kaldi
+kaldi::HldaAccsDiagGmm	hlda.h	/^class HldaAccsDiagGmm {$/;"	c	namespace:kaldi
+kaldi::HldaAccsDiagGmm::AccumulateFromPosteriors	hlda.cc	/^AccumulateFromPosteriors(int32 pdf_id,$/;"	f	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::FeatureDim	hlda.h	/^  int32 FeatureDim() { return (S_.empty() ? 0 : S_[0].NumRows()); }$/;"	f	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::HldaAccsDiagGmm	hlda.h	/^  HldaAccsDiagGmm() { }$/;"	f	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::HldaAccsDiagGmm	hlda.h	/^  HldaAccsDiagGmm(const AmDiagGmm &model,$/;"	f	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::Init	hlda.cc	/^void HldaAccsDiagGmm::Init(const AmDiagGmm &am,$/;"	f	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::ModelDim	hlda.h	/^  int32 ModelDim() { return (S_.empty() ? 0 : S_.size()-1); }$/;"	f	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::Read	hlda.cc	/^void HldaAccsDiagGmm::Read(std::istream &is, bool binary, bool add) {$/;"	f	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::S_	hlda.h	/^  std::vector<SpMatrix<double> > S_;  \/\/ the S matrices: [model-dim+1] matrices of size (feat-dim) x (feat-dim)$/;"	m	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::Update	hlda.cc	/^void HldaAccsDiagGmm::Update(AmDiagGmm *am,$/;"	f	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::Write	hlda.cc	/^void HldaAccsDiagGmm::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::mean_accs_	hlda.h	/^  std::vector<Matrix<double> > mean_accs_;  \/\/ [num-pdfs][gauss][feat_dim+1]$/;"	m	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::mean_accs_sub_	hlda.h	/^  std::vector<Matrix<double> > mean_accs_sub_;$/;"	m	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::occs_	hlda.h	/^  std::vector<Vector<double> > occs_;  \/\/ occupancies for the Gaussians. [num-pdfs][gauss]$/;"	m	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::occs_sub_	hlda.h	/^  std::vector<Vector<double> > occs_sub_;$/;"	m	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::sample_gconst_	hlda.h	/^  BaseFloat sample_gconst_;  \/\/ a sample gconst from the model, as a check$/;"	m	class:kaldi::HldaAccsDiagGmm
+kaldi::HldaAccsDiagGmm::speedup_	hlda.h	/^  BaseFloat speedup_;$/;"	m	class:kaldi::HldaAccsDiagGmm
+kaldi::InitCmvnStats	cmvn.cc	/^void InitCmvnStats(int32 dim, Matrix<double> *stats) {$/;"	f	namespace:kaldi
+kaldi::InitFmllr	fmllr-diag-gmm.h	/^inline void InitFmllr(int32 dim,$/;"	f	namespace:kaldi
+kaldi::InitRandomGmm	fmllr-diag-gmm-test.cc	/^void InitRandomGmm (DiagGmm *gmm_in) {$/;"	f	namespace:kaldi
+kaldi::InitRandomGmm	fmllr-raw-test.cc	/^void InitRandomGmm (DiagGmm *gmm_in) {$/;"	f	namespace:kaldi
+kaldi::LdaEstimate	lda-estimate.h	/^class LdaEstimate {$/;"	c	namespace:kaldi
+kaldi::LdaEstimate::Accumulate	lda-estimate.cc	/^void LdaEstimate::Accumulate(const VectorBase<BaseFloat> &data,$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::AddMeanOffset	lda-estimate.cc	/^void LdaEstimate::AddMeanOffset(const VectorBase<double> &mean_dbl,$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::Dim	lda-estimate.h	/^  int32 Dim() const { return first_acc_.NumCols(); }$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::Estimate	lda-estimate.cc	/^void LdaEstimate::Estimate(const LdaEstimateOptions &opts,$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::GetStats	lda-estimate.cc	/^void LdaEstimate::GetStats(SpMatrix<double> *total_covar,$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::Init	lda-estimate.cc	/^void LdaEstimate::Init(int32 num_classes, int32 dimension) {$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::LdaEstimate	lda-estimate.h	/^  LdaEstimate() {}$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::NumClasses	lda-estimate.h	/^  int32 NumClasses() const { return first_acc_.NumRows(); }$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::Read	lda-estimate.cc	/^void LdaEstimate::Read(std::istream &in_stream, bool binary, bool add) {$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::Scale	lda-estimate.cc	/^void LdaEstimate::Scale(BaseFloat f) {$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::Write	lda-estimate.cc	/^void LdaEstimate::Write(std::ostream &out_stream, bool binary) const {$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::ZeroAccumulators	lda-estimate.cc	/^void LdaEstimate::ZeroAccumulators() {$/;"	f	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::first_acc_	lda-estimate.h	/^  Matrix<double> first_acc_;$/;"	m	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::total_second_acc_	lda-estimate.h	/^  SpMatrix<double> total_second_acc_;$/;"	m	class:kaldi::LdaEstimate
+kaldi::LdaEstimate::zero_acc_	lda-estimate.h	/^  Vector<double> zero_acc_;$/;"	m	class:kaldi::LdaEstimate
+kaldi::LdaEstimateOptions	lda-estimate.h	/^struct LdaEstimateOptions {$/;"	s	namespace:kaldi
+kaldi::LdaEstimateOptions::LdaEstimateOptions	lda-estimate.h	/^  LdaEstimateOptions(): remove_offset(false), dim(40), allow_large_dim(false),$/;"	f	struct:kaldi::LdaEstimateOptions
+kaldi::LdaEstimateOptions::Register	lda-estimate.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::LdaEstimateOptions
+kaldi::LdaEstimateOptions::allow_large_dim	lda-estimate.h	/^  bool allow_large_dim;$/;"	m	struct:kaldi::LdaEstimateOptions
+kaldi::LdaEstimateOptions::dim	lda-estimate.h	/^  int32 dim;$/;"	m	struct:kaldi::LdaEstimateOptions
+kaldi::LdaEstimateOptions::remove_offset	lda-estimate.h	/^  bool remove_offset;$/;"	m	struct:kaldi::LdaEstimateOptions
+kaldi::LdaEstimateOptions::within_class_factor	lda-estimate.h	/^  BaseFloat within_class_factor; \/\/ TODO: remove this eventually, it$/;"	m	struct:kaldi::LdaEstimateOptions
+kaldi::LinearVtln	lvtln.h	/^class LinearVtln {$/;"	c	namespace:kaldi
+kaldi::LinearVtln::A_	lvtln.h	/^  std::vector<Matrix<BaseFloat> > A_;  \/\/ Square parts of the FMLLR matrices.$/;"	m	class:kaldi::LinearVtln
+kaldi::LinearVtln::ComputeTransform	lvtln.cc	/^void LinearVtln::ComputeTransform(const FmllrDiagGmmAccs &accs,$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::Dim	lvtln.h	/^  int32 Dim() const { KALDI_ASSERT(!A_.empty()); return A_[0].NumRows(); }$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::GetTransform	lvtln.cc	/^void LinearVtln::GetTransform(int32 i, MatrixBase<BaseFloat> *transform) const {$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::GetWarp	lvtln.cc	/^BaseFloat LinearVtln::GetWarp(int32 i) const {$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::LinearVtln	lvtln.cc	/^LinearVtln::LinearVtln(int32 dim, int32 num_classes, int32 default_class) {$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::LinearVtln	lvtln.h	/^  LinearVtln() { } \/\/ This initializer will probably be used prior to calling$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::NumClasses	lvtln.h	/^  int32 NumClasses() const { return A_.size(); }$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::Read	lvtln.cc	/^void LinearVtln::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::SetTransform	lvtln.cc	/^void LinearVtln::SetTransform(int32 i, const MatrixBase<BaseFloat> &transform) {$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::SetWarp	lvtln.cc	/^void LinearVtln::SetWarp(int32 i, BaseFloat warp) {$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::Write	lvtln.cc	/^void LinearVtln::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::LinearVtln
+kaldi::LinearVtln::default_class_	lvtln.h	/^  int32 default_class_;  \/\/ transform we return if we have no data.$/;"	m	class:kaldi::LinearVtln
+kaldi::LinearVtln::logdets_	lvtln.h	/^  std::vector<BaseFloat> logdets_;$/;"	m	class:kaldi::LinearVtln
+kaldi::LinearVtln::warps_	lvtln.h	/^  std::vector<BaseFloat> warps_; \/\/ This variable can be used to store the$/;"	m	class:kaldi::LinearVtln
+kaldi::MllrAuxFunction	regtree-mllr-diag-gmm.cc	/^static BaseFloat MllrAuxFunction(const Matrix<BaseFloat> &xform,$/;"	f	namespace:kaldi
+kaldi::MlltAccs	mllt.h	/^class MlltAccs {$/;"	c	namespace:kaldi
+kaldi::MlltAccs::AccumulateFromGmm	mllt.cc	/^BaseFloat MlltAccs::AccumulateFromGmm(const DiagGmm &gmm,$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::AccumulateFromGmmPreselect	mllt.cc	/^BaseFloat MlltAccs::AccumulateFromGmmPreselect($/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::AccumulateFromPosteriors	mllt.cc	/^void MlltAccs::AccumulateFromPosteriors(const DiagGmm &gmm,$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::Dim	mllt.h	/^  int32 Dim() { return G_.size(); };  \/\/ returns model dimension.$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::G_	mllt.h	/^  std::vector<SpMatrix<double> > G_;  \/\/ the G matrices (d matrices of size d x d)$/;"	m	class:kaldi::MlltAccs
+kaldi::MlltAccs::Init	mllt.cc	/^void MlltAccs::Init(int32 dim, BaseFloat rand_prune) {  \/\/ initializes (destroys anything that was there before).$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::MlltAccs	mllt.h	/^  MlltAccs(): rand_prune_(0.0), beta_(0.0) { }$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::MlltAccs	mllt.h	/^  MlltAccs(int32 dim, BaseFloat rand_prune = 0.25) { Init(dim, rand_prune); }$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::Read	mllt.cc	/^void MlltAccs::Read(std::istream &is, bool binary, bool add) {$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::Update	mllt.cc	/^void MlltAccs::Update(double beta,$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::Update	mllt.h	/^  void Update(MatrixBase<BaseFloat> *M,$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::Write	mllt.cc	/^void MlltAccs::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::MlltAccs
+kaldi::MlltAccs::beta_	mllt.h	/^  double beta_;  \/\/ count.$/;"	m	class:kaldi::MlltAccs
+kaldi::MlltAccs::rand_prune_	mllt.h	/^  BaseFloat rand_prune_;$/;"	m	class:kaldi::MlltAccs
+kaldi::RandFullCova	regtree-fmllr-diag-gmm-test.cc	/^RandFullCova(Matrix<BaseFloat> *matrix) {$/;"	f	namespace:kaldi
+kaldi::RandomAccessRegtreeFmllrDiagGmmReader	regtree-fmllr-diag-gmm.h	/^            RandomAccessRegtreeFmllrDiagGmmReader;$/;"	t	namespace:kaldi
+kaldi::RandomAccessRegtreeFmllrDiagGmmReaderMapped	regtree-fmllr-diag-gmm.h	/^            RandomAccessRegtreeFmllrDiagGmmReaderMapped;$/;"	t	namespace:kaldi
+kaldi::RandomAccessRegtreeMllrDiagGmmReader	regtree-mllr-diag-gmm.h	/^            RandomAccessRegtreeMllrDiagGmmReader;$/;"	t	namespace:kaldi
+kaldi::RandomAccessRegtreeMllrDiagGmmReaderMapped	regtree-mllr-diag-gmm.h	/^            RandomAccessRegtreeMllrDiagGmmReaderMapped;$/;"	t	namespace:kaldi
+kaldi::RegressionTree	regression-tree.h	/^class RegressionTree {$/;"	c	namespace:kaldi
+kaldi::RegressionTree::BuildTree	regression-tree.cc	/^void RegressionTree::BuildTree(const Vector<BaseFloat> &state_occs,$/;"	f	class:kaldi::RegressionTree
+kaldi::RegressionTree::GatherStats	regression-tree.cc	/^bool RegressionTree::GatherStats(const vector<AffineXformStats*> &stats_in,$/;"	f	class:kaldi::RegressionTree
+kaldi::RegressionTree::Gauss2BaseclassId	regression-tree.h	/^  int32 Gauss2BaseclassId(size_t pdf_id, size_t gauss_id) const {$/;"	f	class:kaldi::RegressionTree
+kaldi::RegressionTree::GetBaseclass	regression-tree.h	/^  const std::vector< std::pair<int32, int32> >& GetBaseclass(int32 bclass)$/;"	f	class:kaldi::RegressionTree
+kaldi::RegressionTree::MakeGauss2Bclass	regression-tree.cc	/^void RegressionTree::MakeGauss2Bclass(const AmDiagGmm &am) {$/;"	f	class:kaldi::RegressionTree
+kaldi::RegressionTree::NumBaseclasses	regression-tree.h	/^  int32 NumBaseclasses() const { return num_baseclasses_; }$/;"	f	class:kaldi::RegressionTree
+kaldi::RegressionTree::Read	regression-tree.cc	/^void RegressionTree::Read(std::istream &in, bool binary,$/;"	f	class:kaldi::RegressionTree
+kaldi::RegressionTree::RegressionTree	regression-tree.h	/^  RegressionTree() {}$/;"	f	class:kaldi::RegressionTree
+kaldi::RegressionTree::Write	regression-tree.cc	/^void RegressionTree::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegressionTree
+kaldi::RegressionTree::baseclasses_	regression-tree.h	/^  std::vector< std::vector< std::pair<int32, int32> > > baseclasses_;$/;"	m	class:kaldi::RegressionTree
+kaldi::RegressionTree::gauss2bclass_	regression-tree.h	/^  std::vector< std::vector<int32> > gauss2bclass_;$/;"	m	class:kaldi::RegressionTree
+kaldi::RegressionTree::num_baseclasses_	regression-tree.h	/^  int32 num_baseclasses_;  \/\/\/< Number of leaf nodes$/;"	m	class:kaldi::RegressionTree
+kaldi::RegressionTree::num_nodes_	regression-tree.h	/^  int32 num_nodes_;  \/\/\/< Total (non-leaf+leaf) nodes$/;"	m	class:kaldi::RegressionTree
+kaldi::RegressionTree::parents_	regression-tree.h	/^  std::vector<int32> parents_;$/;"	m	class:kaldi::RegressionTree
+kaldi::RegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm.h	/^class RegtreeFmllrDiagGmm {$/;"	c	namespace:kaldi
+kaldi::RegtreeFmllrDiagGmm::Base2RegClass	regtree-fmllr-diag-gmm.h	/^  int32 Base2RegClass(int32 bclass) const { return bclass2xforms_[bclass]; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::ComputeLogDets	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::ComputeLogDets() {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::Dim	regtree-fmllr-diag-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::GetLogDets	regtree-fmllr-diag-gmm.h	/^inline void RegtreeFmllrDiagGmm::GetLogDets(VectorBase<BaseFloat> *out) const {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::GetXformMatrix	regtree-fmllr-diag-gmm.h	/^inline void RegtreeFmllrDiagGmm::GetXformMatrix(int32 xform_index,$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::Init	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::Init(size_t num_xforms, size_t dim) {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::NumBaseClasses	regtree-fmllr-diag-gmm.h	/^  int32 NumBaseClasses() const { return bclass2xforms_.size(); }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::NumRegClasses	regtree-fmllr-diag-gmm.h	/^  int32 NumRegClasses() const { return num_xforms_; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::Read	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::Read(std::istream &in, bool binary) {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::RegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm.h	/^  RegtreeFmllrDiagGmm() : dim_(-1), num_xforms_(-1), valid_logdet_(false) {}$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::RegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm.h	/^  explicit RegtreeFmllrDiagGmm(const RegtreeFmllrDiagGmm &other)$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::SetParameters	regtree-fmllr-diag-gmm.h	/^inline void RegtreeFmllrDiagGmm::SetParameters(const MatrixBase<BaseFloat> &mat,$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::SetUnit	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::SetUnit() {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::TransformFeature	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::TransformFeature(const VectorBase<BaseFloat> &in,$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::Validate	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::Validate() {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::Write	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmm::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::bclass2xforms_	regtree-fmllr-diag-gmm.h	/^  std::vector<int32> bclass2xforms_;$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::dim_	regtree-fmllr-diag-gmm.h	/^  int32 dim_;             \/\/\/< Dimension of feature vectors$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::logdet_	regtree-fmllr-diag-gmm.h	/^  Vector<BaseFloat> logdet_;    \/\/\/< Log-determinants of the Jacobians$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::num_xforms_	regtree-fmllr-diag-gmm.h	/^  int32 num_xforms_;            \/\/\/< Number of transform matrices$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::set_bclass2xforms	regtree-fmllr-diag-gmm.h	/^  void set_bclass2xforms(const std::vector<int32> &in) { bclass2xforms_ = in; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::valid_logdet_	regtree-fmllr-diag-gmm.h	/^  bool valid_logdet_;           \/\/\/< Whether logdets are for current transforms$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::xform_matrices_	regtree-fmllr-diag-gmm.h	/^  std::vector< Matrix<BaseFloat> > xform_matrices_;  \/\/\/< Transform matrices$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmm::~RegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm.h	/^  ~RegtreeFmllrDiagGmm() {}$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+kaldi::RegtreeFmllrDiagGmmAccs	regtree-fmllr-diag-gmm.h	/^class RegtreeFmllrDiagGmmAccs {$/;"	c	namespace:kaldi
+kaldi::RegtreeFmllrDiagGmmAccs::AccumulateForGaussian	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::AccumulateForGaussian($/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::AccumulateForGmm	regtree-fmllr-diag-gmm.cc	/^BaseFloat RegtreeFmllrDiagGmmAccs::AccumulateForGmm($/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::Dim	regtree-fmllr-diag-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::Init	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::Init(size_t num_bclass, size_t dim) {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::NumBaseClasses	regtree-fmllr-diag-gmm.h	/^  int32 NumBaseClasses() const { return num_baseclasses_; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::Read	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::Read(std::istream &in, bool binary, bool add) {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::RegtreeFmllrDiagGmmAccs	regtree-fmllr-diag-gmm.h	/^  RegtreeFmllrDiagGmmAccs() : num_baseclasses_(-1), dim_(-1) {}$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::SetZero	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::SetZero() {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::Update	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::Update(const RegressionTree &regtree,$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::Write	regtree-fmllr-diag-gmm.cc	/^void RegtreeFmllrDiagGmmAccs::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::baseclass_stats	regtree-fmllr-diag-gmm.h	/^  const std::vector<AffineXformStats*> &baseclass_stats() const {$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::baseclass_stats_	regtree-fmllr-diag-gmm.h	/^  std::vector<AffineXformStats*> baseclass_stats_;$/;"	m	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::dim_	regtree-fmllr-diag-gmm.h	/^  int32 dim_;$/;"	m	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::num_baseclasses_	regtree-fmllr-diag-gmm.h	/^  int32 num_baseclasses_;$/;"	m	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmAccs::~RegtreeFmllrDiagGmmAccs	regtree-fmllr-diag-gmm.h	/^  ~RegtreeFmllrDiagGmmAccs() { DeletePointers(&baseclass_stats_); }$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+kaldi::RegtreeFmllrDiagGmmSeqReader	regtree-fmllr-diag-gmm.h	/^typedef SequentialTableReader< KaldiObjectHolder<RegtreeFmllrDiagGmm> >  RegtreeFmllrDiagGmmSeqReader;  $/;"	t	namespace:kaldi
+kaldi::RegtreeFmllrDiagGmmWriter	regtree-fmllr-diag-gmm.h	/^typedef TableWriter< KaldiObjectHolder<RegtreeFmllrDiagGmm> >  RegtreeFmllrDiagGmmWriter;$/;"	t	namespace:kaldi
+kaldi::RegtreeFmllrOptions	regtree-fmllr-diag-gmm.h	/^struct RegtreeFmllrOptions {$/;"	s	namespace:kaldi
+kaldi::RegtreeFmllrOptions::Register	regtree-fmllr-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::RegtreeFmllrOptions
+kaldi::RegtreeFmllrOptions::RegtreeFmllrOptions	regtree-fmllr-diag-gmm.h	/^  RegtreeFmllrOptions(): update_type("full"), min_count(1000.0),$/;"	f	struct:kaldi::RegtreeFmllrOptions
+kaldi::RegtreeFmllrOptions::min_count	regtree-fmllr-diag-gmm.h	/^  BaseFloat min_count;  \/\/\/< Minimum occupancy for computing a transform$/;"	m	struct:kaldi::RegtreeFmllrOptions
+kaldi::RegtreeFmllrOptions::num_iters	regtree-fmllr-diag-gmm.h	/^  int32 num_iters;      \/\/\/< Number of iterations (if using an iterative update)$/;"	m	struct:kaldi::RegtreeFmllrOptions
+kaldi::RegtreeFmllrOptions::update_type	regtree-fmllr-diag-gmm.h	/^  std::string update_type;  \/\/\/< "full", "diag", "offset", "none"$/;"	m	struct:kaldi::RegtreeFmllrOptions
+kaldi::RegtreeFmllrOptions::use_regtree	regtree-fmllr-diag-gmm.h	/^  bool use_regtree;     \/\/\/< If 'true', find transforms to generate using regression tree.$/;"	m	struct:kaldi::RegtreeFmllrOptions
+kaldi::RegtreeMllrDiagGmm	regtree-mllr-diag-gmm.h	/^class RegtreeMllrDiagGmm {$/;"	c	namespace:kaldi
+kaldi::RegtreeMllrDiagGmm::GetTransformedMeans	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::GetTransformedMeans(const RegressionTree &regtree,$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::Init	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::Init(int32 num_xforms, int32 dim) {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::Read	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::Read(std::istream &in, bool binary) {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::RegtreeMllrDiagGmm	regtree-mllr-diag-gmm.h	/^  RegtreeMllrDiagGmm() {}$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::SetParameters	regtree-mllr-diag-gmm.h	/^inline void RegtreeMllrDiagGmm::SetParameters(const MatrixBase<BaseFloat> &mat,$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::SetUnit	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::SetUnit() {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::TransformModel	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::TransformModel(const RegressionTree &regtree,$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::Write	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmm::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::bclass2xforms_	regtree-mllr-diag-gmm.h	/^  std::vector<int32> bclass2xforms_;$/;"	m	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::dim_	regtree-mllr-diag-gmm.h	/^  int32 dim_;  \/\/\/< Dimension of feature vectors$/;"	m	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::num_xforms_	regtree-mllr-diag-gmm.h	/^  int32 num_xforms_;  \/\/\/< Number of transforms == xform_matrices_.size()$/;"	m	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::set_bclass2xforms	regtree-mllr-diag-gmm.h	/^  void set_bclass2xforms(const std::vector<int32> &in) { bclass2xforms_ = in; }$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::xform_matrices	regtree-mllr-diag-gmm.h	/^  const std::vector< Matrix<BaseFloat> > xform_matrices() const {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmm::xform_matrices_	regtree-mllr-diag-gmm.h	/^  std::vector< Matrix<BaseFloat> > xform_matrices_;$/;"	m	class:kaldi::RegtreeMllrDiagGmm
+kaldi::RegtreeMllrDiagGmmAccs	regtree-mllr-diag-gmm.h	/^class RegtreeMllrDiagGmmAccs {$/;"	c	namespace:kaldi
+kaldi::RegtreeMllrDiagGmmAccs::AccumulateForGaussian	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::AccumulateForGaussian($/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::AccumulateForGmm	regtree-mllr-diag-gmm.cc	/^BaseFloat RegtreeMllrDiagGmmAccs::AccumulateForGmm($/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::Dim	regtree-mllr-diag-gmm.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::Init	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::Init(int32 num_bclass, int32 dim) {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::NumBaseClasses	regtree-mllr-diag-gmm.h	/^  int32 NumBaseClasses() const { return num_baseclasses_; }$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::Read	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::Read(std::istream &in, bool binary, bool add) {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::RegtreeMllrDiagGmmAccs	regtree-mllr-diag-gmm.h	/^  RegtreeMllrDiagGmmAccs() {}$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::SetZero	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::SetZero() {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::Update	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::Update(const RegressionTree &regtree,$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::Write	regtree-mllr-diag-gmm.cc	/^void RegtreeMllrDiagGmmAccs::Write(std::ostream &out, bool binary) const {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::baseclass_stats	regtree-mllr-diag-gmm.h	/^  const std::vector<AffineXformStats*> &baseclass_stats() const {$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::baseclass_stats_	regtree-mllr-diag-gmm.h	/^  std::vector<AffineXformStats*> baseclass_stats_;$/;"	m	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::dim_	regtree-mllr-diag-gmm.h	/^  int32 dim_;    \/\/\/< Dimension of feature vectors$/;"	m	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::num_baseclasses_	regtree-mllr-diag-gmm.h	/^  int32 num_baseclasses_;    \/\/\/< Number of baseclasses$/;"	m	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmAccs::~RegtreeMllrDiagGmmAccs	regtree-mllr-diag-gmm.h	/^  ~RegtreeMllrDiagGmmAccs() { DeletePointers(&baseclass_stats_); }$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs
+kaldi::RegtreeMllrDiagGmmSeqReader	regtree-mllr-diag-gmm.h	/^            RegtreeMllrDiagGmmSeqReader;$/;"	t	namespace:kaldi
+kaldi::RegtreeMllrDiagGmmWriter	regtree-mllr-diag-gmm.h	/^            RegtreeMllrDiagGmmWriter;$/;"	t	namespace:kaldi
+kaldi::RegtreeMllrOptions	regtree-mllr-diag-gmm.h	/^struct RegtreeMllrOptions {$/;"	s	namespace:kaldi
+kaldi::RegtreeMllrOptions::Register	regtree-mllr-diag-gmm.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::RegtreeMllrOptions
+kaldi::RegtreeMllrOptions::RegtreeMllrOptions	regtree-mllr-diag-gmm.h	/^  RegtreeMllrOptions(): min_count(1000.0), use_regtree(true) { }$/;"	f	struct:kaldi::RegtreeMllrOptions
+kaldi::RegtreeMllrOptions::min_count	regtree-mllr-diag-gmm.h	/^  BaseFloat min_count;  \/\/\/< Minimum occupancy for computing a transform$/;"	m	struct:kaldi::RegtreeMllrOptions
+kaldi::RegtreeMllrOptions::use_regtree	regtree-mllr-diag-gmm.h	/^  bool use_regtree;$/;"	m	struct:kaldi::RegtreeMllrOptions
+kaldi::TestFmpe	fmpe-test.cc	/^void TestFmpe() {$/;"	f	namespace:kaldi
+kaldi::UnitTestFmllrDiagGmm	fmllr-diag-gmm-test.cc	/^void UnitTestFmllrDiagGmm() {$/;"	f	namespace:kaldi
+kaldi::UnitTestFmllrDiagGmmDiagonal	fmllr-diag-gmm-test.cc	/^void UnitTestFmllrDiagGmmDiagonal() {$/;"	f	namespace:kaldi
+kaldi::UnitTestFmllrDiagGmmOffset	fmllr-diag-gmm-test.cc	/^void UnitTestFmllrDiagGmmOffset() {$/;"	f	namespace:kaldi
+kaldi::UnitTestFmllrRaw	fmllr-raw-test.cc	/^void UnitTestFmllrRaw(bool use_offset) {$/;"	f	namespace:kaldi
+kaldi::UnitTestRegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm-test.cc	/^void UnitTestRegtreeFmllrDiagGmm(cova_type feature_type, size_t max_bclass) {$/;"	f	namespace:kaldi
+kaldi::cova_type	regtree-fmllr-diag-gmm-test.cc	/^enum cova_type {$/;"	g	namespace:kaldi	file:
+kaldi::diag	regtree-fmllr-diag-gmm-test.cc	/^  diag$/;"	e	enum:kaldi::cova_type	file:
+kaldi::full	regtree-fmllr-diag-gmm-test.cc	/^  full,$/;"	e	enum:kaldi::cova_type	file:
+kaldi::generate_features	regtree-fmllr-diag-gmm-test.cc	/^generate_features(cova_type covariance_type,$/;"	f	namespace:kaldi
+kaldi::kEtNormalizeDiag	exponential-transform.h	/^  kEtNormalizeDiag,$/;"	e	enum:kaldi::EtNormalizeType
+kaldi::kEtNormalizeNone	exponential-transform.h	/^  kEtNormalizeNone$/;"	e	enum:kaldi::EtNormalizeType
+kaldi::kEtNormalizeOffset	exponential-transform.h	/^  kEtNormalizeOffset,$/;"	e	enum:kaldi::EtNormalizeType
+l2_weight	fmpe.h	/^  BaseFloat l2_weight; \/\/ Weight on l2 regularization term$/;"	m	struct:kaldi::FmpeUpdateOptions
+learning_rate	exponential-transform.h	/^  BaseFloat learning_rate;$/;"	m	struct:kaldi::ExponentialTransformUpdateAOptions
+learning_rate	fmpe.h	/^  BaseFloat learning_rate; \/\/ Learning rate constant.  Like inverse of E$/;"	m	struct:kaldi::FmpeUpdateOptions
+logdet_	regtree-fmllr-diag-gmm.h	/^  Vector<BaseFloat> logdet_;    \/\/\/< Log-determinants of the Jacobians$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+logdets_	decodable-am-diag-gmm-regtree.h	/^  Vector<BaseFloat> logdets_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+logdets_	lvtln.h	/^  std::vector<BaseFloat> logdets_;$/;"	m	class:kaldi::LinearVtln
+main	fmllr-diag-gmm-test.cc	/^int main() {$/;"	f
+main	fmllr-raw-test.cc	/^int main() {$/;"	f
+main	fmpe-test.cc	/^int main() {$/;"	f
+main	lda-estimate-test.cc	/^main() {$/;"	f
+main	regression-tree-test.cc	/^main() {$/;"	f
+main	regtree-fmllr-diag-gmm-test.cc	/^int main() {$/;"	f
+main	regtree-mllr-diag-gmm-test.cc	/^int main() {$/;"	f
+mean_accs_	hlda.h	/^  std::vector<Matrix<double> > mean_accs_;  \/\/ [num-pdfs][gauss][feat_dim+1]$/;"	m	class:kaldi::HldaAccsDiagGmm
+mean_accs_sub_	hlda.h	/^  std::vector<Matrix<double> > mean_accs_sub_;$/;"	m	class:kaldi::HldaAccsDiagGmm
+min_count	basis-fmllr-diag-gmm.h	/^  BaseFloat min_count;$/;"	m	struct:kaldi::BasisFmllrOptions
+min_count	fmllr-diag-gmm.h	/^  BaseFloat min_count;$/;"	m	struct:kaldi::FmllrOptions
+min_count	fmllr-raw.h	/^  BaseFloat min_count;$/;"	m	struct:kaldi::FmllrRawOptions
+min_count	regtree-fmllr-diag-gmm.h	/^  BaseFloat min_count;  \/\/\/< Minimum occupancy for computing a transform$/;"	m	struct:kaldi::RegtreeFmllrOptions
+min_count	regtree-mllr-diag-gmm.h	/^  BaseFloat min_count;  \/\/\/< Minimum occupancy for computing a transform$/;"	m	struct:kaldi::RegtreeMllrOptions
+mllr_xform_	decodable-am-diag-gmm-regtree.h	/^  const RegtreeMllrDiagGmm &mllr_xform_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+model_dim_	fmllr-raw.h	/^  int32 model_dim_; \/\/ Model dimension$/;"	m	class:kaldi::FmllrRawAccs
+norm_type_	exponential-transform.h	/^  EtNormalizeType norm_type_;  \/\/ tells us how to train D_s.$/;"	m	class:kaldi::ExponentialTransform
+num_baseclasses_	regression-tree.h	/^  int32 num_baseclasses_;  \/\/\/< Number of leaf nodes$/;"	m	class:kaldi::RegressionTree
+num_baseclasses_	regtree-fmllr-diag-gmm.h	/^  int32 num_baseclasses_;$/;"	m	class:kaldi::RegtreeFmllrDiagGmmAccs
+num_baseclasses_	regtree-mllr-diag-gmm.h	/^  int32 num_baseclasses_;    \/\/\/< Number of baseclasses$/;"	m	class:kaldi::RegtreeMllrDiagGmmAccs
+num_iters	basis-fmllr-diag-gmm.h	/^  int32 num_iters;$/;"	m	struct:kaldi::BasisFmllrOptions
+num_iters	fmllr-diag-gmm.h	/^  int32 num_iters;$/;"	m	struct:kaldi::FmllrOptions
+num_iters	fmllr-raw.h	/^  int32 num_iters;$/;"	m	struct:kaldi::FmllrRawOptions
+num_iters	regtree-fmllr-diag-gmm.h	/^  int32 num_iters;      \/\/\/< Number of iterations (if using an iterative update)$/;"	m	struct:kaldi::RegtreeFmllrOptions
+num_nodes_	regression-tree.h	/^  int32 num_nodes_;  \/\/\/< Total (non-leaf+leaf) nodes$/;"	m	class:kaldi::RegressionTree
+num_xforms_	regtree-fmllr-diag-gmm.h	/^  int32 num_xforms_;            \/\/\/< Number of transform matrices$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+num_xforms_	regtree-mllr-diag-gmm.h	/^  int32 num_xforms_;  \/\/\/< Number of transforms == xform_matrices_.size()$/;"	m	class:kaldi::RegtreeMllrDiagGmm
+occs_	hlda.h	/^  std::vector<Vector<double> > occs_;  \/\/ occupancies for the Gaussians. [num-pdfs][gauss]$/;"	m	class:kaldi::HldaAccsDiagGmm
+occs_sub_	hlda.h	/^  std::vector<Vector<double> > occs_sub_;$/;"	m	class:kaldi::HldaAccsDiagGmm
+opts_	fmllr-diag-gmm.h	/^  FmllrOptions opts_;$/;"	m	class:kaldi::FmllrDiagGmmAccs
+parents_	regression-tree.h	/^  std::vector<int32> parents_;$/;"	m	class:kaldi::RegressionTree
+post_scale	fmpe.h	/^  BaseFloat post_scale; \/\/ Scale on the posterior component of the high-dim$/;"	m	struct:kaldi::FmpeOptions
+projT_	fmpe.h	/^  Matrix<BaseFloat> projT_; \/\/ The transpose of the projection matrix;$/;"	m	class:kaldi::Fmpe
+rand_diag_gmm	regression-tree-test.cc	/^rand_diag_gmm(size_t num_comp, size_t dim, DiagGmm *gmm) {$/;"	f
+rand_posdef_spmatrix	lda-estimate-test.cc	/^void rand_posdef_spmatrix(size_t dim, SpMatrix<BaseFloat> *matrix,$/;"	f
+rand_prune_	mllt.h	/^  BaseFloat rand_prune_;$/;"	m	class:kaldi::MlltAccs
+raw_dim_	fmllr-raw.h	/^  int32 raw_dim_; \/\/ Raw MFCC dimension.$/;"	m	class:kaldi::FmllrRawAccs
+regtree_	decodable-am-diag-gmm-regtree.h	/^  const RegressionTree &regtree_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+regtree_	decodable-am-diag-gmm-regtree.h	/^  const RegressionTree &regtree_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+remove_offset	lda-estimate.h	/^  bool remove_offset;$/;"	m	struct:kaldi::LdaEstimateOptions
+renormalize	exponential-transform.h	/^  bool renormalize;  \/\/ renormalize A and recenter the warp factors on each iteration...$/;"	m	struct:kaldi::ExponentialTransformUpdateAOptions
+s	fmllr-raw.h	/^    Vector<BaseFloat> s; \/\/ [FullDim() + 1]-dimensional spliced data, plus 1.0$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+sample_gconst_	hlda.h	/^  BaseFloat sample_gconst_;  \/\/ a sample gconst from the model, as a check$/;"	m	class:kaldi::HldaAccsDiagGmm
+scale_	decodable-am-diag-gmm-regtree.h	/^  BaseFloat scale_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+scale_	decodable-am-diag-gmm-regtree.h	/^  BaseFloat scale_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+set_bclass2xforms	regtree-fmllr-diag-gmm.h	/^  void set_bclass2xforms(const std::vector<int32> &in) { bclass2xforms_ = in; }$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+set_bclass2xforms	regtree-mllr-diag-gmm.h	/^  void set_bclass2xforms(const std::vector<int32> &in) { bclass2xforms_ = in; }$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+single_frame_stats_	fmllr-diag-gmm.h	/^  SingleFrameStats single_frame_stats_;$/;"	m	class:kaldi::FmllrDiagGmmAccs
+single_frame_stats_	fmllr-raw.h	/^  SingleFrameStats single_frame_stats_;$/;"	m	class:kaldi::FmllrRawAccs
+size_scale	basis-fmllr-diag-gmm.h	/^  BaseFloat size_scale; \/\/ how many basis elements we add for each new frame.$/;"	m	struct:kaldi::BasisFmllrOptions
+speedup_	hlda.h	/^  BaseFloat speedup_;$/;"	m	class:kaldi::HldaAccsDiagGmm
+stddevs_	fmpe.h	/^  Matrix<BaseFloat> stddevs_; \/\/ The standard deviations of the$/;"	m	class:kaldi::Fmpe
+step_size_iters	basis-fmllr-diag-gmm.h	/^  int32 step_size_iters;$/;"	m	struct:kaldi::BasisFmllrOptions
+temp_	fmllr-raw.h	/^  SpMatrix<double> temp_; \/\/ [full_dim + 1][full_dim + 1], outer product of s.$/;"	m	class:kaldi::FmllrRawAccs
+test_io	lda-estimate-test.cc	/^test_io(const LdaEstimate &lda_est, bool binary) {$/;"	f
+test_io	regression-tree-test.cc	/^test_io(const RegressionTree &regtree,$/;"	f
+total_second_acc_	lda-estimate.h	/^  SpMatrix<double> total_second_acc_;$/;"	m	class:kaldi::LdaEstimate
+trans_model_	decodable-am-diag-gmm-regtree.h	/^  const TransitionModel &trans_model_;  \/\/ for transition-id to pdf mapping$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+trans_model_	decodable-am-diag-gmm-regtree.h	/^  const TransitionModel &trans_model_;  \/\/ for transition-id to pdf mapping$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+transform_offset_	fmllr-raw.h	/^  Vector<BaseFloat> transform_offset_; \/\/ The offset term (or zero).$/;"	m	class:kaldi::FmllrRawAccs
+transformed_data	fmllr-raw.h	/^    Vector<BaseFloat> transformed_data; \/\/ [FullDim()] Data times full transform, with offset.$/;"	m	struct:kaldi::FmllrRawAccs::SingleFrameStats
+update_type	fmllr-diag-gmm.h	/^  std::string update_type;  \/\/\/< "full", "diag", "offset", "none"$/;"	m	struct:kaldi::FmllrOptions
+update_type	regtree-fmllr-diag-gmm.h	/^  std::string update_type;  \/\/\/< "full", "diag", "offset", "none"$/;"	m	struct:kaldi::RegtreeFmllrOptions
+use_regtree	regtree-fmllr-diag-gmm.h	/^  bool use_regtree;     \/\/\/< If 'true', find transforms to generate using regression tree.$/;"	m	struct:kaldi::RegtreeFmllrOptions
+use_regtree	regtree-mllr-diag-gmm.h	/^  bool use_regtree;$/;"	m	struct:kaldi::RegtreeMllrOptions
+valid_logdet_	regtree-fmllr-diag-gmm.h	/^  bool valid_logdet_;           \/\/\/< Whether logdets are for current transforms$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+valid_logdets_	decodable-am-diag-gmm-regtree.h	/^  bool valid_logdets_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+warps_	lvtln.h	/^  std::vector<BaseFloat> warps_; \/\/ This variable can be used to store the$/;"	m	class:kaldi::LinearVtln
+within_class_factor	lda-estimate.h	/^  BaseFloat within_class_factor; \/\/ TODO: remove this eventually, it$/;"	m	struct:kaldi::LdaEstimateOptions
+x	fmllr-diag-gmm.h	/^    Vector<BaseFloat> x; \/\/ dim-dimensional features.$/;"	m	struct:kaldi::FmllrDiagGmmAccs::SingleFrameStats
+xform_matrices	regtree-mllr-diag-gmm.h	/^  const std::vector< Matrix<BaseFloat> > xform_matrices() const {$/;"	f	class:kaldi::RegtreeMllrDiagGmm
+xform_matrices_	regtree-fmllr-diag-gmm.h	/^  std::vector< Matrix<BaseFloat> > xform_matrices_;  \/\/\/< Transform matrices$/;"	m	class:kaldi::RegtreeFmllrDiagGmm
+xform_matrices_	regtree-mllr-diag-gmm.h	/^  std::vector< Matrix<BaseFloat> > xform_matrices_;$/;"	m	class:kaldi::RegtreeMllrDiagGmm
+xformed_data_	decodable-am-diag-gmm-regtree.h	/^  std::vector< Vector<BaseFloat> > xformed_data_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+xformed_data_squared_	decodable-am-diag-gmm-regtree.h	/^  std::vector< Vector<BaseFloat> > xformed_data_squared_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeFmllr
+xformed_gconsts_	decodable-am-diag-gmm-regtree.h	/^  std::vector< Vector<BaseFloat>* > xformed_gconsts_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+xformed_mean_invvars_	decodable-am-diag-gmm-regtree.h	/^  std::vector< Matrix<BaseFloat>* > xformed_mean_invvars_;$/;"	m	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+zero_acc_	lda-estimate.h	/^  Vector<double> zero_acc_;$/;"	m	class:kaldi::LdaEstimate
+~DecodableAmDiagGmmRegtreeMllr	decodable-am-diag-gmm-regtree.cc	/^DecodableAmDiagGmmRegtreeMllr::~DecodableAmDiagGmmRegtreeMllr() {$/;"	f	class:kaldi::DecodableAmDiagGmmRegtreeMllr
+~RegtreeFmllrDiagGmm	regtree-fmllr-diag-gmm.h	/^  ~RegtreeFmllrDiagGmm() {}$/;"	f	class:kaldi::RegtreeFmllrDiagGmm
+~RegtreeFmllrDiagGmmAccs	regtree-fmllr-diag-gmm.h	/^  ~RegtreeFmllrDiagGmmAccs() { DeletePointers(&baseclass_stats_); }$/;"	f	class:kaldi::RegtreeFmllrDiagGmmAccs
+~RegtreeMllrDiagGmmAccs	regtree-mllr-diag-gmm.h	/^  ~RegtreeMllrDiagGmmAccs() { DeletePointers(&baseclass_stats_); }$/;"	f	class:kaldi::RegtreeMllrDiagGmmAccs

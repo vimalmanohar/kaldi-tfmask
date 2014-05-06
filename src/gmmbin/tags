@@ -1,0 +1,187 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AccStatsForUtterance	gmm-est-fmllr-raw-gpost.cc	/^void AccStatsForUtterance(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+AccStatsForUtterance	gmm-est-fmllr-raw.cc	/^void AccStatsForUtterance(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+AccumulateForUtterance	gmm-basis-fmllr-accs-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	gmm-basis-fmllr-accs.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	gmm-est-basis-fmllr-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	gmm-est-basis-fmllr.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	gmm-est-fmllr-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	gmm-est-fmllr.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	gmm-est-lvtln-trans.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	gmm-global-est-fmllr.cc	/^bool AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+CreatePhoneMap	gmm-align-compiled-plusphones.cc	/^void CreatePhoneMap(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+CreatePhoneModel	gmm-align-compiled-plusphones.cc	/^void CreatePhoneModel(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+DecodeInfo	gmm-decode-faster-regtree-fmllr.cc	/^  DecodeInfo(const kaldi::AmDiagGmm &am,$/;"	f	struct:DecodeInfo
+DecodeInfo	gmm-decode-faster-regtree-fmllr.cc	/^struct DecodeInfo {$/;"	s	file:
+DecodeInfo	gmm-decode-faster-regtree-mllr.cc	/^  DecodeInfo(const kaldi::AmDiagGmm &am,$/;"	f	struct:DecodeInfo
+DecodeInfo	gmm-decode-faster-regtree-mllr.cc	/^struct DecodeInfo {$/;"	s	file:
+DecodeInfo::DecodeInfo	gmm-decode-faster-regtree-fmllr.cc	/^  DecodeInfo(const kaldi::AmDiagGmm &am,$/;"	f	struct:DecodeInfo
+DecodeInfo::DecodeInfo	gmm-decode-faster-regtree-mllr.cc	/^  DecodeInfo(const kaldi::AmDiagGmm &am,$/;"	f	struct:DecodeInfo
+DecodeInfo::acoustic_model	gmm-decode-faster-regtree-fmllr.cc	/^  const kaldi::AmDiagGmm &acoustic_model;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::acoustic_model	gmm-decode-faster-regtree-mllr.cc	/^  const kaldi::AmDiagGmm &acoustic_model;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::acoustic_scale	gmm-decode-faster-regtree-fmllr.cc	/^  BaseFloat acoustic_scale;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::acoustic_scale	gmm-decode-faster-regtree-mllr.cc	/^  BaseFloat acoustic_scale;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::alignment_writer	gmm-decode-faster-regtree-fmllr.cc	/^  const kaldi::Int32VectorWriter &alignment_writer;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::alignment_writer	gmm-decode-faster-regtree-mllr.cc	/^  const kaldi::Int32VectorWriter &alignment_writer;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::allow_partial	gmm-decode-faster-regtree-fmllr.cc	/^  bool allow_partial;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::allow_partial	gmm-decode-faster-regtree-mllr.cc	/^  bool allow_partial;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::decoder	gmm-decode-faster-regtree-fmllr.cc	/^  kaldi::FasterDecoder *decoder;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::decoder	gmm-decode-faster-regtree-mllr.cc	/^  kaldi::FasterDecoder *decoder;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::trans_model	gmm-decode-faster-regtree-fmllr.cc	/^  const kaldi::TransitionModel &trans_model;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::trans_model	gmm-decode-faster-regtree-mllr.cc	/^  const kaldi::TransitionModel &trans_model;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::word_syms	gmm-decode-faster-regtree-fmllr.cc	/^  fst::SymbolTable *word_syms;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::word_syms	gmm-decode-faster-regtree-mllr.cc	/^  fst::SymbolTable *word_syms;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::words_writer	gmm-decode-faster-regtree-fmllr.cc	/^  const kaldi::Int32VectorWriter &words_writer;$/;"	m	struct:DecodeInfo	file:
+DecodeInfo::words_writer	gmm-decode-faster-regtree-mllr.cc	/^  const kaldi::Int32VectorWriter &words_writer;$/;"	m	struct:DecodeInfo	file:
+DecodeUtterance	gmm-decode-faster-regtree-fmllr.cc	/^bool DecodeUtterance(kaldi::FasterDecoder *decoder,$/;"	f
+DecodeUtterance	gmm-decode-faster-regtree-mllr.cc	/^bool DecodeUtterance(kaldi::FasterDecoder *decoder,$/;"	f
+DecodeUtterance	gmm-latgen-biglm-faster.cc	/^bool DecodeUtterance(LatticeBiglmFasterDecoder &decoder, \/\/ not const but is really an input.$/;"	f	namespace:kaldi
+GetFeatureMeanAndVariance	gmm-init-model-flat.cc	/^void GetFeatureMeanAndVariance(const std::string &feat_rspecifier,$/;"	f	namespace:kaldi
+GetOccs	gmm-init-model.cc	/^void GetOccs(const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+InitAmGmm	gmm-init-model.cc	/^void InitAmGmm(const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+InitAmGmmFromOld	gmm-init-model.cc	/^void InitAmGmmFromOld(const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+InitGmmFromRandomFrames	gmm-global-init-from-feats.cc	/^void InitGmmFromRandomFrames(const Matrix<BaseFloat> &feats, DiagGmm *gmm) {$/;"	f	namespace:kaldi
+ReadNetwork	gmm-decode-biglm-faster.cc	/^fst::Fst<fst::StdArc> *ReadNetwork(std::string filename) {$/;"	f	namespace:kaldi
+ReadNetwork	gmm-decode-faster.cc	/^fst::Fst<fst::StdArc> *ReadNetwork(std::string filename) {$/;"	f	namespace:kaldi
+ReadNetwork	gmm-decode-nbest.cc	/^fst::Fst<fst::StdArc> *ReadNetwork(std::string filename) {$/;"	f
+ReadSharedPhonesList	gmm-init-mono.cc	/^void ReadSharedPhonesList(std::string rxfilename, std::vector<std::vector<int32> > *list_out) {$/;"	f	namespace:kaldi
+TrainOneIter	gmm-global-init-from-feats.cc	/^void TrainOneIter(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+acoustic_model	gmm-decode-faster-regtree-fmllr.cc	/^  const kaldi::AmDiagGmm &acoustic_model;$/;"	m	struct:DecodeInfo	file:
+acoustic_model	gmm-decode-faster-regtree-mllr.cc	/^  const kaldi::AmDiagGmm &acoustic_model;$/;"	m	struct:DecodeInfo	file:
+acoustic_scale	gmm-decode-faster-regtree-fmllr.cc	/^  BaseFloat acoustic_scale;$/;"	m	struct:DecodeInfo	file:
+acoustic_scale	gmm-decode-faster-regtree-mllr.cc	/^  BaseFloat acoustic_scale;$/;"	m	struct:DecodeInfo	file:
+alignment_writer	gmm-decode-faster-regtree-fmllr.cc	/^  const kaldi::Int32VectorWriter &alignment_writer;$/;"	m	struct:DecodeInfo	file:
+alignment_writer	gmm-decode-faster-regtree-mllr.cc	/^  const kaldi::Int32VectorWriter &alignment_writer;$/;"	m	struct:DecodeInfo	file:
+allow_partial	gmm-decode-faster-regtree-fmllr.cc	/^  bool allow_partial;$/;"	m	struct:DecodeInfo	file:
+allow_partial	gmm-decode-faster-regtree-mllr.cc	/^  bool allow_partial;$/;"	m	struct:DecodeInfo	file:
+decoder	gmm-decode-faster-regtree-fmllr.cc	/^  kaldi::FasterDecoder *decoder;$/;"	m	struct:DecodeInfo	file:
+decoder	gmm-decode-faster-regtree-mllr.cc	/^  kaldi::FasterDecoder *decoder;$/;"	m	struct:DecodeInfo	file:
+kaldi	gmm-align-compiled-plusphones.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-basis-fmllr-accs-gpost.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-basis-fmllr-accs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-decode-biglm-faster.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-decode-faster.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-est-basis-fmllr-gpost.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-est-basis-fmllr.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-est-fmllr-gpost.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-est-fmllr-raw-gpost.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-est-fmllr-raw.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-est-fmllr.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-est-lvtln-trans.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-global-est-fmllr.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-global-init-from-feats.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-init-model-flat.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-init-model.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-init-mono.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gmm-latgen-biglm-faster.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::AccStatsForUtterance	gmm-est-fmllr-raw-gpost.cc	/^void AccStatsForUtterance(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::AccStatsForUtterance	gmm-est-fmllr-raw.cc	/^void AccStatsForUtterance(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	gmm-basis-fmllr-accs-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	gmm-basis-fmllr-accs.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	gmm-est-basis-fmllr-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	gmm-est-basis-fmllr.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	gmm-est-fmllr-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	gmm-est-fmllr.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	gmm-est-lvtln-trans.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	gmm-global-est-fmllr.cc	/^bool AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::CreatePhoneMap	gmm-align-compiled-plusphones.cc	/^void CreatePhoneMap(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::CreatePhoneModel	gmm-align-compiled-plusphones.cc	/^void CreatePhoneModel(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::DecodeUtterance	gmm-latgen-biglm-faster.cc	/^bool DecodeUtterance(LatticeBiglmFasterDecoder &decoder, \/\/ not const but is really an input.$/;"	f	namespace:kaldi
+kaldi::GetFeatureMeanAndVariance	gmm-init-model-flat.cc	/^void GetFeatureMeanAndVariance(const std::string &feat_rspecifier,$/;"	f	namespace:kaldi
+kaldi::GetOccs	gmm-init-model.cc	/^void GetOccs(const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+kaldi::InitAmGmm	gmm-init-model.cc	/^void InitAmGmm(const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+kaldi::InitAmGmmFromOld	gmm-init-model.cc	/^void InitAmGmmFromOld(const BuildTreeStatsType &stats,$/;"	f	namespace:kaldi
+kaldi::InitGmmFromRandomFrames	gmm-global-init-from-feats.cc	/^void InitGmmFromRandomFrames(const Matrix<BaseFloat> &feats, DiagGmm *gmm) {$/;"	f	namespace:kaldi
+kaldi::ReadNetwork	gmm-decode-biglm-faster.cc	/^fst::Fst<fst::StdArc> *ReadNetwork(std::string filename) {$/;"	f	namespace:kaldi
+kaldi::ReadNetwork	gmm-decode-faster.cc	/^fst::Fst<fst::StdArc> *ReadNetwork(std::string filename) {$/;"	f	namespace:kaldi
+kaldi::ReadSharedPhonesList	gmm-init-mono.cc	/^void ReadSharedPhonesList(std::string rxfilename, std::vector<std::vector<int32> > *list_out) {$/;"	f	namespace:kaldi
+kaldi::TrainOneIter	gmm-global-init-from-feats.cc	/^void TrainOneIter(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+main	gmm-acc-hlda.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-acc-mllt-global.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-acc-mllt.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-acc-stats-ali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-acc-stats-twofeats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-acc-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-acc-stats2.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-adapt-map.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-align-compiled-plusphones.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-align-compiled.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-align.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-basis-fmllr-accs-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-basis-fmllr-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-basis-fmllr-training.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-boost-silence.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-compute-likes.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-decode-biglm-faster.cc	/^int main(int argc, char *argv[])$/;"	f
+main	gmm-decode-faster-regtree-fmllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-decode-faster-regtree-mllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-decode-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-decode-nbest.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-decode-simple.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-diff-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-basis-fmllr-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-basis-fmllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-fmllr-global.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-fmllr-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-fmllr-raw-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-fmllr-raw.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-fmllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-gaussians-ebw.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-hlda.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-lvtln-trans.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-map.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-regtree-fmllr-ali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-regtree-fmllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-regtree-mllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-rescale.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est-weights-ebw.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-est.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-fmpe-acc-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-get-feat-deriv.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-get-stats-deriv.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-acc-stats-twofeats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-acc-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-est-fmllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-est.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-get-frame-likes.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-init-from-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-sum-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-global-to-fgmm.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-gselect.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-init-lvtln.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-init-model-flat.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-init-model.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-init-mono.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-init-trans.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-ismooth-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-latgen-biglm-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-latgen-faster-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-latgen-faster-regtree-fmllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-latgen-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-latgen-map.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-latgen-simple.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-latgen-tracking.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-make-regtree.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-mixup.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-post-to-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-rescore-lattice.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-scale-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-sum-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-train-lvtln-special.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-transform-means-global.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	gmm-transform-means.cc	/^int main(int argc, char *argv[]) {$/;"	f
+trans_model	gmm-decode-faster-regtree-fmllr.cc	/^  const kaldi::TransitionModel &trans_model;$/;"	m	struct:DecodeInfo	file:
+trans_model	gmm-decode-faster-regtree-mllr.cc	/^  const kaldi::TransitionModel &trans_model;$/;"	m	struct:DecodeInfo	file:
+word_syms	gmm-decode-faster-regtree-fmllr.cc	/^  fst::SymbolTable *word_syms;$/;"	m	struct:DecodeInfo	file:
+word_syms	gmm-decode-faster-regtree-mllr.cc	/^  fst::SymbolTable *word_syms;$/;"	m	struct:DecodeInfo	file:
+words_writer	gmm-decode-faster-regtree-fmllr.cc	/^  const kaldi::Int32VectorWriter &words_writer;$/;"	m	struct:DecodeInfo	file:
+words_writer	gmm-decode-faster-regtree-mllr.cc	/^  const kaldi::Int32VectorWriter &words_writer;$/;"	m	struct:DecodeInfo	file:

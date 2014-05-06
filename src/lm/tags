@@ -1,0 +1,126 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddArcsForNgramProb	kaldi-lmtable.cc	/^void LmFstConverter::AddArcsForNgramProb($/;"	f	class:kaldi::LmFstConverter
+AddStateFromSymb	kaldi-lmtable.cc	/^LmFstConverter::StateId LmFstConverter::AddStateFromSymb($/;"	f	class:kaldi::LmFstConverter
+BkStateMap	kaldi-lmtable.h	/^  typedef unordered_map<StateId, StateId> BkStateMap;$/;"	t	class:kaldi::LmFstConverter
+ConnectUnusedStates	kaldi-lmtable.cc	/^void LmFstConverter::ConnectUnusedStates(fst::StdVectorFst *pfst) {$/;"	f	class:kaldi::LmFstConverter
+ConvertArpaLogProbToWeight	kaldi-lmtable.h	/^  float ConvertArpaLogProbToWeight(float lp) {$/;"	f	class:kaldi::LmFstConverter
+CreateGenFst	lm-lib-test.cc	/^static fst::StdVectorFst* CreateGenFst(fst::SymbolTable *pst) {$/;"	f	namespace:kaldi
+CreateRandPathFst	lm-lib-test.cc	/^static fst::StdVectorFst* CreateRandPathFst(int n, fst::StdVectorFst *genFst) {$/;"	f	namespace:kaldi
+DumpContinue	kaldi-lmtable.cc	/^void LmTable::DumpContinue(ngram ng, int ilev, int elev,$/;"	f	class:kaldi::LmTable
+DumpStart	kaldi-lmtable.cc	/^void LmTable::DumpStart(ngram ng,$/;"	f	class:kaldi::LmTable
+FindState	kaldi-lmtable.h	/^  StateId FindState(const std::string str) {$/;"	f	class:kaldi::LmFstConverter
+GetFst	kaldi-lm.h	/^  const fst::VectorFst<fst::StdArc>* GetFst() const {return pfst_;}$/;"	f	class:kaldi::LangModelFst
+GetFst	kaldi-lm.h	/^  fst::VectorFst<fst::StdArc>* GetFst() {return pfst_;}$/;"	f	class:kaldi::LangModelFst
+GrammarType	kaldi-lm.h	/^enum GrammarType {$/;"	g	namespace:kaldi
+HistStateMap	kaldi-lmtable.h	/^  typedef unordered_map<std::string, StateId, StringHasher> HistStateMap;$/;"	t	class:kaldi::LmFstConverter
+IsFinal	kaldi-lmtable.h	/^  bool IsFinal(fst::StdVectorFst *pfst,$/;"	f	class:kaldi::LmFstConverter
+KALDI_LM_KALDI_LMTABLE_H_	kaldi-lmtable.h	20;"	d
+KALDI_LM_KALDI_LM_H_	kaldi-lm.h	34;"	d
+LangModelFst	kaldi-lm.h	/^  LangModelFst() {$/;"	f	class:kaldi::LangModelFst
+LangModelFst	kaldi-lm.h	/^  LangModelFst(const LangModelFst &lm)$/;"	f	class:kaldi::LangModelFst
+LangModelFst	kaldi-lm.h	/^class LangModelFst: public fst::VectorFst<fst::StdArc> {$/;"	c	namespace:kaldi
+LmFstConverter	kaldi-lmtable.h	/^  LmFstConverter() : use_natural_log_(true) {}$/;"	f	class:kaldi::LmFstConverter
+LmFstConverter	kaldi-lmtable.h	/^class LmFstConverter {$/;"	c	namespace:kaldi
+LmTable	kaldi-lmtable.h	/^  LmTable() { conv_ = new LmFstConverter; }$/;"	f	class:kaldi::LmTable
+LmTable	kaldi-lmtable.h	/^class LmTable : public lmtable {$/;"	c	namespace:kaldi
+LmTable	kaldi-lmtable.h	/^class LmTable {$/;"	c	namespace:kaldi
+LmWeight	kaldi-lm.h	/^  typedef fst::StdArc::Weight LmWeight;$/;"	t	class:kaldi::LangModelFst
+LmWeight	kaldi-lmtable.h	/^  typedef fst::StdArc::Weight LmWeight;$/;"	t	class:kaldi::LmFstConverter
+MAX_SENTENCE_LENGTH	lm-lib-test.cc	40;"	d	file:
+MutableInputSymbols	kaldi-lm.h	/^  fst::SymbolTable* MutableInputSymbols() {$/;"	f	class:kaldi::LangModelFst
+NOPROB	kaldi-lmtable.h	155;"	d
+PrintCompletePath	lm-lib-test.cc	/^static LangModelFst::LmWeight PrintCompletePath(fst::SymbolTable *pst,$/;"	f	namespace:kaldi
+PrintCompletePaths	lm-lib-test.cc	/^static LangModelFst::LmWeight PrintCompletePaths(fst::SymbolTable *pst,$/;"	f	namespace:kaldi
+Read	kaldi-lm.h	/^  bool Read(const string &rxfilename,$/;"	f	class:kaldi::LangModelFst
+Read	kaldi-lm.h	/^  bool Read(std::istream &strm,$/;"	f	class:kaldi::LangModelFst
+ReadFstFromLmFile	kaldi-lmtable.cc	/^bool LmTable::ReadFstFromLmFile(std::istream &istrm,$/;"	f	class:kaldi::LmTable
+ReadStream	kaldi-lm.cc	/^fst::StdVectorFst* LangModelFst::ReadStream($/;"	f	class:kaldi::LangModelFst
+ReadTxtLine	kaldi-lm.cc	/^LangModelFst::StateId LangModelFst::ReadTxtLine(const string &inpline) {$/;"	f	class:kaldi::LangModelFst
+ReadTxtString	kaldi-lm.cc	/^void LangModelFst::ReadTxtString(std::istream &strm) {$/;"	f	class:kaldi::LangModelFst
+STRTOF	kaldi-lmtable.h	50;"	d
+StateId	kaldi-lm.h	/^  typedef fst::StdArc::StateId StateId;$/;"	t	class:kaldi::LangModelFst
+StateId	kaldi-lmtable.h	/^  typedef fst::StdArc::StateId StateId;$/;"	t	class:kaldi::LmFstConverter
+TestLmTableEvalScore	lm-lib-test.cc	/^bool TestLmTableEvalScore(const string &inpfile,$/;"	f	namespace:kaldi
+TestLmTableReadWrite	lm-lib-test.cc	/^bool TestLmTableReadWrite(int nTests,$/;"	f	namespace:kaldi
+UseNaturalLog	kaldi-lmtable.h	/^  void UseNaturalLog(bool use_natural) { use_natural_log_ = use_natural; }$/;"	f	class:kaldi::LmFstConverter
+Write	kaldi-lm.h	/^  bool Write(std::string wxfilename) {$/;"	f	class:kaldi::LangModelFst
+bkState_	kaldi-lmtable.h	/^  BkStateMap bkState_;$/;"	m	class:kaldi::LmFstConverter
+conv_	kaldi-lmtable.h	/^  LmFstConverter *conv_;$/;"	m	class:kaldi::LmTable
+coverageTests	lm-lib-test.cc	/^static bool coverageTests(fst::StdVectorFst *genFst,$/;"	f	namespace:kaldi
+endOfSentence	lm-lib-test.cc	38;"	d	file:
+epsilon	lm-lib-test.cc	39;"	d	file:
+histState_	kaldi-lmtable.h	/^  HistStateMap histState_;$/;"	m	class:kaldi::LmFstConverter
+kArpaLm	kaldi-lm.h	/^  kArpaLm, kIrstLm, kFst, kTextString$/;"	e	enum:kaldi::GrammarType
+kFst	kaldi-lm.h	/^  kArpaLm, kIrstLm, kFst, kTextString$/;"	e	enum:kaldi::GrammarType
+kIrstLm	kaldi-lm.h	/^  kArpaLm, kIrstLm, kFst, kTextString$/;"	e	enum:kaldi::GrammarType
+kTextString	kaldi-lm.h	/^  kArpaLm, kIrstLm, kFst, kTextString$/;"	e	enum:kaldi::GrammarType
+kaldi	kaldi-lm.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-lm.h	/^namespace kaldi {$/;"	n
+kaldi	kaldi-lmtable.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-lmtable.h	/^namespace kaldi {$/;"	n
+kaldi	lm-lib-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::CreateGenFst	lm-lib-test.cc	/^static fst::StdVectorFst* CreateGenFst(fst::SymbolTable *pst) {$/;"	f	namespace:kaldi
+kaldi::CreateRandPathFst	lm-lib-test.cc	/^static fst::StdVectorFst* CreateRandPathFst(int n, fst::StdVectorFst *genFst) {$/;"	f	namespace:kaldi
+kaldi::GrammarType	kaldi-lm.h	/^enum GrammarType {$/;"	g	namespace:kaldi
+kaldi::LangModelFst	kaldi-lm.h	/^class LangModelFst: public fst::VectorFst<fst::StdArc> {$/;"	c	namespace:kaldi
+kaldi::LangModelFst::GetFst	kaldi-lm.h	/^  const fst::VectorFst<fst::StdArc>* GetFst() const {return pfst_;}$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::GetFst	kaldi-lm.h	/^  fst::VectorFst<fst::StdArc>* GetFst() {return pfst_;}$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::LangModelFst	kaldi-lm.h	/^  LangModelFst() {$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::LangModelFst	kaldi-lm.h	/^  LangModelFst(const LangModelFst &lm)$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::LmWeight	kaldi-lm.h	/^  typedef fst::StdArc::Weight LmWeight;$/;"	t	class:kaldi::LangModelFst
+kaldi::LangModelFst::MutableInputSymbols	kaldi-lm.h	/^  fst::SymbolTable* MutableInputSymbols() {$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::Read	kaldi-lm.h	/^  bool Read(const string &rxfilename,$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::Read	kaldi-lm.h	/^  bool Read(std::istream &strm,$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::ReadStream	kaldi-lm.cc	/^fst::StdVectorFst* LangModelFst::ReadStream($/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::ReadTxtLine	kaldi-lm.cc	/^LangModelFst::StateId LangModelFst::ReadTxtLine(const string &inpline) {$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::ReadTxtString	kaldi-lm.cc	/^void LangModelFst::ReadTxtString(std::istream &strm) {$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::StateId	kaldi-lm.h	/^  typedef fst::StdArc::StateId StateId;$/;"	t	class:kaldi::LangModelFst
+kaldi::LangModelFst::Write	kaldi-lm.h	/^  bool Write(std::string wxfilename) {$/;"	f	class:kaldi::LangModelFst
+kaldi::LangModelFst::pfst_	kaldi-lm.h	/^  fst::VectorFst<fst::StdArc> *pfst_;$/;"	m	class:kaldi::LangModelFst
+kaldi::LangModelFst::~LangModelFst	kaldi-lm.h	/^  ~LangModelFst() {$/;"	f	class:kaldi::LangModelFst
+kaldi::LmFstConverter	kaldi-lmtable.h	/^class LmFstConverter {$/;"	c	namespace:kaldi
+kaldi::LmFstConverter::AddArcsForNgramProb	kaldi-lmtable.cc	/^void LmFstConverter::AddArcsForNgramProb($/;"	f	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::AddStateFromSymb	kaldi-lmtable.cc	/^LmFstConverter::StateId LmFstConverter::AddStateFromSymb($/;"	f	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::BkStateMap	kaldi-lmtable.h	/^  typedef unordered_map<StateId, StateId> BkStateMap;$/;"	t	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::ConnectUnusedStates	kaldi-lmtable.cc	/^void LmFstConverter::ConnectUnusedStates(fst::StdVectorFst *pfst) {$/;"	f	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::ConvertArpaLogProbToWeight	kaldi-lmtable.h	/^  float ConvertArpaLogProbToWeight(float lp) {$/;"	f	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::FindState	kaldi-lmtable.h	/^  StateId FindState(const std::string str) {$/;"	f	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::HistStateMap	kaldi-lmtable.h	/^  typedef unordered_map<std::string, StateId, StringHasher> HistStateMap;$/;"	t	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::IsFinal	kaldi-lmtable.h	/^  bool IsFinal(fst::StdVectorFst *pfst,$/;"	f	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::LmFstConverter	kaldi-lmtable.h	/^  LmFstConverter() : use_natural_log_(true) {}$/;"	f	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::LmWeight	kaldi-lmtable.h	/^  typedef fst::StdArc::Weight LmWeight;$/;"	t	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::StateId	kaldi-lmtable.h	/^  typedef fst::StdArc::StateId StateId;$/;"	t	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::UseNaturalLog	kaldi-lmtable.h	/^  void UseNaturalLog(bool use_natural) { use_natural_log_ = use_natural; }$/;"	f	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::bkState_	kaldi-lmtable.h	/^  BkStateMap bkState_;$/;"	m	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::histState_	kaldi-lmtable.h	/^  HistStateMap histState_;$/;"	m	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::use_natural_log_	kaldi-lmtable.h	/^  bool use_natural_log_;$/;"	m	class:kaldi::LmFstConverter
+kaldi::LmFstConverter::~LmFstConverter	kaldi-lmtable.h	/^  ~LmFstConverter() {}$/;"	f	class:kaldi::LmFstConverter
+kaldi::LmTable	kaldi-lmtable.h	/^class LmTable : public lmtable {$/;"	c	namespace:kaldi
+kaldi::LmTable	kaldi-lmtable.h	/^class LmTable {$/;"	c	namespace:kaldi
+kaldi::LmTable::DumpContinue	kaldi-lmtable.cc	/^void LmTable::DumpContinue(ngram ng, int ilev, int elev,$/;"	f	class:kaldi::LmTable
+kaldi::LmTable::DumpStart	kaldi-lmtable.cc	/^void LmTable::DumpStart(ngram ng,$/;"	f	class:kaldi::LmTable
+kaldi::LmTable::LmTable	kaldi-lmtable.h	/^  LmTable() { conv_ = new LmFstConverter; }$/;"	f	class:kaldi::LmTable
+kaldi::LmTable::ReadFstFromLmFile	kaldi-lmtable.cc	/^bool LmTable::ReadFstFromLmFile(std::istream &istrm,$/;"	f	class:kaldi::LmTable
+kaldi::LmTable::conv_	kaldi-lmtable.h	/^  LmFstConverter *conv_;$/;"	m	class:kaldi::LmTable
+kaldi::LmTable::~LmTable	kaldi-lmtable.h	/^  ~LmTable() { if (conv_) delete conv_; }$/;"	f	class:kaldi::LmTable
+kaldi::PrintCompletePath	lm-lib-test.cc	/^static LangModelFst::LmWeight PrintCompletePath(fst::SymbolTable *pst,$/;"	f	namespace:kaldi
+kaldi::PrintCompletePaths	lm-lib-test.cc	/^static LangModelFst::LmWeight PrintCompletePaths(fst::SymbolTable *pst,$/;"	f	namespace:kaldi
+kaldi::TestLmTableEvalScore	lm-lib-test.cc	/^bool TestLmTableEvalScore(const string &inpfile,$/;"	f	namespace:kaldi
+kaldi::TestLmTableReadWrite	lm-lib-test.cc	/^bool TestLmTableReadWrite(int nTests,$/;"	f	namespace:kaldi
+kaldi::coverageTests	lm-lib-test.cc	/^static bool coverageTests(fst::StdVectorFst *genFst,$/;"	f	namespace:kaldi
+kaldi::kArpaLm	kaldi-lm.h	/^  kArpaLm, kIrstLm, kFst, kTextString$/;"	e	enum:kaldi::GrammarType
+kaldi::kFst	kaldi-lm.h	/^  kArpaLm, kIrstLm, kFst, kTextString$/;"	e	enum:kaldi::GrammarType
+kaldi::kIrstLm	kaldi-lm.h	/^  kArpaLm, kIrstLm, kFst, kTextString$/;"	e	enum:kaldi::GrammarType
+kaldi::kTextString	kaldi-lm.h	/^  kArpaLm, kIrstLm, kFst, kTextString$/;"	e	enum:kaldi::GrammarType
+main	lm-lib-test.cc	/^int main(int argc, char *argv[]) {$/;"	f
+pfst_	kaldi-lm.h	/^  fst::VectorFst<fst::StdArc> *pfst_;$/;"	m	class:kaldi::LangModelFst
+startOfSentence	lm-lib-test.cc	37;"	d	file:
+use_natural_log_	kaldi-lmtable.h	/^  bool use_natural_log_;$/;"	m	class:kaldi::LmFstConverter
+~LangModelFst	kaldi-lm.h	/^  ~LangModelFst() {$/;"	f	class:kaldi::LangModelFst
+~LmFstConverter	kaldi-lmtable.h	/^  ~LmFstConverter() {}$/;"	f	class:kaldi::LmFstConverter
+~LmTable	kaldi-lmtable.h	/^  ~LmTable() { if (conv_) delete conv_; }$/;"	f	class:kaldi::LmTable

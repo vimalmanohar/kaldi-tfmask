@@ -1,0 +1,696 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ArbitraryResample	pitch-functions.cc	/^  ArbitraryResample(int32 num_samples_in, double samp_rate_in,$/;"	f	class:kaldi::ArbitraryResample
+ArbitraryResample	pitch-functions.cc	/^class ArbitraryResample {$/;"	c	namespace:kaldi	file:
+Check	feature-functions.cc	/^void SlidingWindowCmnOptions::Check() const {$/;"	f	class:kaldi::SlidingWindowCmnOptions
+Clear	wave-reader.h	/^  void Clear() { t_.Clear(); }$/;"	f	class:kaldi::WaveHolder
+Clear	wave-reader.h	/^  void Clear() {$/;"	f	class:kaldi::WaveData
+Compute	feature-fbank.cc	/^void Fbank::Compute(const VectorBase<BaseFloat> &wave,$/;"	f	class:kaldi::Fbank
+Compute	feature-mfcc.cc	/^void Mfcc::Compute(const VectorBase<BaseFloat> &wave,$/;"	f	class:kaldi::Mfcc
+Compute	feature-plp.cc	/^void Plp::Compute(const VectorBase<BaseFloat> &wave,$/;"	f	class:kaldi::Plp
+Compute	feature-spectrogram.cc	/^void Spectrogram::Compute(const VectorBase<BaseFloat> &wave,$/;"	f	class:kaldi::Spectrogram
+Compute	mel-computations.cc	/^void MelBanks::Compute(const VectorBase<BaseFloat> &power_spectrum,$/;"	f	class:kaldi::MelBanks
+Compute	pitch-functions.cc	/^void Compute(const PitchExtractionOptions &opts,$/;"	f	namespace:kaldi
+ComputeDeltas	feature-functions.cc	/^void ComputeDeltas(const DeltaFeaturesOptions &delta_opts,$/;"	f	namespace:kaldi
+ComputeLifterCoeffs	mel-computations.cc	/^void ComputeLifterCoeffs(BaseFloat Q, VectorBase<BaseFloat> *coeffs) {$/;"	f	namespace:kaldi
+ComputeLocalCost	pitch-functions.cc	/^  void ComputeLocalCost(const Matrix<double> &autocorrelation) {$/;"	f	class:kaldi::PitchExtractor
+ComputeLpc	feature-functions.cc	/^BaseFloat ComputeLpc(const VectorBase<BaseFloat> &autocorr_in,$/;"	f	namespace:kaldi
+ComputePowerSpectrum	feature-functions.cc	/^void ComputePowerSpectrum(VectorBase<BaseFloat> *waveform) {$/;"	f	namespace:kaldi
+ComputeShiftedDeltas	feature-functions.cc	/^void ComputeShiftedDeltas(const ShiftedDeltaFeaturesOptions &delta_opts,$/;"	f	namespace:kaldi
+ConvertIntToString	pitch-functions-test.cc	/^std::string ConvertIntToString(const int &number) {$/;"	f
+Copy	wave-reader.h	/^  void Copy(const T &t) { t_.CopyFrom(t); }$/;"	f	class:kaldi::WaveHolder
+CopyFrom	wave-reader.h	/^  void CopyFrom(const WaveData &other) {$/;"	f	class:kaldi::WaveData
+Data	wave-reader.h	/^  const Matrix<BaseFloat> &Data() const { return data_; }$/;"	f	class:kaldi::WaveData
+DeltaFeatures	feature-functions.cc	/^DeltaFeatures::DeltaFeatures(const DeltaFeaturesOptions &opts): opts_(opts) {$/;"	f	class:kaldi::DeltaFeatures
+DeltaFeatures	feature-functions.h	/^class DeltaFeatures {$/;"	c	namespace:kaldi
+DeltaFeaturesOptions	feature-functions.h	/^  DeltaFeaturesOptions(int32 order = 2, int32 window = 2):$/;"	f	struct:kaldi::DeltaFeaturesOptions
+DeltaFeaturesOptions	feature-functions.h	/^struct DeltaFeaturesOptions {$/;"	s	namespace:kaldi
+Dim	feature-mfcc.h	/^  int32 Dim() { return opts_.num_ceps; }$/;"	f	class:kaldi::Mfcc
+Dim	feature-plp.h	/^  int32 Dim() { return opts_.num_ceps; }$/;"	f	class:kaldi::Plp
+DirExist	pitch-functions-test.cc	/^bool DirExist(const std::string &dirname) {$/;"	f
+Dither	feature-functions.cc	/^void Dither(VectorBase<BaseFloat> *waveform, BaseFloat dither_value) {$/;"	f	namespace:kaldi
+Duration	wave-reader.h	/^  BaseFloat Duration() const { return data_.NumCols()\/samp_freq_; }$/;"	f	class:kaldi::WaveData
+Durbin	mel-computations.cc	/^BaseFloat Durbin(int n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp) {$/;"	f	namespace:kaldi
+Expect4ByteTag	wave-reader.cc	/^void WaveData::Expect4ByteTag(std::istream &is, const char *expected) {$/;"	f	class:kaldi::WaveData
+ExtractDeltaPitch	pitch-functions.cc	/^void ExtractDeltaPitch(const PostProcessPitchOptions &opts,$/;"	f	namespace:kaldi
+ExtractFrame	pitch-functions.cc	/^void ExtractFrame(const VectorBase<double> &wave,$/;"	f	namespace:kaldi
+ExtractWaveformRemainder	feature-functions.cc	/^void ExtractWaveformRemainder(const VectorBase<BaseFloat> &wave,$/;"	f	namespace:kaldi
+ExtractWindow	feature-functions.cc	/^void ExtractWindow(const VectorBase<BaseFloat> &wave,$/;"	f	namespace:kaldi
+FastViterbi	pitch-functions.cc	/^  void FastViterbi(const Matrix<double> &correl) {$/;"	f	class:kaldi::PitchExtractor
+Fbank	feature-fbank.cc	/^Fbank::Fbank(const FbankOptions &opts)$/;"	f	class:kaldi::Fbank
+Fbank	feature-fbank.h	/^class Fbank {$/;"	c	namespace:kaldi
+FbankOptions	feature-fbank.h	/^  FbankOptions(): mel_opts(23),$/;"	f	struct:kaldi::FbankOptions
+FbankOptions	feature-fbank.h	/^struct FbankOptions {$/;"	s	namespace:kaldi
+FeatureWindowFunction	feature-functions.cc	/^FeatureWindowFunction::FeatureWindowFunction(const FrameExtractionOptions &opts) {$/;"	f	class:kaldi::FeatureWindowFunction
+FeatureWindowFunction	feature-functions.h	/^  FeatureWindowFunction() {}$/;"	f	struct:kaldi::FeatureWindowFunction
+FeatureWindowFunction	feature-functions.h	/^struct FeatureWindowFunction {$/;"	s	namespace:kaldi
+FilterFunc	pitch-functions.cc	/^  double FilterFunc(const double &t) {$/;"	f	class:kaldi::ArbitraryResample	file:
+FilterFunc	pitch-functions.cc	/^  double FilterFunc(const double &t) {$/;"	f	class:kaldi::LinearResample	file:
+FindBestPath	pitch-functions.cc	/^  void FindBestPath(const Matrix<double> &correlation) {$/;"	f	class:kaldi::PitchExtractor
+FrameExtractionOptions	feature-functions.h	/^  FrameExtractionOptions():$/;"	f	struct:kaldi::FrameExtractionOptions
+FrameExtractionOptions	feature-functions.h	/^struct FrameExtractionOptions {$/;"	s	namespace:kaldi
+GetCenterFreqs	mel-computations.h	/^  const Vector<BaseFloat> &GetCenterFreqs() const { return center_freqs_; }$/;"	f	class:kaldi::MelBanks
+GetEqualLoudness	feature-plp.cc	/^const Vector<BaseFloat> *Plp::GetEqualLoudness(BaseFloat vtln_warp) {$/;"	f	class:kaldi::Plp
+GetEqualLoudnessVector	feature-functions.cc	/^void GetEqualLoudnessVector(const MelBanks &mel_banks,$/;"	f	namespace:kaldi
+GetMelBanks	feature-fbank.cc	/^const MelBanks *Fbank::GetMelBanks(BaseFloat vtln_warp) {$/;"	f	class:kaldi::Fbank
+GetMelBanks	feature-mfcc.cc	/^const MelBanks *Mfcc::GetMelBanks(BaseFloat vtln_warp) {$/;"	f	class:kaldi::Mfcc
+GetMelBanks	feature-plp.cc	/^const MelBanks *Plp::GetMelBanks(BaseFloat vtln_warp) {$/;"	f	class:kaldi::Plp
+GetPitch	pitch-functions.cc	/^  void GetPitch(Matrix<BaseFloat> *output) {$/;"	f	class:kaldi::PitchExtractor
+IndexInfo	pitch-functions.cc	/^  struct IndexInfo {$/;"	s	class:kaldi::ArbitraryResample	file:
+IndexInfo	pitch-functions.cc	/^  struct IndexInfo {$/;"	s	class:kaldi::LinearResample	file:
+InitIdftBases	feature-functions.cc	/^void InitIdftBases(int32 n_bases, int32 dimension, Matrix<BaseFloat> *mat_out) {$/;"	f	namespace:kaldi
+InverseMelScale	mel-computations.h	/^  static inline BaseFloat InverseMelScale(BaseFloat mel_freq) {$/;"	f	class:kaldi::MelBanks
+IsReadInBinary	wave-reader.h	/^  static bool IsReadInBinary() { return true; }$/;"	f	class:kaldi::WaveHolder
+KALDI_FEAT_FEATURE_FBANK_H_	feature-fbank.h	21;"	d
+KALDI_FEAT_FEATURE_FUNCTIONS_H_	feature-functions.h	22;"	d
+KALDI_FEAT_FEATURE_MFCC_H_	feature-mfcc.h	21;"	d
+KALDI_FEAT_FEATURE_PLP_H_	feature-plp.h	21;"	d
+KALDI_FEAT_FEATURE_SPECTROGRAM_H_	feature-spectrogram.h	22;"	d
+KALDI_FEAT_MEL_COMPUTATIONS_H_	mel-computations.h	21;"	d
+KALDI_FEAT_PITCH_FUNCTIONS_H_	pitch-functions.h	21;"	d
+KALDI_FEAT_WAVE_READER_H_	wave-reader.h	44;"	d
+LinearResample	pitch-functions.cc	/^     LinearResample(double samp_rate_in,$/;"	f	class:kaldi::LinearResample
+LinearResample	pitch-functions.cc	/^class LinearResample {$/;"	c	namespace:kaldi	file:
+Lpc2Cepstrum	mel-computations.cc	/^void Lpc2Cepstrum(int n, const BaseFloat *pLPC, BaseFloat *pCepst) {$/;"	f	namespace:kaldi
+MaxNormalizeEnergy	feature-functions.h	/^inline void MaxNormalizeEnergy(Matrix<BaseFloat> *feats) {$/;"	f	namespace:kaldi
+MelBanks	mel-computations.cc	/^MelBanks::MelBanks(const MelBanksOptions &opts,$/;"	f	class:kaldi::MelBanks
+MelBanks	mel-computations.h	/^class MelBanks {$/;"	c	namespace:kaldi
+MelBanksOptions	feature-functions.h	/^  explicit MelBanksOptions(int num_bins = 25)$/;"	f	struct:kaldi::MelBanksOptions
+MelBanksOptions	feature-functions.h	/^struct MelBanksOptions {$/;"	s	namespace:kaldi
+MelScale	mel-computations.h	/^  static inline BaseFloat MelScale(BaseFloat freq) {$/;"	f	class:kaldi::MelBanks
+Mfcc	feature-mfcc.cc	/^Mfcc::Mfcc(const MfccOptions &opts)$/;"	f	class:kaldi::Mfcc
+Mfcc	feature-mfcc.h	/^class Mfcc {$/;"	c	namespace:kaldi
+MfccOptions	feature-mfcc.h	/^  MfccOptions() : mel_opts(23),$/;"	f	struct:kaldi::MfccOptions
+MfccOptions	feature-mfcc.h	/^struct MfccOptions {$/;"	s	namespace:kaldi
+Nccf	pitch-functions.cc	/^void Nccf(const Vector<double> &wave,$/;"	f	namespace:kaldi
+NccfWindowShift	pitch-functions.h	/^  int32 NccfWindowShift() const {$/;"	f	struct:kaldi::PitchExtractionOptions
+NccfWindowSize	pitch-functions.h	/^  int32 NccfWindowSize() const {$/;"	f	struct:kaldi::PitchExtractionOptions
+NumBins	mel-computations.h	/^  int32 NumBins() const { return bins_.size(); }$/;"	f	class:kaldi::MelBanks
+NumFrames	feature-functions.cc	/^int32 NumFrames(int32 nsamp,$/;"	f	namespace:kaldi
+NumSamplesIn	pitch-functions.cc	/^  int32 NumSamplesIn() const { return num_samples_in_; }$/;"	f	class:kaldi::ArbitraryResample
+NumSamplesOut	pitch-functions.cc	/^  int32 NumSamplesOut() const { return indexes_.size(); }$/;"	f	class:kaldi::ArbitraryResample
+PaddedWindowSize	feature-functions.h	/^  int32 PaddedWindowSize() const {$/;"	f	struct:kaldi::FrameExtractionOptions
+PitchExtractionOptions	pitch-functions.h	/^  explicit PitchExtractionOptions() :$/;"	f	struct:kaldi::PitchExtractionOptions
+PitchExtractionOptions	pitch-functions.h	/^struct PitchExtractionOptions {$/;"	s	namespace:kaldi
+PitchExtractor	pitch-functions.cc	/^  explicit PitchExtractor(const PitchExtractionOptions &opts,$/;"	f	class:kaldi::PitchExtractor
+PitchExtractor	pitch-functions.cc	/^class PitchExtractor {$/;"	c	namespace:kaldi	file:
+PitchFrame	pitch-functions.cc	/^    explicit PitchFrame() {}$/;"	f	struct:kaldi::PitchExtractor::PitchFrame
+PitchFrame	pitch-functions.cc	/^  struct PitchFrame {$/;"	s	class:kaldi::PitchExtractor	file:
+PitchNumFrames	pitch-functions.cc	/^int32 PitchNumFrames(int32 nsamp,$/;"	f	namespace:kaldi
+Plp	feature-plp.cc	/^Plp::Plp(const PlpOptions &opts)$/;"	f	class:kaldi::Plp
+Plp	feature-plp.h	/^class Plp {$/;"	c	namespace:kaldi
+PlpOptions	feature-plp.h	/^  PlpOptions() : mel_opts(23),$/;"	f	struct:kaldi::PlpOptions
+PlpOptions	feature-plp.h	/^struct PlpOptions {$/;"	s	namespace:kaldi
+PostProcessPitch	pitch-functions.cc	/^void PostProcessPitch(const PostProcessPitchOptions &opts,$/;"	f	namespace:kaldi
+PostProcessPitchOptions	pitch-functions.h	/^  explicit PostProcessPitchOptions() :$/;"	f	struct:kaldi::PostProcessPitchOptions
+PostProcessPitchOptions	pitch-functions.h	/^struct PostProcessPitchOptions {$/;"	s	namespace:kaldi
+PreProcess	pitch-functions.cc	/^void PreProcess(const PitchExtractionOptions opts,$/;"	f	namespace:kaldi
+PreSet	pitch-functions.cc	/^  void PreSet() {$/;"	f	class:kaldi::LinearResample	file:
+Preemphasize	feature-functions.cc	/^void Preemphasize(VectorBase<BaseFloat> *waveform, BaseFloat preemph_coeff) {$/;"	f	namespace:kaldi
+PreemphasizeFrame	pitch-functions.cc	/^void PreemphasizeFrame(VectorBase<double> *waveform, double preemph_coeff) {$/;"	f	namespace:kaldi
+Process	feature-functions.cc	/^void DeltaFeatures::Process(const MatrixBase<BaseFloat> &input_feats,$/;"	f	class:kaldi::DeltaFeatures
+Process	feature-functions.cc	/^void ShiftedDeltaFeatures::Process(const MatrixBase<BaseFloat> &input_feats,$/;"	f	class:kaldi::ShiftedDeltaFeatures
+ProcessNccf	pitch-functions.cc	/^void ProcessNccf(const Vector<double> &inner_prod,$/;"	f	namespace:kaldi
+ProcessPovFeatures	pitch-functions.cc	/^void ProcessPovFeatures(Vector<BaseFloat> *pov,$/;"	f	namespace:kaldi
+Read	wave-reader.cc	/^void WaveData::Read(std::istream &is) {$/;"	f	class:kaldi::WaveData
+Read	wave-reader.h	/^  bool Read(std::istream &is) {$/;"	f	class:kaldi::WaveHolder
+Read4ByteTag	wave-reader.cc	/^void WaveData::Read4ByteTag(std::istream &is, char *dest) {$/;"	f	class:kaldi::WaveData
+ReadUint16	wave-reader.cc	/^uint16 WaveData::ReadUint16(std::istream &is, bool swap) {$/;"	f	class:kaldi::WaveData
+ReadUint32	wave-reader.cc	/^uint32 WaveData::ReadUint32(std::istream &is, bool swap) {$/;"	f	class:kaldi::WaveData
+Register	feature-fbank.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FbankOptions
+Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::DeltaFeaturesOptions
+Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FrameExtractionOptions
+Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MelBanksOptions
+Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::ShiftedDeltaFeaturesOptions
+Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::SlidingWindowCmnOptions
+Register	feature-mfcc.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MfccOptions
+Register	feature-plp.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PlpOptions
+Register	feature-spectrogram.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::SpectrogramOptions
+Register	pitch-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PitchExtractionOptions
+Register	pitch-functions.h	/^  void Register(ParseOptions *po) {$/;"	f	struct:kaldi::PostProcessPitchOptions
+ReverseFrames	feature-functions.cc	/^void ReverseFrames(const MatrixBase<BaseFloat> &input_features,$/;"	f	namespace:kaldi
+Round	pitch-functions.cc	/^inline int32 Round(BaseFloat x) {$/;"	f	namespace:kaldi
+SampFreq	wave-reader.h	/^  BaseFloat SampFreq() const { return samp_freq_; }$/;"	f	class:kaldi::WaveData
+SelectLag	pitch-functions.cc	/^void SelectLag(const PitchExtractionOptions &opts,$/;"	f	namespace:kaldi
+SetIndex	pitch-functions.cc	/^  void SetIndex() {$/;"	f	class:kaldi::LinearResample	file:
+SetIndex	pitch-functions.cc	/^  void SetIndex(const std::vector<double> &sample_points) {$/;"	f	class:kaldi::ArbitraryResample	file:
+SetWeights	pitch-functions.cc	/^  void SetWeights() {$/;"	f	class:kaldi::LinearResample	file:
+SetWeights	pitch-functions.cc	/^  void SetWeights(const std::vector<double> &sample_points) {$/;"	f	class:kaldi::ArbitraryResample	file:
+ShiftedDeltaFeatures	feature-functions.cc	/^ShiftedDeltaFeatures::ShiftedDeltaFeatures($/;"	f	class:kaldi::ShiftedDeltaFeatures
+ShiftedDeltaFeatures	feature-functions.h	/^class ShiftedDeltaFeatures {$/;"	c	namespace:kaldi
+ShiftedDeltaFeaturesOptions	feature-functions.h	/^  ShiftedDeltaFeaturesOptions():$/;"	f	struct:kaldi::ShiftedDeltaFeaturesOptions
+ShiftedDeltaFeaturesOptions	feature-functions.h	/^struct ShiftedDeltaFeaturesOptions {$/;"	s	namespace:kaldi
+SlidingWindowCmn	feature-functions.cc	/^void SlidingWindowCmn(const SlidingWindowCmnOptions &opts,$/;"	f	namespace:kaldi
+SlidingWindowCmnOptions	feature-functions.h	/^  SlidingWindowCmnOptions():$/;"	f	struct:kaldi::SlidingWindowCmnOptions
+SlidingWindowCmnOptions	feature-functions.h	/^struct SlidingWindowCmnOptions {$/;"	s	namespace:kaldi
+Spectrogram	feature-spectrogram.cc	/^Spectrogram::Spectrogram(const SpectrogramOptions &opts)$/;"	f	class:kaldi::Spectrogram
+Spectrogram	feature-spectrogram.h	/^class Spectrogram {$/;"	c	namespace:kaldi
+SpectrogramOptions	feature-spectrogram.h	/^  SpectrogramOptions() :$/;"	f	struct:kaldi::SpectrogramOptions
+SpectrogramOptions	feature-spectrogram.h	/^struct SpectrogramOptions {$/;"	s	namespace:kaldi
+SpliceFrames	feature-functions.cc	/^void SpliceFrames(const MatrixBase<BaseFloat> &input_features,$/;"	f	namespace:kaldi
+T	wave-reader.h	/^  typedef WaveData T;$/;"	t	class:kaldi::WaveHolder
+TakeLogOfPitch	pitch-functions.cc	/^void TakeLogOfPitch(Matrix<BaseFloat> *input) {$/;"	f	namespace:kaldi
+UnitTestCompareWithDeltaFeatures	feature-sdc-test.cc	/^static void UnitTestCompareWithDeltaFeatures(Matrix<BaseFloat> &raw_features, int32 window) {$/;"	f	file:
+UnitTestDeltaPitch	pitch-functions-test.cc	/^void UnitTestDeltaPitch() {$/;"	f
+UnitTestDiffSampleRate	pitch-functions-test.cc	/^void UnitTestDiffSampleRate() {$/;"	f
+UnitTestEndEffects	feature-sdc-test.cc	/^static void UnitTestEndEffects(Matrix<BaseFloat> &raw_features, int32 window, $/;"	f	file:
+UnitTestFeat	feature-fbank-test.cc	/^static void UnitTestFeat() {$/;"	f	file:
+UnitTestFeat	feature-mfcc-test.cc	/^static void UnitTestFeat() {$/;"	f	file:
+UnitTestFeat	feature-plp-test.cc	/^static void UnitTestFeat() {$/;"	f	file:
+UnitTestFeatNoKeele	pitch-functions-test.cc	/^static void UnitTestFeatNoKeele() {$/;"	f	file:
+UnitTestFeatWithKeele	pitch-functions-test.cc	/^static void UnitTestFeatWithKeele() {$/;"	f	file:
+UnitTestHTKCompare1	feature-fbank-test.cc	/^static void UnitTestHTKCompare1() {$/;"	f	file:
+UnitTestHTKCompare1	feature-mfcc-test.cc	/^static void UnitTestHTKCompare1() {$/;"	f	file:
+UnitTestHTKCompare1	feature-plp-test.cc	/^static void UnitTestHTKCompare1() {$/;"	f	file:
+UnitTestHTKCompare2	feature-fbank-test.cc	/^static void UnitTestHTKCompare2() {$/;"	f	file:
+UnitTestHTKCompare2	feature-mfcc-test.cc	/^static void UnitTestHTKCompare2() {$/;"	f	file:
+UnitTestHTKCompare3	feature-fbank-test.cc	/^static void UnitTestHTKCompare3() {$/;"	f	file:
+UnitTestHTKCompare3	feature-mfcc-test.cc	/^static void UnitTestHTKCompare3() {$/;"	f	file:
+UnitTestHTKCompare4	feature-fbank-test.cc	/^static void UnitTestHTKCompare4() {$/;"	f	file:
+UnitTestHTKCompare4	feature-mfcc-test.cc	/^static void UnitTestHTKCompare4() {$/;"	f	file:
+UnitTestHTKCompare5	feature-mfcc-test.cc	/^static void UnitTestHTKCompare5() {$/;"	f	file:
+UnitTestHTKCompare6	feature-mfcc-test.cc	/^static void UnitTestHTKCompare6() {$/;"	f	file:
+UnitTestKeele	pitch-functions-test.cc	/^static void UnitTestKeele() {$/;"	f	file:
+UnitTestKeeleNccfBallast	pitch-functions-test.cc	/^static void UnitTestKeeleNccfBallast() {$/;"	f	file:
+UnitTestOnlineCmvn	feature-functions-test.cc	/^void UnitTestOnlineCmvn() {$/;"	f	namespace:kaldi
+UnitTestParams	feature-sdc-test.cc	/^static void UnitTestParams(Matrix<BaseFloat> &raw_features, int32 window, $/;"	f	file:
+UnitTestPenaltyFactor	pitch-functions-test.cc	/^static void UnitTestPenaltyFactor() {$/;"	f	file:
+UnitTestPitchExtractionSpeed	pitch-functions-test.cc	/^static void UnitTestPitchExtractionSpeed() {$/;"	f	file:
+UnitTestPitchExtractorCompareKeele	pitch-functions-test.cc	/^static void UnitTestPitchExtractorCompareKeele() {$/;"	f	file:
+UnitTestPostProcess	pitch-functions-test.cc	/^void UnitTestPostProcess() {$/;"	f
+UnitTestReadWave	feature-fbank-test.cc	/^static void UnitTestReadWave() {$/;"	f	file:
+UnitTestReadWave	feature-mfcc-test.cc	/^static void UnitTestReadWave() {$/;"	f	file:
+UnitTestResample	pitch-functions-test.cc	/^void UnitTestResample() {$/;"	f
+UnitTestSimple	feature-fbank-test.cc	/^static void UnitTestSimple() {$/;"	f	file:
+UnitTestSimple	feature-mfcc-test.cc	/^static void UnitTestSimple() {$/;"	f	file:
+UnitTestSimple	feature-plp-test.cc	/^static void UnitTestSimple() {$/;"	f	file:
+UnitTestSimple	pitch-functions-test.cc	/^static void UnitTestSimple() {$/;"	f	file:
+UnitTestTakeLogOfPitch	pitch-functions-test.cc	/^static void UnitTestTakeLogOfPitch() {$/;"	f	file:
+UnitTestVtln	feature-mfcc-test.cc	/^void UnitTestVtln() {$/;"	f
+UnitTestWeightedMwn	pitch-functions-test.cc	/^static void UnitTestWeightedMwn() {$/;"	f	file:
+Upsample	pitch-functions.cc	/^  void Upsample(const MatrixBase<double> &input,$/;"	f	class:kaldi::ArbitraryResample
+Upsample	pitch-functions.cc	/^  void Upsample(const VectorBase<double> &input,$/;"	f	class:kaldi::LinearResample
+Value	wave-reader.h	/^  const T &Value() { return t_; }$/;"	f	class:kaldi::WaveHolder
+VtlnWarpFreq	mel-computations.cc	/^BaseFloat MelBanks::VtlnWarpFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:kaldi::MelBanks
+VtlnWarpMelFreq	mel-computations.cc	/^BaseFloat MelBanks::VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:kaldi::MelBanks
+WaveData	wave-reader.h	/^  WaveData() : samp_freq_(0.0) {}$/;"	f	class:kaldi::WaveData
+WaveData	wave-reader.h	/^  WaveData(BaseFloat samp_freq, const MatrixBase<BaseFloat> &data)$/;"	f	class:kaldi::WaveData
+WaveData	wave-reader.h	/^class WaveData {$/;"	c	namespace:kaldi
+WaveHolder	wave-reader.h	/^  WaveHolder() {}$/;"	f	class:kaldi::WaveHolder
+WaveHolder	wave-reader.h	/^  WaveHolder(const WaveHolder &other): t_(other.t_) {}$/;"	f	class:kaldi::WaveHolder
+WaveHolder	wave-reader.h	/^class WaveHolder {$/;"	c	namespace:kaldi
+WeightedMwn	pitch-functions.cc	/^void WeightedMwn(int32 normalization_window_size,$/;"	f	namespace:kaldi
+WindowShift	feature-functions.h	/^  int32 WindowShift() const {$/;"	f	struct:kaldi::FrameExtractionOptions
+WindowSize	feature-functions.h	/^  int32 WindowSize() const {$/;"	f	struct:kaldi::FrameExtractionOptions
+Write	wave-reader.cc	/^void WaveData::Write(std::ostream &os) const {$/;"	f	class:kaldi::WaveData
+Write	wave-reader.h	/^  static bool Write(std::ostream &os, bool binary, const T &t) {$/;"	f	class:kaldi::WaveHolder
+WriteUint16	wave-reader.cc	/^void WaveData::WriteUint16(std::ostream &os, int16 i) {$/;"	f	class:kaldi::WaveData
+WriteUint32	wave-reader.cc	/^void WaveData::WriteUint32(std::ostream &os, int32 i) {$/;"	f	class:kaldi::WaveData
+add_delta_pitch	pitch-functions.h	/^  bool add_delta_pitch;$/;"	m	struct:kaldi::PostProcessPitchOptions
+add_normalized_log_pitch	pitch-functions.h	/^  bool add_normalized_log_pitch;$/;"	m	struct:kaldi::PostProcessPitchOptions
+add_pov_feature	pitch-functions.h	/^  bool add_pov_feature;$/;"	m	struct:kaldi::PostProcessPitchOptions
+add_raw_log_pitch	pitch-functions.h	/^  bool add_raw_log_pitch;$/;"	m	struct:kaldi::PostProcessPitchOptions
+back_pointers	pitch-functions.cc	/^    Vector<double> back_pointers;$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+bins_	mel-computations.h	/^  std::vector<std::pair<int32, Vector<BaseFloat> > > bins_;$/;"	m	class:kaldi::MelBanks
+block_shift	feature-functions.h	/^        block_shift;      \/\/ Distance between consecutive blocks$/;"	m	struct:kaldi::ShiftedDeltaFeaturesOptions
+center	feature-functions.h	/^  bool center;$/;"	m	struct:kaldi::SlidingWindowCmnOptions
+center_freqs_	mel-computations.h	/^  Vector<BaseFloat> center_freqs_;$/;"	m	class:kaldi::MelBanks
+cepstral_lifter	feature-mfcc.h	/^  BaseFloat cepstral_lifter;  \/\/ Scaling factor on cepstra for HTK compatibility.$/;"	m	struct:kaldi::MfccOptions
+cepstral_lifter	feature-plp.h	/^  int32 cepstral_lifter;$/;"	m	struct:kaldi::PlpOptions
+cepstral_scale	feature-plp.h	/^  BaseFloat cepstral_scale;$/;"	m	struct:kaldi::PlpOptions
+cmn_window	feature-functions.h	/^  int cmn_window;$/;"	m	struct:kaldi::SlidingWindowCmnOptions
+compress_factor	feature-plp.h	/^  BaseFloat compress_factor;$/;"	m	struct:kaldi::PlpOptions
+data_	wave-reader.h	/^  Matrix<BaseFloat> data_;$/;"	m	class:kaldi::WaveData
+dct_matrix_	feature-mfcc.h	/^  Matrix<BaseFloat> dct_matrix_;  \/\/ matrix we left-multiply by to perform DCT.$/;"	m	class:kaldi::Mfcc
+debug_	mel-computations.h	/^  bool debug_;$/;"	m	class:kaldi::MelBanks
+debug_mel	feature-functions.h	/^  bool debug_mel;$/;"	m	struct:kaldi::MelBanksOptions
+delta_pitch	pitch-functions.h	/^  BaseFloat delta_pitch;     \/\/ the pitch tolerance in pruning lags$/;"	m	struct:kaldi::PitchExtractionOptions
+delta_pitch_noise_stddev	pitch-functions.h	/^  BaseFloat delta_pitch_noise_stddev; \/\/ stddev of noise we add to delta-pitch$/;"	m	struct:kaldi::PostProcessPitchOptions
+delta_pitch_scale	pitch-functions.h	/^  BaseFloat delta_pitch_scale;$/;"	m	struct:kaldi::PostProcessPitchOptions
+delta_window	pitch-functions.h	/^  int32 delta_window;$/;"	m	struct:kaldi::PostProcessPitchOptions
+dither	feature-functions.h	/^  BaseFloat dither;  \/\/ Amount of dithering, 0.0 means no dither.$/;"	m	struct:kaldi::FrameExtractionOptions
+energy_floor	feature-fbank.h	/^  BaseFloat energy_floor;$/;"	m	struct:kaldi::FbankOptions
+energy_floor	feature-mfcc.h	/^  BaseFloat energy_floor;$/;"	m	struct:kaldi::MfccOptions
+energy_floor	feature-plp.h	/^  BaseFloat energy_floor;$/;"	m	struct:kaldi::PlpOptions
+energy_floor	feature-spectrogram.h	/^  BaseFloat energy_floor;$/;"	m	struct:kaldi::SpectrogramOptions
+equal_loudness_	feature-plp.h	/^  std::map<BaseFloat, Vector<BaseFloat>* > equal_loudness_;$/;"	m	class:kaldi::Plp
+feature_window_function_	feature-fbank.h	/^  FeatureWindowFunction feature_window_function_;$/;"	m	class:kaldi::Fbank
+feature_window_function_	feature-mfcc.h	/^  FeatureWindowFunction feature_window_function_;$/;"	m	class:kaldi::Mfcc
+feature_window_function_	feature-plp.h	/^  FeatureWindowFunction feature_window_function_;$/;"	m	class:kaldi::Plp
+feature_window_function_	feature-spectrogram.h	/^  FeatureWindowFunction feature_window_function_;$/;"	m	class:kaldi::Spectrogram
+filter_cutoff_	pitch-functions.cc	/^  double filter_cutoff_;$/;"	m	class:kaldi::ArbitraryResample	file:
+filter_cutoff_	pitch-functions.cc	/^  double filter_cutoff_;$/;"	m	class:kaldi::LinearResample	file:
+first_index	pitch-functions.cc	/^    int32 first_index;  \/\/ The first input-sample index that we sum$/;"	m	struct:kaldi::ArbitraryResample::IndexInfo	file:
+first_index	pitch-functions.cc	/^    int32 first_index;  \/\/ The first input-sample index that we sum$/;"	m	struct:kaldi::LinearResample::IndexInfo	file:
+frame_length_ms	feature-functions.h	/^  BaseFloat frame_length_ms;  \/\/ in milliseconds.$/;"	m	struct:kaldi::FrameExtractionOptions
+frame_length_ms	pitch-functions.h	/^  BaseFloat frame_length_ms;  \/\/ in milliseconds.$/;"	m	struct:kaldi::PitchExtractionOptions
+frame_opts	feature-fbank.h	/^  FrameExtractionOptions frame_opts;$/;"	m	struct:kaldi::FbankOptions
+frame_opts	feature-mfcc.h	/^  FrameExtractionOptions frame_opts;$/;"	m	struct:kaldi::MfccOptions
+frame_opts	feature-plp.h	/^  FrameExtractionOptions frame_opts;$/;"	m	struct:kaldi::PlpOptions
+frame_opts	feature-spectrogram.h	/^  FrameExtractionOptions frame_opts;$/;"	m	struct:kaldi::SpectrogramOptions
+frame_shift_	pitch-functions.cc	/^  double frame_shift_;  \/\/ or called 'dt'$/;"	m	class:kaldi::LinearResample	file:
+frame_shift_ms	feature-functions.h	/^  BaseFloat frame_shift_ms;  \/\/ in milliseconds.$/;"	m	struct:kaldi::FrameExtractionOptions
+frame_shift_ms	pitch-functions.h	/^  BaseFloat frame_shift_ms;  \/\/ in milliseconds.$/;"	m	struct:kaldi::PitchExtractionOptions
+frames_	pitch-functions.cc	/^  std::vector< PitchFrame > frames_;$/;"	m	class:kaldi::PitchExtractor	file:
+half_frame_length_	pitch-functions.cc	/^  double half_frame_length_;$/;"	m	class:kaldi::LinearResample	file:
+high_freq	feature-functions.h	/^  BaseFloat high_freq;  \/\/ an upper frequency cutoff; 0 -> no cutoff, negative$/;"	m	struct:kaldi::MelBanksOptions
+htk_compat	feature-fbank.h	/^  bool htk_compat;  \/\/ If true, put energy last (if using energy)$/;"	m	struct:kaldi::FbankOptions
+htk_compat	feature-mfcc.h	/^  bool htk_compat;  \/\/ if true, put energy\/C0 last and introduce a factor of$/;"	m	struct:kaldi::MfccOptions
+htk_compat	feature-plp.h	/^  bool htk_compat;  \/\/ if true, put energy\/C0 last and introduce a factor of$/;"	m	struct:kaldi::PlpOptions
+htk_mode	feature-functions.h	/^  bool htk_mode;$/;"	m	struct:kaldi::MelBanksOptions
+htk_mode_	mel-computations.h	/^  bool htk_mode_;$/;"	m	class:kaldi::MelBanks
+idft_bases_	feature-plp.h	/^  Matrix<BaseFloat> idft_bases_;$/;"	m	class:kaldi::Plp
+indexes_	pitch-functions.cc	/^  std::vector<IndexInfo> indexes_;$/;"	m	class:kaldi::ArbitraryResample	file:
+indexes_	pitch-functions.cc	/^  std::vector<IndexInfo> indexes_;$/;"	m	class:kaldi::LinearResample	file:
+kaldi	feature-fbank.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	feature-fbank.h	/^namespace kaldi {$/;"	n
+kaldi	feature-functions-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	feature-functions.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	feature-functions.h	/^namespace kaldi {$/;"	n
+kaldi	feature-mfcc.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	feature-mfcc.h	/^namespace kaldi {$/;"	n
+kaldi	feature-plp.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	feature-plp.h	/^namespace kaldi {$/;"	n
+kaldi	feature-spectrogram.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	feature-spectrogram.h	/^namespace kaldi {$/;"	n
+kaldi	mel-computations.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	mel-computations.h	/^namespace kaldi {$/;"	n
+kaldi	pitch-functions.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	pitch-functions.h	/^namespace kaldi {$/;"	n
+kaldi	wave-reader.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	wave-reader.h	/^namespace kaldi {$/;"	n
+kaldi::ArbitraryResample	pitch-functions.cc	/^class ArbitraryResample {$/;"	c	namespace:kaldi	file:
+kaldi::ArbitraryResample::ArbitraryResample	pitch-functions.cc	/^  ArbitraryResample(int32 num_samples_in, double samp_rate_in,$/;"	f	class:kaldi::ArbitraryResample
+kaldi::ArbitraryResample::FilterFunc	pitch-functions.cc	/^  double FilterFunc(const double &t) {$/;"	f	class:kaldi::ArbitraryResample	file:
+kaldi::ArbitraryResample::IndexInfo	pitch-functions.cc	/^  struct IndexInfo {$/;"	s	class:kaldi::ArbitraryResample	file:
+kaldi::ArbitraryResample::IndexInfo::first_index	pitch-functions.cc	/^    int32 first_index;  \/\/ The first input-sample index that we sum$/;"	m	struct:kaldi::ArbitraryResample::IndexInfo	file:
+kaldi::ArbitraryResample::IndexInfo::num_indices	pitch-functions.cc	/^    int32 num_indices;  \/\/ The number of indices that we sum over.$/;"	m	struct:kaldi::ArbitraryResample::IndexInfo	file:
+kaldi::ArbitraryResample::NumSamplesIn	pitch-functions.cc	/^  int32 NumSamplesIn() const { return num_samples_in_; }$/;"	f	class:kaldi::ArbitraryResample
+kaldi::ArbitraryResample::NumSamplesOut	pitch-functions.cc	/^  int32 NumSamplesOut() const { return indexes_.size(); }$/;"	f	class:kaldi::ArbitraryResample
+kaldi::ArbitraryResample::SetIndex	pitch-functions.cc	/^  void SetIndex(const std::vector<double> &sample_points) {$/;"	f	class:kaldi::ArbitraryResample	file:
+kaldi::ArbitraryResample::SetWeights	pitch-functions.cc	/^  void SetWeights(const std::vector<double> &sample_points) {$/;"	f	class:kaldi::ArbitraryResample	file:
+kaldi::ArbitraryResample::Upsample	pitch-functions.cc	/^  void Upsample(const MatrixBase<double> &input,$/;"	f	class:kaldi::ArbitraryResample
+kaldi::ArbitraryResample::filter_cutoff_	pitch-functions.cc	/^  double filter_cutoff_;$/;"	m	class:kaldi::ArbitraryResample	file:
+kaldi::ArbitraryResample::indexes_	pitch-functions.cc	/^  std::vector<IndexInfo> indexes_;$/;"	m	class:kaldi::ArbitraryResample	file:
+kaldi::ArbitraryResample::num_samples_in_	pitch-functions.cc	/^  int32 num_samples_in_;$/;"	m	class:kaldi::ArbitraryResample	file:
+kaldi::ArbitraryResample::num_zeros_upsample_	pitch-functions.cc	/^  int32 num_zeros_upsample_;$/;"	m	class:kaldi::ArbitraryResample	file:
+kaldi::ArbitraryResample::samp_rate_in_	pitch-functions.cc	/^  double samp_rate_in_;$/;"	m	class:kaldi::ArbitraryResample	file:
+kaldi::ArbitraryResample::weights_	pitch-functions.cc	/^  std::vector<Vector<double> > weights_;$/;"	m	class:kaldi::ArbitraryResample	file:
+kaldi::Compute	pitch-functions.cc	/^void Compute(const PitchExtractionOptions &opts,$/;"	f	namespace:kaldi
+kaldi::ComputeDeltas	feature-functions.cc	/^void ComputeDeltas(const DeltaFeaturesOptions &delta_opts,$/;"	f	namespace:kaldi
+kaldi::ComputeLifterCoeffs	mel-computations.cc	/^void ComputeLifterCoeffs(BaseFloat Q, VectorBase<BaseFloat> *coeffs) {$/;"	f	namespace:kaldi
+kaldi::ComputeLpc	feature-functions.cc	/^BaseFloat ComputeLpc(const VectorBase<BaseFloat> &autocorr_in,$/;"	f	namespace:kaldi
+kaldi::ComputePowerSpectrum	feature-functions.cc	/^void ComputePowerSpectrum(VectorBase<BaseFloat> *waveform) {$/;"	f	namespace:kaldi
+kaldi::ComputeShiftedDeltas	feature-functions.cc	/^void ComputeShiftedDeltas(const ShiftedDeltaFeaturesOptions &delta_opts,$/;"	f	namespace:kaldi
+kaldi::DeltaFeatures	feature-functions.h	/^class DeltaFeatures {$/;"	c	namespace:kaldi
+kaldi::DeltaFeatures::DeltaFeatures	feature-functions.cc	/^DeltaFeatures::DeltaFeatures(const DeltaFeaturesOptions &opts): opts_(opts) {$/;"	f	class:kaldi::DeltaFeatures
+kaldi::DeltaFeatures::Process	feature-functions.cc	/^void DeltaFeatures::Process(const MatrixBase<BaseFloat> &input_feats,$/;"	f	class:kaldi::DeltaFeatures
+kaldi::DeltaFeatures::opts_	feature-functions.h	/^  DeltaFeaturesOptions opts_;$/;"	m	class:kaldi::DeltaFeatures
+kaldi::DeltaFeatures::scales_	feature-functions.h	/^  std::vector<Vector<BaseFloat> > scales_;  \/\/ a scaling window for each$/;"	m	class:kaldi::DeltaFeatures
+kaldi::DeltaFeaturesOptions	feature-functions.h	/^struct DeltaFeaturesOptions {$/;"	s	namespace:kaldi
+kaldi::DeltaFeaturesOptions::DeltaFeaturesOptions	feature-functions.h	/^  DeltaFeaturesOptions(int32 order = 2, int32 window = 2):$/;"	f	struct:kaldi::DeltaFeaturesOptions
+kaldi::DeltaFeaturesOptions::Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::DeltaFeaturesOptions
+kaldi::DeltaFeaturesOptions::order	feature-functions.h	/^  int32 order;$/;"	m	struct:kaldi::DeltaFeaturesOptions
+kaldi::DeltaFeaturesOptions::window	feature-functions.h	/^  int32 window;  \/\/ e.g. 2; controls window size (window size is 2*window + 1)$/;"	m	struct:kaldi::DeltaFeaturesOptions
+kaldi::Dither	feature-functions.cc	/^void Dither(VectorBase<BaseFloat> *waveform, BaseFloat dither_value) {$/;"	f	namespace:kaldi
+kaldi::Durbin	mel-computations.cc	/^BaseFloat Durbin(int n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp) {$/;"	f	namespace:kaldi
+kaldi::ExtractDeltaPitch	pitch-functions.cc	/^void ExtractDeltaPitch(const PostProcessPitchOptions &opts,$/;"	f	namespace:kaldi
+kaldi::ExtractFrame	pitch-functions.cc	/^void ExtractFrame(const VectorBase<double> &wave,$/;"	f	namespace:kaldi
+kaldi::ExtractWaveformRemainder	feature-functions.cc	/^void ExtractWaveformRemainder(const VectorBase<BaseFloat> &wave,$/;"	f	namespace:kaldi
+kaldi::ExtractWindow	feature-functions.cc	/^void ExtractWindow(const VectorBase<BaseFloat> &wave,$/;"	f	namespace:kaldi
+kaldi::Fbank	feature-fbank.h	/^class Fbank {$/;"	c	namespace:kaldi
+kaldi::Fbank::Compute	feature-fbank.cc	/^void Fbank::Compute(const VectorBase<BaseFloat> &wave,$/;"	f	class:kaldi::Fbank
+kaldi::Fbank::Fbank	feature-fbank.cc	/^Fbank::Fbank(const FbankOptions &opts)$/;"	f	class:kaldi::Fbank
+kaldi::Fbank::GetMelBanks	feature-fbank.cc	/^const MelBanks *Fbank::GetMelBanks(BaseFloat vtln_warp) {$/;"	f	class:kaldi::Fbank
+kaldi::Fbank::feature_window_function_	feature-fbank.h	/^  FeatureWindowFunction feature_window_function_;$/;"	m	class:kaldi::Fbank
+kaldi::Fbank::log_energy_floor_	feature-fbank.h	/^  BaseFloat log_energy_floor_;$/;"	m	class:kaldi::Fbank
+kaldi::Fbank::mel_banks_	feature-fbank.h	/^  std::map<BaseFloat, MelBanks*> mel_banks_;  \/\/ BaseFloat is VTLN coefficient.$/;"	m	class:kaldi::Fbank
+kaldi::Fbank::opts_	feature-fbank.h	/^  FbankOptions opts_;$/;"	m	class:kaldi::Fbank
+kaldi::Fbank::srfft_	feature-fbank.h	/^  SplitRadixRealFft<BaseFloat> *srfft_;$/;"	m	class:kaldi::Fbank
+kaldi::Fbank::~Fbank	feature-fbank.cc	/^Fbank::~Fbank() {$/;"	f	class:kaldi::Fbank
+kaldi::FbankOptions	feature-fbank.h	/^struct FbankOptions {$/;"	s	namespace:kaldi
+kaldi::FbankOptions::FbankOptions	feature-fbank.h	/^  FbankOptions(): mel_opts(23),$/;"	f	struct:kaldi::FbankOptions
+kaldi::FbankOptions::Register	feature-fbank.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FbankOptions
+kaldi::FbankOptions::energy_floor	feature-fbank.h	/^  BaseFloat energy_floor;$/;"	m	struct:kaldi::FbankOptions
+kaldi::FbankOptions::frame_opts	feature-fbank.h	/^  FrameExtractionOptions frame_opts;$/;"	m	struct:kaldi::FbankOptions
+kaldi::FbankOptions::htk_compat	feature-fbank.h	/^  bool htk_compat;  \/\/ If true, put energy last (if using energy)$/;"	m	struct:kaldi::FbankOptions
+kaldi::FbankOptions::mel_opts	feature-fbank.h	/^  MelBanksOptions mel_opts;$/;"	m	struct:kaldi::FbankOptions
+kaldi::FbankOptions::raw_energy	feature-fbank.h	/^  bool raw_energy;  \/\/ If true, compute energy before preemphasis and windowing$/;"	m	struct:kaldi::FbankOptions
+kaldi::FbankOptions::use_energy	feature-fbank.h	/^  bool use_energy;  \/\/ append an extra dimension with energy to the filter banks$/;"	m	struct:kaldi::FbankOptions
+kaldi::FbankOptions::use_log_fbank	feature-fbank.h	/^  bool use_log_fbank;  \/\/ if true (default), produce log-filterbank, else linear$/;"	m	struct:kaldi::FbankOptions
+kaldi::FeatureWindowFunction	feature-functions.h	/^struct FeatureWindowFunction {$/;"	s	namespace:kaldi
+kaldi::FeatureWindowFunction::FeatureWindowFunction	feature-functions.cc	/^FeatureWindowFunction::FeatureWindowFunction(const FrameExtractionOptions &opts) {$/;"	f	class:kaldi::FeatureWindowFunction
+kaldi::FeatureWindowFunction::FeatureWindowFunction	feature-functions.h	/^  FeatureWindowFunction() {}$/;"	f	struct:kaldi::FeatureWindowFunction
+kaldi::FeatureWindowFunction::window	feature-functions.h	/^  Vector<BaseFloat> window;$/;"	m	struct:kaldi::FeatureWindowFunction
+kaldi::FrameExtractionOptions	feature-functions.h	/^struct FrameExtractionOptions {$/;"	s	namespace:kaldi
+kaldi::FrameExtractionOptions::FrameExtractionOptions	feature-functions.h	/^  FrameExtractionOptions():$/;"	f	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::PaddedWindowSize	feature-functions.h	/^  int32 PaddedWindowSize() const {$/;"	f	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::WindowShift	feature-functions.h	/^  int32 WindowShift() const {$/;"	f	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::WindowSize	feature-functions.h	/^  int32 WindowSize() const {$/;"	f	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::dither	feature-functions.h	/^  BaseFloat dither;  \/\/ Amount of dithering, 0.0 means no dither.$/;"	m	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::frame_length_ms	feature-functions.h	/^  BaseFloat frame_length_ms;  \/\/ in milliseconds.$/;"	m	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::frame_shift_ms	feature-functions.h	/^  BaseFloat frame_shift_ms;  \/\/ in milliseconds.$/;"	m	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::preemph_coeff	feature-functions.h	/^  BaseFloat preemph_coeff;  \/\/ Preemphasis coefficient.$/;"	m	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::remove_dc_offset	feature-functions.h	/^  bool remove_dc_offset;  \/\/ Subtract mean of wave before FFT.$/;"	m	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::round_to_power_of_two	feature-functions.h	/^  bool round_to_power_of_two;$/;"	m	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::samp_freq	feature-functions.h	/^  BaseFloat samp_freq;$/;"	m	struct:kaldi::FrameExtractionOptions
+kaldi::FrameExtractionOptions::window_type	feature-functions.h	/^  std::string window_type;  \/\/ e.g. Hamming window$/;"	m	struct:kaldi::FrameExtractionOptions
+kaldi::GetEqualLoudnessVector	feature-functions.cc	/^void GetEqualLoudnessVector(const MelBanks &mel_banks,$/;"	f	namespace:kaldi
+kaldi::InitIdftBases	feature-functions.cc	/^void InitIdftBases(int32 n_bases, int32 dimension, Matrix<BaseFloat> *mat_out) {$/;"	f	namespace:kaldi
+kaldi::LinearResample	pitch-functions.cc	/^class LinearResample {$/;"	c	namespace:kaldi	file:
+kaldi::LinearResample::FilterFunc	pitch-functions.cc	/^  double FilterFunc(const double &t) {$/;"	f	class:kaldi::LinearResample	file:
+kaldi::LinearResample::IndexInfo	pitch-functions.cc	/^  struct IndexInfo {$/;"	s	class:kaldi::LinearResample	file:
+kaldi::LinearResample::IndexInfo::first_index	pitch-functions.cc	/^    int32 first_index;  \/\/ The first input-sample index that we sum$/;"	m	struct:kaldi::LinearResample::IndexInfo	file:
+kaldi::LinearResample::IndexInfo::last_index	pitch-functions.cc	/^    int32 last_index;   \/\/ The last input-sample index that we sum$/;"	m	struct:kaldi::LinearResample::IndexInfo	file:
+kaldi::LinearResample::IndexInfo::num_indices	pitch-functions.cc	/^    int32 num_indices;  \/\/ The number of indices that we sum over.$/;"	m	struct:kaldi::LinearResample::IndexInfo	file:
+kaldi::LinearResample::LinearResample	pitch-functions.cc	/^     LinearResample(double samp_rate_in,$/;"	f	class:kaldi::LinearResample
+kaldi::LinearResample::PreSet	pitch-functions.cc	/^  void PreSet() {$/;"	f	class:kaldi::LinearResample	file:
+kaldi::LinearResample::SetIndex	pitch-functions.cc	/^  void SetIndex() {$/;"	f	class:kaldi::LinearResample	file:
+kaldi::LinearResample::SetWeights	pitch-functions.cc	/^  void SetWeights() {$/;"	f	class:kaldi::LinearResample	file:
+kaldi::LinearResample::Upsample	pitch-functions.cc	/^  void Upsample(const VectorBase<double> &input,$/;"	f	class:kaldi::LinearResample
+kaldi::LinearResample::filter_cutoff_	pitch-functions.cc	/^  double filter_cutoff_;$/;"	m	class:kaldi::LinearResample	file:
+kaldi::LinearResample::frame_shift_	pitch-functions.cc	/^  double frame_shift_;  \/\/ or called 'dt'$/;"	m	class:kaldi::LinearResample	file:
+kaldi::LinearResample::half_frame_length_	pitch-functions.cc	/^  double half_frame_length_;$/;"	m	class:kaldi::LinearResample	file:
+kaldi::LinearResample::indexes_	pitch-functions.cc	/^  std::vector<IndexInfo> indexes_;$/;"	m	class:kaldi::LinearResample	file:
+kaldi::LinearResample::num_weights_	pitch-functions.cc	/^  int32 num_weights_;   \/\/ minimal number of weights$/;"	m	class:kaldi::LinearResample	file:
+kaldi::LinearResample::num_zeros_upsample_	pitch-functions.cc	/^  int32 num_zeros_upsample_;$/;"	m	class:kaldi::LinearResample	file:
+kaldi::LinearResample::samp_rate_in_	pitch-functions.cc	/^  double samp_rate_in_;$/;"	m	class:kaldi::LinearResample	file:
+kaldi::LinearResample::samp_rate_out_	pitch-functions.cc	/^  double samp_rate_out_;$/;"	m	class:kaldi::LinearResample	file:
+kaldi::LinearResample::weights_	pitch-functions.cc	/^  std::vector<Vector<double> > weights_;$/;"	m	class:kaldi::LinearResample	file:
+kaldi::Lpc2Cepstrum	mel-computations.cc	/^void Lpc2Cepstrum(int n, const BaseFloat *pLPC, BaseFloat *pCepst) {$/;"	f	namespace:kaldi
+kaldi::MaxNormalizeEnergy	feature-functions.h	/^inline void MaxNormalizeEnergy(Matrix<BaseFloat> *feats) {$/;"	f	namespace:kaldi
+kaldi::MelBanks	mel-computations.h	/^class MelBanks {$/;"	c	namespace:kaldi
+kaldi::MelBanks::Compute	mel-computations.cc	/^void MelBanks::Compute(const VectorBase<BaseFloat> &power_spectrum,$/;"	f	class:kaldi::MelBanks
+kaldi::MelBanks::GetCenterFreqs	mel-computations.h	/^  const Vector<BaseFloat> &GetCenterFreqs() const { return center_freqs_; }$/;"	f	class:kaldi::MelBanks
+kaldi::MelBanks::InverseMelScale	mel-computations.h	/^  static inline BaseFloat InverseMelScale(BaseFloat mel_freq) {$/;"	f	class:kaldi::MelBanks
+kaldi::MelBanks::MelBanks	mel-computations.cc	/^MelBanks::MelBanks(const MelBanksOptions &opts,$/;"	f	class:kaldi::MelBanks
+kaldi::MelBanks::MelScale	mel-computations.h	/^  static inline BaseFloat MelScale(BaseFloat freq) {$/;"	f	class:kaldi::MelBanks
+kaldi::MelBanks::NumBins	mel-computations.h	/^  int32 NumBins() const { return bins_.size(); }$/;"	f	class:kaldi::MelBanks
+kaldi::MelBanks::VtlnWarpFreq	mel-computations.cc	/^BaseFloat MelBanks::VtlnWarpFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:kaldi::MelBanks
+kaldi::MelBanks::VtlnWarpMelFreq	mel-computations.cc	/^BaseFloat MelBanks::VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:kaldi::MelBanks
+kaldi::MelBanks::bins_	mel-computations.h	/^  std::vector<std::pair<int32, Vector<BaseFloat> > > bins_;$/;"	m	class:kaldi::MelBanks
+kaldi::MelBanks::center_freqs_	mel-computations.h	/^  Vector<BaseFloat> center_freqs_;$/;"	m	class:kaldi::MelBanks
+kaldi::MelBanks::debug_	mel-computations.h	/^  bool debug_;$/;"	m	class:kaldi::MelBanks
+kaldi::MelBanks::htk_mode_	mel-computations.h	/^  bool htk_mode_;$/;"	m	class:kaldi::MelBanks
+kaldi::MelBanksOptions	feature-functions.h	/^struct MelBanksOptions {$/;"	s	namespace:kaldi
+kaldi::MelBanksOptions::MelBanksOptions	feature-functions.h	/^  explicit MelBanksOptions(int num_bins = 25)$/;"	f	struct:kaldi::MelBanksOptions
+kaldi::MelBanksOptions::Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MelBanksOptions
+kaldi::MelBanksOptions::debug_mel	feature-functions.h	/^  bool debug_mel;$/;"	m	struct:kaldi::MelBanksOptions
+kaldi::MelBanksOptions::high_freq	feature-functions.h	/^  BaseFloat high_freq;  \/\/ an upper frequency cutoff; 0 -> no cutoff, negative$/;"	m	struct:kaldi::MelBanksOptions
+kaldi::MelBanksOptions::htk_mode	feature-functions.h	/^  bool htk_mode;$/;"	m	struct:kaldi::MelBanksOptions
+kaldi::MelBanksOptions::low_freq	feature-functions.h	/^  BaseFloat low_freq;  \/\/ e.g. 20; lower frequency cutoff$/;"	m	struct:kaldi::MelBanksOptions
+kaldi::MelBanksOptions::num_bins	feature-functions.h	/^  int32 num_bins;  \/\/ e.g. 25; number of triangular bins$/;"	m	struct:kaldi::MelBanksOptions
+kaldi::MelBanksOptions::vtln_high	feature-functions.h	/^  BaseFloat vtln_high;  \/\/ vtln upper cutoff of warping function: if negative, added$/;"	m	struct:kaldi::MelBanksOptions
+kaldi::MelBanksOptions::vtln_low	feature-functions.h	/^  BaseFloat vtln_low;  \/\/ vtln lower cutoff of warping function.$/;"	m	struct:kaldi::MelBanksOptions
+kaldi::Mfcc	feature-mfcc.h	/^class Mfcc {$/;"	c	namespace:kaldi
+kaldi::Mfcc::Compute	feature-mfcc.cc	/^void Mfcc::Compute(const VectorBase<BaseFloat> &wave,$/;"	f	class:kaldi::Mfcc
+kaldi::Mfcc::Dim	feature-mfcc.h	/^  int32 Dim() { return opts_.num_ceps; }$/;"	f	class:kaldi::Mfcc
+kaldi::Mfcc::GetMelBanks	feature-mfcc.cc	/^const MelBanks *Mfcc::GetMelBanks(BaseFloat vtln_warp) {$/;"	f	class:kaldi::Mfcc
+kaldi::Mfcc::Mfcc	feature-mfcc.cc	/^Mfcc::Mfcc(const MfccOptions &opts)$/;"	f	class:kaldi::Mfcc
+kaldi::Mfcc::dct_matrix_	feature-mfcc.h	/^  Matrix<BaseFloat> dct_matrix_;  \/\/ matrix we left-multiply by to perform DCT.$/;"	m	class:kaldi::Mfcc
+kaldi::Mfcc::feature_window_function_	feature-mfcc.h	/^  FeatureWindowFunction feature_window_function_;$/;"	m	class:kaldi::Mfcc
+kaldi::Mfcc::lifter_coeffs_	feature-mfcc.h	/^  Vector<BaseFloat> lifter_coeffs_;$/;"	m	class:kaldi::Mfcc
+kaldi::Mfcc::log_energy_floor_	feature-mfcc.h	/^  BaseFloat log_energy_floor_;$/;"	m	class:kaldi::Mfcc
+kaldi::Mfcc::mel_banks_	feature-mfcc.h	/^  std::map<BaseFloat, MelBanks*> mel_banks_;  \/\/ BaseFloat is VTLN coefficient.$/;"	m	class:kaldi::Mfcc
+kaldi::Mfcc::opts_	feature-mfcc.h	/^  MfccOptions opts_;$/;"	m	class:kaldi::Mfcc
+kaldi::Mfcc::srfft_	feature-mfcc.h	/^  SplitRadixRealFft<BaseFloat> *srfft_;$/;"	m	class:kaldi::Mfcc
+kaldi::Mfcc::~Mfcc	feature-mfcc.cc	/^Mfcc::~Mfcc() {$/;"	f	class:kaldi::Mfcc
+kaldi::MfccOptions	feature-mfcc.h	/^struct MfccOptions {$/;"	s	namespace:kaldi
+kaldi::MfccOptions::MfccOptions	feature-mfcc.h	/^  MfccOptions() : mel_opts(23),$/;"	f	struct:kaldi::MfccOptions
+kaldi::MfccOptions::Register	feature-mfcc.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::MfccOptions
+kaldi::MfccOptions::cepstral_lifter	feature-mfcc.h	/^  BaseFloat cepstral_lifter;  \/\/ Scaling factor on cepstra for HTK compatibility.$/;"	m	struct:kaldi::MfccOptions
+kaldi::MfccOptions::energy_floor	feature-mfcc.h	/^  BaseFloat energy_floor;$/;"	m	struct:kaldi::MfccOptions
+kaldi::MfccOptions::frame_opts	feature-mfcc.h	/^  FrameExtractionOptions frame_opts;$/;"	m	struct:kaldi::MfccOptions
+kaldi::MfccOptions::htk_compat	feature-mfcc.h	/^  bool htk_compat;  \/\/ if true, put energy\/C0 last and introduce a factor of$/;"	m	struct:kaldi::MfccOptions
+kaldi::MfccOptions::mel_opts	feature-mfcc.h	/^  MelBanksOptions mel_opts;$/;"	m	struct:kaldi::MfccOptions
+kaldi::MfccOptions::num_ceps	feature-mfcc.h	/^  int32 num_ceps;  \/\/ e.g. 13: num cepstral coeffs, counting zero.$/;"	m	struct:kaldi::MfccOptions
+kaldi::MfccOptions::raw_energy	feature-mfcc.h	/^  bool raw_energy;  \/\/ If true, compute energy before preemphasis and windowing$/;"	m	struct:kaldi::MfccOptions
+kaldi::MfccOptions::use_energy	feature-mfcc.h	/^  bool use_energy;  \/\/ use energy; else C0$/;"	m	struct:kaldi::MfccOptions
+kaldi::Nccf	pitch-functions.cc	/^void Nccf(const Vector<double> &wave,$/;"	f	namespace:kaldi
+kaldi::NumFrames	feature-functions.cc	/^int32 NumFrames(int32 nsamp,$/;"	f	namespace:kaldi
+kaldi::PitchExtractionOptions	pitch-functions.h	/^struct PitchExtractionOptions {$/;"	s	namespace:kaldi
+kaldi::PitchExtractionOptions::NccfWindowShift	pitch-functions.h	/^  int32 NccfWindowShift() const {$/;"	f	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::NccfWindowSize	pitch-functions.h	/^  int32 NccfWindowSize() const {$/;"	f	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::PitchExtractionOptions	pitch-functions.h	/^  explicit PitchExtractionOptions() :$/;"	f	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::Register	pitch-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::delta_pitch	pitch-functions.h	/^  BaseFloat delta_pitch;     \/\/ the pitch tolerance in pruning lags$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::frame_length_ms	pitch-functions.h	/^  BaseFloat frame_length_ms;  \/\/ in milliseconds.$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::frame_shift_ms	pitch-functions.h	/^  BaseFloat frame_shift_ms;  \/\/ in milliseconds.$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::lowpass_cutoff	pitch-functions.h	/^  BaseFloat lowpass_cutoff;  \/\/ cutoff frequency for Low pass filter$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::lowpass_filter_width	pitch-functions.h	/^  int32 lowpass_filter_width;   \/\/ Integer that determines filter width of$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::max_f0	pitch-functions.h	/^  BaseFloat max_f0;          \/\/ max f0 to search (Hz)$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::min_f0	pitch-functions.h	/^  BaseFloat min_f0;          \/\/ min f0 to search (Hz)$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::nccf_ballast	pitch-functions.h	/^  BaseFloat nccf_ballast;    \/\/ Increasing this factor reduces NCCF for quiet frames,$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::penalty_factor	pitch-functions.h	/^  BaseFloat penalty_factor;  \/\/ cost factor for FO change$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::preemph_coeff	pitch-functions.h	/^  BaseFloat preemph_coeff;  \/\/ Preemphasis coefficient.$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::resample_freq	pitch-functions.h	/^  BaseFloat resample_freq;   \/\/ Integer that determines filter width when upsampling NCCF$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::samp_freq	pitch-functions.h	/^  BaseFloat samp_freq;$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::soft_min_f0	pitch-functions.h	/^  BaseFloat soft_min_f0;     \/\/ Minimum f0, applied in soft way, must not exceed$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractionOptions::upsample_filter_width	pitch-functions.h	/^  int32 upsample_filter_width;  \/\/ Integer that determines filter width when$/;"	m	struct:kaldi::PitchExtractionOptions
+kaldi::PitchExtractor	pitch-functions.cc	/^class PitchExtractor {$/;"	c	namespace:kaldi	file:
+kaldi::PitchExtractor::ComputeLocalCost	pitch-functions.cc	/^  void ComputeLocalCost(const Matrix<double> &autocorrelation) {$/;"	f	class:kaldi::PitchExtractor
+kaldi::PitchExtractor::FastViterbi	pitch-functions.cc	/^  void FastViterbi(const Matrix<double> &correl) {$/;"	f	class:kaldi::PitchExtractor
+kaldi::PitchExtractor::FindBestPath	pitch-functions.cc	/^  void FindBestPath(const Matrix<double> &correlation) {$/;"	f	class:kaldi::PitchExtractor
+kaldi::PitchExtractor::GetPitch	pitch-functions.cc	/^  void GetPitch(Matrix<BaseFloat> *output) {$/;"	f	class:kaldi::PitchExtractor
+kaldi::PitchExtractor::PitchExtractor	pitch-functions.cc	/^  explicit PitchExtractor(const PitchExtractionOptions &opts,$/;"	f	class:kaldi::PitchExtractor
+kaldi::PitchExtractor::PitchFrame	pitch-functions.cc	/^  struct PitchFrame {$/;"	s	class:kaldi::PitchExtractor	file:
+kaldi::PitchExtractor::PitchFrame::PitchFrame	pitch-functions.cc	/^    explicit PitchFrame() {}$/;"	f	struct:kaldi::PitchExtractor::PitchFrame
+kaldi::PitchExtractor::PitchFrame::back_pointers	pitch-functions.cc	/^    Vector<double> back_pointers;$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+kaldi::PitchExtractor::PitchFrame::local_cost	pitch-functions.cc	/^    Vector<double> local_cost;$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+kaldi::PitchExtractor::PitchFrame::obj_func	pitch-functions.cc	/^    Vector<double> obj_func;      \/\/ optimal objective function for frame i$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+kaldi::PitchExtractor::PitchFrame::pov	pitch-functions.cc	/^    double pov;                   \/\/ probability of voicing$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+kaldi::PitchExtractor::PitchFrame::truepitch	pitch-functions.cc	/^    double truepitch;             \/\/ True pitch$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+kaldi::PitchExtractor::frames_	pitch-functions.cc	/^  std::vector< PitchFrame > frames_;$/;"	m	class:kaldi::PitchExtractor	file:
+kaldi::PitchExtractor::lags_	pitch-functions.cc	/^  Vector<double> lags_;    \/\/ all lags used in viterbi$/;"	m	class:kaldi::PitchExtractor	file:
+kaldi::PitchExtractor::num_frames_	pitch-functions.cc	/^  int32 num_frames_;     \/\/ number of frames in input wave$/;"	m	class:kaldi::PitchExtractor	file:
+kaldi::PitchExtractor::opts_	pitch-functions.cc	/^  PitchExtractionOptions opts_;$/;"	m	class:kaldi::PitchExtractor	file:
+kaldi::PitchExtractor::state_num_	pitch-functions.cc	/^  int32 state_num_;      \/\/ number of states in Viterbi Computation$/;"	m	class:kaldi::PitchExtractor	file:
+kaldi::PitchExtractor::~PitchExtractor	pitch-functions.cc	/^  ~PitchExtractor() {}$/;"	f	class:kaldi::PitchExtractor
+kaldi::PitchNumFrames	pitch-functions.cc	/^int32 PitchNumFrames(int32 nsamp,$/;"	f	namespace:kaldi
+kaldi::Plp	feature-plp.h	/^class Plp {$/;"	c	namespace:kaldi
+kaldi::Plp::Compute	feature-plp.cc	/^void Plp::Compute(const VectorBase<BaseFloat> &wave,$/;"	f	class:kaldi::Plp
+kaldi::Plp::Dim	feature-plp.h	/^  int32 Dim() { return opts_.num_ceps; }$/;"	f	class:kaldi::Plp
+kaldi::Plp::GetEqualLoudness	feature-plp.cc	/^const Vector<BaseFloat> *Plp::GetEqualLoudness(BaseFloat vtln_warp) {$/;"	f	class:kaldi::Plp
+kaldi::Plp::GetMelBanks	feature-plp.cc	/^const MelBanks *Plp::GetMelBanks(BaseFloat vtln_warp) {$/;"	f	class:kaldi::Plp
+kaldi::Plp::Plp	feature-plp.cc	/^Plp::Plp(const PlpOptions &opts)$/;"	f	class:kaldi::Plp
+kaldi::Plp::equal_loudness_	feature-plp.h	/^  std::map<BaseFloat, Vector<BaseFloat>* > equal_loudness_;$/;"	m	class:kaldi::Plp
+kaldi::Plp::feature_window_function_	feature-plp.h	/^  FeatureWindowFunction feature_window_function_;$/;"	m	class:kaldi::Plp
+kaldi::Plp::idft_bases_	feature-plp.h	/^  Matrix<BaseFloat> idft_bases_;$/;"	m	class:kaldi::Plp
+kaldi::Plp::lifter_coeffs_	feature-plp.h	/^  Vector<BaseFloat> lifter_coeffs_;$/;"	m	class:kaldi::Plp
+kaldi::Plp::log_energy_floor_	feature-plp.h	/^  BaseFloat log_energy_floor_;$/;"	m	class:kaldi::Plp
+kaldi::Plp::mel_banks_	feature-plp.h	/^  std::map<BaseFloat, MelBanks*> mel_banks_;  \/\/ BaseFloat is VTLN coefficient.$/;"	m	class:kaldi::Plp
+kaldi::Plp::opts_	feature-plp.h	/^  PlpOptions opts_;$/;"	m	class:kaldi::Plp
+kaldi::Plp::srfft_	feature-plp.h	/^  SplitRadixRealFft<BaseFloat> *srfft_;$/;"	m	class:kaldi::Plp
+kaldi::Plp::~Plp	feature-plp.cc	/^Plp::~Plp() {$/;"	f	class:kaldi::Plp
+kaldi::PlpOptions	feature-plp.h	/^struct PlpOptions {$/;"	s	namespace:kaldi
+kaldi::PlpOptions::PlpOptions	feature-plp.h	/^  PlpOptions() : mel_opts(23),$/;"	f	struct:kaldi::PlpOptions
+kaldi::PlpOptions::Register	feature-plp.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PlpOptions
+kaldi::PlpOptions::cepstral_lifter	feature-plp.h	/^  int32 cepstral_lifter;$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::cepstral_scale	feature-plp.h	/^  BaseFloat cepstral_scale;$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::compress_factor	feature-plp.h	/^  BaseFloat compress_factor;$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::energy_floor	feature-plp.h	/^  BaseFloat energy_floor;$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::frame_opts	feature-plp.h	/^  FrameExtractionOptions frame_opts;$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::htk_compat	feature-plp.h	/^  bool htk_compat;  \/\/ if true, put energy\/C0 last and introduce a factor of$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::lpc_order	feature-plp.h	/^  int32 lpc_order;$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::mel_opts	feature-plp.h	/^  MelBanksOptions mel_opts;$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::num_ceps	feature-plp.h	/^  int32 num_ceps;  \/\/ num cepstra including zero$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::raw_energy	feature-plp.h	/^  bool raw_energy;  \/\/ If true, compute energy before preemphasis and windowing$/;"	m	struct:kaldi::PlpOptions
+kaldi::PlpOptions::use_energy	feature-plp.h	/^  bool use_energy;  \/\/ use energy; else C0$/;"	m	struct:kaldi::PlpOptions
+kaldi::PostProcessPitch	pitch-functions.cc	/^void PostProcessPitch(const PostProcessPitchOptions &opts,$/;"	f	namespace:kaldi
+kaldi::PostProcessPitchOptions	pitch-functions.h	/^struct PostProcessPitchOptions {$/;"	s	namespace:kaldi
+kaldi::PostProcessPitchOptions::PostProcessPitchOptions	pitch-functions.h	/^  explicit PostProcessPitchOptions() :$/;"	f	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::Register	pitch-functions.h	/^  void Register(ParseOptions *po) {$/;"	f	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::add_delta_pitch	pitch-functions.h	/^  bool add_delta_pitch;$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::add_normalized_log_pitch	pitch-functions.h	/^  bool add_normalized_log_pitch;$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::add_pov_feature	pitch-functions.h	/^  bool add_pov_feature;$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::add_raw_log_pitch	pitch-functions.h	/^  bool add_raw_log_pitch;$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::delta_pitch_noise_stddev	pitch-functions.h	/^  BaseFloat delta_pitch_noise_stddev; \/\/ stddev of noise we add to delta-pitch$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::delta_pitch_scale	pitch-functions.h	/^  BaseFloat delta_pitch_scale;$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::delta_window	pitch-functions.h	/^  int32 delta_window;$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::normalization_window_size	pitch-functions.h	/^  int32 normalization_window_size;    \/\/ Size of window used for moving window$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::pitch_scale	pitch-functions.h	/^  BaseFloat pitch_scale;          \/\/ the final pitch scaled with this value$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::pov_nonlinearity	pitch-functions.h	/^  int32 pov_nonlinearity;  \/\/ which nonlinearity formula to use for POV feature.$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::pov_scale	pitch-functions.h	/^  BaseFloat pov_scale;            \/\/ the final pov scaled with this value$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PostProcessPitchOptions::process_pitch	pitch-functions.h	/^  bool process_pitch;$/;"	m	struct:kaldi::PostProcessPitchOptions
+kaldi::PreProcess	pitch-functions.cc	/^void PreProcess(const PitchExtractionOptions opts,$/;"	f	namespace:kaldi
+kaldi::Preemphasize	feature-functions.cc	/^void Preemphasize(VectorBase<BaseFloat> *waveform, BaseFloat preemph_coeff) {$/;"	f	namespace:kaldi
+kaldi::PreemphasizeFrame	pitch-functions.cc	/^void PreemphasizeFrame(VectorBase<double> *waveform, double preemph_coeff) {$/;"	f	namespace:kaldi
+kaldi::ProcessNccf	pitch-functions.cc	/^void ProcessNccf(const Vector<double> &inner_prod,$/;"	f	namespace:kaldi
+kaldi::ProcessPovFeatures	pitch-functions.cc	/^void ProcessPovFeatures(Vector<BaseFloat> *pov,$/;"	f	namespace:kaldi
+kaldi::ReverseFrames	feature-functions.cc	/^void ReverseFrames(const MatrixBase<BaseFloat> &input_features,$/;"	f	namespace:kaldi
+kaldi::Round	pitch-functions.cc	/^inline int32 Round(BaseFloat x) {$/;"	f	namespace:kaldi
+kaldi::SelectLag	pitch-functions.cc	/^void SelectLag(const PitchExtractionOptions &opts,$/;"	f	namespace:kaldi
+kaldi::ShiftedDeltaFeatures	feature-functions.h	/^class ShiftedDeltaFeatures {$/;"	c	namespace:kaldi
+kaldi::ShiftedDeltaFeatures::Process	feature-functions.cc	/^void ShiftedDeltaFeatures::Process(const MatrixBase<BaseFloat> &input_feats,$/;"	f	class:kaldi::ShiftedDeltaFeatures
+kaldi::ShiftedDeltaFeatures::ShiftedDeltaFeatures	feature-functions.cc	/^ShiftedDeltaFeatures::ShiftedDeltaFeatures($/;"	f	class:kaldi::ShiftedDeltaFeatures
+kaldi::ShiftedDeltaFeatures::opts_	feature-functions.h	/^  ShiftedDeltaFeaturesOptions opts_;$/;"	m	class:kaldi::ShiftedDeltaFeatures
+kaldi::ShiftedDeltaFeatures::scales_	feature-functions.h	/^  Vector<BaseFloat> scales_;  \/\/ a scaling window for each$/;"	m	class:kaldi::ShiftedDeltaFeatures
+kaldi::ShiftedDeltaFeaturesOptions	feature-functions.h	/^struct ShiftedDeltaFeaturesOptions {$/;"	s	namespace:kaldi
+kaldi::ShiftedDeltaFeaturesOptions::Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::ShiftedDeltaFeaturesOptions
+kaldi::ShiftedDeltaFeaturesOptions::ShiftedDeltaFeaturesOptions	feature-functions.h	/^  ShiftedDeltaFeaturesOptions():$/;"	f	struct:kaldi::ShiftedDeltaFeaturesOptions
+kaldi::ShiftedDeltaFeaturesOptions::block_shift	feature-functions.h	/^        block_shift;      \/\/ Distance between consecutive blocks$/;"	m	struct:kaldi::ShiftedDeltaFeaturesOptions
+kaldi::ShiftedDeltaFeaturesOptions::num_blocks	feature-functions.h	/^        num_blocks,       $/;"	m	struct:kaldi::ShiftedDeltaFeaturesOptions
+kaldi::ShiftedDeltaFeaturesOptions::window	feature-functions.h	/^  int32 window,           \/\/ The time delay and advance$/;"	m	struct:kaldi::ShiftedDeltaFeaturesOptions
+kaldi::SlidingWindowCmn	feature-functions.cc	/^void SlidingWindowCmn(const SlidingWindowCmnOptions &opts,$/;"	f	namespace:kaldi
+kaldi::SlidingWindowCmnOptions	feature-functions.h	/^struct SlidingWindowCmnOptions {$/;"	s	namespace:kaldi
+kaldi::SlidingWindowCmnOptions::Check	feature-functions.cc	/^void SlidingWindowCmnOptions::Check() const {$/;"	f	class:kaldi::SlidingWindowCmnOptions
+kaldi::SlidingWindowCmnOptions::Register	feature-functions.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::SlidingWindowCmnOptions
+kaldi::SlidingWindowCmnOptions::SlidingWindowCmnOptions	feature-functions.h	/^  SlidingWindowCmnOptions():$/;"	f	struct:kaldi::SlidingWindowCmnOptions
+kaldi::SlidingWindowCmnOptions::center	feature-functions.h	/^  bool center;$/;"	m	struct:kaldi::SlidingWindowCmnOptions
+kaldi::SlidingWindowCmnOptions::cmn_window	feature-functions.h	/^  int cmn_window;$/;"	m	struct:kaldi::SlidingWindowCmnOptions
+kaldi::SlidingWindowCmnOptions::min_window	feature-functions.h	/^  int min_window;$/;"	m	struct:kaldi::SlidingWindowCmnOptions
+kaldi::SlidingWindowCmnOptions::normalize_variance	feature-functions.h	/^  bool normalize_variance;$/;"	m	struct:kaldi::SlidingWindowCmnOptions
+kaldi::Spectrogram	feature-spectrogram.h	/^class Spectrogram {$/;"	c	namespace:kaldi
+kaldi::Spectrogram::Compute	feature-spectrogram.cc	/^void Spectrogram::Compute(const VectorBase<BaseFloat> &wave,$/;"	f	class:kaldi::Spectrogram
+kaldi::Spectrogram::Spectrogram	feature-spectrogram.cc	/^Spectrogram::Spectrogram(const SpectrogramOptions &opts)$/;"	f	class:kaldi::Spectrogram
+kaldi::Spectrogram::feature_window_function_	feature-spectrogram.h	/^  FeatureWindowFunction feature_window_function_;$/;"	m	class:kaldi::Spectrogram
+kaldi::Spectrogram::log_energy_floor_	feature-spectrogram.h	/^  BaseFloat log_energy_floor_;$/;"	m	class:kaldi::Spectrogram
+kaldi::Spectrogram::opts_	feature-spectrogram.h	/^  SpectrogramOptions opts_;$/;"	m	class:kaldi::Spectrogram
+kaldi::Spectrogram::srfft_	feature-spectrogram.h	/^  SplitRadixRealFft<BaseFloat> *srfft_;$/;"	m	class:kaldi::Spectrogram
+kaldi::Spectrogram::~Spectrogram	feature-spectrogram.cc	/^Spectrogram::~Spectrogram() {$/;"	f	class:kaldi::Spectrogram
+kaldi::SpectrogramOptions	feature-spectrogram.h	/^struct SpectrogramOptions {$/;"	s	namespace:kaldi
+kaldi::SpectrogramOptions::Register	feature-spectrogram.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::SpectrogramOptions
+kaldi::SpectrogramOptions::SpectrogramOptions	feature-spectrogram.h	/^  SpectrogramOptions() :$/;"	f	struct:kaldi::SpectrogramOptions
+kaldi::SpectrogramOptions::energy_floor	feature-spectrogram.h	/^  BaseFloat energy_floor;$/;"	m	struct:kaldi::SpectrogramOptions
+kaldi::SpectrogramOptions::frame_opts	feature-spectrogram.h	/^  FrameExtractionOptions frame_opts;$/;"	m	struct:kaldi::SpectrogramOptions
+kaldi::SpectrogramOptions::raw_energy	feature-spectrogram.h	/^  bool raw_energy;  \/\/ If true, compute energy before preemphasis and windowing$/;"	m	struct:kaldi::SpectrogramOptions
+kaldi::SpliceFrames	feature-functions.cc	/^void SpliceFrames(const MatrixBase<BaseFloat> &input_features,$/;"	f	namespace:kaldi
+kaldi::TakeLogOfPitch	pitch-functions.cc	/^void TakeLogOfPitch(Matrix<BaseFloat> *input) {$/;"	f	namespace:kaldi
+kaldi::UnitTestOnlineCmvn	feature-functions-test.cc	/^void UnitTestOnlineCmvn() {$/;"	f	namespace:kaldi
+kaldi::WaveData	wave-reader.h	/^class WaveData {$/;"	c	namespace:kaldi
+kaldi::WaveData::Clear	wave-reader.h	/^  void Clear() {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::CopyFrom	wave-reader.h	/^  void CopyFrom(const WaveData &other) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::Data	wave-reader.h	/^  const Matrix<BaseFloat> &Data() const { return data_; }$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::Duration	wave-reader.h	/^  BaseFloat Duration() const { return data_.NumCols()\/samp_freq_; }$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::Expect4ByteTag	wave-reader.cc	/^void WaveData::Expect4ByteTag(std::istream &is, const char *expected) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::Read	wave-reader.cc	/^void WaveData::Read(std::istream &is) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::Read4ByteTag	wave-reader.cc	/^void WaveData::Read4ByteTag(std::istream &is, char *dest) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::ReadUint16	wave-reader.cc	/^uint16 WaveData::ReadUint16(std::istream &is, bool swap) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::ReadUint32	wave-reader.cc	/^uint32 WaveData::ReadUint32(std::istream &is, bool swap) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::SampFreq	wave-reader.h	/^  BaseFloat SampFreq() const { return samp_freq_; }$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::WaveData	wave-reader.h	/^  WaveData() : samp_freq_(0.0) {}$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::WaveData	wave-reader.h	/^  WaveData(BaseFloat samp_freq, const MatrixBase<BaseFloat> &data)$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::Write	wave-reader.cc	/^void WaveData::Write(std::ostream &os) const {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::WriteUint16	wave-reader.cc	/^void WaveData::WriteUint16(std::ostream &os, int16 i) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::WriteUint32	wave-reader.cc	/^void WaveData::WriteUint32(std::ostream &os, int32 i) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::data_	wave-reader.h	/^  Matrix<BaseFloat> data_;$/;"	m	class:kaldi::WaveData
+kaldi::WaveData::samp_freq_	wave-reader.h	/^  BaseFloat samp_freq_;$/;"	m	class:kaldi::WaveData
+kaldi::WaveHolder	wave-reader.h	/^class WaveHolder {$/;"	c	namespace:kaldi
+kaldi::WaveHolder::Clear	wave-reader.h	/^  void Clear() { t_.Clear(); }$/;"	f	class:kaldi::WaveHolder
+kaldi::WaveHolder::Copy	wave-reader.h	/^  void Copy(const T &t) { t_.CopyFrom(t); }$/;"	f	class:kaldi::WaveHolder
+kaldi::WaveHolder::IsReadInBinary	wave-reader.h	/^  static bool IsReadInBinary() { return true; }$/;"	f	class:kaldi::WaveHolder
+kaldi::WaveHolder::Read	wave-reader.h	/^  bool Read(std::istream &is) {$/;"	f	class:kaldi::WaveHolder
+kaldi::WaveHolder::T	wave-reader.h	/^  typedef WaveData T;$/;"	t	class:kaldi::WaveHolder
+kaldi::WaveHolder::Value	wave-reader.h	/^  const T &Value() { return t_; }$/;"	f	class:kaldi::WaveHolder
+kaldi::WaveHolder::WaveHolder	wave-reader.h	/^  WaveHolder() {}$/;"	f	class:kaldi::WaveHolder
+kaldi::WaveHolder::WaveHolder	wave-reader.h	/^  WaveHolder(const WaveHolder &other): t_(other.t_) {}$/;"	f	class:kaldi::WaveHolder
+kaldi::WaveHolder::Write	wave-reader.h	/^  static bool Write(std::ostream &os, bool binary, const T &t) {$/;"	f	class:kaldi::WaveHolder
+kaldi::WaveHolder::operator =	wave-reader.h	/^  WaveHolder &operator = (const WaveHolder &other) {$/;"	f	class:kaldi::WaveHolder
+kaldi::WaveHolder::t_	wave-reader.h	/^  T t_;$/;"	m	class:kaldi::WaveHolder
+kaldi::WeightedMwn	pitch-functions.cc	/^void WeightedMwn(int32 normalization_window_size,$/;"	f	namespace:kaldi
+lags_	pitch-functions.cc	/^  Vector<double> lags_;    \/\/ all lags used in viterbi$/;"	m	class:kaldi::PitchExtractor	file:
+last_index	pitch-functions.cc	/^    int32 last_index;   \/\/ The last input-sample index that we sum$/;"	m	struct:kaldi::LinearResample::IndexInfo	file:
+lifter_coeffs_	feature-mfcc.h	/^  Vector<BaseFloat> lifter_coeffs_;$/;"	m	class:kaldi::Mfcc
+lifter_coeffs_	feature-plp.h	/^  Vector<BaseFloat> lifter_coeffs_;$/;"	m	class:kaldi::Plp
+local_cost	pitch-functions.cc	/^    Vector<double> local_cost;$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+log_energy_floor_	feature-fbank.h	/^  BaseFloat log_energy_floor_;$/;"	m	class:kaldi::Fbank
+log_energy_floor_	feature-mfcc.h	/^  BaseFloat log_energy_floor_;$/;"	m	class:kaldi::Mfcc
+log_energy_floor_	feature-plp.h	/^  BaseFloat log_energy_floor_;$/;"	m	class:kaldi::Plp
+log_energy_floor_	feature-spectrogram.h	/^  BaseFloat log_energy_floor_;$/;"	m	class:kaldi::Spectrogram
+low_freq	feature-functions.h	/^  BaseFloat low_freq;  \/\/ e.g. 20; lower frequency cutoff$/;"	m	struct:kaldi::MelBanksOptions
+lowpass_cutoff	pitch-functions.h	/^  BaseFloat lowpass_cutoff;  \/\/ cutoff frequency for Low pass filter$/;"	m	struct:kaldi::PitchExtractionOptions
+lowpass_filter_width	pitch-functions.h	/^  int32 lowpass_filter_width;   \/\/ Integer that determines filter width of$/;"	m	struct:kaldi::PitchExtractionOptions
+lpc_order	feature-plp.h	/^  int32 lpc_order;$/;"	m	struct:kaldi::PlpOptions
+main	feature-fbank-test.cc	/^int main() {$/;"	f
+main	feature-functions-test.cc	/^int main() {$/;"	f
+main	feature-mfcc-test.cc	/^int main() {$/;"	f
+main	feature-plp-test.cc	/^int main() {$/;"	f
+main	feature-sdc-test.cc	/^int main() {$/;"	f
+main	pitch-functions-test.cc	/^int main() {$/;"	f
+max_f0	pitch-functions.h	/^  BaseFloat max_f0;          \/\/ max f0 to search (Hz)$/;"	m	struct:kaldi::PitchExtractionOptions
+mel_banks_	feature-fbank.h	/^  std::map<BaseFloat, MelBanks*> mel_banks_;  \/\/ BaseFloat is VTLN coefficient.$/;"	m	class:kaldi::Fbank
+mel_banks_	feature-mfcc.h	/^  std::map<BaseFloat, MelBanks*> mel_banks_;  \/\/ BaseFloat is VTLN coefficient.$/;"	m	class:kaldi::Mfcc
+mel_banks_	feature-plp.h	/^  std::map<BaseFloat, MelBanks*> mel_banks_;  \/\/ BaseFloat is VTLN coefficient.$/;"	m	class:kaldi::Plp
+mel_opts	feature-fbank.h	/^  MelBanksOptions mel_opts;$/;"	m	struct:kaldi::FbankOptions
+mel_opts	feature-mfcc.h	/^  MelBanksOptions mel_opts;$/;"	m	struct:kaldi::MfccOptions
+mel_opts	feature-plp.h	/^  MelBanksOptions mel_opts;$/;"	m	struct:kaldi::PlpOptions
+min_f0	pitch-functions.h	/^  BaseFloat min_f0;          \/\/ min f0 to search (Hz)$/;"	m	struct:kaldi::PitchExtractionOptions
+min_window	feature-functions.h	/^  int min_window;$/;"	m	struct:kaldi::SlidingWindowCmnOptions
+nccf_ballast	pitch-functions.h	/^  BaseFloat nccf_ballast;    \/\/ Increasing this factor reduces NCCF for quiet frames,$/;"	m	struct:kaldi::PitchExtractionOptions
+normalization_window_size	pitch-functions.h	/^  int32 normalization_window_size;    \/\/ Size of window used for moving window$/;"	m	struct:kaldi::PostProcessPitchOptions
+normalize_variance	feature-functions.h	/^  bool normalize_variance;$/;"	m	struct:kaldi::SlidingWindowCmnOptions
+num_bins	feature-functions.h	/^  int32 num_bins;  \/\/ e.g. 25; number of triangular bins$/;"	m	struct:kaldi::MelBanksOptions
+num_blocks	feature-functions.h	/^        num_blocks,       $/;"	m	struct:kaldi::ShiftedDeltaFeaturesOptions
+num_ceps	feature-mfcc.h	/^  int32 num_ceps;  \/\/ e.g. 13: num cepstral coeffs, counting zero.$/;"	m	struct:kaldi::MfccOptions
+num_ceps	feature-plp.h	/^  int32 num_ceps;  \/\/ num cepstra including zero$/;"	m	struct:kaldi::PlpOptions
+num_frames_	pitch-functions.cc	/^  int32 num_frames_;     \/\/ number of frames in input wave$/;"	m	class:kaldi::PitchExtractor	file:
+num_indices	pitch-functions.cc	/^    int32 num_indices;  \/\/ The number of indices that we sum over.$/;"	m	struct:kaldi::ArbitraryResample::IndexInfo	file:
+num_indices	pitch-functions.cc	/^    int32 num_indices;  \/\/ The number of indices that we sum over.$/;"	m	struct:kaldi::LinearResample::IndexInfo	file:
+num_samples_in_	pitch-functions.cc	/^  int32 num_samples_in_;$/;"	m	class:kaldi::ArbitraryResample	file:
+num_weights_	pitch-functions.cc	/^  int32 num_weights_;   \/\/ minimal number of weights$/;"	m	class:kaldi::LinearResample	file:
+num_zeros_upsample_	pitch-functions.cc	/^  int32 num_zeros_upsample_;$/;"	m	class:kaldi::ArbitraryResample	file:
+num_zeros_upsample_	pitch-functions.cc	/^  int32 num_zeros_upsample_;$/;"	m	class:kaldi::LinearResample	file:
+obj_func	pitch-functions.cc	/^    Vector<double> obj_func;      \/\/ optimal objective function for frame i$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+operator =	wave-reader.h	/^  WaveHolder &operator = (const WaveHolder &other) {$/;"	f	class:kaldi::WaveHolder
+opts_	feature-fbank.h	/^  FbankOptions opts_;$/;"	m	class:kaldi::Fbank
+opts_	feature-functions.h	/^  DeltaFeaturesOptions opts_;$/;"	m	class:kaldi::DeltaFeatures
+opts_	feature-functions.h	/^  ShiftedDeltaFeaturesOptions opts_;$/;"	m	class:kaldi::ShiftedDeltaFeatures
+opts_	feature-mfcc.h	/^  MfccOptions opts_;$/;"	m	class:kaldi::Mfcc
+opts_	feature-plp.h	/^  PlpOptions opts_;$/;"	m	class:kaldi::Plp
+opts_	feature-spectrogram.h	/^  SpectrogramOptions opts_;$/;"	m	class:kaldi::Spectrogram
+opts_	pitch-functions.cc	/^  PitchExtractionOptions opts_;$/;"	m	class:kaldi::PitchExtractor	file:
+order	feature-functions.h	/^  int32 order;$/;"	m	struct:kaldi::DeltaFeaturesOptions
+penalty_factor	pitch-functions.h	/^  BaseFloat penalty_factor;  \/\/ cost factor for FO change$/;"	m	struct:kaldi::PitchExtractionOptions
+pitch_scale	pitch-functions.h	/^  BaseFloat pitch_scale;          \/\/ the final pitch scaled with this value$/;"	m	struct:kaldi::PostProcessPitchOptions
+pov	pitch-functions.cc	/^    double pov;                   \/\/ probability of voicing$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+pov_nonlinearity	pitch-functions.h	/^  int32 pov_nonlinearity;  \/\/ which nonlinearity formula to use for POV feature.$/;"	m	struct:kaldi::PostProcessPitchOptions
+pov_scale	pitch-functions.h	/^  BaseFloat pov_scale;            \/\/ the final pov scaled with this value$/;"	m	struct:kaldi::PostProcessPitchOptions
+preemph_coeff	feature-functions.h	/^  BaseFloat preemph_coeff;  \/\/ Preemphasis coefficient.$/;"	m	struct:kaldi::FrameExtractionOptions
+preemph_coeff	pitch-functions.h	/^  BaseFloat preemph_coeff;  \/\/ Preemphasis coefficient.$/;"	m	struct:kaldi::PitchExtractionOptions
+process_pitch	pitch-functions.h	/^  bool process_pitch;$/;"	m	struct:kaldi::PostProcessPitchOptions
+raw_energy	feature-fbank.h	/^  bool raw_energy;  \/\/ If true, compute energy before preemphasis and windowing$/;"	m	struct:kaldi::FbankOptions
+raw_energy	feature-mfcc.h	/^  bool raw_energy;  \/\/ If true, compute energy before preemphasis and windowing$/;"	m	struct:kaldi::MfccOptions
+raw_energy	feature-plp.h	/^  bool raw_energy;  \/\/ If true, compute energy before preemphasis and windowing$/;"	m	struct:kaldi::PlpOptions
+raw_energy	feature-spectrogram.h	/^  bool raw_energy;  \/\/ If true, compute energy before preemphasis and windowing$/;"	m	struct:kaldi::SpectrogramOptions
+remove_dc_offset	feature-functions.h	/^  bool remove_dc_offset;  \/\/ Subtract mean of wave before FFT.$/;"	m	struct:kaldi::FrameExtractionOptions
+resample_freq	pitch-functions.h	/^  BaseFloat resample_freq;   \/\/ Integer that determines filter width when upsampling NCCF$/;"	m	struct:kaldi::PitchExtractionOptions
+round_to_power_of_two	feature-functions.h	/^  bool round_to_power_of_two;$/;"	m	struct:kaldi::FrameExtractionOptions
+samp_freq	feature-functions.h	/^  BaseFloat samp_freq;$/;"	m	struct:kaldi::FrameExtractionOptions
+samp_freq	pitch-functions.h	/^  BaseFloat samp_freq;$/;"	m	struct:kaldi::PitchExtractionOptions
+samp_freq_	wave-reader.h	/^  BaseFloat samp_freq_;$/;"	m	class:kaldi::WaveData
+samp_rate_in_	pitch-functions.cc	/^  double samp_rate_in_;$/;"	m	class:kaldi::ArbitraryResample	file:
+samp_rate_in_	pitch-functions.cc	/^  double samp_rate_in_;$/;"	m	class:kaldi::LinearResample	file:
+samp_rate_out_	pitch-functions.cc	/^  double samp_rate_out_;$/;"	m	class:kaldi::LinearResample	file:
+scales_	feature-functions.h	/^  Vector<BaseFloat> scales_;  \/\/ a scaling window for each$/;"	m	class:kaldi::ShiftedDeltaFeatures
+scales_	feature-functions.h	/^  std::vector<Vector<BaseFloat> > scales_;  \/\/ a scaling window for each$/;"	m	class:kaldi::DeltaFeatures
+soft_min_f0	pitch-functions.h	/^  BaseFloat soft_min_f0;     \/\/ Minimum f0, applied in soft way, must not exceed$/;"	m	struct:kaldi::PitchExtractionOptions
+srfft_	feature-fbank.h	/^  SplitRadixRealFft<BaseFloat> *srfft_;$/;"	m	class:kaldi::Fbank
+srfft_	feature-mfcc.h	/^  SplitRadixRealFft<BaseFloat> *srfft_;$/;"	m	class:kaldi::Mfcc
+srfft_	feature-plp.h	/^  SplitRadixRealFft<BaseFloat> *srfft_;$/;"	m	class:kaldi::Plp
+srfft_	feature-spectrogram.h	/^  SplitRadixRealFft<BaseFloat> *srfft_;$/;"	m	class:kaldi::Spectrogram
+state_num_	pitch-functions.cc	/^  int32 state_num_;      \/\/ number of states in Viterbi Computation$/;"	m	class:kaldi::PitchExtractor	file:
+t_	wave-reader.h	/^  T t_;$/;"	m	class:kaldi::WaveHolder
+truepitch	pitch-functions.cc	/^    double truepitch;             \/\/ True pitch$/;"	m	struct:kaldi::PitchExtractor::PitchFrame	file:
+upsample_filter_width	pitch-functions.h	/^  int32 upsample_filter_width;  \/\/ Integer that determines filter width when$/;"	m	struct:kaldi::PitchExtractionOptions
+use_energy	feature-fbank.h	/^  bool use_energy;  \/\/ append an extra dimension with energy to the filter banks$/;"	m	struct:kaldi::FbankOptions
+use_energy	feature-mfcc.h	/^  bool use_energy;  \/\/ use energy; else C0$/;"	m	struct:kaldi::MfccOptions
+use_energy	feature-plp.h	/^  bool use_energy;  \/\/ use energy; else C0$/;"	m	struct:kaldi::PlpOptions
+use_log_fbank	feature-fbank.h	/^  bool use_log_fbank;  \/\/ if true (default), produce log-filterbank, else linear$/;"	m	struct:kaldi::FbankOptions
+vtln_high	feature-functions.h	/^  BaseFloat vtln_high;  \/\/ vtln upper cutoff of warping function: if negative, added$/;"	m	struct:kaldi::MelBanksOptions
+vtln_low	feature-functions.h	/^  BaseFloat vtln_low;  \/\/ vtln lower cutoff of warping function.$/;"	m	struct:kaldi::MelBanksOptions
+weights_	pitch-functions.cc	/^  std::vector<Vector<double> > weights_;$/;"	m	class:kaldi::ArbitraryResample	file:
+weights_	pitch-functions.cc	/^  std::vector<Vector<double> > weights_;$/;"	m	class:kaldi::LinearResample	file:
+window	feature-functions.h	/^  Vector<BaseFloat> window;$/;"	m	struct:kaldi::FeatureWindowFunction
+window	feature-functions.h	/^  int32 window,           \/\/ The time delay and advance$/;"	m	struct:kaldi::ShiftedDeltaFeaturesOptions
+window	feature-functions.h	/^  int32 window;  \/\/ e.g. 2; controls window size (window size is 2*window + 1)$/;"	m	struct:kaldi::DeltaFeaturesOptions
+window_type	feature-functions.h	/^  std::string window_type;  \/\/ e.g. Hamming window$/;"	m	struct:kaldi::FrameExtractionOptions
+~Fbank	feature-fbank.cc	/^Fbank::~Fbank() {$/;"	f	class:kaldi::Fbank
+~Mfcc	feature-mfcc.cc	/^Mfcc::~Mfcc() {$/;"	f	class:kaldi::Mfcc
+~PitchExtractor	pitch-functions.cc	/^  ~PitchExtractor() {}$/;"	f	class:kaldi::PitchExtractor
+~Plp	feature-plp.cc	/^Plp::~Plp() {$/;"	f	class:kaldi::Plp
+~Spectrogram	feature-spectrogram.cc	/^Spectrogram::~Spectrogram() {$/;"	f	class:kaldi::Spectrogram

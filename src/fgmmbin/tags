@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MergeFullGmm	fgmm-global-merge.cc	/^void MergeFullGmm(const FullGmm &src, FullGmm *dst) {$/;"	f	namespace:kaldi
+kaldi	fgmm-global-merge.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::MergeFullGmm	fgmm-global-merge.cc	/^void MergeFullGmm(const FullGmm &src, FullGmm *dst) {$/;"	f	namespace:kaldi
+main	fgmm-global-acc-stats-twofeats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-acc-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-est.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-get-frame-likes.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-gselect-to-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-merge.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-mixdown.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-sum-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-global-to-gmm.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fgmm-gselect.cc	/^int main(int argc, char *argv[]) {$/;"	f

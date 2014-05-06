@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AccumulateForUtterance	sgmm-est-fmllr-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	sgmm-est-fmllr.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	sgmm-est-spkvecs-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+AccumulateForUtterance	sgmm-est-spkvecs.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+InitAndOutputSgmm	sgmm-init-from-tree-stats.cc	/^void InitAndOutputSgmm(const HmmTopology &topo,$/;"	f	namespace:kaldi
+ProcessUtterance	sgmm-latgen-faster.cc	/^bool ProcessUtterance(LatticeFasterDecoder &decoder,$/;"	f	namespace:kaldi
+ProcessUtterance	sgmm-latgen-simple.cc	/^bool ProcessUtterance(LatticeSimpleDecoder &decoder,$/;"	f	namespace:kaldi
+kaldi	sgmm-est-fmllr-gpost.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm-est-fmllr.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm-est-spkvecs-gpost.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm-est-spkvecs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm-init-from-tree-stats.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm-latgen-faster.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	sgmm-latgen-simple.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::AccumulateForUtterance	sgmm-est-fmllr-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	sgmm-est-fmllr.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	sgmm-est-spkvecs-gpost.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::AccumulateForUtterance	sgmm-est-spkvecs.cc	/^void AccumulateForUtterance(const Matrix<BaseFloat> &feats,$/;"	f	namespace:kaldi
+kaldi::InitAndOutputSgmm	sgmm-init-from-tree-stats.cc	/^void InitAndOutputSgmm(const HmmTopology &topo,$/;"	f	namespace:kaldi
+kaldi::ProcessUtterance	sgmm-latgen-faster.cc	/^bool ProcessUtterance(LatticeFasterDecoder &decoder,$/;"	f	namespace:kaldi
+kaldi::ProcessUtterance	sgmm-latgen-simple.cc	/^bool ProcessUtterance(LatticeSimpleDecoder &decoder,$/;"	f	namespace:kaldi
+main	init-ubm.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-acc-fmllrbasis-ali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-acc-stats-ali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-acc-stats-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-acc-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-acc-stats2.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-acc-tree-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-align-compiled.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-build-tree.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-calc-distances.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-cluster-phones.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-comp-prexform.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-decode-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-est-ebw.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-est-fmllr-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-est-fmllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-est-fmllrbasis.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-est-multi.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-est-spkvecs-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-est-spkvecs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-est.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-gselect.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-init-from-tree-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-init.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-latgen-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-latgen-simple.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-mixup.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-normalize.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-post-to-gpost.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-rescore-lattice.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-sum-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-sum-tree-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sgmm-write-ubm.cc	/^int main(int argc, char *argv[]) {$/;"	f

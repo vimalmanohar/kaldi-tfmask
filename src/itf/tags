@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Clusterable	clusterable-itf.h	/^class Clusterable {$/;"	c	namespace:kaldi
+ContextDependencyInterface	context-dep-itf.h	/^  ContextDependencyInterface() {}$/;"	f	class:kaldi::ContextDependencyInterface
+ContextDependencyInterface	context-dep-itf.h	/^class ContextDependencyInterface {$/;"	c	namespace:kaldi
+DecodableInterface	decodable-itf.h	/^class DecodableInterface {$/;"	c	namespace:kaldi
+KALDI_ITF_CLUSTERABLE_ITF_H_	clusterable-itf.h	22;"	d
+KALDI_ITF_CONTEXT_DEP_ITF_H_	context-dep-itf.h	22;"	d
+KALDI_ITF_DECODABLE_ITF_H_	decodable-itf.h	22;"	d
+KALDI_ITF_OPTIMIZABLE_ITF_H_	optimizable-itf.h	20;"	d
+KALDI_ITF_OPTIONS_ITF_H_	options-itf.h	21;"	d
+OptimizableInterface	optimizable-itf.h	/^class OptimizableInterface {$/;"	c	namespace:kaldi
+OptionsItf	options-itf.h	/^class OptionsItf {$/;"	c	namespace:kaldi
+Scale	clusterable-itf.h	/^  virtual void Scale(BaseFloat f) {$/;"	f	class:kaldi::Clusterable
+kaldi	clusterable-itf.h	/^namespace kaldi {$/;"	n
+kaldi	context-dep-itf.h	/^namespace kaldi {$/;"	n
+kaldi	decodable-itf.h	/^namespace kaldi {$/;"	n
+kaldi	optimizable-itf.h	/^namespace kaldi {$/;"	n
+kaldi	options-itf.h	/^namespace kaldi {$/;"	n
+kaldi::Clusterable	clusterable-itf.h	/^class Clusterable {$/;"	c	namespace:kaldi
+kaldi::Clusterable::Scale	clusterable-itf.h	/^  virtual void Scale(BaseFloat f) {$/;"	f	class:kaldi::Clusterable
+kaldi::Clusterable::~Clusterable	clusterable-itf.h	/^  virtual ~Clusterable() {}$/;"	f	class:kaldi::Clusterable
+kaldi::ContextDependencyInterface	context-dep-itf.h	/^class ContextDependencyInterface {$/;"	c	namespace:kaldi
+kaldi::ContextDependencyInterface::ContextDependencyInterface	context-dep-itf.h	/^  ContextDependencyInterface() {}$/;"	f	class:kaldi::ContextDependencyInterface
+kaldi::ContextDependencyInterface::~ContextDependencyInterface	context-dep-itf.h	/^  virtual ~ContextDependencyInterface() {};$/;"	f	class:kaldi::ContextDependencyInterface
+kaldi::DecodableInterface	decodable-itf.h	/^class DecodableInterface {$/;"	c	namespace:kaldi
+kaldi::DecodableInterface::~DecodableInterface	decodable-itf.h	/^  virtual ~DecodableInterface() {}$/;"	f	class:kaldi::DecodableInterface
+kaldi::OptimizableInterface	optimizable-itf.h	/^class OptimizableInterface {$/;"	c	namespace:kaldi
+kaldi::OptimizableInterface::~OptimizableInterface	optimizable-itf.h	/^  virtual ~OptimizableInterface() {}$/;"	f	class:kaldi::OptimizableInterface
+kaldi::OptionsItf	options-itf.h	/^class OptionsItf {$/;"	c	namespace:kaldi
+kaldi::OptionsItf::~OptionsItf	options-itf.h	/^  virtual ~OptionsItf() {}$/;"	f	class:kaldi::OptionsItf
+~Clusterable	clusterable-itf.h	/^  virtual ~Clusterable() {}$/;"	f	class:kaldi::Clusterable
+~ContextDependencyInterface	context-dep-itf.h	/^  virtual ~ContextDependencyInterface() {};$/;"	f	class:kaldi::ContextDependencyInterface
+~DecodableInterface	decodable-itf.h	/^  virtual ~DecodableInterface() {}$/;"	f	class:kaldi::DecodableInterface
+~OptimizableInterface	optimizable-itf.h	/^  virtual ~OptimizableInterface() {}$/;"	f	class:kaldi::OptimizableInterface
+~OptionsItf	options-itf.h	/^  virtual ~OptionsItf() {}$/;"	f	class:kaldi::OptionsItf

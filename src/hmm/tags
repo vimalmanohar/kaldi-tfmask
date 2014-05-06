@@ -1,0 +1,359 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Accumulate	transition-model.h	/^  void Accumulate(BaseFloat prob, int32 trans_id, Vector<double> *stats) const {$/;"	f	class:kaldi::TransitionModel
+AccumulateTreeStats	tree-accu.cc	/^void AccumulateTreeStats(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+AddSelfLoops	hmm-utils.cc	/^void AddSelfLoops(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+AddSelfLoopsAfter	hmm-utils.cc	/^static void AddSelfLoopsAfter(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+AddSelfLoopsBefore	hmm-utils.cc	/^static void AddSelfLoopsBefore(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+AddTransitionProbs	hmm-utils.cc	/^void AddTransitionProbs(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+AlignmentToPosterior	posterior.cc	/^void AlignmentToPosterior(const std::vector<int32> &ali,$/;"	f	namespace:kaldi
+Check	hmm-topology.cc	/^void HmmTopology::Check() {$/;"	f	class:kaldi::HmmTopology
+Check	transition-model.cc	/^void TransitionModel::Check() const {$/;"	f	class:kaldi::TransitionModel
+Clear	posterior.h	/^  void Clear() {  GaussPost tmp;  std::swap(tmp, t_); }$/;"	f	class:kaldi::GaussPostHolder
+Clear	posterior.h	/^  void Clear() { Posterior tmp; std::swap(tmp, t_); }$/;"	f	class:kaldi::PosteriorHolder
+ComparePosteriorByPdfs	posterior.cc	/^  ComparePosteriorByPdfs(const TransitionModel &tmodel): tmodel_(&tmodel) {}$/;"	f	struct:kaldi::ComparePosteriorByPdfs
+ComparePosteriorByPdfs	posterior.cc	/^struct ComparePosteriorByPdfs {$/;"	s	namespace:kaldi	file:
+ComputeDerived	transition-model.cc	/^void TransitionModel::ComputeDerived() {$/;"	f	class:kaldi::TransitionModel
+ComputeDerivedOfProbs	transition-model.cc	/^void TransitionModel::ComputeDerivedOfProbs() {$/;"	f	class:kaldi::TransitionModel
+ComputeTriples	transition-model.cc	/^void TransitionModel::ComputeTriples(const ContextDependency &ctx_dep) {$/;"	f	class:kaldi::TransitionModel
+ConvertAlignment	hmm-utils.cc	/^bool ConvertAlignment(const TransitionModel &old_trans_model,$/;"	f	namespace:kaldi
+ConvertPhnxToProns	hmm-utils.cc	/^bool ConvertPhnxToProns(const std::vector<int32> &phnx,$/;"	f	namespace:kaldi
+ConvertPosteriorToPdfs	posterior.cc	/^void ConvertPosteriorToPdfs(const TransitionModel &tmodel,$/;"	f	namespace:kaldi
+ConvertPosteriorToPhones	posterior.cc	/^void ConvertPosteriorToPhones(const TransitionModel &tmodel,$/;"	f	namespace:kaldi
+GaussPost	posterior.h	/^typedef std::vector<std::vector<std::pair<int32, Vector<BaseFloat> > > > GaussPost;$/;"	t	namespace:kaldi
+GaussPostHolder	posterior.h	/^  GaussPostHolder() { }$/;"	f	class:kaldi::GaussPostHolder
+GaussPostHolder	posterior.h	/^class GaussPostHolder {$/;"	c	namespace:kaldi
+GaussPostWriter	posterior.h	/^typedef TableWriter<GaussPostHolder> GaussPostWriter;$/;"	t	namespace:kaldi
+GetHTransducer	hmm-utils.cc	/^fst::VectorFst<fst::StdArc> *GetHTransducer (const std::vector<std::vector<int32> > &ilabel_info,$/;"	f	namespace:kaldi
+GetHmmAsFst	hmm-utils.cc	/^fst::VectorFst<fst::StdArc> *GetHmmAsFst($/;"	f	namespace:kaldi
+GetHmmAsFstSimple	hmm-utils.cc	/^GetHmmAsFstSimple(std::vector<int32> phone_window,$/;"	f	namespace:kaldi
+GetIlabelMapping	hmm-utils.cc	/^void GetIlabelMapping (const std::vector<std::vector<int32> > &ilabel_info_old,$/;"	f	namespace:kaldi
+GetNonSelfLoopLogProb	transition-model.cc	/^BaseFloat TransitionModel::GetNonSelfLoopLogProb(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+GetPdfToTransitionIdTransducer	hmm-utils.cc	/^fst::VectorFst<fst::StdArc> *GetPdfToTransitionIdTransducer(const TransitionModel &trans_model) {$/;"	f	namespace:kaldi
+GetPdfsForPhones	transition-model.cc	/^bool GetPdfsForPhones(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+GetPhoneToNumPdfClasses	hmm-topology.cc	/^void HmmTopology::GetPhoneToNumPdfClasses(std::vector<int32> *phone2num_pdf_classes) const {$/;"	f	class:kaldi::HmmTopology
+GetPhones	hmm-topology.h	/^  const std::vector<int32> &GetPhones() const { return phones_; };$/;"	f	class:kaldi::HmmTopology
+GetPhones	transition-model.h	/^  const std::vector<int32> &GetPhones() const { return topo_.GetPhones(); }$/;"	f	class:kaldi::TransitionModel
+GetPhonesForPdfs	transition-model.cc	/^bool GetPhonesForPdfs(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+GetScaledTransitionLogProb	hmm-utils.cc	/^static BaseFloat GetScaledTransitionLogProb(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+GetTopo	transition-model.h	/^  const HmmTopology &GetTopo() const { return topo_; }$/;"	f	class:kaldi::TransitionModel
+GetTransitionLogProb	transition-model.cc	/^BaseFloat TransitionModel::GetTransitionLogProb(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+GetTransitionLogProbIgnoringSelfLoops	transition-model.cc	/^BaseFloat TransitionModel::GetTransitionLogProbIgnoringSelfLoops(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+GetTransitionProb	transition-model.cc	/^BaseFloat TransitionModel::GetTransitionProb(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+HTransducerConfig	hmm-utils.h	/^  HTransducerConfig():$/;"	f	struct:kaldi::HTransducerConfig
+HTransducerConfig	hmm-utils.h	/^struct HTransducerConfig {$/;"	s	namespace:kaldi
+HmmCacheHash	hmm-utils.h	/^struct HmmCacheHash {$/;"	s	namespace:kaldi
+HmmCacheType	hmm-utils.h	/^                      HmmCacheHash> HmmCacheType;$/;"	t	namespace:kaldi
+HmmState	hmm-topology.h	/^    HmmState(): pdf_class(-1) { }$/;"	f	struct:kaldi::HmmTopology::HmmState
+HmmState	hmm-topology.h	/^    explicit HmmState(int32 p): pdf_class(p) { }$/;"	f	struct:kaldi::HmmTopology::HmmState
+HmmState	hmm-topology.h	/^  struct HmmState {$/;"	s	class:kaldi::HmmTopology
+HmmTopology	hmm-topology.h	/^  HmmTopology() {}$/;"	f	class:kaldi::HmmTopology
+HmmTopology	hmm-topology.h	/^  explicit HmmTopology(const HmmTopology &other): phones_(other.phones_),$/;"	f	class:kaldi::HmmTopology
+HmmTopology	hmm-topology.h	/^class HmmTopology {$/;"	c	namespace:kaldi
+InitStats	transition-model.h	/^  void InitStats(Vector<double> *stats) const { stats->Resize(NumTransitionIds()+1); }$/;"	f	class:kaldi::TransitionModel
+InitializeProbs	transition-model.cc	/^void TransitionModel::InitializeProbs() {$/;"	f	class:kaldi::TransitionModel
+IsFinal	transition-model.cc	/^bool TransitionModel::IsFinal(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+IsReadInBinary	posterior.h	/^  static bool IsReadInBinary() { return true; }$/;"	f	class:kaldi::GaussPostHolder
+IsReadInBinary	posterior.h	/^  static bool IsReadInBinary() { return true; }$/;"	f	class:kaldi::PosteriorHolder
+IsReordered	hmm-utils.cc	/^static bool IsReordered(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+IsSelfLoop	transition-model.cc	/^bool TransitionModel::IsSelfLoop(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+KALDI_HMM_HMM_TOPOLOGY_H_	hmm-topology.h	21;"	d
+KALDI_HMM_HMM_UTILS_H_	hmm-utils.h	21;"	d
+KALDI_HMM_POSTERIOR_H_	posterior.h	24;"	d
+KALDI_HMM_TRANSITION_MODEL_H_	transition-model.h	22;"	d
+KALDI_HMM_TREE_ACCU_H_	tree-accu.h	21;"	d
+MapPhone	tree-accu.cc	/^static int32 MapPhone(const std::vector<int32> *phone_map,$/;"	f	namespace:kaldi
+MapTransitionUpdateConfig	transition-model.h	/^  MapTransitionUpdateConfig(): tau(5.0), share_for_pdfs(false) { }$/;"	f	struct:kaldi::MapTransitionUpdateConfig
+MapTransitionUpdateConfig	transition-model.h	/^struct MapTransitionUpdateConfig {$/;"	s	namespace:kaldi
+MapUpdate	transition-model.cc	/^void TransitionModel::MapUpdate(const Vector<double> &stats,  $/;"	f	class:kaldi::TransitionModel
+MapUpdateShared	transition-model.cc	/^void TransitionModel::MapUpdateShared(const Vector<double> &stats,$/;"	f	class:kaldi::TransitionModel
+MergePosteriors	posterior.cc	/^int32 MergePosteriors(const Posterior &post1,$/;"	f	namespace:kaldi
+MleTransitionUpdateConfig	transition-model.h	/^  MleTransitionUpdateConfig(BaseFloat floor = 0.01,$/;"	f	struct:kaldi::MleTransitionUpdateConfig
+MleTransitionUpdateConfig	transition-model.h	/^struct MleTransitionUpdateConfig {$/;"	s	namespace:kaldi
+MleUpdate	transition-model.cc	/^void TransitionModel::MleUpdate(const Vector<double> &stats,  $/;"	f	class:kaldi::TransitionModel
+MleUpdateShared	transition-model.cc	/^void TransitionModel::MleUpdateShared(const Vector<double> &stats,$/;"	f	class:kaldi::TransitionModel
+NumPdfClasses	hmm-topology.cc	/^int32 HmmTopology::NumPdfClasses(int32 phone) const {$/;"	f	class:kaldi::HmmTopology
+NumPdfs	transition-model.h	/^  int32 NumPdfs() const { return num_pdfs_; }$/;"	f	class:kaldi::TransitionModel
+NumPhones	transition-model.cc	/^int32 TransitionModel::NumPhones() const {$/;"	f	class:kaldi::TransitionModel
+NumTransitionIds	transition-model.h	/^  inline int32 NumTransitionIds() const { return id2state_.size()-1; }$/;"	f	class:kaldi::TransitionModel
+NumTransitionIndices	transition-model.cc	/^int32 TransitionModel::NumTransitionIndices(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+NumTransitionStates	transition-model.h	/^  int32 NumTransitionStates() const { return triples_.size(); }$/;"	f	class:kaldi::TransitionModel
+PairToTransitionId	transition-model.cc	/^int32 TransitionModel::PairToTransitionId(int32 trans_state, int32 trans_index) const {$/;"	f	class:kaldi::TransitionModel
+Posterior	posterior.h	/^typedef std::vector<std::vector<std::pair<int32, BaseFloat> > > Posterior;$/;"	t	namespace:kaldi
+PosteriorEntriesAreDisjoint	posterior.cc	/^bool PosteriorEntriesAreDisjoint($/;"	f	namespace:kaldi
+PosteriorHolder	posterior.h	/^  PosteriorHolder() { }$/;"	f	class:kaldi::PosteriorHolder
+PosteriorHolder	posterior.h	/^class PosteriorHolder {$/;"	c	namespace:kaldi
+PosteriorWriter	posterior.h	/^typedef TableWriter<PosteriorHolder> PosteriorWriter;$/;"	t	namespace:kaldi
+Print	transition-model.cc	/^void TransitionModel::Print(std::ostream &os,$/;"	f	class:kaldi::TransitionModel
+RandomAccessGaussPostReader	posterior.h	/^typedef RandomAccessTableReader<GaussPostHolder> RandomAccessGaussPostReader;$/;"	t	namespace:kaldi
+RandomAccessPosteriorReader	posterior.h	/^typedef RandomAccessTableReader<PosteriorHolder> RandomAccessPosteriorReader;$/;"	t	namespace:kaldi
+Read	hmm-topology.cc	/^void HmmTopology::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::HmmTopology
+Read	posterior.cc	/^bool GaussPostHolder::Read(std::istream &is) {$/;"	f	class:kaldi::GaussPostHolder
+Read	posterior.cc	/^bool PosteriorHolder::Read(std::istream &is) {$/;"	f	class:kaldi::PosteriorHolder
+Read	transition-model.cc	/^void TransitionModel::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::TransitionModel
+ReadPhoneMap	tree-accu.cc	/^void ReadPhoneMap(std::string phone_map_rxfilename,$/;"	f	namespace:kaldi
+Register	hmm-utils.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::HTransducerConfig
+Register	transition-model.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::MapTransitionUpdateConfig
+Register	transition-model.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::MleTransitionUpdateConfig
+Result	hmm-utils.cc	/^  typedef int32 Result;$/;"	t	class:kaldi::TidToTstateMapper	file:
+ScalePosterior	posterior.cc	/^void ScalePosterior(BaseFloat scale, Posterior *post) {$/;"	f	namespace:kaldi
+SelfLoopOf	transition-model.cc	/^int32 TransitionModel::SelfLoopOf(int32 trans_state) const {  \/\/ returns the self-loop transition-id,$/;"	f	class:kaldi::TransitionModel
+SequentialGaussPostReader	posterior.h	/^typedef SequentialTableReader<GaussPostHolder> SequentialGaussPostReader;$/;"	t	namespace:kaldi
+SequentialPosteriorReader	posterior.h	/^typedef SequentialTableReader<PosteriorHolder> SequentialPosteriorReader;$/;"	t	namespace:kaldi
+SortPosteriorByPdfs	posterior.cc	/^void SortPosteriorByPdfs(const TransitionModel &tmodel,$/;"	f	namespace:kaldi
+SplitToPhones	hmm-utils.cc	/^bool SplitToPhones(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+SplitToPhonesInternal	hmm-utils.cc	/^static bool SplitToPhonesInternal(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+T	posterior.h	/^  typedef GaussPost T;$/;"	t	class:kaldi::GaussPostHolder
+T	posterior.h	/^  typedef Posterior T;$/;"	t	class:kaldi::PosteriorHolder
+TestConvertPhnxToProns	hmm-utils-test.cc	/^void TestConvertPhnxToProns() {$/;"	f	namespace:kaldi
+TestHmmTopology	hmm-topology-test.cc	/^void TestHmmTopology() {$/;"	f	namespace:kaldi
+TidToTstateMapper	hmm-utils.cc	/^  TidToTstateMapper(const TransitionModel &trans_model,$/;"	f	class:kaldi::TidToTstateMapper
+TidToTstateMapper	hmm-utils.cc	/^class TidToTstateMapper {$/;"	c	namespace:kaldi	file:
+TopologyEntry	hmm-topology.h	/^  typedef std::vector<HmmState> TopologyEntry;$/;"	t	class:kaldi::HmmTopology
+TopologyForPhone	hmm-topology.cc	/^const HmmTopology::TopologyEntry& HmmTopology::TopologyForPhone(int32 phone) const {  \/\/ Will throw if phone not covered.$/;"	f	class:kaldi::HmmTopology
+TransitionIdToHmmState	transition-model.cc	/^int32 TransitionModel::TransitionIdToHmmState(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+TransitionIdToPdf	transition-model.h	/^inline int32 TransitionModel::TransitionIdToPdf(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+TransitionIdToPdfClass	transition-model.cc	/^int32 TransitionModel::TransitionIdToPdfClass(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+TransitionIdToPhone	transition-model.cc	/^int32 TransitionModel::TransitionIdToPhone(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+TransitionIdToTransitionIndex	transition-model.cc	/^int32 TransitionModel::TransitionIdToTransitionIndex(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+TransitionIdToTransitionState	transition-model.cc	/^int32 TransitionModel::TransitionIdToTransitionState(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+TransitionModel	transition-model.cc	/^TransitionModel::TransitionModel(const ContextDependency &ctx_dep,$/;"	f	class:kaldi::TransitionModel
+TransitionModel	transition-model.h	/^  TransitionModel() { }$/;"	f	class:kaldi::TransitionModel
+TransitionModel	transition-model.h	/^class TransitionModel {$/;"	c	namespace:kaldi
+TransitionStateToHmmState	transition-model.cc	/^int32 TransitionModel::TransitionStateToHmmState(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+TransitionStateToPdf	transition-model.cc	/^int32 TransitionModel::TransitionStateToPdf(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+TransitionStateToPhone	transition-model.cc	/^int32 TransitionModel::TransitionStateToPhone(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+Triple	transition-model.h	/^    Triple() { }$/;"	f	struct:kaldi::TransitionModel::Triple
+Triple	transition-model.h	/^    Triple(int32 phone, int32 hmm_state, int32 pdf):$/;"	f	struct:kaldi::TransitionModel::Triple
+Triple	transition-model.h	/^  struct Triple {$/;"	s	class:kaldi::TransitionModel
+TripleToTransitionState	transition-model.cc	/^int32 TransitionModel::TripleToTransitionState(int32 phone, int32 hmm_state, int32 pdf) const {$/;"	f	class:kaldi::TransitionModel
+Value	posterior.h	/^  const T &Value() const { return t_; }$/;"	f	class:kaldi::GaussPostHolder
+Value	posterior.h	/^  const T &Value() const { return t_; }$/;"	f	class:kaldi::PosteriorHolder
+WeightSilencePost	posterior.cc	/^void WeightSilencePost(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+WeightSilencePostDistributed	posterior.cc	/^void WeightSilencePostDistributed(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+Write	hmm-topology.cc	/^void HmmTopology::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::HmmTopology
+Write	posterior.cc	/^bool GaussPostHolder::Write(std::ostream &os, bool binary, const T &t) {$/;"	f	class:kaldi::GaussPostHolder
+Write	posterior.cc	/^bool PosteriorHolder::Write(std::ostream &os, bool binary, const T &t) {$/;"	f	class:kaldi::PosteriorHolder
+Write	transition-model.cc	/^void TransitionModel::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::TransitionModel
+disambig_syms_	hmm-utils.cc	/^  const std::vector<int32> &disambig_syms_;  \/\/ sorted.$/;"	m	class:kaldi::TidToTstateMapper	file:
+entries_	hmm-topology.h	/^  std::vector<TopologyEntry> entries_;$/;"	m	class:kaldi::HmmTopology
+floor	transition-model.h	/^  BaseFloat floor;$/;"	m	struct:kaldi::MleTransitionUpdateConfig
+hmm_state	transition-model.h	/^    int32 hmm_state;$/;"	m	struct:kaldi::TransitionModel::Triple
+id2state_	transition-model.h	/^  std::vector<int32> id2state_;$/;"	m	class:kaldi::TransitionModel
+kNoPdf	hmm-topology.h	/^static const int32 kNoPdf = -1;$/;"	m	namespace:kaldi
+kaldi	hmm-topology-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	hmm-topology.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	hmm-topology.h	/^namespace kaldi {$/;"	n
+kaldi	hmm-utils-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	hmm-utils.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	hmm-utils.h	/^namespace kaldi {$/;"	n
+kaldi	posterior.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	posterior.h	/^namespace kaldi {$/;"	n
+kaldi	transition-model.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	transition-model.h	/^namespace kaldi {$/;"	n
+kaldi	tree-accu.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	tree-accu.h	/^namespace kaldi {$/;"	n
+kaldi::AccumulateTreeStats	tree-accu.cc	/^void AccumulateTreeStats(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::AddSelfLoops	hmm-utils.cc	/^void AddSelfLoops(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::AddSelfLoopsAfter	hmm-utils.cc	/^static void AddSelfLoopsAfter(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::AddSelfLoopsBefore	hmm-utils.cc	/^static void AddSelfLoopsBefore(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::AddTransitionProbs	hmm-utils.cc	/^void AddTransitionProbs(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::AlignmentToPosterior	posterior.cc	/^void AlignmentToPosterior(const std::vector<int32> &ali,$/;"	f	namespace:kaldi
+kaldi::ComparePosteriorByPdfs	posterior.cc	/^struct ComparePosteriorByPdfs {$/;"	s	namespace:kaldi	file:
+kaldi::ComparePosteriorByPdfs::ComparePosteriorByPdfs	posterior.cc	/^  ComparePosteriorByPdfs(const TransitionModel &tmodel): tmodel_(&tmodel) {}$/;"	f	struct:kaldi::ComparePosteriorByPdfs
+kaldi::ComparePosteriorByPdfs::operator ()	posterior.cc	/^  bool operator() (const std::pair<int32, BaseFloat> &a,$/;"	f	struct:kaldi::ComparePosteriorByPdfs
+kaldi::ComparePosteriorByPdfs::tmodel_	posterior.cc	/^  const TransitionModel *tmodel_;$/;"	m	struct:kaldi::ComparePosteriorByPdfs	file:
+kaldi::ConvertAlignment	hmm-utils.cc	/^bool ConvertAlignment(const TransitionModel &old_trans_model,$/;"	f	namespace:kaldi
+kaldi::ConvertPhnxToProns	hmm-utils.cc	/^bool ConvertPhnxToProns(const std::vector<int32> &phnx,$/;"	f	namespace:kaldi
+kaldi::ConvertPosteriorToPdfs	posterior.cc	/^void ConvertPosteriorToPdfs(const TransitionModel &tmodel,$/;"	f	namespace:kaldi
+kaldi::ConvertPosteriorToPhones	posterior.cc	/^void ConvertPosteriorToPhones(const TransitionModel &tmodel,$/;"	f	namespace:kaldi
+kaldi::GaussPost	posterior.h	/^typedef std::vector<std::vector<std::pair<int32, Vector<BaseFloat> > > > GaussPost;$/;"	t	namespace:kaldi
+kaldi::GaussPostHolder	posterior.h	/^class GaussPostHolder {$/;"	c	namespace:kaldi
+kaldi::GaussPostHolder::Clear	posterior.h	/^  void Clear() {  GaussPost tmp;  std::swap(tmp, t_); }$/;"	f	class:kaldi::GaussPostHolder
+kaldi::GaussPostHolder::GaussPostHolder	posterior.h	/^  GaussPostHolder() { }$/;"	f	class:kaldi::GaussPostHolder
+kaldi::GaussPostHolder::IsReadInBinary	posterior.h	/^  static bool IsReadInBinary() { return true; }$/;"	f	class:kaldi::GaussPostHolder
+kaldi::GaussPostHolder::Read	posterior.cc	/^bool GaussPostHolder::Read(std::istream &is) {$/;"	f	class:kaldi::GaussPostHolder
+kaldi::GaussPostHolder::T	posterior.h	/^  typedef GaussPost T;$/;"	t	class:kaldi::GaussPostHolder
+kaldi::GaussPostHolder::Value	posterior.h	/^  const T &Value() const { return t_; }$/;"	f	class:kaldi::GaussPostHolder
+kaldi::GaussPostHolder::Write	posterior.cc	/^bool GaussPostHolder::Write(std::ostream &os, bool binary, const T &t) {$/;"	f	class:kaldi::GaussPostHolder
+kaldi::GaussPostHolder::t_	posterior.h	/^  T t_;$/;"	m	class:kaldi::GaussPostHolder
+kaldi::GaussPostWriter	posterior.h	/^typedef TableWriter<GaussPostHolder> GaussPostWriter;$/;"	t	namespace:kaldi
+kaldi::GetHTransducer	hmm-utils.cc	/^fst::VectorFst<fst::StdArc> *GetHTransducer (const std::vector<std::vector<int32> > &ilabel_info,$/;"	f	namespace:kaldi
+kaldi::GetHmmAsFst	hmm-utils.cc	/^fst::VectorFst<fst::StdArc> *GetHmmAsFst($/;"	f	namespace:kaldi
+kaldi::GetHmmAsFstSimple	hmm-utils.cc	/^GetHmmAsFstSimple(std::vector<int32> phone_window,$/;"	f	namespace:kaldi
+kaldi::GetIlabelMapping	hmm-utils.cc	/^void GetIlabelMapping (const std::vector<std::vector<int32> > &ilabel_info_old,$/;"	f	namespace:kaldi
+kaldi::GetPdfToTransitionIdTransducer	hmm-utils.cc	/^fst::VectorFst<fst::StdArc> *GetPdfToTransitionIdTransducer(const TransitionModel &trans_model) {$/;"	f	namespace:kaldi
+kaldi::GetPdfsForPhones	transition-model.cc	/^bool GetPdfsForPhones(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::GetPhonesForPdfs	transition-model.cc	/^bool GetPhonesForPdfs(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::GetScaledTransitionLogProb	hmm-utils.cc	/^static BaseFloat GetScaledTransitionLogProb(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::HTransducerConfig	hmm-utils.h	/^struct HTransducerConfig {$/;"	s	namespace:kaldi
+kaldi::HTransducerConfig::HTransducerConfig	hmm-utils.h	/^  HTransducerConfig():$/;"	f	struct:kaldi::HTransducerConfig
+kaldi::HTransducerConfig::Register	hmm-utils.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::HTransducerConfig
+kaldi::HTransducerConfig::push_delta	hmm-utils.h	/^  BaseFloat push_delta;$/;"	m	struct:kaldi::HTransducerConfig
+kaldi::HTransducerConfig::push_weights	hmm-utils.h	/^  bool push_weights;$/;"	m	struct:kaldi::HTransducerConfig
+kaldi::HTransducerConfig::reverse	hmm-utils.h	/^  bool reverse;$/;"	m	struct:kaldi::HTransducerConfig
+kaldi::HTransducerConfig::transition_scale	hmm-utils.h	/^  BaseFloat transition_scale;$/;"	m	struct:kaldi::HTransducerConfig
+kaldi::HmmCacheHash	hmm-utils.h	/^struct HmmCacheHash {$/;"	s	namespace:kaldi
+kaldi::HmmCacheHash::operator ()	hmm-utils.h	/^  int operator () (const std::pair<int32, std::vector<int32> >&p) const {$/;"	f	struct:kaldi::HmmCacheHash
+kaldi::HmmCacheType	hmm-utils.h	/^                      HmmCacheHash> HmmCacheType;$/;"	t	namespace:kaldi
+kaldi::HmmTopology	hmm-topology.h	/^class HmmTopology {$/;"	c	namespace:kaldi
+kaldi::HmmTopology::Check	hmm-topology.cc	/^void HmmTopology::Check() {$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::GetPhoneToNumPdfClasses	hmm-topology.cc	/^void HmmTopology::GetPhoneToNumPdfClasses(std::vector<int32> *phone2num_pdf_classes) const {$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::GetPhones	hmm-topology.h	/^  const std::vector<int32> &GetPhones() const { return phones_; };$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::HmmState	hmm-topology.h	/^  struct HmmState {$/;"	s	class:kaldi::HmmTopology
+kaldi::HmmTopology::HmmState::HmmState	hmm-topology.h	/^    HmmState(): pdf_class(-1) { }$/;"	f	struct:kaldi::HmmTopology::HmmState
+kaldi::HmmTopology::HmmState::HmmState	hmm-topology.h	/^    explicit HmmState(int32 p): pdf_class(p) { }$/;"	f	struct:kaldi::HmmTopology::HmmState
+kaldi::HmmTopology::HmmState::operator ==	hmm-topology.h	/^    bool operator == (const HmmState &other) const {$/;"	f	struct:kaldi::HmmTopology::HmmState
+kaldi::HmmTopology::HmmState::pdf_class	hmm-topology.h	/^    int32 pdf_class;$/;"	m	struct:kaldi::HmmTopology::HmmState
+kaldi::HmmTopology::HmmState::transitions	hmm-topology.h	/^    std::vector<std::pair<int32, BaseFloat> > transitions;$/;"	m	struct:kaldi::HmmTopology::HmmState
+kaldi::HmmTopology::HmmTopology	hmm-topology.h	/^  HmmTopology() {}$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::HmmTopology	hmm-topology.h	/^  explicit HmmTopology(const HmmTopology &other): phones_(other.phones_),$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::NumPdfClasses	hmm-topology.cc	/^int32 HmmTopology::NumPdfClasses(int32 phone) const {$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::Read	hmm-topology.cc	/^void HmmTopology::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::TopologyEntry	hmm-topology.h	/^  typedef std::vector<HmmState> TopologyEntry;$/;"	t	class:kaldi::HmmTopology
+kaldi::HmmTopology::TopologyForPhone	hmm-topology.cc	/^const HmmTopology::TopologyEntry& HmmTopology::TopologyForPhone(int32 phone) const {  \/\/ Will throw if phone not covered.$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::Write	hmm-topology.cc	/^void HmmTopology::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::entries_	hmm-topology.h	/^  std::vector<TopologyEntry> entries_;$/;"	m	class:kaldi::HmmTopology
+kaldi::HmmTopology::operator ==	hmm-topology.h	/^  bool operator == (const HmmTopology &other) const {$/;"	f	class:kaldi::HmmTopology
+kaldi::HmmTopology::phone2idx_	hmm-topology.h	/^  std::vector<int32> phone2idx_;  \/\/ map from phones to indexes into the entries vector (or -1 for not present).$/;"	m	class:kaldi::HmmTopology
+kaldi::HmmTopology::phones_	hmm-topology.h	/^  std::vector<int32> phones_;  \/\/ list of all phones we have topology for.  Sorted, uniq.  no epsilon (zero) phone.$/;"	m	class:kaldi::HmmTopology
+kaldi::IsReordered	hmm-utils.cc	/^static bool IsReordered(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::MapPhone	tree-accu.cc	/^static int32 MapPhone(const std::vector<int32> *phone_map,$/;"	f	namespace:kaldi
+kaldi::MapTransitionUpdateConfig	transition-model.h	/^struct MapTransitionUpdateConfig {$/;"	s	namespace:kaldi
+kaldi::MapTransitionUpdateConfig::MapTransitionUpdateConfig	transition-model.h	/^  MapTransitionUpdateConfig(): tau(5.0), share_for_pdfs(false) { }$/;"	f	struct:kaldi::MapTransitionUpdateConfig
+kaldi::MapTransitionUpdateConfig::Register	transition-model.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::MapTransitionUpdateConfig
+kaldi::MapTransitionUpdateConfig::share_for_pdfs	transition-model.h	/^  bool share_for_pdfs; \/\/ If true, share all transition parameters that have the same pdf.$/;"	m	struct:kaldi::MapTransitionUpdateConfig
+kaldi::MapTransitionUpdateConfig::tau	transition-model.h	/^  BaseFloat tau;$/;"	m	struct:kaldi::MapTransitionUpdateConfig
+kaldi::MergePosteriors	posterior.cc	/^int32 MergePosteriors(const Posterior &post1,$/;"	f	namespace:kaldi
+kaldi::MleTransitionUpdateConfig	transition-model.h	/^struct MleTransitionUpdateConfig {$/;"	s	namespace:kaldi
+kaldi::MleTransitionUpdateConfig::MleTransitionUpdateConfig	transition-model.h	/^  MleTransitionUpdateConfig(BaseFloat floor = 0.01,$/;"	f	struct:kaldi::MleTransitionUpdateConfig
+kaldi::MleTransitionUpdateConfig::Register	transition-model.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::MleTransitionUpdateConfig
+kaldi::MleTransitionUpdateConfig::floor	transition-model.h	/^  BaseFloat floor;$/;"	m	struct:kaldi::MleTransitionUpdateConfig
+kaldi::MleTransitionUpdateConfig::mincount	transition-model.h	/^  BaseFloat mincount;$/;"	m	struct:kaldi::MleTransitionUpdateConfig
+kaldi::MleTransitionUpdateConfig::share_for_pdfs	transition-model.h	/^  bool share_for_pdfs; \/\/ If true, share all transition parameters that have the same pdf.$/;"	m	struct:kaldi::MleTransitionUpdateConfig
+kaldi::Posterior	posterior.h	/^typedef std::vector<std::vector<std::pair<int32, BaseFloat> > > Posterior;$/;"	t	namespace:kaldi
+kaldi::PosteriorEntriesAreDisjoint	posterior.cc	/^bool PosteriorEntriesAreDisjoint($/;"	f	namespace:kaldi
+kaldi::PosteriorHolder	posterior.h	/^class PosteriorHolder {$/;"	c	namespace:kaldi
+kaldi::PosteriorHolder::Clear	posterior.h	/^  void Clear() { Posterior tmp; std::swap(tmp, t_); }$/;"	f	class:kaldi::PosteriorHolder
+kaldi::PosteriorHolder::IsReadInBinary	posterior.h	/^  static bool IsReadInBinary() { return true; }$/;"	f	class:kaldi::PosteriorHolder
+kaldi::PosteriorHolder::PosteriorHolder	posterior.h	/^  PosteriorHolder() { }$/;"	f	class:kaldi::PosteriorHolder
+kaldi::PosteriorHolder::Read	posterior.cc	/^bool PosteriorHolder::Read(std::istream &is) {$/;"	f	class:kaldi::PosteriorHolder
+kaldi::PosteriorHolder::T	posterior.h	/^  typedef Posterior T;$/;"	t	class:kaldi::PosteriorHolder
+kaldi::PosteriorHolder::Value	posterior.h	/^  const T &Value() const { return t_; }$/;"	f	class:kaldi::PosteriorHolder
+kaldi::PosteriorHolder::Write	posterior.cc	/^bool PosteriorHolder::Write(std::ostream &os, bool binary, const T &t) {$/;"	f	class:kaldi::PosteriorHolder
+kaldi::PosteriorHolder::t_	posterior.h	/^  T t_;$/;"	m	class:kaldi::PosteriorHolder
+kaldi::PosteriorWriter	posterior.h	/^typedef TableWriter<PosteriorHolder> PosteriorWriter;$/;"	t	namespace:kaldi
+kaldi::RandomAccessGaussPostReader	posterior.h	/^typedef RandomAccessTableReader<GaussPostHolder> RandomAccessGaussPostReader;$/;"	t	namespace:kaldi
+kaldi::RandomAccessPosteriorReader	posterior.h	/^typedef RandomAccessTableReader<PosteriorHolder> RandomAccessPosteriorReader;$/;"	t	namespace:kaldi
+kaldi::ReadPhoneMap	tree-accu.cc	/^void ReadPhoneMap(std::string phone_map_rxfilename,$/;"	f	namespace:kaldi
+kaldi::ScalePosterior	posterior.cc	/^void ScalePosterior(BaseFloat scale, Posterior *post) {$/;"	f	namespace:kaldi
+kaldi::SequentialGaussPostReader	posterior.h	/^typedef SequentialTableReader<GaussPostHolder> SequentialGaussPostReader;$/;"	t	namespace:kaldi
+kaldi::SequentialPosteriorReader	posterior.h	/^typedef SequentialTableReader<PosteriorHolder> SequentialPosteriorReader;$/;"	t	namespace:kaldi
+kaldi::SortPosteriorByPdfs	posterior.cc	/^void SortPosteriorByPdfs(const TransitionModel &tmodel,$/;"	f	namespace:kaldi
+kaldi::SplitToPhones	hmm-utils.cc	/^bool SplitToPhones(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::SplitToPhonesInternal	hmm-utils.cc	/^static bool SplitToPhonesInternal(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::TestConvertPhnxToProns	hmm-utils-test.cc	/^void TestConvertPhnxToProns() {$/;"	f	namespace:kaldi
+kaldi::TestHmmTopology	hmm-topology-test.cc	/^void TestHmmTopology() {$/;"	f	namespace:kaldi
+kaldi::TidToTstateMapper	hmm-utils.cc	/^class TidToTstateMapper {$/;"	c	namespace:kaldi	file:
+kaldi::TidToTstateMapper::Result	hmm-utils.cc	/^  typedef int32 Result;$/;"	t	class:kaldi::TidToTstateMapper	file:
+kaldi::TidToTstateMapper::TidToTstateMapper	hmm-utils.cc	/^  TidToTstateMapper(const TransitionModel &trans_model,$/;"	f	class:kaldi::TidToTstateMapper
+kaldi::TidToTstateMapper::disambig_syms_	hmm-utils.cc	/^  const std::vector<int32> &disambig_syms_;  \/\/ sorted.$/;"	m	class:kaldi::TidToTstateMapper	file:
+kaldi::TidToTstateMapper::operator ()	hmm-utils.cc	/^  int32 operator() (int32 label) const {$/;"	f	class:kaldi::TidToTstateMapper
+kaldi::TidToTstateMapper::trans_model_	hmm-utils.cc	/^  const TransitionModel &trans_model_;$/;"	m	class:kaldi::TidToTstateMapper	file:
+kaldi::TransitionModel	transition-model.h	/^class TransitionModel {$/;"	c	namespace:kaldi
+kaldi::TransitionModel::Accumulate	transition-model.h	/^  void Accumulate(BaseFloat prob, int32 trans_id, Vector<double> *stats) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::Check	transition-model.cc	/^void TransitionModel::Check() const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::ComputeDerived	transition-model.cc	/^void TransitionModel::ComputeDerived() {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::ComputeDerivedOfProbs	transition-model.cc	/^void TransitionModel::ComputeDerivedOfProbs() {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::ComputeTriples	transition-model.cc	/^void TransitionModel::ComputeTriples(const ContextDependency &ctx_dep) {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::GetNonSelfLoopLogProb	transition-model.cc	/^BaseFloat TransitionModel::GetNonSelfLoopLogProb(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::GetPhones	transition-model.h	/^  const std::vector<int32> &GetPhones() const { return topo_.GetPhones(); }$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::GetTopo	transition-model.h	/^  const HmmTopology &GetTopo() const { return topo_; }$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::GetTransitionLogProb	transition-model.cc	/^BaseFloat TransitionModel::GetTransitionLogProb(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::GetTransitionLogProbIgnoringSelfLoops	transition-model.cc	/^BaseFloat TransitionModel::GetTransitionLogProbIgnoringSelfLoops(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::GetTransitionProb	transition-model.cc	/^BaseFloat TransitionModel::GetTransitionProb(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::InitStats	transition-model.h	/^  void InitStats(Vector<double> *stats) const { stats->Resize(NumTransitionIds()+1); }$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::InitializeProbs	transition-model.cc	/^void TransitionModel::InitializeProbs() {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::IsFinal	transition-model.cc	/^bool TransitionModel::IsFinal(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::IsSelfLoop	transition-model.cc	/^bool TransitionModel::IsSelfLoop(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::MapUpdate	transition-model.cc	/^void TransitionModel::MapUpdate(const Vector<double> &stats,  $/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::MapUpdateShared	transition-model.cc	/^void TransitionModel::MapUpdateShared(const Vector<double> &stats,$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::MleUpdate	transition-model.cc	/^void TransitionModel::MleUpdate(const Vector<double> &stats,  $/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::MleUpdateShared	transition-model.cc	/^void TransitionModel::MleUpdateShared(const Vector<double> &stats,$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::NumPdfs	transition-model.h	/^  int32 NumPdfs() const { return num_pdfs_; }$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::NumPhones	transition-model.cc	/^int32 TransitionModel::NumPhones() const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::NumTransitionIds	transition-model.h	/^  inline int32 NumTransitionIds() const { return id2state_.size()-1; }$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::NumTransitionIndices	transition-model.cc	/^int32 TransitionModel::NumTransitionIndices(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::NumTransitionStates	transition-model.h	/^  int32 NumTransitionStates() const { return triples_.size(); }$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::PairToTransitionId	transition-model.cc	/^int32 TransitionModel::PairToTransitionId(int32 trans_state, int32 trans_index) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::Print	transition-model.cc	/^void TransitionModel::Print(std::ostream &os,$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::Read	transition-model.cc	/^void TransitionModel::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::SelfLoopOf	transition-model.cc	/^int32 TransitionModel::SelfLoopOf(int32 trans_state) const {  \/\/ returns the self-loop transition-id,$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionIdToHmmState	transition-model.cc	/^int32 TransitionModel::TransitionIdToHmmState(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionIdToPdf	transition-model.h	/^inline int32 TransitionModel::TransitionIdToPdf(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionIdToPdfClass	transition-model.cc	/^int32 TransitionModel::TransitionIdToPdfClass(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionIdToPhone	transition-model.cc	/^int32 TransitionModel::TransitionIdToPhone(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionIdToTransitionIndex	transition-model.cc	/^int32 TransitionModel::TransitionIdToTransitionIndex(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionIdToTransitionState	transition-model.cc	/^int32 TransitionModel::TransitionIdToTransitionState(int32 trans_id) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionModel	transition-model.cc	/^TransitionModel::TransitionModel(const ContextDependency &ctx_dep,$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionModel	transition-model.h	/^  TransitionModel() { }$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionStateToHmmState	transition-model.cc	/^int32 TransitionModel::TransitionStateToHmmState(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionStateToPdf	transition-model.cc	/^int32 TransitionModel::TransitionStateToPdf(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::TransitionStateToPhone	transition-model.cc	/^int32 TransitionModel::TransitionStateToPhone(int32 trans_state) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::Triple	transition-model.h	/^  struct Triple {$/;"	s	class:kaldi::TransitionModel
+kaldi::TransitionModel::Triple::Triple	transition-model.h	/^    Triple() { }$/;"	f	struct:kaldi::TransitionModel::Triple
+kaldi::TransitionModel::Triple::Triple	transition-model.h	/^    Triple(int32 phone, int32 hmm_state, int32 pdf):$/;"	f	struct:kaldi::TransitionModel::Triple
+kaldi::TransitionModel::Triple::hmm_state	transition-model.h	/^    int32 hmm_state;$/;"	m	struct:kaldi::TransitionModel::Triple
+kaldi::TransitionModel::Triple::operator <	transition-model.h	/^    bool operator < (const Triple &other) const {$/;"	f	struct:kaldi::TransitionModel::Triple
+kaldi::TransitionModel::Triple::operator ==	transition-model.h	/^    bool operator == (const Triple &other) const {$/;"	f	struct:kaldi::TransitionModel::Triple
+kaldi::TransitionModel::Triple::pdf	transition-model.h	/^    int32 pdf;$/;"	m	struct:kaldi::TransitionModel::Triple
+kaldi::TransitionModel::Triple::phone	transition-model.h	/^    int32 phone;$/;"	m	struct:kaldi::TransitionModel::Triple
+kaldi::TransitionModel::TripleToTransitionState	transition-model.cc	/^int32 TransitionModel::TripleToTransitionState(int32 phone, int32 hmm_state, int32 pdf) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::Write	transition-model.cc	/^void TransitionModel::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::TransitionModel
+kaldi::TransitionModel::id2state_	transition-model.h	/^  std::vector<int32> id2state_;$/;"	m	class:kaldi::TransitionModel
+kaldi::TransitionModel::log_probs_	transition-model.h	/^  Vector<BaseFloat> log_probs_;$/;"	m	class:kaldi::TransitionModel
+kaldi::TransitionModel::non_self_loop_log_probs_	transition-model.h	/^  Vector<BaseFloat> non_self_loop_log_probs_;$/;"	m	class:kaldi::TransitionModel
+kaldi::TransitionModel::num_pdfs_	transition-model.h	/^  int32 num_pdfs_;$/;"	m	class:kaldi::TransitionModel
+kaldi::TransitionModel::state2id_	transition-model.h	/^  std::vector<int32> state2id_;$/;"	m	class:kaldi::TransitionModel
+kaldi::TransitionModel::topo_	transition-model.h	/^  HmmTopology topo_;$/;"	m	class:kaldi::TransitionModel
+kaldi::TransitionModel::triples_	transition-model.h	/^  std::vector<Triple> triples_;$/;"	m	class:kaldi::TransitionModel
+kaldi::WeightSilencePost	posterior.cc	/^void WeightSilencePost(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::WeightSilencePostDistributed	posterior.cc	/^void WeightSilencePostDistributed(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::kNoPdf	hmm-topology.h	/^static const int32 kNoPdf = -1;$/;"	m	namespace:kaldi
+log_probs_	transition-model.h	/^  Vector<BaseFloat> log_probs_;$/;"	m	class:kaldi::TransitionModel
+main	hmm-topology-test.cc	/^int main() {$/;"	f
+main	hmm-utils-test.cc	/^int main() {$/;"	f
+mincount	transition-model.h	/^  BaseFloat mincount;$/;"	m	struct:kaldi::MleTransitionUpdateConfig
+non_self_loop_log_probs_	transition-model.h	/^  Vector<BaseFloat> non_self_loop_log_probs_;$/;"	m	class:kaldi::TransitionModel
+num_pdfs_	transition-model.h	/^  int32 num_pdfs_;$/;"	m	class:kaldi::TransitionModel
+operator ()	hmm-utils.cc	/^  int32 operator() (int32 label) const {$/;"	f	class:kaldi::TidToTstateMapper
+operator ()	hmm-utils.h	/^  int operator () (const std::pair<int32, std::vector<int32> >&p) const {$/;"	f	struct:kaldi::HmmCacheHash
+operator ()	posterior.cc	/^  bool operator() (const std::pair<int32, BaseFloat> &a,$/;"	f	struct:kaldi::ComparePosteriorByPdfs
+operator <	transition-model.h	/^    bool operator < (const Triple &other) const {$/;"	f	struct:kaldi::TransitionModel::Triple
+operator ==	hmm-topology.h	/^    bool operator == (const HmmState &other) const {$/;"	f	struct:kaldi::HmmTopology::HmmState
+operator ==	hmm-topology.h	/^  bool operator == (const HmmTopology &other) const {$/;"	f	class:kaldi::HmmTopology
+operator ==	transition-model.h	/^    bool operator == (const Triple &other) const {$/;"	f	struct:kaldi::TransitionModel::Triple
+pdf	transition-model.h	/^    int32 pdf;$/;"	m	struct:kaldi::TransitionModel::Triple
+pdf_class	hmm-topology.h	/^    int32 pdf_class;$/;"	m	struct:kaldi::HmmTopology::HmmState
+phone	transition-model.h	/^    int32 phone;$/;"	m	struct:kaldi::TransitionModel::Triple
+phone2idx_	hmm-topology.h	/^  std::vector<int32> phone2idx_;  \/\/ map from phones to indexes into the entries vector (or -1 for not present).$/;"	m	class:kaldi::HmmTopology
+phones_	hmm-topology.h	/^  std::vector<int32> phones_;  \/\/ list of all phones we have topology for.  Sorted, uniq.  no epsilon (zero) phone.$/;"	m	class:kaldi::HmmTopology
+push_delta	hmm-utils.h	/^  BaseFloat push_delta;$/;"	m	struct:kaldi::HTransducerConfig
+push_weights	hmm-utils.h	/^  bool push_weights;$/;"	m	struct:kaldi::HTransducerConfig
+reverse	hmm-utils.h	/^  bool reverse;$/;"	m	struct:kaldi::HTransducerConfig
+share_for_pdfs	transition-model.h	/^  bool share_for_pdfs; \/\/ If true, share all transition parameters that have the same pdf.$/;"	m	struct:kaldi::MapTransitionUpdateConfig
+share_for_pdfs	transition-model.h	/^  bool share_for_pdfs; \/\/ If true, share all transition parameters that have the same pdf.$/;"	m	struct:kaldi::MleTransitionUpdateConfig
+state2id_	transition-model.h	/^  std::vector<int32> state2id_;$/;"	m	class:kaldi::TransitionModel
+t_	posterior.h	/^  T t_;$/;"	m	class:kaldi::GaussPostHolder
+t_	posterior.h	/^  T t_;$/;"	m	class:kaldi::PosteriorHolder
+tau	transition-model.h	/^  BaseFloat tau;$/;"	m	struct:kaldi::MapTransitionUpdateConfig
+tmodel_	posterior.cc	/^  const TransitionModel *tmodel_;$/;"	m	struct:kaldi::ComparePosteriorByPdfs	file:
+topo_	transition-model.h	/^  HmmTopology topo_;$/;"	m	class:kaldi::TransitionModel
+trans_model_	hmm-utils.cc	/^  const TransitionModel &trans_model_;$/;"	m	class:kaldi::TidToTstateMapper	file:
+transition_scale	hmm-utils.h	/^  BaseFloat transition_scale;$/;"	m	struct:kaldi::HTransducerConfig
+transitions	hmm-topology.h	/^    std::vector<std::pair<int32, BaseFloat> > transitions;$/;"	m	struct:kaldi::HmmTopology::HmmState
+triples_	transition-model.h	/^  std::vector<Triple> triples_;$/;"	m	class:kaldi::TransitionModel

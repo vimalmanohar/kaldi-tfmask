@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CreatePhonesAltFst	phones-to-prons.cc	/^void CreatePhonesAltFst(const std::vector<int32> &phones,$/;"	f
+EventTypeToString	extract-ctx.cc	/^static std::string EventTypeToString(EventType &e,$/;"	f	file:
+GetSeenPhones	build-tree-two-level.cc	/^void GetSeenPhones(BuildTreeStatsType &stats, int P, std::vector<int32> *phones_out) {$/;"	f	namespace:kaldi
+MakeEvent	draw-tree.cc	/^void MakeEvent(std::string &qry, fst::SymbolTable *phone_syms,$/;"	f
+PrintAlignmentStats	compute-wer.cc	/^void PrintAlignmentStats(const std::vector<T> &ref,$/;"	f	namespace:kaldi
+ProcessTopo	compile-questions.cc	/^int32 ProcessTopo(const HmmTopology &topo, const std::vector<std::vector<int32> > &questions) {$/;"	f	namespace:kaldi
+TypeOneUsage	matrix-sum.cc	/^int32 TypeOneUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+TypeOneUsage	vector-sum.cc	/^int32 TypeOneUsage(const ParseOptions &po) {$/;"	f	namespace:kaldi
+TypeThreeUsage	matrix-sum.cc	/^int32 TypeThreeUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+TypeThreeUsage	vector-sum.cc	/^int32 TypeThreeUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+TypeTwoUsage	matrix-sum.cc	/^int32 TypeTwoUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+TypeTwoUsage	vector-sum.cc	/^int32 TypeTwoUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+kaldi	build-tree-two-level.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	compile-questions.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	compute-wer.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	matrix-sum.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	vector-sum.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::GetSeenPhones	build-tree-two-level.cc	/^void GetSeenPhones(BuildTreeStatsType &stats, int P, std::vector<int32> *phones_out) {$/;"	f	namespace:kaldi
+kaldi::PrintAlignmentStats	compute-wer.cc	/^void PrintAlignmentStats(const std::vector<T> &ref,$/;"	f	namespace:kaldi
+kaldi::ProcessTopo	compile-questions.cc	/^int32 ProcessTopo(const HmmTopology &topo, const std::vector<std::vector<int32> > &questions) {$/;"	f	namespace:kaldi
+kaldi::TypeOneUsage	matrix-sum.cc	/^int32 TypeOneUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+kaldi::TypeOneUsage	vector-sum.cc	/^int32 TypeOneUsage(const ParseOptions &po) {$/;"	f	namespace:kaldi
+kaldi::TypeThreeUsage	matrix-sum.cc	/^int32 TypeThreeUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+kaldi::TypeThreeUsage	vector-sum.cc	/^int32 TypeThreeUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+kaldi::TypeTwoUsage	matrix-sum.cc	/^int32 TypeTwoUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+kaldi::TypeTwoUsage	vector-sum.cc	/^int32 TypeTwoUsage(const ParseOptions &po,$/;"	f	namespace:kaldi
+main	acc-lda.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	acc-tree-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	add-self-loops.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ali-to-pdf.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ali-to-phones.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	ali-to-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	align-compiled-mapped.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	align-equal-compiled.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	align-equal.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	align-mapped.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	am-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	analyze-counts.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	arpa2fst.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	build-pfile-from-ali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	build-tree-two-level.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	build-tree.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	cluster-phones.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compile-questions.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compile-train-graphs-fsts.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compile-train-graphs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-mce-scale.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-wer.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	convert-ali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-gselect.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-int-vector-vector.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-int-vector.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-matrix.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-transition-model.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-tree.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-vector-segments.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	copy-vector.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	decode-faster-mapped.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	decode-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	dot-weights.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	draw-tree.cc	/^int main(int argc, char **argv) {$/;"	f
+main	duplicate-matrix.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	est-lda.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	est-mllt.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	extract-ctx.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	get-post-on-ali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	get-silence-probs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	hmm-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	latgen-faster-mapped-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	latgen-faster-mapped.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	latgen-tracking-mapped.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	logprob-to-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	make-h-transducer.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	make-ilabel-transducer.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	make-pdf-to-tid-transducer.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	matrix-logprob.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	matrix-sum-rows.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	matrix-sum.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	pdf-to-counts.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	phones-to-prons.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	post-to-pdf-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	post-to-phone-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	post-to-tacc.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	post-to-weights.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	prob-to-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	prons-to-wordali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	rand-prune-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	reverse-weights.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	scale-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	show-alignments.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	show-transitions.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sum-matrices.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sum-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	sum-tree-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	thresh-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	tree-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	vector-scale.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	vector-sum.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	weight-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	weight-silence-post.cc	/^int main(int argc, char *argv[]) {$/;"	f

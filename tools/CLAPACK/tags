@@ -1,0 +1,260 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AtlasConj	cblas.h	/^                         AtlasConj=114};$/;"	e	enum:CBLAS_TRANSPOSE
+CBLAS_DIAG	cblas.h	/^   enum CBLAS_DIAG  {CblasNonUnit=131, CblasUnit=132};$/;"	g
+CBLAS_ENUM_DEFINED_H	cblas.h	4;"	d
+CBLAS_H	cblas.h	14;"	d
+CBLAS_INDEX	cblas.h	15;"	d
+CBLAS_ORDER	cblas.h	/^   enum CBLAS_ORDER {CblasRowMajor=101, CblasColMajor=102 };$/;"	g
+CBLAS_SIDE	cblas.h	/^   enum CBLAS_SIDE  {CblasLeft=141, CblasRight=142};$/;"	g
+CBLAS_TRANSPOSE	cblas.h	/^   enum CBLAS_TRANSPOSE {CblasNoTrans=111, CblasTrans=112, CblasConjTrans=113,$/;"	g
+CBLAS_UPLO	cblas.h	/^   enum CBLAS_UPLO  {CblasUpper=121, CblasLower=122};$/;"	g
+C_f	f2c.h	/^typedef VOID C_f;	\/* complex function *\/$/;"	t
+C_fp	f2c.h	/^typedef \/* Complex *\/ VOID (*C_fp)();$/;"	t
+C_fp	f2c.h	/^typedef \/* Complex *\/ VOID (*C_fp)(...);$/;"	t
+CblasColMajor	cblas.h	/^   enum CBLAS_ORDER {CblasRowMajor=101, CblasColMajor=102 };$/;"	e	enum:CBLAS_ORDER
+CblasConjTrans	cblas.h	/^   enum CBLAS_TRANSPOSE {CblasNoTrans=111, CblasTrans=112, CblasConjTrans=113,$/;"	e	enum:CBLAS_TRANSPOSE
+CblasLeft	cblas.h	/^   enum CBLAS_SIDE  {CblasLeft=141, CblasRight=142};$/;"	e	enum:CBLAS_SIDE
+CblasLower	cblas.h	/^   enum CBLAS_UPLO  {CblasUpper=121, CblasLower=122};$/;"	e	enum:CBLAS_UPLO
+CblasNoTrans	cblas.h	/^   enum CBLAS_TRANSPOSE {CblasNoTrans=111, CblasTrans=112, CblasConjTrans=113,$/;"	e	enum:CBLAS_TRANSPOSE
+CblasNonUnit	cblas.h	/^   enum CBLAS_DIAG  {CblasNonUnit=131, CblasUnit=132};$/;"	e	enum:CBLAS_DIAG
+CblasRight	cblas.h	/^   enum CBLAS_SIDE  {CblasLeft=141, CblasRight=142};$/;"	e	enum:CBLAS_SIDE
+CblasRowMajor	cblas.h	/^   enum CBLAS_ORDER {CblasRowMajor=101, CblasColMajor=102 };$/;"	e	enum:CBLAS_ORDER
+CblasTrans	cblas.h	/^   enum CBLAS_TRANSPOSE {CblasNoTrans=111, CblasTrans=112, CblasConjTrans=113,$/;"	e	enum:CBLAS_TRANSPOSE
+CblasUnit	cblas.h	/^   enum CBLAS_DIAG  {CblasNonUnit=131, CblasUnit=132};$/;"	e	enum:CBLAS_DIAG
+CblasUpper	cblas.h	/^   enum CBLAS_UPLO  {CblasUpper=121, CblasLower=122};$/;"	e	enum:CBLAS_UPLO
+D_fp	f2c.h	/^typedef doublereal (*D_fp)(), (*E_fp)();$/;"	t
+D_fp	f2c.h	/^typedef doublereal (*D_fp)(...), (*E_fp)(...);$/;"	t
+E_f	f2c.h	/^typedef doublereal E_f;	\/* real function with -R not specified *\/$/;"	t
+E_fp	f2c.h	/^typedef doublereal (*D_fp)(), (*E_fp)();$/;"	t
+E_fp	f2c.h	/^typedef doublereal (*D_fp)(...), (*E_fp)(...);$/;"	t
+Extern	f2c.h	34;"	d
+F2C_INCLUDE	f2c.h	8;"	d
+F2C_proc_par_types	f2c.h	169;"	d
+FALSE_	f2c.h	30;"	d
+H_f	f2c.h	/^typedef VOID H_f;	\/* character function *\/$/;"	t
+H_fp	f2c.h	/^typedef \/* Character *\/ VOID (*H_fp)();$/;"	t
+H_fp	f2c.h	/^typedef \/* Character *\/ VOID (*H_fp)(...);$/;"	t
+I_fp	f2c.h	/^typedef integer (*I_fp)();$/;"	t
+I_fp	f2c.h	/^typedef integer (*I_fp)(...);$/;"	t
+J_fp	f2c.h	/^typedef shortint (*J_fp)();$/;"	t
+J_fp	f2c.h	/^typedef shortint (*J_fp)(...);$/;"	t
+K_fp	f2c.h	/^typedef shortlogical (*K_fp)();$/;"	t
+K_fp	f2c.h	/^typedef shortlogical (*K_fp)(...);$/;"	t
+L_fp	f2c.h	/^typedef logical (*L_fp)();$/;"	t
+L_fp	f2c.h	/^typedef logical (*L_fp)(...);$/;"	t
+Multitype	f2c.h	/^typedef union Multitype Multitype;$/;"	t	typeref:union:Multitype
+Multitype	f2c.h	/^union Multitype {	\/* for multiple entry points *\/$/;"	u
+Multitype::c	f2c.h	/^	complex c;$/;"	m	union:Multitype
+Multitype::d	f2c.h	/^	doublereal d;$/;"	m	union:Multitype
+Multitype::g	f2c.h	/^	integer1 g;$/;"	m	union:Multitype
+Multitype::h	f2c.h	/^	shortint h;$/;"	m	union:Multitype
+Multitype::i	f2c.h	/^	integer i;$/;"	m	union:Multitype
+Multitype::r	f2c.h	/^	real r;$/;"	m	union:Multitype
+Multitype::z	f2c.h	/^	doublecomplex z;$/;"	m	union:Multitype
+Namelist	f2c.h	/^struct Namelist {$/;"	s
+Namelist	f2c.h	/^typedef struct Namelist Namelist;$/;"	t	typeref:struct:Namelist
+Namelist::name	f2c.h	/^	char *name;$/;"	m	struct:Namelist
+Namelist::nvars	f2c.h	/^	int nvars;$/;"	m	struct:Namelist
+Namelist::vars	f2c.h	/^	Vardesc **vars;$/;"	m	struct:Namelist
+R_fp	f2c.h	/^typedef real (*R_fp)();$/;"	t
+R_fp	f2c.h	/^typedef real (*R_fp)(...);$/;"	t
+S_fp	f2c.h	/^typedef \/* Subroutine *\/ int (*S_fp)();$/;"	t
+S_fp	f2c.h	/^typedef \/* Subroutine *\/ int (*S_fp)(...);$/;"	t
+TRUE_	f2c.h	29;"	d
+U_fp	f2c.h	/^typedef int \/* Unknown procedure type *\/ (*U_fp)();$/;"	t
+U_fp	f2c.h	/^typedef int \/* Unknown procedure type *\/ (*U_fp)(...);$/;"	t
+VOID	f2c.h	125;"	d
+Vardesc	f2c.h	/^struct Vardesc {	\/* for Namelist *\/$/;"	s
+Vardesc	f2c.h	/^typedef struct Vardesc Vardesc;$/;"	t	typeref:struct:Vardesc
+Vardesc::addr	f2c.h	/^	char *addr;$/;"	m	struct:Vardesc
+Vardesc::dims	f2c.h	/^	ftnlen *dims;$/;"	m	struct:Vardesc
+Vardesc::name	f2c.h	/^	char *name;$/;"	m	struct:Vardesc
+Vardesc::type	f2c.h	/^	int  type;$/;"	m	struct:Vardesc
+Z_f	f2c.h	/^typedef VOID Z_f;	\/* double complex function *\/$/;"	t
+Z_fp	f2c.h	/^typedef \/* Double Complex *\/ VOID (*Z_fp)();$/;"	t
+Z_fp	f2c.h	/^typedef \/* Double Complex *\/ VOID (*Z_fp)(...);$/;"	t
+__CLAPACK_H	clapack.h	4;"	d
+__anon1::i	f2c.h	/^typedef struct { real r, i; } complex;$/;"	m	struct:__anon1
+__anon1::r	f2c.h	/^typedef struct { real r, i; } complex;$/;"	m	struct:__anon1
+__anon2::i	f2c.h	/^typedef struct { doublereal r, i; } doublecomplex;$/;"	m	struct:__anon2
+__anon2::r	f2c.h	/^typedef struct { doublereal r, i; } doublecomplex;$/;"	m	struct:__anon2
+__anon3::ciend	f2c.h	/^	flag ciend;$/;"	m	struct:__anon3
+__anon3::cierr	f2c.h	/^{	flag cierr;$/;"	m	struct:__anon3
+__anon3::cifmt	f2c.h	/^	char *cifmt;$/;"	m	struct:__anon3
+__anon3::cirec	f2c.h	/^	ftnint cirec;$/;"	m	struct:__anon3
+__anon3::ciunit	f2c.h	/^	ftnint ciunit;$/;"	m	struct:__anon3
+__anon4::iciend	f2c.h	/^	flag iciend;$/;"	m	struct:__anon4
+__anon4::icierr	f2c.h	/^{	flag icierr;$/;"	m	struct:__anon4
+__anon4::icifmt	f2c.h	/^	char *icifmt;$/;"	m	struct:__anon4
+__anon4::icirlen	f2c.h	/^	ftnint icirlen;$/;"	m	struct:__anon4
+__anon4::icirnum	f2c.h	/^	ftnint icirnum;$/;"	m	struct:__anon4
+__anon4::iciunit	f2c.h	/^	char *iciunit;$/;"	m	struct:__anon4
+__anon5::oacc	f2c.h	/^	char *oacc;$/;"	m	struct:__anon5
+__anon5::oblnk	f2c.h	/^	char *oblnk;$/;"	m	struct:__anon5
+__anon5::oerr	f2c.h	/^{	flag oerr;$/;"	m	struct:__anon5
+__anon5::ofm	f2c.h	/^	char *ofm;$/;"	m	struct:__anon5
+__anon5::ofnm	f2c.h	/^	char *ofnm;$/;"	m	struct:__anon5
+__anon5::ofnmlen	f2c.h	/^	ftnlen ofnmlen;$/;"	m	struct:__anon5
+__anon5::orl	f2c.h	/^	ftnint orl;$/;"	m	struct:__anon5
+__anon5::osta	f2c.h	/^	char *osta;$/;"	m	struct:__anon5
+__anon5::ounit	f2c.h	/^	ftnint ounit;$/;"	m	struct:__anon5
+__anon6::cerr	f2c.h	/^{	flag cerr;$/;"	m	struct:__anon6
+__anon6::csta	f2c.h	/^	char *csta;$/;"	m	struct:__anon6
+__anon6::cunit	f2c.h	/^	ftnint cunit;$/;"	m	struct:__anon6
+__anon7::aerr	f2c.h	/^{	flag aerr;$/;"	m	struct:__anon7
+__anon7::aunit	f2c.h	/^	ftnint aunit;$/;"	m	struct:__anon7
+__anon8::inacc	f2c.h	/^	char	*inacc;$/;"	m	struct:__anon8
+__anon8::inacclen	f2c.h	/^	ftnlen	inacclen;$/;"	m	struct:__anon8
+__anon8::inblank	f2c.h	/^	char	*inblank;$/;"	m	struct:__anon8
+__anon8::inblanklen	f2c.h	/^	ftnlen	inblanklen;$/;"	m	struct:__anon8
+__anon8::indir	f2c.h	/^	char 	*indir;$/;"	m	struct:__anon8
+__anon8::indirlen	f2c.h	/^	ftnlen	indirlen;$/;"	m	struct:__anon8
+__anon8::inerr	f2c.h	/^{	flag inerr;$/;"	m	struct:__anon8
+__anon8::inex	f2c.h	/^	ftnint	*inex;	\/*parameters in standard's order*\/$/;"	m	struct:__anon8
+__anon8::infile	f2c.h	/^	char *infile;$/;"	m	struct:__anon8
+__anon8::infilen	f2c.h	/^	ftnlen infilen;$/;"	m	struct:__anon8
+__anon8::infmt	f2c.h	/^	char	*infmt;$/;"	m	struct:__anon8
+__anon8::infmtlen	f2c.h	/^	ftnlen	infmtlen;$/;"	m	struct:__anon8
+__anon8::inform	f2c.h	/^	char	*inform;$/;"	m	struct:__anon8
+__anon8::informlen	f2c.h	/^	ftnint	informlen;$/;"	m	struct:__anon8
+__anon8::inname	f2c.h	/^	char	*inname;$/;"	m	struct:__anon8
+__anon8::innamed	f2c.h	/^	ftnint	*innamed;$/;"	m	struct:__anon8
+__anon8::innamlen	f2c.h	/^	ftnlen	innamlen;$/;"	m	struct:__anon8
+__anon8::innrec	f2c.h	/^	ftnint	*innrec;$/;"	m	struct:__anon8
+__anon8::innum	f2c.h	/^	ftnint	*innum;$/;"	m	struct:__anon8
+__anon8::inopen	f2c.h	/^	ftnint	*inopen;$/;"	m	struct:__anon8
+__anon8::inrecl	f2c.h	/^	ftnint	*inrecl;$/;"	m	struct:__anon8
+__anon8::inseq	f2c.h	/^	char	*inseq;$/;"	m	struct:__anon8
+__anon8::inseqlen	f2c.h	/^	ftnlen	inseqlen;$/;"	m	struct:__anon8
+__anon8::inunf	f2c.h	/^	char	*inunf;$/;"	m	struct:__anon8
+__anon8::inunflen	f2c.h	/^	ftnlen	inunflen;$/;"	m	struct:__anon8
+__anon8::inunit	f2c.h	/^	ftnint inunit;$/;"	m	struct:__anon8
+abs	f2c.h	157;"	d
+addr	f2c.h	/^	char *addr;$/;"	m	struct:Vardesc
+address	f2c.h	/^typedef char *address;$/;"	t
+aerr	f2c.h	/^{	flag aerr;$/;"	m	struct:__anon7
+alist	f2c.h	/^} alist;$/;"	t	typeref:struct:__anon7
+aunit	f2c.h	/^	ftnint aunit;$/;"	m	struct:__anon7
+bit_clear	f2c.h	164;"	d
+bit_set	f2c.h	165;"	d
+bit_test	f2c.h	163;"	d
+c	f2c.h	/^	complex c;$/;"	m	union:Multitype
+cerr	f2c.h	/^{	flag cerr;$/;"	m	struct:__anon6
+ciend	f2c.h	/^	flag ciend;$/;"	m	struct:__anon3
+cierr	f2c.h	/^{	flag cierr;$/;"	m	struct:__anon3
+cifmt	f2c.h	/^	char *cifmt;$/;"	m	struct:__anon3
+cilist	f2c.h	/^} cilist;$/;"	t	typeref:struct:__anon3
+cirec	f2c.h	/^	ftnint cirec;$/;"	m	struct:__anon3
+ciunit	f2c.h	/^	ftnint ciunit;$/;"	m	struct:__anon3
+cllist	f2c.h	/^} cllist;$/;"	t	typeref:struct:__anon6
+complex	f2c.h	/^typedef struct { real r, i; } complex;$/;"	t	typeref:struct:__anon1
+cray	f2c.h	204;"	d
+csta	f2c.h	/^	char *csta;$/;"	m	struct:__anon6
+cunit	f2c.h	/^	ftnint cunit;$/;"	m	struct:__anon6
+d	f2c.h	/^	doublereal d;$/;"	m	union:Multitype
+dabs	f2c.h	158;"	d
+dims	f2c.h	/^	ftnlen *dims;$/;"	m	struct:Vardesc
+dmax	f2c.h	162;"	d
+dmin	f2c.h	161;"	d
+doublecomplex	f2c.h	/^typedef struct { doublereal r, i; } doublecomplex;$/;"	t	typeref:struct:__anon2
+doublereal	f2c.h	/^typedef double doublereal;$/;"	t
+flag	f2c.h	/^typedef long int flag;$/;"	t
+flag	f2c.h	/^typedef short flag;$/;"	t
+ftnint	f2c.h	/^typedef long int ftnint;$/;"	t
+ftnint	f2c.h	/^typedef short ftnint;$/;"	t
+ftnlen	f2c.h	/^typedef long int ftnlen;$/;"	t
+ftnlen	f2c.h	/^typedef short ftnlen;$/;"	t
+g	f2c.h	/^	integer1 g;$/;"	m	union:Multitype
+gcos	f2c.h	205;"	d
+h	f2c.h	/^	shortint h;$/;"	m	union:Multitype
+i	f2c.h	/^	integer i;$/;"	m	union:Multitype
+i	f2c.h	/^typedef struct { doublereal r, i; } doublecomplex;$/;"	m	struct:__anon2
+i	f2c.h	/^typedef struct { real r, i; } complex;$/;"	m	struct:__anon1
+iciend	f2c.h	/^	flag iciend;$/;"	m	struct:__anon4
+icierr	f2c.h	/^{	flag icierr;$/;"	m	struct:__anon4
+icifmt	f2c.h	/^	char *icifmt;$/;"	m	struct:__anon4
+icilist	f2c.h	/^} icilist;$/;"	t	typeref:struct:__anon4
+icirlen	f2c.h	/^	ftnint icirlen;$/;"	m	struct:__anon4
+icirnum	f2c.h	/^	ftnint icirnum;$/;"	m	struct:__anon4
+iciunit	f2c.h	/^	char *iciunit;$/;"	m	struct:__anon4
+inacc	f2c.h	/^	char	*inacc;$/;"	m	struct:__anon8
+inacclen	f2c.h	/^	ftnlen	inacclen;$/;"	m	struct:__anon8
+inblank	f2c.h	/^	char	*inblank;$/;"	m	struct:__anon8
+inblanklen	f2c.h	/^	ftnlen	inblanklen;$/;"	m	struct:__anon8
+indir	f2c.h	/^	char 	*indir;$/;"	m	struct:__anon8
+indirlen	f2c.h	/^	ftnlen	indirlen;$/;"	m	struct:__anon8
+inerr	f2c.h	/^{	flag inerr;$/;"	m	struct:__anon8
+inex	f2c.h	/^	ftnint	*inex;	\/*parameters in standard's order*\/$/;"	m	struct:__anon8
+infile	f2c.h	/^	char *infile;$/;"	m	struct:__anon8
+infilen	f2c.h	/^	ftnlen infilen;$/;"	m	struct:__anon8
+infmt	f2c.h	/^	char	*infmt;$/;"	m	struct:__anon8
+infmtlen	f2c.h	/^	ftnlen	infmtlen;$/;"	m	struct:__anon8
+inform	f2c.h	/^	char	*inform;$/;"	m	struct:__anon8
+informlen	f2c.h	/^	ftnint	informlen;$/;"	m	struct:__anon8
+inlist	f2c.h	/^} inlist;$/;"	t	typeref:struct:__anon8
+inname	f2c.h	/^	char	*inname;$/;"	m	struct:__anon8
+innamed	f2c.h	/^	ftnint	*innamed;$/;"	m	struct:__anon8
+innamlen	f2c.h	/^	ftnlen	innamlen;$/;"	m	struct:__anon8
+innrec	f2c.h	/^	ftnint	*innrec;$/;"	m	struct:__anon8
+innum	f2c.h	/^	ftnint	*innum;$/;"	m	struct:__anon8
+inopen	f2c.h	/^	ftnint	*inopen;$/;"	m	struct:__anon8
+inrecl	f2c.h	/^	ftnint	*inrecl;$/;"	m	struct:__anon8
+inseq	f2c.h	/^	char	*inseq;$/;"	m	struct:__anon8
+inseqlen	f2c.h	/^	ftnlen	inseqlen;$/;"	m	struct:__anon8
+integer	f2c.h	/^typedef \/*long*\/ int integer;$/;"	t
+integer1	f2c.h	/^typedef char integer1;$/;"	t
+inunf	f2c.h	/^	char	*inunf;$/;"	m	struct:__anon8
+inunflen	f2c.h	/^	ftnlen	inunflen;$/;"	m	struct:__anon8
+inunit	f2c.h	/^	ftnint inunit;$/;"	m	struct:__anon8
+logical	f2c.h	/^typedef long int logical;$/;"	t
+logical1	f2c.h	/^typedef char logical1;$/;"	t
+longint	f2c.h	/^typedef long long longint;		\/* system-dependent *\/$/;"	t
+max	f2c.h	160;"	d
+mc68010	f2c.h	206;"	d
+mc68020	f2c.h	207;"	d
+min	f2c.h	159;"	d
+mips	f2c.h	208;"	d
+name	f2c.h	/^	char *name;$/;"	m	struct:Namelist
+name	f2c.h	/^	char *name;$/;"	m	struct:Vardesc
+nvars	f2c.h	/^	int nvars;$/;"	m	struct:Namelist
+oacc	f2c.h	/^	char *oacc;$/;"	m	struct:__anon5
+oblnk	f2c.h	/^	char *oblnk;$/;"	m	struct:__anon5
+oerr	f2c.h	/^{	flag oerr;$/;"	m	struct:__anon5
+ofm	f2c.h	/^	char *ofm;$/;"	m	struct:__anon5
+ofnm	f2c.h	/^	char *ofnm;$/;"	m	struct:__anon5
+ofnmlen	f2c.h	/^	ftnlen ofnmlen;$/;"	m	struct:__anon5
+olist	f2c.h	/^} olist;$/;"	t	typeref:struct:__anon5
+orl	f2c.h	/^	ftnint orl;$/;"	m	struct:__anon5
+osta	f2c.h	/^	char *osta;$/;"	m	struct:__anon5
+ounit	f2c.h	/^	ftnint ounit;$/;"	m	struct:__anon5
+pdp11	f2c.h	209;"	d
+qbit_clear	f2c.h	25;"	d
+qbit_set	f2c.h	26;"	d
+r	f2c.h	/^	real r;$/;"	m	union:Multitype
+r	f2c.h	/^typedef struct { doublereal r, i; } doublecomplex;$/;"	m	struct:__anon2
+r	f2c.h	/^typedef struct { real r, i; } complex;$/;"	m	struct:__anon1
+real	f2c.h	/^typedef float real;$/;"	t
+sgi	f2c.h	210;"	d
+shortint	f2c.h	/^typedef short int shortint;$/;"	t
+shortlogical	f2c.h	/^typedef short int shortlogical;$/;"	t
+sparc	f2c.h	211;"	d
+sun	f2c.h	212;"	d
+sun2	f2c.h	213;"	d
+sun3	f2c.h	214;"	d
+sun4	f2c.h	215;"	d
+type	f2c.h	/^	int  type;$/;"	m	struct:Vardesc
+u370	f2c.h	216;"	d
+u3b	f2c.h	217;"	d
+u3b2	f2c.h	218;"	d
+u3b5	f2c.h	219;"	d
+uinteger	f2c.h	/^typedef unsigned \/*long*\/ int uinteger;$/;"	t
+ulongint	f2c.h	/^typedef unsigned long long ulongint;	\/* system-dependent *\/$/;"	t
+unix	f2c.h	220;"	d
+vars	f2c.h	/^	Vardesc **vars;$/;"	m	struct:Namelist
+vax	f2c.h	221;"	d
+z	f2c.h	/^	doublecomplex z;$/;"	m	union:Multitype

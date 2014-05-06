@@ -1,0 +1,1217 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Accumulate	nnet-kl-hmm.h	/^  void Accumulate (const Matrix<BaseFloat> &posteriors, const std::vector<int32> &alignment) {$/;"	f	class:kaldi::nnet1::KlHmm
+AddData	nnet-randomizer.cc	/^void MatrixRandomizer::AddData(const CuMatrix<BaseFloat>& m) {$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+AddData	nnet-randomizer.cc	/^void StdVectorRandomizer<T>::AddData(const std::vector<T>& v) {$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+AddData	nnet-randomizer.cc	/^void VectorRandomizer::AddData(const Vector<BaseFloat>& v) {$/;"	f	class:kaldi::nnet1::VectorRandomizer
+AddShift	nnet-various.h	/^  AddShift(int32 dim_in, int32 dim_out)$/;"	f	class:kaldi::nnet1::AddShift
+AddShift	nnet-various.h	/^class AddShift : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+AffineTransform	nnet-affine-transform.h	/^  AffineTransform(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::AffineTransform
+AffineTransform	nnet-affine-transform.h	/^class AffineTransform : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+AppendComponent	nnet-nnet.cc	/^void Nnet::AppendComponent(Component* dynamically_allocated_comp) {$/;"	f	class:kaldi::nnet1::Nnet
+AppendNnet	nnet-nnet.cc	/^void Nnet::AppendNnet(const Nnet& nnet_to_append) {$/;"	f	class:kaldi::nnet1::Nnet
+AssertEqual	nnet-randomizer-test.cc	/^static void AssertEqual(RandomAccessIterator begin1, RandomAccessIterator end1,$/;"	f	file:
+AssertEqual	nnet-randomizer-test.cc	/^static void AssertEqual(const MatrixBase<Real> &A,$/;"	f	file:
+AssertEqual	nnet-randomizer-test.cc	/^static void AssertEqual(const VectorBase<Real> &A, const VectorBase<Real> &B, float tol = 0.001) {$/;"	f	file:
+AveragePooling2DComponent	nnet-average-pooling-2d-component.h	/^  AveragePooling2DComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+AveragePooling2DComponent	nnet-average-pooling-2d-component.h	/^class AveragePooling2DComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+AveragePoolingComponent	nnet-average-pooling-component.h	/^  AveragePoolingComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+AveragePoolingComponent	nnet-average-pooling-component.h	/^class AveragePoolingComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+Backpropagate	nnet-component.h	/^inline void Component::Backpropagate(const CuMatrix<BaseFloat> &in,$/;"	f	class:kaldi::nnet1::Component
+Backpropagate	nnet-nnet.cc	/^void Nnet::Backpropagate(const CuMatrix<BaseFloat> &out_diff, CuMatrix<BaseFloat> *in_diff) {$/;"	f	class:kaldi::nnet1::Nnet
+Backpropagate	nnet-rbm.h	/^  void Backpropagate(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::RbmBase
+BackpropagateBuffer	nnet-nnet.h	/^  const std::vector<CuMatrix<BaseFloat> >& BackpropagateBuffer() const { $/;"	f	class:kaldi::nnet1::Nnet
+BackpropagateFnc	nnet-activation.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Dropout
+BackpropagateFnc	nnet-activation.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Sigmoid
+BackpropagateFnc	nnet-activation.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Softmax
+BackpropagateFnc	nnet-activation.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Tanh
+BackpropagateFnc	nnet-affine-transform.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::AffineTransform
+BackpropagateFnc	nnet-average-pooling-2d-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+BackpropagateFnc	nnet-average-pooling-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+BackpropagateFnc	nnet-convolutional-2d-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+BackpropagateFnc	nnet-convolutional-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+BackpropagateFnc	nnet-kl-hmm.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::KlHmm
+BackpropagateFnc	nnet-max-pooling-2d-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+BackpropagateFnc	nnet-max-pooling-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+BackpropagateFnc	nnet-parallel-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::ParallelComponent
+BackpropagateFnc	nnet-rbm.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::RbmBase
+BackpropagateFnc	nnet-sentence-averaging-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+BackpropagateFnc	nnet-various.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::AddShift
+BackpropagateFnc	nnet-various.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::CopyComponent
+BackpropagateFnc	nnet-various.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Rescale
+BackpropagateFnc	nnet-various.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Splice
+Bernoulli	nnet-rbm.h	/^    Bernoulli,$/;"	e	enum:kaldi::nnet1::RbmBase::__anon2
+Check	nnet-nnet.cc	/^void Nnet::Check() const {$/;"	f	class:kaldi::nnet1::Nnet
+Component	nnet-component.h	/^  Component(int32 input_dim, int32 output_dim) $/;"	f	class:kaldi::nnet1::Component
+Component	nnet-component.h	/^class Component {$/;"	c	namespace:kaldi::nnet1
+ComponentType	nnet-component.h	/^  } ComponentType;$/;"	t	class:kaldi::nnet1::Component	typeref:enum:kaldi::nnet1::Component::__anon1
+Convolutional2DComponent	nnet-convolutional-2d-component.h	/^  Convolutional2DComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+Convolutional2DComponent	nnet-convolutional-2d-component.h	/^class Convolutional2DComponent : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+ConvolutionalComponent	nnet-convolutional-component.h	/^  ConvolutionalComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+ConvolutionalComponent	nnet-convolutional-component.h	/^class ConvolutionalComponent : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+Copy	nnet-activation.h	/^  Component* Copy() const { return new Dropout(*this); }$/;"	f	class:kaldi::nnet1::Dropout
+Copy	nnet-activation.h	/^  Component* Copy() const { return new Sigmoid(*this); }$/;"	f	class:kaldi::nnet1::Sigmoid
+Copy	nnet-activation.h	/^  Component* Copy() const { return new Softmax(*this); }$/;"	f	class:kaldi::nnet1::Softmax
+Copy	nnet-activation.h	/^  Component* Copy() const { return new Tanh(*this); }$/;"	f	class:kaldi::nnet1::Tanh
+Copy	nnet-affine-transform.h	/^  Component* Copy() const { return new AffineTransform(*this); }$/;"	f	class:kaldi::nnet1::AffineTransform
+Copy	nnet-average-pooling-2d-component.h	/^  Component* Copy() const { return new AveragePooling2DComponent(*this); }$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+Copy	nnet-average-pooling-component.h	/^  Component* Copy() const { return new AveragePoolingComponent(*this); }$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+Copy	nnet-convolutional-2d-component.h	/^  Component* Copy() const { return new Convolutional2DComponent(*this); }$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+Copy	nnet-convolutional-component.h	/^  Component* Copy() const { return new ConvolutionalComponent(*this); }$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+Copy	nnet-kl-hmm.h	/^  Component* Copy() const { return new KlHmm(*this); }$/;"	f	class:kaldi::nnet1::KlHmm
+Copy	nnet-max-pooling-2d-component.h	/^  Component* Copy() const { return new MaxPooling2DComponent(*this); }$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+Copy	nnet-max-pooling-component.h	/^  Component* Copy() const { return new MaxPoolingComponent(*this); }$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+Copy	nnet-parallel-component.h	/^  Component* Copy() const { return new ParallelComponent(*this); }$/;"	f	class:kaldi::nnet1::ParallelComponent
+Copy	nnet-rbm.h	/^  Component* Copy() const { return new Rbm(*this); }$/;"	f	class:kaldi::nnet1::Rbm
+Copy	nnet-sentence-averaging-component.h	/^  Component* Copy() const { return new SentenceAveragingComponent(*this); }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+Copy	nnet-various.h	/^  Component* Copy() const { return new AddShift(*this); }$/;"	f	class:kaldi::nnet1::AddShift
+Copy	nnet-various.h	/^  Component* Copy() const { return new CopyComponent(*this); }$/;"	f	class:kaldi::nnet1::CopyComponent
+Copy	nnet-various.h	/^  Component* Copy() const { return new Rescale(*this); }$/;"	f	class:kaldi::nnet1::Rescale
+Copy	nnet-various.h	/^  Component* Copy() const { return new Splice(*this); }$/;"	f	class:kaldi::nnet1::Splice
+CopyComponent	nnet-various.h	/^  CopyComponent(int32 dim_in, int32 dim_out)$/;"	f	class:kaldi::nnet1::CopyComponent
+CopyComponent	nnet-various.h	/^class CopyComponent: public Component {$/;"	c	namespace:kaldi::nnet1
+Destroy	nnet-nnet.cc	/^void Nnet::Destroy() {$/;"	f	class:kaldi::nnet1::Nnet
+Done	nnet-randomizer.h	/^  bool Done() { return (data_end_ - data_begin_ < conf_.minibatch_size); }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+Done	nnet-randomizer.h	/^  bool Done() { return (data_end_ - data_begin_ < conf_.minibatch_size); }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+Done	nnet-randomizer.h	/^  bool Done() { return (data_end_ - data_begin_ < conf_.minibatch_size); }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+Dropout	nnet-activation.h	/^  Dropout(int32 dim_in, int32 dim_out):$/;"	f	class:kaldi::nnet1::Dropout
+Dropout	nnet-activation.h	/^class Dropout : public Component {$/;"	c	namespace:kaldi::nnet1
+Eval	nnet-loss.cc	/^void Mse::Eval(const CuMatrix<BaseFloat>& net_out, const CuMatrix<BaseFloat>& target, CuMatrix<BaseFloat>* diff) {$/;"	f	class:kaldi::nnet1::Mse
+Eval	nnet-loss.cc	/^void Mse::Eval(const CuMatrix<BaseFloat>& net_out, const Posterior& post, CuMatrix<BaseFloat>* diff) {$/;"	f	class:kaldi::nnet1::Mse
+Eval	nnet-loss.cc	/^void Xent::Eval(const CuMatrix<BaseFloat> &net_out, const CuMatrix<BaseFloat> &target, CuMatrix<BaseFloat> *diff) {$/;"	f	class:kaldi::nnet1::Xent
+Eval	nnet-loss.cc	/^void Xent::Eval(const CuMatrix<BaseFloat>& net_out, const Posterior& post, CuMatrix<BaseFloat>* diff) {$/;"	f	class:kaldi::nnet1::Xent
+EvalVec	nnet-loss.cc	/^void Xent::EvalVec(const CuMatrix<BaseFloat> &net_out, const std::vector<int32> &target, CuMatrix<BaseFloat> *diff) {$/;"	f	class:kaldi::nnet1::Xent
+Feedforward	nnet-nnet.cc	/^void Nnet::Feedforward(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Nnet
+Gaussian	nnet-rbm.h	/^    Gaussian$/;"	e	enum:kaldi::nnet1::RbmBase::__anon2
+Generate	nnet-randomizer.cc	/^const std::vector<int32>& RandomizerMask::Generate(int32 mask_size) {$/;"	f	class:kaldi::nnet1::RandomizerMask
+GetBias	nnet-affine-transform.h	/^  const CuVector<BaseFloat>& GetBias() {$/;"	f	class:kaldi::nnet1::AffineTransform
+GetBiasCorr	nnet-affine-transform.h	/^  const CuVector<BaseFloat>& GetBiasCorr() {$/;"	f	class:kaldi::nnet1::AffineTransform
+GetComponent	nnet-nnet.cc	/^Component& Nnet::GetComponent(int32 component) {$/;"	f	class:kaldi::nnet1::Nnet
+GetComponent	nnet-nnet.cc	/^const Component& Nnet::GetComponent(int32 component) const {$/;"	f	class:kaldi::nnet1::Nnet
+GetGradient	nnet-nnet.cc	/^void Nnet::GetGradient(Vector<BaseFloat>* grad_copy) const {$/;"	f	class:kaldi::nnet1::Nnet
+GetLinearity	nnet-affine-transform.h	/^  const CuMatrix<BaseFloat>& GetLinearity() {$/;"	f	class:kaldi::nnet1::AffineTransform
+GetLinearityCorr	nnet-affine-transform.h	/^  const CuMatrix<BaseFloat>& GetLinearityCorr() {$/;"	f	class:kaldi::nnet1::AffineTransform
+GetParams	nnet-affine-transform.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::AffineTransform
+GetParams	nnet-convolutional-2d-component.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+GetParams	nnet-convolutional-component.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+GetParams	nnet-nnet.cc	/^void Nnet::GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::Nnet
+GetParams	nnet-parallel-component.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const { $/;"	f	class:kaldi::nnet1::ParallelComponent
+GetParams	nnet-sentence-averaging-component.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const { wei_copy->Resize(NumParams()); nnet_.GetParams(wei_copy); }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+GetParams	nnet-various.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::AddShift
+GetParams	nnet-various.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::Rescale
+GetRbmTrainOptions	nnet-rbm.h	/^  const RbmTrainOptions& GetRbmTrainOptions() const {$/;"	f	class:kaldi::nnet1::RbmBase
+GetScaleVec	nnet-various.h	/^  const CuVector<BaseFloat>& GetScaleVec() {$/;"	f	class:kaldi::nnet1::Rescale
+GetShiftVec	nnet-various.h	/^  const CuVector<BaseFloat>& GetShiftVec() {$/;"	f	class:kaldi::nnet1::AddShift
+GetTrainOptions	nnet-component.h	/^  const NnetTrainOptions& GetTrainOptions() const { $/;"	f	class:kaldi::nnet1::UpdatableComponent
+GetTrainOptions	nnet-nnet.h	/^  const NnetTrainOptions& GetTrainOptions() const {$/;"	f	class:kaldi::nnet1::Nnet
+GetType	nnet-activation.h	/^  ComponentType GetType() const { return kDropout; }$/;"	f	class:kaldi::nnet1::Dropout
+GetType	nnet-activation.h	/^  ComponentType GetType() const { return kSigmoid; }$/;"	f	class:kaldi::nnet1::Sigmoid
+GetType	nnet-activation.h	/^  ComponentType GetType() const { return kSoftmax; }$/;"	f	class:kaldi::nnet1::Softmax
+GetType	nnet-activation.h	/^  ComponentType GetType() const { return kTanh; }$/;"	f	class:kaldi::nnet1::Tanh
+GetType	nnet-affine-transform.h	/^  ComponentType GetType() const { return kAffineTransform; }$/;"	f	class:kaldi::nnet1::AffineTransform
+GetType	nnet-average-pooling-2d-component.h	/^  ComponentType GetType() const { return kAveragePooling2DComponent; }$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+GetType	nnet-average-pooling-component.h	/^  ComponentType GetType() const { return kAveragePoolingComponent; }$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+GetType	nnet-convolutional-2d-component.h	/^  ComponentType GetType() const { return kConvolutional2DComponent; }$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+GetType	nnet-convolutional-component.h	/^  ComponentType GetType() const { return kConvolutionalComponent; }$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+GetType	nnet-kl-hmm.h	/^  ComponentType GetType() const {$/;"	f	class:kaldi::nnet1::KlHmm
+GetType	nnet-max-pooling-2d-component.h	/^  ComponentType GetType() const { return kMaxPooling2DComponent; }$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+GetType	nnet-max-pooling-component.h	/^  ComponentType GetType() const { return kMaxPoolingComponent; }$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+GetType	nnet-parallel-component.h	/^  ComponentType GetType() const { return kParallelComponent; }$/;"	f	class:kaldi::nnet1::ParallelComponent
+GetType	nnet-rbm.h	/^  ComponentType GetType() const { return kRbm; }$/;"	f	class:kaldi::nnet1::Rbm
+GetType	nnet-sentence-averaging-component.h	/^  ComponentType GetType() const { return kSentenceAveragingComponent; }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+GetType	nnet-various.h	/^  ComponentType GetType() const { return kAddShift; }$/;"	f	class:kaldi::nnet1::AddShift
+GetType	nnet-various.h	/^  ComponentType GetType() const { return kCopy; }$/;"	f	class:kaldi::nnet1::CopyComponent
+GetType	nnet-various.h	/^  ComponentType GetType() const { return kRescale; }$/;"	f	class:kaldi::nnet1::Rescale
+GetType	nnet-various.h	/^  ComponentType GetType() const { return kSplice; }$/;"	f	class:kaldi::nnet1::Splice
+GetWeights	nnet-nnet.cc	/^void Nnet::GetWeights(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::Nnet
+HidType	nnet-rbm.h	/^  RbmNodeType HidType() const { $/;"	f	class:kaldi::nnet1::Rbm
+Info	nnet-affine-transform.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::AffineTransform
+Info	nnet-component.h	/^  virtual std::string Info() const { return ""; }$/;"	f	class:kaldi::nnet1::Component
+Info	nnet-convolutional-2d-component.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+Info	nnet-convolutional-component.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+Info	nnet-nnet.cc	/^std::string Nnet::Info() const {$/;"	f	class:kaldi::nnet1::Nnet
+Info	nnet-parallel-component.h	/^  std::string Info() const { $/;"	f	class:kaldi::nnet1::ParallelComponent
+Info	nnet-sentence-averaging-component.h	/^  std::string Info() const { return std::string("nested_network {\\n") + nnet_.Info() + "}\\n"; }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+Info	nnet-various.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::AddShift
+Info	nnet-various.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::CopyComponent
+Info	nnet-various.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::Rescale
+Info	nnet-various.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::Splice
+InfoBackPropagate	nnet-nnet.cc	/^std::string Nnet::InfoBackPropagate() const {$/;"	f	class:kaldi::nnet1::Nnet
+InfoGradient	nnet-affine-transform.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::AffineTransform
+InfoGradient	nnet-component.h	/^  virtual std::string InfoGradient() const { return ""; }$/;"	f	class:kaldi::nnet1::Component
+InfoGradient	nnet-convolutional-2d-component.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+InfoGradient	nnet-convolutional-component.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+InfoGradient	nnet-nnet.cc	/^std::string Nnet::InfoGradient() const {$/;"	f	class:kaldi::nnet1::Nnet
+InfoGradient	nnet-parallel-component.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::ParallelComponent
+InfoGradient	nnet-sentence-averaging-component.h	/^  std::string InfoGradient() const { return std::string("nested_gradient {\\n") + nnet_.InfoGradient() + "}\\n"; }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+InfoGradient	nnet-various.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::AddShift
+InfoGradient	nnet-various.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::Rescale
+InfoPropagate	nnet-nnet.cc	/^std::string Nnet::InfoPropagate() const {$/;"	f	class:kaldi::nnet1::Nnet
+Init	nnet-component.cc	/^Component* Component::Init(const std::string &conf_line) {$/;"	f	class:kaldi::nnet1::Component
+Init	nnet-nnet.cc	/^void Nnet::Init(const std::string &file) {$/;"	f	class:kaldi::nnet1::Nnet
+Init	nnet-randomizer.cc	/^void RandomizerMask::Init(const NnetDataRandomizerOptions& conf) {$/;"	f	class:kaldi::nnet1::RandomizerMask
+Init	nnet-randomizer.h	/^  void Init(const NnetDataRandomizerOptions& conf) { conf_ = conf; }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+Init	nnet-randomizer.h	/^  void Init(const NnetDataRandomizerOptions& conf) { conf_ = conf; }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+Init	nnet-randomizer.h	/^  void Init(const NnetDataRandomizerOptions& conf) { conf_ = conf; }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+InitData	nnet-affine-transform.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::AffineTransform
+InitData	nnet-average-pooling-2d-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+InitData	nnet-average-pooling-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+InitData	nnet-component.h	/^  virtual void InitData(std::istream &is) { }$/;"	f	class:kaldi::nnet1::Component
+InitData	nnet-convolutional-2d-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+InitData	nnet-convolutional-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+InitData	nnet-max-pooling-2d-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+InitData	nnet-max-pooling-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+InitData	nnet-parallel-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+InitData	nnet-rbm.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::Rbm
+InitData	nnet-sentence-averaging-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+InitData	nnet-various.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::AddShift
+InitData	nnet-various.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::CopyComponent
+InitData	nnet-various.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::Rescale
+InitData	nnet-various.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::Splice
+InitRand	nnet-randomizer-test.cc	/^static void InitRand(MatrixBase<Real> *M) {$/;"	f	file:
+InitRand	nnet-randomizer-test.cc	/^static void InitRand(VectorBase<Real> *v) {$/;"	f	file:
+InputDim	nnet-component.h	/^  int32 InputDim() const { $/;"	f	class:kaldi::nnet1::Component
+InputDim	nnet-nnet.cc	/^int32 Nnet::InputDim() const {$/;"	f	class:kaldi::nnet1::Nnet
+Int32VectorRandomizer	nnet-randomizer.h	/^typedef StdVectorRandomizer<int32> Int32VectorRandomizer;$/;"	t	namespace:kaldi::nnet1
+IsFull	nnet-randomizer.h	/^  bool IsFull() { return ((data_begin_ == 0) && (data_end_ > conf_.randomizer_size )); }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+IsFull	nnet-randomizer.h	/^  bool IsFull() { return ((data_begin_ == 0) && (data_end_ > conf_.randomizer_size )); }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+IsFull	nnet-randomizer.h	/^  bool IsFull() { return ((data_begin_ == 0) && (data_end_ > conf_.randomizer_size )); }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+IsUpdatable	nnet-component.h	/^  bool IsUpdatable() const { $/;"	f	class:kaldi::nnet1::UpdatableComponent
+IsUpdatable	nnet-component.h	/^  virtual bool IsUpdatable() const { $/;"	f	class:kaldi::nnet1::Component
+KALDI_NNET_NNET_ACTIVATION_H_	nnet-activation.h	22;"	d
+KALDI_NNET_NNET_AFFINE_TRANSFORM_H_	nnet-affine-transform.h	22;"	d
+KALDI_NNET_NNET_AVERAGE_POOLING2D_COMPONENT_H_	nnet-average-pooling-2d-component.h	23;"	d
+KALDI_NNET_NNET_AVERAGE_POOLING_COMPONENT_H_	nnet-average-pooling-component.h	22;"	d
+KALDI_NNET_NNET_COMPONENT_H_	nnet-component.h	23;"	d
+KALDI_NNET_NNET_CONVOLUTIONAL2D_COMPONENT_H_	nnet-convolutional-2d-component.h	23;"	d
+KALDI_NNET_NNET_CONVOLUTIONAL_COMPONENT_H_	nnet-convolutional-component.h	22;"	d
+KALDI_NNET_NNET_KL_HMM_H_	nnet-kl-hmm.h	22;"	d
+KALDI_NNET_NNET_LOSS_H_	nnet-loss.h	21;"	d
+KALDI_NNET_NNET_MAX_POOLING2D_COMPONENT_H_	nnet-max-pooling-2d-component.h	23;"	d
+KALDI_NNET_NNET_MAX_POOLING_COMPONENT_H_	nnet-max-pooling-component.h	22;"	d
+KALDI_NNET_NNET_NNET_H_	nnet-nnet.h	21;"	d
+KALDI_NNET_NNET_PARALLEL_COMPONENT_H_	nnet-parallel-component.h	22;"	d
+KALDI_NNET_NNET_PDF_PRIOR_H_	nnet-pdf-prior.h	21;"	d
+KALDI_NNET_NNET_RANDOMIZER_H_	nnet-randomizer.h	22;"	d
+KALDI_NNET_NNET_RBM_H_	nnet-rbm.h	22;"	d
+KALDI_NNET_NNET_SENTENCE_AVERAGING_COMPONENT_H_	nnet-sentence-averaging-component.h	22;"	d
+KALDI_NNET_NNET_TRNOPTS_H_	nnet-trnopts.h	21;"	d
+KALDI_NNET_NNET_VARIOUS_H_	nnet-various.h	22;"	d
+KlHmm	nnet-kl-hmm.h	/^  KlHmm(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::KlHmm
+KlHmm	nnet-kl-hmm.h	/^class KlHmm : public Component {$/;"	c	namespace:kaldi::nnet1
+MarkerToType	nnet-component.cc	/^Component::ComponentType Component::MarkerToType(const std::string &s) {$/;"	f	class:kaldi::nnet1::Component
+MatrixRandomizer	nnet-randomizer.h	/^  MatrixRandomizer() : data_begin_(0), data_end_(0) { }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+MatrixRandomizer	nnet-randomizer.h	/^  MatrixRandomizer(const NnetDataRandomizerOptions &conf) : data_begin_(0), data_end_(0) { Init(conf); }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+MatrixRandomizer	nnet-randomizer.h	/^class MatrixRandomizer {$/;"	c	namespace:kaldi::nnet1
+MaxPooling2DComponent	nnet-max-pooling-2d-component.h	/^  MaxPooling2DComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+MaxPooling2DComponent	nnet-max-pooling-2d-component.h	/^class MaxPooling2DComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+MaxPoolingComponent	nnet-max-pooling-component.h	/^  MaxPoolingComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+MaxPoolingComponent	nnet-max-pooling-component.h	/^class MaxPoolingComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+MomentStatistics	nnet-various.h	/^std::string MomentStatistics(const CuMatrix<Real> &mat) {$/;"	f	namespace:kaldi::nnet1
+MomentStatistics	nnet-various.h	/^std::string MomentStatistics(const CuVector<Real> &vec) {$/;"	f	namespace:kaldi::nnet1
+MomentStatistics	nnet-various.h	/^std::string MomentStatistics(const Matrix<Real> &mat) {$/;"	f	namespace:kaldi::nnet1
+MomentStatistics	nnet-various.h	/^std::string MomentStatistics(const Vector<Real> &vec) {$/;"	f	namespace:kaldi::nnet1
+Mse	nnet-loss.h	/^  Mse() : frames_(0), loss_(0.0), $/;"	f	class:kaldi::nnet1::Mse
+Mse	nnet-loss.h	/^class Mse {$/;"	c	namespace:kaldi::nnet1
+NewComponentOfType	nnet-component.cc	/^Component* Component::NewComponentOfType(ComponentType comp_type,$/;"	f	class:kaldi::nnet1::Component
+Next	nnet-randomizer.cc	/^void MatrixRandomizer::Next() {$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+Next	nnet-randomizer.cc	/^void StdVectorRandomizer<T>::Next() {$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+Next	nnet-randomizer.cc	/^void VectorRandomizer::Next() {$/;"	f	class:kaldi::nnet1::VectorRandomizer
+Nnet	nnet-nnet.cc	/^Nnet::Nnet(const Nnet& other) {$/;"	f	class:kaldi::nnet1::Nnet
+Nnet	nnet-nnet.h	/^  Nnet() {}$/;"	f	class:kaldi::nnet1::Nnet
+Nnet	nnet-nnet.h	/^class Nnet {$/;"	c	namespace:kaldi::nnet1
+NnetDataRandomizerOptions	nnet-randomizer.h	/^  NnetDataRandomizerOptions()$/;"	f	struct:kaldi::nnet1::NnetDataRandomizerOptions
+NnetDataRandomizerOptions	nnet-randomizer.h	/^struct NnetDataRandomizerOptions {$/;"	s	namespace:kaldi::nnet1
+NnetTrainOptions	nnet-trnopts.h	/^  NnetTrainOptions() : learn_rate(0.008),$/;"	f	struct:kaldi::nnet1::NnetTrainOptions
+NnetTrainOptions	nnet-trnopts.h	/^struct NnetTrainOptions {$/;"	s	namespace:kaldi::nnet1
+NumComponents	nnet-nnet.h	/^  int32 NumComponents() const { return components_.size(); }$/;"	f	class:kaldi::nnet1::Nnet
+NumFrames	nnet-randomizer.h	/^  int32 NumFrames() { return data_end_; }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+NumFrames	nnet-randomizer.h	/^  int32 NumFrames() { return data_end_; }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+NumFrames	nnet-randomizer.h	/^  int32 NumFrames() { return data_end_; }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+NumParams	nnet-affine-transform.h	/^  int32 NumParams() const { return linearity_.NumRows()*linearity_.NumCols() + bias_.Dim(); }$/;"	f	class:kaldi::nnet1::AffineTransform
+NumParams	nnet-convolutional-2d-component.h	/^  int32 NumParams() const { $/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+NumParams	nnet-convolutional-component.h	/^  int32 NumParams() const { $/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+NumParams	nnet-nnet.cc	/^int32 Nnet::NumParams() const {$/;"	f	class:kaldi::nnet1::Nnet
+NumParams	nnet-parallel-component.h	/^  int32 NumParams() const { $/;"	f	class:kaldi::nnet1::ParallelComponent
+NumParams	nnet-sentence-averaging-component.h	/^  int32 NumParams() const { return nnet_.NumParams(); }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+NumParams	nnet-various.h	/^  int32 NumParams() const { return scale_data_.Dim(); }$/;"	f	class:kaldi::nnet1::Rescale
+NumParams	nnet-various.h	/^  int32 NumParams() const { return shift_data_.Dim(); }$/;"	f	class:kaldi::nnet1::AddShift
+OutputDim	nnet-component.h	/^  int32 OutputDim() const { $/;"	f	class:kaldi::nnet1::Component
+OutputDim	nnet-nnet.cc	/^int32 Nnet::OutputDim() const {$/;"	f	class:kaldi::nnet1::Nnet
+ParallelComponent	nnet-parallel-component.h	/^  ParallelComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::ParallelComponent
+ParallelComponent	nnet-parallel-component.h	/^class ParallelComponent : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+PdfPrior	nnet-pdf-prior.cc	/^PdfPrior::PdfPrior(const PdfPriorOptions &opts)$/;"	f	class:kaldi::nnet1::PdfPrior
+PdfPrior	nnet-pdf-prior.h	/^class PdfPrior {$/;"	c	namespace:kaldi::nnet1
+PdfPriorOptions	nnet-pdf-prior.h	/^  PdfPriorOptions() : class_frame_counts(""),$/;"	f	struct:kaldi::nnet1::PdfPriorOptions
+PdfPriorOptions	nnet-pdf-prior.h	/^struct PdfPriorOptions {$/;"	s	namespace:kaldi::nnet1
+PosteriorRandomizer	nnet-randomizer.h	/^typedef StdVectorRandomizer<std::vector<std::pair<int32, BaseFloat> > > PosteriorRandomizer;$/;"	t	namespace:kaldi::nnet1
+Propagate	nnet-component.h	/^inline void Component::Propagate(const CuMatrix<BaseFloat> &in,$/;"	f	class:kaldi::nnet1::Component
+Propagate	nnet-nnet.cc	/^void Nnet::Propagate(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Nnet
+PropagateBuffer	nnet-nnet.h	/^  const std::vector<CuMatrix<BaseFloat> >& PropagateBuffer() const { $/;"	f	class:kaldi::nnet1::Nnet
+PropagateFnc	nnet-activation.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Dropout
+PropagateFnc	nnet-activation.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Sigmoid
+PropagateFnc	nnet-activation.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Softmax
+PropagateFnc	nnet-activation.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Tanh
+PropagateFnc	nnet-affine-transform.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::AffineTransform
+PropagateFnc	nnet-average-pooling-2d-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+PropagateFnc	nnet-average-pooling-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+PropagateFnc	nnet-convolutional-2d-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+PropagateFnc	nnet-convolutional-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+PropagateFnc	nnet-kl-hmm.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::KlHmm
+PropagateFnc	nnet-max-pooling-2d-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+PropagateFnc	nnet-max-pooling-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+PropagateFnc	nnet-parallel-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+PropagateFnc	nnet-rbm.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Rbm
+PropagateFnc	nnet-sentence-averaging-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+PropagateFnc	nnet-various.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) { $/;"	f	class:kaldi::nnet1::AddShift
+PropagateFnc	nnet-various.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) { $/;"	f	class:kaldi::nnet1::CopyComponent
+PropagateFnc	nnet-various.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) { $/;"	f	class:kaldi::nnet1::Rescale
+PropagateFnc	nnet-various.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Splice
+Randomize	nnet-randomizer.cc	/^void MatrixRandomizer::Randomize(const std::vector<int32>& mask) {$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+Randomize	nnet-randomizer.cc	/^void StdVectorRandomizer<T>::Randomize(const std::vector<int32>& mask) {$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+Randomize	nnet-randomizer.cc	/^void VectorRandomizer::Randomize(const std::vector<int32>& mask) {$/;"	f	class:kaldi::nnet1::VectorRandomizer
+RandomizerMask	nnet-randomizer.h	/^  RandomizerMask() { }$/;"	f	class:kaldi::nnet1::RandomizerMask
+RandomizerMask	nnet-randomizer.h	/^  RandomizerMask(const NnetDataRandomizerOptions &conf) { Init(conf); }$/;"	f	class:kaldi::nnet1::RandomizerMask
+RandomizerMask	nnet-randomizer.h	/^class RandomizerMask {$/;"	c	namespace:kaldi::nnet1
+Rbm	nnet-rbm.h	/^  Rbm(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Rbm
+Rbm	nnet-rbm.h	/^class Rbm : public RbmBase {$/;"	c	namespace:kaldi::nnet1
+RbmBase	nnet-rbm.h	/^  RbmBase(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::RbmBase
+RbmBase	nnet-rbm.h	/^class RbmBase : public Component {$/;"	c	namespace:kaldi::nnet1
+RbmNodeType	nnet-rbm.h	/^  } RbmNodeType;$/;"	t	class:kaldi::nnet1::RbmBase	typeref:enum:kaldi::nnet1::RbmBase::__anon2
+RbmTrainOptions	nnet-trnopts.h	/^  RbmTrainOptions() : learn_rate(0.4),$/;"	f	struct:kaldi::nnet1::RbmTrainOptions
+RbmTrainOptions	nnet-trnopts.h	/^struct RbmTrainOptions {$/;"	s	namespace:kaldi::nnet1
+RbmUpdate	nnet-rbm.h	/^  void RbmUpdate(const CuMatrix<BaseFloat> &pos_vis, const CuMatrix<BaseFloat> &pos_hid, const CuMatrix<BaseFloat> &neg_vis, const CuMatrix<BaseFloat> &neg_hid) {$/;"	f	class:kaldi::nnet1::Rbm
+Read	nnet-component.cc	/^Component* Component::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Component
+Read	nnet-nnet.cc	/^void Nnet::Read(const std::string &file) {$/;"	f	class:kaldi::nnet1::Nnet
+Read	nnet-nnet.cc	/^void Nnet::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Nnet
+ReadData	nnet-affine-transform.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::AffineTransform
+ReadData	nnet-average-pooling-2d-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+ReadData	nnet-average-pooling-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+ReadData	nnet-component.h	/^  virtual void ReadData(std::istream &is, bool binary) { }$/;"	f	class:kaldi::nnet1::Component
+ReadData	nnet-convolutional-2d-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+ReadData	nnet-convolutional-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+ReadData	nnet-kl-hmm.h	/^  void ReadData(std::istream &is, bool binary) { $/;"	f	class:kaldi::nnet1::KlHmm
+ReadData	nnet-max-pooling-2d-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+ReadData	nnet-max-pooling-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+ReadData	nnet-parallel-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+ReadData	nnet-rbm.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Rbm
+ReadData	nnet-sentence-averaging-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+ReadData	nnet-various.h	/^  void ReadData(std::istream &is, bool binary) { $/;"	f	class:kaldi::nnet1::AddShift
+ReadData	nnet-various.h	/^  void ReadData(std::istream &is, bool binary) { $/;"	f	class:kaldi::nnet1::CopyComponent
+ReadData	nnet-various.h	/^  void ReadData(std::istream &is, bool binary) { $/;"	f	class:kaldi::nnet1::Rescale
+ReadData	nnet-various.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Splice
+Reconstruct	nnet-rbm.h	/^  void Reconstruct(const CuMatrix<BaseFloat> &hid_state, CuMatrix<BaseFloat> *vis_probs) {$/;"	f	class:kaldi::nnet1::Rbm
+Register	nnet-pdf-prior.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet1::PdfPriorOptions
+Register	nnet-randomizer.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet1::NnetDataRandomizerOptions
+Register	nnet-trnopts.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet1::NnetTrainOptions
+Register	nnet-trnopts.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet1::RbmTrainOptions
+RemoveComponent	nnet-nnet.cc	/^void Nnet::RemoveComponent(int32 component) {$/;"	f	class:kaldi::nnet1::Nnet
+RemoveLastComponent	nnet-nnet.h	/^  void RemoveLastComponent() { RemoveComponent(NumComponents()-1); }$/;"	f	class:kaldi::nnet1::Nnet
+Report	nnet-loss.cc	/^std::string Mse::Report() {$/;"	f	class:kaldi::nnet1::Mse
+Report	nnet-loss.cc	/^std::string Xent::Report() {$/;"	f	class:kaldi::nnet1::Xent
+Rescale	nnet-various.h	/^  Rescale(int32 dim_in, int32 dim_out)$/;"	f	class:kaldi::nnet1::Rescale
+Rescale	nnet-various.h	/^class Rescale : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+SentenceAveragingComponent	nnet-sentence-averaging-component.h	/^  SentenceAveragingComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+SentenceAveragingComponent	nnet-sentence-averaging-component.h	/^class SentenceAveragingComponent : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+SetBias	nnet-affine-transform.h	/^  void SetBias(const CuVector<BaseFloat>& bias) {$/;"	f	class:kaldi::nnet1::AffineTransform
+SetComponent	nnet-nnet.cc	/^void Nnet::SetComponent(int32 c, Component *component) {$/;"	f	class:kaldi::nnet1::Nnet
+SetLinearity	nnet-affine-transform.h	/^  void SetLinearity(const CuMatrix<BaseFloat>& linearity) {$/;"	f	class:kaldi::nnet1::AffineTransform
+SetRbmTrainOptions	nnet-rbm.h	/^  void SetRbmTrainOptions(const RbmTrainOptions& opts) {$/;"	f	class:kaldi::nnet1::RbmBase
+SetScaleVec	nnet-various.h	/^  void SetScaleVec(const CuVector<BaseFloat>& scale_data) {$/;"	f	class:kaldi::nnet1::Rescale
+SetShiftVec	nnet-various.h	/^  void SetShiftVec(const CuVector<BaseFloat>& shift_data) {$/;"	f	class:kaldi::nnet1::AddShift
+SetStats	nnet-kl-hmm.h	/^  void SetStats(const Matrix<BaseFloat> mat) {$/;"	f	class:kaldi::nnet1::KlHmm
+SetTrainOptions	nnet-component.h	/^  virtual void SetTrainOptions(const NnetTrainOptions &opts) {$/;"	f	class:kaldi::nnet1::UpdatableComponent
+SetTrainOptions	nnet-nnet.cc	/^void Nnet::SetTrainOptions(const NnetTrainOptions& opts) {$/;"	f	class:kaldi::nnet1::Nnet
+SetTrainOptions	nnet-parallel-component.h	/^  void SetTrainOptions(const NnetTrainOptions &opts) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+SetTrainOptions	nnet-sentence-averaging-component.h	/^  void SetTrainOptions(const NnetTrainOptions &opts) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+SetWeights	nnet-nnet.cc	/^void Nnet::SetWeights(const Vector<BaseFloat>& wei_src) {$/;"	f	class:kaldi::nnet1::Nnet
+Sigmoid	nnet-activation.h	/^  Sigmoid(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Sigmoid
+Sigmoid	nnet-activation.h	/^class Sigmoid : public Component {$/;"	c	namespace:kaldi::nnet1
+Softmax	nnet-activation.h	/^  Softmax(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Softmax
+Softmax	nnet-activation.h	/^class Softmax : public Component {$/;"	c	namespace:kaldi::nnet1
+Splice	nnet-various.h	/^  Splice(int32 dim_in, int32 dim_out)$/;"	f	class:kaldi::nnet1::Splice
+Splice	nnet-various.h	/^class Splice : public Component {$/;"	c	namespace:kaldi::nnet1
+StdVectorRandomizer	nnet-randomizer.h	/^  StdVectorRandomizer() : data_begin_(0), data_end_(0) { }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+StdVectorRandomizer	nnet-randomizer.h	/^  StdVectorRandomizer(const NnetDataRandomizerOptions &conf) : data_begin_(0), data_end_(0) { Init(conf); }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+StdVectorRandomizer	nnet-randomizer.h	/^class StdVectorRandomizer {$/;"	c	namespace:kaldi::nnet1
+SubtractOnLogpost	nnet-pdf-prior.cc	/^void PdfPrior::SubtractOnLogpost(CuMatrix<BaseFloat> *llk) {$/;"	f	class:kaldi::nnet1::PdfPrior
+Tanh	nnet-activation.h	/^  Tanh(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Tanh
+Tanh	nnet-activation.h	/^class Tanh : public Component {$/;"	c	namespace:kaldi::nnet1
+ToString	nnet-various.h	/^std::string ToString(const T& t) { $/;"	f	namespace:kaldi::nnet1
+TypeToMarker	nnet-component.cc	/^const char* Component::TypeToMarker(ComponentType t) {$/;"	f	class:kaldi::nnet1::Component
+UnitTestAveragePooling2DComponent	nnet-component-test.cc	/^  void UnitTestAveragePooling2DComponent(){$/;"	f	namespace:kaldi::nnet1
+UnitTestConvolutional2DComponent	nnet-component-test.cc	/^  void UnitTestConvolutional2DComponent() {$/;"	f	namespace:kaldi::nnet1
+UnitTestConvolutionalComponent	nnet-component-test.cc	/^  void UnitTestConvolutionalComponent() {$/;"	f	namespace:kaldi::nnet1
+UnitTestMatOperations	nnet-component-test.cc	/^  void UnitTestMatOperations(){$/;"	f	namespace:kaldi::nnet1
+UnitTestMatrixRandomizer	nnet-randomizer-test.cc	/^void UnitTestMatrixRandomizer() {$/;"	f
+UnitTestMaxPooling2DComponent	nnet-component-test.cc	/^  void UnitTestMaxPooling2DComponent(){$/;"	f	namespace:kaldi::nnet1
+UnitTestMaxPoolingComponent	nnet-component-test.cc	/^  void UnitTestMaxPoolingComponent() {$/;"	f	namespace:kaldi::nnet1
+UnitTestRandomizerMask	nnet-randomizer-test.cc	/^void UnitTestRandomizerMask() {$/;"	f
+UnitTestStdVectorRandomizer	nnet-randomizer-test.cc	/^void UnitTestStdVectorRandomizer() {$/;"	f
+UnitTestVectorRandomizer	nnet-randomizer-test.cc	/^void UnitTestVectorRandomizer() {$/;"	f
+UpdatableComponent	nnet-component.h	/^  UpdatableComponent(int32 input_dim, int32 output_dim)$/;"	f	class:kaldi::nnet1::UpdatableComponent
+UpdatableComponent	nnet-component.h	/^class UpdatableComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+Update	nnet-affine-transform.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::AffineTransform
+Update	nnet-convolutional-2d-component.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+Update	nnet-convolutional-component.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+Update	nnet-parallel-component.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+Update	nnet-sentence-averaging-component.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+Update	nnet-various.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::AddShift
+Update	nnet-various.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::Rescale
+Value	nnet-randomizer.cc	/^const CuMatrix<BaseFloat>& MatrixRandomizer::Value() {$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+Value	nnet-randomizer.cc	/^const Vector<BaseFloat>& VectorRandomizer::Value() {$/;"	f	class:kaldi::nnet1::VectorRandomizer
+Value	nnet-randomizer.cc	/^const std::vector<T>& StdVectorRandomizer<T>::Value() {$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+VectorRandomizer	nnet-randomizer.h	/^  VectorRandomizer() : data_begin_(0), data_end_(0) { }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+VectorRandomizer	nnet-randomizer.h	/^  VectorRandomizer(const NnetDataRandomizerOptions &conf) : data_begin_(0), data_end_(0) { Init(conf); }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+VectorRandomizer	nnet-randomizer.h	/^class VectorRandomizer {$/;"	c	namespace:kaldi::nnet1
+VisType	nnet-rbm.h	/^  RbmNodeType VisType() const { $/;"	f	class:kaldi::nnet1::Rbm
+Write	nnet-component.cc	/^void Component::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Component
+Write	nnet-nnet.cc	/^void Nnet::Write(const std::string &file, bool binary) const {$/;"	f	class:kaldi::nnet1::Nnet
+Write	nnet-nnet.cc	/^void Nnet::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Nnet
+WriteAsNnet	nnet-rbm.h	/^  void WriteAsNnet(std::ostream& os, bool binary) const {$/;"	f	class:kaldi::nnet1::Rbm
+WriteData	nnet-affine-transform.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::AffineTransform
+WriteData	nnet-average-pooling-2d-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+WriteData	nnet-average-pooling-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+WriteData	nnet-component.h	/^  virtual void WriteData(std::ostream &os, bool binary) const { }$/;"	f	class:kaldi::nnet1::Component
+WriteData	nnet-convolutional-2d-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+WriteData	nnet-convolutional-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+WriteData	nnet-kl-hmm.h	/^  void WriteData(std::ostream &os, bool binary) const { $/;"	f	class:kaldi::nnet1::KlHmm
+WriteData	nnet-max-pooling-2d-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+WriteData	nnet-max-pooling-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+WriteData	nnet-parallel-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::ParallelComponent
+WriteData	nnet-rbm.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Rbm
+WriteData	nnet-sentence-averaging-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+WriteData	nnet-various.h	/^  void WriteData(std::ostream &os, bool binary) const { $/;"	f	class:kaldi::nnet1::AddShift
+WriteData	nnet-various.h	/^  void WriteData(std::ostream &os, bool binary) const { $/;"	f	class:kaldi::nnet1::Rescale
+WriteData	nnet-various.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::CopyComponent
+WriteData	nnet-various.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Splice
+Xent	nnet-loss.h	/^  Xent() : frames_(0), correct_(0), loss_(0.0), entropy_(0.0), $/;"	f	class:kaldi::nnet1::Xent
+Xent	nnet-loss.h	/^class Xent {$/;"	c	namespace:kaldi::nnet1
+backpropagate_buf_	nnet-nnet.h	/^  std::vector<CuMatrix<BaseFloat> > backpropagate_buf_; \/\/\/< buffers for backward pass$/;"	m	class:kaldi::nnet1::Nnet
+bias_	nnet-affine-transform.h	/^  CuVector<BaseFloat> bias_;$/;"	m	class:kaldi::nnet1::AffineTransform
+bias_	nnet-convolutional-2d-component.h	/^  CuVector<BaseFloat> bias_; \/\/\/< bias for each filter$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+bias_	nnet-convolutional-component.h	/^  CuVector<BaseFloat> bias_; \/\/\/< bias for each filter$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+bias_corr_	nnet-affine-transform.h	/^  CuVector<BaseFloat> bias_corr_;$/;"	m	class:kaldi::nnet1::AffineTransform
+bias_grad_	nnet-convolutional-2d-component.h	/^  CuVector<BaseFloat> bias_grad_; \/\/\/< gradient of biases$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+bias_grad_	nnet-convolutional-component.h	/^  CuVector<BaseFloat> bias_grad_; \/\/\/< gradient of biases$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+class_frame_counts	nnet-pdf-prior.h	/^  std::string class_frame_counts;$/;"	m	struct:kaldi::nnet1::PdfPriorOptions
+components_	nnet-nnet.h	/^  std::vector<Component*> components_; $/;"	m	class:kaldi::nnet1::Nnet
+conf_	nnet-randomizer.h	/^  NnetDataRandomizerOptions conf_;$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+conf_	nnet-randomizer.h	/^  NnetDataRandomizerOptions conf_;$/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+conf_	nnet-randomizer.h	/^  NnetDataRandomizerOptions conf_;$/;"	m	class:kaldi::nnet1::VectorRandomizer
+connect_fmap_	nnet-convolutional-2d-component.h	/^    connect_fmap_; \/\/\/< if connect_fmap_ = 1, then each fmap has num_filt$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+copy_from_indices_	nnet-various.h	/^  CuArray<int32> copy_from_indices_;$/;"	m	class:kaldi::nnet1::CopyComponent
+correct_	nnet-loss.h	/^  int32 correct_;$/;"	m	class:kaldi::nnet1::Xent
+data_	nnet-randomizer.h	/^  CuMatrix<BaseFloat> data_; \/\/ can be larger than 'randomizer_size'$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+data_	nnet-randomizer.h	/^  Vector<BaseFloat> data_; \/\/ can be larger than 'randomizer_size'$/;"	m	class:kaldi::nnet1::VectorRandomizer
+data_	nnet-randomizer.h	/^  std::vector<T> data_; \/\/ can be larger than 'randomizer_size'$/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+data_aux_	nnet-randomizer.h	/^  CuMatrix<BaseFloat> data_aux_; \/\/ auxiliary buffer for shuffling$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+data_begin_	nnet-randomizer.h	/^  int32 data_begin_;$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+data_begin_	nnet-randomizer.h	/^  int32 data_begin_;$/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+data_begin_	nnet-randomizer.h	/^  int32 data_begin_;$/;"	m	class:kaldi::nnet1::VectorRandomizer
+data_end_	nnet-randomizer.h	/^  int32 data_end_;   $/;"	m	class:kaldi::nnet1::MatrixRandomizer
+data_end_	nnet-randomizer.h	/^  int32 data_end_;   $/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+data_end_	nnet-randomizer.h	/^  int32 data_end_;   $/;"	m	class:kaldi::nnet1::VectorRandomizer
+diff_pow_2_	nnet-loss.h	/^  CuMatrix<BaseFloat> diff_pow_2_;$/;"	m	class:kaldi::nnet1::Mse
+dropout_mask_	nnet-activation.h	/^  CuMatrix<BaseFloat> dropout_mask_;$/;"	m	class:kaldi::nnet1::Dropout
+entropy_	nnet-loss.h	/^  double entropy_;$/;"	m	class:kaldi::nnet1::Xent
+entropy_progress_	nnet-loss.h	/^  double entropy_progress_;$/;"	m	class:kaldi::nnet1::Xent
+feature_patch_diffs_	nnet-convolutional-2d-component.h	/^  std::vector<CuMatrix<BaseFloat> > feature_patch_diffs_;$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+feature_patch_diffs_	nnet-convolutional-component.h	/^  std::vector<CuMatrix<BaseFloat> > feature_patch_diffs_;$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+filt_x_len_	nnet-convolutional-2d-component.h	/^    filt_x_len_,filt_y_len_,    \/\/\/< 2D filter dimensions, x_ temporal, y_ spectral$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+filt_x_step_	nnet-convolutional-2d-component.h	/^    filt_x_step_, filt_y_step_,   \/\/\/< 2D shifts along temporal and spectral$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+filt_y_len_	nnet-convolutional-2d-component.h	/^    filt_x_len_,filt_y_len_,    \/\/\/< 2D filter dimensions, x_ temporal, y_ spectral$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+filt_y_step_	nnet-convolutional-2d-component.h	/^    filt_x_step_, filt_y_step_,   \/\/\/< 2D shifts along temporal and spectral$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+filters_	nnet-convolutional-2d-component.h	/^  CuMatrix<BaseFloat> filters_; \/\/\/< row = vectorized rectangular filter$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+filters_	nnet-convolutional-component.h	/^  CuMatrix<BaseFloat> filters_; \/\/\/< row = vectorized rectangular filter$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+filters_grad_	nnet-convolutional-2d-component.h	/^  CuMatrix<BaseFloat> filters_grad_; \/\/\/< gradient of filters$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+filters_grad_	nnet-convolutional-component.h	/^  CuMatrix<BaseFloat> filters_grad_; \/\/\/< gradient of filters$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+fmap_x_len_	nnet-average-pooling-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_,$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+fmap_x_len_	nnet-convolutional-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_, \/\/\/< feature maps dimensions (for input x_ is usually splice and y_ is num of fbanks) shift for 2nd dim of a patch (i.e. frame length before splicing)$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+fmap_x_len_	nnet-max-pooling-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_,$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+fmap_y_len_	nnet-average-pooling-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_,$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+fmap_y_len_	nnet-convolutional-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_, \/\/\/< feature maps dimensions (for input x_ is usually splice and y_ is num of fbanks) shift for 2nd dim of a patch (i.e. frame length before splicing)$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+fmap_y_len_	nnet-max-pooling-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_,$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+frame_offsets_	nnet-various.h	/^  CuArray<int32> frame_offsets_;$/;"	m	class:kaldi::nnet1::Splice
+frames_	nnet-loss.h	/^  int32 frames_;$/;"	m	class:kaldi::nnet1::Mse
+frames_	nnet-loss.h	/^  int32 frames_;$/;"	m	class:kaldi::nnet1::Xent
+frames_progress_	nnet-loss.h	/^  int32 frames_progress_;$/;"	m	class:kaldi::nnet1::Mse
+frames_progress_	nnet-loss.h	/^  int32 frames_progress_;$/;"	m	class:kaldi::nnet1::Xent
+hid_bias_	nnet-rbm.h	/^  CuVector<BaseFloat> hid_bias_;       \/\/\/< Vector with biases$/;"	m	class:kaldi::nnet1::Rbm
+hid_bias_corr_	nnet-rbm.h	/^  CuVector<BaseFloat> hid_bias_corr_;  \/\/\/< Vector for bias updates$/;"	m	class:kaldi::nnet1::Rbm
+hid_type_	nnet-rbm.h	/^  RbmNodeType hid_type_;$/;"	m	class:kaldi::nnet1::Rbm
+in_diff_summands_	nnet-convolutional-2d-component.h	/^  CuVector<BaseFloat> in_diff_summands_;$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+in_diff_summands_	nnet-convolutional-component.h	/^  CuVector<BaseFloat> in_diff_summands_;$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+input_dim_	nnet-component.h	/^  int32 input_dim_;  \/\/\/< Size of input vectors$/;"	m	class:kaldi::nnet1::Component
+kActivationFunction	nnet-component.h	/^    kActivationFunction = 0x0200, $/;"	e	enum:kaldi::nnet1::Component::__anon1
+kAddShift	nnet-component.h	/^    kAddShift,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kAffineTransform	nnet-component.h	/^    kAffineTransform,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kAveragePooling2DComponent	nnet-component.h	/^    kAveragePooling2DComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kAveragePoolingComponent	nnet-component.h	/^    kAveragePoolingComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kBlockLinearity	nnet-component.h	/^    kBlockLinearity,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kConvolutional2DComponent	nnet-component.h	/^    kConvolutional2DComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kConvolutionalComponent	nnet-component.h	/^    kConvolutionalComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kCopy	nnet-component.h	/^    kCopy,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kDropout	nnet-component.h	/^    kDropout,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kKlHmm	nnet-component.h	/^    kKlHmm = 0x0800,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kMarkerMap	nnet-component.cc	/^const struct Component::key_value Component::kMarkerMap[] = {$/;"	m	class:kaldi::nnet1::Component	typeref:struct:kaldi::nnet1::Component::	file:
+kMarkerMap	nnet-component.h	/^  static const struct key_value kMarkerMap[];$/;"	m	class:kaldi::nnet1::Component	typeref:struct:kaldi::nnet1::Component::key_value
+kMaxPooling2DComponent	nnet-component.h	/^    kMaxPooling2DComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kMaxPoolingComponent	nnet-component.h	/^    kMaxPoolingComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kParallelComponent	nnet-component.h	/^    kParallelComponent$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kRbm	nnet-component.h	/^    kRbm,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kRescale	nnet-component.h	/^    kRescale,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kSentenceAveragingComponent	nnet-component.h	/^    kSentenceAveragingComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kSigmoid	nnet-component.h	/^    kSigmoid,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kSoftmax	nnet-component.h	/^    kSoftmax, $/;"	e	enum:kaldi::nnet1::Component::__anon1
+kSplice	nnet-component.h	/^    kSplice,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kTanh	nnet-component.h	/^    kTanh,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kTranform	nnet-component.h	/^    kTranform = 0x0400,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kTranspose	nnet-component.h	/^    kTranspose,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kUnknown	nnet-component.h	/^    kUnknown = 0x0,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kUpdatableComponent	nnet-component.h	/^    kUpdatableComponent = 0x0100, $/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi	nnet-activation.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-affine-transform.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-average-pooling-2d-component.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-average-pooling-component.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-component-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-component.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-component.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-convolutional-2d-component.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-convolutional-component.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-kl-hmm.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-loss.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-loss.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-max-pooling-2d-component.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-max-pooling-component.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-nnet.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-nnet.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-parallel-component.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-pdf-prior.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-pdf-prior.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-randomizer.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-randomizer.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-rbm.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-sentence-averaging-component.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-trnopts.h	/^namespace kaldi {$/;"	n
+kaldi	nnet-various.h	/^namespace kaldi {$/;"	n
+kaldi::nnet1	nnet-activation.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-affine-transform.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-average-pooling-2d-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-average-pooling-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-component-test.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet1	nnet-component.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet1	nnet-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-convolutional-2d-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-convolutional-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-kl-hmm.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-loss.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet1	nnet-loss.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-max-pooling-2d-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-max-pooling-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-nnet.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet1	nnet-nnet.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-parallel-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-pdf-prior.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet1	nnet-pdf-prior.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-randomizer.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet1	nnet-randomizer.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-rbm.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-sentence-averaging-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-trnopts.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1	nnet-various.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+kaldi::nnet1::AddShift	nnet-various.h	/^class AddShift : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::AddShift::AddShift	nnet-various.h	/^  AddShift(int32 dim_in, int32 dim_out)$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::BackpropagateFnc	nnet-various.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::Copy	nnet-various.h	/^  Component* Copy() const { return new AddShift(*this); }$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::GetParams	nnet-various.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::GetShiftVec	nnet-various.h	/^  const CuVector<BaseFloat>& GetShiftVec() {$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::GetType	nnet-various.h	/^  ComponentType GetType() const { return kAddShift; }$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::Info	nnet-various.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::InfoGradient	nnet-various.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::InitData	nnet-various.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::NumParams	nnet-various.h	/^  int32 NumParams() const { return shift_data_.Dim(); }$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::PropagateFnc	nnet-various.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) { $/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::ReadData	nnet-various.h	/^  void ReadData(std::istream &is, bool binary) { $/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::SetShiftVec	nnet-various.h	/^  void SetShiftVec(const CuVector<BaseFloat>& shift_data) {$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::Update	nnet-various.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::WriteData	nnet-various.h	/^  void WriteData(std::ostream &os, bool binary) const { $/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::shift_data_	nnet-various.h	/^  CuVector<BaseFloat> shift_data_;$/;"	m	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::shift_data_grad_	nnet-various.h	/^  CuVector<BaseFloat> shift_data_grad_;$/;"	m	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AddShift::~AddShift	nnet-various.h	/^  ~AddShift()$/;"	f	class:kaldi::nnet1::AddShift
+kaldi::nnet1::AffineTransform	nnet-affine-transform.h	/^class AffineTransform : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::AffineTransform::AffineTransform	nnet-affine-transform.h	/^  AffineTransform(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::BackpropagateFnc	nnet-affine-transform.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::Copy	nnet-affine-transform.h	/^  Component* Copy() const { return new AffineTransform(*this); }$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::GetBias	nnet-affine-transform.h	/^  const CuVector<BaseFloat>& GetBias() {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::GetBiasCorr	nnet-affine-transform.h	/^  const CuVector<BaseFloat>& GetBiasCorr() {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::GetLinearity	nnet-affine-transform.h	/^  const CuMatrix<BaseFloat>& GetLinearity() {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::GetLinearityCorr	nnet-affine-transform.h	/^  const CuMatrix<BaseFloat>& GetLinearityCorr() {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::GetParams	nnet-affine-transform.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::GetType	nnet-affine-transform.h	/^  ComponentType GetType() const { return kAffineTransform; }$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::Info	nnet-affine-transform.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::InfoGradient	nnet-affine-transform.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::InitData	nnet-affine-transform.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::NumParams	nnet-affine-transform.h	/^  int32 NumParams() const { return linearity_.NumRows()*linearity_.NumCols() + bias_.Dim(); }$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::PropagateFnc	nnet-affine-transform.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::ReadData	nnet-affine-transform.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::SetBias	nnet-affine-transform.h	/^  void SetBias(const CuVector<BaseFloat>& bias) {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::SetLinearity	nnet-affine-transform.h	/^  void SetLinearity(const CuMatrix<BaseFloat>& linearity) {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::Update	nnet-affine-transform.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::WriteData	nnet-affine-transform.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::bias_	nnet-affine-transform.h	/^  CuVector<BaseFloat> bias_;$/;"	m	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::bias_corr_	nnet-affine-transform.h	/^  CuVector<BaseFloat> bias_corr_;$/;"	m	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::linearity_	nnet-affine-transform.h	/^  CuMatrix<BaseFloat> linearity_;$/;"	m	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::linearity_corr_	nnet-affine-transform.h	/^  CuMatrix<BaseFloat> linearity_corr_;$/;"	m	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AffineTransform::~AffineTransform	nnet-affine-transform.h	/^  ~AffineTransform()$/;"	f	class:kaldi::nnet1::AffineTransform
+kaldi::nnet1::AveragePooling2DComponent	nnet-average-pooling-2d-component.h	/^class AveragePooling2DComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::AveragePooling2DComponent::AveragePooling2DComponent	nnet-average-pooling-2d-component.h	/^  AveragePooling2DComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::BackpropagateFnc	nnet-average-pooling-2d-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::Copy	nnet-average-pooling-2d-component.h	/^  Component* Copy() const { return new AveragePooling2DComponent(*this); }$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::GetType	nnet-average-pooling-2d-component.h	/^  ComponentType GetType() const { return kAveragePooling2DComponent; }$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::InitData	nnet-average-pooling-2d-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::PropagateFnc	nnet-average-pooling-2d-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::ReadData	nnet-average-pooling-2d-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::WriteData	nnet-average-pooling-2d-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::fmap_x_len_	nnet-average-pooling-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_,$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::fmap_y_len_	nnet-average-pooling-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_,$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::pool_x_len_	nnet-average-pooling-2d-component.h	/^    pool_x_len_, pool_y_len_,$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::pool_x_step_	nnet-average-pooling-2d-component.h	/^    pool_x_step_, pool_y_step_;$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::pool_y_len_	nnet-average-pooling-2d-component.h	/^    pool_x_len_, pool_y_len_,$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::pool_y_step_	nnet-average-pooling-2d-component.h	/^    pool_x_step_, pool_y_step_;$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePooling2DComponent::~AveragePooling2DComponent	nnet-average-pooling-2d-component.h	/^  ~AveragePooling2DComponent()$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+kaldi::nnet1::AveragePoolingComponent	nnet-average-pooling-component.h	/^class AveragePoolingComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::AveragePoolingComponent::AveragePoolingComponent	nnet-average-pooling-component.h	/^  AveragePoolingComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::BackpropagateFnc	nnet-average-pooling-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::Copy	nnet-average-pooling-component.h	/^  Component* Copy() const { return new AveragePoolingComponent(*this); }$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::GetType	nnet-average-pooling-component.h	/^  ComponentType GetType() const { return kAveragePoolingComponent; }$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::InitData	nnet-average-pooling-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::PropagateFnc	nnet-average-pooling-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::ReadData	nnet-average-pooling-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::WriteData	nnet-average-pooling-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::pool_size_	nnet-average-pooling-component.h	/^  int32 pool_size_,   \/\/ input patches used for pooling$/;"	m	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::pool_step_	nnet-average-pooling-component.h	/^        pool_step_,   \/\/ shift used for pooling (allow overlapping pools)$/;"	m	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::pool_stride_	nnet-average-pooling-component.h	/^        pool_stride_; \/\/ stride used to cut input matrix to a vector of matrices$/;"	m	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::AveragePoolingComponent::~AveragePoolingComponent	nnet-average-pooling-component.h	/^  ~AveragePoolingComponent()$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+kaldi::nnet1::Component	nnet-component.h	/^class Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Component::Backpropagate	nnet-component.h	/^inline void Component::Backpropagate(const CuMatrix<BaseFloat> &in,$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::Component	nnet-component.h	/^  Component(int32 input_dim, int32 output_dim) $/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::ComponentType	nnet-component.h	/^  } ComponentType;$/;"	t	class:kaldi::nnet1::Component	typeref:enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::Info	nnet-component.h	/^  virtual std::string Info() const { return ""; }$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::InfoGradient	nnet-component.h	/^  virtual std::string InfoGradient() const { return ""; }$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::Init	nnet-component.cc	/^Component* Component::Init(const std::string &conf_line) {$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::InitData	nnet-component.h	/^  virtual void InitData(std::istream &is) { }$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::InputDim	nnet-component.h	/^  int32 InputDim() const { $/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::IsUpdatable	nnet-component.h	/^  virtual bool IsUpdatable() const { $/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::MarkerToType	nnet-component.cc	/^Component::ComponentType Component::MarkerToType(const std::string &s) {$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::NewComponentOfType	nnet-component.cc	/^Component* Component::NewComponentOfType(ComponentType comp_type,$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::OutputDim	nnet-component.h	/^  int32 OutputDim() const { $/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::Propagate	nnet-component.h	/^inline void Component::Propagate(const CuMatrix<BaseFloat> &in,$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::Read	nnet-component.cc	/^Component* Component::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::ReadData	nnet-component.h	/^  virtual void ReadData(std::istream &is, bool binary) { }$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::TypeToMarker	nnet-component.cc	/^const char* Component::TypeToMarker(ComponentType t) {$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::Write	nnet-component.cc	/^void Component::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::WriteData	nnet-component.h	/^  virtual void WriteData(std::ostream &os, bool binary) const { }$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::input_dim_	nnet-component.h	/^  int32 input_dim_;  \/\/\/< Size of input vectors$/;"	m	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::kActivationFunction	nnet-component.h	/^    kActivationFunction = 0x0200, $/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kAddShift	nnet-component.h	/^    kAddShift,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kAffineTransform	nnet-component.h	/^    kAffineTransform,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kAveragePooling2DComponent	nnet-component.h	/^    kAveragePooling2DComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kAveragePoolingComponent	nnet-component.h	/^    kAveragePoolingComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kBlockLinearity	nnet-component.h	/^    kBlockLinearity,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kConvolutional2DComponent	nnet-component.h	/^    kConvolutional2DComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kConvolutionalComponent	nnet-component.h	/^    kConvolutionalComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kCopy	nnet-component.h	/^    kCopy,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kDropout	nnet-component.h	/^    kDropout,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kKlHmm	nnet-component.h	/^    kKlHmm = 0x0800,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kMarkerMap	nnet-component.cc	/^const struct Component::key_value Component::kMarkerMap[] = {$/;"	m	class:kaldi::nnet1::Component	typeref:struct:kaldi::nnet1::Component::	file:
+kaldi::nnet1::Component::kMarkerMap	nnet-component.h	/^  static const struct key_value kMarkerMap[];$/;"	m	class:kaldi::nnet1::Component	typeref:struct:kaldi::nnet1::Component::key_value
+kaldi::nnet1::Component::kMaxPooling2DComponent	nnet-component.h	/^    kMaxPooling2DComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kMaxPoolingComponent	nnet-component.h	/^    kMaxPoolingComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kParallelComponent	nnet-component.h	/^    kParallelComponent$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kRbm	nnet-component.h	/^    kRbm,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kRescale	nnet-component.h	/^    kRescale,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kSentenceAveragingComponent	nnet-component.h	/^    kSentenceAveragingComponent,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kSigmoid	nnet-component.h	/^    kSigmoid,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kSoftmax	nnet-component.h	/^    kSoftmax, $/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kSplice	nnet-component.h	/^    kSplice,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kTanh	nnet-component.h	/^    kTanh,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kTranform	nnet-component.h	/^    kTranform = 0x0400,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kTranspose	nnet-component.h	/^    kTranspose,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kUnknown	nnet-component.h	/^    kUnknown = 0x0,$/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::kUpdatableComponent	nnet-component.h	/^    kUpdatableComponent = 0x0100, $/;"	e	enum:kaldi::nnet1::Component::__anon1
+kaldi::nnet1::Component::key_value	nnet-component.h	/^  struct key_value {$/;"	s	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::key_value::key	nnet-component.h	/^    const Component::ComponentType key;$/;"	m	struct:kaldi::nnet1::Component::key_value
+kaldi::nnet1::Component::key_value::value	nnet-component.h	/^    const char *value;$/;"	m	struct:kaldi::nnet1::Component::key_value
+kaldi::nnet1::Component::output_dim_	nnet-component.h	/^  int32 output_dim_; \/\/\/< Size of output vectors$/;"	m	class:kaldi::nnet1::Component
+kaldi::nnet1::Component::~Component	nnet-component.h	/^  virtual ~Component() { }$/;"	f	class:kaldi::nnet1::Component
+kaldi::nnet1::Convolutional2DComponent	nnet-convolutional-2d-component.h	/^class Convolutional2DComponent : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Convolutional2DComponent::BackpropagateFnc	nnet-convolutional-2d-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::Convolutional2DComponent	nnet-convolutional-2d-component.h	/^  Convolutional2DComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::Copy	nnet-convolutional-2d-component.h	/^  Component* Copy() const { return new Convolutional2DComponent(*this); }$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::GetParams	nnet-convolutional-2d-component.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::GetType	nnet-convolutional-2d-component.h	/^  ComponentType GetType() const { return kConvolutional2DComponent; }$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::Info	nnet-convolutional-2d-component.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::InfoGradient	nnet-convolutional-2d-component.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::InitData	nnet-convolutional-2d-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::NumParams	nnet-convolutional-2d-component.h	/^  int32 NumParams() const { $/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::PropagateFnc	nnet-convolutional-2d-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::ReadData	nnet-convolutional-2d-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::Update	nnet-convolutional-2d-component.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::WriteData	nnet-convolutional-2d-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::bias_	nnet-convolutional-2d-component.h	/^  CuVector<BaseFloat> bias_; \/\/\/< bias for each filter$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::bias_grad_	nnet-convolutional-2d-component.h	/^  CuVector<BaseFloat> bias_grad_; \/\/\/< gradient of biases$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::connect_fmap_	nnet-convolutional-2d-component.h	/^    connect_fmap_; \/\/\/< if connect_fmap_ = 1, then each fmap has num_filt$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::feature_patch_diffs_	nnet-convolutional-2d-component.h	/^  std::vector<CuMatrix<BaseFloat> > feature_patch_diffs_;$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::filt_x_len_	nnet-convolutional-2d-component.h	/^    filt_x_len_,filt_y_len_,    \/\/\/< 2D filter dimensions, x_ temporal, y_ spectral$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::filt_x_step_	nnet-convolutional-2d-component.h	/^    filt_x_step_, filt_y_step_,   \/\/\/< 2D shifts along temporal and spectral$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::filt_y_len_	nnet-convolutional-2d-component.h	/^    filt_x_len_,filt_y_len_,    \/\/\/< 2D filter dimensions, x_ temporal, y_ spectral$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::filt_y_step_	nnet-convolutional-2d-component.h	/^    filt_x_step_, filt_y_step_,   \/\/\/< 2D shifts along temporal and spectral$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::filters_	nnet-convolutional-2d-component.h	/^  CuMatrix<BaseFloat> filters_; \/\/\/< row = vectorized rectangular filter$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::filters_grad_	nnet-convolutional-2d-component.h	/^  CuMatrix<BaseFloat> filters_grad_; \/\/\/< gradient of filters$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::fmap_x_len_	nnet-convolutional-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_, \/\/\/< feature maps dimensions (for input x_ is usually splice and y_ is num of fbanks) shift for 2nd dim of a patch (i.e. frame length before splicing)$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::fmap_y_len_	nnet-convolutional-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_, \/\/\/< feature maps dimensions (for input x_ is usually splice and y_ is num of fbanks) shift for 2nd dim of a patch (i.e. frame length before splicing)$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::in_diff_summands_	nnet-convolutional-2d-component.h	/^  CuVector<BaseFloat> in_diff_summands_;$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::vectorized_feature_patches_	nnet-convolutional-2d-component.h	/^  std::vector<CuMatrix<BaseFloat> > vectorized_feature_patches_;$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::Convolutional2DComponent::~Convolutional2DComponent	nnet-convolutional-2d-component.h	/^  ~Convolutional2DComponent()$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+kaldi::nnet1::ConvolutionalComponent	nnet-convolutional-component.h	/^class ConvolutionalComponent : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::ConvolutionalComponent::BackpropagateFnc	nnet-convolutional-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::ConvolutionalComponent	nnet-convolutional-component.h	/^  ConvolutionalComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::Copy	nnet-convolutional-component.h	/^  Component* Copy() const { return new ConvolutionalComponent(*this); }$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::GetParams	nnet-convolutional-component.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::GetType	nnet-convolutional-component.h	/^  ComponentType GetType() const { return kConvolutionalComponent; }$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::Info	nnet-convolutional-component.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::InfoGradient	nnet-convolutional-component.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::InitData	nnet-convolutional-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::NumParams	nnet-convolutional-component.h	/^  int32 NumParams() const { $/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::PropagateFnc	nnet-convolutional-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::ReadData	nnet-convolutional-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::Update	nnet-convolutional-component.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::WriteData	nnet-convolutional-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::bias_	nnet-convolutional-component.h	/^  CuVector<BaseFloat> bias_; \/\/\/< bias for each filter$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::bias_grad_	nnet-convolutional-component.h	/^  CuVector<BaseFloat> bias_grad_; \/\/\/< gradient of biases$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::feature_patch_diffs_	nnet-convolutional-component.h	/^  std::vector<CuMatrix<BaseFloat> > feature_patch_diffs_;$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::filters_	nnet-convolutional-component.h	/^  CuMatrix<BaseFloat> filters_; \/\/\/< row = vectorized rectangular filter$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::filters_grad_	nnet-convolutional-component.h	/^  CuMatrix<BaseFloat> filters_grad_; \/\/\/< gradient of filters$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::in_diff_summands_	nnet-convolutional-component.h	/^  CuVector<BaseFloat> in_diff_summands_;$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::patch_dim_	nnet-convolutional-component.h	/^  int32 patch_dim_,    \/\/\/< number of consecutive inputs, 1st dim of patch$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::patch_step_	nnet-convolutional-component.h	/^        patch_step_,   \/\/\/< step of the convolution (i.e. shift between 2 patches)$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::patch_stride_	nnet-convolutional-component.h	/^        patch_stride_; \/\/\/< shift for 2nd dim of a patch (i.e. frame length before splicing)$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::vectorized_feature_patches_	nnet-convolutional-component.h	/^  std::vector<CuMatrix<BaseFloat> > vectorized_feature_patches_; $/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::ConvolutionalComponent::~ConvolutionalComponent	nnet-convolutional-component.h	/^  ~ConvolutionalComponent()$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+kaldi::nnet1::CopyComponent	nnet-various.h	/^class CopyComponent: public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::CopyComponent::BackpropagateFnc	nnet-various.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::Copy	nnet-various.h	/^  Component* Copy() const { return new CopyComponent(*this); }$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::CopyComponent	nnet-various.h	/^  CopyComponent(int32 dim_in, int32 dim_out)$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::GetType	nnet-various.h	/^  ComponentType GetType() const { return kCopy; }$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::Info	nnet-various.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::InitData	nnet-various.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::PropagateFnc	nnet-various.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) { $/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::ReadData	nnet-various.h	/^  void ReadData(std::istream &is, bool binary) { $/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::WriteData	nnet-various.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::copy_from_indices_	nnet-various.h	/^  CuArray<int32> copy_from_indices_;$/;"	m	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::op_decrease	nnet-various.h	/^  static int32 op_decrease (int32 i) { return --i; }$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::op_increase	nnet-various.h	/^  static int32 op_increase (int32 i) { return ++i; }$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::CopyComponent::~CopyComponent	nnet-various.h	/^  ~CopyComponent()$/;"	f	class:kaldi::nnet1::CopyComponent
+kaldi::nnet1::Dropout	nnet-activation.h	/^class Dropout : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Dropout::BackpropagateFnc	nnet-activation.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Dropout
+kaldi::nnet1::Dropout::Copy	nnet-activation.h	/^  Component* Copy() const { return new Dropout(*this); }$/;"	f	class:kaldi::nnet1::Dropout
+kaldi::nnet1::Dropout::Dropout	nnet-activation.h	/^  Dropout(int32 dim_in, int32 dim_out):$/;"	f	class:kaldi::nnet1::Dropout
+kaldi::nnet1::Dropout::GetType	nnet-activation.h	/^  ComponentType GetType() const { return kDropout; }$/;"	f	class:kaldi::nnet1::Dropout
+kaldi::nnet1::Dropout::PropagateFnc	nnet-activation.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Dropout
+kaldi::nnet1::Dropout::dropout_mask_	nnet-activation.h	/^  CuMatrix<BaseFloat> dropout_mask_;$/;"	m	class:kaldi::nnet1::Dropout
+kaldi::nnet1::Dropout::rand_	nnet-activation.h	/^  CuRand<BaseFloat> rand_;$/;"	m	class:kaldi::nnet1::Dropout
+kaldi::nnet1::Dropout::~Dropout	nnet-activation.h	/^  ~Dropout()$/;"	f	class:kaldi::nnet1::Dropout
+kaldi::nnet1::Int32VectorRandomizer	nnet-randomizer.h	/^typedef StdVectorRandomizer<int32> Int32VectorRandomizer;$/;"	t	namespace:kaldi::nnet1
+kaldi::nnet1::KlHmm	nnet-kl-hmm.h	/^class KlHmm : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::KlHmm::Accumulate	nnet-kl-hmm.h	/^  void Accumulate (const Matrix<BaseFloat> &posteriors, const std::vector<int32> &alignment) {$/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::BackpropagateFnc	nnet-kl-hmm.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::Copy	nnet-kl-hmm.h	/^  Component* Copy() const { return new KlHmm(*this); }$/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::GetType	nnet-kl-hmm.h	/^  ComponentType GetType() const {$/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::KlHmm	nnet-kl-hmm.h	/^  KlHmm(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::PropagateFnc	nnet-kl-hmm.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::ReadData	nnet-kl-hmm.h	/^  void ReadData(std::istream &is, bool binary) { $/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::SetStats	nnet-kl-hmm.h	/^  void SetStats(const Matrix<BaseFloat> mat) {$/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::WriteData	nnet-kl-hmm.h	/^  void WriteData(std::ostream &os, bool binary) const { $/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::kl_inv_q_	nnet-kl-hmm.h	/^  CuMatrix<BaseFloat> kl_inv_q_;$/;"	m	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::kl_stats_	nnet-kl-hmm.h	/^  Matrix<double> kl_stats_;$/;"	m	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::KlHmm::~KlHmm	nnet-kl-hmm.h	/^  ~KlHmm()$/;"	f	class:kaldi::nnet1::KlHmm
+kaldi::nnet1::MatrixRandomizer	nnet-randomizer.h	/^class MatrixRandomizer {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::MatrixRandomizer::AddData	nnet-randomizer.cc	/^void MatrixRandomizer::AddData(const CuMatrix<BaseFloat>& m) {$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::Done	nnet-randomizer.h	/^  bool Done() { return (data_end_ - data_begin_ < conf_.minibatch_size); }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::Init	nnet-randomizer.h	/^  void Init(const NnetDataRandomizerOptions& conf) { conf_ = conf; }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::IsFull	nnet-randomizer.h	/^  bool IsFull() { return ((data_begin_ == 0) && (data_end_ > conf_.randomizer_size )); }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::MatrixRandomizer	nnet-randomizer.h	/^  MatrixRandomizer() : data_begin_(0), data_end_(0) { }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::MatrixRandomizer	nnet-randomizer.h	/^  MatrixRandomizer(const NnetDataRandomizerOptions &conf) : data_begin_(0), data_end_(0) { Init(conf); }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::Next	nnet-randomizer.cc	/^void MatrixRandomizer::Next() {$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::NumFrames	nnet-randomizer.h	/^  int32 NumFrames() { return data_end_; }$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::Randomize	nnet-randomizer.cc	/^void MatrixRandomizer::Randomize(const std::vector<int32>& mask) {$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::Value	nnet-randomizer.cc	/^const CuMatrix<BaseFloat>& MatrixRandomizer::Value() {$/;"	f	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::conf_	nnet-randomizer.h	/^  NnetDataRandomizerOptions conf_;$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::data_	nnet-randomizer.h	/^  CuMatrix<BaseFloat> data_; \/\/ can be larger than 'randomizer_size'$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::data_aux_	nnet-randomizer.h	/^  CuMatrix<BaseFloat> data_aux_; \/\/ auxiliary buffer for shuffling$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::data_begin_	nnet-randomizer.h	/^  int32 data_begin_;$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::data_end_	nnet-randomizer.h	/^  int32 data_end_;   $/;"	m	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MatrixRandomizer::minibatch_	nnet-randomizer.h	/^  CuMatrix<BaseFloat> minibatch_; \/\/ buffer for mini-batch$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+kaldi::nnet1::MaxPooling2DComponent	nnet-max-pooling-2d-component.h	/^class MaxPooling2DComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::MaxPooling2DComponent::BackpropagateFnc	nnet-max-pooling-2d-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::Copy	nnet-max-pooling-2d-component.h	/^  Component* Copy() const { return new MaxPooling2DComponent(*this); }$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::GetType	nnet-max-pooling-2d-component.h	/^  ComponentType GetType() const { return kMaxPooling2DComponent; }$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::InitData	nnet-max-pooling-2d-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::MaxPooling2DComponent	nnet-max-pooling-2d-component.h	/^  MaxPooling2DComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::PropagateFnc	nnet-max-pooling-2d-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::ReadData	nnet-max-pooling-2d-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::WriteData	nnet-max-pooling-2d-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::fmap_x_len_	nnet-max-pooling-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_,$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::fmap_y_len_	nnet-max-pooling-2d-component.h	/^  int32 fmap_x_len_, fmap_y_len_,$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::pool_x_len_	nnet-max-pooling-2d-component.h	/^    pool_x_len_, pool_y_len_,$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::pool_x_step_	nnet-max-pooling-2d-component.h	/^    pool_x_step_, pool_y_step_;$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::pool_y_len_	nnet-max-pooling-2d-component.h	/^    pool_x_len_, pool_y_len_,$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::pool_y_step_	nnet-max-pooling-2d-component.h	/^    pool_x_step_, pool_y_step_;$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPooling2DComponent::~MaxPooling2DComponent	nnet-max-pooling-2d-component.h	/^  ~MaxPooling2DComponent()$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+kaldi::nnet1::MaxPoolingComponent	nnet-max-pooling-component.h	/^class MaxPoolingComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::MaxPoolingComponent::BackpropagateFnc	nnet-max-pooling-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::Copy	nnet-max-pooling-component.h	/^  Component* Copy() const { return new MaxPoolingComponent(*this); }$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::GetType	nnet-max-pooling-component.h	/^  ComponentType GetType() const { return kMaxPoolingComponent; }$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::InitData	nnet-max-pooling-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::MaxPoolingComponent	nnet-max-pooling-component.h	/^  MaxPoolingComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::PropagateFnc	nnet-max-pooling-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::ReadData	nnet-max-pooling-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::WriteData	nnet-max-pooling-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::pool_size_	nnet-max-pooling-component.h	/^  int32 pool_size_,   \/\/ input patches used for pooling$/;"	m	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::pool_step_	nnet-max-pooling-component.h	/^        pool_step_,   \/\/ shift used for pooling (allow overlapping pools)$/;"	m	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::pool_stride_	nnet-max-pooling-component.h	/^        pool_stride_; \/\/ stride used to cut input matrix to a vector of matrices$/;"	m	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MaxPoolingComponent::~MaxPoolingComponent	nnet-max-pooling-component.h	/^  ~MaxPoolingComponent()$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+kaldi::nnet1::MomentStatistics	nnet-various.h	/^std::string MomentStatistics(const CuMatrix<Real> &mat) {$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::MomentStatistics	nnet-various.h	/^std::string MomentStatistics(const CuVector<Real> &vec) {$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::MomentStatistics	nnet-various.h	/^std::string MomentStatistics(const Matrix<Real> &mat) {$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::MomentStatistics	nnet-various.h	/^std::string MomentStatistics(const Vector<Real> &vec) {$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::Mse	nnet-loss.h	/^class Mse {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Mse::Eval	nnet-loss.cc	/^void Mse::Eval(const CuMatrix<BaseFloat>& net_out, const CuMatrix<BaseFloat>& target, CuMatrix<BaseFloat>* diff) {$/;"	f	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::Eval	nnet-loss.cc	/^void Mse::Eval(const CuMatrix<BaseFloat>& net_out, const Posterior& post, CuMatrix<BaseFloat>* diff) {$/;"	f	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::Mse	nnet-loss.h	/^  Mse() : frames_(0), loss_(0.0), $/;"	f	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::Report	nnet-loss.cc	/^std::string Mse::Report() {$/;"	f	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::diff_pow_2_	nnet-loss.h	/^  CuMatrix<BaseFloat> diff_pow_2_;$/;"	m	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::frames_	nnet-loss.h	/^  int32 frames_;$/;"	m	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::frames_progress_	nnet-loss.h	/^  int32 frames_progress_;$/;"	m	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::loss_	nnet-loss.h	/^  double loss_;$/;"	m	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::loss_progress_	nnet-loss.h	/^  double loss_progress_;$/;"	m	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::loss_vec_	nnet-loss.h	/^  std::vector<float> loss_vec_;$/;"	m	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::sum_diff_pow_2_	nnet-loss.h	/^  CuVector<BaseFloat> sum_diff_pow_2_;$/;"	m	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::sum_diff_pow_2_host_	nnet-loss.h	/^  Vector<BaseFloat>   sum_diff_pow_2_host_;$/;"	m	class:kaldi::nnet1::Mse
+kaldi::nnet1::Mse::~Mse	nnet-loss.h	/^  ~Mse() { }$/;"	f	class:kaldi::nnet1::Mse
+kaldi::nnet1::Nnet	nnet-nnet.h	/^class Nnet {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Nnet::AppendComponent	nnet-nnet.cc	/^void Nnet::AppendComponent(Component* dynamically_allocated_comp) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::AppendNnet	nnet-nnet.cc	/^void Nnet::AppendNnet(const Nnet& nnet_to_append) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Backpropagate	nnet-nnet.cc	/^void Nnet::Backpropagate(const CuMatrix<BaseFloat> &out_diff, CuMatrix<BaseFloat> *in_diff) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::BackpropagateBuffer	nnet-nnet.h	/^  const std::vector<CuMatrix<BaseFloat> >& BackpropagateBuffer() const { $/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Check	nnet-nnet.cc	/^void Nnet::Check() const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Destroy	nnet-nnet.cc	/^void Nnet::Destroy() {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Feedforward	nnet-nnet.cc	/^void Nnet::Feedforward(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::GetComponent	nnet-nnet.cc	/^Component& Nnet::GetComponent(int32 component) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::GetComponent	nnet-nnet.cc	/^const Component& Nnet::GetComponent(int32 component) const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::GetGradient	nnet-nnet.cc	/^void Nnet::GetGradient(Vector<BaseFloat>* grad_copy) const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::GetParams	nnet-nnet.cc	/^void Nnet::GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::GetTrainOptions	nnet-nnet.h	/^  const NnetTrainOptions& GetTrainOptions() const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::GetWeights	nnet-nnet.cc	/^void Nnet::GetWeights(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Info	nnet-nnet.cc	/^std::string Nnet::Info() const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::InfoBackPropagate	nnet-nnet.cc	/^std::string Nnet::InfoBackPropagate() const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::InfoGradient	nnet-nnet.cc	/^std::string Nnet::InfoGradient() const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::InfoPropagate	nnet-nnet.cc	/^std::string Nnet::InfoPropagate() const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Init	nnet-nnet.cc	/^void Nnet::Init(const std::string &file) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::InputDim	nnet-nnet.cc	/^int32 Nnet::InputDim() const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Nnet	nnet-nnet.cc	/^Nnet::Nnet(const Nnet& other) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Nnet	nnet-nnet.h	/^  Nnet() {}$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::NumComponents	nnet-nnet.h	/^  int32 NumComponents() const { return components_.size(); }$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::NumParams	nnet-nnet.cc	/^int32 Nnet::NumParams() const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::OutputDim	nnet-nnet.cc	/^int32 Nnet::OutputDim() const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Propagate	nnet-nnet.cc	/^void Nnet::Propagate(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::PropagateBuffer	nnet-nnet.h	/^  const std::vector<CuMatrix<BaseFloat> >& PropagateBuffer() const { $/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Read	nnet-nnet.cc	/^void Nnet::Read(const std::string &file) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Read	nnet-nnet.cc	/^void Nnet::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::RemoveComponent	nnet-nnet.cc	/^void Nnet::RemoveComponent(int32 component) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::RemoveLastComponent	nnet-nnet.h	/^  void RemoveLastComponent() { RemoveComponent(NumComponents()-1); }$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::SetComponent	nnet-nnet.cc	/^void Nnet::SetComponent(int32 c, Component *component) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::SetTrainOptions	nnet-nnet.cc	/^void Nnet::SetTrainOptions(const NnetTrainOptions& opts) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::SetWeights	nnet-nnet.cc	/^void Nnet::SetWeights(const Vector<BaseFloat>& wei_src) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Write	nnet-nnet.cc	/^void Nnet::Write(const std::string &file, bool binary) const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::Write	nnet-nnet.cc	/^void Nnet::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::backpropagate_buf_	nnet-nnet.h	/^  std::vector<CuMatrix<BaseFloat> > backpropagate_buf_; \/\/\/< buffers for backward pass$/;"	m	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::components_	nnet-nnet.h	/^  std::vector<Component*> components_; $/;"	m	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::operator =	nnet-nnet.cc	/^Nnet & Nnet::operator = (const Nnet& other) {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::opts_	nnet-nnet.h	/^  NnetTrainOptions opts_;$/;"	m	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::propagate_buf_	nnet-nnet.h	/^  std::vector<CuMatrix<BaseFloat> > propagate_buf_; \/\/\/< buffers for forward pass$/;"	m	class:kaldi::nnet1::Nnet
+kaldi::nnet1::Nnet::~Nnet	nnet-nnet.cc	/^Nnet::~Nnet() {$/;"	f	class:kaldi::nnet1::Nnet
+kaldi::nnet1::NnetDataRandomizerOptions	nnet-randomizer.h	/^struct NnetDataRandomizerOptions {$/;"	s	namespace:kaldi::nnet1
+kaldi::nnet1::NnetDataRandomizerOptions::NnetDataRandomizerOptions	nnet-randomizer.h	/^  NnetDataRandomizerOptions()$/;"	f	struct:kaldi::nnet1::NnetDataRandomizerOptions
+kaldi::nnet1::NnetDataRandomizerOptions::Register	nnet-randomizer.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet1::NnetDataRandomizerOptions
+kaldi::nnet1::NnetDataRandomizerOptions::minibatch_size	nnet-randomizer.h	/^  int32 minibatch_size;  \/\/ Size of a single mini-batch.$/;"	m	struct:kaldi::nnet1::NnetDataRandomizerOptions
+kaldi::nnet1::NnetDataRandomizerOptions::randomizer_seed	nnet-randomizer.h	/^  int32 randomizer_seed;$/;"	m	struct:kaldi::nnet1::NnetDataRandomizerOptions
+kaldi::nnet1::NnetDataRandomizerOptions::randomizer_size	nnet-randomizer.h	/^  int32 randomizer_size; \/\/ Maximum number of samples we want to have in memory at once.$/;"	m	struct:kaldi::nnet1::NnetDataRandomizerOptions
+kaldi::nnet1::NnetTrainOptions	nnet-trnopts.h	/^struct NnetTrainOptions {$/;"	s	namespace:kaldi::nnet1
+kaldi::nnet1::NnetTrainOptions::NnetTrainOptions	nnet-trnopts.h	/^  NnetTrainOptions() : learn_rate(0.008),$/;"	f	struct:kaldi::nnet1::NnetTrainOptions
+kaldi::nnet1::NnetTrainOptions::Register	nnet-trnopts.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet1::NnetTrainOptions
+kaldi::nnet1::NnetTrainOptions::l1_penalty	nnet-trnopts.h	/^  BaseFloat l1_penalty;$/;"	m	struct:kaldi::nnet1::NnetTrainOptions
+kaldi::nnet1::NnetTrainOptions::l2_penalty	nnet-trnopts.h	/^  BaseFloat l2_penalty;$/;"	m	struct:kaldi::nnet1::NnetTrainOptions
+kaldi::nnet1::NnetTrainOptions::learn_rate	nnet-trnopts.h	/^  BaseFloat learn_rate;$/;"	m	struct:kaldi::nnet1::NnetTrainOptions
+kaldi::nnet1::NnetTrainOptions::momentum	nnet-trnopts.h	/^  BaseFloat momentum;$/;"	m	struct:kaldi::nnet1::NnetTrainOptions
+kaldi::nnet1::NnetTrainOptions::operator <<	nnet-trnopts.h	/^  friend std::ostream& operator<<(std::ostream& os, const NnetTrainOptions& opts) {$/;"	f	struct:kaldi::nnet1::NnetTrainOptions
+kaldi::nnet1::ParallelComponent	nnet-parallel-component.h	/^class ParallelComponent : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::ParallelComponent::BackpropagateFnc	nnet-parallel-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::Copy	nnet-parallel-component.h	/^  Component* Copy() const { return new ParallelComponent(*this); }$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::GetParams	nnet-parallel-component.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const { $/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::GetType	nnet-parallel-component.h	/^  ComponentType GetType() const { return kParallelComponent; }$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::Info	nnet-parallel-component.h	/^  std::string Info() const { $/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::InfoGradient	nnet-parallel-component.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::InitData	nnet-parallel-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::NumParams	nnet-parallel-component.h	/^  int32 NumParams() const { $/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::ParallelComponent	nnet-parallel-component.h	/^  ParallelComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::PropagateFnc	nnet-parallel-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::ReadData	nnet-parallel-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::SetTrainOptions	nnet-parallel-component.h	/^  void SetTrainOptions(const NnetTrainOptions &opts) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::Update	nnet-parallel-component.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::WriteData	nnet-parallel-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::nnet_	nnet-parallel-component.h	/^  std::vector<Nnet> nnet_;$/;"	m	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::ParallelComponent::~ParallelComponent	nnet-parallel-component.h	/^  ~ParallelComponent()$/;"	f	class:kaldi::nnet1::ParallelComponent
+kaldi::nnet1::PdfPrior	nnet-pdf-prior.h	/^class PdfPrior {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::PdfPrior::PdfPrior	nnet-pdf-prior.cc	/^PdfPrior::PdfPrior(const PdfPriorOptions &opts)$/;"	f	class:kaldi::nnet1::PdfPrior
+kaldi::nnet1::PdfPrior::SubtractOnLogpost	nnet-pdf-prior.cc	/^void PdfPrior::SubtractOnLogpost(CuMatrix<BaseFloat> *llk) {$/;"	f	class:kaldi::nnet1::PdfPrior
+kaldi::nnet1::PdfPrior::log_priors_	nnet-pdf-prior.h	/^  CuVector<BaseFloat> log_priors_;$/;"	m	class:kaldi::nnet1::PdfPrior
+kaldi::nnet1::PdfPrior::prior_scale_	nnet-pdf-prior.h	/^  BaseFloat prior_scale_;$/;"	m	class:kaldi::nnet1::PdfPrior
+kaldi::nnet1::PdfPriorOptions	nnet-pdf-prior.h	/^struct PdfPriorOptions {$/;"	s	namespace:kaldi::nnet1
+kaldi::nnet1::PdfPriorOptions::PdfPriorOptions	nnet-pdf-prior.h	/^  PdfPriorOptions() : class_frame_counts(""),$/;"	f	struct:kaldi::nnet1::PdfPriorOptions
+kaldi::nnet1::PdfPriorOptions::Register	nnet-pdf-prior.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet1::PdfPriorOptions
+kaldi::nnet1::PdfPriorOptions::class_frame_counts	nnet-pdf-prior.h	/^  std::string class_frame_counts;$/;"	m	struct:kaldi::nnet1::PdfPriorOptions
+kaldi::nnet1::PdfPriorOptions::prior_cutoff	nnet-pdf-prior.h	/^  BaseFloat prior_cutoff;$/;"	m	struct:kaldi::nnet1::PdfPriorOptions
+kaldi::nnet1::PdfPriorOptions::prior_scale	nnet-pdf-prior.h	/^  BaseFloat prior_scale;$/;"	m	struct:kaldi::nnet1::PdfPriorOptions
+kaldi::nnet1::PosteriorRandomizer	nnet-randomizer.h	/^typedef StdVectorRandomizer<std::vector<std::pair<int32, BaseFloat> > > PosteriorRandomizer;$/;"	t	namespace:kaldi::nnet1
+kaldi::nnet1::RandomizerMask	nnet-randomizer.h	/^class RandomizerMask {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::RandomizerMask::Generate	nnet-randomizer.cc	/^const std::vector<int32>& RandomizerMask::Generate(int32 mask_size) {$/;"	f	class:kaldi::nnet1::RandomizerMask
+kaldi::nnet1::RandomizerMask::Init	nnet-randomizer.cc	/^void RandomizerMask::Init(const NnetDataRandomizerOptions& conf) {$/;"	f	class:kaldi::nnet1::RandomizerMask
+kaldi::nnet1::RandomizerMask::RandomizerMask	nnet-randomizer.h	/^  RandomizerMask() { }$/;"	f	class:kaldi::nnet1::RandomizerMask
+kaldi::nnet1::RandomizerMask::RandomizerMask	nnet-randomizer.h	/^  RandomizerMask(const NnetDataRandomizerOptions &conf) { Init(conf); }$/;"	f	class:kaldi::nnet1::RandomizerMask
+kaldi::nnet1::RandomizerMask::mask_	nnet-randomizer.h	/^  std::vector<int32> mask_;$/;"	m	class:kaldi::nnet1::RandomizerMask
+kaldi::nnet1::Rbm	nnet-rbm.h	/^class Rbm : public RbmBase {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Rbm::Copy	nnet-rbm.h	/^  Component* Copy() const { return new Rbm(*this); }$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::GetType	nnet-rbm.h	/^  ComponentType GetType() const { return kRbm; }$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::HidType	nnet-rbm.h	/^  RbmNodeType HidType() const { $/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::InitData	nnet-rbm.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::PropagateFnc	nnet-rbm.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::Rbm	nnet-rbm.h	/^  Rbm(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::RbmUpdate	nnet-rbm.h	/^  void RbmUpdate(const CuMatrix<BaseFloat> &pos_vis, const CuMatrix<BaseFloat> &pos_hid, const CuMatrix<BaseFloat> &neg_vis, const CuMatrix<BaseFloat> &neg_hid) {$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::ReadData	nnet-rbm.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::Reconstruct	nnet-rbm.h	/^  void Reconstruct(const CuMatrix<BaseFloat> &hid_state, CuMatrix<BaseFloat> *vis_probs) {$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::VisType	nnet-rbm.h	/^  RbmNodeType VisType() const { $/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::WriteAsNnet	nnet-rbm.h	/^  void WriteAsNnet(std::ostream& os, bool binary) const {$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::WriteData	nnet-rbm.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::hid_bias_	nnet-rbm.h	/^  CuVector<BaseFloat> hid_bias_;       \/\/\/< Vector with biases$/;"	m	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::hid_bias_corr_	nnet-rbm.h	/^  CuVector<BaseFloat> hid_bias_corr_;  \/\/\/< Vector for bias updates$/;"	m	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::hid_type_	nnet-rbm.h	/^  RbmNodeType hid_type_;$/;"	m	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::vis_bias_	nnet-rbm.h	/^  CuVector<BaseFloat> vis_bias_;       \/\/\/< Vector with biases$/;"	m	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::vis_bias_corr_	nnet-rbm.h	/^  CuVector<BaseFloat> vis_bias_corr_;  \/\/\/< Vector for bias updates$/;"	m	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::vis_hid_	nnet-rbm.h	/^  CuMatrix<BaseFloat> vis_hid_;        \/\/\/< Matrix with neuron weights$/;"	m	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::vis_hid_corr_	nnet-rbm.h	/^  CuMatrix<BaseFloat> vis_hid_corr_;   \/\/\/< Matrix for linearity updates$/;"	m	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::vis_type_	nnet-rbm.h	/^  RbmNodeType vis_type_;$/;"	m	class:kaldi::nnet1::Rbm
+kaldi::nnet1::Rbm::~Rbm	nnet-rbm.h	/^  ~Rbm()$/;"	f	class:kaldi::nnet1::Rbm
+kaldi::nnet1::RbmBase	nnet-rbm.h	/^class RbmBase : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::RbmBase::Backpropagate	nnet-rbm.h	/^  void Backpropagate(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::RbmBase
+kaldi::nnet1::RbmBase::BackpropagateFnc	nnet-rbm.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::RbmBase
+kaldi::nnet1::RbmBase::Bernoulli	nnet-rbm.h	/^    Bernoulli,$/;"	e	enum:kaldi::nnet1::RbmBase::__anon2
+kaldi::nnet1::RbmBase::Gaussian	nnet-rbm.h	/^    Gaussian$/;"	e	enum:kaldi::nnet1::RbmBase::__anon2
+kaldi::nnet1::RbmBase::GetRbmTrainOptions	nnet-rbm.h	/^  const RbmTrainOptions& GetRbmTrainOptions() const {$/;"	f	class:kaldi::nnet1::RbmBase
+kaldi::nnet1::RbmBase::RbmBase	nnet-rbm.h	/^  RbmBase(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::RbmBase
+kaldi::nnet1::RbmBase::RbmNodeType	nnet-rbm.h	/^  } RbmNodeType;$/;"	t	class:kaldi::nnet1::RbmBase	typeref:enum:kaldi::nnet1::RbmBase::__anon2
+kaldi::nnet1::RbmBase::SetRbmTrainOptions	nnet-rbm.h	/^  void SetRbmTrainOptions(const RbmTrainOptions& opts) {$/;"	f	class:kaldi::nnet1::RbmBase
+kaldi::nnet1::RbmBase::rbm_opts_	nnet-rbm.h	/^  RbmTrainOptions rbm_opts_;$/;"	m	class:kaldi::nnet1::RbmBase
+kaldi::nnet1::RbmTrainOptions	nnet-trnopts.h	/^struct RbmTrainOptions {$/;"	s	namespace:kaldi::nnet1
+kaldi::nnet1::RbmTrainOptions::RbmTrainOptions	nnet-trnopts.h	/^  RbmTrainOptions() : learn_rate(0.4),$/;"	f	struct:kaldi::nnet1::RbmTrainOptions
+kaldi::nnet1::RbmTrainOptions::Register	nnet-trnopts.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet1::RbmTrainOptions
+kaldi::nnet1::RbmTrainOptions::l2_penalty	nnet-trnopts.h	/^  BaseFloat l2_penalty;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+kaldi::nnet1::RbmTrainOptions::learn_rate	nnet-trnopts.h	/^  BaseFloat learn_rate;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+kaldi::nnet1::RbmTrainOptions::momentum	nnet-trnopts.h	/^  BaseFloat momentum;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+kaldi::nnet1::RbmTrainOptions::momentum_max	nnet-trnopts.h	/^  BaseFloat momentum_max;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+kaldi::nnet1::RbmTrainOptions::momentum_step_period	nnet-trnopts.h	/^  int32 momentum_step_period;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+kaldi::nnet1::RbmTrainOptions::momentum_steps	nnet-trnopts.h	/^  int32 momentum_steps;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+kaldi::nnet1::RbmTrainOptions::operator <<	nnet-trnopts.h	/^  friend std::ostream& operator<<(std::ostream& os, const RbmTrainOptions& opts) {$/;"	f	struct:kaldi::nnet1::RbmTrainOptions
+kaldi::nnet1::Rescale	nnet-various.h	/^class Rescale : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Rescale::BackpropagateFnc	nnet-various.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::Copy	nnet-various.h	/^  Component* Copy() const { return new Rescale(*this); }$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::GetParams	nnet-various.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const {$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::GetScaleVec	nnet-various.h	/^  const CuVector<BaseFloat>& GetScaleVec() {$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::GetType	nnet-various.h	/^  ComponentType GetType() const { return kRescale; }$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::Info	nnet-various.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::InfoGradient	nnet-various.h	/^  std::string InfoGradient() const {$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::InitData	nnet-various.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::NumParams	nnet-various.h	/^  int32 NumParams() const { return scale_data_.Dim(); }$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::PropagateFnc	nnet-various.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) { $/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::ReadData	nnet-various.h	/^  void ReadData(std::istream &is, bool binary) { $/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::Rescale	nnet-various.h	/^  Rescale(int32 dim_in, int32 dim_out)$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::SetScaleVec	nnet-various.h	/^  void SetScaleVec(const CuVector<BaseFloat>& scale_data) {$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::Update	nnet-various.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::WriteData	nnet-various.h	/^  void WriteData(std::ostream &os, bool binary) const { $/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::scale_data_	nnet-various.h	/^  CuVector<BaseFloat> scale_data_;$/;"	m	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::scale_data_grad_	nnet-various.h	/^  CuVector<BaseFloat> scale_data_grad_;$/;"	m	class:kaldi::nnet1::Rescale
+kaldi::nnet1::Rescale::~Rescale	nnet-various.h	/^  ~Rescale()$/;"	f	class:kaldi::nnet1::Rescale
+kaldi::nnet1::SentenceAveragingComponent	nnet-sentence-averaging-component.h	/^class SentenceAveragingComponent : public UpdatableComponent {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::SentenceAveragingComponent::BackpropagateFnc	nnet-sentence-averaging-component.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::Copy	nnet-sentence-averaging-component.h	/^  Component* Copy() const { return new SentenceAveragingComponent(*this); }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::GetParams	nnet-sentence-averaging-component.h	/^  void GetParams(Vector<BaseFloat>* wei_copy) const { wei_copy->Resize(NumParams()); nnet_.GetParams(wei_copy); }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::GetType	nnet-sentence-averaging-component.h	/^  ComponentType GetType() const { return kSentenceAveragingComponent; }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::Info	nnet-sentence-averaging-component.h	/^  std::string Info() const { return std::string("nested_network {\\n") + nnet_.Info() + "}\\n"; }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::InfoGradient	nnet-sentence-averaging-component.h	/^  std::string InfoGradient() const { return std::string("nested_gradient {\\n") + nnet_.InfoGradient() + "}\\n"; }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::InitData	nnet-sentence-averaging-component.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::NumParams	nnet-sentence-averaging-component.h	/^  int32 NumParams() const { return nnet_.NumParams(); }$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::PropagateFnc	nnet-sentence-averaging-component.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::ReadData	nnet-sentence-averaging-component.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::SentenceAveragingComponent	nnet-sentence-averaging-component.h	/^  SentenceAveragingComponent(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::SetTrainOptions	nnet-sentence-averaging-component.h	/^  void SetTrainOptions(const NnetTrainOptions &opts) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::Update	nnet-sentence-averaging-component.h	/^  void Update(const CuMatrix<BaseFloat> &input, const CuMatrix<BaseFloat> &diff) {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::WriteData	nnet-sentence-averaging-component.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::learn_rate_factor_	nnet-sentence-averaging-component.h	/^  float learn_rate_factor_;$/;"	m	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::nnet_	nnet-sentence-averaging-component.h	/^  Nnet nnet_;$/;"	m	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::SentenceAveragingComponent::~SentenceAveragingComponent	nnet-sentence-averaging-component.h	/^  ~SentenceAveragingComponent()$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+kaldi::nnet1::Sigmoid	nnet-activation.h	/^class Sigmoid : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Sigmoid::BackpropagateFnc	nnet-activation.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Sigmoid
+kaldi::nnet1::Sigmoid::Copy	nnet-activation.h	/^  Component* Copy() const { return new Sigmoid(*this); }$/;"	f	class:kaldi::nnet1::Sigmoid
+kaldi::nnet1::Sigmoid::GetType	nnet-activation.h	/^  ComponentType GetType() const { return kSigmoid; }$/;"	f	class:kaldi::nnet1::Sigmoid
+kaldi::nnet1::Sigmoid::PropagateFnc	nnet-activation.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Sigmoid
+kaldi::nnet1::Sigmoid::Sigmoid	nnet-activation.h	/^  Sigmoid(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Sigmoid
+kaldi::nnet1::Sigmoid::~Sigmoid	nnet-activation.h	/^  ~Sigmoid()$/;"	f	class:kaldi::nnet1::Sigmoid
+kaldi::nnet1::Softmax	nnet-activation.h	/^class Softmax : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Softmax::BackpropagateFnc	nnet-activation.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Softmax
+kaldi::nnet1::Softmax::Copy	nnet-activation.h	/^  Component* Copy() const { return new Softmax(*this); }$/;"	f	class:kaldi::nnet1::Softmax
+kaldi::nnet1::Softmax::GetType	nnet-activation.h	/^  ComponentType GetType() const { return kSoftmax; }$/;"	f	class:kaldi::nnet1::Softmax
+kaldi::nnet1::Softmax::PropagateFnc	nnet-activation.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Softmax
+kaldi::nnet1::Softmax::Softmax	nnet-activation.h	/^  Softmax(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Softmax
+kaldi::nnet1::Softmax::~Softmax	nnet-activation.h	/^  ~Softmax()$/;"	f	class:kaldi::nnet1::Softmax
+kaldi::nnet1::Splice	nnet-various.h	/^class Splice : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Splice::BackpropagateFnc	nnet-various.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::Copy	nnet-various.h	/^  Component* Copy() const { return new Splice(*this); }$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::GetType	nnet-various.h	/^  ComponentType GetType() const { return kSplice; }$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::Info	nnet-various.h	/^  std::string Info() const {$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::InitData	nnet-various.h	/^  void InitData(std::istream &is) {$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::PropagateFnc	nnet-various.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::ReadData	nnet-various.h	/^  void ReadData(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::Splice	nnet-various.h	/^  Splice(int32 dim_in, int32 dim_out)$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::WriteData	nnet-various.h	/^  void WriteData(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::frame_offsets_	nnet-various.h	/^  CuArray<int32> frame_offsets_;$/;"	m	class:kaldi::nnet1::Splice
+kaldi::nnet1::Splice::~Splice	nnet-various.h	/^  ~Splice()$/;"	f	class:kaldi::nnet1::Splice
+kaldi::nnet1::StdVectorRandomizer	nnet-randomizer.h	/^class StdVectorRandomizer {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::StdVectorRandomizer::AddData	nnet-randomizer.cc	/^void StdVectorRandomizer<T>::AddData(const std::vector<T>& v) {$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::Done	nnet-randomizer.h	/^  bool Done() { return (data_end_ - data_begin_ < conf_.minibatch_size); }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::Init	nnet-randomizer.h	/^  void Init(const NnetDataRandomizerOptions& conf) { conf_ = conf; }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::IsFull	nnet-randomizer.h	/^  bool IsFull() { return ((data_begin_ == 0) && (data_end_ > conf_.randomizer_size )); }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::Next	nnet-randomizer.cc	/^void StdVectorRandomizer<T>::Next() {$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::NumFrames	nnet-randomizer.h	/^  int32 NumFrames() { return data_end_; }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::Randomize	nnet-randomizer.cc	/^void StdVectorRandomizer<T>::Randomize(const std::vector<int32>& mask) {$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::StdVectorRandomizer	nnet-randomizer.h	/^  StdVectorRandomizer() : data_begin_(0), data_end_(0) { }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::StdVectorRandomizer	nnet-randomizer.h	/^  StdVectorRandomizer(const NnetDataRandomizerOptions &conf) : data_begin_(0), data_end_(0) { Init(conf); }$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::Value	nnet-randomizer.cc	/^const std::vector<T>& StdVectorRandomizer<T>::Value() {$/;"	f	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::conf_	nnet-randomizer.h	/^  NnetDataRandomizerOptions conf_;$/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::data_	nnet-randomizer.h	/^  std::vector<T> data_; \/\/ can be larger than 'randomizer_size'$/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::data_begin_	nnet-randomizer.h	/^  int32 data_begin_;$/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::data_end_	nnet-randomizer.h	/^  int32 data_end_;   $/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::StdVectorRandomizer::minibatch_	nnet-randomizer.h	/^  std::vector<T> minibatch_; \/\/ buffer for mini-batch$/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+kaldi::nnet1::Tanh	nnet-activation.h	/^class Tanh : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Tanh::BackpropagateFnc	nnet-activation.h	/^  void BackpropagateFnc(const CuMatrix<BaseFloat> &in, const CuMatrix<BaseFloat> &out,$/;"	f	class:kaldi::nnet1::Tanh
+kaldi::nnet1::Tanh::Copy	nnet-activation.h	/^  Component* Copy() const { return new Tanh(*this); }$/;"	f	class:kaldi::nnet1::Tanh
+kaldi::nnet1::Tanh::GetType	nnet-activation.h	/^  ComponentType GetType() const { return kTanh; }$/;"	f	class:kaldi::nnet1::Tanh
+kaldi::nnet1::Tanh::PropagateFnc	nnet-activation.h	/^  void PropagateFnc(const CuMatrix<BaseFloat> &in, CuMatrix<BaseFloat> *out) {$/;"	f	class:kaldi::nnet1::Tanh
+kaldi::nnet1::Tanh::Tanh	nnet-activation.h	/^  Tanh(int32 dim_in, int32 dim_out) $/;"	f	class:kaldi::nnet1::Tanh
+kaldi::nnet1::Tanh::~Tanh	nnet-activation.h	/^  ~Tanh()$/;"	f	class:kaldi::nnet1::Tanh
+kaldi::nnet1::ToString	nnet-various.h	/^std::string ToString(const T& t) { $/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::UnitTestAveragePooling2DComponent	nnet-component-test.cc	/^  void UnitTestAveragePooling2DComponent(){$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::UnitTestConvolutional2DComponent	nnet-component-test.cc	/^  void UnitTestConvolutional2DComponent() {$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::UnitTestConvolutionalComponent	nnet-component-test.cc	/^  void UnitTestConvolutionalComponent() {$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::UnitTestMatOperations	nnet-component-test.cc	/^  void UnitTestMatOperations(){$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::UnitTestMaxPooling2DComponent	nnet-component-test.cc	/^  void UnitTestMaxPooling2DComponent(){$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::UnitTestMaxPoolingComponent	nnet-component-test.cc	/^  void UnitTestMaxPoolingComponent() {$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::UpdatableComponent	nnet-component.h	/^class UpdatableComponent : public Component {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::UpdatableComponent::GetTrainOptions	nnet-component.h	/^  const NnetTrainOptions& GetTrainOptions() const { $/;"	f	class:kaldi::nnet1::UpdatableComponent
+kaldi::nnet1::UpdatableComponent::IsUpdatable	nnet-component.h	/^  bool IsUpdatable() const { $/;"	f	class:kaldi::nnet1::UpdatableComponent
+kaldi::nnet1::UpdatableComponent::SetTrainOptions	nnet-component.h	/^  virtual void SetTrainOptions(const NnetTrainOptions &opts) {$/;"	f	class:kaldi::nnet1::UpdatableComponent
+kaldi::nnet1::UpdatableComponent::UpdatableComponent	nnet-component.h	/^  UpdatableComponent(int32 input_dim, int32 output_dim)$/;"	f	class:kaldi::nnet1::UpdatableComponent
+kaldi::nnet1::UpdatableComponent::opts_	nnet-component.h	/^  NnetTrainOptions opts_; $/;"	m	class:kaldi::nnet1::UpdatableComponent
+kaldi::nnet1::UpdatableComponent::~UpdatableComponent	nnet-component.h	/^  virtual ~UpdatableComponent() { }$/;"	f	class:kaldi::nnet1::UpdatableComponent
+kaldi::nnet1::VectorRandomizer	nnet-randomizer.h	/^class VectorRandomizer {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::VectorRandomizer::AddData	nnet-randomizer.cc	/^void VectorRandomizer::AddData(const Vector<BaseFloat>& v) {$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::Done	nnet-randomizer.h	/^  bool Done() { return (data_end_ - data_begin_ < conf_.minibatch_size); }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::Init	nnet-randomizer.h	/^  void Init(const NnetDataRandomizerOptions& conf) { conf_ = conf; }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::IsFull	nnet-randomizer.h	/^  bool IsFull() { return ((data_begin_ == 0) && (data_end_ > conf_.randomizer_size )); }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::Next	nnet-randomizer.cc	/^void VectorRandomizer::Next() {$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::NumFrames	nnet-randomizer.h	/^  int32 NumFrames() { return data_end_; }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::Randomize	nnet-randomizer.cc	/^void VectorRandomizer::Randomize(const std::vector<int32>& mask) {$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::Value	nnet-randomizer.cc	/^const Vector<BaseFloat>& VectorRandomizer::Value() {$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::VectorRandomizer	nnet-randomizer.h	/^  VectorRandomizer() : data_begin_(0), data_end_(0) { }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::VectorRandomizer	nnet-randomizer.h	/^  VectorRandomizer(const NnetDataRandomizerOptions &conf) : data_begin_(0), data_end_(0) { Init(conf); }$/;"	f	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::conf_	nnet-randomizer.h	/^  NnetDataRandomizerOptions conf_;$/;"	m	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::data_	nnet-randomizer.h	/^  Vector<BaseFloat> data_; \/\/ can be larger than 'randomizer_size'$/;"	m	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::data_begin_	nnet-randomizer.h	/^  int32 data_begin_;$/;"	m	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::data_end_	nnet-randomizer.h	/^  int32 data_end_;   $/;"	m	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::VectorRandomizer::minibatch_	nnet-randomizer.h	/^  Vector<BaseFloat> minibatch_; \/\/ buffer for mini-batch$/;"	m	class:kaldi::nnet1::VectorRandomizer
+kaldi::nnet1::Xent	nnet-loss.h	/^class Xent {$/;"	c	namespace:kaldi::nnet1
+kaldi::nnet1::Xent::Eval	nnet-loss.cc	/^void Xent::Eval(const CuMatrix<BaseFloat> &net_out, const CuMatrix<BaseFloat> &target, CuMatrix<BaseFloat> *diff) {$/;"	f	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::Eval	nnet-loss.cc	/^void Xent::Eval(const CuMatrix<BaseFloat>& net_out, const Posterior& post, CuMatrix<BaseFloat>* diff) {$/;"	f	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::EvalVec	nnet-loss.cc	/^void Xent::EvalVec(const CuMatrix<BaseFloat> &net_out, const std::vector<int32> &target, CuMatrix<BaseFloat> *diff) {$/;"	f	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::Report	nnet-loss.cc	/^std::string Xent::Report() {$/;"	f	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::Xent	nnet-loss.h	/^  Xent() : frames_(0), correct_(0), loss_(0.0), entropy_(0.0), $/;"	f	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::correct_	nnet-loss.h	/^  int32 correct_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::entropy_	nnet-loss.h	/^  double entropy_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::entropy_progress_	nnet-loss.h	/^  double entropy_progress_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::frames_	nnet-loss.h	/^  int32 frames_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::frames_progress_	nnet-loss.h	/^  int32 frames_progress_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::log_post_tgt_	nnet-loss.h	/^  CuVector<BaseFloat> log_post_tgt_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::log_post_tgt_host_	nnet-loss.h	/^  Vector<BaseFloat>   log_post_tgt_host_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::loss_	nnet-loss.h	/^  double loss_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::loss_progress_	nnet-loss.h	/^  double loss_progress_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::loss_vec_	nnet-loss.h	/^  std::vector<float> loss_vec_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::max_id_out_	nnet-loss.h	/^  CuArray<int32> max_id_out_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::max_id_out_host_	nnet-loss.h	/^  std::vector<int32> max_id_out_host_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::max_id_tgt_	nnet-loss.h	/^  CuArray<int32> max_id_tgt_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::max_id_tgt_host_	nnet-loss.h	/^  std::vector<int32> max_id_tgt_host_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::target_device_	nnet-loss.h	/^  CuArray<int32>  target_device_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::tgt_mat_device_	nnet-loss.h	/^  CuMatrix<BaseFloat> tgt_mat_device_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::xentropy_aux_	nnet-loss.h	/^  CuMatrix<BaseFloat> xentropy_aux_;$/;"	m	class:kaldi::nnet1::Xent
+kaldi::nnet1::Xent::~Xent	nnet-loss.h	/^  ~Xent() { }$/;"	f	class:kaldi::nnet1::Xent
+key	nnet-component.h	/^    const Component::ComponentType key;$/;"	m	struct:kaldi::nnet1::Component::key_value
+key_value	nnet-component.h	/^  struct key_value {$/;"	s	class:kaldi::nnet1::Component
+kl_inv_q_	nnet-kl-hmm.h	/^  CuMatrix<BaseFloat> kl_inv_q_;$/;"	m	class:kaldi::nnet1::KlHmm
+kl_stats_	nnet-kl-hmm.h	/^  Matrix<double> kl_stats_;$/;"	m	class:kaldi::nnet1::KlHmm
+l1_penalty	nnet-trnopts.h	/^  BaseFloat l1_penalty;$/;"	m	struct:kaldi::nnet1::NnetTrainOptions
+l2_penalty	nnet-trnopts.h	/^  BaseFloat l2_penalty;$/;"	m	struct:kaldi::nnet1::NnetTrainOptions
+l2_penalty	nnet-trnopts.h	/^  BaseFloat l2_penalty;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+learn_rate	nnet-trnopts.h	/^  BaseFloat learn_rate;$/;"	m	struct:kaldi::nnet1::NnetTrainOptions
+learn_rate	nnet-trnopts.h	/^  BaseFloat learn_rate;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+learn_rate_factor_	nnet-sentence-averaging-component.h	/^  float learn_rate_factor_;$/;"	m	class:kaldi::nnet1::SentenceAveragingComponent
+linearity_	nnet-affine-transform.h	/^  CuMatrix<BaseFloat> linearity_;$/;"	m	class:kaldi::nnet1::AffineTransform
+linearity_corr_	nnet-affine-transform.h	/^  CuMatrix<BaseFloat> linearity_corr_;$/;"	m	class:kaldi::nnet1::AffineTransform
+log_post_tgt_	nnet-loss.h	/^  CuVector<BaseFloat> log_post_tgt_;$/;"	m	class:kaldi::nnet1::Xent
+log_post_tgt_host_	nnet-loss.h	/^  Vector<BaseFloat>   log_post_tgt_host_;$/;"	m	class:kaldi::nnet1::Xent
+log_priors_	nnet-pdf-prior.h	/^  CuVector<BaseFloat> log_priors_;$/;"	m	class:kaldi::nnet1::PdfPrior
+loss_	nnet-loss.h	/^  double loss_;$/;"	m	class:kaldi::nnet1::Mse
+loss_	nnet-loss.h	/^  double loss_;$/;"	m	class:kaldi::nnet1::Xent
+loss_progress_	nnet-loss.h	/^  double loss_progress_;$/;"	m	class:kaldi::nnet1::Mse
+loss_progress_	nnet-loss.h	/^  double loss_progress_;$/;"	m	class:kaldi::nnet1::Xent
+loss_vec_	nnet-loss.h	/^  std::vector<float> loss_vec_;$/;"	m	class:kaldi::nnet1::Mse
+loss_vec_	nnet-loss.h	/^  std::vector<float> loss_vec_;$/;"	m	class:kaldi::nnet1::Xent
+main	nnet-component-test.cc	/^int main() {$/;"	f
+main	nnet-randomizer-test.cc	/^int main() {$/;"	f
+mask_	nnet-randomizer.h	/^  std::vector<int32> mask_;$/;"	m	class:kaldi::nnet1::RandomizerMask
+max_id_out_	nnet-loss.h	/^  CuArray<int32> max_id_out_;$/;"	m	class:kaldi::nnet1::Xent
+max_id_out_host_	nnet-loss.h	/^  std::vector<int32> max_id_out_host_;$/;"	m	class:kaldi::nnet1::Xent
+max_id_tgt_	nnet-loss.h	/^  CuArray<int32> max_id_tgt_;$/;"	m	class:kaldi::nnet1::Xent
+max_id_tgt_host_	nnet-loss.h	/^  std::vector<int32> max_id_tgt_host_;$/;"	m	class:kaldi::nnet1::Xent
+minibatch_	nnet-randomizer.h	/^  CuMatrix<BaseFloat> minibatch_; \/\/ buffer for mini-batch$/;"	m	class:kaldi::nnet1::MatrixRandomizer
+minibatch_	nnet-randomizer.h	/^  Vector<BaseFloat> minibatch_; \/\/ buffer for mini-batch$/;"	m	class:kaldi::nnet1::VectorRandomizer
+minibatch_	nnet-randomizer.h	/^  std::vector<T> minibatch_; \/\/ buffer for mini-batch$/;"	m	class:kaldi::nnet1::StdVectorRandomizer
+minibatch_size	nnet-randomizer.h	/^  int32 minibatch_size;  \/\/ Size of a single mini-batch.$/;"	m	struct:kaldi::nnet1::NnetDataRandomizerOptions
+momentum	nnet-trnopts.h	/^  BaseFloat momentum;$/;"	m	struct:kaldi::nnet1::NnetTrainOptions
+momentum	nnet-trnopts.h	/^  BaseFloat momentum;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+momentum_max	nnet-trnopts.h	/^  BaseFloat momentum_max;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+momentum_step_period	nnet-trnopts.h	/^  int32 momentum_step_period;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+momentum_steps	nnet-trnopts.h	/^  int32 momentum_steps;$/;"	m	struct:kaldi::nnet1::RbmTrainOptions
+nnet1	nnet-activation.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-affine-transform.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-average-pooling-2d-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-average-pooling-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-component-test.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+nnet1	nnet-component.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+nnet1	nnet-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-convolutional-2d-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-convolutional-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-kl-hmm.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-loss.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+nnet1	nnet-loss.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-max-pooling-2d-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-max-pooling-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-nnet.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+nnet1	nnet-nnet.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-parallel-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-pdf-prior.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+nnet1	nnet-pdf-prior.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-randomizer.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+nnet1	nnet-randomizer.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-rbm.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-sentence-averaging-component.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-trnopts.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet1	nnet-various.h	/^namespace nnet1 {$/;"	n	namespace:kaldi
+nnet_	nnet-parallel-component.h	/^  std::vector<Nnet> nnet_;$/;"	m	class:kaldi::nnet1::ParallelComponent
+nnet_	nnet-sentence-averaging-component.h	/^  Nnet nnet_;$/;"	m	class:kaldi::nnet1::SentenceAveragingComponent
+op_decrease	nnet-various.h	/^  static int32 op_decrease (int32 i) { return --i; }$/;"	f	class:kaldi::nnet1::CopyComponent
+op_increase	nnet-various.h	/^  static int32 op_increase (int32 i) { return ++i; }$/;"	f	class:kaldi::nnet1::CopyComponent
+operator <<	nnet-trnopts.h	/^  friend std::ostream& operator<<(std::ostream& os, const NnetTrainOptions& opts) {$/;"	f	struct:kaldi::nnet1::NnetTrainOptions
+operator <<	nnet-trnopts.h	/^  friend std::ostream& operator<<(std::ostream& os, const RbmTrainOptions& opts) {$/;"	f	struct:kaldi::nnet1::RbmTrainOptions
+operator =	nnet-nnet.cc	/^Nnet & Nnet::operator = (const Nnet& other) {$/;"	f	class:kaldi::nnet1::Nnet
+opts_	nnet-component.h	/^  NnetTrainOptions opts_; $/;"	m	class:kaldi::nnet1::UpdatableComponent
+opts_	nnet-nnet.h	/^  NnetTrainOptions opts_;$/;"	m	class:kaldi::nnet1::Nnet
+output_dim_	nnet-component.h	/^  int32 output_dim_; \/\/\/< Size of output vectors$/;"	m	class:kaldi::nnet1::Component
+patch_dim_	nnet-convolutional-component.h	/^  int32 patch_dim_,    \/\/\/< number of consecutive inputs, 1st dim of patch$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+patch_step_	nnet-convolutional-component.h	/^        patch_step_,   \/\/\/< step of the convolution (i.e. shift between 2 patches)$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+patch_stride_	nnet-convolutional-component.h	/^        patch_stride_; \/\/\/< shift for 2nd dim of a patch (i.e. frame length before splicing)$/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+pool_size_	nnet-average-pooling-component.h	/^  int32 pool_size_,   \/\/ input patches used for pooling$/;"	m	class:kaldi::nnet1::AveragePoolingComponent
+pool_size_	nnet-max-pooling-component.h	/^  int32 pool_size_,   \/\/ input patches used for pooling$/;"	m	class:kaldi::nnet1::MaxPoolingComponent
+pool_step_	nnet-average-pooling-component.h	/^        pool_step_,   \/\/ shift used for pooling (allow overlapping pools)$/;"	m	class:kaldi::nnet1::AveragePoolingComponent
+pool_step_	nnet-max-pooling-component.h	/^        pool_step_,   \/\/ shift used for pooling (allow overlapping pools)$/;"	m	class:kaldi::nnet1::MaxPoolingComponent
+pool_stride_	nnet-average-pooling-component.h	/^        pool_stride_; \/\/ stride used to cut input matrix to a vector of matrices$/;"	m	class:kaldi::nnet1::AveragePoolingComponent
+pool_stride_	nnet-max-pooling-component.h	/^        pool_stride_; \/\/ stride used to cut input matrix to a vector of matrices$/;"	m	class:kaldi::nnet1::MaxPoolingComponent
+pool_x_len_	nnet-average-pooling-2d-component.h	/^    pool_x_len_, pool_y_len_,$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+pool_x_len_	nnet-max-pooling-2d-component.h	/^    pool_x_len_, pool_y_len_,$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+pool_x_step_	nnet-average-pooling-2d-component.h	/^    pool_x_step_, pool_y_step_;$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+pool_x_step_	nnet-max-pooling-2d-component.h	/^    pool_x_step_, pool_y_step_;$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+pool_y_len_	nnet-average-pooling-2d-component.h	/^    pool_x_len_, pool_y_len_,$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+pool_y_len_	nnet-max-pooling-2d-component.h	/^    pool_x_len_, pool_y_len_,$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+pool_y_step_	nnet-average-pooling-2d-component.h	/^    pool_x_step_, pool_y_step_;$/;"	m	class:kaldi::nnet1::AveragePooling2DComponent
+pool_y_step_	nnet-max-pooling-2d-component.h	/^    pool_x_step_, pool_y_step_;$/;"	m	class:kaldi::nnet1::MaxPooling2DComponent
+prior_cutoff	nnet-pdf-prior.h	/^  BaseFloat prior_cutoff;$/;"	m	struct:kaldi::nnet1::PdfPriorOptions
+prior_scale	nnet-pdf-prior.h	/^  BaseFloat prior_scale;$/;"	m	struct:kaldi::nnet1::PdfPriorOptions
+prior_scale_	nnet-pdf-prior.h	/^  BaseFloat prior_scale_;$/;"	m	class:kaldi::nnet1::PdfPrior
+propagate_buf_	nnet-nnet.h	/^  std::vector<CuMatrix<BaseFloat> > propagate_buf_; \/\/\/< buffers for forward pass$/;"	m	class:kaldi::nnet1::Nnet
+rand_	nnet-activation.h	/^  CuRand<BaseFloat> rand_;$/;"	m	class:kaldi::nnet1::Dropout
+randomizer_seed	nnet-randomizer.h	/^  int32 randomizer_seed;$/;"	m	struct:kaldi::nnet1::NnetDataRandomizerOptions
+randomizer_size	nnet-randomizer.h	/^  int32 randomizer_size; \/\/ Maximum number of samples we want to have in memory at once.$/;"	m	struct:kaldi::nnet1::NnetDataRandomizerOptions
+rbm_opts_	nnet-rbm.h	/^  RbmTrainOptions rbm_opts_;$/;"	m	class:kaldi::nnet1::RbmBase
+scale_data_	nnet-various.h	/^  CuVector<BaseFloat> scale_data_;$/;"	m	class:kaldi::nnet1::Rescale
+scale_data_grad_	nnet-various.h	/^  CuVector<BaseFloat> scale_data_grad_;$/;"	m	class:kaldi::nnet1::Rescale
+shift_data_	nnet-various.h	/^  CuVector<BaseFloat> shift_data_;$/;"	m	class:kaldi::nnet1::AddShift
+shift_data_grad_	nnet-various.h	/^  CuVector<BaseFloat> shift_data_grad_;$/;"	m	class:kaldi::nnet1::AddShift
+sum_diff_pow_2_	nnet-loss.h	/^  CuVector<BaseFloat> sum_diff_pow_2_;$/;"	m	class:kaldi::nnet1::Mse
+sum_diff_pow_2_host_	nnet-loss.h	/^  Vector<BaseFloat>   sum_diff_pow_2_host_;$/;"	m	class:kaldi::nnet1::Mse
+target_device_	nnet-loss.h	/^  CuArray<int32>  target_device_;$/;"	m	class:kaldi::nnet1::Xent
+tgt_mat_device_	nnet-loss.h	/^  CuMatrix<BaseFloat> tgt_mat_device_;$/;"	m	class:kaldi::nnet1::Xent
+value	nnet-component.h	/^    const char *value;$/;"	m	struct:kaldi::nnet1::Component::key_value
+vectorized_feature_patches_	nnet-convolutional-2d-component.h	/^  std::vector<CuMatrix<BaseFloat> > vectorized_feature_patches_;$/;"	m	class:kaldi::nnet1::Convolutional2DComponent
+vectorized_feature_patches_	nnet-convolutional-component.h	/^  std::vector<CuMatrix<BaseFloat> > vectorized_feature_patches_; $/;"	m	class:kaldi::nnet1::ConvolutionalComponent
+vis_bias_	nnet-rbm.h	/^  CuVector<BaseFloat> vis_bias_;       \/\/\/< Vector with biases$/;"	m	class:kaldi::nnet1::Rbm
+vis_bias_corr_	nnet-rbm.h	/^  CuVector<BaseFloat> vis_bias_corr_;  \/\/\/< Vector for bias updates$/;"	m	class:kaldi::nnet1::Rbm
+vis_hid_	nnet-rbm.h	/^  CuMatrix<BaseFloat> vis_hid_;        \/\/\/< Matrix with neuron weights$/;"	m	class:kaldi::nnet1::Rbm
+vis_hid_corr_	nnet-rbm.h	/^  CuMatrix<BaseFloat> vis_hid_corr_;   \/\/\/< Matrix for linearity updates$/;"	m	class:kaldi::nnet1::Rbm
+vis_type_	nnet-rbm.h	/^  RbmNodeType vis_type_;$/;"	m	class:kaldi::nnet1::Rbm
+xentropy_aux_	nnet-loss.h	/^  CuMatrix<BaseFloat> xentropy_aux_;$/;"	m	class:kaldi::nnet1::Xent
+~AddShift	nnet-various.h	/^  ~AddShift()$/;"	f	class:kaldi::nnet1::AddShift
+~AffineTransform	nnet-affine-transform.h	/^  ~AffineTransform()$/;"	f	class:kaldi::nnet1::AffineTransform
+~AveragePooling2DComponent	nnet-average-pooling-2d-component.h	/^  ~AveragePooling2DComponent()$/;"	f	class:kaldi::nnet1::AveragePooling2DComponent
+~AveragePoolingComponent	nnet-average-pooling-component.h	/^  ~AveragePoolingComponent()$/;"	f	class:kaldi::nnet1::AveragePoolingComponent
+~Component	nnet-component.h	/^  virtual ~Component() { }$/;"	f	class:kaldi::nnet1::Component
+~Convolutional2DComponent	nnet-convolutional-2d-component.h	/^  ~Convolutional2DComponent()$/;"	f	class:kaldi::nnet1::Convolutional2DComponent
+~ConvolutionalComponent	nnet-convolutional-component.h	/^  ~ConvolutionalComponent()$/;"	f	class:kaldi::nnet1::ConvolutionalComponent
+~CopyComponent	nnet-various.h	/^  ~CopyComponent()$/;"	f	class:kaldi::nnet1::CopyComponent
+~Dropout	nnet-activation.h	/^  ~Dropout()$/;"	f	class:kaldi::nnet1::Dropout
+~KlHmm	nnet-kl-hmm.h	/^  ~KlHmm()$/;"	f	class:kaldi::nnet1::KlHmm
+~MaxPooling2DComponent	nnet-max-pooling-2d-component.h	/^  ~MaxPooling2DComponent()$/;"	f	class:kaldi::nnet1::MaxPooling2DComponent
+~MaxPoolingComponent	nnet-max-pooling-component.h	/^  ~MaxPoolingComponent()$/;"	f	class:kaldi::nnet1::MaxPoolingComponent
+~Mse	nnet-loss.h	/^  ~Mse() { }$/;"	f	class:kaldi::nnet1::Mse
+~Nnet	nnet-nnet.cc	/^Nnet::~Nnet() {$/;"	f	class:kaldi::nnet1::Nnet
+~ParallelComponent	nnet-parallel-component.h	/^  ~ParallelComponent()$/;"	f	class:kaldi::nnet1::ParallelComponent
+~Rbm	nnet-rbm.h	/^  ~Rbm()$/;"	f	class:kaldi::nnet1::Rbm
+~Rescale	nnet-various.h	/^  ~Rescale()$/;"	f	class:kaldi::nnet1::Rescale
+~SentenceAveragingComponent	nnet-sentence-averaging-component.h	/^  ~SentenceAveragingComponent()$/;"	f	class:kaldi::nnet1::SentenceAveragingComponent
+~Sigmoid	nnet-activation.h	/^  ~Sigmoid()$/;"	f	class:kaldi::nnet1::Sigmoid
+~Softmax	nnet-activation.h	/^  ~Softmax()$/;"	f	class:kaldi::nnet1::Softmax
+~Splice	nnet-various.h	/^  ~Splice()$/;"	f	class:kaldi::nnet1::Splice
+~Tanh	nnet-activation.h	/^  ~Tanh()$/;"	f	class:kaldi::nnet1::Tanh
+~UpdatableComponent	nnet-component.h	/^  virtual ~UpdatableComponent() { }$/;"	f	class:kaldi::nnet1::UpdatableComponent
+~Xent	nnet-loss.h	/^  ~Xent() { }$/;"	f	class:kaldi::nnet1::Xent

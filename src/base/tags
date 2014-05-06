@@ -1,0 +1,294 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ApproxEqual	kaldi-math.h	/^static inline bool ApproxEqual(float a, float b,$/;"	f	namespace:kaldi
+AssertEqual	kaldi-math.h	/^static inline void AssertEqual(float a, float b,$/;"	f	namespace:kaldi
+AssertGeq	kaldi-math.h	/^static inline void AssertGeq(float a, float b,$/;"	f	namespace:kaldi
+AssertLeq	kaldi-math.h	/^static inline void AssertLeq(float a, float b,$/;"	f	namespace:kaldi
+BaseFloat	kaldi-types.h	/^typedef double  BaseFloat;$/;"	t	namespace:kaldi
+CharToString	kaldi-utils.cc	/^std::string CharToString(const char &c) {$/;"	f	namespace:kaldi
+Check	kaldi-utils.h	/^  static inline void Check() { }$/;"	f	class:KaldiCompileTimeAssert
+CheckToken	io-funcs.cc	/^void CheckToken(const char *token) {$/;"	f	namespace:kaldi
+DBL_EPSILON	kaldi-math.h	37;"	d
+Exp	kaldi-math.h	/^inline double Exp(double x) { return exp(x); }$/;"	f	namespace:kaldi
+Exp	kaldi-math.h	/^inline float Exp(float x) { return expf(x); }$/;"	f	namespace:kaldi
+ExpectToken	io-funcs.cc	/^void ExpectToken(std::istream &is, bool binary, const char *token) {$/;"	f	namespace:kaldi
+ExpectToken	io-funcs.cc	/^void ExpectToken(std::istream &is, bool binary, const std::string &token) {$/;"	f	namespace:kaldi
+FLT_EPSILON	kaldi-math.h	40;"	d
+Factorize	kaldi-math.h	/^template<class I> void Factorize(I m, std::vector<I> *factors) {$/;"	f	namespace:kaldi
+Gcd	kaldi-math.h	/^template<class I> I  Gcd(I m, I n) {$/;"	f	namespace:kaldi
+GetProgramName	kaldi-error.cc	/^const char *GetProgramName() {$/;"	f	namespace:kaldi
+GetShortFileName	kaldi-error.cc	/^const char *GetShortFileName(const char *filename) {$/;"	f	namespace:kaldi
+GetVerboseLevel	kaldi-error.h	/^inline int32 GetVerboseLevel() { return g_kaldi_verbose_level; }$/;"	f	namespace:kaldi
+Hypot	kaldi-math.h	/^inline double Hypot(double x, double y) {  return hypot(x, y); }$/;"	f	namespace:kaldi
+Hypot	kaldi-math.h	/^inline float Hypot(float x, float y) {  return hypotf(x, y); }$/;"	f	namespace:kaldi
+InitKaldiInputStream	io-funcs-inl.h	/^inline bool InitKaldiInputStream(std::istream &is, bool *binary) {$/;"	f	namespace:kaldi
+InitKaldiOutputStream	io-funcs-inl.h	/^inline void InitKaldiOutputStream(std::ostream &os, bool binary) {$/;"	f	namespace:kaldi
+IsKaldiError	kaldi-error.h	/^inline bool IsKaldiError(const std::string &str) {$/;"	f	namespace:kaldi
+KALDI_APPEND_POSSIBLY_DEMANGLED_STRING	kaldi-error.cc	/^inline void KALDI_APPEND_POSSIBLY_DEMANGLED_STRING(std::string &ans,  $/;"	f	namespace:kaldi
+KALDI_APPEND_POSSIBLY_DEMANGLED_STRING	kaldi-error.cc	91;"	d	file:
+KALDI_ASSERT	kaldi-error.h	112;"	d
+KALDI_ASSERT	kaldi-error.h	115;"	d
+KALDI_ASSERT_IS_FLOATING_TYPE	kaldi-utils.h	114;"	d
+KALDI_ASSERT_IS_INTEGER_TYPE	kaldi-utils.h	110;"	d
+KALDI_BASE_IO_FUNCS_H_	io-funcs.h	22;"	d
+KALDI_BASE_IO_FUNCS_INL_H_	io-funcs-inl.h	22;"	d
+KALDI_BASE_KALDI_COMMON_H_	kaldi-common.h	21;"	d
+KALDI_BASE_KALDI_ERROR_H_	kaldi-error.h	22;"	d
+KALDI_BASE_KALDI_MATH_H_	kaldi-math.h	22;"	d
+KALDI_BASE_KALDI_TYPES_H_	kaldi-types.h	22;"	d
+KALDI_BASE_KALDI_UTILS_H_	kaldi-utils.h	22;"	d
+KALDI_COMPILE_TIME_ASSERT	kaldi-utils.h	108;"	d
+KALDI_DISALLOW_COPY_AND_ASSIGN	kaldi-utils.h	94;"	d
+KALDI_ERR	kaldi-error.h	127;"	d
+KALDI_ISFINITE	kaldi-math.h	71;"	d
+KALDI_ISFINITE	kaldi-math.h	75;"	d
+KALDI_ISINF	kaldi-math.h	70;"	d
+KALDI_ISINF	kaldi-math.h	74;"	d
+KALDI_ISNAN	kaldi-math.h	69;"	d
+KALDI_ISNAN	kaldi-math.h	73;"	d
+KALDI_LOG	kaldi-error.h	129;"	d
+KALDI_MAX_TRACE_PRINT	kaldi-error.cc	97;"	d	file:
+KALDI_MAX_TRACE_SIZE	kaldi-error.cc	96;"	d	file:
+KALDI_MEMALIGN	kaldi-utils.h	33;"	d
+KALDI_MEMALIGN	kaldi-utils.h	39;"	d
+KALDI_MEMALIGN	kaldi-utils.h	43;"	d
+KALDI_MEMALIGN_FREE	kaldi-utils.h	35;"	d
+KALDI_MEMALIGN_FREE	kaldi-utils.h	41;"	d
+KALDI_MEMALIGN_FREE	kaldi-utils.h	45;"	d
+KALDI_PARANOID_ASSERT	kaldi-error.h	121;"	d
+KALDI_PARANOID_ASSERT	kaldi-error.h	124;"	d
+KALDI_SQR	kaldi-math.h	78;"	d
+KALDI_STRCASECMP	kaldi-utils.h	120;"	d
+KALDI_STRCASECMP	kaldi-utils.h	122;"	d
+KALDI_STRTOD	kaldi-utils.h	130;"	d
+KALDI_STRTOLL	kaldi-utils.h	125;"	d
+KALDI_STRTOLL	kaldi-utils.h	127;"	d
+KALDI_SWAP2	kaldi-utils.h	85;"	d
+KALDI_SWAP4	kaldi-utils.h	82;"	d
+KALDI_SWAP8	kaldi-utils.h	77;"	d
+KALDI_VLOG	kaldi-error.h	131;"	d
+KALDI_WARN	kaldi-error.h	128;"	d
+KaldiAssertFailure_	kaldi-error.cc	/^void KaldiAssertFailure_(const char *func, const char *file,$/;"	f	namespace:kaldi
+KaldiCompileTimeAssert	kaldi-utils.h	/^template<> class KaldiCompileTimeAssert<true> {$/;"	c
+KaldiCompileTimeAssert	kaldi-utils.h	/^template<bool B> class KaldiCompileTimeAssert { };$/;"	c
+KaldiCompileTimeAssert::Check	kaldi-utils.h	/^  static inline void Check() { }$/;"	f	class:KaldiCompileTimeAssert
+KaldiErrorMessage	kaldi-error.cc	/^KaldiErrorMessage::KaldiErrorMessage(const char *func, const char *file,$/;"	f	class:kaldi::KaldiErrorMessage
+KaldiErrorMessage	kaldi-error.h	/^class KaldiErrorMessage {$/;"	c	namespace:kaldi
+KaldiGetStackTrace	kaldi-error.cc	/^std::string KaldiGetStackTrace() {$/;"	f	namespace:kaldi
+KaldiLogMessage	kaldi-error.cc	/^KaldiLogMessage::KaldiLogMessage(const char *func, const char *file,$/;"	f	class:kaldi::KaldiLogMessage
+KaldiLogMessage	kaldi-error.h	/^class KaldiLogMessage {$/;"	c	namespace:kaldi
+KaldiVlogMessage	kaldi-error.cc	/^KaldiVlogMessage::KaldiVlogMessage(const char *func, const char *file,$/;"	f	class:kaldi::KaldiVlogMessage
+KaldiVlogMessage	kaldi-error.h	/^class KaldiVlogMessage {$/;"	c	namespace:kaldi
+KaldiWarnMessage	kaldi-error.cc	/^KaldiWarnMessage::KaldiWarnMessage(const char *func, const char *file,$/;"	f	class:kaldi::KaldiWarnMessage
+KaldiWarnMessage	kaldi-error.h	/^class KaldiWarnMessage {$/;"	c	namespace:kaldi
+Log	kaldi-math.h	/^inline double Log(double x) { return log(x); }$/;"	f	namespace:kaldi
+Log	kaldi-math.h	/^inline float Log(float x) { return logf(x); }$/;"	f	namespace:kaldi
+Log1p	kaldi-math.h	/^inline double Log1p(double x) {  return log1p(x); }$/;"	f	namespace:kaldi
+Log1p	kaldi-math.h	/^inline float Log1p(float x) {  return log1pf(x); }$/;"	f	namespace:kaldi
+LogAdd	kaldi-math.h	/^inline double LogAdd(double x, double y) {$/;"	f	namespace:kaldi
+LogAdd	kaldi-math.h	/^inline float LogAdd(float x, float y) {$/;"	f	namespace:kaldi
+LogSub	kaldi-math.h	/^inline double LogSub(double x, double y) {$/;"	f	namespace:kaldi
+LogSub	kaldi-math.h	/^inline float LogSub(float x, float y) {$/;"	f	namespace:kaldi
+M_2PI	kaldi-math.h	53;"	d
+M_LN2	kaldi-math.h	65;"	d
+M_LOG_2PI	kaldi-math.h	61;"	d
+M_PI	kaldi-math.h	44;"	d
+M_SQRT1_2	kaldi-math.h	57;"	d
+M_SQRT2	kaldi-math.h	48;"	d
+MachineIsLittleEndian	kaldi-utils.h	/^inline int MachineIsLittleEndian() {$/;"	f	namespace:kaldi
+MyFunction1	kaldi-error-test.cc	/^void MyFunction1() {$/;"	f	namespace:kaldi
+MyFunction2	kaldi-error-test.cc	/^void MyFunction2() {$/;"	f	namespace:kaldi
+Peek	io-funcs.cc	/^int Peek(std::istream &is, bool binary) {$/;"	f	namespace:kaldi
+PeekToken	io-funcs.cc	/^int PeekToken(std::istream &is, bool binary) {$/;"	f	namespace:kaldi
+RandGauss	kaldi-math.h	/^inline float RandGauss() {$/;"	f	namespace:kaldi
+RandInt	kaldi-math.cc	/^int32 RandInt(int32 min_val, int32 max_val) {  \/\/ This is not exact.$/;"	f	namespace:kaldi
+RandPoisson	kaldi-math.cc	/^int32 RandPoisson(float lambda) {$/;"	f	namespace:kaldi
+RandPrune	kaldi-math.h	/^inline Float RandPrune(Float post, BaseFloat prune_thresh) {$/;"	f	namespace:kaldi
+RandUniform	kaldi-math.h	/^inline float RandUniform() {  \/\/ random intended to be strictly between 0 and 1.$/;"	f	namespace:kaldi
+ReadBasicType	io-funcs-inl.h	/^template<class T> inline void ReadBasicType(std::istream &is,$/;"	f	namespace:kaldi
+ReadBasicType	io-funcs.cc	/^void ReadBasicType<bool>(std::istream &is, bool binary, bool *b) {$/;"	f	namespace:kaldi
+ReadBasicType	io-funcs.cc	/^void ReadBasicType<double>(std::istream &is, bool binary, double *d) {$/;"	f	namespace:kaldi
+ReadBasicType	io-funcs.cc	/^void ReadBasicType<float>(std::istream &is, bool binary, float *f) {$/;"	f	namespace:kaldi
+ReadBasicType	io-funcs.h	/^inline void ReadBasicType(std::istream &is, bool binary, T *t, bool add) {$/;"	f	namespace:kaldi
+ReadIntegerVector	io-funcs-inl.h	/^template<class T> inline void ReadIntegerVector(std::istream &is,$/;"	f	namespace:kaldi
+ReadToken	io-funcs.cc	/^void ReadToken(std::istream &is, bool binary, std::string *str) {$/;"	f	namespace:kaldi
+RoundUpToNearestPowerOfTwo	kaldi-math.cc	/^int32 RoundUpToNearestPowerOfTwo(int32 n) {$/;"	f	namespace:kaldi
+SetVerboseLevel	kaldi-error.h	/^inline void SetVerboseLevel(int32 i) { g_kaldi_verbose_level = i; }$/;"	f	namespace:kaldi
+UnitTestApproxEqual	kaldi-math-test.cc	/^void UnitTestApproxEqual() {$/;"	f	namespace:kaldi
+UnitTestAssertFunc	kaldi-math-test.cc	/^void UnitTestAssertFunc() {  \/\/ Testing Assert** *functions$/;"	f	namespace:kaldi
+UnitTestDefines	kaldi-math-test.cc	/^void UnitTestDefines() {  \/\/ Yes, we even unit-test the preprocessor statements.$/;"	f	namespace:kaldi
+UnitTestError	kaldi-error-test.cc	/^void UnitTestError() {$/;"	f	namespace:kaldi
+UnitTestFactorize	kaldi-math-test.cc	/^void UnitTestFactorize() {$/;"	f	namespace:kaldi
+UnitTestFactorizeTpl	kaldi-math-test.cc	/^template<class I> void UnitTestFactorizeTpl() {$/;"	f	namespace:kaldi
+UnitTestGcd	kaldi-math-test.cc	/^void UnitTestGcd() {$/;"	f	namespace:kaldi
+UnitTestGcdTpl	kaldi-math-test.cc	/^template<class I> void UnitTestGcdTpl() {$/;"	f	namespace:kaldi
+UnitTestIo	io-funcs-test.cc	/^void UnitTestIo(bool binary) {$/;"	f	namespace:kaldi
+UnitTestLogAddSub	kaldi-math-test.cc	/^void UnitTestLogAddSub() {$/;"	f	namespace:kaldi
+UnitTestRand	kaldi-math-test.cc	/^void UnitTestRand() {$/;"	f	namespace:kaldi
+UnitTestRoundUpToNearestPowerOfTwo	kaldi-math-test.cc	/^void UnitTestRoundUpToNearestPowerOfTwo() {$/;"	f	namespace:kaldi
+WithProb	kaldi-math.cc	/^bool WithProb(BaseFloat prob) {$/;"	f	namespace:kaldi
+WriteBasicType	io-funcs-inl.h	/^template<class T>  void WriteBasicType(std::ostream &os,$/;"	f	namespace:kaldi
+WriteBasicType	io-funcs.cc	/^void WriteBasicType<bool>(std::ostream &os, bool binary, bool b) {$/;"	f	namespace:kaldi
+WriteBasicType	io-funcs.cc	/^void WriteBasicType<double>(std::ostream &os, bool binary, double f) {$/;"	f	namespace:kaldi
+WriteBasicType	io-funcs.cc	/^void WriteBasicType<float>(std::ostream &os, bool binary, float f) {$/;"	f	namespace:kaldi
+WriteIntegerVector	io-funcs-inl.h	/^template<class T> inline void WriteIntegerVector(std::ostream &os, bool binary,$/;"	f	namespace:kaldi
+WriteToken	io-funcs.cc	/^void WriteToken(std::ostream &os, bool binary, const char *token) {$/;"	f	namespace:kaldi
+WriteToken	io-funcs.cc	/^void WriteToken(std::ostream &os, bool binary, const std::string & token) {$/;"	f	namespace:kaldi
+__func__	kaldi-error.h	108;"	d
+__restrict__	kaldi-utils.h	29;"	d
+double64	kaldi-types.h	/^typedef double        double64;$/;"	t	namespace:kaldi
+float32	kaldi-types.h	/^typedef float          float32;$/;"	t	namespace:kaldi
+g_kaldi_verbose_level	kaldi-error.cc	/^int32 g_kaldi_verbose_level = 0;  \/\/ Just initialize this global variable.$/;"	m	namespace:kaldi	file:
+g_program_name	kaldi-error.cc	/^const char *g_program_name = NULL;$/;"	m	namespace:kaldi	file:
+int16	kaldi-types.h	/^typedef __int16          int16;$/;"	t	namespace:kaldi
+int32	kaldi-types.h	/^typedef __int32          int32;$/;"	t	namespace:kaldi
+int64	kaldi-types.h	/^typedef __int64          int64;$/;"	t	namespace:kaldi
+kBaseFloatMax	kaldi-math.h	/^const BaseFloat kBaseFloatMax = std::numeric_limits<BaseFloat>::max();$/;"	m	namespace:kaldi
+kBaseLogZero	kaldi-math.h	/^const BaseFloat kBaseLogZero = -std::numeric_limits<BaseFloat>::infinity();$/;"	m	namespace:kaldi
+kLogZeroDouble	kaldi-math.h	/^const double kLogZeroDouble = -std::numeric_limits<double>::infinity();$/;"	m	namespace:kaldi
+kLogZeroFloat	kaldi-math.h	/^const float kLogZeroFloat = -std::numeric_limits<float>::infinity();$/;"	m	namespace:kaldi
+kMinLogDiffDouble	kaldi-math.h	/^static const double kMinLogDiffDouble = std::log(DBL_EPSILON);  \/\/ negative!$/;"	m	namespace:kaldi
+kMinLogDiffFloat	kaldi-math.h	/^static const float kMinLogDiffFloat = std::log(FLT_EPSILON);  \/\/ negative!$/;"	m	namespace:kaldi
+kaldi	io-funcs-inl.h	/^namespace kaldi {$/;"	n
+kaldi	io-funcs-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	io-funcs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	io-funcs.h	/^namespace kaldi {$/;"	n
+kaldi	kaldi-error-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-error.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-error.h	/^namespace kaldi {$/;"	n
+kaldi	kaldi-math-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-math.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-math.h	/^namespace kaldi {$/;"	n
+kaldi	kaldi-types.h	/^namespace kaldi {$/;"	n
+kaldi	kaldi-utils.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	kaldi-utils.h	/^namespace kaldi {$/;"	n
+kaldi::ApproxEqual	kaldi-math.h	/^static inline bool ApproxEqual(float a, float b,$/;"	f	namespace:kaldi
+kaldi::AssertEqual	kaldi-math.h	/^static inline void AssertEqual(float a, float b,$/;"	f	namespace:kaldi
+kaldi::AssertGeq	kaldi-math.h	/^static inline void AssertGeq(float a, float b,$/;"	f	namespace:kaldi
+kaldi::AssertLeq	kaldi-math.h	/^static inline void AssertLeq(float a, float b,$/;"	f	namespace:kaldi
+kaldi::BaseFloat	kaldi-types.h	/^typedef double  BaseFloat;$/;"	t	namespace:kaldi
+kaldi::CharToString	kaldi-utils.cc	/^std::string CharToString(const char &c) {$/;"	f	namespace:kaldi
+kaldi::CheckToken	io-funcs.cc	/^void CheckToken(const char *token) {$/;"	f	namespace:kaldi
+kaldi::Exp	kaldi-math.h	/^inline double Exp(double x) { return exp(x); }$/;"	f	namespace:kaldi
+kaldi::Exp	kaldi-math.h	/^inline float Exp(float x) { return expf(x); }$/;"	f	namespace:kaldi
+kaldi::ExpectToken	io-funcs.cc	/^void ExpectToken(std::istream &is, bool binary, const char *token) {$/;"	f	namespace:kaldi
+kaldi::ExpectToken	io-funcs.cc	/^void ExpectToken(std::istream &is, bool binary, const std::string &token) {$/;"	f	namespace:kaldi
+kaldi::Factorize	kaldi-math.h	/^template<class I> void Factorize(I m, std::vector<I> *factors) {$/;"	f	namespace:kaldi
+kaldi::Gcd	kaldi-math.h	/^template<class I> I  Gcd(I m, I n) {$/;"	f	namespace:kaldi
+kaldi::GetProgramName	kaldi-error.cc	/^const char *GetProgramName() {$/;"	f	namespace:kaldi
+kaldi::GetShortFileName	kaldi-error.cc	/^const char *GetShortFileName(const char *filename) {$/;"	f	namespace:kaldi
+kaldi::GetVerboseLevel	kaldi-error.h	/^inline int32 GetVerboseLevel() { return g_kaldi_verbose_level; }$/;"	f	namespace:kaldi
+kaldi::Hypot	kaldi-math.h	/^inline double Hypot(double x, double y) {  return hypot(x, y); }$/;"	f	namespace:kaldi
+kaldi::Hypot	kaldi-math.h	/^inline float Hypot(float x, float y) {  return hypotf(x, y); }$/;"	f	namespace:kaldi
+kaldi::InitKaldiInputStream	io-funcs-inl.h	/^inline bool InitKaldiInputStream(std::istream &is, bool *binary) {$/;"	f	namespace:kaldi
+kaldi::InitKaldiOutputStream	io-funcs-inl.h	/^inline void InitKaldiOutputStream(std::ostream &os, bool binary) {$/;"	f	namespace:kaldi
+kaldi::IsKaldiError	kaldi-error.h	/^inline bool IsKaldiError(const std::string &str) {$/;"	f	namespace:kaldi
+kaldi::KALDI_APPEND_POSSIBLY_DEMANGLED_STRING	kaldi-error.cc	/^inline void KALDI_APPEND_POSSIBLY_DEMANGLED_STRING(std::string &ans,  $/;"	f	namespace:kaldi
+kaldi::KaldiAssertFailure_	kaldi-error.cc	/^void KaldiAssertFailure_(const char *func, const char *file,$/;"	f	namespace:kaldi
+kaldi::KaldiErrorMessage	kaldi-error.h	/^class KaldiErrorMessage {$/;"	c	namespace:kaldi
+kaldi::KaldiErrorMessage::KaldiErrorMessage	kaldi-error.cc	/^KaldiErrorMessage::KaldiErrorMessage(const char *func, const char *file,$/;"	f	class:kaldi::KaldiErrorMessage
+kaldi::KaldiErrorMessage::ss	kaldi-error.h	/^  std::ostringstream ss;$/;"	m	class:kaldi::KaldiErrorMessage
+kaldi::KaldiErrorMessage::stream	kaldi-error.h	/^  inline std::ostream &stream() { return ss; }$/;"	f	class:kaldi::KaldiErrorMessage
+kaldi::KaldiErrorMessage::~KaldiErrorMessage	kaldi-error.cc	/^KaldiErrorMessage::~KaldiErrorMessage() {$/;"	f	class:kaldi::KaldiErrorMessage
+kaldi::KaldiGetStackTrace	kaldi-error.cc	/^std::string KaldiGetStackTrace() {$/;"	f	namespace:kaldi
+kaldi::KaldiLogMessage	kaldi-error.h	/^class KaldiLogMessage {$/;"	c	namespace:kaldi
+kaldi::KaldiLogMessage::KaldiLogMessage	kaldi-error.cc	/^KaldiLogMessage::KaldiLogMessage(const char *func, const char *file,$/;"	f	class:kaldi::KaldiLogMessage
+kaldi::KaldiLogMessage::ss	kaldi-error.h	/^  std::ostringstream ss;$/;"	m	class:kaldi::KaldiLogMessage
+kaldi::KaldiLogMessage::stream	kaldi-error.h	/^  inline std::ostream &stream() { return ss; }$/;"	f	class:kaldi::KaldiLogMessage
+kaldi::KaldiLogMessage::~KaldiLogMessage	kaldi-error.h	/^  ~KaldiLogMessage() { fprintf(stderr, "%s\\n", ss.str().c_str()); }$/;"	f	class:kaldi::KaldiLogMessage
+kaldi::KaldiVlogMessage	kaldi-error.h	/^class KaldiVlogMessage {$/;"	c	namespace:kaldi
+kaldi::KaldiVlogMessage::KaldiVlogMessage	kaldi-error.cc	/^KaldiVlogMessage::KaldiVlogMessage(const char *func, const char *file,$/;"	f	class:kaldi::KaldiVlogMessage
+kaldi::KaldiVlogMessage::ss	kaldi-error.h	/^  std::ostringstream ss;$/;"	m	class:kaldi::KaldiVlogMessage
+kaldi::KaldiVlogMessage::stream	kaldi-error.h	/^  inline std::ostream &stream() { return ss; }$/;"	f	class:kaldi::KaldiVlogMessage
+kaldi::KaldiVlogMessage::~KaldiVlogMessage	kaldi-error.h	/^  ~KaldiVlogMessage() { fprintf(stderr, "%s\\n", ss.str().c_str()); }$/;"	f	class:kaldi::KaldiVlogMessage
+kaldi::KaldiWarnMessage	kaldi-error.h	/^class KaldiWarnMessage {$/;"	c	namespace:kaldi
+kaldi::KaldiWarnMessage::KaldiWarnMessage	kaldi-error.cc	/^KaldiWarnMessage::KaldiWarnMessage(const char *func, const char *file,$/;"	f	class:kaldi::KaldiWarnMessage
+kaldi::KaldiWarnMessage::ss	kaldi-error.h	/^  std::ostringstream ss;$/;"	m	class:kaldi::KaldiWarnMessage
+kaldi::KaldiWarnMessage::stream	kaldi-error.h	/^  inline std::ostream &stream() { return ss; }$/;"	f	class:kaldi::KaldiWarnMessage
+kaldi::KaldiWarnMessage::~KaldiWarnMessage	kaldi-error.h	/^  ~KaldiWarnMessage()  { fprintf(stderr, "%s\\n", ss.str().c_str()); }$/;"	f	class:kaldi::KaldiWarnMessage
+kaldi::Log	kaldi-math.h	/^inline double Log(double x) { return log(x); }$/;"	f	namespace:kaldi
+kaldi::Log	kaldi-math.h	/^inline float Log(float x) { return logf(x); }$/;"	f	namespace:kaldi
+kaldi::Log1p	kaldi-math.h	/^inline double Log1p(double x) {  return log1p(x); }$/;"	f	namespace:kaldi
+kaldi::Log1p	kaldi-math.h	/^inline float Log1p(float x) {  return log1pf(x); }$/;"	f	namespace:kaldi
+kaldi::LogAdd	kaldi-math.h	/^inline double LogAdd(double x, double y) {$/;"	f	namespace:kaldi
+kaldi::LogAdd	kaldi-math.h	/^inline float LogAdd(float x, float y) {$/;"	f	namespace:kaldi
+kaldi::LogSub	kaldi-math.h	/^inline double LogSub(double x, double y) {$/;"	f	namespace:kaldi
+kaldi::LogSub	kaldi-math.h	/^inline float LogSub(float x, float y) {$/;"	f	namespace:kaldi
+kaldi::MachineIsLittleEndian	kaldi-utils.h	/^inline int MachineIsLittleEndian() {$/;"	f	namespace:kaldi
+kaldi::MyFunction1	kaldi-error-test.cc	/^void MyFunction1() {$/;"	f	namespace:kaldi
+kaldi::MyFunction2	kaldi-error-test.cc	/^void MyFunction2() {$/;"	f	namespace:kaldi
+kaldi::Peek	io-funcs.cc	/^int Peek(std::istream &is, bool binary) {$/;"	f	namespace:kaldi
+kaldi::PeekToken	io-funcs.cc	/^int PeekToken(std::istream &is, bool binary) {$/;"	f	namespace:kaldi
+kaldi::RandGauss	kaldi-math.h	/^inline float RandGauss() {$/;"	f	namespace:kaldi
+kaldi::RandInt	kaldi-math.cc	/^int32 RandInt(int32 min_val, int32 max_val) {  \/\/ This is not exact.$/;"	f	namespace:kaldi
+kaldi::RandPoisson	kaldi-math.cc	/^int32 RandPoisson(float lambda) {$/;"	f	namespace:kaldi
+kaldi::RandPrune	kaldi-math.h	/^inline Float RandPrune(Float post, BaseFloat prune_thresh) {$/;"	f	namespace:kaldi
+kaldi::RandUniform	kaldi-math.h	/^inline float RandUniform() {  \/\/ random intended to be strictly between 0 and 1.$/;"	f	namespace:kaldi
+kaldi::ReadBasicType	io-funcs-inl.h	/^template<class T> inline void ReadBasicType(std::istream &is,$/;"	f	namespace:kaldi
+kaldi::ReadBasicType	io-funcs.cc	/^void ReadBasicType<bool>(std::istream &is, bool binary, bool *b) {$/;"	f	namespace:kaldi
+kaldi::ReadBasicType	io-funcs.cc	/^void ReadBasicType<double>(std::istream &is, bool binary, double *d) {$/;"	f	namespace:kaldi
+kaldi::ReadBasicType	io-funcs.cc	/^void ReadBasicType<float>(std::istream &is, bool binary, float *f) {$/;"	f	namespace:kaldi
+kaldi::ReadBasicType	io-funcs.h	/^inline void ReadBasicType(std::istream &is, bool binary, T *t, bool add) {$/;"	f	namespace:kaldi
+kaldi::ReadIntegerVector	io-funcs-inl.h	/^template<class T> inline void ReadIntegerVector(std::istream &is,$/;"	f	namespace:kaldi
+kaldi::ReadToken	io-funcs.cc	/^void ReadToken(std::istream &is, bool binary, std::string *str) {$/;"	f	namespace:kaldi
+kaldi::RoundUpToNearestPowerOfTwo	kaldi-math.cc	/^int32 RoundUpToNearestPowerOfTwo(int32 n) {$/;"	f	namespace:kaldi
+kaldi::SetVerboseLevel	kaldi-error.h	/^inline void SetVerboseLevel(int32 i) { g_kaldi_verbose_level = i; }$/;"	f	namespace:kaldi
+kaldi::UnitTestApproxEqual	kaldi-math-test.cc	/^void UnitTestApproxEqual() {$/;"	f	namespace:kaldi
+kaldi::UnitTestAssertFunc	kaldi-math-test.cc	/^void UnitTestAssertFunc() {  \/\/ Testing Assert** *functions$/;"	f	namespace:kaldi
+kaldi::UnitTestDefines	kaldi-math-test.cc	/^void UnitTestDefines() {  \/\/ Yes, we even unit-test the preprocessor statements.$/;"	f	namespace:kaldi
+kaldi::UnitTestError	kaldi-error-test.cc	/^void UnitTestError() {$/;"	f	namespace:kaldi
+kaldi::UnitTestFactorize	kaldi-math-test.cc	/^void UnitTestFactorize() {$/;"	f	namespace:kaldi
+kaldi::UnitTestFactorizeTpl	kaldi-math-test.cc	/^template<class I> void UnitTestFactorizeTpl() {$/;"	f	namespace:kaldi
+kaldi::UnitTestGcd	kaldi-math-test.cc	/^void UnitTestGcd() {$/;"	f	namespace:kaldi
+kaldi::UnitTestGcdTpl	kaldi-math-test.cc	/^template<class I> void UnitTestGcdTpl() {$/;"	f	namespace:kaldi
+kaldi::UnitTestIo	io-funcs-test.cc	/^void UnitTestIo(bool binary) {$/;"	f	namespace:kaldi
+kaldi::UnitTestLogAddSub	kaldi-math-test.cc	/^void UnitTestLogAddSub() {$/;"	f	namespace:kaldi
+kaldi::UnitTestRand	kaldi-math-test.cc	/^void UnitTestRand() {$/;"	f	namespace:kaldi
+kaldi::UnitTestRoundUpToNearestPowerOfTwo	kaldi-math-test.cc	/^void UnitTestRoundUpToNearestPowerOfTwo() {$/;"	f	namespace:kaldi
+kaldi::WithProb	kaldi-math.cc	/^bool WithProb(BaseFloat prob) {$/;"	f	namespace:kaldi
+kaldi::WriteBasicType	io-funcs-inl.h	/^template<class T>  void WriteBasicType(std::ostream &os,$/;"	f	namespace:kaldi
+kaldi::WriteBasicType	io-funcs.cc	/^void WriteBasicType<bool>(std::ostream &os, bool binary, bool b) {$/;"	f	namespace:kaldi
+kaldi::WriteBasicType	io-funcs.cc	/^void WriteBasicType<double>(std::ostream &os, bool binary, double f) {$/;"	f	namespace:kaldi
+kaldi::WriteBasicType	io-funcs.cc	/^void WriteBasicType<float>(std::ostream &os, bool binary, float f) {$/;"	f	namespace:kaldi
+kaldi::WriteIntegerVector	io-funcs-inl.h	/^template<class T> inline void WriteIntegerVector(std::ostream &os, bool binary,$/;"	f	namespace:kaldi
+kaldi::WriteToken	io-funcs.cc	/^void WriteToken(std::ostream &os, bool binary, const char *token) {$/;"	f	namespace:kaldi
+kaldi::WriteToken	io-funcs.cc	/^void WriteToken(std::ostream &os, bool binary, const std::string & token) {$/;"	f	namespace:kaldi
+kaldi::double64	kaldi-types.h	/^typedef double        double64;$/;"	t	namespace:kaldi
+kaldi::float32	kaldi-types.h	/^typedef float          float32;$/;"	t	namespace:kaldi
+kaldi::g_kaldi_verbose_level	kaldi-error.cc	/^int32 g_kaldi_verbose_level = 0;  \/\/ Just initialize this global variable.$/;"	m	namespace:kaldi	file:
+kaldi::g_program_name	kaldi-error.cc	/^const char *g_program_name = NULL;$/;"	m	namespace:kaldi	file:
+kaldi::int16	kaldi-types.h	/^typedef __int16          int16;$/;"	t	namespace:kaldi
+kaldi::int32	kaldi-types.h	/^typedef __int32          int32;$/;"	t	namespace:kaldi
+kaldi::int64	kaldi-types.h	/^typedef __int64          int64;$/;"	t	namespace:kaldi
+kaldi::kBaseFloatMax	kaldi-math.h	/^const BaseFloat kBaseFloatMax = std::numeric_limits<BaseFloat>::max();$/;"	m	namespace:kaldi
+kaldi::kBaseLogZero	kaldi-math.h	/^const BaseFloat kBaseLogZero = -std::numeric_limits<BaseFloat>::infinity();$/;"	m	namespace:kaldi
+kaldi::kLogZeroDouble	kaldi-math.h	/^const double kLogZeroDouble = -std::numeric_limits<double>::infinity();$/;"	m	namespace:kaldi
+kaldi::kLogZeroFloat	kaldi-math.h	/^const float kLogZeroFloat = -std::numeric_limits<float>::infinity();$/;"	m	namespace:kaldi
+kaldi::kMinLogDiffDouble	kaldi-math.h	/^static const double kMinLogDiffDouble = std::log(DBL_EPSILON);  \/\/ negative!$/;"	m	namespace:kaldi
+kaldi::kMinLogDiffFloat	kaldi-math.h	/^static const float kMinLogDiffFloat = std::log(FLT_EPSILON);  \/\/ negative!$/;"	m	namespace:kaldi
+kaldi::uint16	kaldi-types.h	/^typedef unsigned __int16 uint16;$/;"	t	namespace:kaldi
+kaldi::uint32	kaldi-types.h	/^typedef unsigned __int32 uint32;$/;"	t	namespace:kaldi
+kaldi::uint64	kaldi-types.h	/^typedef unsigned __int64 uint64;$/;"	t	namespace:kaldi
+main	io-funcs-test.cc	/^int main() {$/;"	f
+main	kaldi-error-test.cc	/^int main() {$/;"	f
+main	kaldi-math-test.cc	/^int main() {$/;"	f
+ss	kaldi-error.h	/^  std::ostringstream ss;$/;"	m	class:kaldi::KaldiErrorMessage
+ss	kaldi-error.h	/^  std::ostringstream ss;$/;"	m	class:kaldi::KaldiLogMessage
+ss	kaldi-error.h	/^  std::ostringstream ss;$/;"	m	class:kaldi::KaldiVlogMessage
+ss	kaldi-error.h	/^  std::ostringstream ss;$/;"	m	class:kaldi::KaldiWarnMessage
+ssize_t	kaldi-types.h	45;"	d
+stream	kaldi-error.h	/^  inline std::ostream &stream() { return ss; }$/;"	f	class:kaldi::KaldiErrorMessage
+stream	kaldi-error.h	/^  inline std::ostream &stream() { return ss; }$/;"	f	class:kaldi::KaldiLogMessage
+stream	kaldi-error.h	/^  inline std::ostream &stream() { return ss; }$/;"	f	class:kaldi::KaldiVlogMessage
+stream	kaldi-error.h	/^  inline std::ostream &stream() { return ss; }$/;"	f	class:kaldi::KaldiWarnMessage
+uint16	kaldi-types.h	/^typedef unsigned __int16 uint16;$/;"	t	namespace:kaldi
+uint32	kaldi-types.h	/^typedef unsigned __int32 uint32;$/;"	t	namespace:kaldi
+uint64	kaldi-types.h	/^typedef unsigned __int64 uint64;$/;"	t	namespace:kaldi
+~KaldiErrorMessage	kaldi-error.cc	/^KaldiErrorMessage::~KaldiErrorMessage() {$/;"	f	class:kaldi::KaldiErrorMessage
+~KaldiLogMessage	kaldi-error.h	/^  ~KaldiLogMessage() { fprintf(stderr, "%s\\n", ss.str().c_str()); }$/;"	f	class:kaldi::KaldiLogMessage
+~KaldiVlogMessage	kaldi-error.h	/^  ~KaldiVlogMessage() { fprintf(stderr, "%s\\n", ss.str().c_str()); }$/;"	f	class:kaldi::KaldiVlogMessage
+~KaldiWarnMessage	kaldi-error.h	/^  ~KaldiWarnMessage()  { fprintf(stderr, "%s\\n", ss.str().c_str()); }$/;"	f	class:kaldi::KaldiWarnMessage

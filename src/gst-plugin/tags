@@ -1,0 +1,174 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DEFAULT_ACOUSTIC_SCALE	gst-online-gmm-decode-faster.cc	87;"	d	file:
+DEFAULT_FST	gst-online-gmm-decode-faster.cc	84;"	d	file:
+DEFAULT_LEFT_CONTEXT	gst-online-gmm-decode-faster.cc	88;"	d	file:
+DEFAULT_MODEL	gst-online-gmm-decode-faster.cc	83;"	d	file:
+DEFAULT_RIGHT_CONTEXT	gst-online-gmm-decode-faster.cc	89;"	d	file:
+DEFAULT_SILENCE_PHONES	gst-online-gmm-decode-faster.cc	86;"	d	file:
+DEFAULT_WORD_SYMS	gst-online-gmm-decode-faster.cc	85;"	d	file:
+FeInput	gst-online-gmm-decode-faster.h	/^typedef OnlineFeInput<Mfcc> FeInput;$/;"	t	namespace:kaldi
+GST_CAT_DEFAULT	gst-online-gmm-decode-faster.cc	65;"	d	file:
+GST_IS_ONLINEGMMDECODEFASTER	gst-online-gmm-decode-faster.h	49;"	d
+GST_IS_ONLINEGMMDECODEFASTER_CLASS	gst-online-gmm-decode-faster.h	51;"	d
+GST_ONLINEGMMDECODEFASTER	gst-online-gmm-decode-faster.h	45;"	d
+GST_ONLINEGMMDECODEFASTER_CLASS	gst-online-gmm-decode-faster.h	47;"	d
+GST_TYPE_ONLINEGMMDECODEFASTER	gst-online-gmm-decode-faster.h	43;"	d
+GstBufferSource	gst-audio-source.cc	/^GstBufferSource::GstBufferSource() :$/;"	f	class:kaldi::GstBufferSource
+GstBufferSource	gst-audio-source.h	/^class GstBufferSource : public OnlineAudioSourceItf {$/;"	c	namespace:kaldi
+GstOnlineGmmDecodeFaster	gst-online-gmm-decode-faster.h	/^typedef struct _GstOnlineGmmDecodeFaster      GstOnlineGmmDecodeFaster;$/;"	t	namespace:kaldi	typeref:struct:kaldi::_GstOnlineGmmDecodeFaster
+GstOnlineGmmDecodeFasterClass	gst-online-gmm-decode-faster.h	/^typedef struct _GstOnlineGmmDecodeFasterClass GstOnlineGmmDecodeFasterClass;$/;"	t	namespace:kaldi	typeref:struct:kaldi::_GstOnlineGmmDecodeFasterClass
+HYP_WORD_SIGNAL	gst-online-gmm-decode-faster.cc	/^  HYP_WORD_SIGNAL,$/;"	e	enum:kaldi::__anon1	file:
+KALDI_GST_PLUGIN_GST_AUDIO_SOURCE_H_	gst-audio-source.h	21;"	d
+KALDI_GST_PLUGIN_GST_ONLINE_GMM_DECODE_FASTER_H_	gst-online-gmm-decode-faster.h	21;"	d
+LAST_SIGNAL	gst-online-gmm-decode-faster.cc	/^  LAST_SIGNAL$/;"	e	enum:kaldi::__anon1	file:
+PACKAGE	gst-online-gmm-decode-faster.cc	871;"	d	file:
+PROP_0	gst-online-gmm-decode-faster.cc	/^  PROP_0,$/;"	e	enum:kaldi::__anon2	file:
+PROP_FST	gst-online-gmm-decode-faster.cc	/^  PROP_FST,$/;"	e	enum:kaldi::__anon2	file:
+PROP_LAST	gst-online-gmm-decode-faster.cc	/^  PROP_LAST$/;"	e	enum:kaldi::__anon2	file:
+PROP_LDA_MAT	gst-online-gmm-decode-faster.cc	/^  PROP_LDA_MAT,$/;"	e	enum:kaldi::__anon2	file:
+PROP_MODEL	gst-online-gmm-decode-faster.cc	/^  PROP_MODEL,$/;"	e	enum:kaldi::__anon2	file:
+PROP_SILENCE_PHONES	gst-online-gmm-decode-faster.cc	/^  PROP_SILENCE_PHONES,$/;"	e	enum:kaldi::__anon2	file:
+PROP_SILENT	gst-online-gmm-decode-faster.cc	/^  PROP_SILENT,$/;"	e	enum:kaldi::__anon2	file:
+PROP_WORD_SYMS	gst-online-gmm-decode-faster.cc	/^  PROP_WORD_SYMS,$/;"	e	enum:kaldi::__anon2	file:
+PushBuffer	gst-audio-source.cc	/^void GstBufferSource::PushBuffer(GstBuffer *buf) {$/;"	f	class:kaldi::GstBufferSource
+Read	gst-audio-source.cc	/^bool GstBufferSource::Read(Vector<BaseFloat> *data) {$/;"	f	class:kaldi::GstBufferSource
+SampleType	gst-audio-source.h	/^  typedef int16 SampleType;  \/\/ hardcoded 16-bit audio$/;"	t	class:kaldi::GstBufferSource
+SetEnded	gst-audio-source.cc	/^void GstBufferSource::SetEnded(bool ended) {$/;"	f	class:kaldi::GstBufferSource
+VERSION	gst-online-gmm-decode-faster.cc	43;"	d	file:
+_GstOnlineGmmDecodeFaster	gst-online-gmm-decode-faster.h	/^struct _GstOnlineGmmDecodeFaster {$/;"	s	namespace:kaldi
+_GstOnlineGmmDecodeFasterClass	gst-online-gmm-decode-faster.h	/^struct _GstOnlineGmmDecodeFasterClass {$/;"	s	namespace:kaldi
+acoustic_scale_	gst-online-gmm-decode-faster.h	/^  BaseFloat acoustic_scale_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+am_gmm_	gst-online-gmm-decode-faster.h	/^  AmDiagGmm *am_gmm_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+au_src_	gst-online-gmm-decode-faster.h	/^  GstBufferSource *au_src_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+buf_queue_	gst-audio-source.h	/^  GAsyncQueue* buf_queue_;$/;"	m	class:kaldi::GstBufferSource
+cmn_window_	gst-online-gmm-decode-faster.h	/^  int32 cmn_window_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+current_buffer_	gst-audio-source.h	/^  GstBuffer *current_buffer_;$/;"	m	class:kaldi::GstBufferSource
+data_cond_	gst-audio-source.h	/^  GCond data_cond_;$/;"	m	class:kaldi::GstBufferSource
+decode_fst_	gst-online-gmm-decode-faster.h	/^  fst::Fst<fst::StdArc> *decode_fst_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+decoder_	gst-online-gmm-decode-faster.h	/^  OnlineFasterDecoder *decoder_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+decoder_opts_	gst-online-gmm-decode-faster.h	/^  OnlineFasterDecoderOpts *decoder_opts_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+element	gst-online-gmm-decode-faster.h	/^  GstElement element;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+ended_	gst-audio-source.h	/^  bool ended_;$/;"	m	class:kaldi::GstBufferSource
+feature_reading_opts_	gst-online-gmm-decode-faster.h	/^  OnlineFeatureMatrixOptions *feature_reading_opts_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+fst_rspecifier_	gst-online-gmm-decode-faster.h	/^  gchar* fst_rspecifier_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+gst_online_gmm_decode_faster_allocate	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_allocate(GstOnlineGmmDecodeFaster * filter) {$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_chain	gst-online-gmm-decode-faster.cc	/^static GstFlowReturn gst_online_gmm_decode_faster_chain(GstPad * pad,$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_change_state	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_change_state(GstElement *element, GstStateChange transition) {$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_class_init	gst-online-gmm-decode-faster.cc	/^static void gst_online_gmm_decode_faster_class_init(GstOnlineGmmDecodeFasterClass * klass) {$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_deallocate	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_deallocate(GstOnlineGmmDecodeFaster * filter) {$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_finalize	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_finalize(GObject * object) {$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_get_property	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_get_property(GObject * object, guint prop_id,$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_init	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_init(GstOnlineGmmDecodeFaster * filter) {$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_loop	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_loop(GstOnlineGmmDecodeFaster * filter) {$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_parent_class	gst-online-gmm-decode-faster.cc	115;"	d	file:
+gst_online_gmm_decode_faster_push_word	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_push_word(GstOnlineGmmDecodeFaster * filter, GstPad *pad, std::string word) {$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_push_words	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_push_words(GstOnlineGmmDecodeFaster * filter, GstPad *pad,$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_set_property	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_set_property(GObject * object, guint prop_id,$/;"	f	namespace:kaldi
+gst_online_gmm_decode_faster_signals	gst-online-gmm-decode-faster.cc	/^static guint gst_online_gmm_decode_faster_signals[LAST_SIGNAL];$/;"	m	namespace:kaldi	file:
+gst_online_gmm_decode_faster_sink_event	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_sink_event(GstPad * pad, GstObject * parent, GstEvent * event) {$/;"	f	namespace:kaldi
+hyp_word	gst-online-gmm-decode-faster.h	/^  void (*hyp_word)(GstElement *element, const gchar *hyp_str);$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFasterClass
+kSampleFreq	gst-online-gmm-decode-faster.h	/^uint32 kSampleFreq = 16000;$/;"	m	namespace:kaldi
+kaldi	gst-audio-source.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gst-audio-source.h	/^namespace kaldi {$/;"	n
+kaldi	gst-online-gmm-decode-faster.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	gst-online-gmm-decode-faster.h	/^namespace kaldi {$/;"	n
+kaldi::FeInput	gst-online-gmm-decode-faster.h	/^typedef OnlineFeInput<Mfcc> FeInput;$/;"	t	namespace:kaldi
+kaldi::GstBufferSource	gst-audio-source.h	/^class GstBufferSource : public OnlineAudioSourceItf {$/;"	c	namespace:kaldi
+kaldi::GstBufferSource::GstBufferSource	gst-audio-source.cc	/^GstBufferSource::GstBufferSource() :$/;"	f	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::PushBuffer	gst-audio-source.cc	/^void GstBufferSource::PushBuffer(GstBuffer *buf) {$/;"	f	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::Read	gst-audio-source.cc	/^bool GstBufferSource::Read(Vector<BaseFloat> *data) {$/;"	f	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::SampleType	gst-audio-source.h	/^  typedef int16 SampleType;  \/\/ hardcoded 16-bit audio$/;"	t	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::SetEnded	gst-audio-source.cc	/^void GstBufferSource::SetEnded(bool ended) {$/;"	f	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::buf_queue_	gst-audio-source.h	/^  GAsyncQueue* buf_queue_;$/;"	m	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::current_buffer_	gst-audio-source.h	/^  GstBuffer *current_buffer_;$/;"	m	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::data_cond_	gst-audio-source.h	/^  GCond data_cond_;$/;"	m	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::ended_	gst-audio-source.h	/^  bool ended_;$/;"	m	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::lock_	gst-audio-source.h	/^  GMutex lock_;$/;"	m	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::pos_in_current_buf_	gst-audio-source.h	/^  gint pos_in_current_buf_;$/;"	m	class:kaldi::GstBufferSource
+kaldi::GstBufferSource::~GstBufferSource	gst-audio-source.cc	/^GstBufferSource::~GstBufferSource() {$/;"	f	class:kaldi::GstBufferSource
+kaldi::GstOnlineGmmDecodeFaster	gst-online-gmm-decode-faster.h	/^typedef struct _GstOnlineGmmDecodeFaster      GstOnlineGmmDecodeFaster;$/;"	t	namespace:kaldi	typeref:struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::GstOnlineGmmDecodeFasterClass	gst-online-gmm-decode-faster.h	/^typedef struct _GstOnlineGmmDecodeFasterClass GstOnlineGmmDecodeFasterClass;$/;"	t	namespace:kaldi	typeref:struct:kaldi::_GstOnlineGmmDecodeFasterClass
+kaldi::HYP_WORD_SIGNAL	gst-online-gmm-decode-faster.cc	/^  HYP_WORD_SIGNAL,$/;"	e	enum:kaldi::__anon1	file:
+kaldi::LAST_SIGNAL	gst-online-gmm-decode-faster.cc	/^  LAST_SIGNAL$/;"	e	enum:kaldi::__anon1	file:
+kaldi::PROP_0	gst-online-gmm-decode-faster.cc	/^  PROP_0,$/;"	e	enum:kaldi::__anon2	file:
+kaldi::PROP_FST	gst-online-gmm-decode-faster.cc	/^  PROP_FST,$/;"	e	enum:kaldi::__anon2	file:
+kaldi::PROP_LAST	gst-online-gmm-decode-faster.cc	/^  PROP_LAST$/;"	e	enum:kaldi::__anon2	file:
+kaldi::PROP_LDA_MAT	gst-online-gmm-decode-faster.cc	/^  PROP_LDA_MAT,$/;"	e	enum:kaldi::__anon2	file:
+kaldi::PROP_MODEL	gst-online-gmm-decode-faster.cc	/^  PROP_MODEL,$/;"	e	enum:kaldi::__anon2	file:
+kaldi::PROP_SILENCE_PHONES	gst-online-gmm-decode-faster.cc	/^  PROP_SILENCE_PHONES,$/;"	e	enum:kaldi::__anon2	file:
+kaldi::PROP_SILENT	gst-online-gmm-decode-faster.cc	/^  PROP_SILENT,$/;"	e	enum:kaldi::__anon2	file:
+kaldi::PROP_WORD_SYMS	gst-online-gmm-decode-faster.cc	/^  PROP_WORD_SYMS,$/;"	e	enum:kaldi::__anon2	file:
+kaldi::_GstOnlineGmmDecodeFaster	gst-online-gmm-decode-faster.h	/^struct _GstOnlineGmmDecodeFaster {$/;"	s	namespace:kaldi
+kaldi::_GstOnlineGmmDecodeFaster::acoustic_scale_	gst-online-gmm-decode-faster.h	/^  BaseFloat acoustic_scale_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::am_gmm_	gst-online-gmm-decode-faster.h	/^  AmDiagGmm *am_gmm_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::au_src_	gst-online-gmm-decode-faster.h	/^  GstBufferSource *au_src_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::cmn_window_	gst-online-gmm-decode-faster.h	/^  int32 cmn_window_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::decode_fst_	gst-online-gmm-decode-faster.h	/^  fst::Fst<fst::StdArc> *decode_fst_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::decoder_	gst-online-gmm-decode-faster.h	/^  OnlineFasterDecoder *decoder_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::decoder_opts_	gst-online-gmm-decode-faster.h	/^  OnlineFasterDecoderOpts *decoder_opts_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::element	gst-online-gmm-decode-faster.h	/^  GstElement element;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::feature_reading_opts_	gst-online-gmm-decode-faster.h	/^  OnlineFeatureMatrixOptions *feature_reading_opts_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::fst_rspecifier_	gst-online-gmm-decode-faster.h	/^  gchar* fst_rspecifier_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::lda_mat_rspecifier_	gst-online-gmm-decode-faster.h	/^  gchar* lda_mat_rspecifier_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::lda_transform_	gst-online-gmm-decode-faster.h	/^  Matrix<BaseFloat> *lda_transform_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::left_context_	gst-online-gmm-decode-faster.h	/^  int32 right_context_, left_context_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::min_cmn_window_	gst-online-gmm-decode-faster.h	/^  int32 min_cmn_window_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::model_rspecifier_	gst-online-gmm-decode-faster.h	/^  gchar* model_rspecifier_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::out_fst_	gst-online-gmm-decode-faster.h	/^  fst::VectorFst<LatticeArc> *out_fst_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::right_context_	gst-online-gmm-decode-faster.h	/^  int32 right_context_, left_context_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::silence_phones_	gst-online-gmm-decode-faster.h	/^  std::vector<int32> *silence_phones_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::silent_	gst-online-gmm-decode-faster.h	/^  bool silent_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::simple_options_	gst-online-gmm-decode-faster.h	/^  SimpleOptions *simple_options_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::sinkpad_	gst-online-gmm-decode-faster.h	/^  GstPad *sinkpad_, *srcpad_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::srcpad_	gst-online-gmm-decode-faster.h	/^  GstPad *sinkpad_, *srcpad_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::trans_model_	gst-online-gmm-decode-faster.h	/^  TransitionModel *trans_model_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::word_syms_	gst-online-gmm-decode-faster.h	/^  fst::SymbolTable *word_syms_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFaster::word_syms_filename_	gst-online-gmm-decode-faster.h	/^  gchar* word_syms_filename_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+kaldi::_GstOnlineGmmDecodeFasterClass	gst-online-gmm-decode-faster.h	/^struct _GstOnlineGmmDecodeFasterClass {$/;"	s	namespace:kaldi
+kaldi::_GstOnlineGmmDecodeFasterClass::hyp_word	gst-online-gmm-decode-faster.h	/^  void (*hyp_word)(GstElement *element, const gchar *hyp_str);$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFasterClass
+kaldi::_GstOnlineGmmDecodeFasterClass::parent_class	gst-online-gmm-decode-faster.h	/^  GstElementClass parent_class;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFasterClass
+kaldi::gst_online_gmm_decode_faster_allocate	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_allocate(GstOnlineGmmDecodeFaster * filter) {$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_chain	gst-online-gmm-decode-faster.cc	/^static GstFlowReturn gst_online_gmm_decode_faster_chain(GstPad * pad,$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_change_state	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_change_state(GstElement *element, GstStateChange transition) {$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_class_init	gst-online-gmm-decode-faster.cc	/^static void gst_online_gmm_decode_faster_class_init(GstOnlineGmmDecodeFasterClass * klass) {$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_deallocate	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_deallocate(GstOnlineGmmDecodeFaster * filter) {$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_finalize	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_finalize(GObject * object) {$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_get_property	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_get_property(GObject * object, guint prop_id,$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_init	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_init(GstOnlineGmmDecodeFaster * filter) {$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_loop	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_loop(GstOnlineGmmDecodeFaster * filter) {$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_push_word	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_push_word(GstOnlineGmmDecodeFaster * filter, GstPad *pad, std::string word) {$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_push_words	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_push_words(GstOnlineGmmDecodeFaster * filter, GstPad *pad,$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_set_property	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_set_property(GObject * object, guint prop_id,$/;"	f	namespace:kaldi
+kaldi::gst_online_gmm_decode_faster_signals	gst-online-gmm-decode-faster.cc	/^static guint gst_online_gmm_decode_faster_signals[LAST_SIGNAL];$/;"	m	namespace:kaldi	file:
+kaldi::gst_online_gmm_decode_faster_sink_event	gst-online-gmm-decode-faster.cc	/^gst_online_gmm_decode_faster_sink_event(GstPad * pad, GstObject * parent, GstEvent * event) {$/;"	f	namespace:kaldi
+kaldi::kSampleFreq	gst-online-gmm-decode-faster.h	/^uint32 kSampleFreq = 16000;$/;"	m	namespace:kaldi
+kaldi::onlinegmmdecodefaster_init	gst-online-gmm-decode-faster.cc	/^onlinegmmdecodefaster_init(GstPlugin * onlinegmmdecodefaster) {$/;"	f	namespace:kaldi
+kaldi::sink_factory	gst-online-gmm-decode-faster.cc	/^static GstStaticPadTemplate sink_factory =$/;"	m	namespace:kaldi	file:
+kaldi::src_factory	gst-online-gmm-decode-faster.cc	/^static GstStaticPadTemplate src_factory =$/;"	m	namespace:kaldi	file:
+lda_mat_rspecifier_	gst-online-gmm-decode-faster.h	/^  gchar* lda_mat_rspecifier_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+lda_transform_	gst-online-gmm-decode-faster.h	/^  Matrix<BaseFloat> *lda_transform_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+left_context_	gst-online-gmm-decode-faster.h	/^  int32 right_context_, left_context_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+lock_	gst-audio-source.h	/^  GMutex lock_;$/;"	m	class:kaldi::GstBufferSource
+min_cmn_window_	gst-online-gmm-decode-faster.h	/^  int32 min_cmn_window_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+model_rspecifier_	gst-online-gmm-decode-faster.h	/^  gchar* model_rspecifier_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+onlinegmmdecodefaster_init	gst-online-gmm-decode-faster.cc	/^onlinegmmdecodefaster_init(GstPlugin * onlinegmmdecodefaster) {$/;"	f	namespace:kaldi
+out_fst_	gst-online-gmm-decode-faster.h	/^  fst::VectorFst<LatticeArc> *out_fst_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+parent_class	gst-online-gmm-decode-faster.h	/^  GstElementClass parent_class;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFasterClass
+pos_in_current_buf_	gst-audio-source.h	/^  gint pos_in_current_buf_;$/;"	m	class:kaldi::GstBufferSource
+right_context_	gst-online-gmm-decode-faster.h	/^  int32 right_context_, left_context_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+silence_phones_	gst-online-gmm-decode-faster.h	/^  std::vector<int32> *silence_phones_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+silent_	gst-online-gmm-decode-faster.h	/^  bool silent_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+simple_options_	gst-online-gmm-decode-faster.h	/^  SimpleOptions *simple_options_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+sink_factory	gst-online-gmm-decode-faster.cc	/^static GstStaticPadTemplate sink_factory =$/;"	m	namespace:kaldi	file:
+sinkpad_	gst-online-gmm-decode-faster.h	/^  GstPad *sinkpad_, *srcpad_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+src_factory	gst-online-gmm-decode-faster.cc	/^static GstStaticPadTemplate src_factory =$/;"	m	namespace:kaldi	file:
+srcpad_	gst-online-gmm-decode-faster.h	/^  GstPad *sinkpad_, *srcpad_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+trans_model_	gst-online-gmm-decode-faster.h	/^  TransitionModel *trans_model_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+word_syms_	gst-online-gmm-decode-faster.h	/^  fst::SymbolTable *word_syms_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+word_syms_filename_	gst-online-gmm-decode-faster.h	/^  gchar* word_syms_filename_;$/;"	m	struct:kaldi::_GstOnlineGmmDecodeFaster
+~GstBufferSource	gst-audio-source.cc	/^GstBufferSource::~GstBufferSource() {$/;"	f	class:kaldi::GstBufferSource

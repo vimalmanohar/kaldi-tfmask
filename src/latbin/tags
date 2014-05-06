@@ -1,0 +1,146 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CheckFst	lattice-oracle.cc	/^bool CheckFst(fst::StdVectorFst &fst, string name, string key) {$/;"	f	namespace:kaldi
+CompactLatticeNormalize	lattice-combine.cc	/^bool CompactLatticeNormalize(CompactLattice *clat, BaseFloat weight,$/;"	f	namespace:kaldi
+ConvertFstToArcLattice	lattice-arcgraph.cc	/^void ConvertFstToArcLattice(fst::StdVectorFst *net, kaldi::Lattice *lat,$/;"	f
+ConvertLatticeToUnweightedAcceptor	lattice-oracle.cc	/^void ConvertLatticeToUnweightedAcceptor(const kaldi::Lattice &ilat,$/;"	f	namespace:kaldi
+CountErrors	lattice-oracle.cc	/^void CountErrors(fst::StdVectorFst &fst,$/;"	f	namespace:kaldi
+CreateEditDistance	lattice-oracle.cc	/^void CreateEditDistance(const fst::StdVectorFst &fst1,$/;"	f	namespace:kaldi
+DecodeGraphSymbols	lattice-arcgraph.cc	/^void DecodeGraphSymbols(const std::vector<std::pair<int32,int32> > &arc_map,$/;"	f
+DeterminizeLatticeTask	lattice-determinize-phone-pruned-parallel.cc	/^  DeterminizeLatticeTask($/;"	f	class:kaldi::DeterminizeLatticeTask
+DeterminizeLatticeTask	lattice-determinize-phone-pruned-parallel.cc	/^class DeterminizeLatticeTask {$/;"	c	namespace:kaldi	file:
+DeterminizeLatticeTask	lattice-determinize-pruned-parallel.cc	/^  DeterminizeLatticeTask($/;"	f	class:kaldi::DeterminizeLatticeTask
+DeterminizeLatticeTask	lattice-determinize-pruned-parallel.cc	/^class DeterminizeLatticeTask {$/;"	c	namespace:kaldi	file:
+DeterminizeLatticeWrapper	lattice-determinize.cc	/^bool DeterminizeLatticeWrapper(const Lattice &lat,$/;"	f	namespace:kaldi
+GetOracleLattice	lattice-oracle.cc	/^bool GetOracleLattice(Lattice *oracle_lat, $/;"	f	namespace:kaldi
+GetUtteranceId	nbest-to-lattice.cc	/^bool GetUtteranceId(const std::string &nbest_id, std::string *utterance_id) {$/;"	f
+Label	lattice-arcgraph.cc	/^typedef fst::StdArc::Label Label;$/;"	t	file:
+LabelSet	lattice-oracle.cc	/^typedef unordered_set<fst::StdArc::Label> LabelSet; $/;"	t	namespace:kaldi	file:
+LatticeAcousticRescore	lattice-rescore-mapped.cc	/^void LatticeAcousticRescore(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+MakeLatticeFromLinear	linear-to-nbest.cc	/^void MakeLatticeFromLinear(const std::vector<int32> &ali,$/;"	f	namespace:kaldi
+MapTransitionIdsToTransitionStates	lattice-arcgraph.cc	/^void MapTransitionIdsToTransitionStates(kaldi::CompactLattice *lat,$/;"	f
+MapWildCards	lattice-oracle.cc	/^void MapWildCards(const LabelSet &wildcards, fst::StdVectorFst *ofst) {$/;"	f	namespace:kaldi
+ReadSymbolList	lattice-oracle.cc	/^void ReadSymbolList(const std::string &rxfilename,$/;"	f	namespace:kaldi
+SplitStringToWeights	lattice-combine.cc	/^void SplitStringToWeights(const string &full, const char *delim,$/;"	f	namespace:kaldi
+StateId	lattice-arcgraph.cc	/^typedef fst::StdArc::StateId StateId;$/;"	t	file:
+Weight	lattice-arcgraph.cc	/^typedef fst::StdArc::Weight Weight;$/;"	t	file:
+acoustic_scale_	lattice-determinize-phone-pruned-parallel.cc	/^  BaseFloat acoustic_scale_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+acoustic_scale_	lattice-determinize-pruned-parallel.cc	/^  BaseFloat acoustic_scale_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+beam_	lattice-determinize-phone-pruned-parallel.cc	/^  BaseFloat beam_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+beam_	lattice-determinize-pruned-parallel.cc	/^  BaseFloat beam_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+clat_writer_	lattice-determinize-phone-pruned-parallel.cc	/^  CompactLatticeWriter *clat_writer_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+clat_writer_	lattice-determinize-pruned-parallel.cc	/^  CompactLatticeWriter *clat_writer_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+det_clat_	lattice-determinize-phone-pruned-parallel.cc	/^  CompactLattice det_clat_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+det_clat_	lattice-determinize-pruned-parallel.cc	/^  CompactLattice det_clat_; \/\/ The output of our process.  Will be written$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi	lattice-combine.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	lattice-determinize-phone-pruned-parallel.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	lattice-determinize-pruned-parallel.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	lattice-determinize.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	lattice-oracle.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	lattice-rescore-mapped.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	linear-to-nbest.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::CheckFst	lattice-oracle.cc	/^bool CheckFst(fst::StdVectorFst &fst, string name, string key) {$/;"	f	namespace:kaldi
+kaldi::CompactLatticeNormalize	lattice-combine.cc	/^bool CompactLatticeNormalize(CompactLattice *clat, BaseFloat weight,$/;"	f	namespace:kaldi
+kaldi::ConvertLatticeToUnweightedAcceptor	lattice-oracle.cc	/^void ConvertLatticeToUnweightedAcceptor(const kaldi::Lattice &ilat,$/;"	f	namespace:kaldi
+kaldi::CountErrors	lattice-oracle.cc	/^void CountErrors(fst::StdVectorFst &fst,$/;"	f	namespace:kaldi
+kaldi::CreateEditDistance	lattice-oracle.cc	/^void CreateEditDistance(const fst::StdVectorFst &fst1,$/;"	f	namespace:kaldi
+kaldi::DeterminizeLatticeTask	lattice-determinize-phone-pruned-parallel.cc	/^class DeterminizeLatticeTask {$/;"	c	namespace:kaldi	file:
+kaldi::DeterminizeLatticeTask	lattice-determinize-pruned-parallel.cc	/^class DeterminizeLatticeTask {$/;"	c	namespace:kaldi	file:
+kaldi::DeterminizeLatticeTask::DeterminizeLatticeTask	lattice-determinize-phone-pruned-parallel.cc	/^  DeterminizeLatticeTask($/;"	f	class:kaldi::DeterminizeLatticeTask
+kaldi::DeterminizeLatticeTask::DeterminizeLatticeTask	lattice-determinize-pruned-parallel.cc	/^  DeterminizeLatticeTask($/;"	f	class:kaldi::DeterminizeLatticeTask
+kaldi::DeterminizeLatticeTask::acoustic_scale_	lattice-determinize-phone-pruned-parallel.cc	/^  BaseFloat acoustic_scale_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::acoustic_scale_	lattice-determinize-pruned-parallel.cc	/^  BaseFloat acoustic_scale_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::beam_	lattice-determinize-phone-pruned-parallel.cc	/^  BaseFloat beam_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::beam_	lattice-determinize-pruned-parallel.cc	/^  BaseFloat beam_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::clat_writer_	lattice-determinize-phone-pruned-parallel.cc	/^  CompactLatticeWriter *clat_writer_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::clat_writer_	lattice-determinize-pruned-parallel.cc	/^  CompactLatticeWriter *clat_writer_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::det_clat_	lattice-determinize-phone-pruned-parallel.cc	/^  CompactLattice det_clat_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::det_clat_	lattice-determinize-pruned-parallel.cc	/^  CompactLattice det_clat_; \/\/ The output of our process.  Will be written$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::key_	lattice-determinize-phone-pruned-parallel.cc	/^  std::string key_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::key_	lattice-determinize-pruned-parallel.cc	/^  std::string key_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::lat_	lattice-determinize-phone-pruned-parallel.cc	/^  Lattice *lat_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::lat_	lattice-determinize-pruned-parallel.cc	/^  Lattice *lat_; \/\/ The lattice we're working on.  Owned locally.$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::minimize_	lattice-determinize-pruned-parallel.cc	/^  bool minimize_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::num_warn_	lattice-determinize-phone-pruned-parallel.cc	/^  int32 *num_warn_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::num_warn_	lattice-determinize-pruned-parallel.cc	/^  int32 *num_warn_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::operator ()	lattice-determinize-phone-pruned-parallel.cc	/^  void operator () () {$/;"	f	class:kaldi::DeterminizeLatticeTask
+kaldi::DeterminizeLatticeTask::operator ()	lattice-determinize-pruned-parallel.cc	/^  void operator () () {$/;"	f	class:kaldi::DeterminizeLatticeTask
+kaldi::DeterminizeLatticeTask::opts_	lattice-determinize-phone-pruned-parallel.cc	/^  const fst::DeterminizeLatticePhonePrunedOptions &opts_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::opts_	lattice-determinize-pruned-parallel.cc	/^  const fst::DeterminizeLatticePrunedOptions &opts_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::trans_model_	lattice-determinize-phone-pruned-parallel.cc	/^  const TransitionModel *trans_model_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+kaldi::DeterminizeLatticeTask::~DeterminizeLatticeTask	lattice-determinize-phone-pruned-parallel.cc	/^  ~DeterminizeLatticeTask() {$/;"	f	class:kaldi::DeterminizeLatticeTask
+kaldi::DeterminizeLatticeTask::~DeterminizeLatticeTask	lattice-determinize-pruned-parallel.cc	/^  ~DeterminizeLatticeTask() {$/;"	f	class:kaldi::DeterminizeLatticeTask
+kaldi::DeterminizeLatticeWrapper	lattice-determinize.cc	/^bool DeterminizeLatticeWrapper(const Lattice &lat,$/;"	f	namespace:kaldi
+kaldi::GetOracleLattice	lattice-oracle.cc	/^bool GetOracleLattice(Lattice *oracle_lat, $/;"	f	namespace:kaldi
+kaldi::LabelSet	lattice-oracle.cc	/^typedef unordered_set<fst::StdArc::Label> LabelSet; $/;"	t	namespace:kaldi	file:
+kaldi::LatticeAcousticRescore	lattice-rescore-mapped.cc	/^void LatticeAcousticRescore(const TransitionModel &trans_model,$/;"	f	namespace:kaldi
+kaldi::MakeLatticeFromLinear	linear-to-nbest.cc	/^void MakeLatticeFromLinear(const std::vector<int32> &ali,$/;"	f	namespace:kaldi
+kaldi::MapWildCards	lattice-oracle.cc	/^void MapWildCards(const LabelSet &wildcards, fst::StdVectorFst *ofst) {$/;"	f	namespace:kaldi
+kaldi::ReadSymbolList	lattice-oracle.cc	/^void ReadSymbolList(const std::string &rxfilename,$/;"	f	namespace:kaldi
+kaldi::SplitStringToWeights	lattice-combine.cc	/^void SplitStringToWeights(const string &full, const char *delim,$/;"	f	namespace:kaldi
+key_	lattice-determinize-phone-pruned-parallel.cc	/^  std::string key_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+key_	lattice-determinize-pruned-parallel.cc	/^  std::string key_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+lat_	lattice-determinize-phone-pruned-parallel.cc	/^  Lattice *lat_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+lat_	lattice-determinize-pruned-parallel.cc	/^  Lattice *lat_; \/\/ The lattice we're working on.  Owned locally.$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+main	lattice-1best.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-add-penalty.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-add-trans-probs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-align-phones.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-align-words-lexicon.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-align-words.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-arcgraph.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-best-path.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-boost-ali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-combine.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-compose.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-copy-backoff.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-depth-per-frame.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-depth.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-determinize-phone-pruned-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-determinize-phone-pruned.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-determinize-pruned-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-determinize-pruned.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-determinize.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-difference.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-equivalent.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-interp.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-limit-depth.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-lmrescore.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-mbr-decode.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-minimize.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-oracle.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-project.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-prune.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-push.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-rescore-mapped.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-reverse.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-rmali.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-scale.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-to-ctm-conf.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-to-fst.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-to-mpe-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-to-nbest.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-to-phone-lattice.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-to-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-to-smbr-post.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-union.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lattice-word-align.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	linear-to-nbest.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nbest-to-ctm.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nbest-to-lattice.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nbest-to-linear.cc	/^int main(int argc, char *argv[]) {$/;"	f
+minimize_	lattice-determinize-pruned-parallel.cc	/^  bool minimize_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+num_warn_	lattice-determinize-phone-pruned-parallel.cc	/^  int32 *num_warn_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+num_warn_	lattice-determinize-pruned-parallel.cc	/^  int32 *num_warn_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+operator ()	lattice-determinize-phone-pruned-parallel.cc	/^  void operator () () {$/;"	f	class:kaldi::DeterminizeLatticeTask
+operator ()	lattice-determinize-pruned-parallel.cc	/^  void operator () () {$/;"	f	class:kaldi::DeterminizeLatticeTask
+opts_	lattice-determinize-phone-pruned-parallel.cc	/^  const fst::DeterminizeLatticePhonePrunedOptions &opts_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+opts_	lattice-determinize-pruned-parallel.cc	/^  const fst::DeterminizeLatticePrunedOptions &opts_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+trans_model_	lattice-determinize-phone-pruned-parallel.cc	/^  const TransitionModel *trans_model_;$/;"	m	class:kaldi::DeterminizeLatticeTask	file:
+~DeterminizeLatticeTask	lattice-determinize-phone-pruned-parallel.cc	/^  ~DeterminizeLatticeTask() {$/;"	f	class:kaldi::DeterminizeLatticeTask
+~DeterminizeLatticeTask	lattice-determinize-pruned-parallel.cc	/^  ~DeterminizeLatticeTask() {$/;"	f	class:kaldi::DeterminizeLatticeTask

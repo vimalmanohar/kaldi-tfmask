@@ -1,0 +1,495 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AccStatsForUtterance	ivector-extractor.cc	/^double IvectorStats::AccStatsForUtterance($/;"	f	class:kaldi::IvectorStats
+AccStatsForUtterance	ivector-extractor.cc	/^void IvectorStats::AccStatsForUtterance($/;"	f	class:kaldi::IvectorStats
+Add	ivector-extractor.cc	/^void IvectorStats::Add(const IvectorStats &other) {$/;"	f	class:kaldi::IvectorStats
+AddSamples	plda.cc	/^void PldaStats::AddSamples(double weight,$/;"	f	class:kaldi::PldaStats
+AuxfPerFrame	ivector-extractor.h	/^  double AuxfPerFrame() { return tot_auxf_ \/ gamma_.Sum(); }$/;"	f	class:kaldi::IvectorStats
+CheckDims	ivector-extractor.cc	/^void IvectorStats::CheckDims(const IvectorExtractor &extractor) const {$/;"	f	class:kaldi::IvectorStats
+ClassInfo	plda.h	/^    ClassInfo(double weight, Vector<double> *mean, int32 num_examples):$/;"	f	struct:kaldi::PldaStats::ClassInfo
+ClassInfo	plda.h	/^  struct ClassInfo {$/;"	s	class:kaldi::PldaStats
+ClassInfo	plda.h	/^  typedef PldaStats::ClassInfo ClassInfo;$/;"	t	class:kaldi::PldaEstimator
+CommitStatsForM	ivector-extractor.cc	/^void IvectorStats::CommitStatsForM($/;"	f	class:kaldi::IvectorStats
+CommitStatsForPrior	ivector-extractor.cc	/^void IvectorStats::CommitStatsForPrior(const VectorBase<double> &ivec_mean,$/;"	f	class:kaldi::IvectorStats
+CommitStatsForSigma	ivector-extractor.cc	/^void IvectorStats::CommitStatsForSigma($/;"	f	class:kaldi::IvectorStats
+CommitStatsForUtterance	ivector-extractor.cc	/^void IvectorStats::CommitStatsForUtterance($/;"	f	class:kaldi::IvectorStats
+CommitStatsForW	ivector-extractor.cc	/^void IvectorStats::CommitStatsForW($/;"	f	class:kaldi::IvectorStats
+CommitStatsForWPoint	ivector-extractor.cc	/^void IvectorStats::CommitStatsForWPoint($/;"	f	class:kaldi::IvectorStats
+ComputeDerivedVars	ivector-extractor.cc	/^void IvectorExtractor::ComputeDerivedVars() {$/;"	f	class:kaldi::IvectorExtractor
+ComputeDerivedVars	ivector-extractor.cc	/^void IvectorExtractor::ComputeDerivedVars(int32 i) {$/;"	f	class:kaldi::IvectorExtractor
+ComputeDerivedVars	plda.cc	/^void Plda::ComputeDerivedVars() {$/;"	f	class:kaldi::Plda
+ComputeNormalizingTransform	plda.cc	/^static void ComputeNormalizingTransform(const SpMatrix<Real> &covar,$/;"	f	namespace:kaldi
+ComputeObjf	plda.cc	/^double PldaEstimator::ComputeObjf() const {$/;"	f	class:kaldi::PldaEstimator
+ComputeObjfPart1	plda.cc	/^double PldaEstimator::ComputeObjfPart1() const {$/;"	f	class:kaldi::PldaEstimator
+ComputeObjfPart2	plda.cc	/^double PldaEstimator::ComputeObjfPart2() const {$/;"	f	class:kaldi::PldaEstimator
+ComputeVadEnergy	voice-activity-detection.cc	/^void ComputeVadEnergy(const VadEnergyOptions &opts,$/;"	f	namespace:kaldi
+Dim	plda.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::PldaStats
+Dim	plda.h	/^  int32 Dim() const { return mean_.Dim(); }$/;"	f	class:kaldi::Plda
+Dim	plda.h	/^  int32 Dim() const { return stats_.Dim(); }$/;"	f	class:kaldi::PldaEstimator
+DoStep	logistic-regression.cc	/^BaseFloat LogisticRegression::DoStep(const Matrix<BaseFloat> &xs,$/;"	f	class:kaldi::LogisticRegression
+Estimate	plda.cc	/^void PldaEstimator::Estimate(const PldaEstimationConfig &config,$/;"	f	class:kaldi::PldaEstimator
+EstimateFromStats	plda.cc	/^void PldaEstimator::EstimateFromStats() {$/;"	f	class:kaldi::PldaEstimator
+EstimateOneIter	plda.cc	/^void PldaEstimator::EstimateOneIter() {$/;"	f	class:kaldi::PldaEstimator
+FeatDim	ivector-extractor.cc	/^int32 IvectorExtractor::FeatDim() const {$/;"	f	class:kaldi::IvectorExtractor
+FlushCache	ivector-extractor.cc	/^void IvectorStats::FlushCache() {$/;"	f	class:kaldi::IvectorStats
+G_	ivector-extractor.h	/^  Matrix<double> G_;$/;"	m	class:kaldi::IvectorStats
+GetAcousticAuxf	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxf($/;"	f	class:kaldi::IvectorExtractor
+GetAcousticAuxfGconst	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxfGconst($/;"	f	class:kaldi::IvectorExtractor
+GetAcousticAuxfMean	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxfMean($/;"	f	class:kaldi::IvectorExtractor
+GetAcousticAuxfVariance	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxfVariance($/;"	f	class:kaldi::IvectorExtractor
+GetAcousticAuxfWeight	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxfWeight($/;"	f	class:kaldi::IvectorExtractor
+GetAuxf	ivector-extractor.cc	/^double IvectorExtractor::GetAuxf(const IvectorExtractorUtteranceStats &utt_stats,$/;"	f	class:kaldi::IvectorExtractor
+GetIvectorDistMean	ivector-extractor.cc	/^void IvectorExtractor::GetIvectorDistMean($/;"	f	class:kaldi::IvectorExtractor
+GetIvectorDistPrior	ivector-extractor.cc	/^void IvectorExtractor::GetIvectorDistPrior($/;"	f	class:kaldi::IvectorExtractor
+GetIvectorDistWeight	ivector-extractor.cc	/^void IvectorExtractor::GetIvectorDistWeight($/;"	f	class:kaldi::IvectorExtractor
+GetIvectorDistribution	ivector-extractor.cc	/^void IvectorExtractor::GetIvectorDistribution($/;"	f	class:kaldi::IvectorExtractor
+GetLogPosteriors	logistic-regression.cc	/^void LogisticRegression::GetLogPosteriors(const Matrix<BaseFloat> &xs,$/;"	f	class:kaldi::LogisticRegression
+GetLogPosteriors	logistic-regression.cc	/^void LogisticRegression::GetLogPosteriors(const Vector<BaseFloat> &x,$/;"	f	class:kaldi::LogisticRegression
+GetNormalizationFactor	plda.cc	/^double Plda::GetNormalizationFactor($/;"	f	class:kaldi::Plda
+GetObjfAndGrad	logistic-regression.cc	/^BaseFloat LogisticRegression::GetObjfAndGrad($/;"	f	class:kaldi::LogisticRegression
+GetOutput	plda.cc	/^void PldaEstimator::GetOutput(Plda *plda) {$/;"	f	class:kaldi::PldaEstimator
+GetPriorAuxf	ivector-extractor.cc	/^double IvectorExtractor::GetPriorAuxf($/;"	f	class:kaldi::IvectorExtractor
+GetStats	ivector-extractor.cc	/^void IvectorExtractor::GetStats($/;"	f	class:kaldi::IvectorExtractor
+GetStatsFromClassMeans	plda.cc	/^void PldaEstimator::GetStatsFromClassMeans() {$/;"	f	class:kaldi::PldaEstimator
+GetStatsFromIntraClass	plda.cc	/^void PldaEstimator::GetStatsFromIntraClass() {$/;"	f	class:kaldi::PldaEstimator
+Init	plda.cc	/^void PldaStats::Init(int32 dim) {$/;"	f	class:kaldi::PldaStats
+InitParameters	plda.cc	/^void PldaEstimator::InitParameters() {$/;"	f	class:kaldi::PldaEstimator
+InvertWithFlooring	ivector-extractor.cc	/^void IvectorExtractor::InvertWithFlooring(const SpMatrix<double> &inverse_var,$/;"	f	class:kaldi::IvectorExtractor
+IsSorted	plda.cc	/^bool PldaStats::IsSorted() const {$/;"	f	class:kaldi::PldaStats
+IvectorDependentWeights	ivector-extractor.h	/^  bool IvectorDependentWeights() const { return w_.NumRows() != 0; }$/;"	f	class:kaldi::IvectorExtractor
+IvectorDim	ivector-extractor.cc	/^int32 IvectorExtractor::IvectorDim() const {$/;"	f	class:kaldi::IvectorExtractor
+IvectorEstimationOptions	ivector-extractor.h	/^  IvectorEstimationOptions(): acoustic_weight(1.0) {}$/;"	f	struct:kaldi::IvectorEstimationOptions
+IvectorEstimationOptions	ivector-extractor.h	/^struct IvectorEstimationOptions {$/;"	s	namespace:kaldi
+IvectorExtractor	ivector-extractor.cc	/^IvectorExtractor::IvectorExtractor($/;"	f	class:kaldi::IvectorExtractor
+IvectorExtractor	ivector-extractor.h	/^  IvectorExtractor(): ivector_offset_(0.0) { }$/;"	f	class:kaldi::IvectorExtractor
+IvectorExtractor	ivector-extractor.h	/^class IvectorExtractor {$/;"	c	namespace:kaldi
+IvectorExtractorComputeDerivedVarsClass	ivector-extractor.cc	/^  IvectorExtractorComputeDerivedVarsClass(IvectorExtractor *extractor,$/;"	f	class:kaldi::IvectorExtractorComputeDerivedVarsClass
+IvectorExtractorComputeDerivedVarsClass	ivector-extractor.cc	/^class IvectorExtractorComputeDerivedVarsClass {$/;"	c	namespace:kaldi	file:
+IvectorExtractorEstimationOptions	ivector-extractor.h	/^  IvectorExtractorEstimationOptions(): variance_floor_factor(0.1),$/;"	f	struct:kaldi::IvectorExtractorEstimationOptions
+IvectorExtractorEstimationOptions	ivector-extractor.h	/^struct IvectorExtractorEstimationOptions {$/;"	s	namespace:kaldi
+IvectorExtractorOptions	ivector-extractor.h	/^  IvectorExtractorOptions(): ivector_dim(400), num_iters(2),$/;"	f	struct:kaldi::IvectorExtractorOptions
+IvectorExtractorOptions	ivector-extractor.h	/^struct IvectorExtractorOptions {$/;"	s	namespace:kaldi
+IvectorExtractorUpdateProjectionClass	ivector-extractor.cc	/^  IvectorExtractorUpdateProjectionClass(const IvectorStats &stats,$/;"	f	class:kaldi::IvectorExtractorUpdateProjectionClass
+IvectorExtractorUpdateProjectionClass	ivector-extractor.cc	/^class IvectorExtractorUpdateProjectionClass {$/;"	c	namespace:kaldi	file:
+IvectorExtractorUpdateWeightClass	ivector-extractor.cc	/^  IvectorExtractorUpdateWeightClass(const IvectorStats &stats,$/;"	f	class:kaldi::IvectorExtractorUpdateWeightClass
+IvectorExtractorUpdateWeightClass	ivector-extractor.cc	/^class IvectorExtractorUpdateWeightClass {$/;"	c	namespace:kaldi	file:
+IvectorExtractorUtteranceStats	ivector-extractor.h	/^  IvectorExtractorUtteranceStats(int32 num_gauss, int32 feat_dim,$/;"	f	struct:kaldi::IvectorExtractorUtteranceStats
+IvectorExtractorUtteranceStats	ivector-extractor.h	/^struct IvectorExtractorUtteranceStats {$/;"	s	namespace:kaldi
+IvectorStats	ivector-extractor.cc	/^IvectorStats::IvectorStats(const IvectorExtractor &extractor,$/;"	f	class:kaldi::IvectorStats
+IvectorStats	ivector-extractor.h	/^  IvectorStats(): tot_auxf_(0.0), R_num_cached_(0), num_ivectors_(0) { }$/;"	f	class:kaldi::IvectorStats
+IvectorStats	ivector-extractor.h	/^class IvectorStats {$/;"	c	namespace:kaldi
+IvectorStatsOptions	ivector-extractor.h	/^  IvectorStatsOptions(): update_variances(true),$/;"	f	struct:kaldi::IvectorStatsOptions
+IvectorStatsOptions	ivector-extractor.h	/^struct IvectorStatsOptions {$/;"	s	namespace:kaldi
+KALDI_IVECTOR_IVECTOR_EXTRACTOR_H_	ivector-extractor.h	20;"	d
+KALDI_IVECTOR_IVECTOR_EXTRACTOR_H_	plda.h	20;"	d
+KALDI_IVECTOR_VOICE_ACTIVITY_DETECTION_H_	voice-activity-detection.h	22;"	d
+LogLikelihoodRatio	plda.cc	/^double Plda::LogLikelihoodRatio($/;"	f	class:kaldi::Plda
+LogisticRegression	logistic-regression.h	/^class LogisticRegression {$/;"	c	namespace:kaldi
+LogisticRegressionConfig	logistic-regression.h	/^  LogisticRegressionConfig(): max_steps(20), mix_up(0), $/;"	f	struct:kaldi::LogisticRegressionConfig
+LogisticRegressionConfig	logistic-regression.h	/^struct LogisticRegressionConfig {$/;"	s	namespace:kaldi
+M_	ivector-extractor.h	/^  std::vector<Matrix<double> > M_;$/;"	m	class:kaldi::IvectorExtractor
+MixUp	logistic-regression.cc	/^void LogisticRegression::MixUp(const std::vector<int32> &ys,$/;"	f	class:kaldi::LogisticRegression
+NumGauss	ivector-extractor.cc	/^int32 IvectorExtractor::NumGauss() const {$/;"	f	class:kaldi::IvectorExtractor
+Plda	plda.h	/^  Plda() { }$/;"	f	class:kaldi::Plda
+Plda	plda.h	/^class Plda {$/;"	c	namespace:kaldi
+PldaConfig	plda.h	/^  PldaConfig(): normalize_length(true) { }$/;"	f	struct:kaldi::PldaConfig
+PldaConfig	plda.h	/^struct PldaConfig {$/;"	s	namespace:kaldi
+PldaEstimationConfig	plda.h	/^  PldaEstimationConfig(): num_em_iters(10){ }$/;"	f	struct:kaldi::PldaEstimationConfig
+PldaEstimationConfig	plda.h	/^struct PldaEstimationConfig {$/;"	s	namespace:kaldi
+PldaEstimator	plda.cc	/^PldaEstimator::PldaEstimator(const PldaStats &stats):$/;"	f	class:kaldi::PldaEstimator
+PldaEstimator	plda.h	/^class PldaEstimator {$/;"	c	namespace:kaldi
+PldaStats	plda.h	/^  PldaStats(): dim_(0) { } \/\/\/ The dimension is set up the first time you add samples.$/;"	f	class:kaldi::PldaStats
+PldaStats	plda.h	/^class PldaStats {$/;"	c	namespace:kaldi
+PriorDiagnostics	ivector-extractor.cc	/^double IvectorStats::PriorDiagnostics(double old_ivector_offset) const {$/;"	f	class:kaldi::IvectorStats
+PriorOffset	ivector-extractor.h	/^  double PriorOffset() const { return ivector_offset_; }$/;"	f	class:kaldi::IvectorExtractor
+Q_	ivector-extractor.h	/^  Matrix<double> Q_;$/;"	m	class:kaldi::IvectorStats
+R_	ivector-extractor.h	/^  Matrix<double> R_;$/;"	m	class:kaldi::IvectorStats
+R_cache_lock_	ivector-extractor.h	/^  Mutex R_cache_lock_; $/;"	m	class:kaldi::IvectorStats
+R_gamma_cache_	ivector-extractor.h	/^  Matrix<double> R_gamma_cache_;$/;"	m	class:kaldi::IvectorStats
+R_ivec_scatter_cache_	ivector-extractor.h	/^  Matrix<double> R_ivec_scatter_cache_;$/;"	m	class:kaldi::IvectorStats
+R_lock_	ivector-extractor.h	/^  Mutex R_lock_; $/;"	m	class:kaldi::IvectorStats
+R_num_cached_	ivector-extractor.h	/^  int32 R_num_cached_;$/;"	m	class:kaldi::IvectorStats
+Read	ivector-extractor.cc	/^void IvectorExtractor::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::IvectorExtractor
+Read	ivector-extractor.cc	/^void IvectorStats::Read(std::istream &is, bool binary, bool add) {$/;"	f	class:kaldi::IvectorStats
+Read	logistic-regression.cc	/^void LogisticRegression::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::LogisticRegression
+Read	plda.cc	/^void Plda::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::Plda
+Register	ivector-extractor.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::IvectorEstimationOptions
+Register	ivector-extractor.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::IvectorExtractorEstimationOptions
+Register	ivector-extractor.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::IvectorExtractorOptions
+Register	ivector-extractor.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::IvectorStatsOptions
+Register	logistic-regression.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::LogisticRegressionConfig
+Register	plda.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PldaConfig
+Register	plda.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PldaEstimationConfig
+Register	voice-activity-detection.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::VadEnergyOptions
+ResetPerIterStats	plda.cc	/^void PldaEstimator::ResetPerIterStats() {$/;"	f	class:kaldi::PldaEstimator
+S	ivector-extractor.h	/^  std::vector<SpMatrix<double> > S; \/\/ 2nd-order stats, dimension [I][D][D], if$/;"	m	struct:kaldi::IvectorExtractorUtteranceStats
+S_	ivector-extractor.h	/^  std::vector< SpMatrix<double> > S_;$/;"	m	class:kaldi::IvectorStats
+Scale	ivector-extractor.h	/^  void Scale(double scale) { \/\/ Used to apply acoustic scale.$/;"	f	struct:kaldi::IvectorExtractorUtteranceStats
+ScalePriors	logistic-regression.cc	/^void LogisticRegression::ScalePriors(const Vector<BaseFloat> &scales) {$/;"	f	class:kaldi::LogisticRegression
+SetWeights	logistic-regression.cc	/^void LogisticRegression::SetWeights(const Matrix<BaseFloat> &weights,$/;"	f	class:kaldi::LogisticRegression
+Sigma_inv_	ivector-extractor.h	/^  std::vector<SpMatrix<double> > Sigma_inv_;$/;"	m	class:kaldi::IvectorExtractor
+SmoothWithinClassCovariance	plda.cc	/^void Plda::SmoothWithinClassCovariance(double smoothing_factor) {$/;"	f	class:kaldi::Plda
+Sort	plda.h	/^  void Sort() { std::sort(class_info_.begin(), class_info_.end()); }$/;"	f	class:kaldi::PldaStats
+TestIvectorExtractorIO	ivector-extractor-test.cc	/^void TestIvectorExtractorIO(const IvectorExtractor &extractor) {$/;"	f	namespace:kaldi
+TestIvectorStatsIO	ivector-extractor-test.cc	/^void TestIvectorStatsIO(IvectorStats &stats) {$/;"	f	namespace:kaldi
+Train	logistic-regression.cc	/^void LogisticRegression::Train(const Matrix<BaseFloat> &xs, $/;"	f	class:kaldi::LogisticRegression
+TrainParameters	logistic-regression.cc	/^void LogisticRegression::TrainParameters(const Matrix<BaseFloat> &xs,$/;"	f	class:kaldi::LogisticRegression
+TransformIvector	plda.cc	/^double Plda::TransformIvector(const PldaConfig &config,$/;"	f	class:kaldi::Plda
+TransformIvector	plda.cc	/^float Plda::TransformIvector(const PldaConfig &config,$/;"	f	class:kaldi::Plda
+TransformIvectors	ivector-extractor.cc	/^void IvectorExtractor::TransformIvectors(const MatrixBase<double> &T,$/;"	f	class:kaldi::IvectorExtractor
+U_	ivector-extractor.h	/^  Matrix<double> U_;$/;"	m	class:kaldi::IvectorExtractor
+UnitTestIvectorExtractor	ivector-extractor-test.cc	/^void UnitTestIvectorExtractor() {$/;"	f	namespace:kaldi
+UnitTestPldaEstimation	plda-test.cc	/^void UnitTestPldaEstimation(int32 dim) {$/;"	f	namespace:kaldi
+UnitTestPosteriors	logistic-regression-test.cc	/^void UnitTestPosteriors() {$/;"	f	namespace:kaldi
+UnitTestTrain	logistic-regression-test.cc	/^void UnitTestTrain() {$/;"	f	namespace:kaldi
+Update	ivector-extractor.cc	/^double IvectorStats::Update(const IvectorExtractorEstimationOptions &opts,$/;"	f	class:kaldi::IvectorStats
+UpdatePrior	ivector-extractor.cc	/^double IvectorStats::UpdatePrior($/;"	f	class:kaldi::IvectorStats
+UpdateProjection	ivector-extractor.cc	/^double IvectorStats::UpdateProjection($/;"	f	class:kaldi::IvectorStats
+UpdateProjections	ivector-extractor.cc	/^double IvectorStats::UpdateProjections($/;"	f	class:kaldi::IvectorStats
+UpdateVariances	ivector-extractor.cc	/^double IvectorStats::UpdateVariances($/;"	f	class:kaldi::IvectorStats
+UpdateWeight	ivector-extractor.cc	/^double IvectorStats::UpdateWeight($/;"	f	class:kaldi::IvectorStats
+UpdateWeights	ivector-extractor.cc	/^double IvectorStats::UpdateWeights($/;"	f	class:kaldi::IvectorStats
+VadEnergyOptions	voice-activity-detection.h	/^  VadEnergyOptions(): vad_energy_threshold(5.0),$/;"	f	struct:kaldi::VadEnergyOptions
+VadEnergyOptions	voice-activity-detection.h	/^struct VadEnergyOptions {$/;"	s	namespace:kaldi
+Write	ivector-extractor.cc	/^void IvectorExtractor::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::IvectorExtractor
+Write	ivector-extractor.cc	/^void IvectorStats::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::IvectorStats
+Write	ivector-extractor.cc	/^void IvectorStats::Write(std::ostream &os, bool binary) {$/;"	f	class:kaldi::IvectorStats
+Write	logistic-regression.cc	/^void LogisticRegression::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::LogisticRegression
+Write	plda.cc	/^void Plda::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::Plda
+X	ivector-extractor.h	/^  Matrix<double> X; \/\/ first-order stats, dimension [I][D]$/;"	m	struct:kaldi::IvectorExtractorUtteranceStats
+Y_	ivector-extractor.h	/^  std::vector<Matrix<double> > Y_;$/;"	m	class:kaldi::IvectorStats
+acoustic_weight	ivector-extractor.h	/^  double acoustic_weight;$/;"	m	struct:kaldi::IvectorEstimationOptions
+between_var_	plda.h	/^  SpMatrix<double> between_var_;$/;"	m	class:kaldi::PldaEstimator
+between_var_count_	plda.h	/^  double between_var_count_; \/\/ count corresponding to within_var_stats_$/;"	m	class:kaldi::PldaEstimator
+between_var_stats_	plda.h	/^  SpMatrix<double> between_var_stats_;$/;"	m	class:kaldi::PldaEstimator
+cache_size	ivector-extractor.h	/^  int cache_size;$/;"	m	struct:kaldi::IvectorStatsOptions
+class_	logistic-regression.h	/^  std::vector<int32> class_;    $/;"	m	class:kaldi::LogisticRegression
+class_info_	plda.h	/^  std::vector<ClassInfo> class_info_;$/;"	m	class:kaldi::PldaStats
+class_weight_	plda.h	/^  double class_weight_; \/\/ total over classes, of their weight.$/;"	m	class:kaldi::PldaStats
+compute_auxf	ivector-extractor.h	/^  bool compute_auxf;$/;"	m	struct:kaldi::IvectorStatsOptions
+config_	ivector-extractor.h	/^  IvectorStatsOptions config_; \/\/\/ Caution: if we read from disk, this$/;"	m	class:kaldi::IvectorStats
+dim_	plda.h	/^  int32 dim_;$/;"	m	class:kaldi::PldaStats
+example_weight_	plda.h	/^  double example_weight_; \/\/ total over classes, of weight times #examples.$/;"	m	class:kaldi::PldaStats
+extractor_	ivector-extractor.cc	/^  IvectorExtractor *extractor_;$/;"	m	class:kaldi::IvectorExtractorComputeDerivedVarsClass	file:
+extractor_	ivector-extractor.cc	/^  IvectorExtractor *extractor_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+extractor_	ivector-extractor.cc	/^  IvectorExtractor *extractor_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+gamma	ivector-extractor.h	/^  Vector<double> gamma; \/\/ zeroth-order stats (summed posteriors), dimension [I]$/;"	m	struct:kaldi::IvectorExtractorUtteranceStats
+gamma_	ivector-extractor.h	/^  Vector<double> gamma_;$/;"	m	class:kaldi::IvectorStats
+gamma_Y_lock_	ivector-extractor.h	/^  Mutex gamma_Y_lock_; $/;"	m	class:kaldi::IvectorStats
+gaussian_min_count	ivector-extractor.h	/^  double gaussian_min_count;$/;"	m	struct:kaldi::IvectorExtractorEstimationOptions
+gconsts_	ivector-extractor.h	/^  Vector<double> gconsts_;$/;"	m	class:kaldi::IvectorExtractor
+i_	ivector-extractor.cc	/^  int32 i_;$/;"	m	class:kaldi::IvectorExtractorComputeDerivedVarsClass	file:
+i_	ivector-extractor.cc	/^  int32 i_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+i_	ivector-extractor.cc	/^  int32 i_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+impr_	ivector-extractor.cc	/^  double impr_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+impr_	ivector-extractor.cc	/^  double impr_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+ivector_dim	ivector-extractor.h	/^  int ivector_dim;$/;"	m	struct:kaldi::IvectorExtractorOptions
+ivector_offset_	ivector-extractor.h	/^  double ivector_offset_;$/;"	m	class:kaldi::IvectorExtractor
+ivector_scatter_	ivector-extractor.h	/^  SpMatrix<double> ivector_scatter_;$/;"	m	class:kaldi::IvectorStats
+ivector_sum_	ivector-extractor.h	/^  Vector<double> ivector_sum_;$/;"	m	class:kaldi::IvectorStats
+kaldi	ivector-extractor-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	ivector-extractor.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	ivector-extractor.h	/^namespace kaldi {$/;"	n
+kaldi	logistic-regression-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	logistic-regression.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	logistic-regression.h	/^namespace kaldi {$/;"	n
+kaldi	plda-test.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	plda.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	plda.h	/^namespace kaldi {$/;"	n
+kaldi	voice-activity-detection.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	voice-activity-detection.h	/^namespace kaldi {$/;"	n
+kaldi::ComputeNormalizingTransform	plda.cc	/^static void ComputeNormalizingTransform(const SpMatrix<Real> &covar,$/;"	f	namespace:kaldi
+kaldi::ComputeVadEnergy	voice-activity-detection.cc	/^void ComputeVadEnergy(const VadEnergyOptions &opts,$/;"	f	namespace:kaldi
+kaldi::IvectorEstimationOptions	ivector-extractor.h	/^struct IvectorEstimationOptions {$/;"	s	namespace:kaldi
+kaldi::IvectorEstimationOptions::IvectorEstimationOptions	ivector-extractor.h	/^  IvectorEstimationOptions(): acoustic_weight(1.0) {}$/;"	f	struct:kaldi::IvectorEstimationOptions
+kaldi::IvectorEstimationOptions::Register	ivector-extractor.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::IvectorEstimationOptions
+kaldi::IvectorEstimationOptions::acoustic_weight	ivector-extractor.h	/^  double acoustic_weight;$/;"	m	struct:kaldi::IvectorEstimationOptions
+kaldi::IvectorExtractor	ivector-extractor.h	/^class IvectorExtractor {$/;"	c	namespace:kaldi
+kaldi::IvectorExtractor::ComputeDerivedVars	ivector-extractor.cc	/^void IvectorExtractor::ComputeDerivedVars() {$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::ComputeDerivedVars	ivector-extractor.cc	/^void IvectorExtractor::ComputeDerivedVars(int32 i) {$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::FeatDim	ivector-extractor.cc	/^int32 IvectorExtractor::FeatDim() const {$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetAcousticAuxf	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxf($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetAcousticAuxfGconst	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxfGconst($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetAcousticAuxfMean	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxfMean($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetAcousticAuxfVariance	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxfVariance($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetAcousticAuxfWeight	ivector-extractor.cc	/^double IvectorExtractor::GetAcousticAuxfWeight($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetAuxf	ivector-extractor.cc	/^double IvectorExtractor::GetAuxf(const IvectorExtractorUtteranceStats &utt_stats,$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetIvectorDistMean	ivector-extractor.cc	/^void IvectorExtractor::GetIvectorDistMean($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetIvectorDistPrior	ivector-extractor.cc	/^void IvectorExtractor::GetIvectorDistPrior($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetIvectorDistWeight	ivector-extractor.cc	/^void IvectorExtractor::GetIvectorDistWeight($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetIvectorDistribution	ivector-extractor.cc	/^void IvectorExtractor::GetIvectorDistribution($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetPriorAuxf	ivector-extractor.cc	/^double IvectorExtractor::GetPriorAuxf($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::GetStats	ivector-extractor.cc	/^void IvectorExtractor::GetStats($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::InvertWithFlooring	ivector-extractor.cc	/^void IvectorExtractor::InvertWithFlooring(const SpMatrix<double> &inverse_var,$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::IvectorDependentWeights	ivector-extractor.h	/^  bool IvectorDependentWeights() const { return w_.NumRows() != 0; }$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::IvectorDim	ivector-extractor.cc	/^int32 IvectorExtractor::IvectorDim() const {$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::IvectorExtractor	ivector-extractor.cc	/^IvectorExtractor::IvectorExtractor($/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::IvectorExtractor	ivector-extractor.h	/^  IvectorExtractor(): ivector_offset_(0.0) { }$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::M_	ivector-extractor.h	/^  std::vector<Matrix<double> > M_;$/;"	m	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::NumGauss	ivector-extractor.cc	/^int32 IvectorExtractor::NumGauss() const {$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::PriorOffset	ivector-extractor.h	/^  double PriorOffset() const { return ivector_offset_; }$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::Read	ivector-extractor.cc	/^void IvectorExtractor::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::Sigma_inv_	ivector-extractor.h	/^  std::vector<SpMatrix<double> > Sigma_inv_;$/;"	m	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::TransformIvectors	ivector-extractor.cc	/^void IvectorExtractor::TransformIvectors(const MatrixBase<double> &T,$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::U_	ivector-extractor.h	/^  Matrix<double> U_;$/;"	m	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::Write	ivector-extractor.cc	/^void IvectorExtractor::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::gconsts_	ivector-extractor.h	/^  Vector<double> gconsts_;$/;"	m	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::ivector_offset_	ivector-extractor.h	/^  double ivector_offset_;$/;"	m	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::w_	ivector-extractor.h	/^  Matrix<double> w_;$/;"	m	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractor::w_vec_	ivector-extractor.h	/^  Vector<double> w_vec_;$/;"	m	class:kaldi::IvectorExtractor
+kaldi::IvectorExtractorComputeDerivedVarsClass	ivector-extractor.cc	/^class IvectorExtractorComputeDerivedVarsClass {$/;"	c	namespace:kaldi	file:
+kaldi::IvectorExtractorComputeDerivedVarsClass::IvectorExtractorComputeDerivedVarsClass	ivector-extractor.cc	/^  IvectorExtractorComputeDerivedVarsClass(IvectorExtractor *extractor,$/;"	f	class:kaldi::IvectorExtractorComputeDerivedVarsClass
+kaldi::IvectorExtractorComputeDerivedVarsClass::extractor_	ivector-extractor.cc	/^  IvectorExtractor *extractor_;$/;"	m	class:kaldi::IvectorExtractorComputeDerivedVarsClass	file:
+kaldi::IvectorExtractorComputeDerivedVarsClass::i_	ivector-extractor.cc	/^  int32 i_;$/;"	m	class:kaldi::IvectorExtractorComputeDerivedVarsClass	file:
+kaldi::IvectorExtractorComputeDerivedVarsClass::operator ()	ivector-extractor.cc	/^  void operator () () { extractor_->ComputeDerivedVars(i_); }$/;"	f	class:kaldi::IvectorExtractorComputeDerivedVarsClass
+kaldi::IvectorExtractorEstimationOptions	ivector-extractor.h	/^struct IvectorExtractorEstimationOptions {$/;"	s	namespace:kaldi
+kaldi::IvectorExtractorEstimationOptions::IvectorExtractorEstimationOptions	ivector-extractor.h	/^  IvectorExtractorEstimationOptions(): variance_floor_factor(0.1),$/;"	f	struct:kaldi::IvectorExtractorEstimationOptions
+kaldi::IvectorExtractorEstimationOptions::Register	ivector-extractor.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::IvectorExtractorEstimationOptions
+kaldi::IvectorExtractorEstimationOptions::gaussian_min_count	ivector-extractor.h	/^  double gaussian_min_count;$/;"	m	struct:kaldi::IvectorExtractorEstimationOptions
+kaldi::IvectorExtractorEstimationOptions::num_threads	ivector-extractor.h	/^  int32 num_threads;$/;"	m	struct:kaldi::IvectorExtractorEstimationOptions
+kaldi::IvectorExtractorEstimationOptions::variance_floor_factor	ivector-extractor.h	/^  double variance_floor_factor;$/;"	m	struct:kaldi::IvectorExtractorEstimationOptions
+kaldi::IvectorExtractorOptions	ivector-extractor.h	/^struct IvectorExtractorOptions {$/;"	s	namespace:kaldi
+kaldi::IvectorExtractorOptions::IvectorExtractorOptions	ivector-extractor.h	/^  IvectorExtractorOptions(): ivector_dim(400), num_iters(2),$/;"	f	struct:kaldi::IvectorExtractorOptions
+kaldi::IvectorExtractorOptions::Register	ivector-extractor.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::IvectorExtractorOptions
+kaldi::IvectorExtractorOptions::ivector_dim	ivector-extractor.h	/^  int ivector_dim;$/;"	m	struct:kaldi::IvectorExtractorOptions
+kaldi::IvectorExtractorOptions::num_iters	ivector-extractor.h	/^  int num_iters;$/;"	m	struct:kaldi::IvectorExtractorOptions
+kaldi::IvectorExtractorOptions::use_weights	ivector-extractor.h	/^  bool use_weights;$/;"	m	struct:kaldi::IvectorExtractorOptions
+kaldi::IvectorExtractorUpdateProjectionClass	ivector-extractor.cc	/^class IvectorExtractorUpdateProjectionClass {$/;"	c	namespace:kaldi	file:
+kaldi::IvectorExtractorUpdateProjectionClass::IvectorExtractorUpdateProjectionClass	ivector-extractor.cc	/^  IvectorExtractorUpdateProjectionClass(const IvectorStats &stats,$/;"	f	class:kaldi::IvectorExtractorUpdateProjectionClass
+kaldi::IvectorExtractorUpdateProjectionClass::extractor_	ivector-extractor.cc	/^  IvectorExtractor *extractor_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+kaldi::IvectorExtractorUpdateProjectionClass::i_	ivector-extractor.cc	/^  int32 i_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+kaldi::IvectorExtractorUpdateProjectionClass::impr_	ivector-extractor.cc	/^  double impr_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+kaldi::IvectorExtractorUpdateProjectionClass::operator ()	ivector-extractor.cc	/^  void operator () () {$/;"	f	class:kaldi::IvectorExtractorUpdateProjectionClass
+kaldi::IvectorExtractorUpdateProjectionClass::opts_	ivector-extractor.cc	/^  const IvectorExtractorEstimationOptions &opts_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+kaldi::IvectorExtractorUpdateProjectionClass::stats_	ivector-extractor.cc	/^  const IvectorStats &stats_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+kaldi::IvectorExtractorUpdateProjectionClass::tot_impr_	ivector-extractor.cc	/^  double *tot_impr_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+kaldi::IvectorExtractorUpdateProjectionClass::~IvectorExtractorUpdateProjectionClass	ivector-extractor.cc	/^  ~IvectorExtractorUpdateProjectionClass() { *tot_impr_ += impr_; }$/;"	f	class:kaldi::IvectorExtractorUpdateProjectionClass
+kaldi::IvectorExtractorUpdateWeightClass	ivector-extractor.cc	/^class IvectorExtractorUpdateWeightClass {$/;"	c	namespace:kaldi	file:
+kaldi::IvectorExtractorUpdateWeightClass::IvectorExtractorUpdateWeightClass	ivector-extractor.cc	/^  IvectorExtractorUpdateWeightClass(const IvectorStats &stats,$/;"	f	class:kaldi::IvectorExtractorUpdateWeightClass
+kaldi::IvectorExtractorUpdateWeightClass::extractor_	ivector-extractor.cc	/^  IvectorExtractor *extractor_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+kaldi::IvectorExtractorUpdateWeightClass::i_	ivector-extractor.cc	/^  int32 i_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+kaldi::IvectorExtractorUpdateWeightClass::impr_	ivector-extractor.cc	/^  double impr_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+kaldi::IvectorExtractorUpdateWeightClass::operator ()	ivector-extractor.cc	/^  void operator () () {$/;"	f	class:kaldi::IvectorExtractorUpdateWeightClass
+kaldi::IvectorExtractorUpdateWeightClass::opts_	ivector-extractor.cc	/^  const IvectorExtractorEstimationOptions &opts_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+kaldi::IvectorExtractorUpdateWeightClass::stats_	ivector-extractor.cc	/^  const IvectorStats &stats_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+kaldi::IvectorExtractorUpdateWeightClass::tot_impr_	ivector-extractor.cc	/^  double *tot_impr_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+kaldi::IvectorExtractorUpdateWeightClass::~IvectorExtractorUpdateWeightClass	ivector-extractor.cc	/^  ~IvectorExtractorUpdateWeightClass() { *tot_impr_ += impr_; }$/;"	f	class:kaldi::IvectorExtractorUpdateWeightClass
+kaldi::IvectorExtractorUtteranceStats	ivector-extractor.h	/^struct IvectorExtractorUtteranceStats {$/;"	s	namespace:kaldi
+kaldi::IvectorExtractorUtteranceStats::IvectorExtractorUtteranceStats	ivector-extractor.h	/^  IvectorExtractorUtteranceStats(int32 num_gauss, int32 feat_dim,$/;"	f	struct:kaldi::IvectorExtractorUtteranceStats
+kaldi::IvectorExtractorUtteranceStats::S	ivector-extractor.h	/^  std::vector<SpMatrix<double> > S; \/\/ 2nd-order stats, dimension [I][D][D], if$/;"	m	struct:kaldi::IvectorExtractorUtteranceStats
+kaldi::IvectorExtractorUtteranceStats::Scale	ivector-extractor.h	/^  void Scale(double scale) { \/\/ Used to apply acoustic scale.$/;"	f	struct:kaldi::IvectorExtractorUtteranceStats
+kaldi::IvectorExtractorUtteranceStats::X	ivector-extractor.h	/^  Matrix<double> X; \/\/ first-order stats, dimension [I][D]$/;"	m	struct:kaldi::IvectorExtractorUtteranceStats
+kaldi::IvectorExtractorUtteranceStats::gamma	ivector-extractor.h	/^  Vector<double> gamma; \/\/ zeroth-order stats (summed posteriors), dimension [I]$/;"	m	struct:kaldi::IvectorExtractorUtteranceStats
+kaldi::IvectorStats	ivector-extractor.h	/^class IvectorStats {$/;"	c	namespace:kaldi
+kaldi::IvectorStats::AccStatsForUtterance	ivector-extractor.cc	/^double IvectorStats::AccStatsForUtterance($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::AccStatsForUtterance	ivector-extractor.cc	/^void IvectorStats::AccStatsForUtterance($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::Add	ivector-extractor.cc	/^void IvectorStats::Add(const IvectorStats &other) {$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::AuxfPerFrame	ivector-extractor.h	/^  double AuxfPerFrame() { return tot_auxf_ \/ gamma_.Sum(); }$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::CheckDims	ivector-extractor.cc	/^void IvectorStats::CheckDims(const IvectorExtractor &extractor) const {$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::CommitStatsForM	ivector-extractor.cc	/^void IvectorStats::CommitStatsForM($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::CommitStatsForPrior	ivector-extractor.cc	/^void IvectorStats::CommitStatsForPrior(const VectorBase<double> &ivec_mean,$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::CommitStatsForSigma	ivector-extractor.cc	/^void IvectorStats::CommitStatsForSigma($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::CommitStatsForUtterance	ivector-extractor.cc	/^void IvectorStats::CommitStatsForUtterance($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::CommitStatsForW	ivector-extractor.cc	/^void IvectorStats::CommitStatsForW($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::CommitStatsForWPoint	ivector-extractor.cc	/^void IvectorStats::CommitStatsForWPoint($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::FlushCache	ivector-extractor.cc	/^void IvectorStats::FlushCache() {$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::G_	ivector-extractor.h	/^  Matrix<double> G_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::IvectorStats	ivector-extractor.cc	/^IvectorStats::IvectorStats(const IvectorExtractor &extractor,$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::IvectorStats	ivector-extractor.h	/^  IvectorStats(): tot_auxf_(0.0), R_num_cached_(0), num_ivectors_(0) { }$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::PriorDiagnostics	ivector-extractor.cc	/^double IvectorStats::PriorDiagnostics(double old_ivector_offset) const {$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::Q_	ivector-extractor.h	/^  Matrix<double> Q_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::R_	ivector-extractor.h	/^  Matrix<double> R_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::R_cache_lock_	ivector-extractor.h	/^  Mutex R_cache_lock_; $/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::R_gamma_cache_	ivector-extractor.h	/^  Matrix<double> R_gamma_cache_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::R_ivec_scatter_cache_	ivector-extractor.h	/^  Matrix<double> R_ivec_scatter_cache_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::R_lock_	ivector-extractor.h	/^  Mutex R_lock_; $/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::R_num_cached_	ivector-extractor.h	/^  int32 R_num_cached_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::Read	ivector-extractor.cc	/^void IvectorStats::Read(std::istream &is, bool binary, bool add) {$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::S_	ivector-extractor.h	/^  std::vector< SpMatrix<double> > S_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::Update	ivector-extractor.cc	/^double IvectorStats::Update(const IvectorExtractorEstimationOptions &opts,$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::UpdatePrior	ivector-extractor.cc	/^double IvectorStats::UpdatePrior($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::UpdateProjection	ivector-extractor.cc	/^double IvectorStats::UpdateProjection($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::UpdateProjections	ivector-extractor.cc	/^double IvectorStats::UpdateProjections($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::UpdateVariances	ivector-extractor.cc	/^double IvectorStats::UpdateVariances($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::UpdateWeight	ivector-extractor.cc	/^double IvectorStats::UpdateWeight($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::UpdateWeights	ivector-extractor.cc	/^double IvectorStats::UpdateWeights($/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::Write	ivector-extractor.cc	/^void IvectorStats::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::Write	ivector-extractor.cc	/^void IvectorStats::Write(std::ostream &os, bool binary) {$/;"	f	class:kaldi::IvectorStats
+kaldi::IvectorStats::Y_	ivector-extractor.h	/^  std::vector<Matrix<double> > Y_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::config_	ivector-extractor.h	/^  IvectorStatsOptions config_; \/\/\/ Caution: if we read from disk, this$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::gamma_	ivector-extractor.h	/^  Vector<double> gamma_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::gamma_Y_lock_	ivector-extractor.h	/^  Mutex gamma_Y_lock_; $/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::ivector_scatter_	ivector-extractor.h	/^  SpMatrix<double> ivector_scatter_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::ivector_sum_	ivector-extractor.h	/^  Vector<double> ivector_sum_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::num_ivectors_	ivector-extractor.h	/^  double num_ivectors_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::prior_stats_lock_	ivector-extractor.h	/^  Mutex prior_stats_lock_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::tot_auxf_	ivector-extractor.h	/^  double tot_auxf_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::variance_stats_lock_	ivector-extractor.h	/^  Mutex variance_stats_lock_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStats::weight_stats_lock_	ivector-extractor.h	/^  Mutex weight_stats_lock_;$/;"	m	class:kaldi::IvectorStats
+kaldi::IvectorStatsOptions	ivector-extractor.h	/^struct IvectorStatsOptions {$/;"	s	namespace:kaldi
+kaldi::IvectorStatsOptions::IvectorStatsOptions	ivector-extractor.h	/^  IvectorStatsOptions(): update_variances(true),$/;"	f	struct:kaldi::IvectorStatsOptions
+kaldi::IvectorStatsOptions::Register	ivector-extractor.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::IvectorStatsOptions
+kaldi::IvectorStatsOptions::cache_size	ivector-extractor.h	/^  int cache_size;$/;"	m	struct:kaldi::IvectorStatsOptions
+kaldi::IvectorStatsOptions::compute_auxf	ivector-extractor.h	/^  bool compute_auxf;$/;"	m	struct:kaldi::IvectorStatsOptions
+kaldi::IvectorStatsOptions::num_samples_for_weights	ivector-extractor.h	/^  int32 num_samples_for_weights;$/;"	m	struct:kaldi::IvectorStatsOptions
+kaldi::IvectorStatsOptions::update_variances	ivector-extractor.h	/^  bool update_variances;$/;"	m	struct:kaldi::IvectorStatsOptions
+kaldi::LogisticRegression	logistic-regression.h	/^class LogisticRegression {$/;"	c	namespace:kaldi
+kaldi::LogisticRegression::DoStep	logistic-regression.cc	/^BaseFloat LogisticRegression::DoStep(const Matrix<BaseFloat> &xs,$/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::GetLogPosteriors	logistic-regression.cc	/^void LogisticRegression::GetLogPosteriors(const Matrix<BaseFloat> &xs,$/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::GetLogPosteriors	logistic-regression.cc	/^void LogisticRegression::GetLogPosteriors(const Vector<BaseFloat> &x,$/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::GetObjfAndGrad	logistic-regression.cc	/^BaseFloat LogisticRegression::GetObjfAndGrad($/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::MixUp	logistic-regression.cc	/^void LogisticRegression::MixUp(const std::vector<int32> &ys,$/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::Read	logistic-regression.cc	/^void LogisticRegression::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::ScalePriors	logistic-regression.cc	/^void LogisticRegression::ScalePriors(const Vector<BaseFloat> &scales) {$/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::SetWeights	logistic-regression.cc	/^void LogisticRegression::SetWeights(const Matrix<BaseFloat> &weights,$/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::Train	logistic-regression.cc	/^void LogisticRegression::Train(const Matrix<BaseFloat> &xs, $/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::TrainParameters	logistic-regression.cc	/^void LogisticRegression::TrainParameters(const Matrix<BaseFloat> &xs,$/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::Write	logistic-regression.cc	/^void LogisticRegression::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::class_	logistic-regression.h	/^  std::vector<int32> class_;    $/;"	m	class:kaldi::LogisticRegression
+kaldi::LogisticRegression::weights_	logistic-regression.h	/^  Matrix<BaseFloat> weights_;$/;"	m	class:kaldi::LogisticRegression
+kaldi::LogisticRegressionConfig	logistic-regression.h	/^struct LogisticRegressionConfig {$/;"	s	namespace:kaldi
+kaldi::LogisticRegressionConfig::LogisticRegressionConfig	logistic-regression.h	/^  LogisticRegressionConfig(): max_steps(20), mix_up(0), $/;"	f	struct:kaldi::LogisticRegressionConfig
+kaldi::LogisticRegressionConfig::Register	logistic-regression.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::LogisticRegressionConfig
+kaldi::LogisticRegressionConfig::max_steps	logistic-regression.h	/^  int32 max_steps,$/;"	m	struct:kaldi::LogisticRegressionConfig
+kaldi::LogisticRegressionConfig::mix_up	logistic-regression.h	/^        mix_up;$/;"	m	struct:kaldi::LogisticRegressionConfig
+kaldi::LogisticRegressionConfig::normalizer	logistic-regression.h	/^  double normalizer,$/;"	m	struct:kaldi::LogisticRegressionConfig
+kaldi::LogisticRegressionConfig::power	logistic-regression.h	/^         power;$/;"	m	struct:kaldi::LogisticRegressionConfig
+kaldi::Plda	plda.h	/^class Plda {$/;"	c	namespace:kaldi
+kaldi::Plda::ComputeDerivedVars	plda.cc	/^void Plda::ComputeDerivedVars() {$/;"	f	class:kaldi::Plda
+kaldi::Plda::Dim	plda.h	/^  int32 Dim() const { return mean_.Dim(); }$/;"	f	class:kaldi::Plda
+kaldi::Plda::GetNormalizationFactor	plda.cc	/^double Plda::GetNormalizationFactor($/;"	f	class:kaldi::Plda
+kaldi::Plda::LogLikelihoodRatio	plda.cc	/^double Plda::LogLikelihoodRatio($/;"	f	class:kaldi::Plda
+kaldi::Plda::Plda	plda.h	/^  Plda() { }$/;"	f	class:kaldi::Plda
+kaldi::Plda::Read	plda.cc	/^void Plda::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::Plda
+kaldi::Plda::SmoothWithinClassCovariance	plda.cc	/^void Plda::SmoothWithinClassCovariance(double smoothing_factor) {$/;"	f	class:kaldi::Plda
+kaldi::Plda::TransformIvector	plda.cc	/^double Plda::TransformIvector(const PldaConfig &config,$/;"	f	class:kaldi::Plda
+kaldi::Plda::TransformIvector	plda.cc	/^float Plda::TransformIvector(const PldaConfig &config,$/;"	f	class:kaldi::Plda
+kaldi::Plda::Write	plda.cc	/^void Plda::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::Plda
+kaldi::Plda::mean_	plda.h	/^  Vector<double> mean_;  \/\/ mean of samples in original space.$/;"	m	class:kaldi::Plda
+kaldi::Plda::offset_	plda.h	/^  Vector<double> offset_;  \/\/ derived variable: -1.0 * transform_ * mean_$/;"	m	class:kaldi::Plda
+kaldi::Plda::psi_	plda.h	/^  Vector<double> psi_; \/\/ of dimension FeatureDim().  The between-class$/;"	m	class:kaldi::Plda
+kaldi::Plda::transform_	plda.h	/^  Matrix<double> transform_; \/\/ of dimension FeatureDim() by FeatureDim();$/;"	m	class:kaldi::Plda
+kaldi::PldaConfig	plda.h	/^struct PldaConfig {$/;"	s	namespace:kaldi
+kaldi::PldaConfig::PldaConfig	plda.h	/^  PldaConfig(): normalize_length(true) { }$/;"	f	struct:kaldi::PldaConfig
+kaldi::PldaConfig::Register	plda.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PldaConfig
+kaldi::PldaConfig::normalize_length	plda.h	/^  bool normalize_length;$/;"	m	struct:kaldi::PldaConfig
+kaldi::PldaEstimationConfig	plda.h	/^struct PldaEstimationConfig {$/;"	s	namespace:kaldi
+kaldi::PldaEstimationConfig::PldaEstimationConfig	plda.h	/^  PldaEstimationConfig(): num_em_iters(10){ }$/;"	f	struct:kaldi::PldaEstimationConfig
+kaldi::PldaEstimationConfig::Register	plda.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::PldaEstimationConfig
+kaldi::PldaEstimationConfig::num_em_iters	plda.h	/^  int32 num_em_iters;$/;"	m	struct:kaldi::PldaEstimationConfig
+kaldi::PldaEstimator	plda.h	/^class PldaEstimator {$/;"	c	namespace:kaldi
+kaldi::PldaEstimator::ClassInfo	plda.h	/^  typedef PldaStats::ClassInfo ClassInfo;$/;"	t	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::ComputeObjf	plda.cc	/^double PldaEstimator::ComputeObjf() const {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::ComputeObjfPart1	plda.cc	/^double PldaEstimator::ComputeObjfPart1() const {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::ComputeObjfPart2	plda.cc	/^double PldaEstimator::ComputeObjfPart2() const {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::Dim	plda.h	/^  int32 Dim() const { return stats_.Dim(); }$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::Estimate	plda.cc	/^void PldaEstimator::Estimate(const PldaEstimationConfig &config,$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::EstimateFromStats	plda.cc	/^void PldaEstimator::EstimateFromStats() {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::EstimateOneIter	plda.cc	/^void PldaEstimator::EstimateOneIter() {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::GetOutput	plda.cc	/^void PldaEstimator::GetOutput(Plda *plda) {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::GetStatsFromClassMeans	plda.cc	/^void PldaEstimator::GetStatsFromClassMeans() {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::GetStatsFromIntraClass	plda.cc	/^void PldaEstimator::GetStatsFromIntraClass() {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::InitParameters	plda.cc	/^void PldaEstimator::InitParameters() {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::PldaEstimator	plda.cc	/^PldaEstimator::PldaEstimator(const PldaStats &stats):$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::ResetPerIterStats	plda.cc	/^void PldaEstimator::ResetPerIterStats() {$/;"	f	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::between_var_	plda.h	/^  SpMatrix<double> between_var_;$/;"	m	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::between_var_count_	plda.h	/^  double between_var_count_; \/\/ count corresponding to within_var_stats_$/;"	m	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::between_var_stats_	plda.h	/^  SpMatrix<double> between_var_stats_;$/;"	m	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::stats_	plda.h	/^  const PldaStats &stats_;$/;"	m	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::within_var_	plda.h	/^  SpMatrix<double> within_var_;$/;"	m	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::within_var_count_	plda.h	/^  double within_var_count_; \/\/ count corresponding to within_var_stats_$/;"	m	class:kaldi::PldaEstimator
+kaldi::PldaEstimator::within_var_stats_	plda.h	/^  SpMatrix<double> within_var_stats_;$/;"	m	class:kaldi::PldaEstimator
+kaldi::PldaStats	plda.h	/^class PldaStats {$/;"	c	namespace:kaldi
+kaldi::PldaStats::AddSamples	plda.cc	/^void PldaStats::AddSamples(double weight,$/;"	f	class:kaldi::PldaStats
+kaldi::PldaStats::ClassInfo	plda.h	/^  struct ClassInfo {$/;"	s	class:kaldi::PldaStats
+kaldi::PldaStats::ClassInfo::ClassInfo	plda.h	/^    ClassInfo(double weight, Vector<double> *mean, int32 num_examples):$/;"	f	struct:kaldi::PldaStats::ClassInfo
+kaldi::PldaStats::ClassInfo::mean	plda.h	/^    Vector<double> *mean; \/\/ owned here, but as a pointer so$/;"	m	struct:kaldi::PldaStats::ClassInfo
+kaldi::PldaStats::ClassInfo::num_examples	plda.h	/^    int32 num_examples; \/\/ the number of examples in the class$/;"	m	struct:kaldi::PldaStats::ClassInfo
+kaldi::PldaStats::ClassInfo::operator <	plda.h	/^    bool operator < (const ClassInfo &other) const {$/;"	f	struct:kaldi::PldaStats::ClassInfo
+kaldi::PldaStats::ClassInfo::weight	plda.h	/^    double weight;$/;"	m	struct:kaldi::PldaStats::ClassInfo
+kaldi::PldaStats::Dim	plda.h	/^  int32 Dim() const { return dim_; }$/;"	f	class:kaldi::PldaStats
+kaldi::PldaStats::Init	plda.cc	/^void PldaStats::Init(int32 dim) {$/;"	f	class:kaldi::PldaStats
+kaldi::PldaStats::IsSorted	plda.cc	/^bool PldaStats::IsSorted() const {$/;"	f	class:kaldi::PldaStats
+kaldi::PldaStats::PldaStats	plda.h	/^  PldaStats(): dim_(0) { } \/\/\/ The dimension is set up the first time you add samples.$/;"	f	class:kaldi::PldaStats
+kaldi::PldaStats::Sort	plda.h	/^  void Sort() { std::sort(class_info_.begin(), class_info_.end()); }$/;"	f	class:kaldi::PldaStats
+kaldi::PldaStats::class_info_	plda.h	/^  std::vector<ClassInfo> class_info_;$/;"	m	class:kaldi::PldaStats
+kaldi::PldaStats::class_weight_	plda.h	/^  double class_weight_; \/\/ total over classes, of their weight.$/;"	m	class:kaldi::PldaStats
+kaldi::PldaStats::dim_	plda.h	/^  int32 dim_;$/;"	m	class:kaldi::PldaStats
+kaldi::PldaStats::example_weight_	plda.h	/^  double example_weight_; \/\/ total over classes, of weight times #examples.$/;"	m	class:kaldi::PldaStats
+kaldi::PldaStats::num_classes_	plda.h	/^  int64 num_classes_;$/;"	m	class:kaldi::PldaStats
+kaldi::PldaStats::num_examples_	plda.h	/^  int64 num_examples_; \/\/ total number of examples, sumed over classes.$/;"	m	class:kaldi::PldaStats
+kaldi::PldaStats::offset_scatter_	plda.h	/^  SpMatrix<double> offset_scatter_; \/\/ Sum over all examples, of the weight$/;"	m	class:kaldi::PldaStats
+kaldi::PldaStats::sum_	plda.h	/^  Vector<double> sum_; \/\/ Weighted sum of class means (normalize by class_weight_$/;"	m	class:kaldi::PldaStats
+kaldi::PldaStats::~PldaStats	plda.cc	/^PldaStats::~PldaStats() {$/;"	f	class:kaldi::PldaStats
+kaldi::TestIvectorExtractorIO	ivector-extractor-test.cc	/^void TestIvectorExtractorIO(const IvectorExtractor &extractor) {$/;"	f	namespace:kaldi
+kaldi::TestIvectorStatsIO	ivector-extractor-test.cc	/^void TestIvectorStatsIO(IvectorStats &stats) {$/;"	f	namespace:kaldi
+kaldi::UnitTestIvectorExtractor	ivector-extractor-test.cc	/^void UnitTestIvectorExtractor() {$/;"	f	namespace:kaldi
+kaldi::UnitTestPldaEstimation	plda-test.cc	/^void UnitTestPldaEstimation(int32 dim) {$/;"	f	namespace:kaldi
+kaldi::UnitTestPosteriors	logistic-regression-test.cc	/^void UnitTestPosteriors() {$/;"	f	namespace:kaldi
+kaldi::UnitTestTrain	logistic-regression-test.cc	/^void UnitTestTrain() {$/;"	f	namespace:kaldi
+kaldi::VadEnergyOptions	voice-activity-detection.h	/^struct VadEnergyOptions {$/;"	s	namespace:kaldi
+kaldi::VadEnergyOptions::Register	voice-activity-detection.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::VadEnergyOptions
+kaldi::VadEnergyOptions::VadEnergyOptions	voice-activity-detection.h	/^  VadEnergyOptions(): vad_energy_threshold(5.0),$/;"	f	struct:kaldi::VadEnergyOptions
+kaldi::VadEnergyOptions::vad_energy_mean_scale	voice-activity-detection.h	/^  BaseFloat vad_energy_mean_scale;$/;"	m	struct:kaldi::VadEnergyOptions
+kaldi::VadEnergyOptions::vad_energy_threshold	voice-activity-detection.h	/^  BaseFloat vad_energy_threshold;$/;"	m	struct:kaldi::VadEnergyOptions
+kaldi::VadEnergyOptions::vad_frames_context	voice-activity-detection.h	/^  int32 vad_frames_context;$/;"	m	struct:kaldi::VadEnergyOptions
+kaldi::VadEnergyOptions::vad_proportion_threshold	voice-activity-detection.h	/^  BaseFloat vad_proportion_threshold;$/;"	m	struct:kaldi::VadEnergyOptions
+main	ivector-extractor-test.cc	/^int main() {$/;"	f
+main	logistic-regression-test.cc	/^int main() {$/;"	f
+main	plda-test.cc	/^int main() {$/;"	f
+max_steps	logistic-regression.h	/^  int32 max_steps,$/;"	m	struct:kaldi::LogisticRegressionConfig
+mean	plda.h	/^    Vector<double> *mean; \/\/ owned here, but as a pointer so$/;"	m	struct:kaldi::PldaStats::ClassInfo
+mean_	plda.h	/^  Vector<double> mean_;  \/\/ mean of samples in original space.$/;"	m	class:kaldi::Plda
+mix_up	logistic-regression.h	/^        mix_up;$/;"	m	struct:kaldi::LogisticRegressionConfig
+normalize_length	plda.h	/^  bool normalize_length;$/;"	m	struct:kaldi::PldaConfig
+normalizer	logistic-regression.h	/^  double normalizer,$/;"	m	struct:kaldi::LogisticRegressionConfig
+num_classes_	plda.h	/^  int64 num_classes_;$/;"	m	class:kaldi::PldaStats
+num_em_iters	plda.h	/^  int32 num_em_iters;$/;"	m	struct:kaldi::PldaEstimationConfig
+num_examples	plda.h	/^    int32 num_examples; \/\/ the number of examples in the class$/;"	m	struct:kaldi::PldaStats::ClassInfo
+num_examples_	plda.h	/^  int64 num_examples_; \/\/ total number of examples, sumed over classes.$/;"	m	class:kaldi::PldaStats
+num_iters	ivector-extractor.h	/^  int num_iters;$/;"	m	struct:kaldi::IvectorExtractorOptions
+num_ivectors_	ivector-extractor.h	/^  double num_ivectors_;$/;"	m	class:kaldi::IvectorStats
+num_samples_for_weights	ivector-extractor.h	/^  int32 num_samples_for_weights;$/;"	m	struct:kaldi::IvectorStatsOptions
+num_threads	ivector-extractor.h	/^  int32 num_threads;$/;"	m	struct:kaldi::IvectorExtractorEstimationOptions
+offset_	plda.h	/^  Vector<double> offset_;  \/\/ derived variable: -1.0 * transform_ * mean_$/;"	m	class:kaldi::Plda
+offset_scatter_	plda.h	/^  SpMatrix<double> offset_scatter_; \/\/ Sum over all examples, of the weight$/;"	m	class:kaldi::PldaStats
+operator ()	ivector-extractor.cc	/^  void operator () () { extractor_->ComputeDerivedVars(i_); }$/;"	f	class:kaldi::IvectorExtractorComputeDerivedVarsClass
+operator ()	ivector-extractor.cc	/^  void operator () () {$/;"	f	class:kaldi::IvectorExtractorUpdateProjectionClass
+operator ()	ivector-extractor.cc	/^  void operator () () {$/;"	f	class:kaldi::IvectorExtractorUpdateWeightClass
+operator <	plda.h	/^    bool operator < (const ClassInfo &other) const {$/;"	f	struct:kaldi::PldaStats::ClassInfo
+opts_	ivector-extractor.cc	/^  const IvectorExtractorEstimationOptions &opts_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+opts_	ivector-extractor.cc	/^  const IvectorExtractorEstimationOptions &opts_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+power	logistic-regression.h	/^         power;$/;"	m	struct:kaldi::LogisticRegressionConfig
+prior_stats_lock_	ivector-extractor.h	/^  Mutex prior_stats_lock_;$/;"	m	class:kaldi::IvectorStats
+psi_	plda.h	/^  Vector<double> psi_; \/\/ of dimension FeatureDim().  The between-class$/;"	m	class:kaldi::Plda
+stats_	ivector-extractor.cc	/^  const IvectorStats &stats_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+stats_	ivector-extractor.cc	/^  const IvectorStats &stats_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+stats_	plda.h	/^  const PldaStats &stats_;$/;"	m	class:kaldi::PldaEstimator
+sum_	plda.h	/^  Vector<double> sum_; \/\/ Weighted sum of class means (normalize by class_weight_$/;"	m	class:kaldi::PldaStats
+tot_auxf_	ivector-extractor.h	/^  double tot_auxf_;$/;"	m	class:kaldi::IvectorStats
+tot_impr_	ivector-extractor.cc	/^  double *tot_impr_;$/;"	m	class:kaldi::IvectorExtractorUpdateProjectionClass	file:
+tot_impr_	ivector-extractor.cc	/^  double *tot_impr_;$/;"	m	class:kaldi::IvectorExtractorUpdateWeightClass	file:
+transform_	plda.h	/^  Matrix<double> transform_; \/\/ of dimension FeatureDim() by FeatureDim();$/;"	m	class:kaldi::Plda
+update_variances	ivector-extractor.h	/^  bool update_variances;$/;"	m	struct:kaldi::IvectorStatsOptions
+use_weights	ivector-extractor.h	/^  bool use_weights;$/;"	m	struct:kaldi::IvectorExtractorOptions
+vad_energy_mean_scale	voice-activity-detection.h	/^  BaseFloat vad_energy_mean_scale;$/;"	m	struct:kaldi::VadEnergyOptions
+vad_energy_threshold	voice-activity-detection.h	/^  BaseFloat vad_energy_threshold;$/;"	m	struct:kaldi::VadEnergyOptions
+vad_frames_context	voice-activity-detection.h	/^  int32 vad_frames_context;$/;"	m	struct:kaldi::VadEnergyOptions
+vad_proportion_threshold	voice-activity-detection.h	/^  BaseFloat vad_proportion_threshold;$/;"	m	struct:kaldi::VadEnergyOptions
+variance_floor_factor	ivector-extractor.h	/^  double variance_floor_factor;$/;"	m	struct:kaldi::IvectorExtractorEstimationOptions
+variance_stats_lock_	ivector-extractor.h	/^  Mutex variance_stats_lock_;$/;"	m	class:kaldi::IvectorStats
+w_	ivector-extractor.h	/^  Matrix<double> w_;$/;"	m	class:kaldi::IvectorExtractor
+w_vec_	ivector-extractor.h	/^  Vector<double> w_vec_;$/;"	m	class:kaldi::IvectorExtractor
+weight	plda.h	/^    double weight;$/;"	m	struct:kaldi::PldaStats::ClassInfo
+weight_stats_lock_	ivector-extractor.h	/^  Mutex weight_stats_lock_;$/;"	m	class:kaldi::IvectorStats
+weights_	logistic-regression.h	/^  Matrix<BaseFloat> weights_;$/;"	m	class:kaldi::LogisticRegression
+within_var_	plda.h	/^  SpMatrix<double> within_var_;$/;"	m	class:kaldi::PldaEstimator
+within_var_count_	plda.h	/^  double within_var_count_; \/\/ count corresponding to within_var_stats_$/;"	m	class:kaldi::PldaEstimator
+within_var_stats_	plda.h	/^  SpMatrix<double> within_var_stats_;$/;"	m	class:kaldi::PldaEstimator
+~IvectorExtractorUpdateProjectionClass	ivector-extractor.cc	/^  ~IvectorExtractorUpdateProjectionClass() { *tot_impr_ += impr_; }$/;"	f	class:kaldi::IvectorExtractorUpdateProjectionClass
+~IvectorExtractorUpdateWeightClass	ivector-extractor.cc	/^  ~IvectorExtractorUpdateWeightClass() { *tot_impr_ += impr_; }$/;"	f	class:kaldi::IvectorExtractorUpdateWeightClass
+~PldaStats	plda.cc	/^PldaStats::~PldaStats() {$/;"	f	class:kaldi::PldaStats

@@ -1,0 +1,255 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+GetCount	nnet-copy-egs-discriminative.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+GetCount	nnet-copy-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+GetCount	nnet-get-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+GetCount	nnet-get-weighted-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+GetCount	nnet2-copy-egs-discriminative.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+GetCount	nnet2-copy-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+GetCount	nnet2-get-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+KlDivergence	nnet-adjust-priors.cc	/^BaseFloat KlDivergence(const Vector<BaseFloat> &p,$/;"	f	namespace:kaldi::nnet2
+KlDivergence	nnet2-adjust-priors.cc	/^BaseFloat KlDivergence(const Vector<BaseFloat> &p,$/;"	f	namespace:kaldi::nnet2
+NnetLogprobTask	nnet-logprob-parallel.cc	/^  NnetLogprobTask(const AmNnet &am_nnet,$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+NnetLogprobTask	nnet-logprob-parallel.cc	/^struct NnetLogprobTask {$/;"	s	namespace:kaldi::nnet2	file:
+NnetLogprobTask	nnet-logprob2-parallel.cc	/^  NnetLogprobTask(const AmNnet &am_nnet,$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+NnetLogprobTask	nnet-logprob2-parallel.cc	/^struct NnetLogprobTask {$/;"	s	namespace:kaldi::nnet2	file:
+NormalizeNnet	nnet-precondition.cc	/^void NormalizeNnet(Nnet *nnet) {$/;"	f	namespace:kaldi::nnet2
+PerturbTrainingExample	nnet-perturb-egs.cc	/^void PerturbTrainingExample(const TpMatrix<BaseFloat> &cholesky,$/;"	f	namespace:kaldi::nnet2
+PrintPriorDiagnostics	nnet-adjust-priors.cc	/^void PrintPriorDiagnostics(const Vector<BaseFloat> &old_priors,$/;"	f	namespace:kaldi::nnet2
+PrintPriorDiagnostics	nnet2-adjust-priors.cc	/^void PrintPriorDiagnostics(const Vector<BaseFloat> &old_priors,$/;"	f	namespace:kaldi::nnet2
+ProcessFile	nnet-get-egs.cc	/^static void ProcessFile(const MatrixBase<BaseFloat> &feats,$/;"	f	namespace:kaldi::nnet2
+ProcessFile	nnet-get-weighted-egs.cc	/^static void ProcessFile(const MatrixBase<BaseFloat> &feats,$/;"	f	namespace:kaldi::nnet2
+ProcessFile	nnet2-get-egs.cc	/^static void ProcessFile(const MatrixBase<BaseFloat> &feats,$/;"	f	namespace:kaldi::nnet2
+SetMaxChange	nnet-modify-learning-rates.cc	/^void SetMaxChange(BaseFloat max_change, Nnet *nnet) {$/;"	f	namespace:kaldi::nnet2
+SetMaxChange	nnet2-modify-learning-rates.cc	/^void SetMaxChange(BaseFloat max_change, Nnet *nnet) {$/;"	f	namespace:kaldi::nnet2
+SetPriors	nnet-train-transitions.cc	/^void SetPriors(const TransitionModel &tmodel,$/;"	f	namespace:kaldi::nnet2
+SetPriors	nnet2-train-transitions.cc	/^void SetPriors(const TransitionModel &tmodel,$/;"	f	namespace:kaldi::nnet2
+TransformTrainingExample	nnet-perturb-egs-fmllr.cc	/^void TransformTrainingExample(const Matrix<BaseFloat> &fmllr_mat,$/;"	f	namespace:kaldi::nnet2
+am_nnet_	nnet-logprob-parallel.cc	/^  const AmNnet &am_nnet_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+am_nnet_	nnet-logprob2-parallel.cc	/^  const AmNnet &am_nnet_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+feats_	nnet-logprob-parallel.cc	/^  CuMatrix<BaseFloat> feats_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+feats_	nnet-logprob2-parallel.cc	/^  CuMatrix<BaseFloat> feats_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+inv_priors_	nnet-logprob-parallel.cc	/^  const CuVector<BaseFloat> &inv_priors_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+inv_priors_	nnet-logprob2-parallel.cc	/^  const CuVector<BaseFloat> &inv_priors_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi	nnet-adjust-priors.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-copy-egs-discriminative.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-copy-egs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-get-egs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-get-weighted-egs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-logprob-parallel.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-logprob2-parallel.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-modify-learning-rates.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-perturb-egs-fmllr.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-perturb-egs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-precondition.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-train-transitions.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet2-adjust-priors.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet2-copy-egs-discriminative.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet2-copy-egs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet2-get-egs.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet2-modify-learning-rates.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet2-train-transitions.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::nnet2	nnet-adjust-priors.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-copy-egs-discriminative.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-copy-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-get-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-get-weighted-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-logprob-parallel.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-logprob2-parallel.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-modify-learning-rates.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-perturb-egs-fmllr.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-perturb-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-precondition.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet-train-transitions.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet2-adjust-priors.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet2-copy-egs-discriminative.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet2-copy-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet2-get-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet2-modify-learning-rates.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2	nnet2-train-transitions.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet2::GetCount	nnet-copy-egs-discriminative.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::GetCount	nnet-copy-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::GetCount	nnet-get-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::GetCount	nnet-get-weighted-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::GetCount	nnet2-copy-egs-discriminative.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::GetCount	nnet2-copy-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::GetCount	nnet2-get-egs.cc	/^int32 GetCount(double expected_count) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::KlDivergence	nnet-adjust-priors.cc	/^BaseFloat KlDivergence(const Vector<BaseFloat> &p,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::KlDivergence	nnet2-adjust-priors.cc	/^BaseFloat KlDivergence(const Vector<BaseFloat> &p,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::NnetLogprobTask	nnet-logprob-parallel.cc	/^struct NnetLogprobTask {$/;"	s	namespace:kaldi::nnet2	file:
+kaldi::nnet2::NnetLogprobTask	nnet-logprob2-parallel.cc	/^struct NnetLogprobTask {$/;"	s	namespace:kaldi::nnet2	file:
+kaldi::nnet2::NnetLogprobTask::NnetLogprobTask	nnet-logprob-parallel.cc	/^  NnetLogprobTask(const AmNnet &am_nnet,$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+kaldi::nnet2::NnetLogprobTask::NnetLogprobTask	nnet-logprob2-parallel.cc	/^  NnetLogprobTask(const AmNnet &am_nnet,$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+kaldi::nnet2::NnetLogprobTask::am_nnet_	nnet-logprob-parallel.cc	/^  const AmNnet &am_nnet_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::am_nnet_	nnet-logprob2-parallel.cc	/^  const AmNnet &am_nnet_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::feats_	nnet-logprob-parallel.cc	/^  CuMatrix<BaseFloat> feats_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::feats_	nnet-logprob2-parallel.cc	/^  CuMatrix<BaseFloat> feats_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::inv_priors_	nnet-logprob-parallel.cc	/^  const CuVector<BaseFloat> &inv_priors_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::inv_priors_	nnet-logprob2-parallel.cc	/^  const CuVector<BaseFloat> &inv_priors_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::key_	nnet-logprob-parallel.cc	/^  std::string key_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::key_	nnet-logprob2-parallel.cc	/^  std::string key_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::log_probs_	nnet-logprob-parallel.cc	/^  CuMatrix<BaseFloat> log_probs_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::log_probs_	nnet-logprob2-parallel.cc	/^  CuMatrix<BaseFloat> log_probs_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::logprob_writer_	nnet-logprob-parallel.cc	/^  BaseFloatCuMatrixWriter *logprob_writer_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::logprob_writer_divided_	nnet-logprob2-parallel.cc	/^  BaseFloatMatrixWriter *logprob_writer_divided_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::operator ()	nnet-logprob-parallel.cc	/^  void operator () () {$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+kaldi::nnet2::NnetLogprobTask::operator ()	nnet-logprob2-parallel.cc	/^  void operator () () {$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+kaldi::nnet2::NnetLogprobTask::prob_writer_nodiv_	nnet-logprob2-parallel.cc	/^  BaseFloatMatrixWriter *prob_writer_nodiv_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::spk_vec_	nnet-logprob-parallel.cc	/^  CuVector<BaseFloat> spk_vec_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::spk_vec_	nnet-logprob2-parallel.cc	/^  CuVector<BaseFloat> spk_vec_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+kaldi::nnet2::NnetLogprobTask::~NnetLogprobTask	nnet-logprob-parallel.cc	/^  ~NnetLogprobTask() { \/\/ Produces output.  Run sequentially.$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+kaldi::nnet2::NnetLogprobTask::~NnetLogprobTask	nnet-logprob2-parallel.cc	/^  ~NnetLogprobTask() { \/\/ Produces output.  Run sequentially.$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+kaldi::nnet2::NormalizeNnet	nnet-precondition.cc	/^void NormalizeNnet(Nnet *nnet) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::PerturbTrainingExample	nnet-perturb-egs.cc	/^void PerturbTrainingExample(const TpMatrix<BaseFloat> &cholesky,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::PrintPriorDiagnostics	nnet-adjust-priors.cc	/^void PrintPriorDiagnostics(const Vector<BaseFloat> &old_priors,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::PrintPriorDiagnostics	nnet2-adjust-priors.cc	/^void PrintPriorDiagnostics(const Vector<BaseFloat> &old_priors,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::ProcessFile	nnet-get-egs.cc	/^static void ProcessFile(const MatrixBase<BaseFloat> &feats,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::ProcessFile	nnet-get-weighted-egs.cc	/^static void ProcessFile(const MatrixBase<BaseFloat> &feats,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::ProcessFile	nnet2-get-egs.cc	/^static void ProcessFile(const MatrixBase<BaseFloat> &feats,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::SetMaxChange	nnet-modify-learning-rates.cc	/^void SetMaxChange(BaseFloat max_change, Nnet *nnet) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::SetMaxChange	nnet2-modify-learning-rates.cc	/^void SetMaxChange(BaseFloat max_change, Nnet *nnet) {$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::SetPriors	nnet-train-transitions.cc	/^void SetPriors(const TransitionModel &tmodel,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::SetPriors	nnet2-train-transitions.cc	/^void SetPriors(const TransitionModel &tmodel,$/;"	f	namespace:kaldi::nnet2
+kaldi::nnet2::TransformTrainingExample	nnet-perturb-egs-fmllr.cc	/^void TransformTrainingExample(const Matrix<BaseFloat> &fmllr_mat,$/;"	f	namespace:kaldi::nnet2
+key_	nnet-logprob-parallel.cc	/^  std::string key_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+key_	nnet-logprob2-parallel.cc	/^  std::string key_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+log_probs_	nnet-logprob-parallel.cc	/^  CuMatrix<BaseFloat> log_probs_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+log_probs_	nnet-logprob2-parallel.cc	/^  CuMatrix<BaseFloat> log_probs_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+logprob_writer_	nnet-logprob-parallel.cc	/^  BaseFloatCuMatrixWriter *logprob_writer_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+logprob_writer_divided_	nnet-logprob2-parallel.cc	/^  BaseFloatMatrixWriter *logprob_writer_divided_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+main	cuda-compiled.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-adjust-priors.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-align-compiled.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-average.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-combine.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-compute.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-fix.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-init.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-limit-rank-final.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-limit-rank.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-mixup.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-rescale.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-shrink.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-am-widen.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-average.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-combine-a.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-combine-egs-discriminative.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-combine-fast.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-combine.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-compare-hash-discriminative.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-compute-from-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-compute-prob.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-compute-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-compute.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-copy-egs-discriminative.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-copy-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-get-egs-discriminative.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-get-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-get-feature-transform-multi.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-get-feature-transform.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-get-preconditioner.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-get-weighted-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-gradient.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-init.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-insert.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-latgen-faster-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-latgen-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-limit-degradation.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-logprob-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-logprob.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-logprob2-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-logprob2.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-modify-learning-rates.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-normalize-stddev.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-perturb-egs-fmllr.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-perturb-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-precondition.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-randomize-frames.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-replace-last-layers.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-select-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-show-progress.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-shrink.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-shuffle-egs-discriminative.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-shuffle-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-subset-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-to-raw-nnet.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-discriminative-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-discriminative-simple.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-ensemble.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-lbfgs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-simple.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-transitions.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-adjust-priors.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-align-compiled.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-am-init.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-average.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-combine-egs-discriminative.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-combine-fast.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-combine.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-compute-prob.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-compute.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-copy-egs-discriminative.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-copy-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-fix.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-get-egs-discriminative.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-get-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-get-feature-transform-multi.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-get-feature-transform.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-init.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-insert.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-latgen-faster-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-latgen-faster.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-mixup.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-modify-learning-rates.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-normalize-stddev.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-replace-last-layers.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-show-progress.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-shuffle-egs-discriminative.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-shuffle-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-subset-egs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-to-raw-nnet2.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-train-discriminative-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-train-discriminative-simple.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-train-ensemble.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-train-lbfgs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-train-parallel.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-train-simple.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-train-transitions.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet2-widen.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	raw-nnet-concat.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	raw-nnet-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+nnet2	nnet-adjust-priors.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-copy-egs-discriminative.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-copy-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-get-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-get-weighted-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-logprob-parallel.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-logprob2-parallel.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-modify-learning-rates.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-perturb-egs-fmllr.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-perturb-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-precondition.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet-train-transitions.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet2-adjust-priors.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet2-copy-egs-discriminative.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet2-copy-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet2-get-egs.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet2-modify-learning-rates.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+nnet2	nnet2-train-transitions.cc	/^namespace nnet2 {$/;"	n	namespace:kaldi	file:
+operator ()	nnet-logprob-parallel.cc	/^  void operator () () {$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+operator ()	nnet-logprob2-parallel.cc	/^  void operator () () {$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+prob_writer_nodiv_	nnet-logprob2-parallel.cc	/^  BaseFloatMatrixWriter *prob_writer_nodiv_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+spk_vec_	nnet-logprob-parallel.cc	/^  CuVector<BaseFloat> spk_vec_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+spk_vec_	nnet-logprob2-parallel.cc	/^  CuVector<BaseFloat> spk_vec_;$/;"	m	struct:kaldi::nnet2::NnetLogprobTask	file:
+~NnetLogprobTask	nnet-logprob-parallel.cc	/^  ~NnetLogprobTask() { \/\/ Produces output.  Run sequentially.$/;"	f	struct:kaldi::nnet2::NnetLogprobTask
+~NnetLogprobTask	nnet-logprob2-parallel.cc	/^  ~NnetLogprobTask() { \/\/ Produces output.  Run sequentially.$/;"	f	struct:kaldi::nnet2::NnetLogprobTask

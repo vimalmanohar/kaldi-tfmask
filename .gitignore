@@ -1214,11 +1214,6 @@
 /tools/sph2pipe_v2.5.tar.gz
 /tools/sph2pipe_v2.5/
 
-!*/.cc
-!*/.cu
-!*/.h
-!t/ags
-!*/.sh
 /src/base/tags
 /src/bin/am-info
 /src/bin/build-pfile-from-ali
@@ -1424,3 +1419,9 @@
 /tools/sctk-2.4.0/
 /tools/sph2pipe_v2.5.tar.gz
 /tools/sph2pipe_v2.5/
+
+!*.cc
+!*.cu
+!*.h
+!tags
+!*.sh

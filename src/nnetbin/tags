@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+LatticeAcousticRescore	nnet-train-mmi-sequential.cc	/^void LatticeAcousticRescore(const Matrix<BaseFloat> &log_like,$/;"	f	namespace:kaldi::nnet1
+LatticeAcousticRescore	nnet-train-mpe-sequential.cc	/^void LatticeAcousticRescore(const Matrix<BaseFloat> &log_like,$/;"	f	namespace:kaldi::nnet1
+kaldi	nnet-train-mmi-sequential.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	nnet-train-mpe-sequential.cc	/^namespace kaldi {$/;"	n	file:
+kaldi::nnet1	nnet-train-mmi-sequential.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet1	nnet-train-mpe-sequential.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+kaldi::nnet1::LatticeAcousticRescore	nnet-train-mmi-sequential.cc	/^void LatticeAcousticRescore(const Matrix<BaseFloat> &log_like,$/;"	f	namespace:kaldi::nnet1
+kaldi::nnet1::LatticeAcousticRescore	nnet-train-mpe-sequential.cc	/^void LatticeAcousticRescore(const Matrix<BaseFloat> &log_like,$/;"	f	namespace:kaldi::nnet1
+main	cmvn-to-nnet.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-concat.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-copy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-forward.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-info.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-initialize.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-kl-hmm-acc.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-kl-hmm-mat-to-component.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-kl-hmm-sum-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-frmshuff.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-mmi-sequential.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-mpe-sequential.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	nnet-train-perutt.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	rbm-convert-to-nnet.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	rbm-train-cd1-frmshuff.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	transf-to-nnet.cc	/^int main(int argc, char *argv[]) {$/;"	f
+nnet1	nnet-train-mmi-sequential.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:
+nnet1	nnet-train-mpe-sequential.cc	/^namespace nnet1 {$/;"	n	namespace:kaldi	file:

@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+debug_location	fstdeterminizestar.cc	/^bool debug_location = false;$/;"	v
+debug_location	fstpropfinal.cc	/^bool debug_location = false;$/;"	v
+main	fstaddselfloops.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstaddsubsequentialloop.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstcomposecontext.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstcopy.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstdeterminizelog.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstdeterminizestar.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstfactor.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstisstochastic.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstmakecontextfst.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstmakecontextsyms.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstminimizeencoded.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstphicompose.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstpropfinal.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstpushspecial.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstrand.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstrhocompose.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstrmepslocal.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fstrmsymbols.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fsts-to-transcripts.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	fsttablecompose.cc	/^int main(int argc, char *argv[]) {$/;"	f
+signal_handler	fstdeterminizestar.cc	/^void signal_handler(int) {$/;"	f
+signal_handler	fstpropfinal.cc	/^void signal_handler(int) {$/;"	f
