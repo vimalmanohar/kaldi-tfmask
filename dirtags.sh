@@ -1,6 +1,6 @@
 #!/bin/bash
 
-a=$(find $1 -maxdepth 1 -type f -name "*.cc" -print -o -type f -name "*.c" -print -o -type f -name "*.h" -print)
+a=$(find $1 -maxdepth 1 -type f -name "*.cc" -print -o -type f -name "*.c" -print -o -type f -name "*.h" -print -o -type f -name "*.cu" -print)
 cd $1
 
 first=1
