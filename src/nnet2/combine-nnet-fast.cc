@@ -307,7 +307,8 @@ double FastNnetCombiner::ComputeObjfAndGradient(
   double tot_weight = 0.0;
   double objf = DoBackpropParallel(nnet, config_.minibatch_size, config_.num_threads,
                                    egs_, &tot_weight, &nnet_gradient) / egs_.size();
-  KALDI_ASSERT(tot_weight == static_cast<int32>(egs_.size()));
+  
+  // KALDI_ASSERT(tot_weight == static_cast<int32>(egs_.size()));
   
   // raw_gradient is gradient in non-preconditioned space.
   Vector<double> raw_gradient(params_.Dim());
