@@ -1130,9 +1130,9 @@ void CuMatrix<Real>::CompObjfAndDeriv(const std::vector<MatrixElement<Real> >& s
       // KALDI_ASSERT(label >= 0 && label < nnet_.OutputDim());
       Real this_prob = output(m, label);
       // KALDI_ASSERT(this_prob >= 0.99e-20); // we floored to 1.0e-20 in SoftmaxLayer.
-      *tot_objf += -0.5 / sv_labels.size() * (weight - this_prob) * (weight - this_prob);
+      *tot_objf += -0.5 * (weight - this_prob) * (weight - this_prob);
       *tot_weight += 1.0;
-      (*this)(m, label) += ( weight - this_prob ) / sv_labels.size();
+      (*this)(m, label) += ( weight - this_prob );
 
     }
   }

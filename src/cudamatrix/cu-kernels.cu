@@ -996,9 +996,9 @@ static void _cuda_comp_obj_deriv(MatrixElement<Real> *x, int s, const Real* z, M
     Real weight = (x + j)->weight; //*(Real*) ((size_t)x + j * (2 * sizeof(int) + sizeof(Real) ) + 2 * sizeof(int)); 
     tmp_weight_sum += 1.0;
     Real this_prob =  *(z + m * d.stride + label);
-    tmp_tot_objf += -0.5 / d.stride * (weight - this_prob) * (weight - this_prob);
+    tmp_tot_objf += -0.5 * (weight - this_prob) * (weight - this_prob);
 
-    *(z2 + m * d2.stride + label ) += (weight - this_prob) / d.stride;
+    *(z2 + m * d2.stride + label ) += (weight - this_prob);
   }
   tot_objf[i] = tmp_tot_objf;
   tot_weight[i] = tmp_weight_sum;
