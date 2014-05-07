@@ -597,6 +597,11 @@ class CuMatrix: public CuMatrixBase<Real> {
                         const CuMatrix<Real> &A,
                         Real *tot_objf,
                         Real* tot_weight);
+  void CompObjfAndDerivXentSum(const std::vector<MatrixElement<Real> > &elements,
+                        int32 target_dim,
+                        const CuMatrix<Real> &A,
+                        Real *tot_objf,
+                        Real* tot_weight);
 
  private:
   void Destroy();

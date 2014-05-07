@@ -62,6 +62,21 @@ double DoBackpropParallel(const Nnet &nnet,
                           Nnet *nnet_to_update);
 
 
+double DoBackpropParallel(const Nnet &nnet,
+                          int32 minibatch_size,
+                          SequentialNnetExampleReader *example_reader,
+                          const NnetUpdaterConfig &config,
+                          double *tot_weight,
+                          Nnet *nnet_to_update);
+
+double DoBackpropParallel(const Nnet &nnet,
+                          int32 minibatch_size,
+                          int32 num_threads,
+                          const std::vector<NnetExample> &examples,
+                          const NnetUpdaterConfig &config,
+                          double *num_frames,
+                          Nnet *nnet_to_update);
+
 
 /// This is basically to clarify the fact that DoBackpropParallel will
 /// also work with nnet_to_update == NULL, and will compute the objf.
@@ -74,10 +89,20 @@ inline double ComputeNnetObjfParallel(
     int32 num_threads,
     const std::vector<NnetExample> &examples,
     double *num_frames) {
-  return DoBackpropParallel(nnet, minibatch_size, num_threads,
-                            examples, num_frames, NULL);
+  return ComputeNnetObjfParallel(nnet, minibatch_size, num_threads,
+                            examples, new NnetUpdaterConfig(), num_frames, NULL);
 }
 
+inline double ComputeNnetObjfParallel(
+    const Nnet &nnet,
+    int32 minibatch_size,
+    int32 num_threads,
+    const std::vector<NnetExample> &examples,
+    const NnetUpdaterConfig &config,
+    double *num_frames) {
+  return DoBackpropParallel(nnet, minibatch_size, num_threads,
+                            examples, config, num_frames, NULL);
+}
 
 
 

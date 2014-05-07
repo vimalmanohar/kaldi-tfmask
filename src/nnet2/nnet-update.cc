@@ -28,8 +28,14 @@ namespace nnet2 {
 NnetUpdater::NnetUpdater(const Nnet &nnet,
                          Nnet *nnet_to_update):
     nnet_(nnet), nnet_to_update_(nnet_to_update) {
+      config_ = NnetUpdaterConfig();
 }
  
+NnetUpdater::NnetUpdater(const Nnet &nnet,
+                         NnetUpdaterConfig &config,
+                         Nnet *nnet_to_update):
+    nnet_(nnet), config_(config), nnet_to_update_(nnet_to_update) {
+}
 
 double NnetUpdater::ComputeForMinibatch(
     const std::vector<NnetExample> &data) {
@@ -96,7 +102,10 @@ double NnetUpdater::ComputeObjfAndDeriv(
     }
   }
 
-  deriv->CompObjfAndDeriv(sv_labels, output, &tot_objf, &tot_weight);
+  if (config_.obj_func == "CrossEntropy")
+    deriv->CompObjfAndDeriv(sv_labels, output, &tot_objf, &tot_weight);
+  else if (config_.obj_func == "CrossEntropySum")
+    deriv->CompObjfAndDerivXentSum(sv_labels, config_.target_dim, output, &tot_objf, &tot_weight);
 
   KALDI_VLOG(4) << "Objective function is " << (tot_objf/tot_weight) << " over "
                 << tot_weight << " samples (weighted).";
@@ -177,18 +186,33 @@ BaseFloat TotalNnetTrainingWeight(const std::vector<NnetExample> &egs) {
 
 
 double ComputeNnetObjf(const Nnet &nnet,
+                       const std::vector<NnetExample> &examples,
+                       const NnetUpdaterConfig &config) {
+  NnetUpdater updater(nnet, config, NULL);
+  return updater.ComputeForMinibatch(examples);
+}
+
+double ComputeNnetObjf(const Nnet &nnet,
                        const std::vector<NnetExample> &examples) {
-  NnetUpdater updater(nnet, NULL);
+  NnetUpdater updater(nnet, new NnetUpdaterConfig(), NULL);
   return updater.ComputeForMinibatch(examples);
 }
 
 double DoBackprop(const Nnet &nnet,
                   const std::vector<NnetExample> &examples,
                   Nnet *nnet_to_update) {
+  return DoBackprop(nnet, examples,
+      new NnetUpdaterConfig(), nnet_to_update);
+}
+
+double DoBackprop(const Nnet &nnet,
+                  const std::vector<NnetExample> &examples,
+                  const NnetUpdaterConfig &config,
+                  Nnet *nnet_to_update) {
   if (nnet_to_update == NULL)
-    return ComputeNnetObjf(nnet, examples);
+    return ComputeNnetObjf(nnet, examples, config);
   try {
-    NnetUpdater updater(nnet, nnet_to_update);
+    NnetUpdater updater(nnet, config, nnet_to_update);
     return updater.ComputeForMinibatch(examples);
   } catch (...) {
     KALDI_LOG << "Error doing backprop, nnet info is: " << nnet.Info();
@@ -200,6 +224,16 @@ double ComputeNnetGradient(
     const Nnet &nnet,
     const std::vector<NnetExample> &validation_set,
     int32 batch_size,
+    Nnet *gradient) {
+  return ComputeNnetGradient(nnet, validation_set , batch_size,
+        new NnetUpdaterConfig(), gradient);
+}
+
+double ComputeNnetGradient(
+    const Nnet &nnet,
+    const std::vector<NnetExample> &validation_set,
+    int32 batch_size,
+    const NnetUpdaterConfig &config,
     Nnet *gradient) {
   bool treat_as_gradient = true;
   gradient->SetZero(treat_as_gradient);
@@ -218,6 +252,7 @@ double ComputeNnetGradient(
     }
     tot_objf += DoBackprop(nnet,
                            batch,
+                           config,
                            gradient);
   }
   return tot_objf / validation_set.size();
@@ -227,6 +262,16 @@ double ComputeNnetObjf(
     const Nnet &nnet,
     const std::vector<NnetExample> &validation_set,
     int32 batch_size) {
+  return ComputeNnetObjf(nnet, validation_set, batch_size,
+        new NnetUpdaterConfig());
+}
+
+
+double ComputeNnetObjf(
+    const Nnet &nnet,
+    const std::vector<NnetExample> &validation_set,
+    int32 batch_size,
+    const NnetUpdaterConfig &config) {
   std::vector<NnetExample> batch;
   batch.reserve(batch_size);
   double tot_objf = 0.0;
@@ -240,12 +285,10 @@ double ComputeNnetObjf(
          i++) {
       batch.push_back(validation_set[i]);
     }
-    tot_objf += ComputeNnetObjf(nnet, batch);
+    tot_objf += ComputeNnetObjf(nnet, batch, config);
   }
   return tot_objf;
 }
 
-  
-  
 } // namespace nnet2
 } // namespace kaldi

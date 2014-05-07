@@ -121,3 +121,23 @@ utils/utt2spk_to_spk2utt.pl data/train_fbank/utt2spk \
 steps/compute_cmvn_stats.sh --fake data/train_fbank exp/make_fbank fbank
 steps/compute_cmvn_stats.sh --fake data/train_noisy exp/make_fbank fbank
 steps/compute_cmvn_stats.sh --fake data/train_noise exp/make_fbank fbank
+
+cp -r data/train_fbank data/train_fbank_mfcc
+rm data/train_fbank_mfcc/{feats.scp,cmvn.scp}
+
+mkdir -p exp/make_fbank_mfcc fbank_mfcc
+
+utils/split_data.sh data/train_fbank $train_nj
+
+sdata=data/train_fbank/split$train_nj
+
+$train_cmd JOB=1:$train_nj exp/make_fbank_mfcc/compute_mfcc.JOB.log \
+  compute-mfcc-feats-from-fbank --config=conf/mfcc.conf \
+  scp:$sdata/JOB/feats.scp \
+  ark,scp:fbank_mfcc/raw_train_fbank_mfcc.JOB.ark,fbank_mfcc/raw_train_fbank_mfcc.JOB.scp || exit 1
+
+for n in `seq $train_nj`; do 
+  cat fbank_mfcc/raw_train_fbank_mfcc.$n.scp
+done | sort > data/train_fbank_mfcc/feats.scp
+
+steps/compute_cmvn_stats.sh data/train_fbank_mfcc exp/make_fbank_mfcc fbank_mfcc

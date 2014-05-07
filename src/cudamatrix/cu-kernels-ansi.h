@@ -160,6 +160,7 @@ void cudaF_take_upper(dim3 Gr, dim3 Bl, const float* x, float* y, MatrixDim d_in
 void cudaF_take_mean(dim3 Gr, dim3 Bl, const float* x, float* y, MatrixDim d_in);
 void cudaF_matrix_add_elements(dim3 Gr, dim3 Bl, float *data, MatrixDim dim, float alpha, MatrixElement<float>* x, int s);
 void cudaF_comp_obj_deriv(dim3 Gr,dim3 Bl, MatrixElement<float>* x, int s, const float* z, MatrixDim d, float* z2, MatrixDim d2, float* t);
+void cudaF_comp_obj_deriv_xent_sum(dim3 Gr,dim3 Bl, MatrixElement<float>* x, int s, int td, const float* z, MatrixDim d, float* z2, MatrixDim d2, float* t);
 void cudaF_transpose_matrix(dim3 Gr, dim3 Bl, float* mat, MatrixDim d);  
 void cudaF_sy_add_tr2(dim3 Gr, dim3 Bl, float alpha, float beta, const float* T, MatrixDim tdim,
                       float *S, MatrixDim sdim);

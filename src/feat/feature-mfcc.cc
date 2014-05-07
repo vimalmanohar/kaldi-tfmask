@@ -1,6 +1,7 @@
 // feat/feature-mfcc.cc
 
 // Copyright 2009-2011  Karel Vesely;  Petr Motlicek
+//           2014       Vimal Manohar
 
 // See ../../COPYING for clarification regarding multiple authors
 //
@@ -19,7 +20,7 @@
 
 
 #include "feat/feature-mfcc.h"
-
+#include "feat/feature-fbank.h"
 
 namespace kaldi {
 
@@ -74,20 +75,31 @@ void Mfcc::Compute(const VectorBase<BaseFloat> &wave,
                    Matrix<BaseFloat> *output,
                    Vector<BaseFloat> *wave_remainder) {
   KALDI_ASSERT(output != NULL);
+
+  // Get dimensions of output features
   int32 rows_out = NumFrames(wave.Dim(), opts_.frame_opts),
       cols_out = opts_.num_ceps;
   if (rows_out == 0)
     KALDI_ERR << "No frames fit in file (#samples is " << wave.Dim() << ")";
+  // Prepare the output buffer
   output->Resize(rows_out, cols_out);
+
+  // Optionally extract the remainder for further processing
   if (wave_remainder != NULL)
     ExtractWaveformRemainder(wave, opts_.frame_opts, wave_remainder);
+
+  // Buffers
   Vector<BaseFloat> window;  // windowed waveform.
   Vector<BaseFloat> mel_energies;
+
+  // Compute all the freames, r is frame index..
   for (int32 r = 0; r < rows_out; r++) {  // r is frame index..
+    // Cut the window, apply window function
     BaseFloat log_energy;
     ExtractWindow(wave, r, opts_.frame_opts, feature_window_function_, &window,
                   (opts_.use_energy && opts_.raw_energy ? &log_energy : NULL));
 
+    // Compute energy after window function (not the raw one)
     if (opts_.use_energy && !opts_.raw_energy)
       log_energy = log(VecVec(window, window));
 
@@ -100,6 +112,7 @@ void Mfcc::Compute(const VectorBase<BaseFloat> &wave,
     ComputePowerSpectrum(&window);
     SubVector<BaseFloat> power_spectrum(window, 0, window.Dim()/2 + 1);
 
+    // Integrate with MelFiterbank over power spectrum
     const MelBanks *this_mel_banks = GetMelBanks(vtln_warp);
     this_mel_banks->Compute(power_spectrum, &mel_energies);
 
@@ -132,9 +145,55 @@ void Mfcc::Compute(const VectorBase<BaseFloat> &wave,
   }
 }
 
+void Mfcc::ComputeFromFbank(const Matrix<BaseFloat> &fbank,
+                   Matrix<BaseFloat> *output) {
+  KALDI_ASSERT(output != NULL);
 
+  // Get dimensions of output features
+  int32 rows_out = fbank.NumRows();
+  int32 cols_out = opts_.num_ceps;
 
+  if (!opts_.use_energy) {
+    KALDI_ERR << "--use-energy is true in MFCC config. It has to be set false in order to compute MFCC from Fbank";
+  }
 
+  if (fbank.NumCols() != opts_.mel_opts.num_bins) {
+    KALDI_ERR << "--num-mel-bins is " << opts_.mel_opts.num_bins << ". But fbank has " << fbank.NumCols() << "bins including energy";
+  }
 
+  if (rows_out == 0)
+    KALDI_ERR << "No frames found in fbank";
+
+  // Prepare the output buffer
+  output->Resize(rows_out, cols_out);
+
+  // Buffers
+  Vector<BaseFloat> mel_energies(opts_.mel_opts.num_bins);
+
+  // Compute all the freames, r is frame index..
+  for (int32 r = 0; r < rows_out; r++) {  // r is frame index..
+    // Cut the window, apply window function
+
+    mel_energies.CopyFromVec(fbank.Row(r));
+
+    SubVector<BaseFloat> this_mfcc(output->Row(r));
+
+    // this_mfcc = dct_matrix_ * mel_energies [which now have log]
+    this_mfcc.AddMatVec(1.0, dct_matrix_, kNoTrans, mel_energies, 0.0);
+
+    if (opts_.cepstral_lifter != 0.0)
+      this_mfcc.MulElements(lifter_coeffs_);
+
+    if (opts_.htk_compat) {
+      BaseFloat energy = this_mfcc(0);
+      for (int32 i = 0; i < opts_.num_ceps-1; i++)
+        this_mfcc(i) = this_mfcc(i+1);
+      energy *= M_SQRT2;  // scale on C0 (actually removing scale
+      // we previously added that's part of one common definition of
+      // cosine transform.)
+      this_mfcc(opts_.num_ceps-1)  = energy;
+    }
+  }
+}
 
 }  // namespace kaldi

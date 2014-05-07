@@ -2,6 +2,7 @@
 
 // Copyright 2012  Johns Hopkins University (author: Daniel Povey)
 //           2014  Xiaohui Zhang
+//           2014  Vimal Manohar
 
 // See ../../COPYING for clarification regarding multiple authors
 //
@@ -54,6 +55,10 @@ class NnetUpdater {
   NnetUpdater(const Nnet &nnet,
               Nnet *nnet_to_update);
   
+  NnetUpdater(const Nnet &nnet, 
+              const NnetUpdaterConfig &config,
+              Nnet *nnet_to_update);
+
   double ComputeForMinibatch(const std::vector<NnetExample> &data);
   // returns average objective function over this minibatch.
   
@@ -92,6 +97,8 @@ class NnetUpdater {
   // member variables in the NnetExample structures.  These
   // will typically be about one on average.
   CuVector<BaseFloat> chunk_weights_;
+
+  NnetUpdaterConfig config_;
 };
 
 /// This function computes the objective function and either updates the model
@@ -105,6 +112,14 @@ class NnetUpdater {
 double DoBackprop(const Nnet &nnet,
                   const std::vector<NnetExample> &examples,
                   Nnet *nnet_to_update);
+
+/// This version of DoBackprop passes along a config structure 
+/// to NnetUpdater that can choose the objective function to be used
+double DoBackprop(const Nnet &nnet,
+                  const std::vector<NnetExample> &examples,
+                  const NnetUpdaterConfig &config,
+                  Nnet *nnet_to_update);
+
 
 /// Returns the total weight summed over all the examples... just a simple
 /// utility function.
@@ -122,6 +137,16 @@ double ComputeNnetObjf(const Nnet &nnet,
                        const std::vector<NnetExample> &examples,
                        int32 minibatch_size);
 
+/// This version of ComputeNnetObjf passes along a config structure
+/// to NnetUpdater that can choose the objective function to be used
+double ComputeNnetObjf(const Nnet &nnet,
+                       const std::vector<NnetExample> &examples,
+                       const NnetUpdaterConfig &config);
+
+double ComputeNnetObjf(const Nnet &nnet,
+                       const std::vector<NnetExample> &examples,
+                       int32 minibatch_size,
+                       const NnetUpdaterConfig &config);
 
 /// ComputeNnetGradient is mostly used to compute gradients on validation sets;
 /// it divides the example into batches and calls DoBackprop() on each.
@@ -132,6 +157,29 @@ double ComputeNnetGradient(
     int32 batch_size,
     Nnet *gradient);
 
+double ComputeNnetGradient(
+    const Nnet &nnet,
+    const std::vector<NnetExample> &examples,
+    int32 batch_size,
+    const NnetUpdaterConfig &config,
+    Nnet *gradient);
+
+struct NnetUpdaterConfig {
+  std::string obj_func;
+  int32 target_dim;
+
+  NnetUpdaterConfig(): obj_func("CrossEntropy"),
+                       target_dim(1) { }
+
+  void Register (OptionsItf *po) {
+    po->Register("obj-func", &obj_func,
+        "Objective function to be used (CrossEntropy/CrossEntropySum/SquaredError)");
+    po->Register("target-dim", &target_dim,
+        "Dimension of target layer. Used only with CrossEntropySum or SquaredError objective functions");
+
+    KALDI_ASSERT(obj_func == "CrossEntropy" || obj_func == "CrossEntropySum");
+  }
+};
 
 } // namespace nnet2
 } // namespace kaldi

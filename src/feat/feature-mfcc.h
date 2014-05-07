@@ -24,6 +24,7 @@
 #include <string>
 
 #include "feat/feature-functions.h"
+#include "feat/feature-fbank.h"
 
 namespace kaldi {
 /// @addtogroup  feat FeatureExtraction
@@ -99,6 +100,9 @@ class Mfcc {
                BaseFloat vtln_warp,
                Matrix<BaseFloat> *output,
                Vector<BaseFloat> *wave_remainder = NULL);
+  
+  void ComputeFromFbank(const Matrix<BaseFloat> &fbank,
+               Matrix<BaseFloat> *output);
 
  private:
   const MelBanks *GetMelBanks(BaseFloat vtln_warp);

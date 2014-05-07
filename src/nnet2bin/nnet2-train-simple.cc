@@ -52,7 +52,6 @@ int main(int argc, char *argv[]) {
     std::string use_gpu = "yes";
     bool raw = false;    
     NnetSimpleTrainerConfig train_config;
-
     
     ParseOptions po(usage);
     po.Register("raw", &raw,

@@ -1445,3 +1445,4 @@
 /src/featbin/wav-copy
 /src/featbin/wav-to-duration
 /src/featbin/wav-add-noise
+/src/featbin/compute-mfcc-feats-from-fbank
