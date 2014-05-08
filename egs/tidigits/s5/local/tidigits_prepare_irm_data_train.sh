@@ -5,7 +5,7 @@ set -o pipefail
 . path.sh
 . cmd.sh 
 
-train_nj=20
+train_nj=10
 
 . parse_options.sh
 
@@ -28,13 +28,13 @@ echo "Creating Mel filterbank features for clean speech in data/train_fbank..."
 steps/make_fbank.sh --cmd "$train_cmd" --nj $train_nj \
   data/train_fbank exp/make_fbank fbank
 
-for snr in 10; do
+for snr in 10 20 5 0; do
   mkdir -p exp/noisy_data_train/${snr}dB
 
   echo "Creating noisy data with SNR $snr dB..."
   
   $train_cmd JOB=1:$train_nj exp/noisy_data_train/log/make_noisy_data_train_${snr}dB.JOB.log \
-    wav-add-noise scp:exp/noisy_data_train/clean_split_wav.JOB.scp \
+    wav-add-noise --snr=$snr scp:exp/noisy_data_train/clean_split_wav.JOB.scp \
     ark,scp:exp/noisy_data_train/${snr}dB/noisy_wav.JOB.ark,exp/noisy_data_train/${snr}dB/noisy_wav.JOB.scp \
     ark,scp:exp/noisy_data_train/${snr}dB/noise_wav.JOB.ark,exp/noisy_data_train/${snr}dB/noise_wav.JOB.scp
  
@@ -71,7 +71,7 @@ for snr in 10; do
   
   echo "Making copy of utt2spk in data/train_noisy_${snr}dB..."
 
-  cat data/train_fbank/utt2spk | awk '{key=$1"-'${snr}'dB"; for (i=2; i<=NF; i++) key=key" "$i; print key}' \
+  cat data/train_fbank/utt2spk | awk '{print $1"-'$snr'dB "$2"-'$snr'dB"}' \
     | sort > data/train_noisy_${snr}dB/utt2spk
   cp data/train_noisy_${snr}dB/utt2spk data/train_noise_${snr}dB/utt2spk
   cp data/train_noisy_${snr}dB/utt2spk data/train_fbank_${snr}dB/utt2spk

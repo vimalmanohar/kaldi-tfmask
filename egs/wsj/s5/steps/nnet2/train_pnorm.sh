@@ -386,7 +386,7 @@ if [ $stage -le $[$num_iters+1] ]; then
   rm $dir/post.*.vec 2>/dev/null
   $cmd JOB=1:$num_jobs_nnet $dir/log/get_post.JOB.log \
     nnet2-subset-egs --n=$prior_subset_size ark:$egs_dir/egs.JOB.0.ark ark:- \| \
-    nnet2-compute-from-egs "nnet2-to-raw-nnet2 $dir/final.mdl -|" ark:- ark:- \| \
+    nnet-compute-from-egs "nnet2-to-raw-nnet2 $dir/final.mdl -|" ark:- ark:- \| \
     matrix-sum-rows ark:- ark:- \| vector-sum ark:- $dir/post.JOB.vec || exit 1;
 
   sleep 3;  # make sure there is time for $dir/post.*.vec to appear.

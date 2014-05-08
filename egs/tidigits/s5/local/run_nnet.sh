@@ -13,6 +13,9 @@ dnn_beam=16.0
 dnn_lat_beam=8.5
 minimize=true
 decode_extra_opts=(--num-threads 6 --parallel-opts "-pe smp 6 -l mem_free=4G,ram_free=0.7G")
+train_data_dir=data/train
+test_data_dir=data/test
+alidir=exp/tri1_ali
 
 . parse_options.sh
 
@@ -24,13 +27,13 @@ steps/nnet2/train_pnorm.sh \
   --initial-learning-rate $dnn_init_learning_rate \
   --final-learning-rate $dnn_final_learning_rate \
   --stage $stage --cleanup false \
-  data/train data/lang exp/tri1_ali $dir || exit 1 
+  ${train_data_dir} data/lang $alidir $dir || exit 1 
 
 utils/mkgraph.sh data/lang $dir $dir/graph
 
-decode=exp/$dir/decode_test
+decode=$dir/decode_$(basename $test_data_dir)
 steps/nnet2/decode.sh \
   --minimize $minimize --cmd "$decode_cmd" --nj 10 \
   --beam $dnn_beam --lat-beam $dnn_lat_beam \
-  --skip-scoring true "${decode_extra_opts[@]}" \
-  $dir/graph data/test $decode
+  --skip-scoring false "${decode_extra_opts[@]}" \
+  $dir/graph ${test_data_dir} $decode
