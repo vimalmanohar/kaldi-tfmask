@@ -69,12 +69,15 @@ egs_dir=
 egs_opts=
 irm_scp=
 nj=20
+obj_func=CrossEntropySum
 # End configuration section.
 
 echo "$0 $@"  # Print the command line for logging
 
 if [ -f path.sh ]; then . ./path.sh; fi
 . parse_options.sh || exit 1;
+
+objf_opts="--obj-func=$obj_func"
 
 if [ $# != 2 ]; then
   echo "Usage: $0 [opts] <train-data> <exp-dir>"
@@ -207,6 +210,7 @@ EOF
     nnet2-init $dir/nnet.config $dir/0.nnet || exit 1;
 fi
 
+objf_opts="$objf_opts --target-dim=$irm_fbank_dim"
 
 num_iters_reduce=$[$num_epochs * $iters_per_epoch];
 num_iters_extra=$[$num_epochs_extra * $iters_per_epoch];
@@ -241,12 +245,12 @@ while [ $x -lt $num_iters ]; do
   if [ $x -ge 0 ] && [ $stage -le $x ]; then
     # Set off jobs doing some diagnostics, in the background.
     $cmd $dir/log/compute_prob_valid.$x.log \
-      nnet2-compute-prob --raw=true $dir/$x.nnet ark:$egs_dir/valid_diagnostic.egs &
+      nnet2-compute-prob $objf_opts --raw=true $dir/$x.nnet ark:$egs_dir/valid_diagnostic.egs &
     $cmd $dir/log/compute_prob_train.$x.log \
-      nnet2-compute-prob --raw=true $dir/$x.nnet ark:$egs_dir/train_diagnostic.egs &
+      nnet2-compute-prob $objf_opts --raw=true $dir/$x.nnet ark:$egs_dir/train_diagnostic.egs &
     if [ $x -gt 0 ] && [ ! -f $dir/log/mix_up.$[$x-1].log ]; then
       $cmd $dir/log/progress.$x.log \
-        nnet2-show-progress --raw=true --use-gpu=no $dir/$[$x-1].nnet $dir/$x.nnet ark:$egs_dir/train_diagnostic.egs &
+        nnet2-show-progress $objf_opts --raw=true --use-gpu=no $dir/$[$x-1].nnet $dir/$x.nnet ark:$egs_dir/train_diagnostic.egs &
     fi
     
     echo "Training neural net (pass $x)"
@@ -262,7 +266,7 @@ while [ $x -lt $num_iters ]; do
     $cmd $parallel_opts JOB=1:$num_jobs_nnet $dir/log/train.$x.JOB.log \
       nnet2-shuffle-egs --buffer-size=$shuffle_buffer_size --srand=$x \
       ark:$egs_dir/egs.JOB.$[$x%$iters_per_epoch].ark ark:- \| \
-      nnet2-train$train_suffix \
+      nnet2-train$train_suffix $objf_opts \
          --raw=true --minibatch-size=$minibatch_size --srand=$x "$mdl" \
         ark:- $dir/$[$x+1].JOB.nnet \
       || exit 1;
@@ -334,7 +338,7 @@ if [ $stage -le $num_iters ]; then
   mb=$[($num_egs+$this_num_threads-1)/$this_num_threads]
   [ $mb -gt 512 ] && mb=512
   $cmd $parallel_opts $dir/log/combine.log \
-    nnet2-combine-fast --raw=true --use-gpu=no --num-threads=$this_num_threads \
+    nnet2-combine-fast $objf_opts --raw=true --use-gpu=no --num-threads=$this_num_threads \
       --verbose=3 --minibatch-size=$mb "${nnets_list[@]}" ark:$egs_dir/combine.egs \
       $dir/final.nnet || exit 1;
 
@@ -342,9 +346,9 @@ if [ $stage -le $num_iters ]; then
   # the same subset we used for the previous compute_probs, as the
   # different subsets will lead to different probs.
   $cmd $dir/log/compute_prob_valid.final.log \
-    nnet2-compute-prob --raw=true $dir/final.nnet ark:$egs_dir/valid_diagnostic.egs &
+    nnet2-compute-prob $objf_opts --raw=true $dir/final.nnet ark:$egs_dir/valid_diagnostic.egs &
   $cmd $dir/log/compute_prob_train.final.log \
-    nnet2-compute-prob --raw=true  $dir/final.nnet ark:$egs_dir/train_diagnostic.egs &
+    nnet2-compute-prob $objf_opts --raw=true  $dir/final.nnet ark:$egs_dir/train_diagnostic.egs &
 fi
 
 

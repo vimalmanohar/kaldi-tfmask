@@ -61,8 +61,8 @@ void NnetLbfgsTrainer::Initialize(Nnet *nnet_in) {
   if (config_.precondition_config.do_precondition) {
     nnet_precondition_ = GetPreconditioner(*nnet_in);
     
-    initial_objf_ = ComputeNnetGradient(*nnet_in, egs_, config_.minibatch_size,
-                                        nnet_precondition_);
+    initial_objf_ = ComputeNnetGradient(*nnet_in, egs_, config_.minibatch_size, 
+        config_.updater_config, nnet_precondition_);
     
   } else {
     nnet_precondition_ = NULL;
@@ -153,7 +153,7 @@ BaseFloat NnetLbfgsTrainer::GetObjfAndGradient(
   bool is_gradient = true;
   nnet_gradient.SetZero(is_gradient);
   BaseFloat objf = ComputeNnetGradient(nnet, egs_, config_.minibatch_size,
-                                       &nnet_gradient);
+      config_.updater_config, &nnet_gradient);
   CopyParamsOrGradientFromNnet(nnet_gradient, gradient);
   gradient->Scale(1.0 / egs_.size());
   return objf;

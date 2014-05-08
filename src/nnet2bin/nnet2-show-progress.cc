@@ -23,7 +23,7 @@
 #include "nnet2/nnet-randomize.h"
 #include "nnet2/train-nnet.h"
 #include "nnet2/am-nnet.h"
-
+#include "nnet2/nnet-update.h"
 
 int main(int argc, char *argv[]) {
   try {
@@ -53,10 +53,13 @@ int main(int argc, char *argv[]) {
     int32 num_segments = 1;
     int32 batch_size = 1024;
     std::string use_gpu = "optional";
+    NnetUpdaterConfig updater_config;
     
     po.Register("num-segments", &num_segments,
                 "Number of line segments used for computing derivatives");
     po.Register("use-gpu", &use_gpu, "yes|no|optional, only has effect if compiled with CUDA"); 
+    
+    updater_config.Register(&po);
     
     po.Read(argc, argv);
     
@@ -132,7 +135,8 @@ int main(int argc, char *argv[]) {
         nnet_gradient.SetZero(treat_as_gradient);
 
         double objf_per_frame = ComputeNnetGradient(interp_nnet, examples,
-                                                    batch_size, &nnet_gradient);
+                                                    batch_size,
+                                                    updater_config, &nnet_gradient);
         KALDI_LOG << "At position " << middle << ", objf per frame is " << objf_per_frame;
 
         Vector<BaseFloat> old_dotprod(num_updatable), new_dotprod(num_updatable);

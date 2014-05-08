@@ -2,6 +2,7 @@
 
 // Copyright 2012   Johns Hopkins University (author: Daniel Povey)
 //           2014   Xiaohui Zhang
+//           2014   Vimal Manohar
 
 // See ../../COPYING for clarification regarding multiple authors
 //
@@ -24,15 +25,8 @@ namespace kaldi {
 namespace nnet2 {
 
 
-
 NnetUpdater::NnetUpdater(const Nnet &nnet,
-                         Nnet *nnet_to_update):
-    nnet_(nnet), nnet_to_update_(nnet_to_update) {
-      config_ = NnetUpdaterConfig();
-}
- 
-NnetUpdater::NnetUpdater(const Nnet &nnet,
-                         NnetUpdaterConfig &config,
+                         const NnetUpdaterConfig &config,
                          Nnet *nnet_to_update):
     nnet_(nnet), config_(config), nnet_to_update_(nnet_to_update) {
 }
@@ -184,25 +178,11 @@ BaseFloat TotalNnetTrainingWeight(const std::vector<NnetExample> &egs) {
   return ans;
 }
 
-
 double ComputeNnetObjf(const Nnet &nnet,
                        const std::vector<NnetExample> &examples,
                        const NnetUpdaterConfig &config) {
   NnetUpdater updater(nnet, config, NULL);
   return updater.ComputeForMinibatch(examples);
-}
-
-double ComputeNnetObjf(const Nnet &nnet,
-                       const std::vector<NnetExample> &examples) {
-  NnetUpdater updater(nnet, new NnetUpdaterConfig(), NULL);
-  return updater.ComputeForMinibatch(examples);
-}
-
-double DoBackprop(const Nnet &nnet,
-                  const std::vector<NnetExample> &examples,
-                  Nnet *nnet_to_update) {
-  return DoBackprop(nnet, examples,
-      new NnetUpdaterConfig(), nnet_to_update);
 }
 
 double DoBackprop(const Nnet &nnet,
@@ -218,15 +198,6 @@ double DoBackprop(const Nnet &nnet,
     KALDI_LOG << "Error doing backprop, nnet info is: " << nnet.Info();
     throw;
   }
-}
-
-double ComputeNnetGradient(
-    const Nnet &nnet,
-    const std::vector<NnetExample> &validation_set,
-    int32 batch_size,
-    Nnet *gradient) {
-  return ComputeNnetGradient(nnet, validation_set , batch_size,
-        new NnetUpdaterConfig(), gradient);
 }
 
 double ComputeNnetGradient(
@@ -257,15 +228,6 @@ double ComputeNnetGradient(
   }
   return tot_objf / validation_set.size();
 }
-
-double ComputeNnetObjf(
-    const Nnet &nnet,
-    const std::vector<NnetExample> &validation_set,
-    int32 batch_size) {
-  return ComputeNnetObjf(nnet, validation_set, batch_size,
-        new NnetUpdaterConfig());
-}
-
 
 double ComputeNnetObjf(
     const Nnet &nnet,

@@ -24,7 +24,6 @@
 #include "nnet2/train-nnet.h"
 #include "nnet2/am-nnet.h"
 
-
 int main(int argc, char *argv[]) {
   try {
     using namespace kaldi;
@@ -53,7 +52,6 @@ int main(int argc, char *argv[]) {
     bool raw = false;    
     NnetSimpleTrainerConfig train_config;
 
-    
     ParseOptions po(usage);
     po.Register("raw", &raw,
                 "If true, read/write raw neural net rather than .mdl");

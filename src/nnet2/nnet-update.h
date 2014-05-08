@@ -40,6 +40,23 @@ namespace nnet2 {
    using a heuristic involving validation-set gradients.
 */
 
+struct NnetUpdaterConfig {
+  std::string obj_func;
+  int32 target_dim;
+
+  NnetUpdaterConfig(): obj_func("CrossEntropy"),
+                       target_dim(1) {}
+
+  void Register (OptionsItf *po) {
+    po->Register("obj-func", &obj_func,
+        "Objective function to be used (CrossEntropy/CrossEntropySum/SquaredError)");
+    po->Register("target-dim", &target_dim,
+        "Dimension of target layer. Used only with CrossEntropySum or SquaredError objective functions");
+
+    KALDI_ASSERT(obj_func == "CrossEntropy" || obj_func == "CrossEntropySum");
+  }
+};
+
 // This class NnetUpdater contains functions for updating the neural net or
 // computing its gradient, given a set of NnetExamples. We
 // define it in the header file becaused it's needed by the ensemble training.
@@ -52,9 +69,6 @@ class NnetUpdater {
   // be identical.  They'll be different if we're accumulating the gradient
   // for a held-out set and don't want to update the model.  Note: nnet_to_update
   // may be NULL if you don't want do do backprop.
-  NnetUpdater(const Nnet &nnet,
-              Nnet *nnet_to_update);
-  
   NnetUpdater(const Nnet &nnet, 
               const NnetUpdaterConfig &config,
               Nnet *nnet_to_update);
@@ -109,10 +123,6 @@ class NnetUpdater {
 /// don't want to expose that complexity at this level.
 /// All these examples will be treated as one minibatch.
 
-double DoBackprop(const Nnet &nnet,
-                  const std::vector<NnetExample> &examples,
-                  Nnet *nnet_to_update);
-
 /// This version of DoBackprop passes along a config structure 
 /// to NnetUpdater that can choose the objective function to be used
 double DoBackprop(const Nnet &nnet,
@@ -127,15 +137,6 @@ BaseFloat TotalNnetTrainingWeight(const std::vector<NnetExample> &egs);
 
 /// Computes objective function over a minibatch.  Returns the *total* weighted
 /// objective function over the minibatch.
-double ComputeNnetObjf(const Nnet &nnet,
-                       const std::vector<NnetExample> &examples);
-
-/// This version of ComputeNnetObjf breaks up the examples into
-/// multiple minibatches to do the computation.
-/// Returns the *total* (weighted) objective function.
-double ComputeNnetObjf(const Nnet &nnet,                          
-                       const std::vector<NnetExample> &examples,
-                       int32 minibatch_size);
 
 /// This version of ComputeNnetObjf passes along a config structure
 /// to NnetUpdater that can choose the objective function to be used
@@ -143,6 +144,9 @@ double ComputeNnetObjf(const Nnet &nnet,
                        const std::vector<NnetExample> &examples,
                        const NnetUpdaterConfig &config);
 
+/// This version of ComputeNnetObjf breaks up the examples into
+/// multiple minibatches to do the computation.
+/// Returns the *total* (weighted) objective function.
 double ComputeNnetObjf(const Nnet &nnet,
                        const std::vector<NnetExample> &examples,
                        int32 minibatch_size,
@@ -155,31 +159,9 @@ double ComputeNnetGradient(
     const Nnet &nnet,
     const std::vector<NnetExample> &examples,
     int32 batch_size,
-    Nnet *gradient);
-
-double ComputeNnetGradient(
-    const Nnet &nnet,
-    const std::vector<NnetExample> &examples,
-    int32 batch_size,
     const NnetUpdaterConfig &config,
     Nnet *gradient);
 
-struct NnetUpdaterConfig {
-  std::string obj_func;
-  int32 target_dim;
-
-  NnetUpdaterConfig(): obj_func("CrossEntropy"),
-                       target_dim(1) { }
-
-  void Register (OptionsItf *po) {
-    po->Register("obj-func", &obj_func,
-        "Objective function to be used (CrossEntropy/CrossEntropySum/SquaredError)");
-    po->Register("target-dim", &target_dim,
-        "Dimension of target layer. Used only with CrossEntropySum or SquaredError objective functions");
-
-    KALDI_ASSERT(obj_func == "CrossEntropy" || obj_func == "CrossEntropySum");
-  }
-};
 
 } // namespace nnet2
 } // namespace kaldi

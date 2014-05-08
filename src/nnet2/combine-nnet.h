@@ -43,11 +43,14 @@ struct NnetCombineConfig {
   
   BaseFloat initial_impr;
   bool test_gradient;
+  NnetUpdaterConfig updater_config;
+
   NnetCombineConfig(): initial_model(-1), num_bfgs_iters(30),
                        initial_impr(0.01),
                        test_gradient(false) { }
   
   void Register(OptionsItf *po) {
+    updater_config.Register(po);
     po->Register("initial-model", &initial_model, "Specifies where to start the "
                  "optimization from.  If 0 ... #models-1, then specifies the model; "
                  "if #models, then the average of all inputs; otherwise, chosen "

@@ -22,6 +22,7 @@
 #include "hmm/transition-model.h"
 #include "nnet2/nnet-randomize.h"
 #include "nnet2/nnet-update-parallel.h"
+#include "nnet2/nnet-update.h"
 #include "nnet2/am-nnet.h"
 
 
@@ -51,6 +52,7 @@ int main(int argc, char *argv[]) {
     int32 minibatch_size = 1024;
     int32 srand_seed = 0;
     bool raw = false;
+    NnetUpdaterConfig updater_config;
     
     ParseOptions po(usage);
 
@@ -66,7 +68,8 @@ int main(int argc, char *argv[]) {
                 "implementation of BLAS, the actual number of threads may be larger.]");
     po.Register("minibatch-size", &minibatch_size, "Number of examples to use for "
                 "each minibatch during training.");
-    
+    updater_config.Register(&po);
+
     po.Read(argc, argv);
     srand(srand_seed);
 
@@ -109,6 +112,7 @@ int main(int argc, char *argv[]) {
     DoBackpropParallel(nnet_ref,
                        minibatch_size,
                        &example_reader,
+                       updater_config,
                        &num_examples,
                        &nnet_ref);
     

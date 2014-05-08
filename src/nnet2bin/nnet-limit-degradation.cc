@@ -23,6 +23,7 @@
 #include "nnet2/nnet-randomize.h"
 #include "nnet2/train-nnet.h"
 #include "nnet2/am-nnet.h"
+#include "nnet2/nnet-update.h"
 
 
 int main(int argc, char *argv[]) {
@@ -44,6 +45,7 @@ int main(int argc, char *argv[]) {
         "e.g.: nnet-limit-degradation 1.nnet 2.nnet ark:valid.egs 2new.nnet\n";
     
     ParseOptions po(usage);
+    NnetUpdaterConfig updater_config;
 
     bool binary_write = false;
     BaseFloat scale = 0.75; // Each time we find we went too far, we multiply the parameter-change by this scale.
@@ -53,6 +55,7 @@ int main(int argc, char *argv[]) {
                 "excess degradation");
     po.Register("threshold", &threshold, "Threshold of amount of loglike-per-frame "
                 "degradation per layer that we will allow");
+    updater_config.Register(&po);
     
     po.Read(argc, argv);
     
@@ -101,7 +104,8 @@ int main(int argc, char *argv[]) {
       nnet_gradient.SetZero(treat_as_gradient);
 
       double objf_per_frame = ComputeNnetGradient(avg_nnet, examples,
-                                                  batch_size, &nnet_gradient);
+                                                  batch_size,
+                                                  updater_config, &nnet_gradient);
 
       int64 num_examples = examples.size();
       KALDI_LOG << "Saw " << num_examples << " examples, average "

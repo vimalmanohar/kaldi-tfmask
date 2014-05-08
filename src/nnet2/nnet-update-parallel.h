@@ -45,30 +45,16 @@ namespace nnet2 {
 /// gradient and it sums up the gradients.
 /// The return value is the total log-prob summed over the #frames. It also
 /// outputs the #frames into "num_frames".
+
 double DoBackpropParallel(const Nnet &nnet,
                           int32 minibatch_size,
-                          SequentialNnetExampleReader *example_reader,
+                          SequentialNnetExampleReader *example_reader, const NnetUpdaterConfig &config,
                           double *tot_weight,
                           Nnet *nnet_to_update);
 
 
 /// This version of DoBackpropParallel takes a vector of examples, and will
 /// typically be used to compute the exact gradient. 
-double DoBackpropParallel(const Nnet &nnet,
-                          int32 minibatch_size,
-                          int32 num_threads,
-                          const std::vector<NnetExample> &examples,
-                          double *num_frames,
-                          Nnet *nnet_to_update);
-
-
-double DoBackpropParallel(const Nnet &nnet,
-                          int32 minibatch_size,
-                          SequentialNnetExampleReader *example_reader,
-                          const NnetUpdaterConfig &config,
-                          double *tot_weight,
-                          Nnet *nnet_to_update);
-
 double DoBackpropParallel(const Nnet &nnet,
                           int32 minibatch_size,
                           int32 num_threads,
@@ -83,15 +69,6 @@ double DoBackpropParallel(const Nnet &nnet,
 /// Both versions of the function will support it, but this
 /// version (that takes a vector) is currently the only one we need
 /// to do this with.
-inline double ComputeNnetObjfParallel(
-    const Nnet &nnet,
-    int32 minibatch_size,
-    int32 num_threads,
-    const std::vector<NnetExample> &examples,
-    double *num_frames) {
-  return ComputeNnetObjfParallel(nnet, minibatch_size, num_threads,
-                            examples, new NnetUpdaterConfig(), num_frames, NULL);
-}
 
 inline double ComputeNnetObjfParallel(
     const Nnet &nnet,

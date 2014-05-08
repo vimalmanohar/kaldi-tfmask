@@ -10,8 +10,8 @@ stage=-100
 
 . parse_options.sh
 
-dnn_init_learning_rate=`perl -e "print $dnn_init_learning_rate / 26"`
-dnn_final_learning_rate=`perl -e "print $dnn_final_learning_rate / 26"`
+#dnn_init_learning_rate=`perl -e "print $dnn_init_learning_rate / 26"`
+#dnn_final_learning_rate=`perl -e "print $dnn_final_learning_rate / 26"`
 
 steps/nnet2/train_irm_nnet.sh \
   "${dnn_gpu_parallel_opts[@]}" \

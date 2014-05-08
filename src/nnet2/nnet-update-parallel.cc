@@ -97,22 +97,6 @@ class DoBackpropParallelClass: public MultiThreadable {
 
   DoBackpropParallelClass(const Nnet &nnet,
                           ExamplesRepository *repository,
-                          double *tot_weight_ptr,
-                          double *log_prob_ptr,
-                          Nnet *nnet_to_update,
-                          bool store_separate_gradients):
-      nnet_(nnet), repository_(repository),
-      config_(new  NnetUpdaterConfig()),
-      nnet_to_update_(nnet_to_update),
-      nnet_to_update_orig_(nnet_to_update),
-      store_separate_gradients_(store_separate_gradients),
-      tot_weight_ptr_(tot_weight_ptr),
-      log_prob_ptr_(log_prob_ptr),
-      tot_weight_(0.0),
-      log_prob_(0.0) { }
-
-  DoBackpropParallelClass(const Nnet &nnet,
-                          ExamplesRepository *repository,
                           const NnetUpdaterConfig &config, 
                           double *tot_weight_ptr,
                           double *log_prob_ptr,
@@ -208,6 +192,7 @@ class DoBackpropParallelClass: public MultiThreadable {
 double DoBackpropSingleThreaded(const Nnet &nnet,
                                 int32 minibatch_size,
                                 SequentialNnetExampleReader *examples_reader,
+                                const NnetUpdaterConfig &config,
                                 double *tot_weight_out,
                                 Nnet *nnet_to_update) {
   double ans = 0.0, tot_weight = 0.0;
@@ -219,7 +204,7 @@ double DoBackpropSingleThreaded(const Nnet &nnet,
       egs.push_back(examples_reader->Value());
       examples_reader->Next();
     }
-    ans += DoBackprop(nnet, egs, nnet_to_update);
+    ans += DoBackprop(nnet, egs, config, nnet_to_update);
     tot_weight += TotalNnetTrainingWeight(egs);
   }
   *tot_weight_out = tot_weight;
@@ -231,6 +216,7 @@ double DoBackpropSingleThreaded(const Nnet &nnet,
 double DoBackpropParallel(const Nnet &nnet,
                           int32 minibatch_size,
                           SequentialNnetExampleReader *examples_reader,
+                          const NnetUpdaterConfig &config, 
                           double *tot_weight,
                           Nnet *nnet_to_update) {
 #if HAVE_CUDA == 1
@@ -239,7 +225,7 @@ double DoBackpropParallel(const Nnet &nnet,
   // case.
   if (CuDevice::Instantiate().Enabled())
     return DoBackpropSingleThreaded(nnet, minibatch_size, examples_reader,
-                                    tot_weight, nnet_to_update);
+                                    config, tot_weight, nnet_to_update);
 #endif
   
   ExamplesRepository repository; // handles parallel programming issues regarding
@@ -251,7 +237,7 @@ double DoBackpropParallel(const Nnet &nnet,
   // nnet_to_update != &nnet.
   const bool store_separate_gradients = (nnet_to_update != &nnet);
   
-  DoBackpropParallelClass c(nnet, &repository, tot_weight,
+  DoBackpropParallelClass c(nnet, &repository, config, tot_weight,
                             &tot_log_prob, nnet_to_update,
                             store_separate_gradients);
 
@@ -283,16 +269,6 @@ double DoBackpropParallel(const Nnet &nnet,
 double DoBackpropSingleThreaded(const Nnet &nnet,
                                 int32 minibatch_size,
                                 const std::vector<NnetExample> &egs,
-                                double *tot_weight,
-                                Nnet *nnet_to_update) {
-  return DoBackpropSingleThreaded(nnet, minibatch_size, egs,
-                              new NnetUpdaterConfig(), 
-                              tot_weight, nnet_to_updater);
-}
-
-double DoBackpropSingleThreaded(const Nnet &nnet,
-                                int32 minibatch_size,
-                                const std::vector<NnetExample> &egs,
                                 const NnetUpdaterConfig &config,
                                 double *tot_weight,
                                 Nnet *nnet_to_update) {
@@ -307,16 +283,6 @@ double DoBackpropSingleThreaded(const Nnet &nnet,
     ans += DoBackprop(nnet, this_egs, config, nnet_to_update);
   }
   return ans;
-}
-
-double DoBackpropParallel(const Nnet &nnet,
-                          int32 minibatch_size,
-                          int32 num_threads,
-                          const std::vector<NnetExample> &egs,
-                          double *tot_weight,
-                          Nnet *nnet_to_update) {
-  return DoBackpropParallel(nnet, minibatch_size, num_threads, egs,
-      new NnetUpdaterConfig(), tot_weight, nnet_to_update);
 }
 
 double DoBackpropParallel(const Nnet &nnet,

@@ -1176,7 +1176,7 @@ void CuMatrix<Real>::CompObjfAndDerivXentSum(const std::vector<MatrixElement<Rea
     //tmp(0) = 0; tmp(1) = 0;
     int dimBlock(CU1DBLOCK);
     int dimGrid = 1;// only 1 block here. we have loops in each thread  //(n_blocks(dim_, CU1DBLOCK));
-    cuda_comp_obj_deriv_xent_sum(dimGrid, dimBlock, (MatrixElement<Real>*)addr, sv_labels.size(), int32 target_dim, output.Data(), output.Dim(), this->Data(), this->Dim(), tmp.Data());
+    cuda_comp_obj_deriv_xent_sum(dimGrid, dimBlock, (MatrixElement<Real>*)addr, sv_labels.size(), target_dim, output.Data(), output.Dim(), this->Data(), this->Dim(), tmp.Data());
     Vector<Real> tmp_cpu(tmp);
     *tot_objf = tmp_cpu(0);
     *tot_weight = tmp_cpu(1);

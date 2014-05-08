@@ -309,6 +309,7 @@ void cuda_copy_from_mat_dd_trans(dim3 Gr, dim3 Bl, double *mat_out, const double
 
 void cudaD_matrix_add_elements(dim3 Gr, dim3 Bl, double *data, MatrixDim dim, double alpha, MatrixElement<double>* x, int s);
 void cudaD_comp_obj_deriv(dim3 Gr,dim3 Bl, MatrixElement<double>* x, int s, const double* z, MatrixDim d, double* z2, MatrixDim d2, double* t);
+void cudaD_comp_obj_deriv_xent_sum(dim3 Gr,dim3 Bl, MatrixElement<double>* x, int s, int td, const double* z, MatrixDim d, double* z2, MatrixDim d2, double* t);
 
 void cudaD_transpose_matrix(dim3 Gr, dim3 Bl, double* mat, MatrixDim d);
 void cudaD_sy_add_tr2(dim3 Gr, dim3 Bl, double alpha, double beta, const double* T, MatrixDim tdim,

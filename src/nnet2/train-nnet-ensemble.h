@@ -33,6 +33,7 @@ struct NnetEnsembleTrainerConfig {
   int32 minibatch_size;
   int32 minibatches_per_phase;
   double beta;
+  NnetUpdaterConfig updater_config;
 
   NnetEnsembleTrainerConfig(): minibatch_size(500),
                              minibatches_per_phase(50),
@@ -47,6 +48,7 @@ struct NnetEnsembleTrainerConfig {
     po->Register("beta", &beta, 
                  "weight of the second term in the objf, which is the cross-entropy "
                  "between the output posteriors and the averaged posteriors from other nets.");
+    updater_config.Register(po);
   }  
 };
 

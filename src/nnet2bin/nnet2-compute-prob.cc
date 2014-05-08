@@ -23,7 +23,7 @@
 #include "nnet2/nnet-randomize.h"
 #include "nnet2/train-nnet.h"
 #include "nnet2/am-nnet.h"
-
+#include "nnet2/nnet-update.h"
 
 int main(int argc, char *argv[]) {
   try {
@@ -45,10 +45,13 @@ int main(int argc, char *argv[]) {
         "e.g.: nnet2-compute-prob 1.nnet ark:valid.egs\n";
     
     bool raw = false;
+    NnetUpdaterConfig updater_config;
 
     ParseOptions po(usage);
     po.Register("raw", &raw,
                 "If true, read/write raw neural net rather than .mdl");
+
+    updater_config.Register(&po);
 
     po.Read(argc, argv);
    
@@ -79,7 +82,7 @@ int main(int argc, char *argv[]) {
     SequentialNnetExampleReader example_reader(examples_rspecifier);
     for (; !example_reader.Done(); example_reader.Next(), num_examples++) {
       if (examples.size() == 1000) {
-        tot_like += ComputeNnetObjf((raw ? nnet : am_nnet.GetNnet()), examples);
+        tot_like += ComputeNnetObjf((raw ? nnet : am_nnet.GetNnet()), examples, updater_config);
         examples.clear();
       }
       examples.push_back(example_reader.Value());
@@ -89,7 +92,7 @@ int main(int argc, char *argv[]) {
                   << "total weight " << num_examples;
     }
     if (!examples.empty()) {
-      tot_like += ComputeNnetObjf((raw ? nnet : am_nnet.GetNnet()), examples);
+      tot_like += ComputeNnetObjf((raw ? nnet : am_nnet.GetNnet()), examples, updater_config);
     }
 
     KALDI_LOG << "Saw " << num_examples << " examples, average "

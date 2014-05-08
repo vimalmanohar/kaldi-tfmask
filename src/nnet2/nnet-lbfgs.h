@@ -34,12 +34,14 @@ struct NnetLbfgsTrainerConfig {
   int32 lbfgs_dim; // Number of steps to keep in L-BFGS.
   int32 lbfgs_num_iters; // more precisely, the number of function evaluations.
   BaseFloat initial_impr;
+  NnetUpdaterConfig updater_config;
 
   NnetLbfgsTrainerConfig(): minibatch_size(1024), lbfgs_dim(10),
                             lbfgs_num_iters(20), initial_impr(0.1) { }
 
   void Register(OptionsItf *po) {
     precondition_config.Register(po);
+    updater_config.Register(po);
     po->Register("minibatch-size", &minibatch_size, "Size of minibatches used to "
                  "compute gradient information (only affects speed)");
     po->Register("lbfgs-dim", &lbfgs_dim, "Number of parameter/gradient vectors "
