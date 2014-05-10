@@ -28,6 +28,6 @@ steps/nnet2/train_irm_nnet.sh \
   --num-hidden-layers 3 \
   --initial-learning-rate $dnn_init_learning_rate \
   --final-learning-rate $dnn_final_learning_rate \
-  --irm_scp data/train_noisy/irm.scp \
+  --irm_scp data/train_noisy/irm_targets.scp \
   --stage $stage --cleanup false \
   data/train_noisy $dir || exit 1 

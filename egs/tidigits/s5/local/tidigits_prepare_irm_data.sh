@@ -136,11 +136,11 @@ for snr in $snr_list; do
     $cmd JOB=1:$nj $noisy_data/log/make_irm_targets_${snr}dB.JOB.log \
       compute-irm-targets scp:${dataset_dir}_clean_${snr}dB/split$nj/JOB/feats.scp \
       scp:${dataset_dir}_noise_${snr}dB/split$nj/JOB/feats.scp \
-      ark,scp:$noisy_data/${snr}dB/irm.JOB.ark,$noisy_data/${snr}dB/irm.JOB.scp
+      ark,scp:$noisy_data/${snr}dB/irm_targets.JOB.ark,$noisy_data/${snr}dB/irm_targets.JOB.scp
 
     for n in `seq 1 $nj`; do 
-      cat $noisy_data/${snr}dB/irm.$n.scp
-    done | sort -k1,1 > ${dataset_dir}_noisy_${snr}dB/irm.scp
+      cat $noisy_data/${snr}dB/irm_targets.$n.scp
+    done | sort -k1,1 > ${dataset_dir}_noisy_${snr}dB/irm_targets.scp
 
   fi
 
@@ -153,8 +153,8 @@ if [ $stage -le $[1+count*5] ]; then
   utils/combine_data.sh ${dataset_dir}_noise $(for snr in $snr_list; do echo ${dataset_dir}_noise_${snr}dB; done | tr '\n' ' ')
   
   for snr in $snr_list; do 
-    cat ${dataset_dir}_noisy_${snr}dB/irm.scp
-  done > ${dataset_dir}_noisy/irm.scp
+    cat ${dataset_dir}_noisy_${snr}dB/irm_targets.scp
+  done > ${dataset_dir}_noisy/irm_targets.scp
 
   utils/utt2spk_to_spk2utt.pl ${dataset_dir}_clean/utt2spk \
     > ${dataset_dir}_clean/spk2utt
