@@ -38,10 +38,12 @@ for dir in $*; do
     exit 1;
   fi
 done
-
+    
 for file in utt2spk utt2lang feats.scp text cmvn.scp segments reco2file_and_channel wav.scp spk2gender $extra_files; do
   if [ -f $first_src/$file ]; then
-    ( for f in $*; do cat $f/$file; done ) | sort -k1 > $dest/$file || exit 1;
+    for f in $*; do 
+      cat $f/$file
+    done | sort -k 1 > $dest/$file || exit 1;
     echo "$0: combined $file"
   else
     echo "$0 [info]: not combining $file as it does not exist"
@@ -51,7 +53,7 @@ done
 utils/utt2spk_to_spk2utt.pl <$dest/utt2spk >$dest/spk2utt
 
 if ! $skip_fix ; then
-  utils/fix_data_dir.sh $dest || exit 1;
+  bash -x utils/fix_data_dir.sh $dest || exit 1;
 fi
 
 exit 0

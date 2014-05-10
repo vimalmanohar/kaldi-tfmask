@@ -83,12 +83,14 @@ int main(int argc, char *argv[]) {
         for (; !clean_reader.Done(); clean_reader.Next()) {
           std::string key = clean_reader.Key();
           Matrix<BaseFloat> clean_feats = clean_reader.Value();
+          clean_feats.Scale(10/log(10));  // To convert log fbank feats to dB
           if (!noise_reader.HasKey(key)) {
             KALDI_WARN << "Missing noise features for utterance " << key;
             num_missing++;
             continue;
           }
           Matrix<BaseFloat> noise_feats = noise_reader.Value(key);
+          noise_feats.Scale(10/log(10));  // To convert log fbank feats to dB
 
           int32 num_frames = clean_feats.NumRows();
           int32 dim = clean_feats.NumCols();
@@ -113,7 +115,7 @@ int main(int argc, char *argv[]) {
 
           for (int32 i = 0; i < num_frames; i++) {
             for (int32 j = 0; j < dim; j++) {
-              target_irm(i,j) = sigmoid( alpha * (10*clean_feats(i,j) - 10*noise_feats(i,j) - beta) );
+              target_irm(i,j) = sigmoid( alpha * (clean_feats(i,j) - noise_feats(i,j) - beta) );
             }
           }
           

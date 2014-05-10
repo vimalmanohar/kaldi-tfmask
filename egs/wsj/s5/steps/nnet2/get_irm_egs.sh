@@ -61,21 +61,25 @@ data=$1
 irm_scp=$2
 dir=$3
 
+mkdir -p $dir/egs
+
 # Check some files.
 for f in $data/feats.scp $irm_scp; do
   [ ! -f $f ] && echo "$0: no such file $f" && exit 1;
 done
-
-echo $nj > $dir/egs/num_jobs
-echo $nj > $dir/num_jobs
 
 irm_fbank_dim=`feat-to-dim "scp:head -1 $irm_scp |" ark,t:- | cut -d ' ' -f 2` || exit 1
 echo $irm_fbank_dim > $dir/egs/irm_fbank_dim
 
 [ -z "$irm_fbank_dim" ] && echo "irm_fbank_dim empty" && exit 1
 
+echo $nj > $dir/egs/num_jobs
+echo $nj > $dir/num_jobs
+
 sdata=$data/split$nj
 utils/split_data.sh $data $nj
+
+sleep 10
 
 mkdir -p $dir/log
 
@@ -163,7 +167,6 @@ for x in `seq 1 $num_jobs_nnet`; do
 done
 
 nnet_context_opts="--left-context=$splice_width --right-context=$splice_width"
-mkdir -p $dir/egs
 
 if [ ! -z $spk_vecs_dir ]; then
   [ ! -f $spk_vecs_dir/vecs.1 ] && echo "No such file $spk_vecs_dir/vecs.1" && exit 1;
@@ -176,28 +179,28 @@ if [ $stage -le 2 ]; then
   echo "Getting validation and training subset examples."
   rm $dir/.error 2>/dev/null
   $cmd $dir/log/create_valid_subset.log \
-    nnet-get-egs $nnet_context_opts "${spk_vecs_opt[@]}" "$valid_feats" \
-     "ark:prob-to-post --random-prune=false --min-post=0.0 scp:$irm_scp ark:- |" \
-     "ark:$dir/egs/valid_all.egs" || touch $dir/.error &
+    prob-to-post --random-prune=false --min-post=0.0 scp:$irm_scp ark:- \| \
+    nnet2-get-egs $nnet_context_opts "${spk_vecs_opt[@]}" "$valid_feats" \
+    ark:- "ark:$dir/egs/valid_all.egs" || touch $dir/.error &
   $cmd $dir/log/create_train_subset.log \
-    nnet-get-egs $nnet_context_opts "${spk_vecs_opt[@]}" "$train_subset_feats" \
-     "ark:prob-to-post --random-prune=false --min-post=0.0 scp:$irm_scp ark:- |" \
-     "ark:$dir/egs/train_subset_all.egs" || touch $dir/.error &
+    prob-to-post --random-prune=false --min-post=0.0 scp:$irm_scp ark:- \| \
+    nnet2-get-egs $nnet_context_opts "${spk_vecs_opt[@]}" "$train_subset_feats" \
+    ark:- "ark:$dir/egs/train_subset_all.egs" || touch $dir/.error &
   wait;
   [ -f $dir/.error ] && exit 1;
   echo "Getting subsets of validation examples for diagnostics and combination."
   $cmd $dir/log/create_valid_subset_combine.log \
-    nnet-subset-egs --n=$num_valid_frames_combine ark:$dir/egs/valid_all.egs \
+    nnet2-subset-egs --n=$num_valid_frames_combine ark:$dir/egs/valid_all.egs \
         ark:$dir/egs/valid_combine.egs || touch $dir/.error &
   $cmd $dir/log/create_valid_subset_diagnostic.log \
-    nnet-subset-egs --n=$num_frames_diagnostic ark:$dir/egs/valid_all.egs \
+    nnet2-subset-egs --n=$num_frames_diagnostic ark:$dir/egs/valid_all.egs \
     ark:$dir/egs/valid_diagnostic.egs || touch $dir/.error &
 
   $cmd $dir/log/create_train_subset_combine.log \
-    nnet-subset-egs --n=$num_train_frames_combine ark:$dir/egs/train_subset_all.egs \
+    nnet2-subset-egs --n=$num_train_frames_combine ark:$dir/egs/train_subset_all.egs \
     ark:$dir/egs/train_combine.egs || touch $dir/.error &
   $cmd $dir/log/create_train_subset_diagnostic.log \
-    nnet-subset-egs --n=$num_frames_diagnostic ark:$dir/egs/train_subset_all.egs \
+    nnet2-subset-egs --n=$num_frames_diagnostic ark:$dir/egs/train_subset_all.egs \
     ark:$dir/egs/train_diagnostic.egs || touch $dir/.error &
   wait
   cat $dir/egs/valid_combine.egs $dir/egs/train_combine.egs > $dir/egs/combine.egs
@@ -227,9 +230,9 @@ if [ $stage -le 3 ]; then
   echo "Generating training examples on disk"
   # The examples will go round-robin to egs_list.
   $cmd $io_opts JOB=1:$nj $dir/log/get_egs.JOB.log \
-    nnet-get-egs $nnet_context_opts "${spk_vecs_opt[@]}" "$feats" \
-    "ark:prob-to-post --random-prune=false --min-post=0.0 scp:$irm_scp ark:- |" ark:- \| \
-    nnet-copy-egs ark:- $egs_list || exit 1;
+    prob-to-post --random-prune=false --min-post=0.0 scp:$irm_scp ark:- \| \
+    nnet2-get-egs $nnet_context_opts "${spk_vecs_opt[@]}" "$feats" ark:- ark:- \| \
+    nnet2-copy-egs ark:- $egs_list || exit 1;
 fi
 
 if [ $stage -le 4 ]; then
@@ -252,7 +255,7 @@ if [ $stage -le 4 ]; then
     # note, the "|| true" below is a workaround for NFS bugs
     # we encountered running this script with Debian-7, NFS-v4.
     $cmd $io_opts JOB=1:$num_jobs_nnet $dir/log/split_egs.JOB.log \
-      nnet-copy-egs --random=$random_copy --srand=JOB \
+      nnet2-copy-egs --random=$random_copy --srand=JOB \
         "ark:cat $dir/egs/egs_orig.JOB.*.ark|" $egs_list '&&' \
         '(' rm $dir/egs/egs_orig.JOB.*.ark '||' true ')' || exit 1;
   fi
@@ -269,7 +272,7 @@ if [ $stage -le 5 ]; then
   # we encountered running this script with Debian-7, NFS-v4.
   for n in `seq 0 $[$iters_per_epoch-1]`; do
     $cmd $io_opts JOB=1:$num_jobs_nnet $dir/log/shuffle.$n.JOB.log \
-      nnet-shuffle-egs "--srand=\$[JOB+($num_jobs_nnet*$n)]" \
+      nnet2-shuffle-egs "--srand=\$[JOB+($num_jobs_nnet*$n)]" \
       ark:$dir/egs/egs_tmp.JOB.$n.ark ark:$dir/egs/egs.JOB.$n.ark '&&' \
       '(' rm $dir/egs/egs_tmp.JOB.$n.ark '||' true ')' || exit 1;
   done

@@ -1447,3 +1447,4 @@
 /src/featbin/wav-add-noise
 /src/featbin/compute-mfcc-feats-from-fbank
 /src/bin/matrix-mul-elements
+/src/featbin/irm-targets-to-irm

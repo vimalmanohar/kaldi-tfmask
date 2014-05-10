@@ -1,6 +1,14 @@
+
+. path.sh
+. cmd.sh
+
+set -e
+set -u
+set -o pipefail
+
 dir=exp/irm_nnet
 
-pnorm_input_dim=800
+pnorm_input_dim=2000
 pnorm_output_dim=200
 dnn_init_learning_rate=0.008
 dnn_final_learning_rate=0.0008
@@ -17,7 +25,7 @@ steps/nnet2/train_irm_nnet.sh \
   "${dnn_gpu_parallel_opts[@]}" \
   --pnorm-input-dim $pnorm_input_dim \
   --pnorm-output-dim $pnorm_output_dim \
-  --num-hidden-layers 2 \
+  --num-hidden-layers 3 \
   --initial-learning-rate $dnn_init_learning_rate \
   --final-learning-rate $dnn_final_learning_rate \
   --irm_scp data/train_noisy/irm.scp \

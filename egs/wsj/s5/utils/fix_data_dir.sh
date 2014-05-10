@@ -26,7 +26,7 @@ export LC_ALL=C
 
 function check_sorted {
   file=$1
-  sort -k1,1 -u <$file >$file.tmp
+  cat $file | sort -k 1,1 -u >$file.tmp
   if ! cmp -s $file $file.tmp; then
     echo "$0: file $1 is not in sorted order or not unique, sorting it"
     mv $file.tmp $file

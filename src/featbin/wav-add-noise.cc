@@ -22,8 +22,6 @@
 #include "feat/feature-mfcc.h"
 #include "feat/wave-reader.h"
 
-#include <sstream>
-
 int main(int argc, char *argv[]) {
   try {
     using namespace kaldi;
@@ -60,10 +58,7 @@ int main(int argc, char *argv[]) {
 
     for (; !wav_reader.Done(); wav_reader.Next()) {
       std::string key = wav_reader.Key();
-      std::stringstream noisy_key_ss;
 
-      noisy_key_ss << key << "-" << snr << "dB";
-      
       WaveData clean_wav = wav_reader.Value();
       int32 num_channels = clean_wav.NumChannels();
       int32 num_samples = clean_wav.NumSamples();
@@ -82,10 +77,10 @@ int main(int argc, char *argv[]) {
 
       WaveData noisy_wav(samp_freq, data);
 
-      wav_writer.Write(noisy_key_ss.str(), noisy_wav);
+      wav_writer.Write(key, noisy_wav);
 
       if (noise_wspecifier != "") 
-        noise_writer.Write(noisy_key_ss.str(), noise);
+        noise_writer.Write(key, noise);
 
       num_done++;
     }
