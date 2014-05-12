@@ -1,7 +1,8 @@
 dir=exp/tri1_nnet
 
-pnorm_input_dim=800
+pnorm_input_dim=2000
 pnorm_output_dim=200
+num_hidden_layers=2
 dnn_init_learning_rate=0.008
 dnn_final_learning_rate=0.0008
 dnn_gpu_parallel_opts=(--minibatch-size 512 --max-change 40 --num-jobs-nnet 4 --num-threads 1 \
@@ -23,7 +24,7 @@ steps/nnet2/train_pnorm.sh \
   "${dnn_cpu_parallel_opts[@]}" \
   --pnorm-input-dim $pnorm_input_dim \
   --pnorm-output-dim $pnorm_output_dim \
-  --num-hidden-layers 2 \
+  --num-hidden-layers $num_hidden_layers \
   --initial-learning-rate $dnn_init_learning_rate \
   --final-learning-rate $dnn_final_learning_rate \
   --stage $stage --cleanup false \
