@@ -25,6 +25,13 @@ namespace kaldi {
   BaseFloat sigmoid(BaseFloat x) {
     return 1 / ( 1 + exp(-x) );
   }
+
+  BaseFloat LogAbsDiffExp(BaseFloat a, BaseFloat b) {
+    BaseFloat small = std::min(a,b);
+    BaseFloat large = std::max(a,b);
+
+    return (large + log(1 - exp(small - large)));
+  }
 }
 
 int main(int argc, char *argv[]) {
@@ -34,17 +41,19 @@ int main(int argc, char *argv[]) {
     const char *usage =
         "Compute soft targets for Ideal Ratio Mask used for "
         "TF-Masking. Uses clean and noise log-fbank features.\n"
+        "Give --from-noisy=true to compute from clean and noisy fbank features\n"
         "The soft function maps the SNR to a sigmoid"
         "d(t,f) = 1/1+exp(-alpha(SNR(t,f) - beta))"
         "Usage: compute-irm-targets [options] (<clean-rspecifier> <noise-rspecifier> <target-wspecifier>) | (<clean-wxfilename> <noise-rxfilename> <target-wxfilename>)\n"
-        "e.g.: compute-irm-targets scp:clean_feats.scp scp:noise_feats.scp ark,scp:irm_targets.ark,irm_targets.scp\n";
+        "e.g.: compute-irm-targets scp:clean_feats.scp scp:noise_feats.scp ark,scp:irm_targets.ark,irm_targets.scp\n"
+        "e.g.: compute-irm-targets --from-noisy=true scp:clean_feats.scp scp:noisy_feats.scp ark,scp:irm_targets.ark,irm_targets.scp\n";
 
     ParseOptions po(usage);
     bool binary = true;
     bool compress = false;
     BaseFloat beta = -6;      // in dB
     BaseFloat snr_span = 35;  // in dB
-    
+    bool from_noisy = false;   
 
     po.Register("binary", &binary, "Binary-mode output (not relevant if writing "
                 "to archive)");
@@ -53,6 +62,7 @@ int main(int argc, char *argv[]) {
                 "output)");
     po.Register("beta", &beta, "Shift the target sigmoid to be centered at beta (in dB)");
     po.Register("snr-span", &snr_span, "The difference between SNR values that correspond to target values of 0.05 and 0.95");
+    po.Register("from-noisy", &from_noisy, "Compute from noisy fbank features instead of the actual noise features. Used when noise features corresponding to parallel clean and noisy data are not available");
     
     po.Read(argc, argv);
 
@@ -72,7 +82,7 @@ int main(int argc, char *argv[]) {
     if (ClassifyRspecifier(po.GetArg(1), NULL, NULL) != kNoRspecifier) {
       // Copying tables of features.
       std::string clean_rspecifier = po.GetArg(1);
-      std::string noise_rspecifier = po.GetArg(2);
+      std::string noise_rspecifier = po.GetArg(1);
       std::string target_wspecifier = po.GetArg(3);
 
       if (!compress) {
@@ -83,17 +93,16 @@ int main(int argc, char *argv[]) {
         for (; !clean_reader.Done(); clean_reader.Next()) {
           std::string key = clean_reader.Key();
           Matrix<BaseFloat> clean_feats = clean_reader.Value();
-          clean_feats.Scale(10/log(10));  // To convert log fbank feats to dB
           if (!noise_reader.HasKey(key)) {
             KALDI_WARN << "Missing noise features for utterance " << key;
             num_missing++;
             continue;
           }
-          Matrix<BaseFloat> noise_feats = noise_reader.Value(key);
-          noise_feats.Scale(10/log(10));  // To convert log fbank feats to dB
-
+          
           int32 num_frames = clean_feats.NumRows();
           int32 dim = clean_feats.NumCols();
+        
+          Matrix<BaseFloat> noise_feats(noise_reader.Value(key));
 
           if (num_frames != noise_feats.NumRows()) {
             KALDI_WARN << "Mismatch in number of frames for clean and noise features for utterance " << key << ": \n"
@@ -102,7 +111,7 @@ int main(int argc, char *argv[]) {
             num_mismatch++;
             continue;
           }
-          
+
           if (dim != noise_feats.NumCols()) {
             KALDI_WARN << "Mismatch in feature dimension for clean and noise features for utterance " << key << ": \n"
               << dim << " vs " << noise_feats.NumCols() << ". " 
@@ -110,7 +119,18 @@ int main(int argc, char *argv[]) {
             num_mismatch++;
             continue;
           }
-        
+            
+          if (from_noisy) {
+            for (int32 i = 0; i < noise_feats.NumRows(); i++) {
+              for (int32 j = 0; j < noise_feats.NumCols(); j++) {
+                noise_feats(i,j) = LogAbsDiffExp(clean_feats(i,j), noise_feats(i,j));
+              }
+            }
+          }
+          
+          clean_feats.Scale(10/log(10));  // To convert log fbank feats to dB
+          noise_feats.Scale(10/log(10));  // To convert log fbank feats to dB
+
           Matrix<BaseFloat> target_irm(num_frames, dim);
 
           for (int32 i = 0; i < num_frames; i++) {
@@ -135,11 +155,12 @@ int main(int argc, char *argv[]) {
             num_missing++;
             continue;
           }
-          Matrix<BaseFloat> noise_feats = noise_reader.Value(key);
-
+          
           int32 num_frames = clean_feats.NumRows();
           int32 dim = clean_feats.NumCols();
-
+          
+          Matrix<BaseFloat> noise_feats(noise_reader.Value(key));
+          
           if (num_frames != noise_feats.NumRows()) {
             KALDI_WARN << "Mismatch in number of frames for clean and noise features for utterance " << key << ": \n"
               << num_frames << " vs " << noise_feats.NumRows() << ". " 
@@ -147,7 +168,7 @@ int main(int argc, char *argv[]) {
             num_mismatch++;
             continue;
           }
-          
+
           if (dim != noise_feats.NumCols()) {
             KALDI_WARN << "Mismatch in feature dimension for clean and noise features for utterance " << key << ": \n"
               << dim << " vs " << noise_feats.NumCols() << ". " 
@@ -155,12 +176,23 @@ int main(int argc, char *argv[]) {
             num_mismatch++;
             continue;
           }
-        
+            
+          if (from_noisy) {
+            for (int32 i = 0; i < noise_feats.NumRows(); i++) {
+              for (int32 j = 0; j < noise_feats.NumCols(); j++) {
+                noise_feats(i,j) = LogAbsDiffExp(clean_feats(i,j), noise_feats(i,j));
+              }
+            }
+          }
+          
+          clean_feats.Scale(10/log(10));  // To convert log fbank feats to dB
+          noise_feats.Scale(10/log(10));  // To convert log fbank feats to dB
+
           Matrix<BaseFloat> target_irm(num_frames, dim);
 
           for (int32 i = 0; i < num_frames; i++) {
             for (int32 j = 0; j < dim; j++) {
-              target_irm(i,j) = sigmoid( alpha * (10*clean_feats(i,j) - 10*noise_feats(i,j) - beta) );
+              target_irm(i,j) = sigmoid( alpha * (clean_feats(i,j) - noise_feats(i,j) - beta) );
             }
           }
           
@@ -196,12 +228,20 @@ int main(int argc, char *argv[]) {
         KALDI_ERR << "Mismatch in feature dimension for clean and noise feature matrices: \n"
           << dim << " vs " << noise_matrix.NumCols() << ".";
       }
+          
+      if (from_noisy) {
+        for (int32 i = 0; i < noise_matrix.NumRows(); i++) {
+          for (int32 j = 0; j < noise_matrix.NumCols(); j++) {
+            noise_matrix(i,j) = LogAbsDiffExp(clean_matrix(i,j), noise_matrix(i,j));
+          }
+        }
+      }
 
       Matrix<BaseFloat> target_irm(num_frames, dim);
 
       for (int32 i = 0; i < num_frames; i++) {
         for (int32 j = 0; j < dim; j++) {
-          target_irm(i,j) = sigmoid( alpha * (10*clean_matrix(i,j) - 10*noise_matrix(i,j) - beta) );
+          target_irm(i,j) = sigmoid( alpha * (clean_matrix(i,j) - noise_matrix(i,j) - beta) );
         }
       }
 

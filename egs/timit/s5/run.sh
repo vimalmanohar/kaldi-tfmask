@@ -1,6 +1,7 @@
-#!/bin/bash
+T!/bin/bash
 
 # Copyright 2013  Bagher BabaAli
+# Copyright 2014  Vimal Manohar
 
 . ./cmd.sh 
 [ -f path.sh ] && . ./path.sh
@@ -24,10 +25,27 @@ echo ===========================================================================
 echo "                Data & Lexicon & Language Preparation                     "
 echo ============================================================================
 
-timit=/export/corpora5/LDC/LDC93S1/timit/TIMIT
+timit=/home/vmanoha1/workspace_tfmask/data/timit/TIMIT
 
+false && {
 local/timit_data_prep.sh $timit
+}
 
+[ ! -f noisetypes.list ] && echo "Unable to find noise types for which data needs to be prepared" && exit 1
+
+false && {
+local/timit_noisy_data_prep.sh ${timit}_clean clean
+}
+
+false && {
+while read noise_type <&3; do
+  while read snr <&4; do
+    local/timit_noisy_data_prep.sh ${timit}_noisy_${noise_type}_snr_${snr} noisy_${noise_type}_snr_${snr}
+  done 4< snr.list
+done 3< noisetypes.list
+}
+
+false && {
 local/timit_prepare_dict.sh
 
 # Caution below: we insert optional-silence with probability 0.5, which is the
@@ -36,8 +54,23 @@ local/timit_prepare_dict.sh
 # by using the option --sil-prob 0.0, but apparently this makes results worse.
 utils/prepare_lang.sh --position-dependent-phones false --num-sil-states 3 \
  data/local/dict "sil" data/local/lang_tmp data/lang
+}
 
+false && {
 local/timit_format_data.sh
+}
+
+false && {
+local/timit_noisy_format_data.sh --prefix clean
+}
+
+false && {
+while read noise_type <&3; do
+  while read snr <&4; do
+    local/timit_noisy_format_data.sh --prefix noisy_${noise_type}_snr_${snr}
+  done 4< snr.list
+done 3< noisetypes.list
+}
 
 echo ============================================================================
 echo "         MFCC Feature Extration & CMVN for Training and Test set           "
@@ -45,12 +78,50 @@ echo ===========================================================================
 
 # Now make MFCC features.
 mfccdir=mfcc
+fbankdir=fbank
 
-
+true && {
 for x in train dev test; do 
   steps/make_mfcc.sh --cmd "$train_cmd" --nj 30 data/$x exp/make_mfcc/$x $mfccdir
   steps/compute_cmvn_stats.sh data/$x exp/make_mfcc/$x $mfccdir
 done
+}
+
+mkdir -p data_fbank
+
+true && {
+for x in train dev test; do 
+  x=${x}_clean
+  cp -rT data/$x data_fbank/$x
+  set +e
+  rm data_fbank/$x/{feats.scp,cmvn.scp}
+  set -e
+  steps/make_fbank.sh --cmd "$train_cmd" --nj 30 data_fbank/$x exp/make_fbank/$x $fbankdir
+  steps/compute_cmvn_stats.sh --fake data_fbank/$x exp/make_fbank/$x $fbankdir
+done
+}
+
+true && {
+while read noise_type <&3; do
+  while read snr <&4; do
+    for x in train dev test; do 
+      x=${x}_noisy_${noise_type}_snr_${snr}
+      cp -rT data/$x data_fbank/$x
+      set +e
+      rm data_fbank/$x/{feats.scp,cmvn.scp}
+      set -e
+      steps/make_fbank.sh --cmd "$train_cmd" --nj 30 data_fbank/$x exp/make_fbank/$x $fbankdir
+      steps/compute_cmvn_stats.sh --fake data_fbank/$x exp/make_fbank/$x $fbankdir
+    done
+  done 4< snr.list
+done 3< noisetypes.list
+}
+
+true && {
+local/run_irm.sh
+}
+
+echo "Data preparation done!" && exit 0
 
 echo ============================================================================
 echo "                     MonoPhone Training & Decoding                        "
