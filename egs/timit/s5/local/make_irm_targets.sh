@@ -34,8 +34,10 @@ utils/split_data.sh $clean_datadir $nj
 
 echo "$0: Compute IRM targets using clean and noisy Mel filterbank features for $datadir..."
 
+mkdir -p $logdir || exit 1
+
 if [ $stage -le 0 ]; then
-  $cmd JOB=1:$nj $dir/${dirid}.JOB.log \
+  $cmd JOB=1:$nj $logdir/${dirid}.JOB.log \
     compute-irm-targets --from-noisy=true scp:$clean_datadir/split$nj/JOB/feats.scp \
     scp:$datadir/split$nj/JOB/feats.scp \
     ark,scp:$dir/${dirid}_irm_targets.JOB.ark,$dir/${dirid}_irm_targets.JOB.scp || exit 1

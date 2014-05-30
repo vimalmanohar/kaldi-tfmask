@@ -30,7 +30,7 @@ namespace kaldi {
     BaseFloat small = std::min(a,b);
     BaseFloat large = std::max(a,b);
 
-    return (large + log(1 - Exp(small - large)));
+    return (large + Log(1 - Exp(small - large)));
   }
 }
 
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
       KALDI_ERR << "--snr-span is expected to be > 0. But it is given " << snr_span;
     }
 
-    BaseFloat alpha = 2 * log10(19) / snr_span;
+    BaseFloat alpha = 2 * Log(19.0) / Log(10.0) / snr_span;
 
     int32 num_done = 0, num_missing = 0, num_mismatch = 0;
     
@@ -128,8 +128,8 @@ int main(int argc, char *argv[]) {
             }
           }
           
-          clean_feats.Scale(10/log(10));  // To convert log fbank feats to dB
-          noise_feats.Scale(10/log(10));  // To convert log fbank feats to dB
+          clean_feats.Scale(10/Log(10.0));  // To convert log fbank feats to dB
+          noise_feats.Scale(10/Log(10.0));  // To convert log fbank feats to dB
 
           Matrix<BaseFloat> target_irm(num_frames, dim);
 
@@ -185,8 +185,8 @@ int main(int argc, char *argv[]) {
             }
           }
           
-          clean_feats.Scale(10/log(10));  // To convert log fbank feats to dB
-          noise_feats.Scale(10/log(10));  // To convert log fbank feats to dB
+          clean_feats.Scale(10/Log(10.0));  // To convert log fbank feats to dB
+          noise_feats.Scale(10/Log(10.0));  // To convert log fbank feats to dB
 
           Matrix<BaseFloat> target_irm(num_frames, dim);
 
