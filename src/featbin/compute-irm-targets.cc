@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
     if (ClassifyRspecifier(po.GetArg(1), NULL, NULL) != kNoRspecifier) {
       // Copying tables of features.
       std::string clean_rspecifier = po.GetArg(1);
-      std::string noise_rspecifier = po.GetArg(1);
+      std::string noise_rspecifier = po.GetArg(2);
       std::string target_wspecifier = po.GetArg(3);
 
       if (!compress) {
