@@ -23,14 +23,14 @@
 
 namespace kaldi {
   BaseFloat sigmoid(BaseFloat x) {
-    return 1 / ( 1 + exp(-x) );
+    return 1 / ( 1 + Exp(-x) );
   }
 
   BaseFloat LogAbsDiffExp(BaseFloat a, BaseFloat b) {
     BaseFloat small = std::min(a,b);
     BaseFloat large = std::max(a,b);
 
-    return (large + log(1 - exp(small - large)));
+    return (large + log(1 - Exp(small - large)));
   }
 }
 
