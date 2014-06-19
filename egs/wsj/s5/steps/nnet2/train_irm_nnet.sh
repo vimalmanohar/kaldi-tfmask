@@ -68,7 +68,7 @@ transform_dir=
 egs_dir=
 egs_opts=
 irm_scp=
-nj=20
+nj=32
 obj_func=CrossEntropySum
 # End configuration section.
 
