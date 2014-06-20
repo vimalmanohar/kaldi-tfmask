@@ -81,6 +81,7 @@ main	make-h-transducer.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	make-ilabel-transducer.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	make-pdf-to-tid-transducer.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	matrix-logprob.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	matrix-mul-elements.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	matrix-sum-rows.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	matrix-sum.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	pdf-to-counts.cc	/^int main(int argc, char *argv[]) {$/;"	f

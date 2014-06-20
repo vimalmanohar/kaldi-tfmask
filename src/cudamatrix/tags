@@ -83,6 +83,7 @@ Cholesky	cu-tp-matrix.cc	/^void CuTpMatrix<Real>::Cholesky(const CuSpMatrix<Real
 Cleanup	cu-device.cc	/^void CuAllocator::Cleanup() {$/;"	f	class:kaldi::CuAllocator
 ColRange	cu-matrix.h	/^  inline CuSubMatrix<Real> ColRange(const MatrixIndexT col_offset,$/;"	f	class:kaldi::CuMatrixBase
 CompObjfAndDeriv	cu-matrix.cc	/^void CuMatrix<Real>::CompObjfAndDeriv(const std::vector<MatrixElement<Real> >& sv_labels,$/;"	f	class:kaldi::CuMatrix
+CompObjfAndDerivXentSum	cu-matrix.cc	/^void CuMatrix<Real>::CompObjfAndDerivXentSum(const std::vector<MatrixElement<Real> >& sv_labels, $/;"	f	class:kaldi::CuMatrix
 Copy	cu-math.cc	/^void Copy(const CuMatrix<Real> &src, const CuArray<int32> &copy_from_indices, CuMatrix<Real> *tgt) { $/;"	f	namespace:kaldi::cu
 CopyColFromMat	cu-vector.cc	/^void CuVectorBase<Real>::CopyColFromMat(const CuMatrixBase<Real> &mat, MatrixIndexT col) {$/;"	f	class:kaldi::CuVectorBase
 CopyColFromMat	cu-vector.cc	/^void CuVectorBase<double>::CopyColFromMat(const CuMatrixBase<float> &mat, MatrixIndexT col) {$/;"	f	class:kaldi::CuVectorBase
@@ -699,6 +700,8 @@ cuda_calc_pnorm_deriv	cu-kernels.h	/^inline void cuda_calc_pnorm_deriv(dim3 Gr, 
 cuda_calc_pnorm_deriv	cu-kernels.h	/^inline void cuda_calc_pnorm_deriv(dim3 Gr, dim3 Bl, float *y, const float *x1, const float *x2,  MatrixDim d, int src_stride, int group_size, float power) {cudaF_calc_pnorm_deriv(Gr, Bl, y, x1, x2, d, src_stride, group_size, power); }$/;"	f	namespace:kaldi
 cuda_comp_obj_deriv	cu-kernels.h	/^inline void cuda_comp_obj_deriv(dim3 Gr, dim3 Bl, MatrixElement<double>* x, int32 size, const double* z, MatrixDim d, double* z2, MatrixDim d2, double* t) {cudaD_comp_obj_deriv(Gr,Bl,x,size,z,d,z2,d2,t); }$/;"	f	namespace:kaldi
 cuda_comp_obj_deriv	cu-kernels.h	/^inline void cuda_comp_obj_deriv(dim3 Gr, dim3 Bl, MatrixElement<float>* x, int32 size, const float* z, MatrixDim d, float* z2, MatrixDim d2, float* t) {cudaF_comp_obj_deriv(Gr,Bl,x,size,z,d,z2,d2,t); }$/;"	f	namespace:kaldi
+cuda_comp_obj_deriv_xent_sum	cu-kernels.h	/^inline void cuda_comp_obj_deriv_xent_sum(dim3 Gr, dim3 Bl, MatrixElement<double>* x, int32 size, int32 td, const double* z, MatrixDim d, double* z2, MatrixDim d2, double* t) {cudaD_comp_obj_deriv_xent_sum(Gr,Bl,x,size,td,z,d,z2,d2,t); }$/;"	f	namespace:kaldi
+cuda_comp_obj_deriv_xent_sum	cu-kernels.h	/^inline void cuda_comp_obj_deriv_xent_sum(dim3 Gr, dim3 Bl, MatrixElement<float>* x, int32 size, int32 td, const float* z, MatrixDim d, float* z2, MatrixDim d2, float* t) {cudaF_comp_obj_deriv_xent_sum(Gr,Bl,x,size,td,z,d,z2,d2,t); }$/;"	f	namespace:kaldi
 cuda_copy	cu-kernels.h	/^inline void cuda_copy(dim3 Gr, dim3 Bl, double *y, const double *x, const int32_cuda *copy_from, MatrixDim d_out, MatrixDim d_in) { cudaD_copy(Gr,Bl,y,x,copy_from,d_out,d_in); }$/;"	f	namespace:kaldi
 cuda_copy	cu-kernels.h	/^inline void cuda_copy(dim3 Gr, dim3 Bl, float *y, const float *x, const int32_cuda *copy_from, MatrixDim d_out, MatrixDim d_in) { cudaF_copy(Gr,Bl,y,x,copy_from,d_out,d_in); }$/;"	f	namespace:kaldi
 cuda_copy_col_from_mat	cu-kernels.h	/^inline void cuda_copy_col_from_mat(int Gr, int Bl, double* v, int col, const double* mat, MatrixDim dmat, int dim) { cudaD_copy_col_from_mat(Gr,Bl,v,col,mat,dmat,dim); }$/;"	f	namespace:kaldi
@@ -1059,6 +1062,7 @@ kaldi::CuDevice::verbose_	cu-device.h	/^  bool verbose_;$/;"	m	class:kaldi::CuDe
 kaldi::CuDevice::~CuDevice	cu-device.cc	/^CuDevice::~CuDevice() {$/;"	f	class:kaldi::CuDevice
 kaldi::CuMatrix	cu-matrix.h	/^class CuMatrix: public CuMatrixBase<Real> {$/;"	c	namespace:kaldi
 kaldi::CuMatrix::CompObjfAndDeriv	cu-matrix.cc	/^void CuMatrix<Real>::CompObjfAndDeriv(const std::vector<MatrixElement<Real> >& sv_labels,$/;"	f	class:kaldi::CuMatrix
+kaldi::CuMatrix::CompObjfAndDerivXentSum	cu-matrix.cc	/^void CuMatrix<Real>::CompObjfAndDerivXentSum(const std::vector<MatrixElement<Real> >& sv_labels, $/;"	f	class:kaldi::CuMatrix
 kaldi::CuMatrix::CuMatrix	cu-matrix.cc	/^ CuMatrix<Real>::CuMatrix(const CuBlockMatrix<Real> &B,$/;"	f	class:kaldi::CuMatrix
 kaldi::CuMatrix::CuMatrix	cu-matrix.cc	/^CuMatrix<Real>::CuMatrix(const CuMatrix<Real> &other, MatrixTransposeType trans) {$/;"	f	class:kaldi::CuMatrix
 kaldi::CuMatrix::CuMatrix	cu-matrix.cc	/^CuMatrix<Real>::CuMatrix(const CuMatrixBase<OtherReal> & M,$/;"	f	class:kaldi::CuMatrix
@@ -1635,6 +1639,8 @@ kaldi::cuda_calc_pnorm_deriv	cu-kernels.h	/^inline void cuda_calc_pnorm_deriv(di
 kaldi::cuda_calc_pnorm_deriv	cu-kernels.h	/^inline void cuda_calc_pnorm_deriv(dim3 Gr, dim3 Bl, float *y, const float *x1, const float *x2,  MatrixDim d, int src_stride, int group_size, float power) {cudaF_calc_pnorm_deriv(Gr, Bl, y, x1, x2, d, src_stride, group_size, power); }$/;"	f	namespace:kaldi
 kaldi::cuda_comp_obj_deriv	cu-kernels.h	/^inline void cuda_comp_obj_deriv(dim3 Gr, dim3 Bl, MatrixElement<double>* x, int32 size, const double* z, MatrixDim d, double* z2, MatrixDim d2, double* t) {cudaD_comp_obj_deriv(Gr,Bl,x,size,z,d,z2,d2,t); }$/;"	f	namespace:kaldi
 kaldi::cuda_comp_obj_deriv	cu-kernels.h	/^inline void cuda_comp_obj_deriv(dim3 Gr, dim3 Bl, MatrixElement<float>* x, int32 size, const float* z, MatrixDim d, float* z2, MatrixDim d2, float* t) {cudaF_comp_obj_deriv(Gr,Bl,x,size,z,d,z2,d2,t); }$/;"	f	namespace:kaldi
+kaldi::cuda_comp_obj_deriv_xent_sum	cu-kernels.h	/^inline void cuda_comp_obj_deriv_xent_sum(dim3 Gr, dim3 Bl, MatrixElement<double>* x, int32 size, int32 td, const double* z, MatrixDim d, double* z2, MatrixDim d2, double* t) {cudaD_comp_obj_deriv_xent_sum(Gr,Bl,x,size,td,z,d,z2,d2,t); }$/;"	f	namespace:kaldi
+kaldi::cuda_comp_obj_deriv_xent_sum	cu-kernels.h	/^inline void cuda_comp_obj_deriv_xent_sum(dim3 Gr, dim3 Bl, MatrixElement<float>* x, int32 size, int32 td, const float* z, MatrixDim d, float* z2, MatrixDim d2, float* t) {cudaF_comp_obj_deriv_xent_sum(Gr,Bl,x,size,td,z,d,z2,d2,t); }$/;"	f	namespace:kaldi
 kaldi::cuda_copy	cu-kernels.h	/^inline void cuda_copy(dim3 Gr, dim3 Bl, double *y, const double *x, const int32_cuda *copy_from, MatrixDim d_out, MatrixDim d_in) { cudaD_copy(Gr,Bl,y,x,copy_from,d_out,d_in); }$/;"	f	namespace:kaldi
 kaldi::cuda_copy	cu-kernels.h	/^inline void cuda_copy(dim3 Gr, dim3 Bl, float *y, const float *x, const int32_cuda *copy_from, MatrixDim d_out, MatrixDim d_in) { cudaF_copy(Gr,Bl,y,x,copy_from,d_out,d_in); }$/;"	f	namespace:kaldi
 kaldi::cuda_copy_col_from_mat	cu-kernels.h	/^inline void cuda_copy_col_from_mat(int Gr, int Bl, double* v, int col, const double* mat, MatrixDim dmat, int dim) { cudaD_copy_col_from_mat(Gr,Bl,v,col,mat,dmat,dim); }$/;"	f	namespace:kaldi

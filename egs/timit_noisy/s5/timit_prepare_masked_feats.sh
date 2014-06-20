@@ -69,6 +69,7 @@ echo "$0: Creating concat MFCC features in ${datadir}_concat_fbank_mfcc..."
 
 cp -rT ${datadir}_fbank_mfcc ${datadir}_concat_fbank_mfcc
 rm ${datadir}_concat_fbank_mfcc/{feats.scp,cmvn.scp}
+rm -rf ${datadir}_concat_fbank_mfcc/split*
 
 utils/split_data.sh ${datadir}_fbank_mfcc $nj
 utils/split_data.sh ${datadir}_masked_fbank_mfcc $nj

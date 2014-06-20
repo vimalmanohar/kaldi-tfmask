@@ -16,8 +16,8 @@ irm_scp=data_noisy_fbank/train_noisy/irm_targets.scp
 pnorm_input_dim=3000
 pnorm_output_dim=300
 num_hidden_layers=5
-dnn_init_learning_rate=0.008
-dnn_final_learning_rate=0.0008
+dnn_init_learning_rate=0.0008
+dnn_final_learning_rate=0.00008
 dnn_gpu_parallel_opts=(--minibatch-size 512 --max-change 40 --num-jobs-nnet 4 --num-threads 1 \
   --parallel-opts "-l gpu=1" --cmd "queue.pl -l arch=*64 -l mem_free=4G,ram_free=2G")
 stage=-100

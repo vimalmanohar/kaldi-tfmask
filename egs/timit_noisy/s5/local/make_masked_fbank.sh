@@ -48,7 +48,10 @@ if [ $stage -le 1 ]; then
 fi
 
 cp -rT $in_datadir ${out_datadir}
+set +e
 rm ${out_datadir}/{feats.scp,cmvn.scp}
+rm -rf ${out_datadir}/split*
+set -e
 
 for n in `seq $nj`; do 
   cat $dir/raw_fbank_${dirid}_masked.$n.scp

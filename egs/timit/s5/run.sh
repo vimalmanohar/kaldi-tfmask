@@ -80,7 +80,7 @@ echo ===========================================================================
 mfccdir=mfcc
 fbankdir=fbank
 
-true && {
+false && {
 for x in train dev test; do 
   steps/make_mfcc.sh --cmd "$train_cmd" --nj 30 data/$x exp/make_mfcc/$x $mfccdir
   steps/compute_cmvn_stats.sh data/$x exp/make_mfcc/$x $mfccdir
@@ -89,7 +89,7 @@ done
 
 mkdir -p data_fbank
 
-true && {
+false && {
 for x in train dev test; do 
   x=${x}_clean
   cp -rT data/$x data_fbank/$x
@@ -101,7 +101,7 @@ for x in train dev test; do
 done
 }
 
-true && {
+false && {
 while read noise_type <&3; do
   while read snr <&4; do
     for x in train dev test; do 
@@ -117,7 +117,7 @@ while read noise_type <&3; do
 done 3< noisetypes.list
 }
 
-true && {
+false && {
 local/run_irm.sh
 }
 

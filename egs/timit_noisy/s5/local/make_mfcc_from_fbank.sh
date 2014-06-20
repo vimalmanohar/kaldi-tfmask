@@ -54,6 +54,7 @@ utils/validate_data_dir.sh --no-text $fbank_data || exit 1;
 cp -rT $fbank_data $data
 set +e
 rm $data/{feats.scp,cmvn.scp}
+rm -rf $data/split*
 set -e
 
 utils/split_data.sh ${fbank_data} $nj

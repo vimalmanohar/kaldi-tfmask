@@ -16,6 +16,7 @@ IncreaseTransformDimension	extend-transform-dim.cc	/^void IncreaseTransformDimen
 IncreaseTransformDimension	get-full-lda-mat.cc	/^void IncreaseTransformDimension(int32 new_dimension,$/;"	f	namespace:kaldi
 InitValues	interpolate-pitch.cc	/^  void InitValues(const Matrix<BaseFloat> &mat) {$/;"	f	class:kaldi::PitchInterpolator	file:
 LinearlyInterpolatePitch	interpolate-pitch.cc	/^void LinearlyInterpolatePitch(Matrix<BaseFloat> *mat) {$/;"	f	namespace:kaldi
+LogAbsDiffExp	compute-irm-targets.cc	/^  BaseFloat LogAbsDiffExp(BaseFloat a, BaseFloat b) {$/;"	f	namespace:kaldi
 MultiplyObsProb	interpolate-pitch.cc	/^  void MultiplyObsProb(int32 t) {$/;"	f	class:kaldi::PitchInterpolator	file:
 PitchInterpolator	interpolate-pitch.cc	/^  PitchInterpolator(const PitchInterpolatorOptions &opts,$/;"	f	class:kaldi::PitchInterpolator
 PitchInterpolator	interpolate-pitch.cc	/^class PitchInterpolator {$/;"	c	namespace:kaldi	file:
@@ -46,6 +47,7 @@ kaldi::GetUtterancePairs	compute-cmvn-stats-two-channel.cc	/^void GetUtterancePa
 kaldi::IncreaseTransformDimension	extend-transform-dim.cc	/^void IncreaseTransformDimension(int32 new_dimension,$/;"	f	namespace:kaldi
 kaldi::IncreaseTransformDimension	get-full-lda-mat.cc	/^void IncreaseTransformDimension(int32 new_dimension,$/;"	f	namespace:kaldi
 kaldi::LinearlyInterpolatePitch	interpolate-pitch.cc	/^void LinearlyInterpolatePitch(Matrix<BaseFloat> *mat) {$/;"	f	namespace:kaldi
+kaldi::LogAbsDiffExp	compute-irm-targets.cc	/^  BaseFloat LogAbsDiffExp(BaseFloat a, BaseFloat b) {$/;"	f	namespace:kaldi
 kaldi::PitchInterpolator	interpolate-pitch.cc	/^class PitchInterpolator {$/;"	c	namespace:kaldi	file:
 kaldi::PitchInterpolator::Backtrace	interpolate-pitch.cc	/^  void Backtrace(Matrix<BaseFloat> *mat, PitchInterpolatorStats *stats) {$/;"	f	class:kaldi::PitchInterpolator	file:
 kaldi::PitchInterpolator::ComputeTransitionProb	interpolate-pitch.cc	/^  void ComputeTransitionProb(int32 t) {$/;"	f	class:kaldi::PitchInterpolator	file:
@@ -94,6 +96,7 @@ main	compute-cmvn-stats.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	compute-fbank-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	compute-irm-targets.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	compute-kaldi-pitch-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	compute-mfcc-feats-from-fbank.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	compute-mfcc-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	compute-plp-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	compute-spectrogram-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
@@ -114,6 +117,7 @@ main	fmpe-init.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	fmpe-sum-accs.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	get-full-lda-mat.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	interpolate-pitch.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	irm-targets-to-irm.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	paste-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	process-kaldi-pitch-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	process-pitch-feats.cc	/^int main(int argc, char *argv[]) {$/;"	f

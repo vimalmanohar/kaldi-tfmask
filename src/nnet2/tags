@@ -420,7 +420,7 @@ KALDI_NNET2_NNET_PRECONDITION_H_	nnet-precondition.h	21;"	d
 KALDI_NNET2_NNET_PRECONDITION_ONLINE_H_	nnet-precondition-online.h	21;"	d
 KALDI_NNET2_NNET_RANDOMIZE_H_	nnet-randomize.h	21;"	d
 KALDI_NNET2_NNET_STATS_H_	nnet-stats.h	21;"	d
-KALDI_NNET2_NNET_UPDATE_H_	nnet-update.h	22;"	d
+KALDI_NNET2_NNET_UPDATE_H_	nnet-update.h	23;"	d
 KALDI_NNET2_NNET_UPDATE_PARALLEL_H_	nnet-update-parallel.h	21;"	d
 KALDI_NNET2_RESCALE_NNET_H_	rescale-nnet.h	21;"	d
 KALDI_NNET2_SHRINK_NNET_H_	shrink-nnet.h	21;"	d
@@ -516,6 +516,8 @@ NnetStatsConfig	nnet-stats.h	/^  NnetStatsConfig(): bucket_width(0.025) { }$/;"	
 NnetStatsConfig	nnet-stats.h	/^struct NnetStatsConfig {  $/;"	s	namespace:kaldi::nnet2
 NnetUpdater	nnet-update.cc	/^NnetUpdater::NnetUpdater(const Nnet &nnet,$/;"	f	class:kaldi::nnet2::NnetUpdater
 NnetUpdater	nnet-update.h	/^class NnetUpdater {$/;"	c	namespace:kaldi::nnet2
+NnetUpdaterConfig	nnet-update.h	/^  NnetUpdaterConfig(): obj_func("CrossEntropy"),$/;"	f	struct:kaldi::nnet2::NnetUpdaterConfig
+NnetUpdaterConfig	nnet-update.h	/^struct NnetUpdaterConfig {$/;"	s	namespace:kaldi::nnet2
 NnetWidenConfig	widen-nnet.h	/^  NnetWidenConfig(): hidden_layer_dim(-1),$/;"	f	struct:kaldi::nnet2::NnetWidenConfig
 NnetWidenConfig	widen-nnet.h	/^struct NnetWidenConfig {$/;"	s	namespace:kaldi::nnet2
 NonlinearComponent	nnet-component.cc	/^NonlinearComponent::NonlinearComponent(const NonlinearComponent &other):$/;"	f	class:kaldi::nnet2::NonlinearComponent
@@ -666,6 +668,7 @@ Register	nnet-lbfgs.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nn
 Register	nnet-limit-rank.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetLimitRankOpts
 Register	nnet-randomize.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetDataRandomizerConfig
 Register	nnet-stats.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetStatsConfig
+Register	nnet-update.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetUpdaterConfig
 Register	rescale-nnet.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetRescaleConfig
 Register	shrink-nnet.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetShrinkConfig
 Register	train-nnet-ensemble.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetEnsembleTrainerConfig
@@ -915,6 +918,8 @@ config_	combine-nnet-fast.cc	/^  const NnetCombineFastConfig &config_;$/;"	m	cla
 config_	nnet-example-functions.cc	/^  const SplitDiscriminativeExampleConfig &config_;$/;"	m	class:kaldi::nnet2::DiscriminativeExampleSplitter	file:
 config_	nnet-lbfgs.h	/^  const NnetLbfgsTrainerConfig &config_;$/;"	m	class:kaldi::nnet2::NnetLbfgsTrainer
 config_	nnet-randomize.h	/^  NnetDataRandomizerConfig config_;    $/;"	m	class:kaldi::nnet2::NnetDataRandomizer
+config_	nnet-update-parallel.cc	/^  const NnetUpdaterConfig config_;$/;"	m	class:kaldi::nnet2::DoBackpropParallelClass	file:
+config_	nnet-update.h	/^  NnetUpdaterConfig config_;$/;"	m	class:kaldi::nnet2::NnetUpdater
 config_	rescale-nnet.cc	/^  const NnetRescaleConfig &config_;$/;"	m	class:kaldi::nnet2::NnetRescaler	file:
 config_	train-nnet-ensemble.h	/^  NnetEnsembleTrainerConfig config_;$/;"	m	class:kaldi::nnet2::NnetEnsembleTrainer
 config_	train-nnet.h	/^  NnetSimpleTrainerConfig config_;$/;"	m	class:kaldi::nnet2::NnetSimpleTrainer
@@ -1485,6 +1490,7 @@ kaldi::nnet2::DoBackpropParallel	nnet-update-parallel.cc	/^double DoBackpropPara
 kaldi::nnet2::DoBackpropParallelClass	nnet-update-parallel.cc	/^class DoBackpropParallelClass: public MultiThreadable {$/;"	c	namespace:kaldi::nnet2	file:
 kaldi::nnet2::DoBackpropParallelClass::DoBackpropParallelClass	nnet-update-parallel.cc	/^  DoBackpropParallelClass(const DoBackpropParallelClass &other):$/;"	f	class:kaldi::nnet2::DoBackpropParallelClass
 kaldi::nnet2::DoBackpropParallelClass::DoBackpropParallelClass	nnet-update-parallel.cc	/^  DoBackpropParallelClass(const Nnet &nnet,$/;"	f	class:kaldi::nnet2::DoBackpropParallelClass
+kaldi::nnet2::DoBackpropParallelClass::config_	nnet-update-parallel.cc	/^  const NnetUpdaterConfig config_;$/;"	m	class:kaldi::nnet2::DoBackpropParallelClass	file:
 kaldi::nnet2::DoBackpropParallelClass::log_prob_	nnet-update-parallel.cc	/^  double log_prob_; \/\/ log-like times num frames.$/;"	m	class:kaldi::nnet2::DoBackpropParallelClass	file:
 kaldi::nnet2::DoBackpropParallelClass::log_prob_ptr_	nnet-update-parallel.cc	/^  double *log_prob_ptr_;$/;"	m	class:kaldi::nnet2::DoBackpropParallelClass	file:
 kaldi::nnet2::DoBackpropParallelClass::nnet_	nnet-update-parallel.cc	/^  const Nnet &nnet_;$/;"	m	class:kaldi::nnet2::DoBackpropParallelClass	file:
@@ -1554,6 +1560,7 @@ kaldi::nnet2::FisherComputationClass::nnets_	combine-nnet-fast.cc	/^  const std:
 kaldi::nnet2::FisherComputationClass::operator ()	combine-nnet-fast.cc	/^  void operator () () {$/;"	f	class:kaldi::nnet2::FisherComputationClass
 kaldi::nnet2::FisherComputationClass::scatter_	combine-nnet-fast.cc	/^  SpMatrix<double> scatter_; \/\/ Local accumulation of the scatter.  $/;"	m	class:kaldi::nnet2::FisherComputationClass	file:
 kaldi::nnet2::FisherComputationClass::scatter_ptr_	combine-nnet-fast.cc	/^  SpMatrix<double> *scatter_ptr_;$/;"	m	class:kaldi::nnet2::FisherComputationClass	file:
+kaldi::nnet2::FisherComputationClass::updater_config_	combine-nnet-fast.cc	/^  NnetUpdaterConfig updater_config_;$/;"	m	class:kaldi::nnet2::FisherComputationClass	file:
 kaldi::nnet2::FisherComputationClass::~FisherComputationClass	combine-nnet-fast.cc	/^  ~FisherComputationClass() {$/;"	f	class:kaldi::nnet2::FisherComputationClass
 kaldi::nnet2::FixNnet	nnet-fix.cc	/^void FixNnet(const NnetFixConfig &config, Nnet *nnet) {$/;"	f	namespace:kaldi::nnet2
 kaldi::nnet2::FixedAffineComponent	nnet-component.h	/^class FixedAffineComponent: public Component {$/;"	c	namespace:kaldi::nnet2
@@ -1711,6 +1718,7 @@ kaldi::nnet2::NnetCombineAconfig::min_learning_rate	combine-nnet-a.h	/^  BaseFlo
 kaldi::nnet2::NnetCombineAconfig::min_learning_rate_factor	combine-nnet-a.h	/^  BaseFloat min_learning_rate_factor; \/\/ 0.5 by default;$/;"	m	struct:kaldi::nnet2::NnetCombineAconfig
 kaldi::nnet2::NnetCombineAconfig::num_bfgs_iters	combine-nnet-a.h	/^  int32 num_bfgs_iters; \/\/ The dimension is small (the number of layers)$/;"	m	struct:kaldi::nnet2::NnetCombineAconfig
 kaldi::nnet2::NnetCombineAconfig::overshoot	combine-nnet-a.h	/^  BaseFloat overshoot;$/;"	m	struct:kaldi::nnet2::NnetCombineAconfig
+kaldi::nnet2::NnetCombineAconfig::updater_config	combine-nnet-a.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetCombineAconfig
 kaldi::nnet2::NnetCombineAconfig::valid_impr_thresh	combine-nnet-a.h	/^  BaseFloat valid_impr_thresh;$/;"	m	struct:kaldi::nnet2::NnetCombineAconfig
 kaldi::nnet2::NnetCombineConfig	combine-nnet.h	/^struct NnetCombineConfig {$/;"	s	namespace:kaldi::nnet2
 kaldi::nnet2::NnetCombineConfig::NnetCombineConfig	combine-nnet.h	/^  NnetCombineConfig(): initial_model(-1), num_bfgs_iters(30),$/;"	f	struct:kaldi::nnet2::NnetCombineConfig
@@ -1719,6 +1727,7 @@ kaldi::nnet2::NnetCombineConfig::initial_impr	combine-nnet.h	/^  BaseFloat initi
 kaldi::nnet2::NnetCombineConfig::initial_model	combine-nnet.h	/^  int32 initial_model; \/\/ If provided, the index of the initial model to start$/;"	m	struct:kaldi::nnet2::NnetCombineConfig
 kaldi::nnet2::NnetCombineConfig::num_bfgs_iters	combine-nnet.h	/^  int32 num_bfgs_iters; \/\/ The dimension is small (e.g. 3 to 5 times the$/;"	m	struct:kaldi::nnet2::NnetCombineConfig
 kaldi::nnet2::NnetCombineConfig::test_gradient	combine-nnet.h	/^  bool test_gradient;$/;"	m	struct:kaldi::nnet2::NnetCombineConfig
+kaldi::nnet2::NnetCombineConfig::updater_config	combine-nnet.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetCombineConfig
 kaldi::nnet2::NnetCombineFastConfig	combine-nnet-fast.h	/^struct NnetCombineFastConfig {$/;"	s	namespace:kaldi::nnet2
 kaldi::nnet2::NnetCombineFastConfig::NnetCombineFastConfig	combine-nnet-fast.h	/^  NnetCombineFastConfig(): initial_model(-1), num_lbfgs_iters(10),$/;"	f	struct:kaldi::nnet2::NnetCombineFastConfig
 kaldi::nnet2::NnetCombineFastConfig::Register	combine-nnet-fast.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetCombineFastConfig
@@ -1732,6 +1741,7 @@ kaldi::nnet2::NnetCombineFastConfig::minibatch_size	combine-nnet-fast.h	/^  int3
 kaldi::nnet2::NnetCombineFastConfig::num_lbfgs_iters	combine-nnet-fast.h	/^  int32 num_lbfgs_iters; $/;"	m	struct:kaldi::nnet2::NnetCombineFastConfig
 kaldi::nnet2::NnetCombineFastConfig::num_threads	combine-nnet-fast.h	/^  int32 num_threads;$/;"	m	struct:kaldi::nnet2::NnetCombineFastConfig
 kaldi::nnet2::NnetCombineFastConfig::regularizer	combine-nnet-fast.h	/^  BaseFloat regularizer;$/;"	m	struct:kaldi::nnet2::NnetCombineFastConfig
+kaldi::nnet2::NnetCombineFastConfig::updater_config	combine-nnet-fast.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetCombineFastConfig
 kaldi::nnet2::NnetComputation	nnet-compute.cc	/^void NnetComputation(const Nnet &nnet,$/;"	f	namespace:kaldi::nnet2
 kaldi::nnet2::NnetComputer	nnet-compute.cc	/^class NnetComputer {$/;"	c	namespace:kaldi::nnet2	file:
 kaldi::nnet2::NnetComputer::Backprop	nnet-compute.cc	/^void NnetComputer::Backprop(CuMatrix<BaseFloat> *tmp_deriv) {$/;"	f	class:kaldi::nnet2::NnetComputer
@@ -1832,6 +1842,7 @@ kaldi::nnet2::NnetEnsembleTrainerConfig::Register	train-nnet-ensemble.h	/^  void
 kaldi::nnet2::NnetEnsembleTrainerConfig::beta	train-nnet-ensemble.h	/^  double beta;$/;"	m	struct:kaldi::nnet2::NnetEnsembleTrainerConfig
 kaldi::nnet2::NnetEnsembleTrainerConfig::minibatch_size	train-nnet-ensemble.h	/^  int32 minibatch_size;$/;"	m	struct:kaldi::nnet2::NnetEnsembleTrainerConfig
 kaldi::nnet2::NnetEnsembleTrainerConfig::minibatches_per_phase	train-nnet-ensemble.h	/^  int32 minibatches_per_phase;$/;"	m	struct:kaldi::nnet2::NnetEnsembleTrainerConfig
+kaldi::nnet2::NnetEnsembleTrainerConfig::updater_config	train-nnet-ensemble.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetEnsembleTrainerConfig
 kaldi::nnet2::NnetExample	nnet-example.h	/^struct NnetExample {$/;"	s	namespace:kaldi::nnet2
 kaldi::nnet2::NnetExample::Read	nnet-example.cc	/^void NnetExample::Read(std::istream &is, bool binary) {$/;"	f	class:kaldi::nnet2::NnetExample
 kaldi::nnet2::NnetExample::Write	nnet-example.cc	/^void NnetExample::Write(std::ostream &os, bool binary) const {$/;"	f	class:kaldi::nnet2::NnetExample
@@ -1872,6 +1883,7 @@ kaldi::nnet2::NnetLbfgsTrainerConfig::lbfgs_dim	nnet-lbfgs.h	/^  int32 lbfgs_dim
 kaldi::nnet2::NnetLbfgsTrainerConfig::lbfgs_num_iters	nnet-lbfgs.h	/^  int32 lbfgs_num_iters; \/\/ more precisely, the number of function evaluations.$/;"	m	struct:kaldi::nnet2::NnetLbfgsTrainerConfig
 kaldi::nnet2::NnetLbfgsTrainerConfig::minibatch_size	nnet-lbfgs.h	/^  int32 minibatch_size;$/;"	m	struct:kaldi::nnet2::NnetLbfgsTrainerConfig
 kaldi::nnet2::NnetLbfgsTrainerConfig::precondition_config	nnet-lbfgs.h	/^  PreconditionConfig precondition_config;$/;"	m	struct:kaldi::nnet2::NnetLbfgsTrainerConfig
+kaldi::nnet2::NnetLbfgsTrainerConfig::updater_config	nnet-lbfgs.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetLbfgsTrainerConfig
 kaldi::nnet2::NnetLimitRankOpts	nnet-limit-rank.h	/^struct NnetLimitRankOpts {$/;"	s	namespace:kaldi::nnet2
 kaldi::nnet2::NnetLimitRankOpts::NnetLimitRankOpts	nnet-limit-rank.h	/^  NnetLimitRankOpts(): num_threads(1), parameter_proportion(0.75) { }$/;"	f	struct:kaldi::nnet2::NnetLimitRankOpts
 kaldi::nnet2::NnetLimitRankOpts::Register	nnet-limit-rank.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetLimitRankOpts
@@ -1910,6 +1922,7 @@ kaldi::nnet2::NnetShrinkConfig::NnetShrinkConfig	shrink-nnet.h	/^  NnetShrinkCon
 kaldi::nnet2::NnetShrinkConfig::Register	shrink-nnet.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetShrinkConfig
 kaldi::nnet2::NnetShrinkConfig::initial_step	shrink-nnet.h	/^  BaseFloat initial_step;$/;"	m	struct:kaldi::nnet2::NnetShrinkConfig
 kaldi::nnet2::NnetShrinkConfig::num_bfgs_iters	shrink-nnet.h	/^  int32 num_bfgs_iters; \/\/ The dimension is small (e.g. 3 to 5) so we do$/;"	m	struct:kaldi::nnet2::NnetShrinkConfig
+kaldi::nnet2::NnetShrinkConfig::updater_config	shrink-nnet.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetShrinkConfig
 kaldi::nnet2::NnetSimpleTrainer	train-nnet.h	/^class NnetSimpleTrainer {$/;"	c	namespace:kaldi::nnet2
 kaldi::nnet2::NnetSimpleTrainer::BeginNewPhase	train-nnet.cc	/^void NnetSimpleTrainer::BeginNewPhase(bool first_time) {$/;"	f	class:kaldi::nnet2::NnetSimpleTrainer
 kaldi::nnet2::NnetSimpleTrainer::NnetSimpleTrainer	train-nnet.cc	/^NnetSimpleTrainer::NnetSimpleTrainer($/;"	f	class:kaldi::nnet2::NnetSimpleTrainer
@@ -1928,6 +1941,7 @@ kaldi::nnet2::NnetSimpleTrainerConfig::NnetSimpleTrainerConfig	train-nnet.h	/^  
 kaldi::nnet2::NnetSimpleTrainerConfig::Register	train-nnet.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetSimpleTrainerConfig
 kaldi::nnet2::NnetSimpleTrainerConfig::minibatch_size	train-nnet.h	/^  int32 minibatch_size;$/;"	m	struct:kaldi::nnet2::NnetSimpleTrainerConfig
 kaldi::nnet2::NnetSimpleTrainerConfig::minibatches_per_phase	train-nnet.h	/^  int32 minibatches_per_phase;$/;"	m	struct:kaldi::nnet2::NnetSimpleTrainerConfig
+kaldi::nnet2::NnetSimpleTrainerConfig::updater_config	train-nnet.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetSimpleTrainerConfig
 kaldi::nnet2::NnetStats	nnet-stats.h	/^class NnetStats {$/;"	c	namespace:kaldi::nnet2
 kaldi::nnet2::NnetStats::AddStats	nnet-stats.cc	/^void NnetStats::AddStats(BaseFloat avg_deriv, BaseFloat avg_value) {$/;"	f	class:kaldi::nnet2::NnetStats
 kaldi::nnet2::NnetStats::AddStatsFromNnet	nnet-stats.cc	/^void NnetStats::AddStatsFromNnet(const Nnet &nnet) {$/;"	f	class:kaldi::nnet2::NnetStats
@@ -1962,10 +1976,16 @@ kaldi::nnet2::NnetUpdater::GetOutput	nnet-update.cc	/^void NnetUpdater::GetOutpu
 kaldi::nnet2::NnetUpdater::NnetUpdater	nnet-update.cc	/^NnetUpdater::NnetUpdater(const Nnet &nnet,$/;"	f	class:kaldi::nnet2::NnetUpdater
 kaldi::nnet2::NnetUpdater::Propagate	nnet-update.cc	/^void NnetUpdater::Propagate() {$/;"	f	class:kaldi::nnet2::NnetUpdater
 kaldi::nnet2::NnetUpdater::chunk_weights_	nnet-update.h	/^  CuVector<BaseFloat> chunk_weights_;$/;"	m	class:kaldi::nnet2::NnetUpdater
+kaldi::nnet2::NnetUpdater::config_	nnet-update.h	/^  NnetUpdaterConfig config_;$/;"	m	class:kaldi::nnet2::NnetUpdater
 kaldi::nnet2::NnetUpdater::forward_data_	nnet-update.h	/^  std::vector<CuMatrix<BaseFloat> > forward_data_; \/\/ The forward data$/;"	m	class:kaldi::nnet2::NnetUpdater
 kaldi::nnet2::NnetUpdater::nnet_	nnet-update.h	/^  const Nnet &nnet_;$/;"	m	class:kaldi::nnet2::NnetUpdater
 kaldi::nnet2::NnetUpdater::nnet_to_update_	nnet-update.h	/^  Nnet *nnet_to_update_;$/;"	m	class:kaldi::nnet2::NnetUpdater
 kaldi::nnet2::NnetUpdater::num_chunks_	nnet-update.h	/^  int32 num_chunks_; \/\/ same as the minibatch size.$/;"	m	class:kaldi::nnet2::NnetUpdater
+kaldi::nnet2::NnetUpdaterConfig	nnet-update.h	/^struct NnetUpdaterConfig {$/;"	s	namespace:kaldi::nnet2
+kaldi::nnet2::NnetUpdaterConfig::NnetUpdaterConfig	nnet-update.h	/^  NnetUpdaterConfig(): obj_func("CrossEntropy"),$/;"	f	struct:kaldi::nnet2::NnetUpdaterConfig
+kaldi::nnet2::NnetUpdaterConfig::Register	nnet-update.h	/^  void Register (OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetUpdaterConfig
+kaldi::nnet2::NnetUpdaterConfig::obj_func	nnet-update.h	/^  std::string obj_func;$/;"	m	struct:kaldi::nnet2::NnetUpdaterConfig
+kaldi::nnet2::NnetUpdaterConfig::target_dim	nnet-update.h	/^  int32 target_dim;$/;"	m	struct:kaldi::nnet2::NnetUpdaterConfig
 kaldi::nnet2::NnetWidenConfig	widen-nnet.h	/^struct NnetWidenConfig {$/;"	s	namespace:kaldi::nnet2
 kaldi::nnet2::NnetWidenConfig::NnetWidenConfig	widen-nnet.h	/^  NnetWidenConfig(): hidden_layer_dim(-1),$/;"	f	struct:kaldi::nnet2::NnetWidenConfig
 kaldi::nnet2::NnetWidenConfig::Register	widen-nnet.h	/^  void Register(OptionsItf *po) {$/;"	f	struct:kaldi::nnet2::NnetWidenConfig
@@ -2470,6 +2490,7 @@ num_samples_tgt_	nnet-randomize.h	/^  int32 num_samples_tgt_; \/\/ a function of
 num_segments	nnet-example-functions.h	/^  int32 num_segments;$/;"	m	struct:kaldi::nnet2::SplitExampleStats
 num_threads	combine-nnet-fast.h	/^  int32 num_threads;$/;"	m	struct:kaldi::nnet2::NnetCombineFastConfig
 num_threads	nnet-limit-rank.h	/^  int32 num_threads;$/;"	m	struct:kaldi::nnet2::NnetLimitRankOpts
+obj_func	nnet-update.h	/^  std::string obj_func;$/;"	m	struct:kaldi::nnet2::NnetUpdaterConfig
 operator ()	combine-nnet-fast.cc	/^  void operator () () {$/;"	f	class:kaldi::nnet2::FisherComputationClass
 operator ()	nnet-compute-discriminative-parallel.cc	/^  void operator () () {$/;"	f	class:kaldi::nnet2::DiscTrainParallelClass
 operator ()	nnet-limit-rank.cc	/^  void operator () () {$/;"	f	class:kaldi::nnet2::LimitRankClass
@@ -2537,6 +2558,7 @@ stddev_	nnet-component.h	/^  BaseFloat stddev_;$/;"	m	class:kaldi::nnet2::Additi
 store_separate_gradients_	nnet-compute-discriminative-parallel.cc	/^  bool store_separate_gradients_;$/;"	m	class:kaldi::nnet2::DiscTrainParallelClass	file:
 store_separate_gradients_	nnet-update-parallel.cc	/^  bool store_separate_gradients_;$/;"	m	class:kaldi::nnet2::DoBackpropParallelClass	file:
 target_avg_deriv	rescale-nnet.h	/^  BaseFloat target_avg_deriv;$/;"	m	struct:kaldi::nnet2::NnetRescaleConfig
+target_dim	nnet-update.h	/^  int32 target_dim;$/;"	m	struct:kaldi::nnet2::NnetUpdaterConfig
 target_first_layer_avg_deriv	rescale-nnet.h	/^  BaseFloat target_first_layer_avg_deriv;$/;"	m	struct:kaldi::nnet2::NnetRescaleConfig
 target_last_layer_avg_deriv	rescale-nnet.h	/^  BaseFloat target_last_layer_avg_deriv;$/;"	m	struct:kaldi::nnet2::NnetRescaleConfig
 test	nnet-example-functions.h	/^  bool test;$/;"	m	struct:kaldi::nnet2::SplitDiscriminativeExampleConfig
@@ -2553,6 +2575,14 @@ tot_weight_	nnet-update-parallel.cc	/^  double tot_weight_;$/;"	m	class:kaldi::n
 tot_weight_ptr_	nnet-update-parallel.cc	/^  double *tot_weight_ptr_;$/;"	m	class:kaldi::nnet2::DoBackpropParallelClass	file:
 trans_model_	decodable-am-nnet.h	/^  const TransitionModel &trans_model_;$/;"	m	class:kaldi::nnet2::DecodableAmNnet
 trans_model_	decodable-am-nnet.h	/^  const TransitionModel &trans_model_;$/;"	m	class:kaldi::nnet2::DecodableAmNnetParallel
+updater_config	combine-nnet-a.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetCombineAconfig
+updater_config	combine-nnet-fast.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetCombineFastConfig
+updater_config	combine-nnet.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetCombineConfig
+updater_config	nnet-lbfgs.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetLbfgsTrainerConfig
+updater_config	shrink-nnet.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetShrinkConfig
+updater_config	train-nnet-ensemble.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetEnsembleTrainerConfig
+updater_config	train-nnet.h	/^  NnetUpdaterConfig updater_config;$/;"	m	struct:kaldi::nnet2::NnetSimpleTrainerConfig
+updater_config_	combine-nnet-fast.cc	/^  NnetUpdaterConfig updater_config_;$/;"	m	class:kaldi::nnet2::FisherComputationClass	file:
 updater_ensemble_	train-nnet-ensemble.h	/^  std::vector<NnetUpdater*> updater_ensemble_;$/;"	m	class:kaldi::nnet2::NnetEnsembleTrainer
 valid_impr_thresh	combine-nnet-a.h	/^  BaseFloat valid_impr_thresh;$/;"	m	struct:kaldi::nnet2::NnetCombineAconfig
 value_sum_	nnet-component.h	/^  CuVector<double> value_sum_; \/\/ stats at the output.$/;"	m	class:kaldi::nnet2::NonlinearComponent

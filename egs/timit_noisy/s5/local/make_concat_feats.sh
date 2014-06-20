@@ -68,6 +68,7 @@ done
 cp -rT ${datadirs[0]} $out_datadir
 set +e
 rm $out_datadir/{feats.scp,cmvn.scp}
+rm -rf $out_datadir/split*
 set -e
 
 $cmd JOB=1:$nj $logdir/make_feats_${name}.JOB.log \

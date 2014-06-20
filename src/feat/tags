@@ -16,6 +16,7 @@ Compute	feature-spectrogram.cc	/^void Spectrogram::Compute(const VectorBase<Base
 Compute	mel-computations.cc	/^void MelBanks::Compute(const VectorBase<BaseFloat> &power_spectrum,$/;"	f	class:kaldi::MelBanks
 Compute	pitch-functions.cc	/^void Compute(const PitchExtractionOptions &opts,$/;"	f	namespace:kaldi
 ComputeDeltas	feature-functions.cc	/^void ComputeDeltas(const DeltaFeaturesOptions &delta_opts,$/;"	f	namespace:kaldi
+ComputeFromFbank	feature-mfcc.cc	/^void Mfcc::ComputeFromFbank(const Matrix<BaseFloat> &fbank,$/;"	f	class:kaldi::Mfcc
 ComputeLifterCoeffs	mel-computations.cc	/^void ComputeLifterCoeffs(BaseFloat Q, VectorBase<BaseFloat> *coeffs) {$/;"	f	namespace:kaldi
 ComputeLocalCost	pitch-functions.cc	/^  void ComputeLocalCost(const Matrix<double> &autocorrelation) {$/;"	f	class:kaldi::PitchExtractor
 ComputeLpc	feature-functions.cc	/^BaseFloat ComputeLpc(const VectorBase<BaseFloat> &autocorr_in,$/;"	f	namespace:kaldi
@@ -72,11 +73,13 @@ KALDI_FEAT_FEATURE_PLP_H_	feature-plp.h	21;"	d
 KALDI_FEAT_FEATURE_SPECTROGRAM_H_	feature-spectrogram.h	22;"	d
 KALDI_FEAT_MEL_COMPUTATIONS_H_	mel-computations.h	21;"	d
 KALDI_FEAT_PITCH_FUNCTIONS_H_	pitch-functions.h	21;"	d
-KALDI_FEAT_WAVE_READER_H_	wave-reader.h	44;"	d
+KALDI_FEAT_WAVE_READER_H_	wave-reader.h	45;"	d
 LinearResample	pitch-functions.cc	/^     LinearResample(double samp_rate_in,$/;"	f	class:kaldi::LinearResample
 LinearResample	pitch-functions.cc	/^class LinearResample {$/;"	c	namespace:kaldi	file:
 Lpc2Cepstrum	mel-computations.cc	/^void Lpc2Cepstrum(int n, const BaseFloat *pLPC, BaseFloat *pCepst) {$/;"	f	namespace:kaldi
 MaxNormalizeEnergy	feature-functions.h	/^inline void MaxNormalizeEnergy(Matrix<BaseFloat> *feats) {$/;"	f	namespace:kaldi
+MeanLoudness	wave-reader.cc	/^BaseFloat WaveData::MeanLoudness(int32 c) {$/;"	f	class:kaldi::WaveData
+MeanLoudness	wave-reader.cc	/^void WaveData::MeanLoudness(Vector<BaseFloat> &loudness) {$/;"	f	class:kaldi::WaveData
 MelBanks	mel-computations.cc	/^MelBanks::MelBanks(const MelBanksOptions &opts,$/;"	f	class:kaldi::MelBanks
 MelBanks	mel-computations.h	/^class MelBanks {$/;"	c	namespace:kaldi
 MelBanksOptions	feature-functions.h	/^  explicit MelBanksOptions(int num_bins = 25)$/;"	f	struct:kaldi::MelBanksOptions
@@ -90,7 +93,9 @@ Nccf	pitch-functions.cc	/^void Nccf(const Vector<double> &wave,$/;"	f	namespace:
 NccfWindowShift	pitch-functions.h	/^  int32 NccfWindowShift() const {$/;"	f	struct:kaldi::PitchExtractionOptions
 NccfWindowSize	pitch-functions.h	/^  int32 NccfWindowSize() const {$/;"	f	struct:kaldi::PitchExtractionOptions
 NumBins	mel-computations.h	/^  int32 NumBins() const { return bins_.size(); }$/;"	f	class:kaldi::MelBanks
+NumChannels	wave-reader.h	/^  int32 NumChannels() const { return data_.NumRows(); }$/;"	f	class:kaldi::WaveData
 NumFrames	feature-functions.cc	/^int32 NumFrames(int32 nsamp,$/;"	f	namespace:kaldi
+NumSamples	wave-reader.h	/^  int32 NumSamples() const { return data_.NumCols(); }$/;"	f	class:kaldi::WaveData
 NumSamplesIn	pitch-functions.cc	/^  int32 NumSamplesIn() const { return num_samples_in_; }$/;"	f	class:kaldi::ArbitraryResample
 NumSamplesOut	pitch-functions.cc	/^  int32 NumSamplesOut() const { return indexes_.size(); }$/;"	f	class:kaldi::ArbitraryResample
 PaddedWindowSize	feature-functions.h	/^  int32 PaddedWindowSize() const {$/;"	f	struct:kaldi::FrameExtractionOptions
@@ -197,6 +202,8 @@ Upsample	pitch-functions.cc	/^  void Upsample(const VectorBase<double> &input,$/
 Value	wave-reader.h	/^  const T &Value() { return t_; }$/;"	f	class:kaldi::WaveHolder
 VtlnWarpFreq	mel-computations.cc	/^BaseFloat MelBanks::VtlnWarpFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:kaldi::MelBanks
 VtlnWarpMelFreq	mel-computations.cc	/^BaseFloat MelBanks::VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:kaldi::MelBanks
+WaveData	wave-reader.cc	/^WaveData::WaveData(BaseFloat samp_freq, BaseFloat duration, int32 num_channels, BaseFloat variance) $/;"	f	class:kaldi::WaveData
+WaveData	wave-reader.cc	/^WaveData::WaveData(BaseFloat samp_freq, int32 num_samples, int32 num_channels, BaseFloat variance)$/;"	f	class:kaldi::WaveData
 WaveData	wave-reader.h	/^  WaveData() : samp_freq_(0.0) {}$/;"	f	class:kaldi::WaveData
 WaveData	wave-reader.h	/^  WaveData(BaseFloat samp_freq, const MatrixBase<BaseFloat> &data)$/;"	f	class:kaldi::WaveData
 WaveData	wave-reader.h	/^class WaveData {$/;"	c	namespace:kaldi
@@ -409,6 +416,7 @@ kaldi::MelBanksOptions::vtln_high	feature-functions.h	/^  BaseFloat vtln_high;  
 kaldi::MelBanksOptions::vtln_low	feature-functions.h	/^  BaseFloat vtln_low;  \/\/ vtln lower cutoff of warping function.$/;"	m	struct:kaldi::MelBanksOptions
 kaldi::Mfcc	feature-mfcc.h	/^class Mfcc {$/;"	c	namespace:kaldi
 kaldi::Mfcc::Compute	feature-mfcc.cc	/^void Mfcc::Compute(const VectorBase<BaseFloat> &wave,$/;"	f	class:kaldi::Mfcc
+kaldi::Mfcc::ComputeFromFbank	feature-mfcc.cc	/^void Mfcc::ComputeFromFbank(const Matrix<BaseFloat> &fbank,$/;"	f	class:kaldi::Mfcc
 kaldi::Mfcc::Dim	feature-mfcc.h	/^  int32 Dim() { return opts_.num_ceps; }$/;"	f	class:kaldi::Mfcc
 kaldi::Mfcc::GetMelBanks	feature-mfcc.cc	/^const MelBanks *Mfcc::GetMelBanks(BaseFloat vtln_warp) {$/;"	f	class:kaldi::Mfcc
 kaldi::Mfcc::Mfcc	feature-mfcc.cc	/^Mfcc::Mfcc(const MfccOptions &opts)$/;"	f	class:kaldi::Mfcc
@@ -568,11 +576,17 @@ kaldi::WaveData::CopyFrom	wave-reader.h	/^  void CopyFrom(const WaveData &other)
 kaldi::WaveData::Data	wave-reader.h	/^  const Matrix<BaseFloat> &Data() const { return data_; }$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::Duration	wave-reader.h	/^  BaseFloat Duration() const { return data_.NumCols()\/samp_freq_; }$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::Expect4ByteTag	wave-reader.cc	/^void WaveData::Expect4ByteTag(std::istream &is, const char *expected) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::MeanLoudness	wave-reader.cc	/^BaseFloat WaveData::MeanLoudness(int32 c) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::MeanLoudness	wave-reader.cc	/^void WaveData::MeanLoudness(Vector<BaseFloat> &loudness) {$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::NumChannels	wave-reader.h	/^  int32 NumChannels() const { return data_.NumRows(); }$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::NumSamples	wave-reader.h	/^  int32 NumSamples() const { return data_.NumCols(); }$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::Read	wave-reader.cc	/^void WaveData::Read(std::istream &is) {$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::Read4ByteTag	wave-reader.cc	/^void WaveData::Read4ByteTag(std::istream &is, char *dest) {$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::ReadUint16	wave-reader.cc	/^uint16 WaveData::ReadUint16(std::istream &is, bool swap) {$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::ReadUint32	wave-reader.cc	/^uint32 WaveData::ReadUint32(std::istream &is, bool swap) {$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::SampFreq	wave-reader.h	/^  BaseFloat SampFreq() const { return samp_freq_; }$/;"	f	class:kaldi::WaveData
+kaldi::WaveData::WaveData	wave-reader.cc	/^WaveData::WaveData(BaseFloat samp_freq, BaseFloat duration, int32 num_channels, BaseFloat variance) $/;"	f	class:kaldi::WaveData
+kaldi::WaveData::WaveData	wave-reader.cc	/^WaveData::WaveData(BaseFloat samp_freq, int32 num_samples, int32 num_channels, BaseFloat variance)$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::WaveData	wave-reader.h	/^  WaveData() : samp_freq_(0.0) {}$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::WaveData	wave-reader.h	/^  WaveData(BaseFloat samp_freq, const MatrixBase<BaseFloat> &data)$/;"	f	class:kaldi::WaveData
 kaldi::WaveData::Write	wave-reader.cc	/^void WaveData::Write(std::ostream &os) const {$/;"	f	class:kaldi::WaveData

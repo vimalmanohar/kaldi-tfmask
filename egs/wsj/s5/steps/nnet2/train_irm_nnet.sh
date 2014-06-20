@@ -334,9 +334,13 @@ if [ $stage -le $num_iters ]; then
   # to speed it up (this isn't ideal...)
   this_num_threads=$num_threads
   [ $this_num_threads -lt 8 ] && this_num_threads=8
-  num_egs=`nnet-copy-egs ark:$egs_dir/combine.egs ark:/dev/null 2>&1 | tail -n 1 | awk '{print $NF}'`
+  num_egs=`nnet2-copy-egs ark:$egs_dir/combine.egs ark:/dev/null 2>&1 | tail -n 1 | awk '{print $NF}'`
+  [ "$num_egs" -eq 0 ] && echo "No examples read!" && exit 1
+
   mb=$[($num_egs+$this_num_threads-1)/$this_num_threads]
   [ $mb -gt 512 ] && mb=512
+  [ $mb -eq 0 ] && echo "Minibatch size \$mb is 0. Something is wrong!" && exit 1
+
   $cmd $parallel_opts $dir/log/combine.log \
     nnet2-combine-fast $objf_opts --raw=true --use-gpu=no --num-threads=$this_num_threads \
       --verbose=3 --minibatch-size=$mb "${nnets_list[@]}" ark:$egs_dir/combine.egs \
