@@ -55,6 +55,10 @@ set -e
 
 for n in `seq $nj`; do 
   cat $dir/raw_fbank_${dirid}_masked.$n.scp
-done | sort > ${out_datadir}/feats.scp
+done | sort -k1,1 > ${out_datadir}/feats.scp
+
+for n in `seq $nj`; do 
+  cat $irm_dir/irm_$dirid.$n.scp
+done | sort -k1,1 > ${in_datadir}/irm.scp
 
 echo "$0: Succeeded creating masked Mel filterbank features in $out_datadir"

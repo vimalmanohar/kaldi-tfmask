@@ -24,7 +24,7 @@ fi
 
 datadir=$1
 clean_datadir=$2
-logdir=$3
+tmpdir=$3
 dir=$4
 
 dirid=`basename $datadir`
@@ -34,12 +34,39 @@ utils/split_data.sh $clean_datadir $nj
 
 echo "$0: Compute IRM targets using clean and noisy Mel filterbank features for $datadir..."
 
-mkdir -p $logdir || exit 1
+mkdir -p $tmpdir || exit 1
+mkdir -p $tmpdir/data_fbank.${dirid}
+
+cp -rT $clean_datadir $tmpdir/data_fbank.${dirid}
+set +e
+rm $tmpdir/data_fbank.${dirid}/{wav.scp,feats.scp,cmvn.scp}
+rm -rf $tmpdir/data_fbank.${dirid}/split*
+set -e
+
+mkdir -p $tmpdir/noise.${dirid}
 
 if [ $stage -le 0 ]; then
-  $cmd JOB=1:$nj $logdir/${dirid}.JOB.log \
-    compute-irm-targets --from-noisy=true scp:$clean_datadir/split$nj/JOB/feats.scp \
-    scp:$datadir/split$nj/JOB/feats.scp \
+  $cmd JOB=1:$nj $tmpdir/get_noise.${dirid}.JOB.log \
+    wav-difference scp:$datadir/split$nj/JOB/wav.scp \
+    scp:$clean_datadir/split$nj/JOB/wav.scp \
+    ark,scp:$tmpdir/noise.${dirid}/noise.JOB.ark,$tmpdir/noise.${dirid}/noise.JOB.scp || exit 1
+
+  for n in `seq $nj`; do
+    cat $tmpdir/noise.${dirid}/noise.$n.scp
+  done | sort -k 1,1 > $tmpdir/data_fbank.${dirid}/wav.scp
+fi
+
+if [ $stage -le 1 ]; then
+  steps/make_fbank.sh --cmd "$cmd" --nj $nj $tmpdir/data_fbank.${dirid} $tmpdir $tmpdir/noise.${dirid}
+  utils/fix_data_dir.sh $tmpdir/data_fbank.${dirid}
+fi
+
+utils/split_data.sh $tmpdir/data_fbank.${dirid}
+
+if [ $stage -le 2 ]; then
+  $cmd JOB=1:$nj $tmpdir/irm_targets.${dirid}.JOB.log \
+    compute-irm-targets --from-noise=true scp:$clean_datadir/split$nj/JOB/feats.scp \
+    scp:$tmpdir/data_fbank.${dirid}/split$nj/JOB/feats.scp \
     ark,scp:$dir/${dirid}_irm_targets.JOB.ark,$dir/${dirid}_irm_targets.JOB.scp || exit 1
 
   for n in `seq $nj`; do 
