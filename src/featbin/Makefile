@@ -14,7 +14,7 @@ BINFILES = compute-mfcc-feats compute-plp-feats compute-fbank-feats \
     apply-cmvn-sliding compute-cmvn-stats-two-channel compute-kaldi-pitch-feats \
     process-kaldi-pitch-feats compare-feats wav-to-duration add-deltas-sdc \
     wav-copy wav-add-noise compute-irm-targets compute-mfcc-feats-from-fbank \
-		irm-targets-to-irm wav-difference
+		irm-targets-to-irm wav-difference arm-targets-to-arm compute-arm-targets
  
 OBJFILES = 
 

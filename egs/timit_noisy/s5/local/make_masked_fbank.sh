@@ -6,6 +6,7 @@ set -e
 nj=4
 cmd=run.pl 
 stage=-1
+irm_config=conf/irm.conf
 
 . parse_options.sh
 
@@ -23,7 +24,22 @@ logdir=$4
 irm_dir=$5
 dir=$6
 
+# make $dir an absolute pathname.
+dir=`perl -e '($dir,$pwd)= @ARGV; if($dir!~m:^/:) { $dir = "$pwd/$dir"; } print $dir; ' $dir ${PWD}`
+
+# make $irm_dir an absolute pathname.
+irm_dir=`perl -e '($dir,$pwd)= @ARGV; if($dir!~m:^/:) { $dir = "$pwd/$dir"; } print $dir; ' $irm_dir ${PWD}`
+
+
 dirid=`basename $in_datadir`
+
+required="$irm_config $in_datadir/feats.scp $nnet_dir/final.nnet"
+for f in $required; do
+  if [ ! -f $f ]; then
+    echo "make_masked_fbank.sh: no such file $f"
+    exit 1;
+  fi
+done
 
 sdata=$in_datadir/split$nj
 utils/split_data.sh $in_datadir $nj
@@ -33,7 +49,7 @@ mkdir -p $irm_dir
 if [ $stage -le 0 ]; then
   $cmd JOB=1:$nj $logdir/make_irm_$dirid.JOB.log \
     nnet2-compute --raw=true $nnet_dir/final.nnet scp:$sdata/JOB/feats.scp ark:- \| \
-    irm-targets-to-irm --apply-log=true ark:- ark,scp:$irm_dir/irm_$dirid.JOB.ark,$irm_dir/irm_$dirid.JOB.scp
+    irm-targets-to-irm --apply-log=true --config=$irm_config ark:- ark,scp:$irm_dir/irm_$dirid.JOB.ark,$irm_dir/irm_$dirid.JOB.scp
 fi
 
 echo "$0: Creating masked Mel filterbank features in $out_datadir"

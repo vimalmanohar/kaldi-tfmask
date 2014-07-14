@@ -1449,3 +1449,7 @@
 /src/bin/matrix-mul-elements
 /src/featbin/irm-targets-to-irm
 /src/featbin/wav-difference
+/src/bin/matrix-apply-sigmoid
+/src/bin/matrix-scale
+src/featbin/arm-targets-to-arm
+/src/featbin/compute-arm-targets

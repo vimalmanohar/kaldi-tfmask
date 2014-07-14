@@ -19,17 +19,18 @@ num_hidden_layers=5
 dnn_init_learning_rate=0.0008
 dnn_final_learning_rate=0.00008
 dnn_gpu_parallel_opts=(--minibatch-size 512 --max-change 40 --num-jobs-nnet 4 --num-threads 1 \
-  --parallel-opts "-l gpu=1" --cmd "queue.pl -l arch=*64 -l mem_free=4G,ram_free=2G")
+  --parallel-opts "-l gpu=1" --cmd "queue.pl -q \"all.q@[gb]0[^5]*\" -l arch=*64 -l mem_free=4G,ram_free=2G")
 stage=-100
 use_subset=true
+percentage=20
 
 . parse_options.sh
 
 if $use_subset; then
   datadir_orig=$datadir
-  datadir=${datadir_orig}.10p
+  datadir=${datadir_orig}.${percentage}p
   if [ ! -s $datadir/irm_targets.scp ]; then
-    numutts_keep=`perl -e 'print int($ARGV[0]/10)' "$(wc -l < $datadir_orig/feats.scp)"`
+    numutts_keep=`perl -e 'print int($ARGV[0]*$ARGV[1]/100)' "$(wc -l < $datadir_orig/feats.scp)" $percentage`
     subset_data_dir.sh $datadir_orig $numutts_keep $datadir
     filter_scp.pl $datadir/feats.scp $datadir_orig/irm_targets.scp > $datadir/irm_targets.scp
     irm_scp=$datadir/irm_targets.scp

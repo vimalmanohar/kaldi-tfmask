@@ -3,6 +3,14 @@
 # Copyright 2013   (Authors: Bagher BabaAli, Daniel Povey, Arnab Ghoshal)
 # Apache 2.0.
 
+rate=8k
+
+. utils/parse_options.sh
+
+set -e
+set -u
+set -o pipefail
+
 if [ $# -ne 2 ]; then
    echo "Argument should be the Timit directory and a prefix like clean, see ../run.sh for example."
    exit 1;
@@ -10,6 +18,10 @@ fi
 
 timit_dir=$1
 prefix=$2
+
+if [ $rate != "16k" ]; then
+  rate_opts=" rate $rate"
+fi
 
 dir=`pwd`/data/local/data_${prefix}
 lmdir=`pwd`/data/local/nist_lm
@@ -99,7 +111,7 @@ for x in train dev test; do
 # Do normalization steps. 
   cat ${x}.trans | $local/timit_norm_trans.pl -i - -m $conf/phones.60-48-39.map -to 39 | sort > $x.txt || exit 1;
 
-  awk '{printf("%s sox -B -r 16k -e signed -b 16 -c 1 -t raw %s -t wav - |\n", $1, $2);}' < ${x}_sph.scp > ${x}_wav.scp
+  awk -v rate_opts="$rate_opts" '{printf("%s sox -L -r 16k -e signed -b 16 -c 1 -t raw %s -t wav -%s |\n", $1, $2, rate_opts);}' < ${x}_sph.scp > ${x}_wav.scp
 
 # Make the utt2spk and spk2utt files.
 

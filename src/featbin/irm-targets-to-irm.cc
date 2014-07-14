@@ -51,7 +51,11 @@ int main(int argc, char *argv[]) {
       exit(1);
     }
 
-    BaseFloat alpha = 2 * log10(19) / snr_span;
+    if (snr_span <= 0) {
+      KALDI_ERR << "--snr-span is expected to be > 0. But it is given " << snr_span;
+    }
+    
+    BaseFloat alpha = 2 * Log(19.0) / Log(10.0) / snr_span;
     
     int32 num_done = 0;
 
@@ -66,7 +70,7 @@ int main(int argc, char *argv[]) {
         Matrix<BaseFloat> mat = kaldi_reader.Value();
         for (int32 t = 0; t < mat.NumRows(); t++) 
           for (int32 f = 0; f < mat.NumCols(); f++) {
-            mat(t,f) = 1  / ( 1 + pow(1/mat(t,f) - 1, log(10)/(10*alpha)) * pow(10, -beta/10) );
+            mat(t,f) = 1  / ( 1 + pow(1/mat(t,f) - 1, Log(10.0)/(10*alpha)) * pow(10, -beta/10) );
           }
         if (apply_log) mat.ApplyLog();
         kaldi_writer.Write(kaldi_reader.Key(), mat);
@@ -78,7 +82,7 @@ int main(int argc, char *argv[]) {
         Matrix<BaseFloat> mat = kaldi_reader.Value();
         for (int32 t = 0; t < mat.NumRows(); t++) 
           for (int32 f = 0; f < mat.NumCols(); f++) {
-            mat(t,f) = 1  / ( 1 + pow(1/mat(t,f) - 1, log(10)/(10*alpha)) * pow(10, -beta/10) ); 
+            mat(t,f) = 1  / ( 1 + pow(1/mat(t,f) - 1, Log(10.0)/(10*alpha)) * pow(10, -beta/10) ); 
           }
         if (apply_log) mat.ApplyLog();
         kaldi_writer.Write(kaldi_reader.Key(), mat);
