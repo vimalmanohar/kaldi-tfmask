@@ -44,8 +44,10 @@ int main(int argc, char *argv[]) {
     
     bool binary_write = true;
     int32 minibatch_size = 1024;
+    NnetUpdaterConfig config;
     
     ParseOptions po(usage);
+    config.Register(&po);
     po.Register("binary", &binary_write, "Write output in binary mode");
     po.Register("num-threads", &g_num_threads, "Number of training threads to use "
                 "in the parallel update. [Note: if you use a parallel "
@@ -87,6 +89,7 @@ int main(int argc, char *argv[]) {
     DoBackpropParallel(am_nnet.GetNnet(),
                        minibatch_size,
                        &example_reader,
+                       config,
                        &num_examples,
                        &(am_gradient.GetNnet()));
     // This function will have produced logging output, so we have no

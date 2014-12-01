@@ -123,6 +123,8 @@ class NnetUpdater {
   // member variables in the NnetExample structures.  These
   // will typically be about one on average.
   CuVector<BaseFloat> chunk_weights_;
+  
+  NnetUpdaterConfig config_;
 };
 
 /// This function computes the objective function and either updates the model

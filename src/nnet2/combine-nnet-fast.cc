@@ -36,14 +36,14 @@ class FisherComputationClass: public MultiThreadable {
                          int32 minibatch_size,
                          const NnetUpdaterConfig &updater_config,
                          SpMatrix<double> *scatter):
-      nnet_(nnet), nnets_(nnets), egs_(egs), minibatch_size_(minibatch_size), updater_config_(updater_config),
-      scatter_ptr_(scatter) { } // This initializer is only used to create a
+      nnet_(nnet), nnets_(nnets), egs_(egs), minibatch_size_(minibatch_size),
+      scatter_ptr_(scatter), updater_config_(updater_config) { } // This initializer is only used to create a
   // temporary version of the object; the next initializer is used to
   // create the separate versions for the parallel jobs.
   
   FisherComputationClass(const FisherComputationClass &other):
       nnet_(other.nnet_), nnets_(other.nnets_), egs_(other.egs_),
-      minibatch_size_(other.minibatch_size_), updater_config_(other.updater_config_), scatter_ptr_(other.scatter_ptr_) {
+      minibatch_size_(other.minibatch_size_), scatter_ptr_(other.scatter_ptr_), updater_config_(other.updater_config_) {
     scatter_.Resize(nnets_.size() * nnet_.NumUpdatableComponents());  }
   
   void operator () () {

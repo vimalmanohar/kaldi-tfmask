@@ -45,8 +45,10 @@ int main(int argc, char *argv[]) {
 
     int32 minibatch_size = 1024;
     bool binary_write = true;
-    
+    NnetUpdaterConfig config;
+
     ParseOptions po(usage);
+    config.Register(&po);
     po.Register("binary", &binary_write, "Write output in binary mode");
     po.Register("minibatch-size", &minibatch_size,
                 "Size of minibatches used in computation");
@@ -89,6 +91,7 @@ int main(int argc, char *argv[]) {
       if (static_cast<int32>(examples.size()) == minibatch_size) {
         tot_logprob += DoBackprop(am_nnet.GetNnet(),
                                   examples,
+                                  config,
                                   &(am_preconditioner.GetNnet()));
         examples.clear();
       }
@@ -100,6 +103,7 @@ int main(int argc, char *argv[]) {
     if (!examples.empty())
       tot_logprob += DoBackprop(am_nnet.GetNnet(),
                                 examples,
+                                config,
                                 &(am_preconditioner.GetNnet()));
     
     { // Write the preconditioner.

@@ -46,7 +46,10 @@ int main(int argc, char *argv[]) {
         "e.g.: nnet-show-progress 1.nnet 2.nnet ark:valid.egs\n";
     
     bool raw = false;
+    NnetUpdaterConfig config;
+
     ParseOptions po(usage);
+    config.Register(&po);
     po.Register("raw", &raw,
                 "If true, read/write raw neural net rather than .mdl");
 
@@ -132,7 +135,7 @@ int main(int argc, char *argv[]) {
         nnet_gradient.SetZero(treat_as_gradient);
 
         double objf_per_frame = ComputeNnetGradient(interp_nnet, examples,
-                                                    batch_size, &nnet_gradient);
+                                                    batch_size, config, &nnet_gradient);
         KALDI_LOG << "At position " << middle << ", objf per frame is " << objf_per_frame;
 
         Vector<BaseFloat> old_dotprod(num_updatable), new_dotprod(num_updatable);

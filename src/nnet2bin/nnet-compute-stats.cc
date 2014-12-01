@@ -32,6 +32,8 @@ int main(int argc, char *argv[]) {
     typedef kaldi::int32 int32;
     typedef kaldi::int64 int64;
 
+    NnetUpdaterConfig config;
+
     const char *usage =
         "Computes and prints the average log-prob per frame of the given data with a\n"
         "neural net.  The input of this is the output of e.g. nnet-get-egs\n"
@@ -44,6 +46,7 @@ int main(int argc, char *argv[]) {
         "nnet-randomize-frames [args] | nnet-compute-prob 1.nnet ark:-\n";
     
     ParseOptions po(usage);
+    config.Register(&po);
 
     po.Read(argc, argv);
     
@@ -71,7 +74,7 @@ int main(int argc, char *argv[]) {
     SequentialNnetExampleReader example_reader(examples_rspecifier);
     for (; !example_reader.Done(); example_reader.Next(), num_examples++) {
       if (examples.size() == 1000) {
-        tot_like += ComputeNnetObjf(am_nnet.GetNnet(), examples);
+        tot_like += ComputeNnetObjf(am_nnet.GetNnet(), examples, config);
         tot_frames += examples.size();
         examples.clear();
       }
@@ -82,7 +85,7 @@ int main(int argc, char *argv[]) {
                   << "total weight " << tot_frames;
     }
     if (!examples.empty()) {
-      tot_like += ComputeNnetObjf(am_nnet.GetNnet(), examples);
+      tot_like += ComputeNnetObjf(am_nnet.GetNnet(), examples, config);
       tot_frames += examples.size();
     }
 

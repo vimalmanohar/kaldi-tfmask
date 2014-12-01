@@ -45,8 +45,10 @@ int main(int argc, char *argv[]) {
         "e.g.: nnet-compute-prob 1.nnet ark:valid.egs\n";
     
     bool raw = false;
+    NnetUpdaterConfig config;
 
     ParseOptions po(usage);
+    config.Register(&po);
     po.Register("raw", &raw,
                 "If true, read/write raw neural net rather than .mdl");
 
@@ -81,7 +83,7 @@ int main(int argc, char *argv[]) {
       if (examples.size() == 1000) {
         double accuracy;
         tot_like += ComputeNnetObjf((raw ? nnet : am_nnet.GetNnet()), examples,
-                                    &accuracy);
+                                    config, &accuracy);
         tot_accuracy += accuracy;
         tot_weight += TotalNnetTrainingWeight(examples);
         examples.clear();
@@ -96,7 +98,7 @@ int main(int argc, char *argv[]) {
     if (!examples.empty()) {
       double accuracy;
       tot_like += ComputeNnetObjf((raw ? nnet : am_nnet.GetNnet()), examples,
-                                  &accuracy);
+                                  config, &accuracy);
       tot_accuracy += accuracy;
       tot_weight += TotalNnetTrainingWeight(examples);      
     }

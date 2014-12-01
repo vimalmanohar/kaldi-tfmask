@@ -48,6 +48,9 @@ int main(int argc, char *argv[]) {
     bool binary_write = false;
     BaseFloat scale = 0.75; // Each time we find we went too far, we multiply the parameter-change by this scale.
     BaseFloat threshold = 0.0001; // Maximum degradation.
+    NnetUpdaterConfig config;
+
+    config.Register(&po);
     po.Register("binary", &binary_write, "If true, write model in binary format.");
     po.Register("scale", &scale, "Scale factor we multiply by each time we detect "
                 "excess degradation");
@@ -101,7 +104,7 @@ int main(int argc, char *argv[]) {
       nnet_gradient.SetZero(treat_as_gradient);
 
       double objf_per_frame = ComputeNnetGradient(avg_nnet, examples,
-                                                  batch_size, &nnet_gradient);
+                                                  batch_size, config, &nnet_gradient);
 
       int64 num_examples = examples.size();
       KALDI_LOG << "Saw " << num_examples << " examples, average "

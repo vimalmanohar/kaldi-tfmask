@@ -29,7 +29,7 @@ namespace nnet2 {
 NnetUpdater::NnetUpdater(const Nnet &nnet,
                          const NnetUpdaterConfig &config,
                          Nnet *nnet_to_update):
-    nnet_(nnet), config_(config), nnet_to_update_(nnet_to_update) {
+    nnet_(nnet), nnet_to_update_(nnet_to_update), config_(config) {
 }
  
 
