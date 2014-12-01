@@ -2,6 +2,7 @@
 
 // Copyright 2012  Johns Hopkins University (author: Daniel Povey)
 //           2014  Xiaohui Zhang
+//           2014  Vimal Manohar
 
 // See ../../COPYING for clarification regarding multiple authors
 //
@@ -39,6 +40,23 @@ namespace nnet2 {
    using a heuristic involving validation-set gradients.
 */
 
+struct NnetUpdaterConfig {
+  std::string obj_func;
+  int32 target_dim;
+
+  NnetUpdaterConfig(): obj_func("CrossEntropy"),
+                       target_dim(1) {}
+
+  void Register (OptionsItf *po) {
+    po->Register("obj-func", &obj_func,
+        "Objective function to be used (CrossEntropy/CrossEntropySum/SquaredError)");
+    po->Register("target-dim", &target_dim,
+        "Dimension of target layer. Used only with CrossEntropySum or SquaredError objective functions");
+
+    KALDI_ASSERT(obj_func == "CrossEntropy" || obj_func == "CrossEntropySum");
+  }
+};
+
 // This class NnetUpdater contains functions for updating the neural net or
 // computing its gradient, given a set of NnetExamples. We
 // define it in the header file becaused it's needed by the ensemble training.
@@ -51,9 +69,10 @@ class NnetUpdater {
   // be identical.  They'll be different if we're accumulating the gradient
   // for a held-out set and don't want to update the model.  Note: nnet_to_update
   // may be NULL if you don't want do do backprop.
-  NnetUpdater(const Nnet &nnet,
+  NnetUpdater(const Nnet &nnet, 
+              const NnetUpdaterConfig &config,
               Nnet *nnet_to_update);
-  
+
   // Does the entire forward and backward computation for this minbatch.
   // Returns total objective function over this minibatch.  If tot_accuracy != NULL,
   // outputs to that pointer the total accuracy.
@@ -117,6 +136,7 @@ class NnetUpdater {
 /// accuracy.
 double DoBackprop(const Nnet &nnet,
                   const std::vector<NnetExample> &examples,
+                  const NnetUpdaterConfig &config,
                   Nnet *nnet_to_update,
                   double *tot_accuracy = NULL);
 
@@ -130,6 +150,7 @@ BaseFloat TotalNnetTrainingWeight(const std::vector<NnetExample> &egs);
 /// accuracy.
 double ComputeNnetObjf(const Nnet &nnet,
                        const std::vector<NnetExample> &examples,
+                       const NnetUpdaterConfig &config,
                        double *tot_accuracy= NULL);
 
 /// This version of ComputeNnetObjf breaks up the examples into
@@ -140,6 +161,7 @@ double ComputeNnetObjf(const Nnet &nnet,
 double ComputeNnetObjf(const Nnet &nnet,                          
                        const std::vector<NnetExample> &examples,
                        int32 minibatch_size,
+                       const NnetUpdaterConfig &config,
                        double *tot_accuracy= NULL);
 
 
@@ -150,6 +172,7 @@ double ComputeNnetGradient(
     const Nnet &nnet,
     const std::vector<NnetExample> &examples,
     int32 batch_size,
+    const NnetUpdaterConfig &config,
     Nnet *gradient);
 
 

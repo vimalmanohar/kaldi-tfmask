@@ -51,7 +51,8 @@ int main(int argc, char *argv[]) {
     int32 minibatch_size = 1024;
     int32 srand_seed = 0;
     bool raw = false;
-    
+    NnetUpdaterConfig config;
+
     ParseOptions po(usage);
 
     po.Register("raw", &raw,
@@ -67,6 +68,8 @@ int main(int argc, char *argv[]) {
     po.Register("minibatch-size", &minibatch_size, "Number of examples to use for "
                 "each minibatch during training.");
     
+    config.Register(&po);
+
     po.Read(argc, argv);
     srand(srand_seed);
 
@@ -109,6 +112,7 @@ int main(int argc, char *argv[]) {
     DoBackpropParallel(nnet_ref,
                        minibatch_size,
                        &example_reader,
+                       config,
                        &num_examples,
                        &nnet_ref);
     

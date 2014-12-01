@@ -37,6 +37,7 @@ struct NnetShrinkConfig {
   // num-iters is in reality the number of function evaluations.
 
   BaseFloat initial_step;
+  NnetUpdaterConfig updater_config;
   
   NnetShrinkConfig(): num_bfgs_iters(10), initial_step(0.1) { }
   void Register(OptionsItf *po) {
@@ -44,6 +45,7 @@ struct NnetShrinkConfig {
                  "BFGS to use when optimizing shrinkage parameters");
     po->Register("initial-step", &initial_step, "Parameter in the optimization, "
                  "used to set the initial step length");
+    updater_config.Register(po);
   }  
 };
 

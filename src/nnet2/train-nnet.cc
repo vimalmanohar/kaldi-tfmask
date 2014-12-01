@@ -44,6 +44,7 @@ void NnetSimpleTrainer::TrainOneMinibatch() {
   // The following function is declared in nnet-update.h.
   logprob_this_phase_ += DoBackprop(*nnet_,
                                     buffer_,
+                                    config_.updater_config,
                                     nnet_);
   weight_this_phase_ += TotalNnetTrainingWeight(buffer_);
   buffer_.clear();
